@@ -330,7 +330,7 @@ By Helmic
 		<include name="no" displayName="${lang.shutter.no}"/>
 	</subset>
 <!--CAUSE BUGS ON RETROBAT -->
-	<subset name="randomArt" displayName="${lang.randomArt}" appliesTo="system,basic,detailed,grid,gamecarousel" ifNotArch="windows">
+	<subset name="randomArt" displayName="${lang.randomArt}" appliesTo="system,basic,detailed,grid,gamecarousel">
 		<include name="marquee" displayName="${lang.marquee}"/>
 		<include name="thumbnail" displayName="${lang.thumbnail}"/>
 		<include name="no" displayName="${lang.no}"/>
@@ -854,7 +854,7 @@ By Helmic
             </storyboard>
 		</image>
 <!-- CAUSE BUGS ON RETROBAT -->
-		<image name="randomArt01,randomArt02,randomArt03,randomArt04,randomArt05,randomArt06,randomArt07,randomArt08,randomArt09,randomArt10,randomArt11,randomArt12,randomArt13" extra="true" ifSubset="randomArt:marquee|thumbnail" ifNotArch="windows">
+		<image name="randomArt01,randomArt02,randomArt03,randomArt04,randomArt05,randomArt06,randomArt07,randomArt08,randomArt09,randomArt10,randomArt11,randomArt12,randomArt13" extra="true" ifSubset="randomArt:marquee|thumbnail">
 			<linearSmooth>true</linearSmooth>
             <maxSize ifSubset="randomArt:marquee">0.22 0.15</maxSize>
             <maxSize ifSubset="randomArt:thumbnail">0.14 0.26</maxSize>
@@ -867,7 +867,7 @@ By Helmic
 			<offsetX>0.23</offsetX>
 		</image>
  
-		<image name="randomArt01" extra="true" ifNotArch="windows">
+		<image name="randomArt01" extra="true">
 			<storyboard repeatAt="1">
                 <animation property="offsetX" from="0.23" to="0.23" duration="4250" mode="linear"/>
                 <animation property="offsetX" from="0.23" to="0" duration="250" mode="easeOut" begin="4250"/>
@@ -876,7 +876,7 @@ By Helmic
             </storyboard>
 		</image>
  
-		<image name="randomArt02" extra="true" ifNotArch="windows">
+		<image name="randomArt02" extra="true">
 			<storyboard repeatAt="1">
                 <animation property="offsetX" from="0.23" to="0.23" duration="6250" mode="linear"/>
                 <animation property="offsetX" from="0.23" to="0" duration="250" mode="easeOut" begin="6250"/>
@@ -885,7 +885,7 @@ By Helmic
             </storyboard>
 		</image>
   
-		<image name="randomArt03" extra="true" ifNotArch="windows">
+		<image name="randomArt03" extra="true">
 			<storyboard repeatAt="1">
                 <animation property="offsetX" from="0.23" to="0.23" duration="8250" mode="linear"/>
                 <animation property="offsetX" from="0.23" to="0" duration="250" mode="easeOut" begin="8250"/>
@@ -894,7 +894,7 @@ By Helmic
             </storyboard>
 		</image>
   
-		<image name="randomArt04" extra="true" ifNotArch="windows">
+		<image name="randomArt04" extra="true">
 			<storyboard repeatAt="1">
                 <animation property="offsetX" from="0.23" to="0.23" duration="10250" mode="linear"/>
                 <animation property="offsetX" from="0.23" to="0" duration="250" mode="easeOut" begin="10250"/>
@@ -903,7 +903,7 @@ By Helmic
             </storyboard>
 		</image>
   
-		<image name="randomArt05" extra="true" ifNotArch="windows">
+		<image name="randomArt05" extra="true">
 			<storyboard repeatAt="1">
                 <animation property="offsetX" from="0.23" to="0.23" duration="12250" mode="linear"/>
                 <animation property="offsetX" from="0.23" to="0" duration="250" mode="easeOut" begin="12250"/>
@@ -912,7 +912,7 @@ By Helmic
             </storyboard>
 		</image>
    
-		<image name="randomArt06" extra="true" ifNotArch="windows">
+		<image name="randomArt06" extra="true">
 			<storyboard repeatAt="1">
                 <animation property="offsetX" from="0.23" to="0.23" duration="14250" mode="linear"/>
                 <animation property="offsetX" from="0.23" to="0" duration="250" mode="easeOut" begin="14250"/>
@@ -921,7 +921,7 @@ By Helmic
             </storyboard>
 		</image>
    
-		<image name="randomArt07" extra="true" ifNotArch="windows">
+		<image name="randomArt07" extra="true">
 			<storyboard repeatAt="1">
                 <animation property="offsetX" from="0.23" to="0.23" duration="16250" mode="linear"/>
                 <animation property="offsetX" from="0.23" to="0" duration="250" mode="easeOut" begin="16250"/>
@@ -930,7 +930,7 @@ By Helmic
             </storyboard>
 		</image>
     
-		<image name="randomArt08" extra="true" ifNotArch="windows">
+		<image name="randomArt08" extra="true">
 			<storyboard repeatAt="1">
                 <animation property="offsetX" from="0.23" to="0.23" duration="18250" mode="linear"/>
                 <animation property="offsetX" from="0.23" to="0" duration="250" mode="easeOut" begin="18250"/>
@@ -939,7 +939,7 @@ By Helmic
             </storyboard>
 		</image>
      
-		<image name="randomArt09" extra="true" ifNotArch="windows">
+		<image name="randomArt09" extra="true">
 			<storyboard repeatAt="1">
                 <animation property="offsetX" from="0.23" to="0.23" duration="20250" mode="linear"/>
                 <animation property="offsetX" from="0.23" to="0" duration="250" mode="easeOut" begin="20250"/>
@@ -948,7 +948,7 @@ By Helmic
             </storyboard>
 		</image>
      
-		<image name="randomArt10" extra="true" ifNotArch="windows">
+		<image name="randomArt10" extra="true">
 			<storyboard repeatAt="1">
                 <animation property="offsetX" from="0.23" to="0.23" duration="22250" mode="linear"/>
                 <animation property="offsetX" from="0.23" to="0" duration="250" mode="easeOut" begin="22250"/>
@@ -957,7 +957,7 @@ By Helmic
             </storyboard>
 		</image>
       
-		<image name="randomArt11" extra="true" ifNotArch="windows">
+		<image name="randomArt11" extra="true">
 			<storyboard repeatAt="1">
                 <animation property="offsetX" from="0.23" to="0.23" duration="24250" mode="linear"/>
                 <animation property="offsetX" from="0.23" to="0" duration="250" mode="easeOut" begin="24250"/>
@@ -966,7 +966,7 @@ By Helmic
             </storyboard>
 		</image>
       
-		<image name="randomArt12" extra="true" ifNotArch="windows">
+		<image name="randomArt12" extra="true">
 			<storyboard repeatAt="1">
                 <animation property="offsetX" from="0.23" to="0.23" duration="26250" mode="linear"/>
                 <animation property="offsetX" from="0.23" to="0" duration="250" mode="easeOut" begin="26250"/>
@@ -975,7 +975,7 @@ By Helmic
             </storyboard>
 		</image>
        
-		<image name="randomArt13" extra="true" ifNotArch="windows">
+		<image name="randomArt13" extra="true">
 			<storyboard repeatAt="1">
                 <animation property="offsetX" from="0.23" to="0.23" duration="28250" mode="linear"/>
                 <animation property="offsetX" from="0.23" to="0" duration="250" mode="easeOut" begin="28250"/>
