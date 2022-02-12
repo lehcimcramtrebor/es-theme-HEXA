@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<theme>
+	<formatVersion>7</formatVersion>
+
+
+	<view name="splash">
+	
+	<splash name="splash">
+		<backgroundColor>303030FF</backgroundColor>
+	</splash>
+
+	<image name="background" extra="true">
+		<linearSmooth>true</linearSmooth>
+		<path>./_inc/wall.jpg</path>
+		<origin>0.5 0.5</origin>
+		<pos>0.5 0.5</pos>
+        <color>808080</color>
+        <colorEnd>303030</colorEnd>
+        <gradientType>vertical</gradientType>
+   		<maxSize>99 1</maxSize>
+		<zIndex>1</zIndex>
+	</image>
+
+	<text name="theme" extra="true">
+		<text>hexa</text>
+		<color>dddddd</color>
+		<alignment>center</alignment>
+		<fontPath>./_inc/fonts/conthrax-sb.ttf</fontPath>
+		<pos>0.5 0.5</pos>
+		<origin>0.5 0.5</origin>
+		<alignment>center</alignment>
+		<fontSize>0.065</fontSize>
+		<glowSize>1</glowSize>
+		<glowColor>00000015</glowColor>
+		<glowOffset>0</glowOffset>
+		<forceUppercase>true</forceUppercase>
+		<zIndex>9</zIndex>
+		<reflexion>0.1 1</reflexion>
+	</text>
+
+	<text name="compatibility" extra="true">
+		<text>16/9 - 5/4 - 4/3 batocera compatible theme
+
+by helmic</text>
+
+		<text ifArch="windows">16/9 - 5/4 - 4/3 retrobat compatible theme
+
+by helmic</text>
+
+		<text lang="fr">thème pour batocera compatible avec écrans 16/9 - 5/4 - 4/3
+
+par helmic</text>
+		
+		<text lang="fr" ifArch="windows">thème pour retrobat compatible avec écrans 16/9 - 5/4 - 4/3
+
+par helmic</text>
+
+		<color>cccccc</color>
+		<alignment>center</alignment>
+		<fontPath>./_inc/fonts/conthrax-sb.ttf</fontPath>
+		<pos>0.5 0.78</pos>
+		<origin>0.5 0.5</origin>
+		<alignment>center</alignment>
+		<fontSize>0.012</fontSize>
+		<glowSize>1</glowSize>
+		<glowColor>00000015</glowColor>
+		<glowOffset>0</glowOffset>
+		<forceUppercase>true</forceUppercase>
+		<zIndex>9</zIndex>
+	</text>
+
+	<text name="label">
+		<color>dddddd</color>
+		<alignment>center</alignment>
+		<fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
+		<pos>0 0.94</pos>
+		<fontSize>0.024</fontSize>
+		<glowSize>1</glowSize>
+		<glowColor>00000015</glowColor>
+		<glowOffset>0</glowOffset>
+		<zIndex>9</zIndex>
+	</text>
+
+	</view>
+
+</theme>

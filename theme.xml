@@ -1,0 +1,3151 @@
+<!--
+HEXA Theme for Retrobat 4+ / Batocera v32+
+By Helmic
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+<formatVersion>7</formatVersion>
+
+    <!--REGION DEFAULT (CHANGE "eu" to "jp" or "us")-->
+ 
+    <variables><defaultRegion region="eu">Choose your default region</defaultRegion></variables>
+
+    <!--LANGS-->
+    
+    <variables>
+
+        <!--ambiance-->
+        <lang.ambiance>system view • ambiance</lang.ambiance>
+        <lang.ambiance lang="fr">vue système • ambiance</lang.ambiance>
+
+        <lang.randomAudioOn>random games sounds with music</lang.randomAudioOn>
+        <lang.randomAudioOn lang="fr">sons des jeux avec musique</lang.randomAudioOn>
+        
+        <lang.randomAudioOff>random games sounds only</lang.randomAudioOff>
+        <lang.randomAudioOff lang="fr">uniquement le sons des jeux</lang.randomAudioOff>
+           
+        <lang.randomVideosAudioOn>random videos with music</lang.randomVideosAudioOn>
+        <lang.randomVideosAudioOn lang="fr">vidéos aléatoires et musique</lang.randomVideosAudioOn>
+            
+        <lang.randomVideosAudioOff>random videos without music</lang.randomVideosAudioOff>
+        <lang.randomVideosAudioOff lang="fr">vidéos aléatoires sans musique</lang.randomVideosAudioOff>
+        
+        <lang.randomNone>nothing</lang.randomNone>
+        <lang.randomNone lang="fr">aucune</lang.randomNone>
+  
+        <!--help icons-->
+        <lang.helpIcons>help • buttons style</lang.helpIcons>
+        <lang.helpIcons lang="fr">aide • style des boutons</lang.helpIcons>
+            
+        <lang.defaultIcons>default buttons</lang.defaultIcons>
+        <lang.defaultIcons lang="fr">boutons par défaut</lang.defaultIcons>
+
+        <lang.arcadeIcons>arcade panel</lang.arcadeIcons>
+        <lang.arcadeIcons lang="fr">panel d'arcade</lang.arcadeIcons>
+
+        <lang.psxIcons>playstation controller</lang.psxIcons>
+        <lang.psxIcons lang="fr">manette playstation</lang.psxIcons>
+
+        <lang.snesIcons region="eu">super nintendo controller</lang.snesIcons>
+        <lang.snesIcons region="us">super nes controller</lang.snesIcons>
+        <lang.snesIcons region="jp">super famicom controller</lang.snesIcons>
+        <lang.snesIcons region="eu" lang="fr">manette super nintendo</lang.snesIcons>
+        <lang.snesIcons region="jp" lang="fr">manette super famicom</lang.snesIcons>
+        <lang.snesIcons region="us" lang="fr">manette super nes</lang.snesIcons>
+
+        <lang.snesAltIcons region="eu">alternate super nintendo controller</lang.snesAltIcons>
+        <lang.snesAltIcons region="us">alternate super nes controller</lang.snesAltIcons>
+        <lang.snesAltIcons region="jp">alternate super famicom controller</lang.snesAltIcons>
+        <lang.snesAltIcons region="eu" lang="fr">manette alternative super nintendo</lang.snesAltIcons>
+        <lang.snesAltIcons region="us" lang="fr">manette alternative super nes</lang.snesAltIcons>
+        <lang.snesAltIcons region="jp" lang="fr">manette alternative super famicom</lang.snesAltIcons>
+
+        <lang.xboxIcons>xbox controller</lang.xboxIcons>
+        <lang.xboxIcons lang="fr">manette xbox</lang.xboxIcons>
+
+        <lang.xboxOneIcons>xbox one controller</lang.xboxOneIcons>
+        <lang.xboxOneIcons lang="fr">manette xbox one</lang.xboxOneIcons>
+
+        <!--colorsets-->
+        <lang.overlayColorset>interface • colorset</lang.overlayColorset>
+        <lang.overlayColorset lang="fr">interface • jeu de couleur</lang.overlayColorset>
+            
+        <lang.noColor>monochrome</lang.noColor>
+        <lang.noColor lang="fr">monochrome</lang.noColor>
+            
+        <lang.red>red</lang.red>
+        <lang.red lang="fr">rouge</lang.red>
+            
+        <lang.green>green</lang.green>
+        <lang.green lang="fr">vert</lang.green>
+
+        <lang.blue>blue</lang.blue>
+        <lang.blue lang="fr">bleu</lang.blue>
+
+        <lang.orange>orange</lang.orange>
+        <lang.orange lang="fr">orange</lang.orange>
+
+        <lang.purple>purple</lang.purple>
+        <lang.purple lang="fr">violet</lang.purple>
+
+        <lang.pink>pink</lang.pink>
+        <lang.pink lang="fr">rose</lang.pink>
+
+        <lang.yellow>yellow</lang.yellow>
+        <lang.yellow lang="fr">jaune</lang.yellow>
+		
+		<!--static effects-->
+		<lang.staticEffect>screen • effect</lang.staticEffect>
+		<lang.staticEffect lang="fr">écran • effet</lang.staticEffect>
+
+		<lang.screenApply>to screen</lang.screenApply>
+		<lang.screenApply lang="fr">à l'écran</lang.screenApply>
+
+		<lang.scanlines>scanlines</lang.scanlines>
+		<lang.scanlines lang="fr">balayage</lang.scanlines>
+
+		<lang.scanlinesFine>scanlines fine</lang.scanlinesFine>
+		<lang.scanlinesFine lang="fr">balayage fin</lang.scanlinesFine>
+
+		<lang.scanlinesVertical>vertical scanlines</lang.scanlinesVertical>
+		<lang.scanlinesVertical lang="fr">balayage vertical</lang.scanlinesVertical>
+
+		<lang.scanlinesVerticalFine>vertical scanlines fine</lang.scanlinesVerticalFine>
+		<lang.scanlinesVerticalFine lang="fr">balayage vertical fin</lang.scanlinesVerticalFine>
+
+		<lang.crt>crt screen</lang.crt>
+		<lang.crt lang="fr">écran crt</lang.crt>
+
+		<lang.phosphore>phosphore</lang.phosphore>
+		<lang.phosphore lang="fr">phosphore</lang.phosphore>
+
+		<lang.phosphorePlus>phosphore strong</lang.phosphorePlus>
+		<lang.phosphorePlus lang="fr">phosphore plus prononcé</lang.phosphorePlus>
+
+		<lang.noEffect>no effect</lang.noEffect>
+		<lang.noEffect lang="fr">pas d'effet</lang.noEffect>
+
+		<!--scratch-->
+		<lang.scratch>glass • scratch</lang.scratch>
+		<lang.scratch lang="fr">vitre • état</lang.scratch>
+
+		<lang.scratch.no>no</lang.scratch.no>
+		<lang.scratch.no lang="fr">neuve</lang.scratch.no>
+
+		<lang.scratch.light>light</lang.scratch.light>
+		<lang.scratch.light lang="fr">occasion</lang.scratch.light>
+
+		<lang.scratch.medium>medium</lang.scratch.medium>
+		<lang.scratch.medium lang="fr">usée</lang.scratch.medium>
+
+		<lang.scratch.strong>strong</lang.scratch.strong>
+		<lang.scratch.strong lang="fr">en fin de vie</lang.scratch.strong>
+
+		<!--shutter-->
+		<lang.shutter>shutter • rate</lang.shutter>
+		<lang.shutter lang="fr">balayage • fréquence</lang.shutter>
+
+		<lang.shutter.no>disabled</lang.shutter.no>
+		<lang.shutter.no lang="fr">désactivé</lang.shutter.no>
+
+		<lang.shutter.25>25p</lang.shutter.25>
+		<lang.shutter.30>30p</lang.shutter.30>
+		<lang.shutter.50>50p</lang.shutter.50>
+		<lang.shutter.60>60p</lang.shutter.60>
+
+		<!--system random ratio-->
+		<lang.systemRandomRatio>system view • video ratio</lang.systemRandomRatio>
+		<lang.systemRandomRatio lang="fr">vue système • aspect des vidéos</lang.systemRandomRatio>
+
+		<!--random ratio-->
+		<lang.randomRatio>gamelist • video ratio</lang.randomRatio>
+		<lang.randomRatio lang="fr">liste des jeux • aspect des vidéos</lang.randomRatio>
+
+		<lang.original>original</lang.original>
+		<lang.original lang="fr">respecté</lang.original>
+
+		<lang.stretched>stretched</lang.stretched>
+		<lang.stretched lang="fr">étiré</lang.stretched>
+
+		<!--bindings-->
+		<lang.releasedYear>released year</lang.releasedYear>
+		<lang.releasedYear lang="fr">année de sortie</lang.releasedYear>
+		
+		<lang.favorites>favorites in this section</lang.favorites>
+		<lang.favorites lang="fr">nombre de favoris</lang.favorites>
+		
+		<lang.gamesPlayed>last played games</lang.gamesPlayed>
+		<lang.gamesPlayed lang="fr">jeux déjà joués</lang.gamesPlayed>
+		
+		<lang.mostPlayed>most played game</lang.mostPlayed>
+		<lang.mostPlayed lang="fr">jeu le plus joué</lang.mostPlayed>
+
+		<lang.lastPlayed>last played</lang.lastPlayed>
+		<lang.lastPlayed lang="fr">dernière partie jouée le</lang.lastPlayed>
+
+		<lang.retroachievements>retroachievements</lang.retroachievements>
+		<lang.retroachievements lang="fr">succès</lang.retroachievements>
+
+		<lang.cheevosFalse>not supported / activated</lang.cheevosFalse>
+		<lang.cheevosFalse lang="fr">non supportés ou activés</lang.cheevosFalse>
+
+		<lang.cheevosTrue>supported</lang.cheevosTrue>
+		<lang.cheevosTrue lang="fr">supportés</lang.cheevosTrue>
+
+		<!--custom views-->
+		<lang.library>library</lang.library>
+		<lang.library lang="fr">librairie</lang.library>
+
+		<!--theme ratio-->
+		<lang.themeRatio>theme • ratio</lang.themeRatio>
+		<lang.themeRatio lang="fr">thème • format</lang.themeRatio>
+
+		<lang.169>16/9</lang.169>
+		<lang.54>5/4</lang.54>
+		<lang.43>4/3</lang.43>
+
+		<!--space carousel 16/9-->
+		<lang.spaceCarousel>carousel • space (only 16/9)</lang.spaceCarousel>
+		<lang.spaceCarousel lang="fr">carrousel • espace (16/9 seulement)</lang.spaceCarousel>
+
+		<lang.thin>thin</lang.thin>
+		<lang.thin lang="fr">mince</lang.thin>
+
+		<lang.large>large</lang.large>
+		<lang.large lang="fr">large</lang.large>
+
+		<!--carousel wall paint-->
+		<lang.carouselWallPaint>carousel • wall paint</lang.carouselWallPaint>
+		<lang.carouselWallPaint lang="fr">carrousel • peindre le mur</lang.carouselWallPaint>
+
+		<!--wall paint-->
+		<lang.gamelistWallPaint>gamelist • wall paint</lang.gamelistWallPaint>
+		<lang.gamelistWallPaint lang="fr">liste de jeux • peindre le mur</lang.gamelistWallPaint>
+
+		<lang.yes>yes</lang.yes>
+		<lang.yes lang="fr">oui</lang.yes>
+
+		<lang.no>no</lang.no>
+		<lang.no lang="fr">non</lang.no>
+
+		<!--tv screen color-->
+		<lang.tvScreenColor>gamelist • tv screen color</lang.tvScreenColor>
+		<lang.tvScreenColor lang="fr">listes de jeux • couleur de l'écran tv</lang.tvScreenColor>
+
+		<lang.standard>standard</lang.standard>
+		<lang.standard lang="fr">standard</lang.standard>
+
+		<!--boxback display-->
+		<lang.boxbackDisplay>gamelist • display box back</lang.boxbackDisplay>
+		<lang.boxbackDisplay lang="fr">listes de jeux • afficher l'arrière de la boite</lang.boxbackDisplay>
+
+		<!--random art display-->
+		<lang.randomArt>system view • random arts</lang.randomArt>
+		<lang.randomArt lang="fr">vue système • images aléatoires</lang.randomArt>
+
+		<lang.thumbnail>thumbnails</lang.thumbnail>
+		<lang.thumbnail lang="fr">boîtes de jeux</lang.thumbnail>
+
+		<lang.marquee>marquees</lang.marquee>
+		<lang.marquee lang="fr">logos de jeux</lang.marquee>
+
+	</variables>
+
+<!--SUBSETS-->
+
+    <subset name="themeRatio" displayName="${lang.themeRatio}">
+		<include name="169" displayName="${lang.169}"/>
+        <include name="54" displayName="${lang.54}"/>
+        <include name="43" displayName="${lang.43}"/>
+    </subset>
+
+    <subset name="spaceCarousel" displayName="${lang.spaceCarousel}" ifSubset="themeRatio:169">
+		<include name="thin" displayName="${lang.thin}"/>
+        <include name="large" displayName="${lang.large}"/>
+    </subset>
+
+    <subset name="carouselWallPaint" displayName="${lang.carouselWallPaint}">
+        <include name="no" displayName="${lang.no}"/>
+		<include name="yes" displayName="${lang.yes}"/>
+    </subset>
+
+    <subset name="gamelistWallPaint" displayName="${lang.gamelistWallPaint}" appliesTo="system,basic,detailed,grid,gamecarousel">
+        <include name="no" displayName="${lang.no}"/>
+		<include name="yes" displayName="${lang.yes}"/>
+    </subset>
+
+    <subset name="ambiance" displayName="${lang.ambiance}">
+		<include name="randomAudioOff" displayName="${lang.randomAudioOff}"/>
+        <include name="randomAudioOn" displayName="${lang.randomAudioOn}"/>
+		<include name="randomVideosAudioOff" displayName="${lang.randomVideosAudioOff}"/>
+        <include name="randomVideosAudioOn" displayName="${lang.randomVideosAudioOn}"/>
+        <include name="randomNone" displayName="${lang.randomNone}"/>
+    </subset>
+
+    <subset name="helpIcons" displayName="${lang.helpIcons}">
+        <include name="defaultIcons" displayName="${lang.defaultIcons}"/>
+        <include name="arcadeIcons" displayName="${lang.arcadeIcons}"/>
+        <include name="psxIcons" displayName="${lang.psxIcons}"/>
+        <include name="snesIcons" displayName="${lang.snesIcons}"/>
+        <include name="snesAltIcons" displayName="${lang.snesAltIcons}"/>
+        <include name="xboxIcons" displayName="${lang.xboxIcons}"/>
+        <include name="xboxOneIcons" displayName="${lang.xboxOneIcons}"/>
+    </subset>
+
+    <subset name="overlayColorset" displayName="${lang.overlayColorset}">
+        <include name="red" displayName="${lang.red}"/>
+        <include name="blue" displayName="${lang.blue}"/>
+        <include name="green" displayName="${lang.green}"/>
+        <include name="orange" displayName="${lang.orange}"/>
+        <include name="purple" displayName="${lang.purple}"/>
+        <include name="pink" displayName="${lang.pink}"/>
+        <include name="yellow" displayName="${lang.yellow}"/>
+        <include name="noColor" displayName="${lang.noColor}"/>
+   </subset>
+
+	<subset name="staticEffect" displayName="${lang.staticEffect}">
+		<include name="scanlinesFine" displayName="${lang.scanlinesFine}"/>
+		<include name="scanlinesVerticalFine" displayName="${lang.scanlinesVerticalFine}"/>
+		<include name="crt" displayName="${lang.crt}"/>
+		<include name="phosphore" displayName="${lang.phosphore}"/>
+		<include name="phosphorePlus" displayName="${lang.phosphorePlus}"/>
+		<include name="scanlines" displayName="${lang.scanlines}"/>
+		<include name="scanlinesVertical" displayName="${lang.scanlinesVertical}"/>
+		<include name="no" displayName="${lang.noEffect}"/>
+	</subset>
+
+	<subset name="scratch" displayName="${lang.scratch}">
+		<include name="scratch.no" displayName="${lang.scratch.no}"/>
+		<include name="scratch.light" displayName="${lang.scratch.light}"/>
+		<include name="scratch.medium" displayName="${lang.scratch.medium}"/>
+		<include name="scratch.strong" displayName="${lang.scratch.strong}"/>
+	</subset>
+
+	<subset name="shutter" displayName="${lang.shutter}">
+		<include name="25" displayName="${lang.shutter.25}"/>
+		<include name="30" displayName="${lang.shutter.30}"/>
+		<include name="50" displayName="${lang.shutter.50}"/>
+		<include name="60" displayName="${lang.shutter.60}"/>
+		<include name="no" displayName="${lang.shutter.no}"/>
+	</subset>
+<!--CAUSE BUGS ON RETROBAT -->
+	<subset name="randomArt" displayName="${lang.randomArt}" appliesTo="system,basic,detailed,grid,gamecarousel" ifNotArch="windows">
+		<include name="marquee" displayName="${lang.marquee}"/>
+		<include name="thumbnail" displayName="${lang.thumbnail}"/>
+		<include name="no" displayName="${lang.no}"/>
+	</subset>
+
+	<subset name="systemRandomRatio" displayName="${lang.systemRandomRatio}" appliesTo="system,basic,detailed,grid,gamecarousel">
+		<include name="original" displayName="${lang.original}"/>
+		<include name="stretched" displayName="${lang.stretched}"/>
+	</subset>
+
+	<subset name="randomRatio" displayName="${lang.randomRatio}" appliesTo="system,basic,detailed,grid,gamecarousel">
+		<include name="stretched" displayName="${lang.stretched}"/>
+		<include name="original" displayName="${lang.original}"/>
+	</subset>
+
+	<subset name="tvScreenColor" displayName="${lang.tvScreenColor}" appliesTo="system,basic,detailed,grid,gamecarousel" ifSubset="randomRatio:original">
+		<include name="standard" displayName="${lang.standard}"/>
+		<include name="blue" displayName="${lang.blue}"/>
+	</subset>
+
+	<subset name="boxbackDisplay" displayName="${lang.boxbackDisplay}" appliesTo="system,basic,detailed,grid,gamecarousel">
+		<include name="no" displayName="${lang.no}"/>
+		<include name="yes" displayName="${lang.yes}"/>
+	</subset>
+
+	<!--COLORSETS-->
+    
+    <variables>
+
+        <overlay.colorset ifSubset="overlayColorset:noColor">dddddd</overlay.colorset>
+        <overlay.colorset ifSubset="overlayColorset:green">4dbb90</overlay.colorset>
+        <overlay.colorset ifSubset="overlayColorset:orange">ff6600</overlay.colorset>
+        <overlay.colorset ifSubset="overlayColorset:purple">c175ff</overlay.colorset>
+        <overlay.colorset ifSubset="overlayColorset:pink">ff69b4</overlay.colorset>
+        <overlay.colorset ifSubset="overlayColorset:yellow">f2d600</overlay.colorset>
+        <overlay.colorset ifSubset="overlayColorset:blue">0062cc</overlay.colorset>
+        <overlay.colorset ifSubset="overlayColorset:red">b53737</overlay.colorset>
+
+    </variables>
+
+		<!--WALLPAPERS-->
+    
+    <variables>
+
+        <wallpaper>wall</wallpaper>
+
+    </variables>
+
+<!--CAROUSEL-->
+
+    <view name="system">
+	
+        <carousel name="systemcarousel">
+            <type>horizontal</type>
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <origin>0 0</origin>
+            <color>00000000</color>
+            <logoScale>1</logoScale>
+            <logoSize>1 0.92962963</logoSize>
+            <logoRotation>15</logoRotation>
+            <logoRotationOrigin>4.1 0.5</logoRotationOrigin>
+            <logoAlignment>left</logoAlignment>
+            <maxLogoCount>3</maxLogoCount>
+            <maxLogoCount ifSubset="themeRatio:169,spaceCarousel:large">2</maxLogoCount>
+            <maxLogoCount ifSubset="themeRatio:54|43">2</maxLogoCount>
+            <zIndex>10</zIndex>
+            <defaultTransition>instant</defaultTransition>
+            <scrollSound>./_inc/wheel.wav</scrollSound>
+        </carousel>
+
+        <image name="logo">
+            <linearSmooth>true</linearSmooth>
+            <path>./default/mono.png</path>
+            <path>./default/mono-${lang}.png</path>
+            <path>./${system.theme}/mono.png</path>
+            <path>./${system.theme}/mono-${lang}.png</path>
+ 
+			<storyboard event="activate">
+                <animation property="scale" from="0.9" to="1" duration="250" mode="easeOutQuint"/>
+                <animation property="scale" from="0.9" to="1" duration="150" mode="EaseOut"/>
+                <animation property="opacity" from="1" to="1" duration="1" mode="Linear"/>
+                <animation property="opacity" from="1" to="0" duration="150" mode="easeOut" begin="350"/>
+            </storyboard>
+            <storyboard event="scroll" repeatAt="1">
+                <animation property="scale" from="1" to="0.9" duration="1" mode="EaseOut"/>
+                <animation property="color" from="999999" to="999999" duration="1" mode="Linear"/>
+                <animation property="opacity" from="1" to="1" duration="1" mode="Linear"/>
+                <animation property="scale" to="0.89" duration="200" autoreverse="true" mode="easeInOut" begin="100"/>
+            </storyboard>
+            <storyboard event="deactivate" repeatAt="1">
+                <animation property="scale" from="1" to="0.9" duration="1" mode="EaseOut"/>
+                <animation property="color" from="999999" to="999999" duration="1" mode="Linear"/>
+                <animation property="opacity" from="1" to="1" duration="1" mode="Linear"/>
+                <animation property="scale" to="0.91" duration="200" autoreverse="true" mode="easeInOut" begin="100"/>
+            </storyboard>
+
+		    <storyboard event="activate" ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff">
+                <animation property="scale" from="0.9" to="1" duration="250" mode="easeOutQuint"/>
+                <animation property="scale" from="0.9" to="1" duration="150" mode="EaseOut"/>
+                <animation property="opacity" from="1" to="1" duration="1" mode="Linear"/>
+                <animation property="opacity" from="1" to="0" duration="150" mode="easeOut" begin="350"/>
+            </storyboard>
+            <storyboard event="scroll" ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff">
+                <animation property="scale" from="1" to="0.9" duration="1" mode="EaseOut"/>
+                <animation property="color" from="999999" to="999999" duration="1" mode="Linear"/>
+                <animation property="opacity" from="1" to="1" duration="1" mode="Linear"/>
+                <animation property="opacity" to="0" duration="250" mode="Linear" begin="3000"/>
+                <animation property="scale" to="0.89" duration="200" autoreverse="true" mode="easeInOut" begin="100"/>
+                <animation property="scale" to="0.89" duration="200" autoreverse="true" mode="easeInOut" begin="600"/>
+                <animation property="scale" to="0.89" duration="200" autoreverse="true" mode="easeInOut" begin="1100"/>
+                <animation property="scale" to="0.89" duration="200" autoreverse="true" mode="easeInOut" begin="1600"/>
+                <animation property="scale" to="0.89" duration="200" autoreverse="true" mode="easeInOut" begin="2100"/>
+            </storyboard>
+            <storyboard event="deactivate" ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff">
+                <animation property="scale" from="1" to="0.9" duration="1" mode="EaseOut"/>
+                <animation property="color" from="999999" to="999999" duration="1" mode="Linear"/>
+                <animation property="opacity" from="1" to="1" duration="1" mode="Linear"/>
+                <animation property="opacity" to="0" duration="250" mode="Linear" begin="3000"/>
+                <animation property="scale" to="0.91" duration="200" autoreverse="true" mode="easeInOut" begin="100"/>
+                <animation property="scale" to="0.91" duration="200" autoreverse="true" mode="easeInOut" begin="600"/>
+                <animation property="scale" to="0.91" duration="200" autoreverse="true" mode="easeInOut" begin="1100"/>
+                <animation property="scale" to="0.91" duration="200" autoreverse="true" mode="easeInOut" begin="1600"/>
+                <animation property="scale" to="0.91" duration="200" autoreverse="true" mode="easeInOut" begin="2100"/>
+             </storyboard>
+			
+ 		</image>
+
+        <image name="logo" region="eu"></image>
+
+        <image name="logo" region="us">
+            <path>./${system.theme}/us/mono.png</path>
+        </image>
+
+
+        <image name="logo" region="jp">
+            <path>./${system.theme}/jp/mono.png</path>
+        </image>
+
+        <text name="logoText">
+            <fontPath>./_inc/fonts/snes.ttf</fontPath>
+            <fontSize>0.09</fontSize>
+            <text>${system.fullName}</text>
+            <color>dddddd</color>
+            <glowColor>12121233</glowColor>
+        </text>     
+        
+		<image name="logoColor" extra="true">
+            <linearSmooth>true</linearSmooth>
+            <path>./default/color.png</path>
+            <path>./default/color-${lang}.png</path>
+            <path>./${system.theme}/color.png</path>
+            <path>./${system.theme}/color-${lang}.png</path>
+            <path region="us">./${system.theme}/us/color.png</path>
+            <path region="jp">./${system.theme}/jp/color.png</path>
+           <maxSize>1 0.92962963</maxSize>
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+            <zIndex>11</zIndex>
+			<color>ffffff00</color>
+
+			<storyboard repeatAt="950">
+				<animation property="color" from="ffffff00" to="ffffff00" duration="250" mode="linear"/>
+                <animation property="color" from="ffffff00" to="ffffff" duration="250" mode="easeOutQuint" begin="250"/>
+        		<animation property="offsetY" to="-0.03" autoreverse="true" duration="200" mode="easeOutCubic" begin="5950"/>
+			</storyboard>
+
+           <storyboard repeatAt="3500" ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff">
+                <animation property="color" from="ffffff00" to="ffffff00" duration="250" mode="linear"/>
+                <animation property="color" from="ffffff00" to="ffffff" duration="250" mode="easeOutQuint" begin="250"/>
+        		<animation property="offsetY" to="-0.03" autoreverse="true" duration="200" mode="easeOutCubic" begin="8950"/>
+
+			   <animation property="origin" to="0 1" duration="500" mode="easeOut" begin="3000"/>
+        		<animation property="pos" to="-0.01 0.98" duration="500" mode="easeOut" begin="3000"/>
+        		<animation property="scale" to="0.5" duration="500" mode="easeOut" begin="3000"/>
+			</storyboard>
+
+           <storyboard repeatAt="3500" ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff,themeRatio:54|43">
+                <animation property="color" from="ffffff00" to="ffffff00" duration="250" mode="linear"/>
+                <animation property="color" from="ffffff00" to="ffffff" duration="250" mode="easeOutQuint" begin="250"/>
+        		<animation property="offsetY" to="-0.03" autoreverse="true" duration="200" mode="easeOutCubic" begin="8950"/>
+
+			   <animation property="origin" to="0 1" duration="500" mode="easeOut" begin="3000"/>
+        		<animation property="pos" to="-0.01 0.98" duration="500" mode="easeOut" begin="3000"/>
+        		<animation property="scale" to="0.35" duration="500" mode="easeOut" begin="3000"/>
+			</storyboard>
+			
+		</image>
+               
+		<image name="varnish" extra="true">
+            <linearSmooth>true</linearSmooth>
+            <path>./_inc/varnish.png</path>
+           <maxSize>1 0.92962963</maxSize>
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+            <zIndex>12</zIndex>
+			<color>ffffff00</color>
+
+			<storyboard repeatAt="950">
+				<animation property="color" from="ffffff00" to="ffffff00" duration="250" mode="linear"/>
+                <animation property="color" from="ffffff00" to="ffffff80" duration="250" mode="linear" begin="250"/>
+        		<animation property="offsetY" to="-0.03" autoreverse="true" duration="200" mode="easeOutCubic" begin="5950"/>
+			</storyboard>
+
+           <storyboard repeatAt="3500" ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff">
+                <animation property="color" from="ffffff00" to="ffffff00" duration="250" mode="linear"/>
+                <animation property="color" from="ffffff00" to="ffffff80" duration="250" mode="linear" begin="250"/>
+        		<animation property="offsetY" to="-0.03" autoreverse="true" duration="200" mode="easeOutCubic" begin="8950"/>
+
+			   <animation property="origin" to="0 1" duration="500" mode="easeOut" begin="3000"/>
+        		<animation property="pos" to="-0.01 0.98" duration="500" mode="easeOut" begin="3000"/>
+        		<animation property="scale" to="0.5" duration="500" mode="easeOut" begin="3000"/>
+			</storyboard>
+
+           <storyboard repeatAt="3500" ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff,themeRatio:54|43">
+                <animation property="color" from="ffffff00" to="ffffff00" duration="250" mode="linear"/>
+                <animation property="color" from="ffffff00" to="ffffff80" duration="250" mode="linear" begin="250"/>
+        		<animation property="offsetY" to="-0.03" autoreverse="true" duration="200" mode="easeOutCubic" begin="8950"/>
+
+			   <animation property="origin" to="0 1" duration="500" mode="easeOut" begin="3000"/>
+        		<animation property="pos" to="-0.01 0.98" duration="500" mode="easeOut" begin="3000"/>
+        		<animation property="scale" to="0.33" duration="500" mode="easeOut" begin="3000"/>
+			</storyboard>
+			
+		</image>
+        
+		<image name="logoPaint" extra="true" ifSubset="carouselWallPaint:yes">
+            <linearSmooth>true</linearSmooth>
+            <path>./default/color.png</path>
+            <path>./default/color-${lang}.png</path>
+            <path>./${system.theme}/color.png</path>
+            <path>./${system.theme}/color-${lang}.png</path>
+            <path region="us">./${system.theme}/us/color.png</path>
+            <path region="jp">./${system.theme}/jp/color.png</path>
+           <maxSize>1.3 99</maxSize>
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+            <zIndex>2</zIndex>
+			<gradientType>vertical</gradientType>			
+			<color>ffffff55</color>
+			<colorEnd>ffffff00</colorEnd>
+		</image>
+		
+        <text name="systemInfo">     
+            <pos>0 0.9115</pos>
+            <backgroundColor>00000000</backgroundColor>
+            <color>dddddd</color>
+            <fontPath>./_inc/fonts/conthrax-sb.ttf</fontPath>
+            <fontSize>0.02</fontSize>
+            <glowColor>00000005</glowColor>
+            <zIndex>20</zIndex>
+            <opacity>0</opacity>
+			<storyboard>
+                <animation property="opacity" from="0" to="0" duration="250" mode="easeIn"/>
+                <animation property="offsetY" from="0.05" to="0" duration="450" mode="easeOut"/>
+                <animation property="opacity" from="0" to="1" duration="100" mode="easeIn" begin="250"/>
+            </storyboard>
+
+			<storyboard ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff">
+                <animation property="opacity" from="0" to="0" duration="250" mode="easeIn"/>
+                <animation property="offsetY" from="0.05" to="0" duration="450" mode="easeOut"/>
+                <animation property="opacity" from="0" to="1" duration="100" mode="easeIn" begin="250"/>
+                <animation property="opacity" from="1" to="0" duration="1000" mode="easeOutCubic" begin="2450"/>
+            </storyboard>
+        </text>
+
+		<text name="systemNameCarousel" extra="true">
+			<text>${system.fullName}</text>
+            <fontPath>./_inc/fonts/conthrax-sb.ttf</fontPath>
+            <color>dddddd</color>
+            <glowColor>00000005</glowColor>
+            <fontSize>0.02</fontSize>
+            <pos>0.5 0.94</pos>
+            <origin>0.5 0.5</origin>
+            <zIndex>10</zIndex>
+			<alignment>center</alignment>
+			<forceUppercase>true</forceUppercase>
+			<storyboard>
+                <animation property="opacity" from="1" to="1" duration="350" mode="easeIn"/>
+                <animation property="opacity" from="1" to="0" duration="100" mode="easeIn" begin="350"/>
+            </storyboard>
+		</text>
+
+		<text name="bindingBar01" extra="true">
+			<text>${system.fullName}</text>
+            <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
+            <color>dddddd</color>
+            <glowColor>00000005</glowColor>
+            <fontSize>0.018</fontSize>
+            <pos>0.5 0.018</pos>
+            <origin>0.5 0.5</origin>
+            <zIndex>110</zIndex>
+			<alignment>center</alignment>
+			<forceUppercase>true</forceUppercase>
+			<w>0.5</w>
+			<h>0.022</h>
+			<storyboard repeatAt="1">
+                <animation property="opacity" from="0" to="0" duration="1500" mode="easeIn"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeInQuint" begin="1500"/>
+                <animation property="offsetX" from="1" duration="250" mode="easeOut" begin="1500"/>
+                <animation property="offsetX" to="-1" duration="250" mode="easeOut" begin="4750"/>
+                <animation property="opacity" to="0" duration="250" mode="easeOutQuint" begin="4750"/>
+                <animation property="scale" from="1" to="1" duration="27500" mode="linear"/>
+            </storyboard>
+		</text>
+
+		<text name="bindingBar02" extra="true">
+			<text>${system.manufacturer}</text>
+            <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
+            <color>dddddd</color>
+            <glowColor>00000005</glowColor>
+            <fontSize>0.018</fontSize>
+            <pos>0.5 0.018</pos>
+            <origin>0.5 0.5</origin>
+            <zIndex>110</zIndex>
+			<alignment>center</alignment>
+			<forceUppercase>true</forceUppercase>
+			<w>0.5</w>
+			<h>0.022</h>
+			<storyboard repeatAt="1">
+                <animation property="opacity" from="0" to="0" duration="5000" mode="easeIn"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeInQuint" begin="5000"/>
+                <animation property="offsetX" from="1" duration="250" mode="easeOut" begin="5000"/>
+                <animation property="offsetX" to="-1" duration="250" mode="easeOut" begin="8250"/>
+                <animation property="opacity" to="0" duration="250" mode="easeOutQuint" begin="8250"/>
+                <animation property="scale" from="1" to="1" duration="27500" mode="linear"/>
+            </storyboard>
+		</text>
+
+		<text name="bindingBar03" extra="true">
+			<text>${lang.releasedYear}: ${system.releaseYear}</text>
+            <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
+            <color>dddddd</color>
+            <glowColor>00000005</glowColor>
+            <fontSize>0.018</fontSize>
+            <pos>0.5 0.018</pos>
+            <origin>0.5 0.5</origin>
+            <zIndex>110</zIndex>
+			<alignment>center</alignment>
+			<forceUppercase>true</forceUppercase>
+			<w>0.5</w>
+			<h>0.022</h>
+			<storyboard repeatAt="1">
+                <animation property="opacity" from="0" to="0" duration="8250" mode="easeIn"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeInQuint" begin="8250"/>
+                <animation property="offsetX" from="1" duration="250" mode="easeOut" begin="8250"/>
+                <animation property="offsetX" to="-1" duration="250" mode="easeOut" begin="11500"/>
+                <animation property="opacity" to="0" duration="250" mode="easeOutQuint" begin="11500"/>
+                <animation property="scale" from="1" to="1" duration="27500" mode="linear"/>
+            </storyboard>
+		</text>
+
+		<text name="bindingBar04" extra="true">
+			<text>${lang.favorites}: {binding:favorites}</text>
+            <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
+            <color>dddddd</color>
+            <glowColor>00000005</glowColor>
+            <fontSize>0.018</fontSize>
+            <pos>0.5 0.018</pos>
+            <origin>0.5 0.5</origin>
+            <zIndex>110</zIndex>
+			<alignment>center</alignment>
+			<forceUppercase>true</forceUppercase>
+			<w>0.5</w>
+			<h>0.022</h>
+			<storyboard repeatAt="1">
+                <animation property="opacity" from="0" to="0" duration="11500" mode="easeIn"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeInQuint" begin="11500"/>
+                <animation property="offsetX" from="1" duration="250" mode="easeOut" begin="11500"/>
+                <animation property="offsetX" to="-1" duration="250" mode="easeOut" begin="14750"/>
+                <animation property="opacity" to="0" duration="250" mode="easeOutQuint" begin="14750"/>
+                <animation property="scale" from="1" to="1" duration="27500" mode="linear"/>
+            </storyboard>
+		</text>
+
+		<text name="bindingBar05" extra="true">
+			<text>${lang.gamesPlayed}: {binding:gamesPlayed}</text>
+            <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
+            <color>dddddd</color>
+            <glowColor>00000005</glowColor>
+            <fontSize>0.018</fontSize>
+            <pos>0.5 0.018</pos>
+            <origin>0.5 0.5</origin>
+            <zIndex>110</zIndex>
+			<alignment>center</alignment>
+			<forceUppercase>true</forceUppercase>
+			<w>0.5</w>
+			<h>0.022</h>
+			<storyboard repeatAt="1">
+                <animation property="opacity" from="0" to="0" duration="14750" mode="easeIn"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeInQuint" begin="14750"/>
+                <animation property="offsetX" from="1" duration="250" mode="easeOut" begin="14750"/>
+                <animation property="offsetX" to="-1" duration="250" mode="easeOut" begin="18000"/>
+                <animation property="opacity" to="0" duration="250" mode="easeOutQuint" begin="18000"/>
+                <animation property="scale" from="1" to="1" duration="27500" mode="linear"/>
+            </storyboard>
+		</text>
+
+		<text name="bindingBar06" extra="true">
+			<text>${lang.lastPlayed}: {binding:lastPlayedDate}</text>
+            <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
+            <color>dddddd</color>
+            <glowColor>00000005</glowColor>
+            <fontSize>0.018</fontSize>
+            <pos>0.5 0.018</pos>
+            <origin>0.5 0.5</origin>
+            <zIndex>110</zIndex>
+			<alignment>center</alignment>
+			<forceUppercase>true</forceUppercase>
+			<w>0.5</w>
+			<h>0.022</h>
+			<storyboard repeatAt="1">
+                <animation property="opacity" from="0" to="0" duration="18000" mode="easeIn"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeInQuint" begin="18000"/>
+                <animation property="offsetX" from="1" duration="250" mode="easeOut" begin="18000"/>
+                <animation property="offsetX" to="-1" duration="250" mode="easeOut" begin="21250"/>
+                <animation property="opacity" to="0" duration="250" mode="easeOutQuint" begin="21250"/>
+                <animation property="scale" from="1" to="1" duration="27500" mode="linear"/>
+            </storyboard>
+		</text>
+
+		<text name="bindingBar07" extra="true">
+			<text>${lang.mostPlayed}: {binding:mostPlayed}</text>
+            <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
+            <color>dddddd</color>
+            <glowColor>00000005</glowColor>
+            <fontSize>0.018</fontSize>
+            <pos>0.5 0.018</pos>
+            <origin>0.5 0.5</origin>
+            <zIndex>110</zIndex>
+			<alignment>center</alignment>
+			<forceUppercase>true</forceUppercase>
+			<w>0.5</w>
+			<h>0.022</h>
+			<storyboard repeatAt="1">
+                <animation property="opacity" from="0" to="0" duration="21250" mode="easeIn"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeInQuint" begin="21250"/>
+                <animation property="offsetX" from="1" duration="250" mode="easeOut" begin="21250"/>
+                <animation property="offsetX" to="-1" duration="250" mode="easeOut" begin="24500"/>
+                <animation property="opacity" to="0" duration="250" mode="easeOutQuint" begin="24500"/>
+                <animation property="scale" from="1" to="1" duration="27500" mode="linear"/>
+            </storyboard>
+		</text>
+
+		<text name="bindingBar08" extra="true">
+			<text>${lang.retroachievements}: ${lang.cheevosTrue} (${cheevos.username})</text>
+			<text ifCheevos="false">${lang.retroachievements} ${lang.cheevosFalse}</text>
+            <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
+            <color>dddddd</color>
+            <glowColor>00000005</glowColor>
+            <fontSize>0.018</fontSize>
+            <pos>0.5 0.018</pos>
+            <origin>0.5 0.5</origin>
+            <zIndex>110</zIndex>
+			<alignment>center</alignment>
+			<forceUppercase>true</forceUppercase>
+			<w>0.5</w>
+			<h>0.022</h>
+			<storyboard repeatAt="1">
+                <animation property="opacity" from="0" to="0" duration="24500" mode="easeIn"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeInQuint" begin="24500"/>
+                <animation property="offsetX" from="1" duration="250" mode="easeOut" begin="24500"/>
+                <animation property="offsetX" to="-1" duration="250" mode="easeOut" begin="27250"/>
+                <animation property="opacity" to="0" duration="250" mode="easeOutQuint" begin="27250"/>
+                <animation property="scale" from="1" to="1" duration="27500" mode="linear"/>
+            </storyboard>
+		</text>
+
+		<text name="systemNameRandomVideo" extra="true" ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff">
+			<text>${system.name}</text>
+            <fontPath>./_inc/fonts/conthrax-sb.ttf</fontPath>
+            <color>ffffff</color>
+            <glowColor>00000040</glowColor>
+            <fontSize>0.034</fontSize>
+            <pos>0.185 0.905</pos>
+            <origin>0 0</origin>
+            <zIndex>10</zIndex>
+			<alignment>left</alignment>
+			<forceUppercase>true</forceUppercase>
+			<w>0.83</w>
+			<h>0.034</h>
+		</text>
+
+		<text name="systemFullNameRandomVideo" extra="true" ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff">
+			<text>${system.fullName}</text>
+            <fontPath>./_inc/fonts/conthrax-sb.ttf</fontPath>
+            <color>eeeeee</color>
+            <glowColor>00000033</glowColor>
+            <fontSize>0.014</fontSize>
+            <pos>0.185 0.94</pos>
+            <origin>0 0</origin>
+            <zIndex>10</zIndex>
+			<alignment>left</alignment>
+			<forceUppercase>true</forceUppercase>
+			<w>0.83</w>
+			<h>0.014</h>
+		</text>
+
+		<control name="systemNameRandomVideo,systemFullNameRandomVideo">
+			<storyboard>
+                <animation property="opacity" from="0" to="0" duration="3500" mode="easeInQuint"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeInQuint" begin="3500"/>
+           </storyboard>
+		</control>
+
+		<image name="barName" extra="true" ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff">
+			<linearSmooth>true</linearSmooth>
+            <size>1 0.06</size>
+            <pos>0.165 0.93075</pos>
+			<origin>0 0.5</origin>
+			<zIndex>9</zIndex>
+			<path>./_inc/bar.png</path>
+			<color>${overlay.colorset}</color>
+			<colorEnd>${overlay.colorset}00</colorEnd>
+			<gradientType>horizontal</gradientType>
+			<storyboard>
+                <animation property="opacity" from="0" to="0" duration="3250" mode="easeOut"/>
+                <animation property="w" from="0" to="0" duration="3250" mode="easeOut"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="3250"/>
+                <animation property="w" from="0" to="1" duration="500" mode="easeOut" begin="3250"/>
+            </storyboard>
+		</image>
+<!-- CAUSE BUGS ON RETROBAT -->
+		<image name="randomArt01,randomArt02,randomArt03,randomArt04,randomArt05,randomArt06,randomArt07,randomArt08,randomArt09,randomArt10,randomArt11,randomArt12,randomArt13" extra="true" ifSubset="randomArt:marquee|thumbnail" ifNotArch="windows">
+			<linearSmooth>true</linearSmooth>
+            <maxSize ifSubset="randomArt:marquee">0.22 0.15</maxSize>
+            <maxSize ifSubset="randomArt:thumbnail">0.14 0.26</maxSize>
+            <pos>0.99 0.95</pos>
+			<origin>1 1</origin>
+			<zIndex>15</zIndex>
+			<path ifSubset="randomArt:marquee">{random:marquee}</path>
+			<path ifSubset="randomArt:thumbnail">{random:thumbnail}</path>
+			<color>ffffff</color>
+			<offsetX>0.23</offsetX>
+		</image>
+ 
+		<image name="randomArt01" extra="true" ifNotArch="windows">
+			<storyboard repeatAt="1">
+                <animation property="offsetX" from="0.23" to="0.23" duration="4250" mode="linear"/>
+                <animation property="offsetX" from="0.23" to="0" duration="250" mode="easeOut" begin="4250"/>
+                <animation property="offsetX" from="0" to="0.23" duration="250" mode="easeIn" begin="5750"/>
+                <animation property="offsetX" from="0.23" to="0.23" duration="24000" mode="linear" begin="6000"/>
+            </storyboard>
+		</image>
+ 
+		<image name="randomArt02" extra="true" ifNotArch="windows">
+			<storyboard repeatAt="1">
+                <animation property="offsetX" from="0.23" to="0.23" duration="6250" mode="linear"/>
+                <animation property="offsetX" from="0.23" to="0" duration="250" mode="easeOut" begin="6250"/>
+                <animation property="offsetX" from="0" to="0.23" duration="250" mode="easeIn" begin="7750"/>
+                <animation property="offsetX" from="0.23" to="0.23" duration="22000" mode="linear" begin="8000"/>
+            </storyboard>
+		</image>
+  
+		<image name="randomArt03" extra="true" ifNotArch="windows">
+			<storyboard repeatAt="1">
+                <animation property="offsetX" from="0.23" to="0.23" duration="8250" mode="linear"/>
+                <animation property="offsetX" from="0.23" to="0" duration="250" mode="easeOut" begin="8250"/>
+                <animation property="offsetX" from="0" to="0.23" duration="250" mode="easeIn" begin="9750"/>
+                <animation property="offsetX" from="0.23" to="0.23" duration="20000" mode="linear" begin="10000"/>
+            </storyboard>
+		</image>
+  
+		<image name="randomArt04" extra="true" ifNotArch="windows">
+			<storyboard repeatAt="1">
+                <animation property="offsetX" from="0.23" to="0.23" duration="10250" mode="linear"/>
+                <animation property="offsetX" from="0.23" to="0" duration="250" mode="easeOut" begin="10250"/>
+                <animation property="offsetX" from="0" to="0.23" duration="250" mode="easeIn" begin="11750"/>
+                <animation property="offsetX" from="0.23" to="0.23" duration="18000" mode="linear" begin="12000"/>
+            </storyboard>
+		</image>
+  
+		<image name="randomArt05" extra="true" ifNotArch="windows">
+			<storyboard repeatAt="1">
+                <animation property="offsetX" from="0.23" to="0.23" duration="12250" mode="linear"/>
+                <animation property="offsetX" from="0.23" to="0" duration="250" mode="easeOut" begin="12250"/>
+                <animation property="offsetX" from="0" to="0.23" duration="250" mode="easeIn" begin="13750"/>
+                <animation property="offsetX" from="0.23" to="0.23" duration="16000" mode="linear" begin="14000"/>
+            </storyboard>
+		</image>
+   
+		<image name="randomArt06" extra="true" ifNotArch="windows">
+			<storyboard repeatAt="1">
+                <animation property="offsetX" from="0.23" to="0.23" duration="14250" mode="linear"/>
+                <animation property="offsetX" from="0.23" to="0" duration="250" mode="easeOut" begin="14250"/>
+                <animation property="offsetX" from="0" to="0.23" duration="250" mode="easeIn" begin="15750"/>
+                <animation property="offsetX" from="0.23" to="0.23" duration="14000" mode="linear" begin="16000"/>
+            </storyboard>
+		</image>
+   
+		<image name="randomArt07" extra="true" ifNotArch="windows">
+			<storyboard repeatAt="1">
+                <animation property="offsetX" from="0.23" to="0.23" duration="16250" mode="linear"/>
+                <animation property="offsetX" from="0.23" to="0" duration="250" mode="easeOut" begin="16250"/>
+                <animation property="offsetX" from="0" to="0.23" duration="250" mode="easeIn" begin="17750"/>
+                <animation property="offsetX" from="0.23" to="0.23" duration="12000" mode="linear" begin="18000"/>
+            </storyboard>
+		</image>
+    
+		<image name="randomArt08" extra="true" ifNotArch="windows">
+			<storyboard repeatAt="1">
+                <animation property="offsetX" from="0.23" to="0.23" duration="18250" mode="linear"/>
+                <animation property="offsetX" from="0.23" to="0" duration="250" mode="easeOut" begin="18250"/>
+                <animation property="offsetX" from="0" to="0.23" duration="250" mode="easeIn" begin="19750"/>
+                <animation property="offsetX" from="0.23" to="0.23" duration="10000" mode="linear" begin="20000"/>
+            </storyboard>
+		</image>
+     
+		<image name="randomArt09" extra="true" ifNotArch="windows">
+			<storyboard repeatAt="1">
+                <animation property="offsetX" from="0.23" to="0.23" duration="20250" mode="linear"/>
+                <animation property="offsetX" from="0.23" to="0" duration="250" mode="easeOut" begin="20250"/>
+                <animation property="offsetX" from="0" to="0.23" duration="250" mode="easeIn" begin="21750"/>
+                <animation property="offsetX" from="0.23" to="0.23" duration="8000" mode="linear" begin="22000"/>
+            </storyboard>
+		</image>
+     
+		<image name="randomArt10" extra="true" ifNotArch="windows">
+			<storyboard repeatAt="1">
+                <animation property="offsetX" from="0.23" to="0.23" duration="22250" mode="linear"/>
+                <animation property="offsetX" from="0.23" to="0" duration="250" mode="easeOut" begin="22250"/>
+                <animation property="offsetX" from="0" to="0.23" duration="250" mode="easeIn" begin="23750"/>
+                <animation property="offsetX" from="0.23" to="0.23" duration="6000" mode="linear" begin="24000"/>
+            </storyboard>
+		</image>
+      
+		<image name="randomArt11" extra="true" ifNotArch="windows">
+			<storyboard repeatAt="1">
+                <animation property="offsetX" from="0.23" to="0.23" duration="24250" mode="linear"/>
+                <animation property="offsetX" from="0.23" to="0" duration="250" mode="easeOut" begin="24250"/>
+                <animation property="offsetX" from="0" to="0.23" duration="250" mode="easeIn" begin="25750"/>
+                <animation property="offsetX" from="0.23" to="0.23" duration="4000" mode="linear" begin="26000"/>
+            </storyboard>
+		</image>
+      
+		<image name="randomArt12" extra="true" ifNotArch="windows">
+			<storyboard repeatAt="1">
+                <animation property="offsetX" from="0.23" to="0.23" duration="26250" mode="linear"/>
+                <animation property="offsetX" from="0.23" to="0" duration="250" mode="easeOut" begin="26250"/>
+                <animation property="offsetX" from="0" to="0.23" duration="250" mode="easeIn" begin="27750"/>
+                <animation property="offsetX" from="0.23" to="0.23" duration="2000" mode="linear" begin="28000"/>
+            </storyboard>
+		</image>
+       
+		<image name="randomArt13" extra="true" ifNotArch="windows">
+			<storyboard repeatAt="1">
+                <animation property="offsetX" from="0.23" to="0.23" duration="28250" mode="linear"/>
+                <animation property="offsetX" from="0.23" to="0" duration="250" mode="easeOut" begin="28250"/>
+                <animation property="offsetX" from="0" to="0.23" duration="250" mode="easeIn" begin="29750"/>
+            </storyboard>
+		</image>
+	
+        <video name="randomVideos" extra="true">
+            <default>./_inc/noise.mp4</default>
+            <path>{random}</path>
+            <path>./${system.theme}/video.mp4</path>
+            <opacity>0</opacity>
+            <opacity ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff">1</opacity>
+            <size ifSubset="systemRandomRatio:stretched">1 1</size>
+            <maxSize ifSubset="systemRandomRatio:original">1 1</maxSize>
+            <origin>0.5 0.5</origin>
+            <pos>0.5 0.5</pos>
+            <delay>0.25</delay>
+            <effect>none</effect>
+            <zIndex>6</zIndex>
+			<audio ifSubset="ambiance:randomNone">false</audio>
+			<storyboard ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff">
+                <animation property="opacity" from="0" to="0" duration="2850" mode="easeOut"/>
+                <animation property="opacity" from="0" to="1" duration="150" mode="easeOut" begin="2850"/>
+            </storyboard>
+		</video>
+ 
+		<image name="randomVideosFx" extra="true" ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff">
+            <size>1 1</size>
+            <pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+			<zIndex>7</zIndex>
+			<tile>true</tile>
+			<path>./_inc/crt.png</path>
+			<visible>false</visible>
+			<visible ifSubset="staticEffect:no">true</visible>
+			<color>ffffff90</color>
+			<storyboard>
+                <animation property="opacity" from="0" to="0" duration="2850" mode="easeOut"/>
+                <animation property="opacity" from="0" to="1" duration="150" mode="easeOut" begin="2850"/>
+            </storyboard>
+		</image>
+ 
+        <image name="backgroundVideoFix" extra="true" ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff">
+            <path>./_inc/${wallpaper}.jpg</path>
+            <maxSize>99 1</maxSize>
+            <pos>0.5 0.5</pos>
+            <origin>0.5 0.5</origin>
+            <color>808080</color>
+            <colorEnd>303030</colorEnd>
+            <gradientType>vertical</gradientType>
+            <opacity>1</opacity>
+            <zIndex>7</zIndex>
+            <storyboard>
+                <animation property="color" from="808080" to="303030" duration="3500" autoreverse="true" mode="linear"/>
+                <animation property="colorEnd" from="303030" to="808080" duration="3500" autoreverse="true" mode="linear"/>
+                <animation property="opacity" from="1" to="1" duration="3000" mode="linear"/>
+                <animation property="opacity" from="1" to="0" duration="150" mode="linear" begin="3000"/>
+            </storyboard>
+        </image>
+        
+		<image name="logoPaintFix" extra="true" ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff,carouselWallPaint:yes">
+            <linearSmooth>true</linearSmooth>
+            <path>./default/color.png</path>
+            <path>./default/color-${lang}.png</path>
+            <path>./${system.theme}/color.png</path>
+            <path>./${system.theme}/color-${lang}.png</path>
+            <path region="us">./${system.theme}/us/color.png</path>
+            <path region="jp">./${system.theme}/jp/color.png</path>
+           <maxSize>1.3 99</maxSize>
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+            <zIndex>8</zIndex>
+			<gradientType>vertical</gradientType>			
+			<color>ffffff55</color>
+			<colorEnd>ffffff00</colorEnd>
+            <storyboard>
+                <animation property="opacity" from="1" to="1" duration="3000" mode="linear"/>
+                <animation property="opacity" from="1" to="0" duration="150" mode="linear" begin="3000"/>
+            </storyboard>
+ 		</image>
+	
+		<image name="videoBackFrame" extra="true" ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff">
+			<path>./_inc/white.png</path>
+			<color>000000</color>
+			<origin>0.5 0.5</origin>
+            <pos>0.5 0.5</pos>
+            <size>1 1</size>
+			<zIndex>5</zIndex>
+            <storyboard>
+                <animation property="opacity" from="0" to="0" duration="3000" mode="easeOut"/>
+                <animation property="opacity" from="0" to="1" duration="150" mode="easeOut" begin="3000"/>
+            </storyboard>
+		</image>
+		
+        <sound name="bgsound" ifSubset="ambiance:randomAudioOff|randomVideosAudioOff">		
+            <path>./_inc/silence.ogg</path>
+        </sound>
+
+    </view>
+    
+<!--OVERLAY, BACKGROUND-->
+    
+    <view name="menu,system,basic,detailed,grid,gamecarousel">
+
+		<image name="shutter" extra="true" ifSubset="shutter:25|30|50|60">
+			<path>./_inc/white.png</path>
+			<size>1 1</size>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.5</pos>
+			<zIndex>9997</zIndex>
+			<color>00000000</color>
+			<opacity>0.5</opacity>
+            <storyboard ifSubset="shutter:25">
+                <animation property="color" from="00000000" to="0000000a" duration="40" autoreverse="true" mode="linear" repeat="forever"/>
+            </storyboard>
+             <storyboard ifSubset="shutter:30">
+                <animation property="color" from="00000000" to="0000000a" duration="33.333333333" autoreverse="true" mode="linear" repeat="forever"/>
+            </storyboard>
+             <storyboard ifSubset="shutter:50">
+                <animation property="color" from="00000000" to="0000000a" duration="20" autoreverse="true" mode="linear" repeat="forever"/>
+            </storyboard>
+             <storyboard ifSubset="shutter:60">
+                <animation property="color" from="00000000" to="0000000a" duration="16.666666667" autoreverse="true" mode="linear" repeat="forever"/>
+            </storyboard>
+ 		</image>
+		
+        <image name="overlay" extra="true">
+            <path>./_inc/overlay.png</path>
+            <maxSize>99 1</maxSize>
+            <zIndex>100</zIndex>
+			<color>${overlay.colorset}80</color>
+        </image>
+ 
+        <image name="background" extra="true">
+            <path>./_inc/${wallpaper}.jpg</path>
+            <maxSize>99 1</maxSize>
+            <pos>0.5 0.5</pos>
+            <origin>0.5 0.5</origin>
+            <color>808080</color>
+            <colorEnd>303030</colorEnd>
+            <gradientType>vertical</gradientType>
+            <opacity>1</opacity>
+            <zIndex>1</zIndex>
+            <storyboard repeat="forever">
+                <animation property="color" from="808080" to="303030" duration="3500" autoreverse="true" mode="linear"/>
+                <animation property="colorEnd" from="303030" to="808080" duration="3500" autoreverse="true" mode="linear"/>
+            </storyboard>
+        </image>
+	</view>
+
+<!--TRANSITION,COMMONS-->
+	
+	<view name="basic,detailed,grid,gamecarousel">
+       
+		<image name="logoTransition" extra="true">
+            <linearSmooth>true</linearSmooth>
+            <path>./default/color.png</path>
+            <path>./default/color-${lang}.png</path>
+            <path>./${system.theme}/color.png</path>
+            <path>./${system.theme}/color-${lang}.png</path>
+            <path region="us">./${system.theme}/us/color.png</path>
+            <path region="jp">./${system.theme}/jp/color.png</path>
+           	<maxSize>0.5 0.5</maxSize>
+			<pos>0.5 0.35</pos>
+			<origin>0.5 0.5</origin>
+            <zIndex>99</zIndex>
+			<storyboard>
+				<animation property="opacity" to="0" duration="150" mode="easeIn" begin="500"/>
+			</storyboard>
+		</image>
+
+		<image name="transitionBack" extra="true">
+            <linearSmooth>true</linearSmooth>
+            <path>./_inc/${wallpaper}.jpg</path>
+           	<maxSize>99 1</maxSize>
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+            <zIndex>98</zIndex>
+            <color>808080</color>
+            <colorEnd>303030</colorEnd>
+            <gradientType>vertical</gradientType>
+			<storyboard>
+				<animation property="opacity" to="0" duration="150" mode="easeIn" begin="500"/>
+			</storyboard>
+		</image>
+
+		<text name="transitionName" extra="true">
+			<text>${system.name}</text>
+            <fontPath>./_inc/fonts/conthrax-sb.ttf</fontPath>
+            <color>dddddd</color>
+            <glowColor>00000005</glowColor>
+            <fontSize>0.04</fontSize>
+            <pos>0.5 0.65</pos>
+            <origin>0.5 0.5</origin>
+            <zIndex>98</zIndex>
+			<alignment>center</alignment>
+			<forceUppercase>true</forceUppercase>
+			<w>0.9</w>
+			<h>0.04</h>
+			<storyboard>
+				<animation property="opacity" from="1" to="1" duration="500" mode="easeIn"/>
+				<animation property="opacity" to="0" duration="150" mode="easeIn" begin="500"/>
+			</storyboard>
+		</text>
+
+	</view>
+
+<!--BASIC-->
+	
+	<view name="basic">
+        
+		<image name="wallPaint" extra="true">
+            <path>./default/color.png</path>
+            <path>./default/color-${lang}.png</path>
+            <path>./${system.theme}/color.png</path>
+            <path>./${system.theme}/color-${lang}.png</path>
+            <path region="us">./${system.theme}/us/color.png</path>
+            <path region="jp">./${system.theme}/jp/color.png</path>
+            <linearSmooth>true</linearSmooth>
+           <maxSize>1.3 99</maxSize>
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+            <zIndex>2</zIndex>
+			<gradientType>vertical</gradientType>			
+			<color>ffffff30</color>
+			<colorEnd>ffffff00</colorEnd>
+			<visible ifSubset="gamelistWallPaint:no">false</visible>			
+		</image>
+ 
+		<textlist name="gamelist">
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.5</pos>
+			<size>1 0.925925926</size>
+			<selectedColor>ffffff</selectedColor>
+            <selectedColor ifSubset="overlayColorset:yellow|purple|pink">202020</selectedColor>		
+            <selectedColor ifSubset="overlayColorset:noColor|green">202020</selectedColor>		
+			<primaryColor>dddddd</primaryColor>
+			<secondaryColor>dddddd</secondaryColor>
+			<selectorColor>${overlay.colorset}ea</selectorColor>	  		
+			<selectorColor ifSubset="overlayColorset:noColor">ffffff</selectorColor>	  		
+			<fontPath>./_inc/fonts/conthrax-sb.ttf</fontPath>
+			<fontSize>0.022</fontSize>
+			<alignment>center</alignment>
+			<horizontalMargin>0.001</horizontalMargin>
+			<forceUppercase>true</forceUppercase>
+			<scrollSound>./_inc/gamelist.wav</scrollSound>
+			<zIndex>13</zIndex>
+			<lines>21</lines>
+ 			</textlist>
+
+		<text name="basicBar" extra="true">
+			<text>${system.fullName}</text>
+            <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
+            <color>dddddd</color>
+            <glowColor>00000005</glowColor>
+            <fontSize>0.022</fontSize>
+            <pos>0.5 0.018</pos>
+            <origin>0.5 0.5</origin>
+            <zIndex>110</zIndex>
+			<alignment>center</alignment>
+			<forceUppercase>true</forceUppercase>
+			<w>0.5</w>
+			<h>0.022</h>
+			<storyboard>
+                <animation property="opacity" from="0" to="0" duration="100" mode="easeIn"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeInQuint" begin="100"/>
+            </storyboard>
+		</text>
+	
+	</view>
+	
+<!--DETAILED GRID GAMECAROUSEL-->
+		
+	<view name="detailed,grid,gamecarousel">
+	
+		<image name="videoContainer" extra="true">
+            <linearSmooth>true</linearSmooth>
+			<path>./_inc/container.png</path>
+			<path ifArch="windows">./_inc/containerRetrobat.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.14 0.64</pos>
+			<pos ifSubset="themeRatio:54">0.14 0.73</pos>
+			<pos ifSubset="themeRatio:43">0.14 0.72</pos>
+			<maxSize>99 1</maxSize>
+			<maxSize ifSubset="themeRatio:54|43">1 99</maxSize>
+			<zIndex>14</zIndex>
+		</image>
+	
+		<image name="led" extra="true">
+            <linearSmooth>true</linearSmooth>
+			<path>./_inc/led.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.14 0.64</pos>
+			<pos ifSubset="themeRatio:54">0.14 0.73</pos>
+			<pos ifSubset="themeRatio:43">0.14 0.72</pos>
+			<maxSize>99 1</maxSize>
+			<maxSize ifSubset="themeRatio:54|43">1 99</maxSize>
+			<zIndex>15</zIndex>
+			<color>00000000</color>
+			<storyboard event="open">
+            </storyboard>
+			<storyboard event="activateNext">
+                 <animation property="color" to="ffffff" duration="100" autoreverse="true" mode="bump"/>
+            </storyboard>
+			<storyboard event="activatePrev">
+                 <animation property="color" to="ffffff" duration="100" autoreverse="true" mode="bump"/>
+           </storyboard>
+			<storyboard event="deactivateNext">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+			<storyboard event="deactivatePrev">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+		</image>
+	
+		<image name="rew" extra="true">
+            <linearSmooth>true</linearSmooth>
+			<path>./_inc/rew.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.14 0.64</pos>
+			<pos ifSubset="themeRatio:54">0.14 0.73</pos>
+			<pos ifSubset="themeRatio:43">0.14 0.72</pos>
+			<maxSize>99 1</maxSize>
+			<maxSize ifSubset="themeRatio:54|43">1 99</maxSize>
+			<zIndex>11</zIndex>
+			<color>00000000</color>
+			<storyboard event="open">
+            </storyboard>
+			<storyboard event="activateNext">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+			<storyboard event="activatePrev">
+                 <animation property="color" from="00000000" to="ffffff" duration="1" mode="linear"/>
+                 <animation property="color" to="00000000" duration="600" mode="easeInQuint" begin="600"/>
+           </storyboard>
+			<storyboard event="deactivateNext">
+                <animation property="color" from="00000000" to="00000000" duration="1" mode="easeIn"/>
+            </storyboard>
+			<storyboard event="deactivatePrev">
+                <animation property="color" from="00000000" to="00000000" duration="1" mode="easeIn"/>
+            </storyboard>
+		</image>
+	
+		<image name="next" extra="true">
+            <linearSmooth>true</linearSmooth>
+			<path>./_inc/next.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.14 0.64</pos>
+			<pos ifSubset="themeRatio:54">0.14 0.73</pos>
+			<pos ifSubset="themeRatio:43">0.14 0.72</pos>
+			<maxSize>99 1</maxSize>
+			<maxSize ifSubset="themeRatio:54|43">1 99</maxSize>
+			<zIndex>11</zIndex>
+			<color>00000000</color>
+			<storyboard event="open">
+            </storyboard>
+			<storyboard event="activateNext">
+                 <animation property="color" from="00000000" to="ffffff" duration="1" mode="linear"/>
+                 <animation property="color" to="00000000" duration="600" mode="easeInQuint" begin="600"/>
+             </storyboard>
+			<storyboard event="activatePrev">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+           </storyboard>
+			<storyboard event="deactivateNext">
+                <animation property="color" from="00000000" to="00000000" duration="1" mode="easeIn"/>
+            </storyboard>
+			<storyboard event="deactivatePrev">
+                <animation property="color" from="00000000" to="00000000" duration="1" mode="easeIn"/>
+            </storyboard>
+		</image>
+	
+		<image name="play" extra="true">
+            <linearSmooth>true</linearSmooth>
+			<path>./_inc/play.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.14 0.64</pos>
+			<pos ifSubset="themeRatio:54">0.14 0.73</pos>
+			<pos ifSubset="themeRatio:43">0.14 0.72</pos>
+			<maxSize>99 1</maxSize>
+			<maxSize ifSubset="themeRatio:54|43">1 99</maxSize>
+			<zIndex>11</zIndex>
+			<color>00000000</color>
+			<storyboard event="open">
+                 <animation property="color" to="00000000" duration="1000" mode="linear"/>
+                 <animation property="color" to="ffffff" duration="250" mode="easeOutQuint" begin="1000"/>
+                 <animation property="color" to="ffffff" duration="2000" mode="linear" begin="1250"/>
+                 <animation property="color" to="00000000" duration="250" mode="easeInQuint" begin="3250"/>
+            </storyboard>
+			<storyboard event="activateNext">
+                 <animation property="color" to="00000000" duration="1000" mode="linear"/>
+                 <animation property="color" to="ffffff" duration="250" mode="easeOutQuint" begin="1000"/>
+                 <animation property="color" to="ffffff" duration="2000" mode="linear" begin="1250"/>
+                 <animation property="color" to="00000000" duration="250" mode="easeInQuint" begin="3250"/>
+            </storyboard>
+			<storyboard event="activatePrev">
+                 <animation property="color" to="00000000" duration="1000" mode="linear"/>
+                 <animation property="color" to="ffffff" duration="250" mode="easeOutQuint" begin="1000"/>
+                 <animation property="color" to="ffffff" duration="2000" mode="linear" begin="1250"/>
+                 <animation property="color" to="00000000" duration="250" mode="easeInQuint" begin="3250"/>
+           </storyboard>
+			<storyboard event="deactivateNext">
+                <animation property="color" from="00000000" to="00000000" duration="1" mode="easeIn"/>
+            </storyboard>
+			<storyboard event="deactivatePrev">
+                <animation property="color" from="00000000" to="00000000" duration="1" mode="easeIn"/>
+            </storyboard>
+		</image>
+
+		<text name="logoContainer" extra="true">
+			<text>b a t o c e r a</text>
+			<text ifArch="windows">r e t r o b a t</text>
+            <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
+            <fontPath ifArch="windows">./_inc/fonts/snes.ttf</fontPath>
+            <color>cccccc</color>
+            <glowColor>00000015</glowColor>
+            <fontSize>0.012</fontSize>
+            <fontSize ifSubset="themeRatio:54|43">0.01</fontSize>
+            <fontSize ifArch="windows">0.018</fontSize>
+            <fontSize ifArch="windows" ifSubset="themeRatio:54|43">0.013</fontSize>
+            <pos>0.316822917 0.9</pos>
+            <pos ifSubset="themeRatio:54|43">0.316822917 0.9125</pos>
+            <origin>0.5 0.5</origin>
+            <zIndex>10</zIndex>
+			<alignment>center</alignment>
+			<forceUppercase>true</forceUppercase>
+			<zIndex>15</zIndex>
+		</text>
+		
+		<image name="videoBackFrame" extra="true">
+			<path>./_inc/backFrame.png</path>
+			<color>000800</color>
+			<color ifSubset="randomRatio:original,tvScreenColor:blue">000080</color>
+			<origin>0.5 0.5</origin>
+			<pos>0.14 0.64</pos>
+			<pos ifSubset="themeRatio:54">0.14 0.73</pos>
+			<pos ifSubset="themeRatio:43">0.14 0.72</pos>
+			<maxSize>99 1</maxSize>
+            <maxSize ifSubset="themeRatio:54|43">1 99</maxSize>
+			<zIndex>4</zIndex>
+		</image>
+
+		<image name="randomVideosFx" extra="true">
+            <size>0.5265625 0.503703704</size>
+			<size ifSubset="themeRatio:54">0.526666667 0.355208333</size>
+			<size ifSubset="themeRatio:43">0.526666667 0.378888889</size>
+            <pos>0.316822917 0.64</pos>
+            <pos ifSubset="themeRatio:54">0.3175 0.73</pos>
+            <pos ifSubset="themeRatio:43">0.3175 0.72</pos>
+			<origin>0.5 0.5</origin>
+			<zIndex>12</zIndex>
+			<tile>true</tile>
+			<path>./_inc/crt.png</path>
+			<visible>false</visible>
+			<visible ifSubset="staticEffect:no">true</visible>
+			<color>ffffff90</color>
+		</image>
+
+        <video name="md_video">
+			<showSnapshotNoVideo>true</showSnapshotNoVideo>
+			<showSnapshotDelay>true</showSnapshotDelay>
+			<size ifSubset="randomRatio:stretched">0.5265625 0.503703704</size>
+			<size ifSubset="randomRatio:stretched,themeRatio:54">0.526666667 0.355208333</size>
+			<size ifSubset="randomRatio:stretched,themeRatio:43">0.526666667 0.378888889</size>
+            <maxSize ifSubset="randomRatio:original">0.5265625 0.503703704</maxSize>
+			<maxSize ifSubset="randomRatio:original,themeRatio:54">0.526666667 0.355208333</maxSize>
+			<maxSize ifSubset="randomRatio:original,themeRatio:43">0.526666667 0.378888889</maxSize>
+            <pos>0.316822917 0.64</pos>
+            <pos ifSubset="themeRatio:54">0.3175 0.73</pos>
+            <pos ifSubset="themeRatio:43">0.3175 0.72</pos>
+			<origin>0.5 0.5</origin>
+            <delay>1</delay>
+            <effect>size</effect>
+            <zIndex>6</zIndex>
+            <color>ffffff</color>
+		</video>
+
+		<text name="md_name">
+			<text>${system.name}</text>
+            <fontPath>./_inc/fonts/conthrax-sb.ttf</fontPath>
+            <color>ffffff</color>
+            <glowColor>00000005</glowColor>
+            <fontSize>0.02</fontSize>
+            <pos>0.0134375 0.0425</pos>
+            <origin>0 0</origin>
+            <zIndex>10</zIndex>
+			<alignment>left</alignment>
+			<forceUppercase>true</forceUppercase>
+			<w>0.34</w>
+			<w ifSubset="themeRatio:54|43">0.6</w>
+			<h>0.034</h>
+			<storyboard event="open">
+                <animation property="w" from="0.34" to="0.34" duration="1" mode="linear"/>
+            </storyboard>
+			<storyboard event="activateNext">
+                 <animation property="w" from="0" to="0.34" duration="750" mode="easeOut"/>
+            </storyboard>
+			<storyboard event="activatePrev">
+                <animation property="w" from="0" to="0.34" duration="750" mode="easeOut"/>
+           </storyboard>
+			<storyboard event="deactivateNext">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+			<storyboard event="deactivatePrev">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+
+			<storyboard event="open" ifSubset="themeRatio:54|43">
+                <animation property="w" from="0.6" to="0.6" duration="1" mode="linear"/>
+            </storyboard>
+			<storyboard event="activateNext" ifSubset="themeRatio:54|43">
+                 <animation property="w" from="0" to="0.6" duration="750" mode="easeOut"/>
+            </storyboard>
+			<storyboard event="activatePrev" ifSubset="themeRatio:54|43">
+                <animation property="w" from="0" to="0.6" duration="750" mode="easeOut"/>
+           </storyboard>
+			<storyboard event="deactivateNext" ifSubset="themeRatio:54|43">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+			<storyboard event="deactivatePrev" ifSubset="themeRatio:54|43">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+		</text>
+	
+		<text name="systemFullNameRandomVideo" extra="true">
+			<text>${system.fullName}</text>
+            <fontPath>./_inc/fonts/conthrax-sb.ttf</fontPath>
+            <color>cccccc</color>
+            <fontSize>0.014</fontSize>
+            <pos>0.0134375 0.075</pos>
+            <origin>0 0</origin>
+            <zIndex>10</zIndex>
+			<alignment>left</alignment>
+			<forceUppercase>true</forceUppercase>
+			<w>0.34</w>
+			<h>0.014</h>
+			<storyboard event="open">
+                <animation property="opacity" from="0" to="1" duration="1" mode="linear"/>
+            </storyboard>
+			<storyboard event="activateNext">
+                 <animation property="opacity" from="0" to="1" duration="1" mode="linear"/>
+            </storyboard>
+			<storyboard event="activatePrev">
+                <animation property="opacity" from="0" to="1" duration="1" mode="linear"/>
+           </storyboard>
+			<storyboard event="deactivateNext">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+			<storyboard event="deactivatePrev">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+		</text>
+
+		<datetime name="md_releasedate">
+            <fontPath>./_inc/fonts/conthrax-sb.ttf</fontPath>
+            <color>cccccc</color>
+            <fontSize>0.014</fontSize>
+            <pos>0.0134375 0.095</pos>
+            <origin>0 0</origin>
+            <zIndex>10</zIndex>
+			<alignment>left</alignment>
+			<forceUppercase>true</forceUppercase>
+			<w>0.34</w>
+			<h>0.014</h>
+		</datetime>
+
+		<image name="line" extra="true">
+			<path>./_inc/white.png</path>
+			<size>0.34 0.001</size>
+            <pos>0.0134375 0.1155</pos>
+            <origin>0 1</origin>>
+			<zIndex>10</zIndex>
+			<color>dddddd</color>
+			<storyboard event="open">
+                <animation property="opacity" from="0" to="1" duration="1" mode="linear"/>
+            </storyboard>
+			<storyboard event="activateNext">
+                 <animation property="opacity" from="0" to="1" duration="1" mode="linear"/>
+            </storyboard>
+			<storyboard event="activatePrev">
+                <animation property="opacity" from="0" to="1" duration="1" mode="linear"/>
+           </storyboard>
+			<storyboard event="deactivateNext">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+			<storyboard event="deactivatePrev">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+		</image>
+
+		<image name="line2" extra="true">
+			<path>./_inc/white.png</path>
+			<size>0.34 0.001</size>
+            <pos>0.0134375 0.36</pos>
+            <pos ifSubset="themeRatio:54|43">0.0134375 0.5</pos>
+            <origin>0 0</origin>>
+			<zIndex>10</zIndex>
+			<color>dddddd</color>
+			<storyboard event="open">
+                <animation property="opacity" from="0" to="1" duration="1" mode="linear"/>
+            </storyboard>
+			<storyboard event="activateNext">
+                 <animation property="opacity" from="0" to="1" duration="1" mode="linear"/>
+            </storyboard>
+			<storyboard event="activatePrev">
+                <animation property="opacity" from="0" to="1" duration="1" mode="linear"/>
+           </storyboard>
+			<storyboard event="deactivateNext">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+			<storyboard event="deactivatePrev">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+		</image>
+
+		<image name="md_thumbnail">
+            <linearSmooth>true</linearSmooth>
+			<maxSize>0.255 0.31</maxSize>
+			<maxSize ifSubset="themeRatio:54|43">0.255 0.3845</maxSize>
+			<origin>1 0</origin>
+			<pos>0.620208333 0.05</pos>
+			<pos ifSubset="themeRatio:54|43">0.620208333 0.1155</pos>
+			<zIndex>9</zIndex>
+			<color>ffffff</color>
+			<opacity>0</opacity>			
+
+			<storyboard event="open">
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeOut"/>
+           </storyboard>
+			<storyboard event="activateNext">
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeOut"/>
+                <animation property="offsetY" from="0.005" to="0" duration="250" mode="easeOut"/>
+            </storyboard>
+			<storyboard event="activatePrev">
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeOut"/>
+                <animation property="offsetY" from="-0.005" to="0" duration="250" mode="easeOut"/>
+           </storyboard>
+			<storyboard event="deactivateNext">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+			<storyboard event="deactivatePrev">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+
+			<storyboard event="open" repeatAt="5000" ifSubset="boxbackDisplay:yes">
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeOut"/>
+                <animation property="opacity" from="1" to="0" duration="250" mode="easeOut" begin="5000"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="10000"/>
+                <animation property="offsetX" from="-0.025" to="0" duration="250" mode="easeOut" begin="10000"/>
+                <animation property="opacity" from="1" to="1" duration="4750" mode="easeOut" begin="10250"/>
+            </storyboard>
+			<storyboard event="activateNext" repeatAt="5000" ifSubset="boxbackDisplay:yes">
+                <animation property="offsetY" from="0.005" to="0" duration="250" mode="easeOut"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeOut"/>
+                <animation property="opacity" from="1" to="0" duration="250" mode="easeOut" begin="5000"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="10000"/>
+                <animation property="offsetX" from="-0.025" to="0" duration="250" mode="easeOut" begin="10000"/>
+                <animation property="opacity" from="1" to="1" duration="4750" mode="easeOut" begin="10250"/>
+            </storyboard>
+			<storyboard event="activatePrev" repeatAt="5000" ifSubset="boxbackDisplay:yes">
+                <animation property="offsetY" from="-0.005" to="0" duration="250" mode="easeOut"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeOut"/>
+                <animation property="opacity" from="1" to="0" duration="250" mode="easeOut" begin="5000"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="10000"/>
+                <animation property="offsetX" from="-0.025" to="0" duration="250" mode="easeOut" begin="10000"/>
+                <animation property="opacity" from="1" to="1" duration="4750" mode="easeOut" begin="10250"/>
+           </storyboard>
+			<storyboard event="deactivateNext" ifSubset="boxbackDisplay:yes">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+			<storyboard event="deactivatePrev" ifSubset="boxbackDisplay:yes">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+		</image>
+
+		<image name="md_boxback" ifSubset="boxbackDisplay:yes">
+            <linearSmooth>true</linearSmooth>
+			<maxSize>0.255 0.31</maxSize>
+			<maxSize ifSubset="themeRatio:54|43">0.255 0.3845</maxSize>
+			<origin>1 0</origin>
+			<pos>0.620208333 0.05</pos>
+			<pos ifSubset="themeRatio:54|43">0.620208333 0.1155</pos>
+			<zIndex>9</zIndex>
+			<color>00000000</color>
+			<opacity>0</opacity>			
+			<storyboard event="open" repeatAt="5000">
+                <animation property="color" from="00000000" to="ffffff" duration="1" mode="linear"/>
+                <animation property="opacity" from="0" to="0" duration="5000" mode="easeOut"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="5000"/>
+                <animation property="offsetX" from="-0.025" to="0" duration="250" mode="easeOut" begin="5000"/>
+                <animation property="opacity" from="1" to="0" duration="250" mode="easeOut" begin="10000"/>
+                <animation property="opacity" from="0" to="0" duration="4750" mode="easeOut" begin="10250"/>
+           </storyboard>
+			<storyboard event="activateNext" repeatAt="5000">
+                <animation property="color" from="00000000" to="ffffff" duration="1" mode="linear"/>
+                <animation property="opacity" from="0" to="0" duration="5000" mode="easeOut"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="5000"/>
+                <animation property="offsetX" from="-0.025" to="0" duration="250" mode="easeOut" begin="5000"/>
+                <animation property="opacity" from="1" to="0" duration="250" mode="easeOut" begin="10000"/>
+                <animation property="opacity" from="0" to="0" duration="4750" mode="easeOut" begin="10250"/>
+             </storyboard>
+			<storyboard event="activatePrev" repeatAt="5000">
+                <animation property="color" from="00000000" to="ffffff" duration="1" mode="linear"/>
+                <animation property="opacity" from="0" to="0" duration="5000" mode="easeOut"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="5000"/>
+                <animation property="offsetX" from="-0.025" to="0" duration="250" mode="easeOut" begin="5000"/>
+                <animation property="opacity" from="1" to="0" duration="250" mode="easeOut" begin="10000"/>
+                <animation property="opacity" from="0" to="0" duration="4750" mode="easeOut" begin="10250"/>
+           </storyboard>
+			<storyboard event="deactivateNext">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+			<storyboard event="deactivatePrev">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+		</image>
+
+		<image name="md_fanart">
+            <linearSmooth>true</linearSmooth>
+			<maxSize>1 99</maxSize>
+			<maxSize ifSubset="themeRatio:54|43">99 1</maxSize>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.5</pos>
+			<zIndex>2</zIndex>
+			<color>ffffffbf</color>
+			<colorEnd>ffffffbf</colorEnd>
+			<gradientType>vertical</gradientType>			
+			<opacity>0</opacity>			
+			<scale>0</scale>	
+			<visible ifSubset="gamelistWallPaint:no">false</visible>			
+			<storyboard event="open">
+                <animation property="scale" from="0" to="1" duration="1" mode="easeOut"/>
+                <animation property="opacity" from="0" to="0.3" duration="500" mode="easeOut"/>
+           </storyboard>
+			<storyboard event="activateNext">
+                <animation property="scale" from="0" to="1" duration="1" mode="easeOut"/>
+                <animation property="opacity" from="0" to="0.3" duration="500" mode="easeOut"/>
+            </storyboard>
+			<storyboard event="activatePrev">
+                <animation property="scale" from="0" to="1" duration="1" mode="easeOut"/>
+                <animation property="opacity" from="0" to="0.3" duration="500" mode="easeOut"/>
+           </storyboard>
+			<storyboard event="deactivateNext">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+			<storyboard event="deactivatePrev">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+		</image>
+
+<!--gamebar-->
+		
+		<image name="md_flag">
+			<origin>0 1</origin>
+			<pos>0.08 0.112</pos>
+			<pos ifSubset="themeRatio:54|43">0.12 0.111</pos>
+			<maxSize>0.022 0.02</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>13</zIndex>
+		</image>
+
+		<image name="ghost_flag" extra="true">
+			<origin>0 1</origin>
+			<pos>0.08 0.112</pos>
+			<pos ifSubset="themeRatio:54|43">0.12 0.111</pos>
+			<path>./_inc/icons/ghostFlag.png</path>
+			<maxSize>0.022 0.02</maxSize>
+			<color>80808080</color>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>12</zIndex>
+			<storyboard event="open">
+                <animation property="opacity" from="0" to="1" duration="1" mode="linear"/>
+            </storyboard>
+			<storyboard event="activateNext">
+                 <animation property="opacity" from="0" to="1" duration="1" mode="linear"/>
+            </storyboard>
+			<storyboard event="activatePrev">
+                <animation property="opacity" from="0" to="1" duration="1" mode="linear"/>
+           </storyboard>
+			<storyboard event="deactivateNext">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+			<storyboard event="deactivatePrev">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+		</image>
+
+		<text name="md_players">
+			<fontSize>0.023</fontSize>
+			<size>0.03 0.023</size>
+			<alignment>left</alignment>
+			<origin>0 1</origin>
+			<pos>0.105 0.112</pos>
+			<pos ifSubset="themeRatio:54|43">0.155 0.111</pos>
+			<zIndex>15</zIndex>
+			<color>dddddd</color>
+			<glowColor>00000040</glowColor>
+			<fontPath>./_inc/fonts/players.ttf</fontPath>
+		</text>
+		
+		<image name="md_manual,md_nomanual">
+			<origin>0 1</origin>
+			<pos>0.125 0.112</pos>
+			<pos ifSubset="themeRatio:54|43">0.185 0.111</pos>
+			<path>./_inc/icons/book.png</path>
+			<maxSize>0.02 0.02</maxSize>
+			<color>dddddd</color>
+			<zIndex>13</zIndex>
+		</image>
+		
+		<image name="ghost_manual" extra="true">
+			<origin>0 1</origin>
+			<pos>0.125 0.112</pos>
+			<pos ifSubset="themeRatio:54|43">0.185 0.111</pos>
+			<path>./_inc/icons/book.png</path>
+			<maxSize>0.02 0.02</maxSize>
+			<color>80808080</color>
+			<zIndex>12</zIndex>
+			<storyboard event="open">
+                <animation property="opacity" from="0" to="1" duration="1" mode="linear"/>
+            </storyboard>
+			<storyboard event="activateNext">
+                 <animation property="opacity" from="0" to="1" duration="1" mode="linear"/>
+            </storyboard>
+			<storyboard event="activatePrev">
+                <animation property="opacity" from="0" to="1" duration="1" mode="linear"/>
+           </storyboard>
+			<storyboard event="deactivateNext">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+			<storyboard event="deactivatePrev">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+		</image>
+
+		<image name="md_nomanual">
+			<color>00000000</color>
+		</image>
+	
+		<image name="md_savestate,md_nosavestate">
+			<origin>0 1</origin>
+			<path>./_inc/icons/SaveState.png</path>
+			<pos>0.145 0.112</pos>
+			<pos ifSubset="themeRatio:54|43">0.215 0.111</pos>
+			<maxSize>0.02 0.02</maxSize>
+			<color>dddddd</color>
+			<zIndex>13</zIndex>
+		</image>
+
+		<image name="ghost_savestate" extra="true">
+			<origin>0 1</origin>
+			<path>./_inc/icons/SaveState.png</path>
+			<pos>0.145 0.112</pos>
+			<pos ifSubset="themeRatio:54|43">0.215 0.111</pos>
+			<maxSize>0.02 0.02</maxSize>
+			<color>80808080</color>
+			<zIndex>12</zIndex>
+			<storyboard event="open">
+                <animation property="opacity" from="0" to="1" duration="1" mode="linear"/>
+            </storyboard>
+			<storyboard event="activateNext">
+                 <animation property="opacity" from="0" to="1" duration="1" mode="linear"/>
+            </storyboard>
+			<storyboard event="activatePrev">
+                <animation property="opacity" from="0" to="1" duration="1" mode="linear"/>
+           </storyboard>
+			<storyboard event="deactivateNext">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+			<storyboard event="deactivatePrev">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+		</image>
+  
+		<image name="md_nosavestate">
+			<color>00000000</color>
+		</image>
+	
+		<image name="md_cheevos,md_notcheevos">
+			<origin>0 1</origin>
+			<path>./_inc/icons/Contest.png</path>
+			<pos>0.165 0.112</pos>
+			<pos ifSubset="themeRatio:54|43">0.245 0.111</pos>
+			<maxSize>0.02 0.02</maxSize>     
+			<color>090909</color>
+			<zIndex>13</zIndex>
+		</image>
+ 		
+		<image name="ghost_cheevos" extra="true">
+			<origin>0 1</origin>
+			<path>./_inc/icons/Contest.png</path>
+			<pos>0.165 0.112</pos>
+			<pos ifSubset="themeRatio:54|43">0.245 0.111</pos>
+			<maxSize>0.02 0.02</maxSize>     
+			<color>80808080</color>
+			<zIndex>12</zIndex>
+			<storyboard event="open">
+                <animation property="opacity" from="0" to="1" duration="1" mode="linear"/>
+            </storyboard>
+			<storyboard event="activateNext">
+                 <animation property="opacity" from="0" to="1" duration="1" mode="linear"/>
+            </storyboard>
+			<storyboard event="activatePrev">
+                <animation property="opacity" from="0" to="1" duration="1" mode="linear"/>
+           </storyboard>
+			<storyboard event="deactivateNext">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+			<storyboard event="deactivatePrev">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+		</image>
+
+		<image name="md_notcheevos">
+			<color>00000000</color>
+		</image> 
+	
+		<image name="md_kidgame, md_notkidgame"> 
+			<origin>0 1</origin>
+			<pos>0.185 0.112</pos>
+			<pos ifSubset="themeRatio:54|43">0.275 0.111</pos>
+			<path>./_inc/icons/kid.svg</path>
+			<maxSize>0.02 0.02</maxSize>
+			<color>dddddd</color>
+			<zIndex>13</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+
+		<image name="ghost_kidgame" extra="true"> 
+			<origin>0 1</origin>
+			<pos>0.185 0.112</pos>
+			<pos ifSubset="themeRatio:54|43">0.275 0.111</pos>
+			<path>./_inc/icons/kid.svg</path>
+			<maxSize>0.02 0.02</maxSize>
+			<color>80808080</color>
+			<zIndex>12</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+                <animation property="opacity" from="0" to="1" duration="1" mode="linear"/>
+            </storyboard>
+			<storyboard event="activateNext">
+                 <animation property="opacity" from="0" to="1" duration="1" mode="linear"/>
+            </storyboard>
+			<storyboard event="activatePrev">
+                <animation property="opacity" from="0" to="1" duration="1" mode="linear"/>
+           </storyboard>
+			<storyboard event="deactivateNext">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+			<storyboard event="deactivatePrev">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+		</image>
+
+		<image name="md_notkidgame"> 
+			<color>00000000</color>
+		</image>
+
+		<image name="md_hidden">
+			<origin>0 1</origin>
+			<pos>0.203 0.112</pos>
+			<pos ifSubset="themeRatio:54|43">0.305 0.111</pos>
+			<path>./_inc/icons/hidden.svg</path>
+			<maxSize>0.02 0.02</maxSize>
+			<color>090909</color>
+			<zIndex>13</zIndex>
+		</image>
+
+		<image name="ghost_hidden" extra="true">
+			<origin>0 1</origin>
+			<pos>0.203 0.112</pos>
+			<pos ifSubset="themeRatio:54|43">0.305 0.111</pos>
+			<path>./_inc/icons/hidden.svg</path>
+			<maxSize>0.02 0.02</maxSize>
+			<color>80808080</color>
+			<zIndex>12</zIndex>
+			<storyboard event="open">
+                <animation property="opacity" from="0" to="1" duration="1" mode="linear"/>
+            </storyboard>
+			<storyboard event="activateNext">
+                 <animation property="opacity" from="0" to="1" duration="1" mode="linear"/>
+            </storyboard>
+			<storyboard event="activatePrev">
+                <animation property="opacity" from="0" to="1" duration="1" mode="linear"/>
+           </storyboard>
+			<storyboard event="deactivateNext">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+			<storyboard event="deactivatePrev">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+		</image>
+
+<!--game info bar-->
+		
+		<rating name="md_rating">
+            <color>dddddd</color>
+            <pos>0.47 0.018</pos>
+            <origin>0 0.5</origin>
+            <zIndex>110</zIndex>
+			<w>0.5</w>
+			<h>0.018</h>
+			<opacity>0</opacity>
+			<storyboard event="open" repeatAt="1">
+                <animation property="offsetX" from="0" to="0" duration="250" mode="linear" begin="1"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="linear" begin="1"/>
+                <animation property="offsetX" to="-1" duration="250" mode="easeOut" begin="4750"/>
+                <animation property="opacity" to="0" duration="250" mode="easeOutQuint" begin="4750"/>
+                <animation property="scale" from="1" to="1" duration="21500" mode="linear"/>
+            </storyboard>
+			<storyboard event="activateNext" repeatAt="1">
+                <animation property="offsetX" from="0" to="0" duration="250" mode="linear" begin="1"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="linear" begin="1"/>
+                <animation property="offsetX" to="-1" duration="250" mode="easeOut" begin="4750"/>
+                <animation property="opacity" to="0" duration="250" mode="easeOutQuint" begin="4750"/>
+                <animation property="scale" from="1" to="1" duration="21500" mode="linear"/>
+            </storyboard>
+			<storyboard event="activatePrev" repeatAt="1">
+                 <animation property="offsetX" from="0" to="0" duration="250" mode="linear" begin="1"/>
+               <animation property="opacity" from="0" to="1" duration="250" mode="linear" begin="1"/>
+                <animation property="offsetX" to="-1" duration="250" mode="easeOut" begin="4750"/>
+                <animation property="opacity" to="0" duration="250" mode="easeOutQuint" begin="4750"/>
+                <animation property="scale" from="1" to="1" duration="21500" mode="linear"/>
+            </storyboard>
+			<storyboard event="deactivateNext">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+			<storyboard event="deactivatePrev">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+		</rating>
+
+		<text name="md_genre">
+            <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
+            <color>dddddd</color>
+            <glowColor>00000005</glowColor>
+            <fontSize>0.018</fontSize>
+            <pos>0.5 0.018</pos>
+            <origin>0.5 0.5</origin>
+            <zIndex>110</zIndex>
+			<alignment>center</alignment>
+			<forceUppercase>true</forceUppercase>
+			<w>0.5</w>
+			<h>0.022</h>
+			<opacity>0</opacity>
+			<offsetX>-2</offsetX>
+			<storyboard event="open" repeatAt="1">
+                <animation property="opacity" from="0" to="0" duration="5000" mode="easeIn"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeInQuint" begin="5000"/>
+                <animation property="offsetX" from="1" to="0" duration="250" mode="easeOut" begin="5000"/>
+                <animation property="offsetX" to="-1" duration="250" mode="easeOut" begin="8250"/>
+                <animation property="opacity" to="0" duration="250" mode="easeOutQuint" begin="8250"/>
+                <animation property="scale" from="1" to="1" duration="21500" mode="linear"/>
+            </storyboard>
+			<storyboard event="activateNext" repeatAt="1">
+                <animation property="opacity" from="0" to="0" duration="5000" mode="easeIn"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeInQuint" begin="5000"/>
+                <animation property="offsetX" from="1" to="0" duration="250" mode="easeOut" begin="5000"/>
+                <animation property="offsetX" to="-1" duration="250" mode="easeOut" begin="8250"/>
+                <animation property="opacity" to="0" duration="250" mode="easeOutQuint" begin="8250"/>
+                <animation property="scale" from="1" to="1" duration="21500" mode="linear"/>
+            </storyboard>
+			<storyboard event="activatePrev" repeatAt="1">
+                <animation property="opacity" from="0" to="0" duration="5000" mode="easeIn"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeInQuint" begin="5000"/>
+                <animation property="offsetX" from="1" to="0" duration="250" mode="easeOut" begin="5000"/>
+                <animation property="offsetX" to="-1" duration="250" mode="easeOut" begin="8250"/>
+                <animation property="opacity" to="0" duration="250" mode="easeOutQuint" begin="8250"/>
+                <animation property="scale" from="1" to="1" duration="21500" mode="linear"/>
+            </storyboard>
+			<storyboard event="deactivateNext">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+			<storyboard event="deactivatePrev">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+		</text>
+
+		<text name="md_developer">
+            <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
+            <color>dddddd</color>
+            <glowColor>00000005</glowColor>
+            <fontSize>0.018</fontSize>
+            <pos>0.5 0.018</pos>
+            <origin>0 0.5</origin>
+            <zIndex>110</zIndex>
+			<alignment>left</alignment>
+			<forceUppercase>true</forceUppercase>
+			<w>0.5</w>
+			<h>0.022</h>
+			<opacity>0</opacity>
+			<offsetX>-2</offsetX>
+			<storyboard event="open" repeatAt="1">
+                <animation property="opacity" from="0" to="0" duration="8250" mode="easeIn"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeInQuint" begin="8250"/>
+                <animation property="offsetX" from="1" to="0" duration="250" mode="easeOut" begin="8250"/>
+                <animation property="offsetX" to="-1" duration="250" mode="easeOut" begin="11500"/>
+                <animation property="opacity" to="0" duration="250" mode="easeOutQuint" begin="11500"/>
+                <animation property="scale" from="1" to="1" duration="21500" mode="linear"/>
+            </storyboard>
+			<storyboard event="activateNext" repeatAt="1">
+                <animation property="opacity" from="0" to="0" duration="8250" mode="easeIn"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeInQuint" begin="8250"/>
+                <animation property="offsetX" from="1" to="0" duration="250" mode="easeOut" begin="8250"/>
+                <animation property="offsetX" to="-1" duration="250" mode="easeOut" begin="11500"/>
+                <animation property="opacity" to="0" duration="250" mode="easeOutQuint" begin="11500"/>
+                <animation property="scale" from="1" to="1" duration="21500" mode="linear"/>
+            </storyboard>
+			<storyboard event="activatePrev" repeatAt="1">
+                <animation property="opacity" from="0" to="0" duration="8250" mode="easeIn"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeInQuint" begin="8250"/>
+                <animation property="offsetX" from="1" to="0" duration="250" mode="easeOut" begin="8250"/>
+                <animation property="offsetX" to="-1" duration="250" mode="easeOut" begin="11500"/>
+                <animation property="opacity" to="0" duration="250" mode="easeOutQuint" begin="11500"/>
+                <animation property="scale" from="1" to="1" duration="21500" mode="linear"/>
+            </storyboard>
+			<storyboard event="deactivateNext">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+			<storyboard event="deactivatePrev">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+		</text>
+
+		<text name="md_lbl_developer">
+            <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
+            <color>dddddd</color>
+            <glowColor>00000005</glowColor>
+            <fontSize>0.018</fontSize>
+            <pos>0.5 0.018</pos>
+            <origin>1 0.5</origin>
+            <zIndex>110</zIndex>
+			<alignment>right</alignment>
+			<forceUppercase>true</forceUppercase>
+			<w>0.5</w>
+			<h>0.022</h>
+			<opacity>0</opacity>
+			<offsetX>-2</offsetX>
+			<storyboard event="open" repeatAt="1">
+                <animation property="opacity" from="0" to="0" duration="8250" mode="easeIn"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeInQuint" begin="8250"/>
+                <animation property="offsetX" from="1" to="0" duration="250" mode="easeOut" begin="8250"/>
+                <animation property="offsetX" to="-1" duration="250" mode="easeOut" begin="11500"/>
+                <animation property="opacity" to="0" duration="250" mode="easeOutQuint" begin="11500"/>
+                <animation property="scale" from="1" to="1" duration="21500" mode="linear"/>
+            </storyboard>
+			<storyboard event="activateNext" repeatAt="1">
+                <animation property="opacity" from="0" to="0" duration="8250" mode="easeIn"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeInQuint" begin="8250"/>
+                <animation property="offsetX" from="1" to="0" duration="250" mode="easeOut" begin="8250"/>
+                <animation property="offsetX" to="-1" duration="250" mode="easeOut" begin="11500"/>
+                <animation property="opacity" to="0" duration="250" mode="easeOutQuint" begin="11500"/>
+                <animation property="scale" from="1" to="1" duration="21500" mode="linear"/>
+            </storyboard>
+			<storyboard event="activatePrev" repeatAt="1">
+                <animation property="opacity" from="0" to="0" duration="8250" mode="easeIn"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeInQuint" begin="8250"/>
+                <animation property="offsetX" from="1" to="0" duration="250" mode="easeOut" begin="8250"/>
+                <animation property="offsetX" to="-1" duration="250" mode="easeOut" begin="11500"/>
+                <animation property="opacity" to="0" duration="250" mode="easeOutQuint" begin="11500"/>
+                <animation property="scale" from="1" to="1" duration="21500" mode="linear"/>
+            </storyboard>
+			<storyboard event="deactivateNext">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+			<storyboard event="deactivatePrev">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+		</text>
+
+		<text name="md_playcount">
+            <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
+            <color>dddddd</color>
+            <glowColor>00000005</glowColor>
+            <fontSize>0.018</fontSize>
+            <pos>0.5 0.018</pos>
+            <origin>0 0.5</origin>
+            <zIndex>110</zIndex>
+			<alignment>left</alignment>
+			<forceUppercase>true</forceUppercase>
+			<w>0.5</w>
+			<h>0.022</h>
+			<opacity>0</opacity>
+			<offsetX>-2</offsetX>
+			<storyboard event="open" repeatAt="1">
+                <animation property="opacity" from="0" to="0" duration="11500" mode="easeIn"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeInQuint" begin="11500"/>
+                <animation property="offsetX" from="1" to="0" duration="250" mode="easeOut" begin="11500"/>
+                <animation property="offsetX" to="-1" duration="250" mode="easeOut" begin="14750"/>
+                <animation property="opacity" to="0" duration="250" mode="easeOutQuint" begin="14750"/>
+                <animation property="scale" from="1" to="1" duration="21500" mode="linear"/>
+            </storyboard>
+			<storyboard event="activateNext" repeatAt="1">
+                <animation property="opacity" from="0" to="0" duration="11500" mode="easeIn"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeInQuint" begin="11500"/>
+                <animation property="offsetX" from="1" to="0" duration="250" mode="easeOut" begin="11500"/>
+                <animation property="offsetX" to="-1" duration="250" mode="easeOut" begin="14750"/>
+                <animation property="opacity" to="0" duration="250" mode="easeOutQuint" begin="14750"/>
+                <animation property="scale" from="1" to="1" duration="21500" mode="linear"/>
+            </storyboard>
+			<storyboard event="activatePrev" repeatAt="1">
+                <animation property="opacity" from="0" to="0" duration="11500" mode="easeIn"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeInQuint" begin="11500"/>
+                <animation property="offsetX" from="1" to="0" duration="250" mode="easeOut" begin="11500"/>
+                <animation property="offsetX" to="-1" duration="250" mode="easeOut" begin="14750"/>
+                <animation property="opacity" to="0" duration="250" mode="easeOutQuint" begin="14750"/>
+                <animation property="scale" from="1" to="1" duration="21500" mode="linear"/>
+            </storyboard>
+			<storyboard event="deactivateNext">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+			<storyboard event="deactivatePrev">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+		</text>
+
+		<text name="md_lbl_playcount">
+            <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
+            <color>dddddd</color>
+            <glowColor>00000005</glowColor>
+            <fontSize>0.018</fontSize>
+            <pos>0.5 0.018</pos>
+            <origin>1 0.5</origin>
+            <zIndex>110</zIndex>
+			<alignment>right</alignment>
+			<forceUppercase>true</forceUppercase>
+			<w>0.5</w>
+			<h>0.022</h>
+			<opacity>0</opacity>
+			<offsetX>-2</offsetX>
+			<storyboard event="open" repeatAt="1">
+                <animation property="opacity" from="0" to="0" duration="11500" mode="easeIn"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeInQuint" begin="11500"/>
+                <animation property="offsetX" from="1" to="0" duration="250" mode="easeOut" begin="11500"/>
+                <animation property="offsetX" to="-1" duration="250" mode="easeOut" begin="14750"/>
+                <animation property="opacity" to="0" duration="250" mode="easeOutQuint" begin="14750"/>
+                <animation property="scale" from="1" to="1" duration="21500" mode="linear"/>
+            </storyboard>
+			<storyboard event="activateNext" repeatAt="1">
+                <animation property="opacity" from="0" to="0" duration="11500" mode="easeIn"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeInQuint" begin="11500"/>
+                <animation property="offsetX" from="1" to="0" duration="250" mode="easeOut" begin="11500"/>
+                <animation property="offsetX" to="-1" duration="250" mode="easeOut" begin="14750"/>
+                <animation property="opacity" to="0" duration="250" mode="easeOutQuint" begin="14750"/>
+                <animation property="scale" from="1" to="1" duration="21500" mode="linear"/>
+            </storyboard>
+			<storyboard event="activatePrev" repeatAt="1">
+                <animation property="opacity" from="0" to="0" duration="11500" mode="easeIn"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeInQuint" begin="11500"/>
+                <animation property="offsetX" from="1" to="0" duration="250" mode="easeOut" begin="11500"/>
+                <animation property="offsetX" to="-1" duration="250" mode="easeOut" begin="14750"/>
+                <animation property="opacity" to="0" duration="250" mode="easeOutQuint" begin="14750"/>
+                <animation property="scale" from="1" to="1" duration="21500" mode="linear"/>
+            </storyboard>
+			<storyboard event="deactivateNext">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+			<storyboard event="deactivatePrev">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+		</text>
+
+		<text name="md_gametime">
+            <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
+            <color>dddddd</color>
+            <fontSize>0.018</fontSize>
+            <pos>0.5 0.018</pos>
+            <origin>0 0.5</origin>
+            <zIndex>110</zIndex>
+			<alignment>left</alignment>
+			<forceUppercase>true</forceUppercase>
+			<w>0.5</w>
+			<h>0.022</h>
+			<opacity>0</opacity>
+			<offsetX>-2</offsetX>
+			<storyboard event="open" repeatAt="1">
+                <animation property="opacity" from="0" to="0" duration="14750" mode="easeIn"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeInQuint" begin="14750"/>
+                <animation property="offsetX" from="1" to="0" duration="250" mode="easeOut" begin="14750"/>
+                <animation property="offsetX" to="-1" duration="250" mode="easeOut" begin="18000"/>
+                <animation property="opacity" to="0" duration="250" mode="easeOutQuint" begin="18000"/>
+                <animation property="scale" from="1" to="1" duration="21500" mode="linear"/>
+            </storyboard>
+			<storyboard event="activateNext" repeatAt="1">
+                <animation property="opacity" from="0" to="0" duration="14750" mode="easeIn"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeInQuint" begin="14750"/>
+                <animation property="offsetX" from="1" to="0" duration="250" mode="easeOut" begin="14750"/>
+                <animation property="offsetX" to="-1" duration="250" mode="easeOut" begin="18000"/>
+                <animation property="opacity" to="0" duration="250" mode="easeOutQuint" begin="18000"/>
+                <animation property="scale" from="1" to="1" duration="21500" mode="linear"/>
+            </storyboard>
+			<storyboard event="activatePrev" repeatAt="1">
+                <animation property="opacity" from="0" to="0" duration="14750" mode="easeIn"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeInQuint" begin="14750"/>
+                <animation property="offsetX" from="1" to="0" duration="250" mode="easeOut" begin="14750"/>
+                <animation property="offsetX" to="-1" duration="250" mode="easeOut" begin="18000"/>
+                <animation property="opacity" to="0" duration="250" mode="easeOutQuint" begin="18000"/>
+                <animation property="scale" from="1" to="1" duration="21500" mode="linear"/>
+            </storyboard>
+			<storyboard event="deactivateNext">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+			<storyboard event="deactivatePrev">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+		</text>
+
+		<text name="md_lbl_gametime">
+            <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
+            <color>dddddd</color>
+            <glowColor>00000005</glowColor>
+            <fontSize>0.018</fontSize>
+            <pos>0.5 0.018</pos>
+            <origin>1 0.5</origin>
+            <zIndex>110</zIndex>
+			<alignment>right</alignment>
+			<forceUppercase>true</forceUppercase>
+			<w>0.5</w>
+			<h>0.022</h>
+			<opacity>0</opacity>
+			<offsetX>-2</offsetX>
+			<storyboard event="open" repeatAt="1">
+                <animation property="opacity" from="0" to="0" duration="14750" mode="easeIn"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeInQuint" begin="14750"/>
+                <animation property="offsetX" from="1" to="0" duration="250" mode="easeOut" begin="14750"/>
+                <animation property="offsetX" to="-1" duration="250" mode="easeOut" begin="18000"/>
+                <animation property="opacity" to="0" duration="250" mode="easeOutQuint" begin="18000"/>
+                <animation property="scale" from="1" to="1" duration="21500" mode="linear"/>
+            </storyboard>
+			<storyboard event="activateNext" repeatAt="1">
+                <animation property="opacity" from="0" to="0" duration="14750" mode="easeIn"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeInQuint" begin="14750"/>
+                <animation property="offsetX" from="1" to="0" duration="250" mode="easeOut" begin="14750"/>
+                <animation property="offsetX" to="-1" duration="250" mode="easeOut" begin="18000"/>
+                <animation property="opacity" to="0" duration="250" mode="easeOutQuint" begin="18000"/>
+                <animation property="scale" from="1" to="1" duration="21500" mode="linear"/>
+            </storyboard>
+			<storyboard event="activatePrev" repeatAt="1">
+                <animation property="opacity" from="0" to="0" duration="14750" mode="easeIn"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeInQuint" begin="14750"/>
+                <animation property="offsetX" from="1" to="0" duration="250" mode="easeOut" begin="14750"/>
+                <animation property="offsetX" to="-1" duration="250" mode="easeOut" begin="18000"/>
+                <animation property="opacity" to="0" duration="250" mode="easeOutQuint" begin="18000"/>
+                <animation property="scale" from="1" to="1" duration="21500" mode="linear"/>
+            </storyboard>
+			<storyboard event="deactivateNext">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+			<storyboard event="deactivatePrev">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+		</text>
+
+		<datetime name="md_lastplayed">
+            <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
+            <color>dddddd</color>
+            <fontSize>0.018</fontSize>
+            <pos>0.5 0.018</pos>
+            <origin>0 0.5</origin>
+            <zIndex>110</zIndex>
+			<alignment>left</alignment>
+			<forceUppercase>true</forceUppercase>
+			<w>0.5</w>
+			<h>0.022</h>
+			<opacity>0</opacity>
+			<scale>0</scale>
+			<storyboard event="open" repeatAt="1">
+                <animation property="opacity" from="0" to="0" duration="18000" mode="easeIn"/>
+                <animation property="scale" from="0" to="1" duration="1" mode="easeInQuint" begin="18000"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeInQuint" begin="18000"/>
+                <animation property="opacity" to="0" duration="250" mode="easeOutQuint" begin="21250"/>
+                <animation property="scale" from="1" to="1" duration="21500" mode="linear"/>
+            </storyboard>
+			<storyboard event="activateNext" repeatAt="1">
+                <animation property="opacity" from="0" to="0" duration="18000" mode="easeIn"/>
+                <animation property="scale" from="0" to="1" duration="1" mode="easeInQuint" begin="18000"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeInQuint" begin="18000"/>
+                <animation property="opacity" to="0" duration="250" mode="easeOutQuint" begin="21250"/>
+                <animation property="scale" from="1" to="1" duration="21500" mode="linear"/>
+            </storyboard>
+			<storyboard event="activatePrev" repeatAt="1">
+                <animation property="opacity" from="0" to="0" duration="18000" mode="easeIn"/>
+                <animation property="scale" from="0" to="1" duration="1" mode="easeInQuint" begin="18000"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeInQuint" begin="18000"/>
+                <animation property="opacity" to="0" duration="250" mode="easeOutQuint" begin="21250"/>
+                <animation property="scale" from="1" to="1" duration="21500" mode="linear"/>
+            </storyboard>
+			<storyboard event="deactivateNext">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+			<storyboard event="deactivatePrev">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+		</datetime>
+
+
+		<text name="md_lbl_lastplayed">
+            <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
+            <color>dddddd</color>
+            <glowColor>00000005</glowColor>
+            <fontSize>0.018</fontSize>
+            <pos>0.5 0.018</pos>
+            <origin>1 0.5</origin>
+            <zIndex>110</zIndex>
+			<alignment>right</alignment>
+			<forceUppercase>true</forceUppercase>
+			<w>0.5</w>
+			<h>0.022</h>
+			<opacity>0</opacity>
+			<offsetX>-2</offsetX>
+			<storyboard event="open" repeatAt="1">
+                <animation property="opacity" from="0" to="0" duration="18000" mode="easeIn"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeInQuint" begin="18000"/>
+                <animation property="offsetX" from="1" to="0" duration="250" mode="easeOut" begin="18000"/>
+                <animation property="offsetX" to="-1" duration="250" mode="easeOut" begin="21250"/>
+                <animation property="opacity" to="0" duration="250" mode="easeOutQuint" begin="21250"/>
+                <animation property="scale" from="1" to="1" duration="21500" mode="linear"/>
+            </storyboard>
+			<storyboard event="activateNext" repeatAt="1">
+                <animation property="opacity" from="0" to="0" duration="18000" mode="easeIn"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeInQuint" begin="18000"/>
+                <animation property="offsetX" from="1" to="0" duration="250" mode="easeOut" begin="18000"/>
+                <animation property="offsetX" to="-1" duration="250" mode="easeOut" begin="21250"/>
+                <animation property="opacity" to="0" duration="250" mode="easeOutQuint" begin="21250"/>
+                <animation property="scale" from="1" to="1" duration="21500" mode="linear"/>
+            </storyboard>
+			<storyboard event="activatePrev" repeatAt="1">
+                <animation property="opacity" from="0" to="0" duration="18000" mode="easeIn"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeInQuint" begin="18000"/>
+                <animation property="offsetX" from="1" to="0" duration="250" mode="easeOut" begin="18000"/>
+                <animation property="offsetX" to="-1" duration="250" mode="easeOut" begin="21250"/>
+                <animation property="opacity" to="0" duration="250" mode="easeOutQuint" begin="21250"/>
+                <animation property="scale" from="1" to="1" duration="21500" mode="linear"/>
+            </storyboard>
+			<storyboard event="deactivateNext">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+			<storyboard event="deactivatePrev">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+		</text>
+		
+		<text name="md_description">
+			<color>ffffff</color>
+			<glowColor>00000005</glowColor>
+			<fontPath>./_inc/fonts/conthrax-sb.ttf</fontPath>
+			<fontSize>0.016</fontSize>
+			<size>0.34 0.2425</size>
+			<size ifSubset="themeRatio:54|43">0.34 0.3825</size>
+            <pos>0.0134375 0.1175</pos>
+            <origin>0 0</origin>>
+			<zIndex>10</zIndex>
+			<lineSpacing>1.56</lineSpacing>
+			<opacity>0</opacity>
+			<forceUppercase>true</forceUppercase>
+		</text>
+
+	</view>
+
+<!--DETAILED-->
+	
+	<view name="detailed">
+		
+		<textlist name="gamelist">
+			<origin>1 0</origin>
+			<pos>1.02 0.04</pos>
+			<size>0.39 0.92</size>
+			<selectedColor>ffffff</selectedColor>
+            <selectedColor ifSubset="overlayColorset:yellow|purple|pink">202020</selectedColor>		
+            <selectedColor ifSubset="overlayColorset:noColor|green">202020</selectedColor>		
+			<primaryColor>eeeeee</primaryColor>
+			<secondaryColor>eeeeee</secondaryColor>
+			<selectorImagePath>./_inc/selector.png</selectorImagePath>
+			<selectorColor>${overlay.colorset}ea</selectorColor>	  		
+			<selectorColor ifSubset="overlayColorset:noColor">ffffff</selectorColor>	  		
+			<fontPath>./_inc/fonts/conthrax-sb.ttf</fontPath>
+			<fontSize>0.02</fontSize>
+			<alignment>left</alignment>
+			<horizontalMargin>0.02</horizontalMargin>
+			<forceUppercase>true</forceUppercase>
+			<scrollSound>./_inc/gamelist.wav</scrollSound>
+			<zIndex>13</zIndex>
+			<lines>15</lines>
+ 			</textlist>
+		
+		<text name="md_description">
+			<storyboard event="open">
+                <animation property="h" from="0.2425" to="0.2425" duration="1" mode="linear"/>
+            </storyboard>
+			<storyboard event="activateNext">
+                <animation property="opacity" from="0" to="0" duration="750" mode="linear"/>
+                <animation property="opacity" from="0" to="1" duration="150" mode="easeOut" begin="750"/>
+                 <animation property="h" from="0" to="0.2425" duration="500" mode="linear" begin="750"/>
+            </storyboard>
+			<storyboard event="activatePrev">
+                <animation property="opacity" from="0" to="0" duration="750" mode="linear"/>
+                <animation property="opacity" from="0" to="1" duration="150" mode="easeOut" begin="750"/>
+                <animation property="h" from="0" to="0.2425" duration="500" mode="linear" begin="750"/>
+           </storyboard>
+			<storyboard event="deactivateNext">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+			<storyboard event="deactivatePrev">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+
+			<storyboard event="open" ifSubset="themeRatio:54|43">
+                <animation property="h" from="0.3825" to="0.3825" duration="1" mode="linear"/>
+            </storyboard>
+			<storyboard event="activateNext" ifSubset="themeRatio:54|43">
+                <animation property="opacity" from="0" to="0" duration="750" mode="linear"/>
+                <animation property="opacity" from="0" to="1" duration="150" mode="easeOut" begin="750"/>
+                 <animation property="h" from="0" to="0.3825" duration="500" mode="linear" begin="750"/>
+            </storyboard>
+			<storyboard event="activatePrev" ifSubset="themeRatio:54|43">
+                <animation property="opacity" from="0" to="0" duration="750" mode="linear"/>
+                <animation property="opacity" from="0" to="1" duration="150" mode="easeOut" begin="750"/>
+                <animation property="h" from="0" to="0.3825" duration="500" mode="linear" begin="750"/>
+           </storyboard>
+			<storyboard event="deactivateNext" ifSubset="themeRatio:54|43">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+			<storyboard event="deactivatePrev" ifSubset="themeRatio:54|43">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+		</text>
+
+		<image name="md_marquee">
+            <linearSmooth>true</linearSmooth>
+			<maxSize>0.34 0.23</maxSize>
+			<origin>0.5 0.5</origin>
+			<pos>0.1834375 0.23725</pos>
+			<pos ifSubset="themeRatio:54|43">0.1834375 0.30725</pos>
+			<zIndex>3</zIndex>
+			<color>ffffff00</color>
+			<opacity>0</opacity>			
+			<storyboard event="open">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeOut"/>
+           </storyboard>
+			<storyboard event="activateNext">
+                <animation property="color" from="ffffff00" to="ffffff" duration="250" mode="easeOut"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeOut"/>
+                <animation property="opacity" from="1" to="0" duration="250" mode="easeOut" begin="750"/>
+            </storyboard>
+			<storyboard event="activatePrev">
+                <animation property="color" from="ffffff00" to="ffffff" duration="250" mode="easeOut"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeOut"/>
+                <animation property="opacity" from="1" to="0" duration="250" mode="easeOut" begin="750"/>
+           </storyboard>
+			<storyboard event="deactivateNext">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+			<storyboard event="deactivatePrev">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+		</image>
+
+	</view>
+
+<!--GRID-->
+	
+
+	<view name="grid">
+
+		<imagegrid name="gamegrid">
+			<pos>0.6355 0.0375</pos>
+			<size>0.3645 0.926</size>
+			<autoLayout>3 3</autoLayout>
+			<autoLayout ifSubset="themeRatio:54|43">2 3</autoLayout>
+			<margin>0.02 0.02</margin>
+			<padding>0.02 0.02 0.02 0.02</padding>
+			<autoLayoutSelectedZoom>1.2</autoLayoutSelectedZoom>
+			<animateSelection>false</animateSelection>
+			<zIndex>5</zIndex>
+			<scrollSound>./_inc/gamelist.wav</scrollSound>
+			<imageSource>thumbnail</imageSource>
+		</imagegrid>
+
+
+		<gridtile name="default">
+			<backgroundColor>FFFFFF00</backgroundColor>
+			<backgroundCornerSize>32 32</backgroundCornerSize>
+			<selectionMode>video</selectionMode>
+			<padding>5 5</padding>
+			<imageColor>dddddd</imageColor>
+			<reflexion>0 0</reflexion>	  
+		</gridtile>
+	
+
+		<gridtile name="selected">
+			<backgroundCenterColor>00000000</backgroundCenterColor>
+			<backgroundEdgeColor>00000000</backgroundEdgeColor>	
+			<imageColor>ffffff</imageColor>
+		</gridtile>
+
+
+		<ninepatch name="gridtile.background:selected">
+			<animateColor>${overlay.colorset}1a</animateColor>
+			<animateColorTime>50</animateColorTime>
+		</ninepatch>
+
+		<image name="md_marquee">
+            <linearSmooth>true</linearSmooth>
+			<maxSize>0.255 0.31</maxSize>
+			<maxSize ifSubset="themeRatio:54|43">0.255 0.3845</maxSize>
+			<origin>1 0.5</origin>
+			<pos>0.620208333 0.205</pos>
+			<pos ifSubset="themeRatio:54|43">0.620208333 0.30775</pos>
+			<zIndex>11</zIndex>
+			<color>ffffff</color>
+			<colorEnd>ffffff</colorEnd>
+			<gradientType>vertical</gradientType>			
+			<opacity>0</opacity>			
+
+			<storyboard event="open">
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeOut"/>
+           </storyboard>
+			<storyboard event="activateNext">
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeOut"/>
+                <animation property="offsetY" from="0.005" to="0" duration="250" mode="easeOut"/>
+            </storyboard>
+			<storyboard event="activatePrev">
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeOut"/>
+                <animation property="offsetY" from="-0.005" to="0" duration="250" mode="easeOut"/>
+           </storyboard>
+			<storyboard event="deactivateNext">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+			<storyboard event="deactivatePrev">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+
+			<storyboard event="open" repeatAt="5000" ifSubset="boxbackDisplay:yes">
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeOut"/>
+                <animation property="opacity" from="1" to="0" duration="250" mode="easeOut" begin="5000"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="10000"/>
+                <animation property="offsetX" from="-0.025" to="0" duration="250" mode="easeOut" begin="10000"/>
+                <animation property="opacity" from="1" to="1" duration="4750" mode="easeOut" begin="10250"/>
+            </storyboard>
+			<storyboard event="activateNext" repeatAt="5000" ifSubset="boxbackDisplay:yes">
+                <animation property="offsetY" from="0.005" to="0" duration="250" mode="easeOut"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeOut"/>
+                <animation property="opacity" from="1" to="0" duration="250" mode="easeOut" begin="5000"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="10000"/>
+                <animation property="offsetX" from="-0.025" to="0" duration="250" mode="easeOut" begin="10000"/>
+                <animation property="opacity" from="1" to="1" duration="4750" mode="easeOut" begin="10250"/>
+            </storyboard>
+			<storyboard event="activatePrev" repeatAt="5000" ifSubset="boxbackDisplay:yes">
+                <animation property="offsetY" from="-0.005" to="0" duration="250" mode="easeOut"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeOut"/>
+                <animation property="opacity" from="1" to="0" duration="250" mode="easeOut" begin="5000"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="10000"/>
+                <animation property="offsetX" from="-0.025" to="0" duration="250" mode="easeOut" begin="10000"/>
+                <animation property="opacity" from="1" to="1" duration="4750" mode="easeOut" begin="10250"/>
+           </storyboard>
+			<storyboard event="deactivateNext" ifSubset="boxbackDisplay:yes">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+			<storyboard event="deactivatePrev" ifSubset="boxbackDisplay:yes">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+		</image>
+
+		<image name="md_thumbnail">
+			<visible>false</visible>
+		</image>
+	
+	</view>
+
+<!--GAMECAROUSEL-->
+	
+	<view name="gamecarousel">
+
+		<gamecarousel name="gamecarousel">
+			<type>vertical</type>
+			<pos>1 0.5005</pos>
+			<size>0.37 0.926</size>
+			<origin>1 0.5</origin>
+			<logoScale>3</logoScale>
+			<logoSize>0.300 0.24</logoSize>
+			<logoAlignment>center</logoAlignment>
+			<maxLogoCount>5</maxLogoCount>
+			<zIndex>13</zIndex>
+			<imageSource>marquee</imageSource>
+			<scrollSound>./_inc/gamelist.wav</scrollSound>
+		</gamecarousel>    
+
+		<image name="md_marquee">
+			<visible>false</visible>
+		</image>
+		
+		<text name="md_description">
+			<storyboard event="open">
+                <animation property="opacity" from="1" to="1" duration="1" mode="easeOut"/>
+            </storyboard>
+			<storyboard event="activateNext">
+                <animation property="opacity" from="1" to="1" duration="1" mode="easeOut"/>
+            </storyboard>
+			<storyboard event="activatePrev">
+                <animation property="opacity" from="1" to="1" duration="1" mode="easeOut"/>
+           </storyboard>
+			<storyboard event="deactivateNext">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+			<storyboard event="deactivatePrev">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+		</text>
+		
+	</view>
+
+
+<!--LIBRARY-->
+	
+	<customView name="library" inherits="detailed" displayName="${lang.library}">
+
+		<text name="basicBar" extra="true">
+			<text>${system.fullName}</text>
+            <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
+            <color>dddddd</color>
+            <glowColor>00000005</glowColor>
+            <fontSize>0.022</fontSize>
+            <pos>0.5 0.018</pos>
+            <origin>0.5 0.5</origin>
+            <zIndex>110</zIndex>
+			<alignment>center</alignment>
+			<forceUppercase>true</forceUppercase>
+			<w>0.5</w>
+			<h>0.022</h>
+			<storyboard>
+                <animation property="opacity" from="0" to="0" duration="100" mode="easeIn"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeInQuint" begin="100"/>
+            </storyboard>
+		</text>
+        
+		<image name="wallPaint" extra="true">
+            <path>./default/color.png</path>
+            <path>./default/color-${lang}.png</path>
+            <path>./${system.theme}/color.png</path>
+            <path>./${system.theme}/color-${lang}.png</path>
+            <path region="us">./${system.theme}/us/color.png</path>
+            <path region="jp">./${system.theme}/jp/color.png</path>
+            <linearSmooth>true</linearSmooth>
+			<maxSize>1.3 99</maxSize>
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+            <zIndex>2</zIndex>
+			<gradientType>vertical</gradientType>			
+			<color>ffffff30</color>
+			<colorEnd>ffffff00</colorEnd>
+			<visible ifSubset="gamelistWallPaint:no">false</visible>			
+		</image>
+
+		<image name="tablet,tabletGlass" extra="true">
+            <linearSmooth>true</linearSmooth>
+			<maxSize>1 99</maxSize>
+			<origin>0 0.5</origin>
+			<pos>0 0.5</pos>
+		</image>
+
+		<image name="tablet" extra="true">
+			<zIndex>13</zIndex>
+			<path>./_inc/tablet.png</path>
+		</image>
+	
+		<image name="tabletGlass" extra="true">
+			<zIndex>20</zIndex>
+			<path>./_inc/tabletGlass.png</path>
+		</image>
+ 	
+        <video name="md_video">
+			<size ifSubset="randomRatio:stretched">0.25 0.45</size>
+			<size ifSubset="randomRatio:stretched,themeRatio:43|54">0.25 0.35</size>
+			<maxSize ifSubset="randomRatio:original">0.25 0.45</maxSize>
+			<maxSize ifSubset="randomRatio:original,themeRatio:43|54">0.25 0.35</maxSize>
+			<y>0.64</y>
+			<y ifSubset="themeRatio:43|54">0.59</y>
+			<x>0.3575</x>
+            <delay>3</delay>
+			<zIndex>15</zIndex>
+		</video>
+
+		<text name="md_name,systemFullNameRandomVideo,md_description,logoContainer">
+			<visible>false</visible>
+		</text>
+
+		<datetime name="md_releasedate">
+			<visible>false</visible>
+		</datetime>
+
+		<image name="line,line2,videoContainer,videoBackFrame,randomVideosFx,led,rew,next,play" extra="true">
+			<visible>false</visible>
+		</image>
+
+		<image name="md_thumbnail,md_marquee,md_fanart,md_boxback">
+			<visible>false</visible>
+		</image>
+
+		<textlist name="gamelist">
+  		</textlist>
+
+		
+<!--gamebar off-->
+		
+		<image name="md_flag">
+			<visible>false</visible>
+			<color>00000000</color>
+		</image>
+
+		<image name="ghost_flag" extra="true">
+			<visible>false</visible>
+			<color>00000000</color>
+		</image>
+
+		<text name="md_players">
+			<visible>false</visible>
+			<color>00000000</color>
+		</text>
+		
+		<image name="md_manual,md_nomanual">
+			<visible>false</visible>
+			<color>00000000</color>
+		</image>
+		
+		<image name="ghost_manual" extra="true">
+			<visible>false</visible>
+			<color>00000000</color>
+		</image>
+
+		<image name="md_nomanual">
+			<visible>false</visible>
+			<color>00000000</color>
+		</image>
+	
+		<image name="md_savestate,md_nosavestate">
+			<visible>false</visible>
+			<color>00000000</color>
+		</image>
+
+		<image name="ghost_savestate" extra="true">
+			<visible>false</visible>
+			<color>00000000</color>
+		</image>
+  
+		<image name="md_nosavestate">
+			<visible>false</visible>
+			<color>00000000</color>
+		</image>
+	
+		<image name="md_cheevos,md_notcheevos">
+			<visible>false</visible>
+			<color>00000000</color>
+		</image>
+ 		
+		<image name="ghost_cheevos" extra="true">
+			<visible>false</visible>
+			<color>00000000</color>
+		</image>
+
+		<image name="md_notcheevos">
+			<visible>false</visible>
+			<color>00000000</color>
+		</image> 
+	
+		<image name="md_kidgame, md_notkidgame"> 
+			<visible>false</visible>
+			<color>00000000</color>
+		</image>
+
+		<image name="ghost_kidgame" extra="true"> 
+			<visible>false</visible>
+			<color>00000000</color>
+		</image>
+
+		<image name="md_notkidgame"> 
+			<visible>false</visible>
+			<color>00000000</color>
+		</image>
+
+		<image name="md_hidden">
+			<visible>false</visible>
+			<color>00000000</color>
+		</image>
+
+		<image name="ghost_hidden" extra="true">
+			<visible>false</visible>
+			<color>00000000</color>
+		</image>
+
+<!--game info bar-->
+		
+		<rating name="md_rating">
+			<visible>false</visible>
+		</rating>
+
+		<text name="md_genre">
+			<visible>false</visible>
+		</text>
+
+		<text name="md_developer">
+			<visible>false</visible>
+		</text>
+
+		<text name="md_lbl_developer">
+			<visible>false</visible>
+		</text>
+
+		<text name="md_playcount">
+			<visible>false</visible>
+		</text>
+
+		<text name="md_lbl_playcount">
+			<visible>false</visible>
+		</text>
+
+		<text name="md_gametime">
+			<visible>false</visible>
+		</text>
+
+		<text name="md_lbl_gametime">
+			<visible>false</visible>
+		</text>
+
+		<datetime name="md_lastplayed">
+			<visible>false</visible>
+ 		</datetime>
+
+		<text name="md_lbl_lastplayed">
+			<visible>false</visible>
+		</text>
+		
+	</customView>
+	
+<!--HELP-->
+    
+    <view name="screen,menu,system,basic,detailed,grid,gamecarousel">
+    
+		<helpsystem name="help">
+			<textColor>dddddd</textColor>
+			<fontSize>0.02</fontSize>
+			<origin>0 1</origin>
+			<pos>0.004 0.99</pos>
+			<fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
+			<iconColor>${overlay.colorset}</iconColor>
+		</helpsystem>
+
+		<helpsystem name="help" ifSubset="helpIcons:arcadeIcons">
+			<iconColor>ffffff</iconColor>
+			<iconUpDown>./_inc/icons/buttons_20/icon_arcade_updown.png</iconUpDown>
+			<iconLeftRight>./_inc/icons/buttons_20/icon_arcade_leftright.png</iconLeftRight>
+			<iconUpDownLeftRight>./_inc/icons/buttons_20/icon_arcade_all.png</iconUpDownLeftRight>
+			<iconA>./_inc/icons/buttons_20/icon_arcade_a.png</iconA>
+			<iconB>./_inc/icons/buttons_20/icon_arcade_b.png</iconB>
+			<iconX>./_inc/icons/buttons_20/icon_arcade_x.png</iconX>
+			<iconY>./_inc/icons/buttons_20/icon_arcade_y.png</iconY>
+			<iconL>./_inc/icons/buttons_20/icon_arcade_l.png</iconL>
+			<iconR>./_inc/icons/buttons_20/icon_arcade_r.png</iconR>
+			<iconStart>./_inc/icons/buttons_20/icon_arcade_start.png</iconStart>
+			<iconSelect>./_inc/icons/buttons_20/icon_arcade_select.png</iconSelect>
+		</helpsystem>
+
+		<helpsystem name="help" ifSubset="helpIcons:psxIcons">
+			<iconColor>ffffff</iconColor>
+			<iconUpDown>./_inc/icons/buttons_20/icon_psx_updown.png</iconUpDown>
+			<iconLeftRight>./_inc/icons/buttons_20/icon_psx_leftright.png</iconLeftRight>
+			<iconUpDownLeftRight>./_inc/icons/buttons_20/icon_psx_all.png</iconUpDownLeftRight>
+			<iconA>./_inc/icons/buttons_20/icon_psx_a.png</iconA>
+			<iconB>./_inc/icons/buttons_20/icon_psx_b.png</iconB>
+			<iconX>./_inc/icons/buttons_20/icon_psx_x.png</iconX>
+			<iconY>./_inc/icons/buttons_20/icon_psx_y.png</iconY>
+			<iconL>./_inc/icons/buttons_20/icon_psx_l.png</iconL>
+			<iconR>./_inc/icons/buttons_20/icon_psx_r.png</iconR>
+			<iconStart>./_inc/icons/buttons_20/icon_psx_start.png</iconStart>
+			<iconSelect>./_inc/icons/buttons_20/icon_psx_select.png</iconSelect>
+		</helpsystem>
+
+		<helpsystem name="help" ifSubset="helpIcons:snesIcons">
+			<iconColor>ffffff</iconColor>
+			<iconUpDown>./_inc/icons/buttons_20/icon_snes_updown.png</iconUpDown>
+			<iconLeftRight>./_inc/icons/buttons_20/icon_snes_leftright.png</iconLeftRight>
+			<iconUpDownLeftRight>./_inc/icons/buttons_20/icon_snes_all.png</iconUpDownLeftRight>
+			<iconA>./_inc/icons/buttons_20/icon_snes_a.png</iconA>
+			<iconB>./_inc/icons/buttons_20/icon_snes_b.png</iconB>
+			<iconX>./_inc/icons/buttons_20/icon_snes_x.png</iconX>
+			<iconY>./_inc/icons/buttons_20/icon_snes_y.png</iconY>
+			<iconL>./_inc/icons/buttons_20/icon_snes_l.png</iconL>
+			<iconR>./_inc/icons/buttons_20/icon_snes_r.png</iconR>
+			<iconStart>./_inc/icons/buttons_20/icon_snes_start.png</iconStart>
+			<iconSelect>./_inc/icons/buttons_20/icon_snes_select.png</iconSelect>
+		</helpsystem>
+
+		<helpsystem name="help" ifSubset="helpIcons:snesAltIcons">
+			<iconColor>ffffff</iconColor>
+			<iconUpDown>./_inc/icons/buttons_20/icon_snesalt_updown.png</iconUpDown>
+			<iconLeftRight>./_inc/icons/buttons_20/icon_snesalt_leftright.png</iconLeftRight>
+			<iconUpDownLeftRight>./_inc/icons/buttons_20/icon_snesalt_all.png</iconUpDownLeftRight>
+			<iconA>./_inc/icons/buttons_20/icon_snesalt_a.png</iconA>
+			<iconB>./_inc/icons/buttons_20/icon_snesalt_b.png</iconB>
+			<iconX>./_inc/icons/buttons_20/icon_snesalt_x.png</iconX>
+			<iconY>./_inc/icons/buttons_20/icon_snesalt_y.png</iconY>
+			<iconL>./_inc/icons/buttons_20/icon_snesalt_l.png</iconL>
+			<iconR>./_inc/icons/buttons_20/icon_snesalt_r.png</iconR>
+			<iconStart>./_inc/icons/buttons_20/icon_snesalt_start.png</iconStart>
+			<iconSelect>./_inc/icons/buttons_20/icon_snesalt_select.png</iconSelect>
+		</helpsystem>
+
+		<helpsystem name="help" ifSubset="helpIcons:xboxIcons">
+			<iconColor>ffffff</iconColor>
+			<iconUpDown>./_inc/icons/buttons_20/icon_xbox_updown.png</iconUpDown>
+			<iconLeftRight>./_inc/icons/buttons_20/icon_xbox_leftright.png</iconLeftRight>
+			<iconUpDownLeftRight>./_inc/icons/buttons_20/icon_xbox_all.png</iconUpDownLeftRight>
+			<iconA>./_inc/icons/buttons_20/icon_xbox_a.png</iconA>
+			<iconB>./_inc/icons/buttons_20/icon_xbox_b.png</iconB>
+			<iconX>./_inc/icons/buttons_20/icon_xbox_x.png</iconX>
+			<iconY>./_inc/icons/buttons_20/icon_xbox_y.png</iconY>
+			<iconL>./_inc/icons/buttons_20/icon_xbox_l.png</iconL>
+			<iconR>./_inc/icons/buttons_20/icon_xbox_r.png</iconR>
+			<iconStart>./_inc/icons/buttons_20/icon_xbox_start.png</iconStart>
+			<iconSelect>./_inc/icons/buttons_20/icon_xbox_select.png</iconSelect>
+		</helpsystem>
+
+		<helpsystem name="help" ifSubset="helpIcons:xboxOneIcons">
+			<iconColor>ffffff</iconColor>
+			<iconUpDown>./_inc/icons/buttons_20/icon_xboxone_updown.png</iconUpDown>
+			<iconLeftRight>./_inc/icons/buttons_20/icon_xboxone_leftright.png</iconLeftRight>
+			<iconUpDownLeftRight>./_inc/icons/buttons_20/icon_xboxone_all.png</iconUpDownLeftRight>
+			<iconA>./_inc/icons/buttons_20/icon_xboxone_a.png</iconA>
+			<iconB>./_inc/icons/buttons_20/icon_xboxone_b.png</iconB>
+			<iconX>./_inc/icons/buttons_20/icon_xboxone_x.png</iconX>
+			<iconY>./_inc/icons/buttons_20/icon_xboxone_y.png</iconY>
+			<iconL>./_inc/icons/buttons_20/icon_xboxone_l.png</iconL>
+			<iconR>./_inc/icons/buttons_20/icon_xboxone_r.png</iconR>
+			<iconStart>./_inc/icons/buttons_20/icon_xboxone_start.png</iconStart>
+			<iconSelect>./_inc/icons/buttons_20/icon_xboxone_select.png</iconSelect>
+		</helpsystem>
+
+	</view>
+
+<!--MENU-->
+
+    <view name="menu">
+
+        <menuText name="menutitle">
+            <fontPath>./_inc/fonts/conthrax-sb.ttf</fontPath>
+            <fontSize>0.03</fontSize>
+            <color>202020</color>
+        </menuText>
+
+        <menuText name="menufooter">
+            <fontPath>./_inc/fonts/conthrax-sb.ttf</fontPath>
+            <fontSize>0.022</fontSize>
+            <color>ffffff</color>
+        </menuText>
+
+        <menuText name="menutext">
+            <fontPath>./_inc/fonts/conthrax-sb.ttf</fontPath>
+            <fontSize>0.020</fontSize>
+            <color>121212</color>
+            <separatorColor>202020</separatorColor>
+            <selectorColor>${overlay.colorset}</selectorColor>
+            <selectedColor>ffffff</selectedColor>		
+            <selectedColor ifSubset="overlayColorset:yellow">202020</selectedColor>		
+            <selectorColor ifSubset="overlayColorset:noColor">202020</selectorColor>
+        </menuText>
+	
+        <menuTextSmall name="menutextsmall">
+            <fontPath>./_inc/fonts/conthrax-sb.ttf</fontPath>
+            <fontSize>0.014</fontSize>
+            <color>ffffff</color>
+        </menuTextSmall>
+
+        <menuBackground name="menubg">
+            <color>d7d4cccc</color>
+            <cornerSize>21 21</cornerSize>
+            <path>./_inc/menubg.png</path>
+        </menuBackground>
+
+        <menuGroup name="menugroup">
+            <fontPath>./_inc/fonts/conthrax-sb.ttf</fontPath>
+            <fontSize>0.022</fontSize>
+            <color>ffffff</color>
+            <separatorColor>505050</separatorColor>
+            <backgroundColor>606060</backgroundColor>
+            <lineSpacing>1.2</lineSpacing>
+        </menuGroup>	
+
+    </view>
+
+	<view name="screen">
+
+		<image name="scratch" extra="true">
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.5</pos>
+			<maxSize>99 1</maxSize>
+			<zIndex>9999</zIndex>
+			<path ifSubset="scratch:scratch.light">./_inc/glass_light.png</path>
+			<path ifSubset="scratch:scratch.medium">./_inc/glass_medium.png</path>
+			<path ifSubset="scratch:scratch.strong">./_inc/glass_strong.png</path>
+		</image>
+		
+		<controllerActivity name="controllerActivity">
+			<pos>0.002 0.006</pos>
+			<size>0.065 0.020</size>
+			<itemSpacing>0.003</itemSpacing>
+			<imagePath>./_inc/icons/gamepad.svg</imagePath>
+			<color>dddddd</color>
+			<activityColor>808080</activityColor>
+			<hotkeyColor>ff8080</hotkeyColor>
+		</controllerActivity>
+
+		<batteryIndicator name="batteryIndicator">
+			<pos>0.975 0.006</pos>
+			<size>0.020 0.020</size>
+			<incharge>./_inc/icons/battery/incharge.svg</incharge>
+			<full>./_inc/icons/battery/full.svg</full>
+			<at75>./_inc/icons/battery/75.svg</at75>
+			<at50>./_inc/icons/battery/50.svg</at50>
+			<at25>./_inc/icons/battery/25.svg</at25>
+			<empty>./_inc/icons/battery/empty.svg</empty>
+			<color>dddddd</color>
+		</batteryIndicator>
+	
+		<text name="clock">
+			<fontSize>0.02</fontSize>
+			<color>dddddd</color>
+			<fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
+			<pos>0.945 0.968</pos>
+		</text>
+
+		<image name="scanlines" extra="true">
+			<size>1 1</size>
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+			<zIndex>9998</zIndex>
+			<tile>true</tile>
+			<opacity ifSubset="staticEffect:scanlines|scanlinesVertical">0.6</opacity>
+			<opacity ifSubset="staticEffect:phosphorePlus">0.5</opacity>
+		</image>
+
+		<image name="scanlines" extra="true" ifSubset="staticEffect:scanlines">
+			<path>./_inc/scanlines.png</path>
+		</image>
+
+		<image name="scanlines" extra="true" ifSubset="staticEffect:scanlinesFine">
+			<path>./_inc/scanlinesFine.png</path>
+		</image>
+
+		<image name="scanlines" extra="true" ifSubset="staticEffect:scanlinesVertical">
+			<path>./_inc/scanlinesVertical.png</path>
+		</image>
+
+		<image name="scanlines" extra="true" ifSubset="staticEffect:scanlinesVerticalFine">
+			<path>./_inc/scanlinesVerticalFine.png</path>
+		</image>
+
+		<image name="scanlines" extra="true" ifSubset="staticEffect:crt">
+			<path>./_inc/crt.png</path>
+			<color>ffffff90</color>
+		</image>
+
+		<image name="scanlines" extra="true" ifSubset="staticEffect:phosphore">
+			<path>./_inc/phosphore.png</path>
+		</image>
+
+		<image name="scanlines" extra="true" ifSubset="staticEffect:phosphorePlus">
+			<path>./_inc/phosphorePlus.png</path>
+		</image>
+
+	</view>
+	
+	<include>./${system.theme}/layout.xml</include>
+
+</theme>
