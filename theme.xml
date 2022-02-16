@@ -415,13 +415,13 @@ By Helmic
                 <animation property="opacity" from="1" to="1" duration="1" mode="Linear"/>
                 <animation property="opacity" from="1" to="0" duration="150" mode="easeOut" begin="350"/>
             </storyboard>
-            <storyboard event="scroll" repeatAt="1">
+            <storyboard event="scroll" repeatAt="2">
                 <animation property="scale" from="1" to="0.9" duration="1" mode="EaseOut"/>
                 <animation property="color" from="999999" to="999999" duration="1" mode="Linear"/>
                 <animation property="opacity" from="1" to="1" duration="1" mode="Linear"/>
                 <animation property="scale" to="0.89" duration="200" autoreverse="true" mode="easeInOut" begin="100"/>
             </storyboard>
-            <storyboard event="deactivate" repeatAt="1">
+            <storyboard event="deactivate" repeatAt="2">
                 <animation property="scale" from="1" to="0.9" duration="1" mode="EaseOut"/>
                 <animation property="color" from="999999" to="999999" duration="1" mode="Linear"/>
                 <animation property="opacity" from="1" to="1" duration="1" mode="Linear"/>
