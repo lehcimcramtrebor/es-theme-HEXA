@@ -1151,8 +1151,10 @@ By Helmic
            	<maxSize>1 0.80</maxSize>
 			<pos>0.5 0.425</pos>
 			<origin>0.5 0.5</origin>
-            <zIndex>99</zIndex>
+            <zIndex>100</zIndex>
 			<storyboard>
+				<animation property="offsetY" from="0" to="-0.02" duration="250" mode="easeOut" autoreverse="true"  begin="500"/>
+
 				<animation property="color" from="000000" duration="350" mode="easeOut" begin="0"/>
 
 				<animation property="opacity" to="0" duration="150" mode="easeInQuint" begin="1000"/>
@@ -1175,8 +1177,10 @@ By Helmic
             <colorEnd>303030</colorEnd>
             <gradientType>vertical</gradientType>
 			<storyboard>
+
 				<animation property="color" from="000000" duration="250" mode="linear" begin="0"/>
 				<animation property="colorEnd" from="000000" duration="250" mode="linear" begin="0"/>
+
 				<animation property="opacity" to="0" duration="300" mode="easeIn" begin="900"/>
 			</storyboard>
 		</image>
@@ -1189,13 +1193,13 @@ By Helmic
             <fontSize>0.034</fontSize>
             <pos>0.5 0.85</pos>
             <origin>0.5 0.5</origin>
-            <zIndex>98</zIndex>
+            <zIndex>100</zIndex>
 			<alignment>center</alignment>
 			<forceUppercase>true</forceUppercase>
 			<w>0.9</w>
 			<h>0.1</h>
 			<storyboard>
-				<animation property="opacity" from="1" to="1" duration="1000" mode="easeIn"/>
+				<animation property="opacity" from="0" to="1" duration="350" mode="easeIn"/>
 				<animation property="opacity" to="0" duration="150" mode="easeIn" begin="1000"/>
 				<animation property="offsetX" from="0.02" to="0" duration="1000" mode="linear" begin="0"/>
 				<animation property="offsetX" from="0" to="-2" duration="300" mode="easeIn" begin="1000"/>
@@ -1210,18 +1214,32 @@ By Helmic
             <fontSize>0.018</fontSize>
             <pos>0.5 0.9</pos>
             <origin>0.5 0.5</origin>
-            <zIndex>98</zIndex>
+            <zIndex>100</zIndex>
 			<alignment>center</alignment>
 			<forceUppercase>true</forceUppercase>
 			<w>0.9</w>
 			<h>0.1</h>
 			<storyboard>
-				<animation property="opacity" from="1" to="1" duration="1000" mode="easeIn"/>
+				<animation property="opacity" from="0" to="1" duration="350" mode="easeIn"/>
 				<animation property="opacity" to="0" duration="150" mode="easeIn" begin="1000"/>
 				<animation property="offsetX" from="-0.02" to="0" duration="1000" mode="linear" begin="0"/>
 				<animation property="offsetX" from="0" to="2" duration="300" mode="easeIn" begin="1000"/>
 			</storyboard>
 		</text>
+
+		<image name="transitionbarName" extra="true">
+			<linearSmooth>true</linearSmooth>
+            <size>2 0.1</size>
+            <pos>0.5 0.87</pos>
+			<origin>0.5 0.5</origin>
+			<zIndex>99</zIndex>
+			<path>./_inc/bar.png</path>
+			<color>${overlay.colorset}80</color>
+			<storyboard>
+				<animation property="color" from="000000" duration="250" mode="linear" begin="0"/>
+				<animation property="opacity" to="0" duration="300" mode="easeIn" begin="900"/>
+			</storyboard>
+		</image>
 
 	</view>
 
