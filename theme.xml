@@ -593,15 +593,13 @@ By Helmic
             <zIndex>20</zIndex>
             <opacity>0</opacity>
 			<storyboard>
-                <animation property="opacity" from="0" to="0" duration="250" mode="easeIn"/>
-                <animation property="offsetY" from="0.05" to="0" duration="450" mode="easeOut"/>
-                <animation property="opacity" from="0" to="1" duration="100" mode="easeIn" begin="250"/>
+                <animation property="opacity" from="0" to="0" duration="550" mode="easeIn"/>
+                <animation property="opacity" from="0" to="1" duration="100" mode="easeIn" begin="550"/>
             </storyboard>
 
 			<storyboard ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff">
-                <animation property="opacity" from="0" to="0" duration="250" mode="easeIn"/>
-                <animation property="offsetY" from="0.05" to="0" duration="450" mode="easeOut"/>
-                <animation property="opacity" from="0" to="1" duration="100" mode="easeIn" begin="250"/>
+                <animation property="opacity" from="0" to="0" duration="550" mode="easeIn"/>
+                <animation property="opacity" from="0" to="1" duration="100" mode="easeIn" begin="550"/>
                 <animation property="opacity" from="1" to="0" duration="1000" mode="easeOutCubic" begin="2450"/>
             </storyboard>
         </text>
@@ -618,8 +616,8 @@ By Helmic
 			<alignment>center</alignment>
 			<forceUppercase>true</forceUppercase>
 			<storyboard>
-                <animation property="opacity" from="1" to="1" duration="350" mode="easeIn"/>
-                <animation property="opacity" from="1" to="0" duration="100" mode="easeIn" begin="350"/>
+                <animation property="opacity" from="0" to="1" duration="200" mode="easeIn"/>
+                <animation property="opacity" from="1" to="0" duration="100" mode="easeIn" begin="650"/>
             </storyboard>
 		</text>
 
