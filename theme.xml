@@ -3084,9 +3084,9 @@ By Helmic
         </menuText>
 
         <menuText name="menufooter">
-            <fontPath>./_inc/fonts/conthrax-sb.ttf</fontPath>
-            <fontSize>0.022</fontSize>
-            <color>ffffff</color>
+            <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
+            <fontSize>0.018</fontSize>
+            <color>202020</color>
         </menuText>
 
         <menuText name="menutext">
