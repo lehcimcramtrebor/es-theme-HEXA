@@ -254,6 +254,9 @@ By Helmic
 		<lang.marquee>marquees</lang.marquee>
 		<lang.marquee lang="fr">logos de jeux</lang.marquee>
 
+		<lang.logoVisualAssistance>carousel • display logo visual assistance</lang.logoVisualAssistance>
+		<lang.logoVisualAssistance lang="fr">carrousel • afficher l'assistance visuelle des logos</lang.logoVisualAssistance>
+
 	</variables>
 
 <!--SUBSETS-->
@@ -267,6 +270,11 @@ By Helmic
     <subset name="spaceCarousel" displayName="${lang.spaceCarousel}" ifSubset="themeRatio:169">
 		<include name="thin" displayName="${lang.thin}"/>
         <include name="large" displayName="${lang.large}"/>
+    </subset>
+
+    <subset name="logoVisualAssistance" displayName="${lang.logoVisualAssistance}">
+		<include name="no" displayName="${lang.no}"/>
+        <include name="yes" displayName="${lang.yes}"/>
     </subset>
 
     <subset name="carouselWallPaint" displayName="${lang.carouselWallPaint}">
@@ -388,10 +396,113 @@ By Helmic
 
     </variables>
 
+
+    <view name="system" ifSubset="logoVisualAssistance:yes">
+
+<!--LOGO VISUAL ASSISTANCE-->
+
+	<image name="logoAssistFocus" extra="true">
+		<linearSmooth>true</linearSmooth>
+		<zIndex>98</zIndex>
+		<size>1 1</size>
+		<origin>0.5 0.5</origin>
+		<pos>0.5 0.5</pos>
+		<path>./_inc/white.png</path>
+		<color>00000000</color>
+		<colorEnd>00000080</colorEnd>
+		<gradientType>vertical</gradientType>
+		<opacity>0</opacity>
+			<storyboard>
+                <animation property="opacity" from="0" to="1" duration="100" mode="linear"/>
+                <animation property="opacity" from="1" to="1" duration="150" mode="linear" begin="100"/>
+                <animation property="opacity" from="1" to="0" duration="250" mode="easeIn" begin="250"/>
+            </storyboard>
+	</image>
+
+	<image name="logoAssist" extra="true">
+		<linearSmooth>true</linearSmooth>
+		<zIndex>99</zIndex>
+		<maxSize>0.25 0.25</maxSize>
+		<origin>0.5 0.5</origin>
+		<pos>0.5 0.75</pos>
+		<color>ffffff</color>
+		<opacity>0</opacity>
+
+			<storyboard>
+                <animation property="opacity" from="0" to="1" duration="75" mode="linear"/>
+                <animation property="opacity" from="1" to="1" duration="175" mode="linear" begin="75"/>
+                <animation property="opacity" from="1" to="0" duration="250" mode="easeOutQuint" begin="250"/>
+
+                <animation property="scale" from="0.9" to="1" duration="250" mode="linear"/>
+                <animation property="scale" from="1" to="2" duration="250" mode="easeOut" begin="250"/>
+            </storyboard>
+
+		<path ifArch="windows" ifSubset="logos:classic">./../es-theme-carbon/art/logos/${system.theme}.png</path>
+		<path ifArch="windows" ifSubset="logos:classic">./../es-theme-carbon/art/logos/${system.theme}.svg</path>
+		<path ifArch="windows" ifSubset="logos:classic">./../es-theme-carbon/art/logos/${system.theme}-w.png</path>
+		<path ifArch="windows" ifSubset="logos:classic">./../es-theme-carbon/art/logos/${system.theme}-w.svg</path>
+		<path ifArch="windows" ifSubset="logos:classic">./../es-theme-carbon/art/logos/${system.theme}-${lang}.png</path>
+		<path ifArch="windows" ifSubset="logos:classic">./../es-theme-carbon/art/logos/${system.theme}-${lang}.svg</path>
+
+		<path ifNotArch="windows" ifSubset="logos:classic">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}.png</path>
+		<path ifNotArch="windows" ifSubset="logos:classic">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}.svg</path>
+		<path ifNotArch="windows" ifSubset="logos:classic">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}-w.png</path>
+		<path ifNotArch="windows" ifSubset="logos:classic">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}-w.svg</path>
+		<path ifNotArch="windows" ifSubset="logos:classic">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}-${lang}.png</path>
+		<path ifNotArch="windows" ifSubset="logos:classic">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}-${lang}.svg</path>
+
+		<path ifSubset="logos:classic">./_inc/logos/${system.theme}.png</path>
+		<path ifSubset="logos:classic">./_inc/logos/${system.theme}.svg</path>
+		<path ifSubset="logos:classic">./_inc/logos/${system.theme}-clear.png</path>
+		<path ifSubset="logos:classic">./_inc/logos/${system.theme}-clear.svg</path>
+		<path ifSubset="logos:classic">./_inc/logos/${system.theme}-${lang}.png</path>
+		<path ifSubset="logos:classic">./_inc/logos/${system.theme}-${lang}.svg</path>
+	</image>
+
+	<image name="logoAssist" region="us" extra="true">
+
+		<path ifArch="windows" ifSubset="logos:classic">./../es-theme-carbon/art/logos/us/${system.theme}.png</path>
+		<path ifArch="windows" ifSubset="logos:classic">./../es-theme-carbon/art/logos/us/${system.theme}.svg</path>
+		<path ifArch="windows" ifSubset="logos:classic">./../es-theme-carbon/art/logos/us/${system.theme}-w.png</path>
+		<path ifArch="windows" ifSubset="logos:classic">./../es-theme-carbon/art/logos/us/${system.theme}-w.svg</path>
+
+		<path ifNotArch="windows" ifSubset="logos:classic">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/us/${system.theme}.png</path>
+		<path ifNotArch="windows" ifSubset="logos:classic">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/us/${system.theme}.svg</path>
+		<path ifNotArch="windows" ifSubset="logos:classic">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/us/${system.theme}-w.png</path>
+		<path ifNotArch="windows" ifSubset="logos:classic">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/us/${system.theme}-w.svg</path>
+
+		<path ifSubset="logos:classic">./_inc/logos/us/${system.theme}.png</path>
+		<path ifSubset="logos:classic">./_inc/logos/us/${system.theme}.svg</path>
+		<path ifSubset="logos:classic">./_inc/logos/us/${system.theme}-clear.png</path>
+		<path ifSubset="logos:classic">./_inc/logos/us/${system.theme}-clear.svg</path>
+	</image>
+
+	<image name="logoAssist" region="jp" extra="true">
+
+		<path ifArch="windows" ifSubset="logos:classic">./../es-theme-carbon/art/logos/jp/${system.theme}.png</path>
+		<path ifArch="windows" ifSubset="logos:classic">./../es-theme-carbon/art/logos/jp/${system.theme}.svg</path>
+		<path ifArch="windows" ifSubset="logos:classic">./../es-theme-carbon/art/logos/jp/${system.theme}-w.png</path>
+		<path ifArch="windows" ifSubset="logos:classic">./../es-theme-carbon/art/logos/jp/${system.theme}-w.svg</path>
+
+		<path ifNotArch="windows" ifSubset="logos:classic">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/jp/${system.theme}.png</path>
+		<path ifNotArch="windows" ifSubset="logos:classic">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/jp/${system.theme}.svg</path>
+		<path ifNotArch="windows" ifSubset="logos:classic">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/jp/${system.theme}-w.png</path>
+		<path ifNotArch="windows" ifSubset="logos:classic">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/jp/${system.theme}-w.svg</path>
+
+		<path ifSubset="logos:classic">./_inc/logos/jp/${system.theme}.png</path>
+		<path ifSubset="logos:classic">./_inc/logos/jp/${system.theme}.svg</path>
+		<path ifSubset="logos:classic">./_inc/logos/jp/${system.theme}-clear.png</path>
+		<path ifSubset="logos:classic">./_inc/logos/jp/${system.theme}-clear.svg</path>
+	</image>
+
+	</view>
+	
+<!--END OF LOGO VISUAL ASSISTANCE-->
+	
+    <view name="system">
+
 <!--CAROUSEL-->
 
-    <view name="system">
-	
         <carousel name="systemcarousel">
             <type>horizontal</type>
             <pos>0 0</pos>
@@ -495,7 +606,7 @@ By Helmic
             <path>./${system.theme}/color-${lang}.png</path>
             <path region="us">./${system.theme}/us/color.png</path>
             <path region="jp">./${system.theme}/jp/color.png</path>
-           <maxSize>1 0.92962963</maxSize>
+			<maxSize>1 0.92962963</maxSize>
 			<pos>0.5 0.5</pos>
 			<origin>0.5 0.5</origin>
             <zIndex>11</zIndex>
@@ -612,7 +723,7 @@ By Helmic
             <fontSize>0.02</fontSize>
             <pos>0.5 0.94</pos>
             <origin>0.5 0.5</origin>
-            <zIndex>10</zIndex>
+            <zIndex>100</zIndex>
 			<alignment>center</alignment>
 			<forceUppercase>true</forceUppercase>
 			<storyboard>
