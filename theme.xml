@@ -281,8 +281,8 @@ By Helmic
     </subset>
 
     <subset name="carouselWallPaint" displayName="${lang.carouselWallPaint}">
-        <include name="no" displayName="${lang.no}"/>
 		<include name="yes" displayName="${lang.yes}"/>
+        <include name="no" displayName="${lang.no}"/>
     </subset>
 
 	<subset name="transition" displayName="${lang.transition}">
@@ -291,8 +291,8 @@ By Helmic
 	</subset>
 
     <subset name="gamelistWallPaint" displayName="${lang.gamelistWallPaint}" appliesTo="system,basic,detailed,grid,gamecarousel">
-        <include name="no" displayName="${lang.no}"/>
 		<include name="yes" displayName="${lang.yes}"/>
+        <include name="no" displayName="${lang.no}"/>
     </subset>
 
     <subset name="ambiance" displayName="${lang.ambiance}">
@@ -693,13 +693,13 @@ By Helmic
             <path>./${system.theme}/color-${lang}.png</path>
             <path region="us">./${system.theme}/us/color.png</path>
             <path region="jp">./${system.theme}/jp/color.png</path>
-           <maxSize>1.3 99</maxSize>
+			<maxSize>1.3 99</maxSize>
 			<pos>0.5 0.5</pos>
-			<origin>0.5 0.5</origin>
+			<origin>0.5 0.7</origin>
             <zIndex>2</zIndex>
 			<gradientType>vertical</gradientType>			
-			<color>ffffff55</color>
-			<colorEnd>ffffff00</colorEnd>
+			<color>ffffff4d</color>
+			<colorEnd>ffffff1a</colorEnd>
 		</image>
 		
         <text name="systemInfo">     
