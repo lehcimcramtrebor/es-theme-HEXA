@@ -257,6 +257,9 @@ By Helmic
 		<lang.logoVisualAssistance>carousel • display logo visual assistance</lang.logoVisualAssistance>
 		<lang.logoVisualAssistance lang="fr">carrousel • afficher l'assistance visuelle des logos</lang.logoVisualAssistance>
 
+		<lang.tvLogo>gamelist • display tv logos</lang.tvLogo>
+		<lang.tvLogo lang="fr">listes de jeux • afficher les logos dans la tv</lang.tvLogo>
+
 	</variables>
 
 <!--SUBSETS-->
@@ -346,7 +349,7 @@ By Helmic
 		<include name="60" displayName="${lang.shutter.60}"/>
 		<include name="no" displayName="${lang.shutter.no}"/>
 	</subset>
-<!--CAUSE BUGS ON RETROBAT -->
+
 	<subset name="randomArt" displayName="${lang.randomArt}" appliesTo="system,basic,detailed,grid,gamecarousel">
 		<include name="marquee" displayName="${lang.marquee}"/>
 		<include name="thumbnail" displayName="${lang.thumbnail}"/>
@@ -366,6 +369,11 @@ By Helmic
 	<subset name="tvScreenColor" displayName="${lang.tvScreenColor}" appliesTo="system,basic,detailed,grid,gamecarousel" ifSubset="randomRatio:original">
 		<include name="standard" displayName="${lang.standard}"/>
 		<include name="blue" displayName="${lang.blue}"/>
+	</subset>
+
+	<subset name="tvLogo" displayName="${lang.tvLogo}" appliesTo="system,basic,detailed,grid,gamecarousel">
+		<include name="yes" displayName="${lang.yes}"/>
+		<include name="no" displayName="${lang.no}"/>
 	</subset>
 
 	<subset name="boxbackDisplay" displayName="${lang.boxbackDisplay}" appliesTo="system,basic,detailed,grid,gamecarousel">
@@ -1621,6 +1629,90 @@ By Helmic
             <color>ffffff</color>
 		</video>
 
+	<image name="logoAssistFocus" extra="true">
+		<linearSmooth>true</linearSmooth>
+		<zIndex>98</zIndex>
+		<size>1 1</size>
+		<origin>0.5 0.5</origin>
+		<pos>0.5 0.5</pos>
+		<path>./_inc/white.png</path>
+		<color>00000000</color>
+		<colorEnd>00000080</colorEnd>
+		<gradientType>vertical</gradientType>
+		<opacity>0</opacity>
+			<storyboard>
+                <animation property="opacity" from="0" to="1" duration="100" mode="linear"/>
+                <animation property="opacity" from="1" to="1" duration="150" mode="linear" begin="100"/>
+                <animation property="opacity" from="1" to="0" duration="250" mode="easeIn" begin="250"/>
+            </storyboard>
+	</image>
+
+	<image name="logoTV" extra="true" ifSubset="tvLogo:yes">
+		<linearSmooth>true</linearSmooth>
+		<zIndex>7</zIndex>
+		<maxSize>0.14 0.08</maxSize>
+		<origin>0. 1</origin>
+		<pos>0.0625 0.88</pos>
+		<color>ffffff</color>
+		<y ifSubset="themeRatio:43|54">0.9</y>
+		<path ifArch="windows" ifSubset="logos:classic">./../es-theme-carbon/art/logos/${system.theme}.png</path>
+		<path ifArch="windows" ifSubset="logos:classic">./../es-theme-carbon/art/logos/${system.theme}.svg</path>
+		<path ifArch="windows" ifSubset="logos:classic">./../es-theme-carbon/art/logos/${system.theme}-w.png</path>
+		<path ifArch="windows" ifSubset="logos:classic">./../es-theme-carbon/art/logos/${system.theme}-w.svg</path>
+		<path ifArch="windows" ifSubset="logos:classic">./../es-theme-carbon/art/logos/${system.theme}-${lang}.png</path>
+		<path ifArch="windows" ifSubset="logos:classic">./../es-theme-carbon/art/logos/${system.theme}-${lang}.svg</path>
+
+		<path ifNotArch="windows" ifSubset="logos:classic">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}.png</path>
+		<path ifNotArch="windows" ifSubset="logos:classic">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}.svg</path>
+		<path ifNotArch="windows" ifSubset="logos:classic">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}-w.png</path>
+		<path ifNotArch="windows" ifSubset="logos:classic">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}-w.svg</path>
+		<path ifNotArch="windows" ifSubset="logos:classic">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}-${lang}.png</path>
+		<path ifNotArch="windows" ifSubset="logos:classic">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}-${lang}.svg</path>
+
+		<path ifSubset="logos:classic">./_inc/logos/${system.theme}.png</path>
+		<path ifSubset="logos:classic">./_inc/logos/${system.theme}.svg</path>
+		<path ifSubset="logos:classic">./_inc/logos/${system.theme}-clear.png</path>
+		<path ifSubset="logos:classic">./_inc/logos/${system.theme}-clear.svg</path>
+		<path ifSubset="logos:classic">./_inc/logos/${system.theme}-${lang}.png</path>
+		<path ifSubset="logos:classic">./_inc/logos/${system.theme}-${lang}.svg</path>
+	</image>
+
+	<image name="logoTV" region="us" extra="true" ifSubset="tvLogo:yes">
+
+		<path ifArch="windows" ifSubset="logos:classic">./../es-theme-carbon/art/logos/us/${system.theme}.png</path>
+		<path ifArch="windows" ifSubset="logos:classic">./../es-theme-carbon/art/logos/us/${system.theme}.svg</path>
+		<path ifArch="windows" ifSubset="logos:classic">./../es-theme-carbon/art/logos/us/${system.theme}-w.png</path>
+		<path ifArch="windows" ifSubset="logos:classic">./../es-theme-carbon/art/logos/us/${system.theme}-w.svg</path>
+
+		<path ifNotArch="windows" ifSubset="logos:classic">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/us/${system.theme}.png</path>
+		<path ifNotArch="windows" ifSubset="logos:classic">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/us/${system.theme}.svg</path>
+		<path ifNotArch="windows" ifSubset="logos:classic">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/us/${system.theme}-w.png</path>
+		<path ifNotArch="windows" ifSubset="logos:classic">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/us/${system.theme}-w.svg</path>
+
+		<path ifSubset="logos:classic">./_inc/logos/us/${system.theme}.png</path>
+		<path ifSubset="logos:classic">./_inc/logos/us/${system.theme}.svg</path>
+		<path ifSubset="logos:classic">./_inc/logos/us/${system.theme}-clear.png</path>
+		<path ifSubset="logos:classic">./_inc/logos/us/${system.theme}-clear.svg</path>
+	</image>
+
+	<image name="logoTV" region="jp" extra="true" ifSubset="tvLogo:yes">
+
+		<path ifArch="windows" ifSubset="logos:classic">./../es-theme-carbon/art/logos/jp/${system.theme}.png</path>
+		<path ifArch="windows" ifSubset="logos:classic">./../es-theme-carbon/art/logos/jp/${system.theme}.svg</path>
+		<path ifArch="windows" ifSubset="logos:classic">./../es-theme-carbon/art/logos/jp/${system.theme}-w.png</path>
+		<path ifArch="windows" ifSubset="logos:classic">./../es-theme-carbon/art/logos/jp/${system.theme}-w.svg</path>
+
+		<path ifNotArch="windows" ifSubset="logos:classic">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/jp/${system.theme}.png</path>
+		<path ifNotArch="windows" ifSubset="logos:classic">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/jp/${system.theme}.svg</path>
+		<path ifNotArch="windows" ifSubset="logos:classic">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/jp/${system.theme}-w.png</path>
+		<path ifNotArch="windows" ifSubset="logos:classic">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/jp/${system.theme}-w.svg</path>
+
+		<path ifSubset="logos:classic">./_inc/logos/jp/${system.theme}.png</path>
+		<path ifSubset="logos:classic">./_inc/logos/jp/${system.theme}.svg</path>
+		<path ifSubset="logos:classic">./_inc/logos/jp/${system.theme}-clear.png</path>
+		<path ifSubset="logos:classic">./_inc/logos/jp/${system.theme}-clear.svg</path>
+	</image>
+
 		<text name="md_name">
 			<text>${system.name}</text>
             <fontPath>./_inc/fonts/conthrax-sb.ttf</fontPath>
@@ -2859,6 +2951,10 @@ By Helmic
 <!--LIBRARY-->
 	
 	<customView name="library" inherits="detailed" displayName="${lang.library}">
+
+		<image name="logoTV" extra="true">
+			<visible>false</visible>
+		</image>
 
 		<text name="basicBar" extra="true">
 			<text>${system.fullName}</text>
