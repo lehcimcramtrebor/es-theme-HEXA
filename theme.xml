@@ -2120,7 +2120,7 @@ By Helmic
 			<pos>0.165 0.112</pos>
 			<pos ifSubset="themeRatio:54|43">0.245 0.111</pos>
 			<maxSize>0.02 0.02</maxSize>     
-			<color>090909</color>
+			<color>dddddd</color>
 			<zIndex>13</zIndex>
 		</image>
  		
