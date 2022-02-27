@@ -10,8 +10,8 @@ By Helmic
 	<view name="grid">
 
 		<imagegrid name="gamegrid">
-			<autoLayout>2 4</autoLayout>
-			<autoLayout ifSubset="themeRatio:54|43">1 4</autoLayout>
+			<autoLayout>3 3</autoLayout>
+			<autoLayout ifSubset="themeRatio:54|43">2 3</autoLayout>
 
 		</imagegrid>
 
