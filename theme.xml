@@ -567,22 +567,22 @@ By Helmic
                 <animation property="color" from="999999" to="999999" duration="1" mode="Linear"/>
                 <animation property="opacity" from="1" to="1" duration="1" mode="Linear"/>
                 <animation property="opacity" to="0" duration="250" mode="Linear" begin="3000"/>
-                <animation property="scale" to="0.89" duration="200" autoreverse="true" mode="easeInOut" begin="100"/>
-                <animation property="scale" to="0.89" duration="200" autoreverse="true" mode="easeInOut" begin="600"/>
-                <animation property="scale" to="0.89" duration="200" autoreverse="true" mode="easeInOut" begin="1100"/>
-                <animation property="scale" to="0.89" duration="200" autoreverse="true" mode="easeInOut" begin="1600"/>
-                <animation property="scale" to="0.89" duration="200" autoreverse="true" mode="easeInOut" begin="2100"/>
+                <animation property="scale" from="0.90" to="0.89" duration="200" autoreverse="true" mode="easeInOut" begin="100"/>
+                <animation property="scale" from="0.90" to="0.89" duration="200" autoreverse="true" mode="easeInOut" begin="600"/>
+                <animation property="scale" from="0.90" to="0.89" duration="200" autoreverse="true" mode="easeInOut" begin="1100"/>
+                <animation property="scale" from="0.90" to="0.89" duration="200" autoreverse="true" mode="easeInOut" begin="1600"/>
+                <animation property="scale" from="0.90" to="0.89" duration="200" autoreverse="true" mode="easeInOut" begin="2100"/>
             </storyboard>
             <storyboard event="deactivate" ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff">
                 <animation property="scale" from="1" to="0.9" duration="1" mode="EaseOut"/>
                 <animation property="color" from="999999" to="999999" duration="1" mode="Linear"/>
                 <animation property="opacity" from="1" to="1" duration="1" mode="Linear"/>
                 <animation property="opacity" to="0" duration="250" mode="Linear" begin="3000"/>
-                <animation property="scale" to="0.91" duration="200" autoreverse="true" mode="easeInOut" begin="100"/>
-                <animation property="scale" to="0.91" duration="200" autoreverse="true" mode="easeInOut" begin="600"/>
-                <animation property="scale" to="0.91" duration="200" autoreverse="true" mode="easeInOut" begin="1100"/>
-                <animation property="scale" to="0.91" duration="200" autoreverse="true" mode="easeInOut" begin="1600"/>
-                <animation property="scale" to="0.91" duration="200" autoreverse="true" mode="easeInOut" begin="2100"/>
+                <animation property="scale" from="0.90" to="0.91" duration="200" autoreverse="true" mode="easeInOut" begin="100"/>
+                <animation property="scale" from="0.90" to="0.91" duration="200" autoreverse="true" mode="easeInOut" begin="600"/>
+                <animation property="scale" from="0.90" to="0.91" duration="200" autoreverse="true" mode="easeInOut" begin="1100"/>
+                <animation property="scale" from="0.90" to="0.91" duration="200" autoreverse="true" mode="easeInOut" begin="1600"/>
+                <animation property="scale" from="0.90" to="0.91" duration="200" autoreverse="true" mode="easeInOut" begin="2100"/>
              </storyboard>
 			
  		</image>
