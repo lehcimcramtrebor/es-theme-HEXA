@@ -261,8 +261,8 @@ By Helmic
 		<lang.tvLogo lang="fr">listes de jeux • afficher les logos dans la tv</lang.tvLogo>
 
 		<!--wall choice-->
-		<lang.wall>system view • choose wall</lang.wall>
-		<lang.wall lang="fr">vue système • choisir le mur</lang.wall>
+		<lang.wall>theme • choose wall</lang.wall>
+		<lang.wall lang="fr">thème • choisir le mur</lang.wall>
 
 		<lang.wallDefault>default</lang.wallDefault>
 		<lang.wallDefault lang="fr">par défaut</lang.wallDefault>
@@ -280,6 +280,11 @@ By Helmic
         <include name="43" displayName="${lang.43}"/>
     </subset>
 
+    <subset name="wall" displayName="${lang.wall}">
+		<include name="wallDefault" displayName="${lang.wallDefault}"/>
+        <include name="wallFlatGrey" displayName="${lang.wallFlatGrey}"/>
+    </subset>
+
     <subset name="spaceCarousel" displayName="${lang.spaceCarousel}" ifSubset="themeRatio:169">
 		<include name="thin" displayName="${lang.thin}"/>
         <include name="large" displayName="${lang.large}"/>
@@ -288,11 +293,6 @@ By Helmic
     <subset name="logoVisualAssistance" displayName="${lang.logoVisualAssistance}">
 		<include name="no" displayName="${lang.no}"/>
         <include name="yes" displayName="${lang.yes}"/>
-    </subset>
-
-    <subset name="wall" displayName="${lang.wall}">
-		<include name="wallDefault" displayName="${lang.wallDefault}"/>
-        <include name="wallFlatGrey" displayName="${lang.wallFlatGrey}"/>
     </subset>
 
     <subset name="carouselWallPaint" displayName="${lang.carouselWallPaint}">
