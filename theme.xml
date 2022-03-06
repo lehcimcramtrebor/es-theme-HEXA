@@ -291,20 +291,44 @@ By Helmic
 		<lang.wallStainBroke>broken steel (no paints)</lang.wallStainBroke>
 		<lang.wallStainBroke lang="fr">métal cassé (peintures désactivées)</lang.wallStainBroke>
 
-		<lang.wallColorBlue>blue (no paints)</lang.wallColorBlue>
-		<lang.wallColorBlue lang="fr">bleu (peintures désactivées)</lang.wallColorBlue>
+		<lang.wallFuture>futuristic steel (no paints)</lang.wallFuture>
+		<lang.wallFuture lang="fr">métal futuriste (peintures désactivées)</lang.wallFuture>
 
-		<lang.wallColorGreen>green (no paints)</lang.wallColorGreen>
-		<lang.wallColorGreen lang="fr">vert (peintures désactivées)</lang.wallColorGreen>
+		<lang.wallFutureRed> red futuristic steel (no paints)</lang.wallFutureRed>
+		<lang.wallFutureRed lang="fr">métal futuriste rouge (peintures désactivées)</lang.wallFutureRed>
 
-		<lang.wallColorRed>red (no paints)</lang.wallColorRed>
-		<lang.wallColorRed lang="fr">rouge (peintures désactivées)</lang.wallColorRed>
+		<lang.wallFutureBlue> blue futuristic steel (no paints)</lang.wallFutureBlue>
+		<lang.wallFutureBlue lang="fr">métal futuriste bleu (peintures désactivées)</lang.wallFutureBlue>
 
-		<lang.wallColorPurple>purple (no paints)</lang.wallColorPurple>
-		<lang.wallColorPurple lang="fr">violet (peintures désactivées)</lang.wallColorPurple>
+		<lang.wallFutureGreen> green futuristic steel (no paints)</lang.wallFutureGreen>
+		<lang.wallFutureGreen lang="fr">métal futuriste vert (peintures désactivées)</lang.wallFutureGreen>
 
-		<lang.wallColorOcean>ocean blue (no paints)</lang.wallColorOcean>
-		<lang.wallColorOcean lang="fr">bleu océan (peintures désactivées)</lang.wallColorOcean>
+		<lang.wallFutureOrange> orange futuristic steel (no paints)</lang.wallFutureOrange>
+		<lang.wallFutureOrange lang="fr">métal futuriste orange (peintures désactivées)</lang.wallFutureOrange>
+
+		<lang.wallFutureYellow> yellow futuristic steel (no paints)</lang.wallFutureYellow>
+		<lang.wallFutureYellow lang="fr">métal futuriste jaune (peintures désactivées)</lang.wallFutureYellow>
+
+		<lang.wallFuturePink> pink futuristic steel (no paints)</lang.wallFuturePink>
+		<lang.wallFuturePink lang="fr">métal futuriste rose (peintures désactivées)</lang.wallFuturePink>
+
+		<lang.wallFuturePurple> purple futuristic steel (no paints)</lang.wallFuturePurple>
+		<lang.wallFuturePurple lang="fr">métal futuriste violet (peintures désactivées)</lang.wallFuturePurple>
+
+		<lang.wallColorBlue>solid blue (no paints)</lang.wallColorBlue>
+		<lang.wallColorBlue lang="fr">uni bleu (peintures désactivées)</lang.wallColorBlue>
+
+		<lang.wallColorGreen>solid green (no paints)</lang.wallColorGreen>
+		<lang.wallColorGreen lang="fr">uni vert (peintures désactivées)</lang.wallColorGreen>
+
+		<lang.wallColorRed>solid red (no paints)</lang.wallColorRed>
+		<lang.wallColorRed lang="fr">uni rouge (peintures désactivées)</lang.wallColorRed>
+
+		<lang.wallColorPurple>solid purple (no paints)</lang.wallColorPurple>
+		<lang.wallColorPurple lang="fr">uni violet (peintures désactivées)</lang.wallColorPurple>
+
+		<lang.wallColorOcean>solid ocean blue (no paints)</lang.wallColorOcean>
+		<lang.wallColorOcean lang="fr">uni bleu océan (peintures désactivées)</lang.wallColorOcean>
 
 	</variables>
 
@@ -326,6 +350,14 @@ By Helmic
         <include name="wallAlu" displayName="${lang.wallAlu}"/>
         <include name="wallPlates" displayName="${lang.wallPlates}"/>
         <include name="wallStainBroke" displayName="${lang.wallStainBroke}"/>
+        <include name="wallFuture" displayName="${lang.wallFuture}"/>
+        <include name="wallFutureRed" displayName="${lang.wallFutureRed}"/>
+        <include name="wallFutureBlue" displayName="${lang.wallFutureBlue}"/>
+        <include name="wallFutureGreen" displayName="${lang.wallFutureGreen}"/>
+        <include name="wallFutureOrange" displayName="${lang.wallFutureOrange}"/>
+        <include name="wallFutureYellow" displayName="${lang.wallFutureYellow}"/>
+        <include name="wallFuturePink" displayName="${lang.wallFuturePink}"/>
+        <include name="wallFuturePurple" displayName="${lang.wallFuturePurple}"/>
         <include name="wallColorBlue" displayName="${lang.wallColorBlue}"/>
         <include name="wallColorGreen" displayName="${lang.wallColorGreen}"/>
         <include name="wallColorRed" displayName="${lang.wallColorRed}"/>
@@ -470,6 +502,14 @@ By Helmic
 	<include ifSubset="wall:wallAlu">./_inc/wallAlu.xml</include>
 	<include ifSubset="wall:wallPlates">./_inc/wallPlates.xml</include>
 	<include ifSubset="wall:wallStainBroke">./_inc/wallStainBroke.xml</include>
+	<include ifSubset="wall:wallFuture">./_inc/wallFuture.xml</include>
+	<include ifSubset="wall:wallFutureRed">./_inc/wallFutureRed.xml</include>
+	<include ifSubset="wall:wallFutureBlue">./_inc/wallFutureBlue.xml</include>
+	<include ifSubset="wall:wallFutureGreen">./_inc/wallFutureGreen.xml</include>
+	<include ifSubset="wall:wallFutureOrange">./_inc/wallFutureOrange.xml</include>
+	<include ifSubset="wall:wallFutureYellow">./_inc/wallFutureYellow.xml</include>
+	<include ifSubset="wall:wallFuturePink">./_inc/wallFuturePink.xml</include>
+	<include ifSubset="wall:wallFuturePurple">./_inc/wallFuturePurple.xml</include>
 	<include ifSubset="wall:wallColorBlue">./_inc/wallColorBlue.xml</include>
 	<include ifSubset="wall:wallColorGreen">./_inc/wallColorGreen.xml</include>
 	<include ifSubset="wall:wallColorRed">./_inc/wallColorRed.xml</include>
@@ -758,7 +798,7 @@ By Helmic
 		</image>
         
 		<image name="logoPaint" extra="true" ifSubset="carouselWallPaint:yes">
-			<visible ifSubset="wall:wallColorBlue|wallColoGreen|wallColorRed|wallColorPurple|wallColorOcean|wallStain|wallAlu|wallPlates|wallStainBroke">false</visible>
+			<visible ifSubset="wall:wallColorBlue|wallColoGreen|wallColorRed|wallColorPurple|wallColorOcean|wallStain|wallAlu|wallPlates|wallStainBroke|wallFuture|wallFutureRed|wallFutureGreen|wallFutureBlue|wallFutureOrange|wallFutureYellow|wallFuturePink|wallFuturePurple">false</visible>
             <linearSmooth>true</linearSmooth>
             <path>./default/color.png</path>
             <path>./default/color-${lang}.png</path>
@@ -1237,7 +1277,7 @@ By Helmic
         </image>
         
 		<image name="logoPaintFix" extra="true" ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff,carouselWallPaint:yes">
-			<visible ifSubset="wall:wallColorBlue|wallColorGreen|wallColorRed|wallColorPurple|wallColorOcean|wallStain|wallAlu|wallPlates|wallStainBroke">false</visible>
+			<visible ifSubset="wall:wallColorBlue|wallColorGreen|wallColorRed|wallColorPurple|wallColorOcean|wallStain|wallAlu|wallPlates|wallStainBroke|wallFuture|wallFutureRed|wallFutureGreen|wallFutureBlue|wallFutureOrange|wallFutureYellow|wallFuturePink|wallFuturePurple">false</visible>
             <linearSmooth>true</linearSmooth>
             <path>./default/color.png</path>
             <path>./default/color-${lang}.png</path>
@@ -2042,7 +2082,7 @@ By Helmic
 			<opacity>0</opacity>			
 			<scale>0</scale>	
 			<visible ifSubset="gamelistWallPaint:no">false</visible>			
-			<visible ifSubset="wall:wallColorBlue|wallColorGreen|wallColorRed|wallColorPurple|wallColorOcean|wallStain|wallAlu|wallPlates|wallStainBroke">false</visible>
+			<visible ifSubset="wall:wallColorBlue|wallColorGreen|wallColorRed|wallColorPurple|wallColorOcean|wallStain|wallAlu|wallPlates|wallStainBroke|wallFuture|wallFutureRed|wallFutureGreen|wallFutureBlue|wallFutureOrange|wallFutureYellow|wallFuturePink|wallFuturePurple">false</visible>
 			<storyboard event="open">
                 <animation property="scale" from="0" to="1" duration="1" mode="easeOut"/>
                 <animation property="opacity" from="0" to="0.3" duration="500" mode="easeOut"/>
@@ -3373,7 +3413,7 @@ By Helmic
 
         <menuText name="menutext">
             <fontPath>./_inc/fonts/conthrax-sb.ttf</fontPath>
-            <fontSize>0.020</fontSize>
+            <fontSize>0.018</fontSize>
             <color>121212</color>
             <separatorColor>202020</separatorColor>
             <selectorColor>${overlay.colorset}</selectorColor>
