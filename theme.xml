@@ -282,6 +282,9 @@ By Helmic
 		<lang.wallStain>steel (no paints)</lang.wallStain>
 		<lang.wallStain lang="fr">métal (peintures désactivées)</lang.wallStain>
 
+		<lang.wallSteelX>steel x (no paints)</lang.wallSteelX>
+		<lang.wallSteelX lang="fr">x métal (peintures désactivées)</lang.wallSteelX>
+
 		<lang.wallAlu>alu (no paints)</lang.wallAlu>
 		<lang.wallAlu lang="fr">aluminium (peintures désactivées)</lang.wallAlu>
 
@@ -347,6 +350,7 @@ By Helmic
         <include name="wallFlatGrey" displayName="${lang.wallFlatGrey}"/>
         <include name="wallFlatDark" displayName="${lang.wallFlatDark}"/>
         <include name="wallStain" displayName="${lang.wallStain}"/>
+        <include name="wallSteelX" displayName="${lang.wallSteelX}"/>
         <include name="wallAlu" displayName="${lang.wallAlu}"/>
         <include name="wallPlates" displayName="${lang.wallPlates}"/>
         <include name="wallStainBroke" displayName="${lang.wallStainBroke}"/>
@@ -499,6 +503,7 @@ By Helmic
 	<include ifSubset="wall:wallFlatGrey">./_inc/wallFlatGrey.xml</include>
 	<include ifSubset="wall:wallFlatDark">./_inc/wallFlatDark.xml</include>
 	<include ifSubset="wall:wallStain">./_inc/wallStain.xml</include>
+	<include ifSubset="wall:wallSteelX">./_inc/wallSteelX.xml</include>
 	<include ifSubset="wall:wallAlu">./_inc/wallAlu.xml</include>
 	<include ifSubset="wall:wallPlates">./_inc/wallPlates.xml</include>
 	<include ifSubset="wall:wallStainBroke">./_inc/wallStainBroke.xml</include>
@@ -798,7 +803,7 @@ By Helmic
 		</image>
         
 		<image name="logoPaint" extra="true" ifSubset="carouselWallPaint:yes">
-			<visible ifSubset="wall:wallColorBlue|wallColoGreen|wallColorRed|wallColorPurple|wallColorOcean|wallStain|wallAlu|wallPlates|wallStainBroke|wallFuture|wallFutureRed|wallFutureGreen|wallFutureBlue|wallFutureOrange|wallFutureYellow|wallFuturePink|wallFuturePurple">false</visible>
+			<visible ifSubset="wall:wallColorBlue|wallColoGreen|wallColorRed|wallColorPurple|wallColorOcean|wallStain|wallAlu|wallPlates|wallStainBroke|wallFuture|wallFutureRed|wallFutureGreen|wallFutureBlue|wallFutureOrange|wallFutureYellow|wallFuturePink|wallFuturePurple|wallSteelX">false</visible>
             <linearSmooth>true</linearSmooth>
             <path>./default/color.png</path>
             <path>./default/color-${lang}.png</path>
@@ -1277,7 +1282,7 @@ By Helmic
         </image>
         
 		<image name="logoPaintFix" extra="true" ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff,carouselWallPaint:yes">
-			<visible ifSubset="wall:wallColorBlue|wallColorGreen|wallColorRed|wallColorPurple|wallColorOcean|wallStain|wallAlu|wallPlates|wallStainBroke|wallFuture|wallFutureRed|wallFutureGreen|wallFutureBlue|wallFutureOrange|wallFutureYellow|wallFuturePink|wallFuturePurple">false</visible>
+			<visible ifSubset="wall:wallColorBlue|wallColorGreen|wallColorRed|wallColorPurple|wallColorOcean|wallStain|wallAlu|wallPlates|wallStainBroke|wallFuture|wallFutureRed|wallFutureGreen|wallFutureBlue|wallFutureOrange|wallFutureYellow|wallFuturePink|wallFuturePurple|wallSteelX">false</visible>
             <linearSmooth>true</linearSmooth>
             <path>./default/color.png</path>
             <path>./default/color-${lang}.png</path>
@@ -2082,7 +2087,7 @@ By Helmic
 			<opacity>0</opacity>			
 			<scale>0</scale>	
 			<visible ifSubset="gamelistWallPaint:no">false</visible>			
-			<visible ifSubset="wall:wallColorBlue|wallColorGreen|wallColorRed|wallColorPurple|wallColorOcean|wallStain|wallAlu|wallPlates|wallStainBroke|wallFuture|wallFutureRed|wallFutureGreen|wallFutureBlue|wallFutureOrange|wallFutureYellow|wallFuturePink|wallFuturePurple">false</visible>
+			<visible ifSubset="wall:wallColorBlue|wallColorGreen|wallColorRed|wallColorPurple|wallColorOcean|wallStain|wallAlu|wallPlates|wallStainBroke|wallFuture|wallFutureRed|wallFutureGreen|wallFutureBlue|wallFutureOrange|wallFutureYellow|wallFuturePink|wallFuturePurple|wallSteelX">false</visible>
 			<storyboard event="open">
                 <animation property="scale" from="0" to="1" duration="1" mode="easeOut"/>
                 <animation property="opacity" from="0" to="0.3" duration="500" mode="easeOut"/>
