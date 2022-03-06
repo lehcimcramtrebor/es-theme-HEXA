@@ -264,11 +264,47 @@ By Helmic
 		<lang.wall>theme • choose wall</lang.wall>
 		<lang.wall lang="fr">thème • choisir le mur</lang.wall>
 
-		<lang.wallDefault>default</lang.wallDefault>
-		<lang.wallDefault lang="fr">par défaut</lang.wallDefault>
+		<lang.wallDefault>wall</lang.wallDefault>
+		<lang.wallDefault lang="fr">mur</lang.wallDefault>
+
+		<lang.wallLight>lighter wall</lang.wallLight>
+		<lang.wallLight lang="fr">mur plur clair</lang.wallLight>
+
+		<lang.wallDark>darker wall</lang.wallDark>
+		<lang.wallDark lang="fr">mur plur sombre</lang.wallDark>
 
 		<lang.wallFlatGrey>flat style</lang.wallFlatGrey>
 		<lang.wallFlatGrey lang="fr">design plat</lang.wallFlatGrey>
+
+		<lang.wallFlatDark>dark flat style</lang.wallFlatDark>
+		<lang.wallFlatDark lang="fr">design plat plus sombre</lang.wallFlatDark>
+
+		<lang.wallStain>stain (no paints)</lang.wallStain>
+		<lang.wallStain lang="fr">métal (peintures désactivées)</lang.wallStain>
+
+		<lang.wallAlu>alu (no paints)</lang.wallAlu>
+		<lang.wallAlu lang="fr">aluminium (peintures désactivées)</lang.wallAlu>
+
+		<lang.wallPlates>metal plates (no paints)</lang.wallPlates>
+		<lang.wallPlates lang="fr">plaques de métal (peintures désactivées)</lang.wallPlates>
+
+		<lang.wallStainBroke>broken metal (no paints)</lang.wallStainBroke>
+		<lang.wallStainBroke lang="fr">métal cassé (peintures désactivées)</lang.wallStainBroke>
+
+		<lang.wallColorBlue>blue (no paints)</lang.wallColorBlue>
+		<lang.wallColorBlue lang="fr">bleu (peintures désactivées)</lang.wallColorBlue>
+
+		<lang.wallColorGreen>green (no paints)</lang.wallColorGreen>
+		<lang.wallColorGreen lang="fr">vert (peintures désactivées)</lang.wallColorGreen>
+
+		<lang.wallColorRed>red (no paints)</lang.wallColorRed>
+		<lang.wallColorRed lang="fr">rouge (peintures désactivées)</lang.wallColorRed>
+
+		<lang.wallColorPurple>purple (no paints)</lang.wallColorPurple>
+		<lang.wallColorPurple lang="fr">violet (peintures désactivées)</lang.wallColorPurple>
+
+		<lang.wallColorOcean>ocean blue (no paints)</lang.wallColorOcean>
+		<lang.wallColorOcean lang="fr">bleu océan (peintures désactivées)</lang.wallColorOcean>
 
 	</variables>
 
@@ -282,12 +318,24 @@ By Helmic
 
     <subset name="wall" displayName="${lang.wall}">
 		<include name="wallDefault" displayName="${lang.wallDefault}"/>
+		<include name="wallLight" displayName="${lang.wallLight}"/>
+		<include name="wallDark" displayName="${lang.wallDark}"/>
         <include name="wallFlatGrey" displayName="${lang.wallFlatGrey}"/>
+        <include name="wallFlatDark" displayName="${lang.wallFlatDark}"/>
+        <include name="wallStain" displayName="${lang.wallStain}"/>
+        <include name="wallAlu" displayName="${lang.wallAlu}"/>
+        <include name="wallPlates" displayName="${lang.wallPlates}"/>
+        <include name="wallStainBroke" displayName="${lang.wallStainBroke}"/>
+        <include name="wallColorBlue" displayName="${lang.wallColorBlue}"/>
+        <include name="wallColorGreen" displayName="${lang.wallColorGreen}"/>
+        <include name="wallColorRed" displayName="${lang.wallColorRed}"/>
+        <include name="wallColorPurple" displayName="${lang.wallColorPurple}"/>
+        <include name="wallColorOcean" displayName="${lang.wallColorOcean}"/>
     </subset>
 
-    <subset name="spaceCarousel" displayName="${lang.spaceCarousel}" ifSubset="themeRatio:169">
-		<include name="thin" displayName="${lang.thin}"/>
-        <include name="large" displayName="${lang.large}"/>
+    <subset name="carouselWallPaint" displayName="${lang.carouselWallPaint}" ifSubset="wall:wallDefault|wallLight|wallDark|wallFlatGrey|wallFlatDark">
+		<include name="yes" displayName="${lang.yes}"/>
+        <include name="no" displayName="${lang.no}"/>
     </subset>
 
     <subset name="logoVisualAssistance" displayName="${lang.logoVisualAssistance}">
@@ -295,20 +343,15 @@ By Helmic
         <include name="yes" displayName="${lang.yes}"/>
     </subset>
 
-    <subset name="carouselWallPaint" displayName="${lang.carouselWallPaint}">
-		<include name="yes" displayName="${lang.yes}"/>
-        <include name="no" displayName="${lang.no}"/>
+    <subset name="spaceCarousel" displayName="${lang.spaceCarousel}" ifSubset="themeRatio:169">
+		<include name="thin" displayName="${lang.thin}"/>
+        <include name="large" displayName="${lang.large}"/>
     </subset>
 
 	<subset name="transition" displayName="${lang.transition}">
 		<include name="yes" displayName="${lang.yes}"/>
 		<include name="no" displayName="${lang.no}"/>
 	</subset>
-
-    <subset name="gamelistWallPaint" displayName="${lang.gamelistWallPaint}" appliesTo="system,basic,detailed,grid,gamecarousel">
-		<include name="yes" displayName="${lang.yes}"/>
-        <include name="no" displayName="${lang.no}"/>
-    </subset>
 
     <subset name="ambiance" displayName="${lang.ambiance}">
 		<include name="randomAudioOff" displayName="${lang.randomAudioOff}"/>
@@ -396,6 +439,11 @@ By Helmic
 		<include name="yes" displayName="${lang.yes}"/>
 	</subset>
 
+    <subset name="gamelistWallPaint" displayName="${lang.gamelistWallPaint}" appliesTo="system,basic,detailed,grid,gamecarousel" ifSubset="wall:wallDefault|wallLight|wallDark|wallFlatGrey|wallFlatDark">
+		<include name="yes" displayName="${lang.yes}"/>
+        <include name="no" displayName="${lang.no}"/>
+    </subset>
+
 	<!--COLORSETS-->
     
     <variables>
@@ -414,7 +462,19 @@ By Helmic
 		<!--WALLPAPERS-->
     
 	<include ifSubset="wall:wallDefault">./_inc/wall.xml</include>
+	<include ifSubset="wall:wallLight">./_inc/wallLight.xml</include>
+	<include ifSubset="wall:wallDark">./_inc/wallDark.xml</include>
 	<include ifSubset="wall:wallFlatGrey">./_inc/wallFlatGrey.xml</include>
+	<include ifSubset="wall:wallFlatDark">./_inc/wallFlatDark.xml</include>
+	<include ifSubset="wall:wallStain">./_inc/wallStain.xml</include>
+	<include ifSubset="wall:wallAlu">./_inc/wallAlu.xml</include>
+	<include ifSubset="wall:wallPlates">./_inc/wallPlates.xml</include>
+	<include ifSubset="wall:wallStainBroke">./_inc/wallStainBroke.xml</include>
+	<include ifSubset="wall:wallColorBlue">./_inc/wallColorBlue.xml</include>
+	<include ifSubset="wall:wallColorGreen">./_inc/wallColorGreen.xml</include>
+	<include ifSubset="wall:wallColorRed">./_inc/wallColorRed.xml</include>
+	<include ifSubset="wall:wallColorPurple">./_inc/wallColorPurple.xml</include>
+	<include ifSubset="wall:wallColorOcean">./_inc/wallColorOcean.xml</include>
 
 
     <view name="system" ifSubset="logoVisualAssistance:yes">
@@ -698,6 +758,7 @@ By Helmic
 		</image>
         
 		<image name="logoPaint" extra="true" ifSubset="carouselWallPaint:yes">
+			<visible ifSubset="wall:wallColorBlue|wallColoGreen|wallColorRed|wallColorPurple|wallColorOcean|wallStain|wallAlu|wallPlates|wallStainBroke">false</visible>
             <linearSmooth>true</linearSmooth>
             <path>./default/color.png</path>
             <path>./default/color-${lang}.png</path>
@@ -1176,6 +1237,7 @@ By Helmic
         </image>
         
 		<image name="logoPaintFix" extra="true" ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff,carouselWallPaint:yes">
+			<visible ifSubset="wall:wallColorBlue|wallColorGreen|wallColorRed|wallColorPurple|wallColorOcean|wallStain|wallAlu|wallPlates|wallStainBroke">false</visible>
             <linearSmooth>true</linearSmooth>
             <path>./default/color.png</path>
             <path>./default/color-${lang}.png</path>
@@ -1363,7 +1425,7 @@ By Helmic
 			<origin>0.5 0.5</origin>
 			<zIndex>99</zIndex>
 			<path>./_inc/bar.png</path>
-			<color>${overlay.colorset}80</color>
+			<color>${overlay.colorset}</color>
 			<storyboard>
 				<animation property="color" from="000000" duration="250" mode="linear" begin="0"/>
 				<animation property="opacity" to="0" duration="300" mode="easeIn" begin="900"/>
@@ -1974,10 +2036,13 @@ By Helmic
 			<zIndex>2</zIndex>
 			<color>ffffffbf</color>
 			<colorEnd>ffffff80</colorEnd>
+			<color ifSubset="wall:wallDark">ffffff8c</color>
+			<colorEnd ifSubset="wall:wallDark|wallLight">ffffff4d</colorEnd>
 			<gradientType>vertical</gradientType>			
 			<opacity>0</opacity>			
 			<scale>0</scale>	
 			<visible ifSubset="gamelistWallPaint:no">false</visible>			
+			<visible ifSubset="wall:wallColorBlue|wallColorGreen|wallColorRed|wallColorPurple|wallColorOcean|wallStain|wallAlu|wallPlates|wallStainBroke">false</visible>
 			<storyboard event="open">
                 <animation property="scale" from="0" to="1" duration="1" mode="easeOut"/>
                 <animation property="opacity" from="0" to="0.3" duration="500" mode="easeOut"/>
