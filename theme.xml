@@ -1492,7 +1492,6 @@ By Helmic
 			<path>./_inc/bar.png</path>
 			<color>${overlay.colorset}</color>
 			<storyboard>
-				<animation property="color" from="000000" duration="250" mode="linear" begin="0"/>
 				<animation property="opacity" to="0" duration="300" mode="easeIn" begin="900"/>
 			</storyboard>
 		</image>
