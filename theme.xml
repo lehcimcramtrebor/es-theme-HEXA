@@ -291,8 +291,8 @@ By Helmic
 		<lang.wallPlates>steel plates (not paintable)</lang.wallPlates>
 		<lang.wallPlates lang="fr">plaques de métal (non peignable)</lang.wallPlates>
 
-		<lang.wallBrushedPlate>scratched steel plate (not paintable)</lang.wallBrushedPlate>
-		<lang.wallBrushedPlate lang="fr">plaque de métal griffée (non peignable)</lang.wallBrushedPlate>
+		<lang.wallBrushedPlate>scratched steel plate</lang.wallBrushedPlate>
+		<lang.wallBrushedPlate lang="fr">plaque de métal griffée</lang.wallBrushedPlate>
 
 		<lang.wallStainBroke>broken steel (not paintable)</lang.wallStainBroke>
 		<lang.wallStainBroke lang="fr">métal cassé (non peignable)</lang.wallStainBroke>
@@ -356,6 +356,7 @@ By Helmic
     </subset>
 
     <subset name="wall" displayName="${lang.wall}">
+        <include name="wallBrushedPlate" displayName="${lang.wallBrushedPlate}"/>
 		<include name="wallDefault" displayName="${lang.wallDefault}"/>
 		<include name="wallLight" displayName="${lang.wallLight}"/>
 		<include name="wallDark" displayName="${lang.wallDark}"/>
@@ -371,7 +372,6 @@ By Helmic
         <include name="wallAlu" displayName="${lang.wallAlu}"/>
         <include name="wallCarbon" displayName="${lang.wallCarbon}"/>
         <include name="wallPlates" displayName="${lang.wallPlates}"/>
-        <include name="wallBrushedPlate" displayName="${lang.wallBrushedPlate}"/>
         <include name="wallStainBroke" displayName="${lang.wallStainBroke}"/>
         <include name="wallSteelHoles" displayName="${lang.wallSteelHoles}"/>
         <include name="wallFuture" displayName="${lang.wallFuture}"/>
@@ -385,14 +385,14 @@ By Helmic
         <include name="wallSynthwave" displayName="${lang.wallSynthwave}"/>
     </subset>
 
-    <subset name="carouselWallPaint" displayName="${lang.carouselWallPaint}" ifSubset="wall:wallDefault|wallLight|wallDark|wallFlatGrey|wallFlatDark">
+    <subset name="carouselWallPaint" displayName="${lang.carouselWallPaint}" ifSubset="wall:wallDefault|wallLight|wallDark|wallFlatGrey|wallFlatDark|wallBrushedPlate">
 		<include name="yes" displayName="${lang.yes}"/>
         <include name="no" displayName="${lang.no}"/>
     </subset>
 
     <subset name="logoVisualAssistance" displayName="${lang.logoVisualAssistance}">
-		<include name="no" displayName="${lang.no}"/>
         <include name="yes" displayName="${lang.yes}"/>
+		<include name="no" displayName="${lang.no}"/>
     </subset>
 
     <subset name="spaceCarousel" displayName="${lang.spaceCarousel}" ifSubset="themeRatio:169">
@@ -491,7 +491,7 @@ By Helmic
 		<include name="yes" displayName="${lang.yes}"/>
 	</subset>
 
-    <subset name="gamelistWallPaint" displayName="${lang.gamelistWallPaint}" appliesTo="system,basic,detailed,grid,gamecarousel" ifSubset="wall:wallDefault|wallLight|wallDark|wallFlatGrey|wallFlatDark">
+    <subset name="gamelistWallPaint" displayName="${lang.gamelistWallPaint}" appliesTo="system,basic,detailed,grid,gamecarousel" ifSubset="wall:wallDefault|wallLight|wallDark|wallFlatGrey|wallFlatDark|wallBrushedPlate">
 		<include name="yes" displayName="${lang.yes}"/>
         <include name="no" displayName="${lang.no}"/>
     </subset>
@@ -823,7 +823,7 @@ By Helmic
 		</image>
         
 		<image name="logoPaint" extra="true" ifSubset="carouselWallPaint:yes">
-			<visible ifSubset="wall:wallColorBlue|wallColoGreen|wallColorRed|wallColorPurple|wallColorOcean|wallStain|wallAlu|wallPlates|wallStainBroke|wallFuture|wallFutureRed|wallFutureGreen|wallFutureBlue|wallFutureOrange|wallFutureYellow|wallFuturePink|wallFuturePurple|wallSteelX|wallSteelHoles|wallBrushedPlate|wallSynthwave|wallCarbon">false</visible>
+			<visible ifSubset="wall:wallColorBlue|wallColoGreen|wallColorRed|wallColorPurple|wallColorOcean|wallStain|wallAlu|wallPlates|wallStainBroke|wallFuture|wallFutureRed|wallFutureGreen|wallFutureBlue|wallFutureOrange|wallFutureYellow|wallFuturePink|wallFuturePurple|wallSteelX|wallSteelHoles|wallSynthwave|wallCarbon">false</visible>
             <linearSmooth>true</linearSmooth>
             <path>./default/color.png</path>
             <path>./default/color-${lang}.png</path>
@@ -1302,7 +1302,7 @@ By Helmic
         </image>
         
 		<image name="logoPaintFix" extra="true" ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff,carouselWallPaint:yes">
-			<visible ifSubset="wall:wallColorBlue|wallColorGreen|wallColorRed|wallColorPurple|wallColorOcean|wallStain|wallAlu|wallPlates|wallStainBroke|wallFuture|wallFutureRed|wallFutureGreen|wallFutureBlue|wallFutureOrange|wallFutureYellow|wallFuturePink|wallFuturePurple|wallSteelX|wallSteelHoles|wallBrushedPlate|wallSynthwave|wallCarbon">false</visible>
+			<visible ifSubset="wall:wallColorBlue|wallColorGreen|wallColorRed|wallColorPurple|wallColorOcean|wallStain|wallAlu|wallPlates|wallStainBroke|wallFuture|wallFutureRed|wallFutureGreen|wallFutureBlue|wallFutureOrange|wallFutureYellow|wallFuturePink|wallFuturePurple|wallSteelX|wallSteelHoles|wallSynthwave|wallCarbon">false</visible>
             <linearSmooth>true</linearSmooth>
             <path>./default/color.png</path>
             <path>./default/color-${lang}.png</path>
@@ -2106,7 +2106,7 @@ By Helmic
 			<opacity>0</opacity>			
 			<scale>0</scale>	
 			<visible ifSubset="gamelistWallPaint:no">false</visible>			
-			<visible ifSubset="wall:wallColorBlue|wallColorGreen|wallColorRed|wallColorPurple|wallColorOcean|wallStain|wallAlu|wallPlates|wallStainBroke|wallFuture|wallFutureRed|wallFutureGreen|wallFutureBlue|wallFutureOrange|wallFutureYellow|wallFuturePink|wallFuturePurple|wallSteelX|wallSteelHoles|wallBrushedPlate|wallSynthwave|wallCarbon">false</visible>
+			<visible ifSubset="wall:wallColorBlue|wallColorGreen|wallColorRed|wallColorPurple|wallColorOcean|wallStain|wallAlu|wallPlates|wallStainBroke|wallFuture|wallFutureRed|wallFutureGreen|wallFutureBlue|wallFutureOrange|wallFutureYellow|wallFuturePink|wallFuturePurple|wallSteelX|wallSteelHoles|wallSynthwave|wallCarbon">false</visible>
 			<storyboard event="open">
                 <animation property="scale" from="0" to="1" duration="1" mode="easeOut"/>
                 <animation property="opacity" from="0" to="0.3" duration="500" mode="easeOut"/>
