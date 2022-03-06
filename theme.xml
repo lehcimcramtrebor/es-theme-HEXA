@@ -279,7 +279,7 @@ By Helmic
 		<lang.wallFlatDark>dark flat style</lang.wallFlatDark>
 		<lang.wallFlatDark lang="fr">design plat plus sombre</lang.wallFlatDark>
 
-		<lang.wallStain>stain (no paints)</lang.wallStain>
+		<lang.wallStain>steel (no paints)</lang.wallStain>
 		<lang.wallStain lang="fr">métal (peintures désactivées)</lang.wallStain>
 
 		<lang.wallAlu>alu (no paints)</lang.wallAlu>
@@ -288,7 +288,7 @@ By Helmic
 		<lang.wallPlates>metal plates (no paints)</lang.wallPlates>
 		<lang.wallPlates lang="fr">plaques de métal (peintures désactivées)</lang.wallPlates>
 
-		<lang.wallStainBroke>broken metal (no paints)</lang.wallStainBroke>
+		<lang.wallStainBroke>broken steel (no paints)</lang.wallStainBroke>
 		<lang.wallStainBroke lang="fr">métal cassé (peintures désactivées)</lang.wallStainBroke>
 
 		<lang.wallColorBlue>blue (no paints)</lang.wallColorBlue>
