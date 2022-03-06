@@ -279,59 +279,71 @@ By Helmic
 		<lang.wallFlatDark>dark flat style</lang.wallFlatDark>
 		<lang.wallFlatDark lang="fr">design plat plus sombre</lang.wallFlatDark>
 
-		<lang.wallStain>steel (no paints)</lang.wallStain>
-		<lang.wallStain lang="fr">métal (peintures désactivées)</lang.wallStain>
+		<lang.wallStain>steel (not paintable)</lang.wallStain>
+		<lang.wallStain lang="fr">métal (non peignable)</lang.wallStain>
 
-		<lang.wallSteelX>steel x (no paints)</lang.wallSteelX>
-		<lang.wallSteelX lang="fr">x métal (peintures désactivées)</lang.wallSteelX>
+		<lang.wallSteelX>steel x (not paintable)</lang.wallSteelX>
+		<lang.wallSteelX lang="fr">x métal (non peignable)</lang.wallSteelX>
 
-		<lang.wallAlu>alu (no paints)</lang.wallAlu>
-		<lang.wallAlu lang="fr">aluminium (peintures désactivées)</lang.wallAlu>
+		<lang.wallAlu>alu (not paintable)</lang.wallAlu>
+		<lang.wallAlu lang="fr">aluminium (non peignable)</lang.wallAlu>
 
-		<lang.wallPlates>metal plates (no paints)</lang.wallPlates>
-		<lang.wallPlates lang="fr">plaques de métal (peintures désactivées)</lang.wallPlates>
+		<lang.wallPlates>steel plates (not paintable)</lang.wallPlates>
+		<lang.wallPlates lang="fr">plaques de métal (non peignable)</lang.wallPlates>
 
-		<lang.wallStainBroke>broken steel (no paints)</lang.wallStainBroke>
-		<lang.wallStainBroke lang="fr">métal cassé (peintures désactivées)</lang.wallStainBroke>
+		<lang.wallBrushedPlate>scratched steel plate (not paintable)</lang.wallBrushedPlate>
+		<lang.wallBrushedPlate lang="fr">plaque de métal griffée (non peignable)</lang.wallBrushedPlate>
 
-		<lang.wallFuture>futuristic steel (no paints)</lang.wallFuture>
-		<lang.wallFuture lang="fr">métal futuriste (peintures désactivées)</lang.wallFuture>
+		<lang.wallStainBroke>broken steel (not paintable)</lang.wallStainBroke>
+		<lang.wallStainBroke lang="fr">métal cassé (non peignable)</lang.wallStainBroke>
 
-		<lang.wallFutureRed> red futuristic steel (no paints)</lang.wallFutureRed>
-		<lang.wallFutureRed lang="fr">métal futuriste rouge (peintures désactivées)</lang.wallFutureRed>
+		<lang.wallSteelHoles>holes grid (not paintable)</lang.wallSteelHoles>
+		<lang.wallSteelHoles lang="fr">métal troué (non peignable)</lang.wallSteelHoles>
 
-		<lang.wallFutureBlue> blue futuristic steel (no paints)</lang.wallFutureBlue>
-		<lang.wallFutureBlue lang="fr">métal futuriste bleu (peintures désactivées)</lang.wallFutureBlue>
+		<lang.wallFuture>futuristic steel (not paintable)</lang.wallFuture>
+		<lang.wallFuture lang="fr">métal futuriste (non peignable)</lang.wallFuture>
 
-		<lang.wallFutureGreen> green futuristic steel (no paints)</lang.wallFutureGreen>
-		<lang.wallFutureGreen lang="fr">métal futuriste vert (peintures désactivées)</lang.wallFutureGreen>
+		<lang.wallFutureRed> red futuristic steel (not paintable)</lang.wallFutureRed>
+		<lang.wallFutureRed lang="fr">métal futuriste rouge (non peignable)</lang.wallFutureRed>
 
-		<lang.wallFutureOrange> orange futuristic steel (no paints)</lang.wallFutureOrange>
-		<lang.wallFutureOrange lang="fr">métal futuriste orange (peintures désactivées)</lang.wallFutureOrange>
+		<lang.wallFutureBlue> blue futuristic steel (not paintable)</lang.wallFutureBlue>
+		<lang.wallFutureBlue lang="fr">métal futuriste bleu (non peignable)</lang.wallFutureBlue>
 
-		<lang.wallFutureYellow> yellow futuristic steel (no paints)</lang.wallFutureYellow>
-		<lang.wallFutureYellow lang="fr">métal futuriste jaune (peintures désactivées)</lang.wallFutureYellow>
+		<lang.wallFutureGreen> green futuristic steel (not paintable)</lang.wallFutureGreen>
+		<lang.wallFutureGreen lang="fr">métal futuriste vert (non peignable)</lang.wallFutureGreen>
 
-		<lang.wallFuturePink> pink futuristic steel (no paints)</lang.wallFuturePink>
-		<lang.wallFuturePink lang="fr">métal futuriste rose (peintures désactivées)</lang.wallFuturePink>
+		<lang.wallFutureOrange> orange futuristic steel (not paintable)</lang.wallFutureOrange>
+		<lang.wallFutureOrange lang="fr">métal futuriste orange (non peignable)</lang.wallFutureOrange>
 
-		<lang.wallFuturePurple> purple futuristic steel (no paints)</lang.wallFuturePurple>
-		<lang.wallFuturePurple lang="fr">métal futuriste violet (peintures désactivées)</lang.wallFuturePurple>
+		<lang.wallFutureYellow> yellow futuristic steel (not paintable)</lang.wallFutureYellow>
+		<lang.wallFutureYellow lang="fr">métal futuriste jaune (non peignable)</lang.wallFutureYellow>
 
-		<lang.wallColorBlue>solid blue (no paints)</lang.wallColorBlue>
-		<lang.wallColorBlue lang="fr">uni bleu (peintures désactivées)</lang.wallColorBlue>
+		<lang.wallFuturePink> pink futuristic steel (not paintable)</lang.wallFuturePink>
+		<lang.wallFuturePink lang="fr">métal futuriste rose (non peignable)</lang.wallFuturePink>
 
-		<lang.wallColorGreen>solid green (no paints)</lang.wallColorGreen>
-		<lang.wallColorGreen lang="fr">uni vert (peintures désactivées)</lang.wallColorGreen>
+		<lang.wallFuturePurple> purple futuristic steel (not paintable)</lang.wallFuturePurple>
+		<lang.wallFuturePurple lang="fr">métal futuriste violet (non peignable)</lang.wallFuturePurple>
 
-		<lang.wallColorRed>solid red (no paints)</lang.wallColorRed>
-		<lang.wallColorRed lang="fr">uni rouge (peintures désactivées)</lang.wallColorRed>
+		<lang.wallColorBlue>solid blue (not paintable)</lang.wallColorBlue>
+		<lang.wallColorBlue lang="fr">uni bleu (non peignable)</lang.wallColorBlue>
 
-		<lang.wallColorPurple>solid purple (no paints)</lang.wallColorPurple>
-		<lang.wallColorPurple lang="fr">uni violet (peintures désactivées)</lang.wallColorPurple>
+		<lang.wallColorGreen>solid green (not paintable)</lang.wallColorGreen>
+		<lang.wallColorGreen lang="fr">uni vert (non peignable)</lang.wallColorGreen>
 
-		<lang.wallColorOcean>solid ocean blue (no paints)</lang.wallColorOcean>
-		<lang.wallColorOcean lang="fr">uni bleu océan (peintures désactivées)</lang.wallColorOcean>
+		<lang.wallColorRed>solid red (not paintable)</lang.wallColorRed>
+		<lang.wallColorRed lang="fr">uni rouge (non peignable)</lang.wallColorRed>
+
+		<lang.wallColorPurple>solid purple (not paintable)</lang.wallColorPurple>
+		<lang.wallColorPurple lang="fr">uni violet (non peignable)</lang.wallColorPurple>
+
+		<lang.wallColorOcean>solid ocean blue (not paintable)</lang.wallColorOcean>
+		<lang.wallColorOcean lang="fr">uni bleu océan (non peignable)</lang.wallColorOcean>
+
+		<lang.wallSynthwave>synthwave (not paintable)</lang.wallSynthwave>
+		<lang.wallSynthwave lang="fr">synthwave (non peignable)</lang.wallSynthwave>
+
+		<lang.wallCarbon>carbon (not paintable)</lang.wallCarbon>
+		<lang.wallCarbon lang="fr">carbone (non peignable)</lang.wallCarbon>
 
 	</variables>
 
@@ -349,11 +361,19 @@ By Helmic
 		<include name="wallDark" displayName="${lang.wallDark}"/>
         <include name="wallFlatGrey" displayName="${lang.wallFlatGrey}"/>
         <include name="wallFlatDark" displayName="${lang.wallFlatDark}"/>
+        <include name="wallColorBlue" displayName="${lang.wallColorBlue}"/>
+        <include name="wallColorGreen" displayName="${lang.wallColorGreen}"/>
+        <include name="wallColorRed" displayName="${lang.wallColorRed}"/>
+        <include name="wallColorPurple" displayName="${lang.wallColorPurple}"/>
+        <include name="wallColorOcean" displayName="${lang.wallColorOcean}"/>
         <include name="wallStain" displayName="${lang.wallStain}"/>
         <include name="wallSteelX" displayName="${lang.wallSteelX}"/>
         <include name="wallAlu" displayName="${lang.wallAlu}"/>
+        <include name="wallCarbon" displayName="${lang.wallCarbon}"/>
         <include name="wallPlates" displayName="${lang.wallPlates}"/>
+        <include name="wallBrushedPlate" displayName="${lang.wallBrushedPlate}"/>
         <include name="wallStainBroke" displayName="${lang.wallStainBroke}"/>
+        <include name="wallSteelHoles" displayName="${lang.wallSteelHoles}"/>
         <include name="wallFuture" displayName="${lang.wallFuture}"/>
         <include name="wallFutureRed" displayName="${lang.wallFutureRed}"/>
         <include name="wallFutureBlue" displayName="${lang.wallFutureBlue}"/>
@@ -362,11 +382,7 @@ By Helmic
         <include name="wallFutureYellow" displayName="${lang.wallFutureYellow}"/>
         <include name="wallFuturePink" displayName="${lang.wallFuturePink}"/>
         <include name="wallFuturePurple" displayName="${lang.wallFuturePurple}"/>
-        <include name="wallColorBlue" displayName="${lang.wallColorBlue}"/>
-        <include name="wallColorGreen" displayName="${lang.wallColorGreen}"/>
-        <include name="wallColorRed" displayName="${lang.wallColorRed}"/>
-        <include name="wallColorPurple" displayName="${lang.wallColorPurple}"/>
-        <include name="wallColorOcean" displayName="${lang.wallColorOcean}"/>
+        <include name="wallSynthwave" displayName="${lang.wallSynthwave}"/>
     </subset>
 
     <subset name="carouselWallPaint" displayName="${lang.carouselWallPaint}" ifSubset="wall:wallDefault|wallLight|wallDark|wallFlatGrey|wallFlatDark">
@@ -505,8 +521,11 @@ By Helmic
 	<include ifSubset="wall:wallStain">./_inc/wallStain.xml</include>
 	<include ifSubset="wall:wallSteelX">./_inc/wallSteelX.xml</include>
 	<include ifSubset="wall:wallAlu">./_inc/wallAlu.xml</include>
+	<include ifSubset="wall:wallCarbon">./_inc/wallCarbon.xml</include>
 	<include ifSubset="wall:wallPlates">./_inc/wallPlates.xml</include>
+	<include ifSubset="wall:wallBrushedPlate">./_inc/wallBrushedPlate.xml</include>
 	<include ifSubset="wall:wallStainBroke">./_inc/wallStainBroke.xml</include>
+	<include ifSubset="wall:wallSteelHoles">./_inc/wallSteelHoles.xml</include>
 	<include ifSubset="wall:wallFuture">./_inc/wallFuture.xml</include>
 	<include ifSubset="wall:wallFutureRed">./_inc/wallFutureRed.xml</include>
 	<include ifSubset="wall:wallFutureBlue">./_inc/wallFutureBlue.xml</include>
@@ -520,6 +539,7 @@ By Helmic
 	<include ifSubset="wall:wallColorRed">./_inc/wallColorRed.xml</include>
 	<include ifSubset="wall:wallColorPurple">./_inc/wallColorPurple.xml</include>
 	<include ifSubset="wall:wallColorOcean">./_inc/wallColorOcean.xml</include>
+	<include ifSubset="wall:wallSynthwave">./_inc/wallSynthwave.xml</include>
 
 
     <view name="system" ifSubset="logoVisualAssistance:yes">
@@ -803,7 +823,7 @@ By Helmic
 		</image>
         
 		<image name="logoPaint" extra="true" ifSubset="carouselWallPaint:yes">
-			<visible ifSubset="wall:wallColorBlue|wallColoGreen|wallColorRed|wallColorPurple|wallColorOcean|wallStain|wallAlu|wallPlates|wallStainBroke|wallFuture|wallFutureRed|wallFutureGreen|wallFutureBlue|wallFutureOrange|wallFutureYellow|wallFuturePink|wallFuturePurple|wallSteelX">false</visible>
+			<visible ifSubset="wall:wallColorBlue|wallColoGreen|wallColorRed|wallColorPurple|wallColorOcean|wallStain|wallAlu|wallPlates|wallStainBroke|wallFuture|wallFutureRed|wallFutureGreen|wallFutureBlue|wallFutureOrange|wallFutureYellow|wallFuturePink|wallFuturePurple|wallSteelX|wallSteelHoles|wallBrushedPlate|wallSynthwave|wallCarbon">false</visible>
             <linearSmooth>true</linearSmooth>
             <path>./default/color.png</path>
             <path>./default/color-${lang}.png</path>
@@ -1282,7 +1302,7 @@ By Helmic
         </image>
         
 		<image name="logoPaintFix" extra="true" ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff,carouselWallPaint:yes">
-			<visible ifSubset="wall:wallColorBlue|wallColorGreen|wallColorRed|wallColorPurple|wallColorOcean|wallStain|wallAlu|wallPlates|wallStainBroke|wallFuture|wallFutureRed|wallFutureGreen|wallFutureBlue|wallFutureOrange|wallFutureYellow|wallFuturePink|wallFuturePurple|wallSteelX">false</visible>
+			<visible ifSubset="wall:wallColorBlue|wallColorGreen|wallColorRed|wallColorPurple|wallColorOcean|wallStain|wallAlu|wallPlates|wallStainBroke|wallFuture|wallFutureRed|wallFutureGreen|wallFutureBlue|wallFutureOrange|wallFutureYellow|wallFuturePink|wallFuturePurple|wallSteelX|wallSteelHoles|wallBrushedPlate|wallSynthwave|wallCarbon">false</visible>
             <linearSmooth>true</linearSmooth>
             <path>./default/color.png</path>
             <path>./default/color-${lang}.png</path>
@@ -2087,7 +2107,7 @@ By Helmic
 			<opacity>0</opacity>			
 			<scale>0</scale>	
 			<visible ifSubset="gamelistWallPaint:no">false</visible>			
-			<visible ifSubset="wall:wallColorBlue|wallColorGreen|wallColorRed|wallColorPurple|wallColorOcean|wallStain|wallAlu|wallPlates|wallStainBroke|wallFuture|wallFutureRed|wallFutureGreen|wallFutureBlue|wallFutureOrange|wallFutureYellow|wallFuturePink|wallFuturePurple|wallSteelX">false</visible>
+			<visible ifSubset="wall:wallColorBlue|wallColorGreen|wallColorRed|wallColorPurple|wallColorOcean|wallStain|wallAlu|wallPlates|wallStainBroke|wallFuture|wallFutureRed|wallFutureGreen|wallFutureBlue|wallFutureOrange|wallFutureYellow|wallFuturePink|wallFuturePurple|wallSteelX|wallSteelHoles|wallBrushedPlate|wallSynthwave|wallCarbon">false</visible>
 			<storyboard event="open">
                 <animation property="scale" from="0" to="1" duration="1" mode="easeOut"/>
                 <animation property="opacity" from="0" to="0.3" duration="500" mode="easeOut"/>
