@@ -210,8 +210,8 @@ By Helmic
 		<lang.43>4/3</lang.43>
 
 		<!--space carousel 16/9-->
-		<lang.spaceCarousel>carousel • space (only 16/9)</lang.spaceCarousel>
-		<lang.spaceCarousel lang="fr">carrousel • espace (16/9 seulement)</lang.spaceCarousel>
+		<lang.spaceCarousel>carousel • space</lang.spaceCarousel>
+		<lang.spaceCarousel lang="fr">carrousel • espace</lang.spaceCarousel>
 
 		<lang.thin>thin</lang.thin>
 		<lang.thin lang="fr">mince</lang.thin>
@@ -883,7 +883,7 @@ By Helmic
             <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
             <color>dddddd</color>
             <glowColor>00000005</glowColor>
-            <fontSize>0.018</fontSize>
+            <fontSize>0.02</fontSize>
             <pos>0.5 0.018</pos>
             <origin>0.5 0.5</origin>
             <zIndex>110</zIndex>
@@ -906,7 +906,7 @@ By Helmic
             <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
             <color>dddddd</color>
             <glowColor>00000005</glowColor>
-            <fontSize>0.018</fontSize>
+            <fontSize>0.02</fontSize>
             <pos>0.5 0.018</pos>
             <origin>0.5 0.5</origin>
             <zIndex>110</zIndex>
@@ -929,7 +929,7 @@ By Helmic
             <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
             <color>dddddd</color>
             <glowColor>00000005</glowColor>
-            <fontSize>0.018</fontSize>
+            <fontSize>0.02</fontSize>
             <pos>0.5 0.018</pos>
             <origin>0.5 0.5</origin>
             <zIndex>110</zIndex>
@@ -952,7 +952,7 @@ By Helmic
             <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
             <color>dddddd</color>
             <glowColor>00000005</glowColor>
-            <fontSize>0.018</fontSize>
+            <fontSize>0.02</fontSize>
             <pos>0.5 0.018</pos>
             <origin>0.5 0.5</origin>
             <zIndex>110</zIndex>
@@ -975,7 +975,7 @@ By Helmic
             <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
             <color>dddddd</color>
             <glowColor>00000005</glowColor>
-            <fontSize>0.018</fontSize>
+            <fontSize>0.02</fontSize>
             <pos>0.5 0.018</pos>
             <origin>0.5 0.5</origin>
             <zIndex>110</zIndex>
@@ -998,7 +998,7 @@ By Helmic
             <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
             <color>dddddd</color>
             <glowColor>00000005</glowColor>
-            <fontSize>0.018</fontSize>
+            <fontSize>0.02</fontSize>
             <pos>0.5 0.018</pos>
             <origin>0.5 0.5</origin>
             <zIndex>110</zIndex>
@@ -1021,7 +1021,7 @@ By Helmic
             <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
             <color>dddddd</color>
             <glowColor>00000005</glowColor>
-            <fontSize>0.018</fontSize>
+            <fontSize>0.02</fontSize>
             <pos>0.5 0.018</pos>
             <origin>0.5 0.5</origin>
             <zIndex>110</zIndex>
@@ -1045,7 +1045,7 @@ By Helmic
             <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
             <color>dddddd</color>
             <glowColor>00000005</glowColor>
-            <fontSize>0.018</fontSize>
+            <fontSize>0.02</fontSize>
             <pos>0.5 0.018</pos>
             <origin>0.5 0.5</origin>
             <zIndex>110</zIndex>
@@ -1455,7 +1455,7 @@ By Helmic
 			<w>0.9</w>
 			<h>0.1</h>
 			<storyboard>
-				<animation property="opacity" from="0" to="1" duration="350" mode="easeIn"/>
+				<animation property="opacity" from="0" to="1" duration="100" mode="easeIn"/>
 				<animation property="opacity" to="0" duration="150" mode="easeIn" begin="1000"/>
 				<animation property="offsetX" from="0.02" to="0" duration="1000" mode="linear" begin="0"/>
 				<animation property="offsetX" from="0" to="-2" duration="300" mode="easeIn" begin="1000"/>
@@ -1476,7 +1476,7 @@ By Helmic
 			<w>0.9</w>
 			<h>0.1</h>
 			<storyboard>
-				<animation property="opacity" from="0" to="1" duration="350" mode="easeIn"/>
+				<animation property="opacity" from="0" to="1" duration="100" mode="easeIn"/>
 				<animation property="opacity" to="0" duration="150" mode="easeIn" begin="1000"/>
 				<animation property="offsetX" from="-0.02" to="0" duration="1000" mode="linear" begin="0"/>
 				<animation property="offsetX" from="0" to="2" duration="300" mode="easeIn" begin="1000"/>
@@ -2393,11 +2393,12 @@ By Helmic
             <origin>0 0.5</origin>
             <zIndex>110</zIndex>
 			<w>0.5</w>
-			<h>0.018</h>
+			<h>0.02</h>
 			<opacity>0</opacity>
 			<storyboard event="open" repeatAt="1">
                 <animation property="offsetX" from="0" to="0" duration="250" mode="linear" begin="1"/>
-                <animation property="opacity" from="0" to="1" duration="250" mode="linear" begin="1"/>
+                <animation property="opacity" from="0" to="0" duration="1000" mode="linear" begin="1"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="linear" begin="1000"/>
                 <animation property="offsetX" to="-1" duration="250" mode="easeOut" begin="4750"/>
                 <animation property="opacity" to="0" duration="250" mode="easeOutQuint" begin="4750"/>
                 <animation property="scale" from="1" to="1" duration="21500" mode="linear"/>
@@ -2428,7 +2429,7 @@ By Helmic
             <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
             <color>dddddd</color>
             <glowColor>00000005</glowColor>
-            <fontSize>0.018</fontSize>
+            <fontSize>0.02</fontSize>
             <pos>0.5 0.018</pos>
             <origin>0.5 0.5</origin>
             <zIndex>110</zIndex>
@@ -2474,7 +2475,7 @@ By Helmic
             <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
             <color>dddddd</color>
             <glowColor>00000005</glowColor>
-            <fontSize>0.018</fontSize>
+            <fontSize>0.02</fontSize>
             <pos>0.5 0.018</pos>
             <origin>0 0.5</origin>
             <zIndex>110</zIndex>
@@ -2520,7 +2521,7 @@ By Helmic
             <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
             <color>dddddd</color>
             <glowColor>00000005</glowColor>
-            <fontSize>0.018</fontSize>
+            <fontSize>0.02</fontSize>
             <pos>0.5 0.018</pos>
             <origin>1 0.5</origin>
             <zIndex>110</zIndex>
@@ -2566,7 +2567,7 @@ By Helmic
             <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
             <color>dddddd</color>
             <glowColor>00000005</glowColor>
-            <fontSize>0.018</fontSize>
+            <fontSize>0.020</fontSize>
             <pos>0.5 0.018</pos>
             <origin>0 0.5</origin>
             <zIndex>110</zIndex>
@@ -2612,7 +2613,7 @@ By Helmic
             <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
             <color>dddddd</color>
             <glowColor>00000005</glowColor>
-            <fontSize>0.018</fontSize>
+            <fontSize>0.02</fontSize>
             <pos>0.5 0.018</pos>
             <origin>1 0.5</origin>
             <zIndex>110</zIndex>
@@ -2657,7 +2658,7 @@ By Helmic
 		<text name="md_gametime">
             <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
             <color>dddddd</color>
-            <fontSize>0.018</fontSize>
+            <fontSize>0.02</fontSize>
             <pos>0.5 0.018</pos>
             <origin>0 0.5</origin>
             <zIndex>110</zIndex>
@@ -2703,7 +2704,7 @@ By Helmic
             <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
             <color>dddddd</color>
             <glowColor>00000005</glowColor>
-            <fontSize>0.018</fontSize>
+            <fontSize>0.02</fontSize>
             <pos>0.5 0.018</pos>
             <origin>1 0.5</origin>
             <zIndex>110</zIndex>
@@ -2748,7 +2749,7 @@ By Helmic
 		<datetime name="md_lastplayed">
             <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
             <color>dddddd</color>
-            <fontSize>0.018</fontSize>
+            <fontSize>0.02</fontSize>
             <pos>0.5 0.018</pos>
             <origin>0 0.5</origin>
             <zIndex>110</zIndex>
@@ -2792,7 +2793,7 @@ By Helmic
             <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
             <color>dddddd</color>
             <glowColor>00000005</glowColor>
-            <fontSize>0.018</fontSize>
+            <fontSize>0.02</fontSize>
             <pos>0.5 0.018</pos>
             <origin>1 0.5</origin>
             <zIndex>110</zIndex>
