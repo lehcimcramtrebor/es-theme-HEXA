@@ -1788,7 +1788,7 @@ By Helmic
 	<image name="logoTV" extra="true" ifSubset="tvLogo:yes">
 		<linearSmooth>true</linearSmooth>
 		<zIndex>7</zIndex>
-		<maxSize>0.14 0.08</maxSize>
+		<maxSize>0.2 0.12</maxSize>
 		<origin>0. 1</origin>
 		<pos>0.0625 0.88</pos>
 		<color>ffffff</color>
@@ -1813,6 +1813,21 @@ By Helmic
 		<path>./_inc/logos/${system.theme}-clear.svg</path>
 		<path>./_inc/logos/${system.theme}-${lang}.png</path>
 		<path>./_inc/logos/${system.theme}-${lang}.svg</path>
+			<storyboard event="open">
+                <animation property="scale" to="0.6" duration="350" mode="easeInOut" begin="1500"/>
+            </storyboard>
+			<storyboard event="activateNext">
+                <animation property="scale" to="0.6" duration="350" mode="easeInOut" begin="1500"/>
+            </storyboard>
+			<storyboard event="activatePrev">
+                <animation property="scale" to="0.6" duration="350" mode="easeInOut" begin="1500"/>
+           </storyboard>
+			<storyboard event="deactivateNext">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+			<storyboard event="deactivatePrev">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
 	</image>
 
 	<image name="logoTV" region="us" extra="true" ifSubset="tvLogo:yes">
