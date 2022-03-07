@@ -2388,7 +2388,7 @@ By Helmic
 <!--game info bar-->
 		
 		<rating name="md_rating">
-            <color>dddddd</color>
+            <color>ffff00</color>
             <pos>0.47 0.018</pos>
             <origin>0 0.5</origin>
             <zIndex>110</zIndex>
