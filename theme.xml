@@ -1676,20 +1676,20 @@ By Helmic
 			<storyboard event="open">
                  <animation property="color" to="00000000" duration="1000" mode="linear"/>
                  <animation property="color" to="ffffff" duration="250" mode="easeOutQuint" begin="1000"/>
-                 <animation property="color" to="ffffff" duration="2000" mode="linear" begin="1250"/>
-                 <animation property="color" to="00000000" duration="250" mode="easeInQuint" begin="3250"/>
+                 <animation property="color" to="ffffff" duration="550" mode="linear" begin="1250"/>
+                 <animation property="color" to="00000000" duration="250" mode="easeIn" begin="1800"/>
             </storyboard>
 			<storyboard event="activateNext">
                  <animation property="color" to="00000000" duration="1000" mode="linear"/>
                  <animation property="color" to="ffffff" duration="250" mode="easeOutQuint" begin="1000"/>
-                 <animation property="color" to="ffffff" duration="2000" mode="linear" begin="1250"/>
-                 <animation property="color" to="00000000" duration="250" mode="easeInQuint" begin="3250"/>
+                 <animation property="color" to="ffffff" duration="550" mode="linear" begin="1250"/>
+                 <animation property="color" to="00000000" duration="250" mode="easeIn" begin="1800"/>
             </storyboard>
 			<storyboard event="activatePrev">
                  <animation property="color" to="00000000" duration="1000" mode="linear"/>
                  <animation property="color" to="ffffff" duration="250" mode="easeOutQuint" begin="1000"/>
-                 <animation property="color" to="ffffff" duration="2000" mode="linear" begin="1250"/>
-                 <animation property="color" to="00000000" duration="250" mode="easeInQuint" begin="3250"/>
+                 <animation property="color" to="ffffff" duration="550" mode="linear" begin="1250"/>
+                 <animation property="color" to="00000000" duration="250" mode="easeIn" begin="1800"/>
            </storyboard>
 			<storyboard event="deactivateNext">
                 <animation property="color" from="00000000" to="00000000" duration="1" mode="easeIn"/>
