@@ -251,6 +251,9 @@ By Helmic
 		<lang.gamebarColor>gamelist • game bar icons active colors</lang.gamebarColor>
 		<lang.gamebarColor lang="fr">listes de jeux • couleur des icônes de la barre de jeux</lang.gamebarColor>
 
+		<lang.gamebindsColor>gamelist • game binds text color</lang.gamebindsColor>
+		<lang.gamebindsColor lang="fr">listes de jeux • couleur du texte des infos de jeux</lang.gamebindsColor>
+
 		<lang.colorYelllow>yellow</lang.colorYelllow>
 		<lang.colorYelllow lang="fr">jaune</lang.colorYelllow>
 
@@ -514,6 +517,12 @@ By Helmic
 	</subset>
 
 	<subset name="gamebarColor" displayName="${lang.gamebarColor}" appliesTo="system,basic,detailed,grid,gamecarousel">
+		<include name="colorYellow" displayName="${lang.colorYelllow}"/>
+		<include name="colorWhite" displayName="${lang.colorWhite}"/>
+		<include name="colorsetAdaptive" displayName="${lang.colorsetAdaptive}"/>
+	</subset>
+
+	<subset name="gamebindsColor" displayName="${lang.gamebindsColor}" appliesTo="system,basic,detailed,grid,gamecarousel">
 		<include name="colorYellow" displayName="${lang.colorYelllow}"/>
 		<include name="colorWhite" displayName="${lang.colorWhite}"/>
 		<include name="colorsetAdaptive" displayName="${lang.colorsetAdaptive}"/>
@@ -2469,7 +2478,9 @@ By Helmic
 
 		<text name="md_genre">
             <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
-            <color>dddddd</color>
+            <color ifSubset="gamebindsColor:colorYellow">ffff00</color>
+            <color ifSubset="gamebindsColor:colorWhite">dddddd</color>
+            <color ifSubset="gamebindsColor:colorsetAdaptive">${overlay.colorset}</color>
             <glowColor>00000005</glowColor>
             <fontSize>0.02</fontSize>
             <pos>0.5 0.018</pos>
@@ -2515,7 +2526,9 @@ By Helmic
 
 		<text name="md_developer">
             <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
-            <color>dddddd</color>
+            <color ifSubset="gamebindsColor:colorYellow">ffff00</color>
+            <color ifSubset="gamebindsColor:colorWhite">dddddd</color>
+            <color ifSubset="gamebindsColor:colorsetAdaptive">${overlay.colorset}</color>
             <glowColor>00000005</glowColor>
             <fontSize>0.02</fontSize>
             <pos>0.5 0.018</pos>
@@ -2561,7 +2574,9 @@ By Helmic
 
 		<text name="md_lbl_developer">
             <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
-            <color>dddddd</color>
+            <color ifSubset="gamebindsColor:colorYellow">ffff00</color>
+            <color ifSubset="gamebindsColor:colorWhite">dddddd</color>
+            <color ifSubset="gamebindsColor:colorsetAdaptive">${overlay.colorset}</color>
             <glowColor>00000005</glowColor>
             <fontSize>0.02</fontSize>
             <pos>0.5 0.018</pos>
@@ -2607,7 +2622,9 @@ By Helmic
 
 		<text name="md_playcount">
             <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
-            <color>dddddd</color>
+            <color ifSubset="gamebindsColor:colorYellow">ffff00</color>
+            <color ifSubset="gamebindsColor:colorWhite">dddddd</color>
+            <color ifSubset="gamebindsColor:colorsetAdaptive">${overlay.colorset}</color>
             <glowColor>00000005</glowColor>
             <fontSize>0.020</fontSize>
             <pos>0.5 0.018</pos>
@@ -2653,7 +2670,9 @@ By Helmic
 
 		<text name="md_lbl_playcount">
             <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
-            <color>dddddd</color>
+            <color ifSubset="gamebindsColor:colorYellow">ffff00</color>
+            <color ifSubset="gamebindsColor:colorWhite">dddddd</color>
+            <color ifSubset="gamebindsColor:colorsetAdaptive">${overlay.colorset}</color>
             <glowColor>00000005</glowColor>
             <fontSize>0.02</fontSize>
             <pos>0.5 0.018</pos>
@@ -2699,7 +2718,9 @@ By Helmic
 
 		<text name="md_gametime">
             <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
-            <color>dddddd</color>
+            <color ifSubset="gamebindsColor:colorYellow">ffff00</color>
+            <color ifSubset="gamebindsColor:colorWhite">dddddd</color>
+            <color ifSubset="gamebindsColor:colorsetAdaptive">${overlay.colorset}</color>
             <fontSize>0.02</fontSize>
             <pos>0.5 0.018</pos>
             <origin>0 0.5</origin>
@@ -2744,7 +2765,9 @@ By Helmic
 
 		<text name="md_lbl_gametime">
             <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
-            <color>dddddd</color>
+            <color ifSubset="gamebindsColor:colorYellow">ffff00</color>
+            <color ifSubset="gamebindsColor:colorWhite">dddddd</color>
+            <color ifSubset="gamebindsColor:colorsetAdaptive">${overlay.colorset}</color>
             <glowColor>00000005</glowColor>
             <fontSize>0.02</fontSize>
             <pos>0.5 0.018</pos>
@@ -2790,7 +2813,9 @@ By Helmic
 
 		<datetime name="md_lastplayed">
             <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
-            <color>dddddd</color>
+            <color ifSubset="gamebindsColor:colorYellow">ffff00</color>
+            <color ifSubset="gamebindsColor:colorWhite">dddddd</color>
+            <color ifSubset="gamebindsColor:colorsetAdaptive">${overlay.colorset}</color>
             <fontSize>0.02</fontSize>
             <pos>0.5 0.018</pos>
             <origin>0 0.5</origin>
@@ -2833,7 +2858,9 @@ By Helmic
 
 		<text name="md_lbl_lastplayed">
             <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
-            <color>dddddd</color>
+            <color ifSubset="gamebindsColor:colorYellow">ffff00</color>
+            <color ifSubset="gamebindsColor:colorWhite">dddddd</color>
+            <color ifSubset="gamebindsColor:colorsetAdaptive">${overlay.colorset}</color>
             <glowColor>00000005</glowColor>
             <fontSize>0.02</fontSize>
             <pos>0.5 0.018</pos>
