@@ -248,6 +248,9 @@ By Helmic
 		<lang.ratingColor>gamelist • rating colors</lang.ratingColor>
 		<lang.ratingColor lang="fr">listes de jeux • couleur de la notation</lang.ratingColor>
 
+		<lang.gamebarColor>gamelist • game bar icons active colors</lang.gamebarColor>
+		<lang.gamebarColor lang="fr">listes de jeux • couleur des icônes de la barre de jeux</lang.gamebarColor>
+
 		<lang.colorYelllow>yellow</lang.colorYelllow>
 		<lang.colorYelllow lang="fr">jaune</lang.colorYelllow>
 
@@ -505,7 +508,13 @@ By Helmic
 	</subset>
 
 	<subset name="ratingColor" displayName="${lang.ratingColor}" appliesTo="system,basic,detailed,grid,gamecarousel">
-		<include name="colorYelllow" displayName="${lang.colorYelllow}"/>
+		<include name="colorYellow" displayName="${lang.colorYelllow}"/>
+		<include name="colorWhite" displayName="${lang.colorWhite}"/>
+		<include name="colorsetAdaptive" displayName="${lang.colorsetAdaptive}"/>
+	</subset>
+
+	<subset name="gamebarColor" displayName="${lang.gamebarColor}" appliesTo="system,basic,detailed,grid,gamecarousel">
+		<include name="colorYellow" displayName="${lang.colorYelllow}"/>
 		<include name="colorWhite" displayName="${lang.colorWhite}"/>
 		<include name="colorsetAdaptive" displayName="${lang.colorsetAdaptive}"/>
 	</subset>
@@ -2206,7 +2215,9 @@ By Helmic
 			<pos>0.105 0.112</pos>
 			<pos ifSubset="themeRatio:54|43">0.155 0.111</pos>
 			<zIndex>15</zIndex>
-			<color>dddddd</color>
+			<color ifSubset="gamebarColor:colorWhite">dddddd</color>
+			<color ifSubset="gamebarColor:colorYellow">dddd00</color>
+			<color ifSubset="gamebarColor:colorsetAdaptive">${overlay.colorset}</color>
 			<glowColor>00000040</glowColor>
 			<fontPath>./_inc/fonts/players.ttf</fontPath>
 		</text>
@@ -2217,7 +2228,9 @@ By Helmic
 			<pos ifSubset="themeRatio:54|43">0.185 0.111</pos>
 			<path>./_inc/icons/book.png</path>
 			<maxSize>0.02 0.02</maxSize>
-			<color>dddddd</color>
+			<color ifSubset="gamebarColor:colorWhite">dddddd</color>
+			<color ifSubset="gamebarColor:colorYellow">dddd00</color>
+			<color ifSubset="gamebarColor:colorsetAdaptive">${overlay.colorset}</color>
 			<zIndex>13</zIndex>
 		</image>
 		
@@ -2256,7 +2269,9 @@ By Helmic
 			<pos>0.145 0.112</pos>
 			<pos ifSubset="themeRatio:54|43">0.215 0.111</pos>
 			<maxSize>0.02 0.02</maxSize>
-			<color>dddddd</color>
+			<color ifSubset="gamebarColor:colorWhite">dddddd</color>
+			<color ifSubset="gamebarColor:colorYellow">dddd00</color>
+			<color ifSubset="gamebarColor:colorsetAdaptive">${overlay.colorset}</color>
 			<zIndex>13</zIndex>
 		</image>
 
@@ -2295,7 +2310,9 @@ By Helmic
 			<pos>0.165 0.112</pos>
 			<pos ifSubset="themeRatio:54|43">0.245 0.111</pos>
 			<maxSize>0.02 0.02</maxSize>     
-			<color>dddddd</color>
+			<color ifSubset="gamebarColor:colorWhite">dddddd</color>
+			<color ifSubset="gamebarColor:colorYellow">dddd00</color>
+			<color ifSubset="gamebarColor:colorsetAdaptive">${overlay.colorset}</color>
 			<zIndex>13</zIndex>
 		</image>
  		
@@ -2334,7 +2351,9 @@ By Helmic
 			<pos ifSubset="themeRatio:54|43">0.275 0.111</pos>
 			<path>./_inc/icons/kid.svg</path>
 			<maxSize>0.02 0.02</maxSize>
-			<color>dddddd</color>
+			<color ifSubset="gamebarColor:colorWhite">dddddd</color>
+			<color ifSubset="gamebarColor:colorYellow">dddd00</color>
+			<color ifSubset="gamebarColor:colorsetAdaptive">${overlay.colorset}</color>
 			<zIndex>13</zIndex>
 			<linearSmooth>true</linearSmooth>
 		</image>
@@ -2375,7 +2394,9 @@ By Helmic
 			<pos ifSubset="themeRatio:54|43">0.305 0.111</pos>
 			<path>./_inc/icons/hidden.svg</path>
 			<maxSize>0.02 0.02</maxSize>
-			<color>090909</color>
+			<color ifSubset="gamebarColor:colorWhite">dddddd</color>
+			<color ifSubset="gamebarColor:colorYellow">dddd00</color>
+			<color ifSubset="gamebarColor:colorsetAdaptive">${overlay.colorset}</color>
 			<zIndex>13</zIndex>
 		</image>
 
@@ -2407,7 +2428,7 @@ By Helmic
 <!--game info bar-->
 		
 		<rating name="md_rating">
-            <color ifSubset="ratingColor:colorYelllow">ffff00</color>
+            <color ifSubset="ratingColor:colorYellow">ffff00</color>
             <color ifSubset="ratingColor:colorWhite">dddddd</color>
             <color ifSubset="ratingColor:colorsetAdaptive">${overlay.colorset}</color>
             <pos>0.47 0.018</pos>
