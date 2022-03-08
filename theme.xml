@@ -402,33 +402,33 @@ By Helmic
     </subset>
 
     <subset name="wall" displayName="${lang.wall}">
-        <include name="wallBrushedPlate" displayName="${lang.wallBrushedPlate}"/>
-		<include name="wallDefault" displayName="${lang.wallDefault}"/>
-		<include name="wallLight" displayName="${lang.wallLight}"/>
-		<include name="wallDark" displayName="${lang.wallDark}"/>
-        <include name="wallFlatGrey" displayName="${lang.wallFlatGrey}"/>
-        <include name="wallFlatDark" displayName="${lang.wallFlatDark}"/>
-        <include name="wallColorBlue" displayName="${lang.wallColorBlue}"/>
-        <include name="wallColorGreen" displayName="${lang.wallColorGreen}"/>
-        <include name="wallColorRed" displayName="${lang.wallColorRed}"/>
-        <include name="wallColorPurple" displayName="${lang.wallColorPurple}"/>
-        <include name="wallColorOcean" displayName="${lang.wallColorOcean}"/>
-        <include name="wallStain" displayName="${lang.wallStain}"/>
-        <include name="wallSteelX" displayName="${lang.wallSteelX}"/>
-        <include name="wallAlu" displayName="${lang.wallAlu}"/>
-        <include name="wallCarbon" displayName="${lang.wallCarbon}"/>
-        <include name="wallPlates" displayName="${lang.wallPlates}"/>
-        <include name="wallStainBroke" displayName="${lang.wallStainBroke}"/>
-        <include name="wallSteelHoles" displayName="${lang.wallSteelHoles}"/>
-        <include name="wallFuture" displayName="${lang.wallFuture}"/>
-        <include name="wallFutureRed" displayName="${lang.wallFutureRed}"/>
-        <include name="wallFutureBlue" displayName="${lang.wallFutureBlue}"/>
-        <include name="wallFutureGreen" displayName="${lang.wallFutureGreen}"/>
-        <include name="wallFutureOrange" displayName="${lang.wallFutureOrange}"/>
-        <include name="wallFutureYellow" displayName="${lang.wallFutureYellow}"/>
-        <include name="wallFuturePink" displayName="${lang.wallFuturePink}"/>
-        <include name="wallFuturePurple" displayName="${lang.wallFuturePurple}"/>
-        <include name="wallSynthwave" displayName="${lang.wallSynthwave}"/>
+        <include name="wallBrushedPlate" displayName="${lang.wallBrushedPlate}">./_inc/wallpapers/wallBrushedPlate.xml</include>
+		<include name="wallDefault" displayName="${lang.wallDefault}">./_inc/wallpapers/wall.xml</include>
+		<include name="wallLight" displayName="${lang.wallLight}">./_inc/wallpapers/wallLight.xml</include>
+		<include name="wallDark" displayName="${lang.wallDark}">./_inc/wallpapers/wallDark.xml</include>
+        <include name="wallFlatGrey" displayName="${lang.wallFlatGrey}">./_inc/wallpapers/wallFlatGrey.xml</include>
+        <include name="wallFlatDark" displayName="${lang.wallFlatDark}">./_inc/wallpapers/wallFlatDark.xml</include>
+        <include name="wallColorBlue" displayName="${lang.wallColorBlue}">./_inc/wallpapers/wallColorBlue.xml</include>
+        <include name="wallColorGreen" displayName="${lang.wallColorGreen}">./_inc/wallpapers/wallColorGreen.xml</include>
+        <include name="wallColorRed" displayName="${lang.wallColorRed}">./_inc/wallpapers/wallColorRed.xml</include>
+        <include name="wallColorPurple" displayName="${lang.wallColorPurple}">./_inc/wallpapers/wallColorPurple.xml</include>
+        <include name="wallColorOcean" displayName="${lang.wallColorOcean}">./_inc/wallpapers/wallColorOcean.xml</include>
+        <include name="wallStain" displayName="${lang.wallStain}">./_inc/wallpapers/wallStain.xml</include>
+        <include name="wallSteelX" displayName="${lang.wallSteelX}">./_inc/wallpapers/wallSteelX.xml</include>
+        <include name="wallAlu" displayName="${lang.wallAlu}">./_inc/wallpapers/wallAlu.xml</include>
+        <include name="wallCarbon" displayName="${lang.wallCarbon}">./_inc/wallpapers/wallCarbon.xml</include>
+        <include name="wallPlates" displayName="${lang.wallPlates}">./_inc/wallpapers/wallPlates.xml</include>
+        <include name="wallStainBroke" displayName="${lang.wallStainBroke}">./_inc/wallpapers/wallStainBroke.xml</include>
+        <include name="wallSteelHoles" displayName="${lang.wallSteelHoles}">./_inc/wallpapers/wallSteelHoles.xml</include>
+        <include name="wallFuture" displayName="${lang.wallFuture}">./_inc/wallpapers/wallFuture.xml</include>
+        <include name="wallFutureRed" displayName="${lang.wallFutureRed}">./_inc/wallpapers/wallFutureRed.xml</include>
+        <include name="wallFutureBlue" displayName="${lang.wallFutureBlue}">./_inc/wallpapers/wallFutureBlue.xml</include>
+        <include name="wallFutureGreen" displayName="${lang.wallFutureGreen}">./_inc/wallpapers/wallFutureGreen.xml</include>
+        <include name="wallFutureOrange" displayName="${lang.wallFutureOrange}">./_inc/wallpapers/wallFutureOrange.xml</include>
+        <include name="wallFutureYellow" displayName="${lang.wallFutureYellow}">./_inc/wallpapers/wallFutureYellow.xml</include>
+        <include name="wallFuturePink" displayName="${lang.wallFuturePink}">./_inc/wallpapers/wallFuturePink.xml</include>
+        <include name="wallFuturePurple" displayName="${lang.wallFuturePurple}">./_inc/wallpapers/wallFuturePurple.xml</include>
+        <include name="wallSynthwave" displayName="${lang.wallSynthwave}">./_inc/wallpapers/wallSynthwave.xml</include>
     </subset>
 
     <subset name="carouselWallPaint" displayName="${lang.carouselWallPaint}" ifSubset="wall:wallDefault|wallLight|wallDark|wallFlatGrey|wallFlatDark|wallBrushedPlate">
@@ -627,37 +627,6 @@ By Helmic
         <overlay.colorset ifSubset="overlayColorset:red">b53737</overlay.colorset>
 
     </variables>
-
-		<!--WALLPAPERS-->
-    
-	<include ifSubset="wall:wallDefault">./_inc/wall.xml</include>
-	<include ifSubset="wall:wallLight">./_inc/wallLight.xml</include>
-	<include ifSubset="wall:wallDark">./_inc/wallDark.xml</include>
-	<include ifSubset="wall:wallFlatGrey">./_inc/wallFlatGrey.xml</include>
-	<include ifSubset="wall:wallFlatDark">./_inc/wallFlatDark.xml</include>
-	<include ifSubset="wall:wallStain">./_inc/wallStain.xml</include>
-	<include ifSubset="wall:wallSteelX">./_inc/wallSteelX.xml</include>
-	<include ifSubset="wall:wallAlu">./_inc/wallAlu.xml</include>
-	<include ifSubset="wall:wallCarbon">./_inc/wallCarbon.xml</include>
-	<include ifSubset="wall:wallPlates">./_inc/wallPlates.xml</include>
-	<include ifSubset="wall:wallBrushedPlate">./_inc/wallBrushedPlate.xml</include>
-	<include ifSubset="wall:wallStainBroke">./_inc/wallStainBroke.xml</include>
-	<include ifSubset="wall:wallSteelHoles">./_inc/wallSteelHoles.xml</include>
-	<include ifSubset="wall:wallFuture">./_inc/wallFuture.xml</include>
-	<include ifSubset="wall:wallFutureRed">./_inc/wallFutureRed.xml</include>
-	<include ifSubset="wall:wallFutureBlue">./_inc/wallFutureBlue.xml</include>
-	<include ifSubset="wall:wallFutureGreen">./_inc/wallFutureGreen.xml</include>
-	<include ifSubset="wall:wallFutureOrange">./_inc/wallFutureOrange.xml</include>
-	<include ifSubset="wall:wallFutureYellow">./_inc/wallFutureYellow.xml</include>
-	<include ifSubset="wall:wallFuturePink">./_inc/wallFuturePink.xml</include>
-	<include ifSubset="wall:wallFuturePurple">./_inc/wallFuturePurple.xml</include>
-	<include ifSubset="wall:wallColorBlue">./_inc/wallColorBlue.xml</include>
-	<include ifSubset="wall:wallColorGreen">./_inc/wallColorGreen.xml</include>
-	<include ifSubset="wall:wallColorRed">./_inc/wallColorRed.xml</include>
-	<include ifSubset="wall:wallColorPurple">./_inc/wallColorPurple.xml</include>
-	<include ifSubset="wall:wallColorOcean">./_inc/wallColorOcean.xml</include>
-	<include ifSubset="wall:wallSynthwave">./_inc/wallSynthwave.xml</include>
-
 
     <view name="system" ifSubset="logoVisualAssistance:yes">
 
@@ -1421,7 +1390,7 @@ By Helmic
 		</image>
  
         <image name="backgroundVideoFix" extra="true" ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff">
-            <path>./_inc/${wallpaper}.jpg</path>
+            <path>./_inc/wallpapers/${wallpaper}.jpg</path>
             <maxSize>99 1</maxSize>
             <pos>0.5 0.5</pos>
             <origin>0.5 0.5</origin>
@@ -1513,7 +1482,7 @@ By Helmic
         </image>
  
         <image name="background" extra="true">
-            <path>./_inc/${wallpaper}.jpg</path>
+            <path>./_inc/wallpapers/${wallpaper}.jpg</path>
             <maxSize>99 1</maxSize>
             <pos>0.5 0.5</pos>
             <origin>0.5 0.5</origin>
@@ -1561,7 +1530,7 @@ By Helmic
 
 		<image name="transitionBack" extra="true">
             <linearSmooth>true</linearSmooth>
-            <path>./_inc/${wallpaper}.jpg</path>
+            <path>./_inc/wallpapers/${wallpaper}.jpg</path>
            	<maxSize>99 1</maxSize>
 			<pos>0.5 0.5</pos>
 			<origin>0.5 0.5</origin>
