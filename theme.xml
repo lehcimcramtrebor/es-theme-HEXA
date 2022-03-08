@@ -531,8 +531,8 @@ By Helmic
 	</subset>
 
 	<subset name="systemRandomRatio" displayName="${lang.systemRandomRatio}" appliesTo="system,basic,detailed,grid,gamecarousel">
-		<include name="original" displayName="${lang.original}"/>
 		<include name="stretched" displayName="${lang.stretched}"/>
+		<include name="original" displayName="${lang.original}"/>
 	</subset>
 
 	<subset name="randomRatio" displayName="${lang.randomRatio}" appliesTo="system,basic,detailed,grid,gamecarousel">
