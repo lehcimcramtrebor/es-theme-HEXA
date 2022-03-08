@@ -291,6 +291,9 @@ By Helmic
 		<lang.tvLogo>gamelist • display tv logos</lang.tvLogo>
 		<lang.tvLogo lang="fr">listes de jeux • afficher les logos dans la tv</lang.tvLogo>
 
+		<lang.tvOs>gamelist • display os on tv</lang.tvOs>
+		<lang.tvOs lang="fr">listes de jeux • afficher l'os sur la tv</lang.tvOs>
+
 		<!--wall choice-->
 		<lang.wall>theme • choose wall</lang.wall>
 		<lang.wall lang="fr">thème • choisir le mur</lang.wall>
@@ -531,6 +534,11 @@ By Helmic
 	</subset>
 
 	<subset name="tvLogo" displayName="${lang.tvLogo}" appliesTo="system,basic,detailed,grid,gamecarousel">
+		<include name="yes" displayName="${lang.yes}"/>
+		<include name="no" displayName="${lang.no}"/>
+	</subset>
+
+	<subset name="tvOs" displayName="${lang.tvOs}" appliesTo="system,basic,detailed,grid,gamecarousel">
 		<include name="yes" displayName="${lang.yes}"/>
 		<include name="no" displayName="${lang.no}"/>
 	</subset>
@@ -1795,16 +1803,20 @@ By Helmic
 		<text name="logoContainer" extra="true">
 			<text>b a t o c e r a</text>
 			<text ifArch="windows">r e t r o b a t</text>
+			<text  ifSubset="tvOs:no"> e m u l a t i o n s t a t i o n</text>
             <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
             <fontPath ifArch="windows">./_inc/fonts/snes.ttf</fontPath>
+            <fontPath ifSubset="tvOs:no">./_inc/fonts/DJB Get Digital.ttf</fontPath>
             <color>cccccc</color>
             <glowColor>00000015</glowColor>
             <fontSize>0.012</fontSize>
             <fontSize ifSubset="themeRatio:54|43">0.01</fontSize>
             <fontSize ifArch="windows">0.018</fontSize>
             <fontSize ifArch="windows" ifSubset="themeRatio:54|43">0.013</fontSize>
-            <pos>0.316822917 0.9</pos>
-            <pos ifSubset="themeRatio:54|43">0.316822917 0.9125</pos>
+            <fontSize ifSubset="tvOs:no">0.012</fontSize>
+            <fontSize ifSubset="tvOs:no,themeRatio:54|43">0.01</fontSize>
+            <pos>0.316822917 0.901</pos>
+            <pos ifSubset="themeRatio:54|43">0.316822917 0.9145</pos>
             <origin>0.5 0.5</origin>
             <zIndex>10</zIndex>
 			<alignment>center</alignment>
