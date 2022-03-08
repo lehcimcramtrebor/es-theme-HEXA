@@ -244,6 +244,19 @@ By Helmic
 		<lang.boxbackDisplay>gamelist • display box back</lang.boxbackDisplay>
 		<lang.boxbackDisplay lang="fr">listes de jeux • afficher l'arrière de la boite</lang.boxbackDisplay>
 
+		<!--gamelist colors-->
+		<lang.ratingColor>gamelist • rating colors</lang.ratingColor>
+		<lang.ratingColor lang="fr">listes de jeux • couleur de la notation</lang.ratingColor>
+
+		<lang.colorYelllow>yellow</lang.colorYelllow>
+		<lang.colorYelllow lang="fr">jaune</lang.colorYelllow>
+
+		<lang.colorWhite>white</lang.colorWhite>
+		<lang.colorWhite lang="fr">blanc</lang.colorWhite>
+
+		<lang.colorsetAdaptive>colorset</lang.colorsetAdaptive>
+		<lang.colorsetAdaptive lang="fr">adaptif</lang.colorsetAdaptive>
+
 		<!--random art display-->
 		<lang.randomArt>system view • random arts</lang.randomArt>
 		<lang.randomArt lang="fr">vue système • images aléatoires</lang.randomArt>
@@ -489,6 +502,12 @@ By Helmic
 	<subset name="boxbackDisplay" displayName="${lang.boxbackDisplay}" appliesTo="system,basic,detailed,grid,gamecarousel">
 		<include name="no" displayName="${lang.no}"/>
 		<include name="yes" displayName="${lang.yes}"/>
+	</subset>
+
+	<subset name="ratingColor" displayName="${lang.ratingColor}" appliesTo="system,basic,detailed,grid,gamecarousel">
+		<include name="colorYelllow" displayName="${lang.colorYelllow}"/>
+		<include name="colorWhite" displayName="${lang.colorWhite}"/>
+		<include name="colorsetAdaptive" displayName="${lang.colorsetAdaptive}"/>
 	</subset>
 
     <subset name="gamelistWallPaint" displayName="${lang.gamelistWallPaint}" appliesTo="system,basic,detailed,grid,gamecarousel" ifSubset="wall:wallDefault|wallLight|wallDark|wallFlatGrey|wallFlatDark|wallBrushedPlate">
@@ -2388,7 +2407,9 @@ By Helmic
 <!--game info bar-->
 		
 		<rating name="md_rating">
-            <color>ffff00</color>
+            <color ifSubset="ratingColor:colorYelllow">ffff00</color>
+            <color ifSubset="ratingColor:colorWhite">dddddd</color>
+            <color ifSubset="ratingColor:colorsetAdaptive">${overlay.colorset}</color>
             <pos>0.47 0.018</pos>
             <origin>0 0.5</origin>
             <zIndex>110</zIndex>
