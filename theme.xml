@@ -3171,15 +3171,14 @@ By Helmic
 	
 
 		<gridtile name="selected">
-			<backgroundCenterColor>00000000</backgroundCenterColor>
-			<backgroundEdgeColor>00000000</backgroundEdgeColor>	
+			<backgroundCenterColor>${overlay.colorset}</backgroundCenterColor>
+			<backgroundEdgeColor>${overlay.colorset}</backgroundEdgeColor>	
 			<imageColor>ffffff</imageColor>
 		</gridtile>
 
 
 		<ninepatch name="gridtile.background:selected">
-			<animateColor>${overlay.colorset}1a</animateColor>
-			<animateColorTime>50</animateColorTime>
+			<animateColor>${overlay.colorset}</animateColor>
 		</ninepatch>
 
 		<image name="md_marquee">
