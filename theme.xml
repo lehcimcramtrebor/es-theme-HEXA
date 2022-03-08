@@ -244,15 +244,27 @@ By Helmic
 		<lang.boxbackDisplay>gamelist • display box back</lang.boxbackDisplay>
 		<lang.boxbackDisplay lang="fr">listes de jeux • afficher l'arrière de la boite</lang.boxbackDisplay>
 
-		<!--gamelist colors-->
+		<!--elements colors-->
 		<lang.ratingColor>gamelist • rating colors</lang.ratingColor>
 		<lang.ratingColor lang="fr">listes de jeux • couleur de la notation</lang.ratingColor>
 
 		<lang.gamebarColor>gamelist • game bar icons active colors</lang.gamebarColor>
 		<lang.gamebarColor lang="fr">listes de jeux • couleur des icônes de la barre de jeux</lang.gamebarColor>
 
+		<lang.gameHeadColor>gamelist • game title color</lang.gameHeadColor>
+		<lang.gameHeadColor lang="fr">listes de jeux • couleur du titre du jeu</lang.gameHeadColor>
+
 		<lang.gamebindsColor>gamelist • game binds text color</lang.gamebindsColor>
 		<lang.gamebindsColor lang="fr">listes de jeux • couleur du texte des infos de jeux</lang.gamebindsColor>
+
+		<lang.helpTextColor>help • text color</lang.helpTextColor>
+		<lang.helpTextColor lang="fr">aide • couleur du texte</lang.helpTextColor>
+
+		<lang.bindingBar>system infos bar • text color</lang.bindingBar>
+		<lang.bindingBar lang="fr">barre des infos système • couleur du texte</lang.bindingBar>
+
+		<lang.systemInfoColor>screen system infos • color</lang.systemInfoColor>
+		<lang.systemInfoColor lang="fr">infos système sur l'écran • couleur</lang.systemInfoColor>
 
 		<lang.colorYelllow>yellow</lang.colorYelllow>
 		<lang.colorYelllow lang="fr">jaune</lang.colorYelllow>
@@ -442,6 +454,24 @@ By Helmic
         <include name="xboxOneIcons" displayName="${lang.xboxOneIcons}"/>
     </subset>
 
+	<subset name="helpTextColor" displayName="${lang.helpTextColor}">
+		<include name="colorWhite" displayName="${lang.colorWhite}"/>
+		<include name="colorYellow" displayName="${lang.colorYelllow}"/>
+		<include name="colorsetAdaptive" displayName="${lang.colorsetAdaptive}"/>
+	</subset>
+
+	<subset name="bindingBar" displayName="${lang.bindingBar}">
+		<include name="colorWhite" displayName="${lang.colorWhite}"/>
+		<include name="colorYellow" displayName="${lang.colorYelllow}"/>
+		<include name="colorsetAdaptive" displayName="${lang.colorsetAdaptive}"/>
+	</subset>
+
+	<subset name="systemInfoColor" displayName="${lang.systemInfoColor}">
+		<include name="colorWhite" displayName="${lang.colorWhite}"/>
+		<include name="colorYellow" displayName="${lang.colorYelllow}"/>
+		<include name="colorsetAdaptive" displayName="${lang.colorsetAdaptive}"/>
+	</subset>
+
     <subset name="overlayColorset" displayName="${lang.overlayColorset}">
         <include name="red" displayName="${lang.red}"/>
         <include name="blue" displayName="${lang.blue}"/>
@@ -517,6 +547,12 @@ By Helmic
 	</subset>
 
 	<subset name="gamebarColor" displayName="${lang.gamebarColor}" appliesTo="system,basic,detailed,grid,gamecarousel">
+		<include name="colorYellow" displayName="${lang.colorYelllow}"/>
+		<include name="colorWhite" displayName="${lang.colorWhite}"/>
+		<include name="colorsetAdaptive" displayName="${lang.colorsetAdaptive}"/>
+	</subset>
+
+	<subset name="gameHeadColor" displayName="${lang.gameHeadColor}" appliesTo="system,basic,detailed,grid,gamecarousel">
 		<include name="colorYellow" displayName="${lang.colorYelllow}"/>
 		<include name="colorWhite" displayName="${lang.colorWhite}"/>
 		<include name="colorsetAdaptive" displayName="${lang.colorsetAdaptive}"/>
@@ -880,7 +916,9 @@ By Helmic
         <text name="systemInfo">     
             <pos>0 0.9115</pos>
             <backgroundColor>00000000</backgroundColor>
-            <color>dddddd</color>
+            <color ifSubset="systemInfoColor:colorWhite">dddddd</color>
+            <color ifSubset="systemInfoColor:colorYellow">ffff00</color>
+            <color ifSubset="systemInfoColor:colorsetAdaptive">${overlay.colorset}</color>
             <fontPath>./_inc/fonts/conthrax-sb.ttf</fontPath>
             <fontSize>0.02</fontSize>
             <glowColor>00000005</glowColor>
@@ -901,8 +939,10 @@ By Helmic
 		<text name="systemNameCarousel" extra="true">
 			<text>${system.fullName}</text>
             <fontPath>./_inc/fonts/conthrax-sb.ttf</fontPath>
-            <color>dddddd</color>
-            <glowColor>00000005</glowColor>
+            <color ifSubset="systemInfoColor:colorWhite">dddddd</color>
+            <color ifSubset="systemInfoColor:colorYellow">ffff00</color>
+            <color ifSubset="systemInfoColor:colorsetAdaptive">${overlay.colorset}</color>
+             <glowColor>00000005</glowColor>
             <fontSize>0.02</fontSize>
             <pos>0.5 0.94</pos>
             <origin>0.5 0.5</origin>
@@ -918,7 +958,9 @@ By Helmic
 		<text name="bindingBar01" extra="true">
 			<text>${system.fullName}</text>
             <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
-            <color>dddddd</color>
+            <color ifSubset="bindingBar:colorWhite">dddddd</color>
+            <color ifSubset="bindingBar:colorYellow">ffff00</color>
+            <color ifSubset="bindingBar:colorsetAdaptive">${overlay.colorset}</color>
             <glowColor>00000005</glowColor>
             <fontSize>0.02</fontSize>
             <pos>0.5 0.018</pos>
@@ -941,7 +983,9 @@ By Helmic
 		<text name="bindingBar02" extra="true">
 			<text>${system.manufacturer}</text>
             <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
-            <color>dddddd</color>
+            <color ifSubset="bindingBar:colorWhite">dddddd</color>
+            <color ifSubset="bindingBar:colorYellow">ffff00</color>
+            <color ifSubset="bindingBar:colorsetAdaptive">${overlay.colorset}</color>
             <glowColor>00000005</glowColor>
             <fontSize>0.02</fontSize>
             <pos>0.5 0.018</pos>
@@ -964,7 +1008,9 @@ By Helmic
 		<text name="bindingBar03" extra="true">
 			<text>${lang.releasedYear}: ${system.releaseYear}</text>
             <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
-            <color>dddddd</color>
+            <color ifSubset="bindingBar:colorWhite">dddddd</color>
+            <color ifSubset="bindingBar:colorYellow">ffff00</color>
+            <color ifSubset="bindingBar:colorsetAdaptive">${overlay.colorset}</color>
             <glowColor>00000005</glowColor>
             <fontSize>0.02</fontSize>
             <pos>0.5 0.018</pos>
@@ -987,7 +1033,9 @@ By Helmic
 		<text name="bindingBar04" extra="true">
 			<text>${lang.favorites}: {binding:favorites}</text>
             <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
-            <color>dddddd</color>
+            <color ifSubset="bindingBar:colorWhite">dddddd</color>
+            <color ifSubset="bindingBar:colorYellow">ffff00</color>
+            <color ifSubset="bindingBar:colorsetAdaptive">${overlay.colorset}</color>
             <glowColor>00000005</glowColor>
             <fontSize>0.02</fontSize>
             <pos>0.5 0.018</pos>
@@ -1010,7 +1058,9 @@ By Helmic
 		<text name="bindingBar05" extra="true">
 			<text>${lang.gamesPlayed}: {binding:gamesPlayed}</text>
             <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
-            <color>dddddd</color>
+            <color ifSubset="bindingBar:colorWhite">dddddd</color>
+            <color ifSubset="bindingBar:colorYellow">ffff00</color>
+            <color ifSubset="bindingBar:colorsetAdaptive">${overlay.colorset}</color>
             <glowColor>00000005</glowColor>
             <fontSize>0.02</fontSize>
             <pos>0.5 0.018</pos>
@@ -1033,7 +1083,9 @@ By Helmic
 		<text name="bindingBar06" extra="true">
 			<text>${lang.lastPlayed}: {binding:lastPlayedDate}</text>
             <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
-            <color>dddddd</color>
+            <color ifSubset="bindingBar:colorWhite">dddddd</color>
+            <color ifSubset="bindingBar:colorYellow">ffff00</color>
+            <color ifSubset="bindingBar:colorsetAdaptive">${overlay.colorset}</color>
             <glowColor>00000005</glowColor>
             <fontSize>0.02</fontSize>
             <pos>0.5 0.018</pos>
@@ -1056,7 +1108,9 @@ By Helmic
 		<text name="bindingBar07" extra="true">
 			<text>${lang.mostPlayed}: {binding:mostPlayed}</text>
             <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
-            <color>dddddd</color>
+            <color ifSubset="bindingBar:colorWhite">dddddd</color>
+            <color ifSubset="bindingBar:colorYellow">ffff00</color>
+            <color ifSubset="bindingBar:colorsetAdaptive">${overlay.colorset}</color>
             <glowColor>00000005</glowColor>
             <fontSize>0.02</fontSize>
             <pos>0.5 0.018</pos>
@@ -1080,7 +1134,9 @@ By Helmic
 			<text>${lang.retroachievements}: ${lang.cheevosTrue} (${cheevos.username})</text>
 			<text ifCheevos="false">${lang.retroachievements} ${lang.cheevosFalse}</text>
             <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
-            <color>dddddd</color>
+            <color ifSubset="bindingBar:colorWhite">dddddd</color>
+            <color ifSubset="bindingBar:colorYellow">ffff00</color>
+            <color ifSubset="bindingBar:colorsetAdaptive">${overlay.colorset}</color>
             <glowColor>00000005</glowColor>
             <fontSize>0.02</fontSize>
             <pos>0.5 0.018</pos>
@@ -1906,7 +1962,9 @@ By Helmic
 		<text name="md_name">
 			<text>${system.name}</text>
             <fontPath>./_inc/fonts/conthrax-sb.ttf</fontPath>
-            <color>ffffff</color>
+            <color ifSubset="gameHeadColor:colorWhite">ffffff</color>
+            <color ifSubset="gameHeadColor:colorYellow">ffff00</color>
+            <color ifSubset="gameHeadColor:colorsetAdaptive">${overlay.colorset}</color>
             <glowColor>00000005</glowColor>
             <fontSize>0.02</fontSize>
             <pos>0.0134375 0.0425</pos>
@@ -1982,7 +2040,7 @@ By Helmic
 		<datetime name="md_releasedate">
             <fontPath>./_inc/fonts/conthrax-sb.ttf</fontPath>
             <color>cccccc</color>
-            <fontSize>0.014</fontSize>
+           <fontSize>0.014</fontSize>
             <pos>0.0134375 0.095</pos>
             <origin>0 0</origin>
             <zIndex>10</zIndex>
@@ -3404,7 +3462,9 @@ By Helmic
     <view name="screen,menu,system,basic,detailed,grid,gamecarousel">
     
 		<helpsystem name="help">
-			<textColor>dddddd</textColor>
+			<textColor ifSubset="helpTextColor:colorWhite">dddddd</textColor>
+			<textColor ifSubset="helpTextColor:colorYellow">ffff00</textColor>
+			<textColor ifSubset="helpTextColor:colorsetAdaptive">${overlay.colorset}</textColor>
 			<fontSize>0.02</fontSize>
 			<origin>0 1</origin>
 			<pos>0.004 0.99</pos>
