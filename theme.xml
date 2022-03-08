@@ -254,8 +254,20 @@ By Helmic
 		<lang.gameHeadColor>gamelist • game title color</lang.gameHeadColor>
 		<lang.gameHeadColor lang="fr">listes de jeux • couleur du titre du jeu</lang.gameHeadColor>
 
+		<lang.systemNameColor>gamelist • system name color</lang.systemNameColor>
+		<lang.systemNameColor lang="fr">listes de jeux • couleur du nom du système</lang.systemNameColor>
+
+		<lang.releaseColor>gamelist • release date color</lang.releaseColor>
+		<lang.releaseColor lang="fr">listes de jeux • couleur de la date de sortie</lang.releaseColor>
+
 		<lang.gamebindsColor>gamelist • game binds text color</lang.gamebindsColor>
 		<lang.gamebindsColor lang="fr">listes de jeux • couleur du texte des infos de jeux</lang.gamebindsColor>
+
+		<lang.lineColor>gamelist • lines color (description)</lang.lineColor>
+		<lang.lineColor lang="fr">listes de jeux • couleur des lignes de description</lang.lineColor>
+
+		<lang.descriptionColor>gamelist • description color</lang.descriptionColor>
+		<lang.descriptionColor lang="fr">listes de jeux • couleur de la description</lang.descriptionColor>
 
 		<lang.helpTextColor>help • text color</lang.helpTextColor>
 		<lang.helpTextColor lang="fr">aide • couleur du texte</lang.helpTextColor>
@@ -554,7 +566,7 @@ By Helmic
 		<include name="colorsetAdaptive" displayName="${lang.colorsetAdaptive}"/>
 	</subset>
 
-	<subset name="gamebarColor" displayName="${lang.gamebarColor}" appliesTo="system,basic,detailed,grid,gamecarousel">
+	<subset name="gamebindsColor" displayName="${lang.gamebindsColor}" appliesTo="system,basic,detailed,grid,gamecarousel">
 		<include name="colorYellow" displayName="${lang.colorYelllow}"/>
 		<include name="colorWhite" displayName="${lang.colorWhite}"/>
 		<include name="colorsetAdaptive" displayName="${lang.colorsetAdaptive}"/>
@@ -566,9 +578,33 @@ By Helmic
 		<include name="colorsetAdaptive" displayName="${lang.colorsetAdaptive}"/>
 	</subset>
 
-	<subset name="gamebindsColor" displayName="${lang.gamebindsColor}" appliesTo="system,basic,detailed,grid,gamecarousel">
+	<subset name="systemNameColor" displayName="${lang.systemNameColor}" appliesTo="system,basic,detailed,grid,gamecarousel">
+		<include name="colorWhite" displayName="${lang.colorWhite}"/>
+		<include name="colorYellow" displayName="${lang.colorYelllow}"/>
+		<include name="colorsetAdaptive" displayName="${lang.colorsetAdaptive}"/>
+	</subset>
+
+	<subset name="releaseColor" displayName="${lang.releaseColor}" appliesTo="system,basic,detailed,grid,gamecarousel">
 		<include name="colorYellow" displayName="${lang.colorYelllow}"/>
 		<include name="colorWhite" displayName="${lang.colorWhite}"/>
+		<include name="colorsetAdaptive" displayName="${lang.colorsetAdaptive}"/>
+	</subset>
+
+	<subset name="gamebarColor" displayName="${lang.gamebarColor}" appliesTo="system,basic,detailed,grid,gamecarousel">
+		<include name="colorWhite" displayName="${lang.colorWhite}"/>
+		<include name="colorYellow" displayName="${lang.colorYelllow}"/>
+		<include name="colorsetAdaptive" displayName="${lang.colorsetAdaptive}"/>
+	</subset>
+
+	<subset name="lineColor" displayName="${lang.lineColor}" appliesTo="system,basic,detailed,grid,gamecarousel">
+		<include name="colorWhite" displayName="${lang.colorWhite}"/>
+		<include name="colorYellow" displayName="${lang.colorYelllow}"/>
+		<include name="colorsetAdaptive" displayName="${lang.colorsetAdaptive}"/>
+	</subset>
+
+	<subset name="descriptionColor" displayName="${lang.descriptionColor}" appliesTo="system,basic,detailed,grid,gamecarousel">
+		<include name="colorWhite" displayName="${lang.colorWhite}"/>
+		<include name="colorYellow" displayName="${lang.colorYelllow}"/>
 		<include name="colorsetAdaptive" displayName="${lang.colorsetAdaptive}"/>
 	</subset>
 
@@ -1978,6 +2014,7 @@ By Helmic
             <color ifSubset="gameHeadColor:colorYellow">ffff00</color>
             <color ifSubset="gameHeadColor:colorsetAdaptive">${overlay.colorset}</color>
             <glowColor>00000005</glowColor>
+            <glowColor ifSubset="gameHeadColor:colorsetAdaptive">09090920</glowColor>
             <fontSize>0.02</fontSize>
             <pos>0.0134375 0.0425</pos>
             <origin>0 0</origin>
@@ -2023,7 +2060,10 @@ By Helmic
 		<text name="systemFullNameRandomVideo" extra="true">
 			<text>${system.fullName}</text>
             <fontPath>./_inc/fonts/conthrax-sb.ttf</fontPath>
-            <color>cccccc</color>
+			<color ifSubset="systemNameColor:colorWhite">cccccc</color>
+			<color ifSubset="systemNameColor:colorYellow">cccc00</color>
+			<color ifSubset="systemNameColor:colorsetAdaptive">${overlay.colorset}</color>
+            <glowColor ifSubset="systemNameColor:colorsetAdaptive">09090920</glowColor>
             <fontSize>0.014</fontSize>
             <pos>0.0134375 0.075</pos>
             <origin>0 0</origin>
@@ -2051,8 +2091,10 @@ By Helmic
 
 		<datetime name="md_releasedate">
             <fontPath>./_inc/fonts/conthrax-sb.ttf</fontPath>
-            <color>cccccc</color>
-           <fontSize>0.014</fontSize>
+			<color ifSubset="releaseColor:colorWhite">cccccc</color>
+			<color ifSubset="releaseColor:colorYellow">cccc00</color>
+			<color ifSubset="releaseColor:colorsetAdaptive">${overlay.colorset}</color>
+			<fontSize>0.014</fontSize>
             <pos>0.0134375 0.095</pos>
             <origin>0 0</origin>
             <zIndex>10</zIndex>
@@ -2068,7 +2110,9 @@ By Helmic
             <pos>0.0134375 0.1155</pos>
             <origin>0 1</origin>>
 			<zIndex>10</zIndex>
-			<color>dddddd</color>
+			<color ifSubset="lineColor:colorWhite">dddddd</color>
+			<color ifSubset="lineColor:colorYellow">dddd00</color>
+			<color ifSubset="lineColor:colorsetAdaptive">${overlay.colorset}</color>
 			<storyboard event="open">
                 <animation property="opacity" from="0" to="1" duration="1" mode="linear"/>
             </storyboard>
@@ -2093,7 +2137,9 @@ By Helmic
             <pos ifSubset="themeRatio:54|43">0.0134375 0.5</pos>
             <origin>0 0</origin>>
 			<zIndex>10</zIndex>
-			<color>dddddd</color>
+			<color ifSubset="lineColor:colorWhite">dddddd</color>
+			<color ifSubset="lineColor:colorYellow">dddd00</color>
+			<color ifSubset="lineColor:colorsetAdaptive">${overlay.colorset}</color>
 			<storyboard event="open">
                 <animation property="opacity" from="0" to="1" duration="1" mode="linear"/>
             </storyboard>
@@ -2975,8 +3021,11 @@ By Helmic
 		</text>
 		
 		<text name="md_description">
-			<color>ffffff</color>
+            <color ifSubset="descriptionColor:colorYellow">ffff00</color>
+            <color ifSubset="descriptionColor:colorWhite">ffffff</color>
+            <color ifSubset="descriptionColor:colorsetAdaptive">${overlay.colorset}</color>
 			<glowColor>00000005</glowColor>
+			<glowColor ifSubset="descriptionColor:colorsetAdaptive">09090920</glowColor>
 			<fontPath>./_inc/fonts/conthrax-sb.ttf</fontPath>
 			<fontSize>0.016</fontSize>
 			<size>0.34 0.2425</size>
