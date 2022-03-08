@@ -2295,7 +2295,7 @@ By Helmic
 			<pos ifSubset="themeRatio:54|43">0.155 0.111</pos>
 			<zIndex>15</zIndex>
 			<color ifSubset="gamebarColor:colorWhite">dddddd</color>
-			<color ifSubset="gamebarColor:colorYellow">bbbb00</color>
+			<color ifSubset="gamebarColor:colorYellow">dddd00</color>
 			<color ifSubset="gamebarColor:colorsetAdaptive">${overlay.colorset}</color>
 			<glowColor>00000040</glowColor>
 			<fontPath>./_inc/fonts/players.ttf</fontPath>
@@ -2308,7 +2308,7 @@ By Helmic
 			<path>./_inc/icons/book.png</path>
 			<maxSize>0.02 0.02</maxSize>
 			<color ifSubset="gamebarColor:colorWhite">dddddd</color>
-			<color ifSubset="gamebarColor:colorYellow">bbbb00</color>
+			<color ifSubset="gamebarColor:colorYellow">dddd00</color>
 			<color ifSubset="gamebarColor:colorsetAdaptive">${overlay.colorset}</color>
 			<zIndex>13</zIndex>
 		</image>
@@ -2349,7 +2349,7 @@ By Helmic
 			<pos ifSubset="themeRatio:54|43">0.215 0.111</pos>
 			<maxSize>0.02 0.02</maxSize>
 			<color ifSubset="gamebarColor:colorWhite">dddddd</color>
-			<color ifSubset="gamebarColor:colorYellow">bbbb00</color>
+			<color ifSubset="gamebarColor:colorYellow">dddd00</color>
 			<color ifSubset="gamebarColor:colorsetAdaptive">${overlay.colorset}</color>
 			<zIndex>13</zIndex>
 		</image>
@@ -2390,7 +2390,7 @@ By Helmic
 			<pos ifSubset="themeRatio:54|43">0.245 0.111</pos>
 			<maxSize>0.02 0.02</maxSize>     
 			<color ifSubset="gamebarColor:colorWhite">dddddd</color>
-			<color ifSubset="gamebarColor:colorYellow">bbbb00</color>
+			<color ifSubset="gamebarColor:colorYellow">dddd00</color>
 			<color ifSubset="gamebarColor:colorsetAdaptive">${overlay.colorset}</color>
 			<zIndex>13</zIndex>
 		</image>
@@ -2431,7 +2431,7 @@ By Helmic
 			<path>./_inc/icons/kid.svg</path>
 			<maxSize>0.02 0.02</maxSize>
 			<color ifSubset="gamebarColor:colorWhite">dddddd</color>
-			<color ifSubset="gamebarColor:colorYellow">bbbb00</color>
+			<color ifSubset="gamebarColor:colorYellow">dddd00</color>
 			<color ifSubset="gamebarColor:colorsetAdaptive">${overlay.colorset}</color>
 			<zIndex>13</zIndex>
 			<linearSmooth>true</linearSmooth>
@@ -2474,7 +2474,7 @@ By Helmic
 			<path>./_inc/icons/hidden.svg</path>
 			<maxSize>0.02 0.02</maxSize>
 			<color ifSubset="gamebarColor:colorWhite">dddddd</color>
-			<color ifSubset="gamebarColor:colorYellow">bbbb00</color>
+			<color ifSubset="gamebarColor:colorYellow">dddd00</color>
 			<color ifSubset="gamebarColor:colorsetAdaptive">${overlay.colorset}</color>
 			<zIndex>13</zIndex>
 		</image>
