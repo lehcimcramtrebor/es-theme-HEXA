@@ -1736,8 +1736,8 @@ By Helmic
 		</image>
 
 		<image name="backTvMix" extra="true" ifSubset="previewDisplay:displayMix">
-			<path>./_inc/white.png</path>
-			<color>303030</color>
+			<path>./_inc/noise.png</path>
+			<color>ffffff</color>
 			<origin>0.5 1</origin>
 			<pos>0.485 0.35</pos>
 			<size>0.19 0.285</size>
