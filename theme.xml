@@ -1688,7 +1688,7 @@ By Helmic
 			<pos>0.485 0.35</pos>
 			<y ifSubset="themeRatio:54|43">0.4</y>
 			<x ifSubset="themeRatio:54|43">0.495</x>
-			<size>0.2 0.3</size>
+			<size>0.19 0.285</size>
 			<size ifSubset="themeRatio:54|43">0.23 0.22</size>
 			<zIndex>5</zIndex>
 			<opacity>0</opacity>
@@ -1712,7 +1712,7 @@ By Helmic
 		<image name="md_image" ifSubset="previewDisplay:displayMix">
 			<origin>0.5 1</origin>
 			<pos>0.485 0.35</pos>
-			<size>0.2 0.3</size>
+			<size>0.19 0.285</size>
 			<size ifSubset="themeRatio:54|43">0.23 0.22</size>
 			<y ifSubset="themeRatio:54|43">0.4</y>
 			<x ifSubset="themeRatio:54|43">0.495</x>
@@ -1740,7 +1740,7 @@ By Helmic
 			<color>303030</color>
 			<origin>0.5 1</origin>
 			<pos>0.485 0.35</pos>
-			<size>0.2 0.3</size>
+			<size>0.19 0.285</size>
 			<size ifSubset="themeRatio:54|43">0.23 0.22</size>
 			<y ifSubset="themeRatio:54|43">0.4</y>
 			<x ifSubset="themeRatio:54|43">0.495</x>
