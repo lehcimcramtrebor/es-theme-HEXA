@@ -1735,6 +1735,34 @@ By Helmic
             </storyboard>
 		</image>
 
+		<image name="backTvMix" extra="true" ifSubset="previewDisplay:displayMix">
+			<path>./_inc/white.png</path>
+			<color>303030</color>
+			<origin>0.5 1</origin>
+			<pos>0.485 0.35</pos>
+			<size>0.2 0.3</size>
+			<size ifSubset="themeRatio:54|43">0.23 0.22</size>
+			<y ifSubset="themeRatio:54|43">0.4</y>
+			<x ifSubset="themeRatio:54|43">0.495</x>
+			<zIndex>3</zIndex>
+			<opacity>0</opacity>
+			<storyboard event="open" ifSubset="previewDisplay:displayMix">
+                <animation property="opacity" from="0" to="1" duration="500" mode="easeOut" begin="750"/>
+            </storyboard>
+			<storyboard event="activateNext" ifSubset="previewDisplay:displayMix">
+                <animation property="opacity" from="0" to="1" duration="500" mode="easeOut" begin="750"/>
+            </storyboard>
+			<storyboard event="activatePrev" ifSubset="previewDisplay:displayMix">
+                <animation property="opacity" from="0" to="1" duration="500" mode="easeOut" begin="750"/>
+          </storyboard>
+			<storyboard event="deactivateNext" ifSubset="previewDisplay:displayMix">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+			<storyboard event="deactivatePrev" ifSubset="previewDisplay:displayMix">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+		</image>
+
 		<image name="videoContainer" extra="true">
             <linearSmooth>true</linearSmooth>
 			<path>./_inc/container.png</path>
@@ -3543,7 +3571,7 @@ By Helmic
 	
 	<customView name="library" inherits="detailed" displayName="${lang.library}">
 
-		<image name="logoTV,tvMix" extra="true">
+		<image name="logoTV,tvMix,backTvMix" extra="true">
 			<visible>false</visible>
 		</image>
 
