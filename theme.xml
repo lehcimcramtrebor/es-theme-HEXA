@@ -3523,8 +3523,8 @@ By Helmic
 			<visible ifSubset="previewDisplay:displayMix">true</visible>
 
 			<storyboard event="open" ifSubset="previewDisplay:displayMix">
-                <animation property="opacity" from="0" to="0" duration="1000" mode="easeOut"/>
-                <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="1000"/>
+                <animation property="opacity" from="0" to="0" duration="750" mode="easeOut"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="750"/>
                 <animation property="scale" from="1" to="0.5" duration="250" mode="linear" begin="750"/>
                 <animation property="origin" to="0 1" duration="250" mode="linear" begin="750"/>
                 <animation property="y" to="0.36" duration="250" mode="linear" begin="750"/>
@@ -3532,8 +3532,8 @@ By Helmic
             </storyboard>
 			<storyboard event="activateNext" ifSubset="previewDisplay:displayMix">
                 <animation property="offsetY" from="0.005" to="0" duration="250" mode="easeOut"/>
-                <animation property="opacity" from="0" to="0" duration="1000" mode="easeOut"/>
-                <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="1000"/>
+                <animation property="opacity" from="0" to="0" duration="750" mode="easeOut"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="750"/>
                 <animation property="scale" from="1" to="0.5" duration="250" mode="linear" begin="750"/>
                 <animation property="origin" to="0 1" duration="250" mode="linear" begin="750"/>
                 <animation property="y" to="0.36" duration="250" mode="linear" begin="750"/>
@@ -3541,8 +3541,8 @@ By Helmic
             </storyboard>
 			<storyboard event="activatePrev" ifSubset="previewDisplay:displayMix">
                 <animation property="offsetY" from="-0.005" to="0" duration="250" mode="easeOut"/>
-                <animation property="opacity" from="0" to="0" duration="1000" mode="easeOut"/>
-                <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="1000"/>
+                <animation property="opacity" from="0" to="0" duration="750" mode="easeOut"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="750"/>
                 <animation property="scale" from="1" to="0.5" duration="250" mode="linear" begin="750"/>
                 <animation property="origin" to="0 1" duration="250" mode="linear" begin="750"/>
                 <animation property="y" to="0.36" duration="250" mode="linear" begin="750"/>
@@ -3556,8 +3556,8 @@ By Helmic
             </storyboard>
 
 			<storyboard event="open" ifSubset="previewDisplay:displayMix,themeRatio:54|43">
-                <animation property="opacity" from="0" to="0" duration="1000" mode="easeOut"/>
-                <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="1000"/>
+                <animation property="opacity" from="0" to="0" duration="750" mode="easeOut"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="750"/>
                 <animation property="scale" from="1" to="0.3" duration="250" mode="linear" begin="750"/>
                 <animation property="origin" to="0 1" duration="250" mode="linear" begin="750"/>
                 <animation property="y" to="0.44" duration="250" mode="linear" begin="750"/>
@@ -3565,8 +3565,8 @@ By Helmic
             </storyboard>
 			<storyboard event="activateNext" ifSubset="previewDisplay:displayMix,themeRatio:54|43">
                 <animation property="offsetY" from="0.005" to="0" duration="250" mode="easeOut"/>
-                <animation property="opacity" from="0" to="0" duration="1000" mode="easeOut"/>
-                <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="1000"/>
+                <animation property="opacity" from="0" to="0" duration="750" mode="easeOut"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="750"/>
                 <animation property="scale" from="1" to="0.3" duration="250" mode="linear" begin="750"/>
                 <animation property="origin" to="0 1" duration="250" mode="linear" begin="750"/>
                 <animation property="y" to="0.44" duration="250" mode="linear" begin="750"/>
@@ -3574,8 +3574,8 @@ By Helmic
             </storyboard>
 			<storyboard event="activatePrev" ifSubset="previewDisplay:displayMix,themeRatio:54|43">
                 <animation property="offsetY" from="-0.005" to="0" duration="250" mode="easeOut"/>
-                <animation property="opacity" from="0" to="0" duration="1000" mode="easeOut"/>
-                <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="1000"/>
+                <animation property="opacity" from="0" to="0" duration="750" mode="easeOut"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="750"/>
                 <animation property="scale" from="1" to="0.3" duration="250" mode="linear" begin="750"/>
                 <animation property="origin" to="0 1" duration="250" mode="linear" begin="750"/>
                 <animation property="y" to="0.44" duration="250" mode="linear" begin="750"/>
