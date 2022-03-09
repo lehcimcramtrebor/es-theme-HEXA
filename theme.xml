@@ -919,7 +919,7 @@ By Helmic
 		</image>
         
 		<image name="logoPaint" extra="true" ifSubset="carouselWallPaint:yes">
-			<visible ifSubset="wall:wallColorBlue|wallColoGreen|wallColorRed|wallColorPurple|wallColorOcean|wallStain|wallAlu|wallPlates|wallStainBroke|wallFuture|wallFutureRed|wallFutureGreen|wallFutureBlue|wallFutureOrange|wallFutureYellow|wallFuturePink|wallFuturePurple|wallSteelX|wallSteelHoles|wallSynthwave|wallCarbon">false</visible>
+			<visible ifSubset="wall:wallColorBlue|wallColorGreen|wallColorRed|wallColorPurple|wallColorOcean|wallStain|wallAlu|wallPlates|wallStainBroke|wallFuture|wallFutureRed|wallFutureGreen|wallFutureBlue|wallFutureOrange|wallFutureYellow|wallFuturePink|wallFuturePurple|wallSteelX|wallSteelHoles|wallSynthwave|wallCarbon">false</visible>
             <linearSmooth>true</linearSmooth>
             <path>./default/color.png</path>
             <path>./default/color-${lang}.png</path>
