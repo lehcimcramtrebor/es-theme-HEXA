@@ -241,8 +241,14 @@ By Helmic
 		<lang.standard lang="fr">standard</lang.standard>
 
 		<!--boxback display-->
-		<lang.boxbackDisplay>gamelist • display box back</lang.boxbackDisplay>
-		<lang.boxbackDisplay lang="fr">listes de jeux • afficher l'arrière de la boite</lang.boxbackDisplay>
+		<lang.previewDisplay>gamelist • preview artwork</lang.previewDisplay>
+		<lang.previewDisplay lang="fr">listes de jeux • image d'apercu</lang.previewDisplay>
+
+		<lang.displayThumbnail>only thumnail</lang.displayThumbnail>
+		<lang.displayThumbnail lang="fr">boîte seulement</lang.displayThumbnail>
+
+		<lang.displayBoxback>alternate box back</lang.displayBoxback>
+		<lang.displayBoxback lang="fr">alterner l'arrière de la boîte</lang.displayBoxback>
 
 		<!--elements colors-->
 		<lang.ratingColor>gamelist • rating colors</lang.ratingColor>
@@ -555,9 +561,9 @@ By Helmic
 		<include name="no" displayName="${lang.no}"/>
 	</subset>
 
-	<subset name="boxbackDisplay" displayName="${lang.boxbackDisplay}" appliesTo="system,basic,detailed,grid,gamecarousel">
-		<include name="no" displayName="${lang.no}"/>
-		<include name="yes" displayName="${lang.yes}"/>
+	<subset name="previewDisplay" displayName="${lang.previewDisplay}" appliesTo="system,basic,detailed,grid,gamecarousel">
+		<include name="displayThumbnail" displayName="${lang.displayThumbnail}"/>
+		<include name="displayBoxback" displayName="${lang.displayBoxback}"/>
 	</subset>
 
 	<subset name="ratingColor" displayName="${lang.ratingColor}" appliesTo="system,basic,detailed,grid,gamecarousel">
@@ -2155,14 +2161,14 @@ By Helmic
                 <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
             </storyboard>
 
-			<storyboard event="open" repeatAt="5000" ifSubset="boxbackDisplay:yes">
+			<storyboard event="open" repeatAt="5000" ifSubset="previewDisplay:displayBoxback">
                 <animation property="opacity" from="0" to="1" duration="250" mode="easeOut"/>
                 <animation property="opacity" from="1" to="0" duration="250" mode="easeOut" begin="5000"/>
                 <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="10000"/>
                 <animation property="offsetX" from="-0.025" to="0" duration="250" mode="easeOut" begin="10000"/>
                 <animation property="opacity" from="1" to="1" duration="4750" mode="easeOut" begin="10250"/>
             </storyboard>
-			<storyboard event="activateNext" repeatAt="5000" ifSubset="boxbackDisplay:yes">
+			<storyboard event="activateNext" repeatAt="5000" ifSubset="previewDisplay:displayBoxback">
                 <animation property="offsetY" from="0.005" to="0" duration="250" mode="easeOut"/>
                 <animation property="opacity" from="0" to="1" duration="250" mode="easeOut"/>
                 <animation property="opacity" from="1" to="0" duration="250" mode="easeOut" begin="5000"/>
@@ -2170,7 +2176,7 @@ By Helmic
                 <animation property="offsetX" from="-0.025" to="0" duration="250" mode="easeOut" begin="10000"/>
                 <animation property="opacity" from="1" to="1" duration="4750" mode="easeOut" begin="10250"/>
             </storyboard>
-			<storyboard event="activatePrev" repeatAt="5000" ifSubset="boxbackDisplay:yes">
+			<storyboard event="activatePrev" repeatAt="5000" ifSubset="previewDisplay:displayBoxback">
                 <animation property="offsetY" from="-0.005" to="0" duration="250" mode="easeOut"/>
                 <animation property="opacity" from="0" to="1" duration="250" mode="easeOut"/>
                 <animation property="opacity" from="1" to="0" duration="250" mode="easeOut" begin="5000"/>
@@ -2178,15 +2184,15 @@ By Helmic
                 <animation property="offsetX" from="-0.025" to="0" duration="250" mode="easeOut" begin="10000"/>
                 <animation property="opacity" from="1" to="1" duration="4750" mode="easeOut" begin="10250"/>
            </storyboard>
-			<storyboard event="deactivateNext" ifSubset="boxbackDisplay:yes">
+			<storyboard event="deactivateNext" ifSubset="previewDisplay:displayBoxback">
                 <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
             </storyboard>
-			<storyboard event="deactivatePrev" ifSubset="boxbackDisplay:yes">
+			<storyboard event="deactivatePrev" ifSubset="previewDisplay:displayBoxback">
                 <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
             </storyboard>
 		</image>
 
-		<image name="md_boxback" ifSubset="boxbackDisplay:yes">
+		<image name="md_boxback" ifSubset="previewDisplay:displayBoxback">
             <linearSmooth>true</linearSmooth>
 			<maxSize>0.255 0.31</maxSize>
 			<maxSize ifSubset="themeRatio:54|43">0.255 0.3845</maxSize>
@@ -3181,14 +3187,14 @@ By Helmic
                 <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
             </storyboard>
 
-			<storyboard event="open" repeatAt="5000" ifSubset="boxbackDisplay:yes">
+			<storyboard event="open" repeatAt="5000" ifSubset="previewDisplay:displayBoxback">
                 <animation property="opacity" from="0" to="1" duration="250" mode="easeOut"/>
                 <animation property="opacity" from="1" to="0" duration="250" mode="easeOut" begin="5000"/>
                 <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="10000"/>
                 <animation property="offsetX" from="-0.025" to="0" duration="250" mode="easeOut" begin="10000"/>
                 <animation property="opacity" from="1" to="1" duration="4750" mode="easeOut" begin="10250"/>
             </storyboard>
-			<storyboard event="activateNext" repeatAt="5000" ifSubset="boxbackDisplay:yes">
+			<storyboard event="activateNext" repeatAt="5000" ifSubset="previewDisplay:displayBoxback">
                 <animation property="offsetY" from="0.005" to="0" duration="250" mode="easeOut"/>
                 <animation property="opacity" from="0" to="1" duration="250" mode="easeOut"/>
                 <animation property="opacity" from="1" to="0" duration="250" mode="easeOut" begin="5000"/>
@@ -3196,7 +3202,7 @@ By Helmic
                 <animation property="offsetX" from="-0.025" to="0" duration="250" mode="easeOut" begin="10000"/>
                 <animation property="opacity" from="1" to="1" duration="4750" mode="easeOut" begin="10250"/>
             </storyboard>
-			<storyboard event="activatePrev" repeatAt="5000" ifSubset="boxbackDisplay:yes">
+			<storyboard event="activatePrev" repeatAt="5000" ifSubset="previewDisplay:displayBoxback">
                 <animation property="offsetY" from="-0.005" to="0" duration="250" mode="easeOut"/>
                 <animation property="opacity" from="0" to="1" duration="250" mode="easeOut"/>
                 <animation property="opacity" from="1" to="0" duration="250" mode="easeOut" begin="5000"/>
@@ -3204,10 +3210,10 @@ By Helmic
                 <animation property="offsetX" from="-0.025" to="0" duration="250" mode="easeOut" begin="10000"/>
                 <animation property="opacity" from="1" to="1" duration="4750" mode="easeOut" begin="10250"/>
            </storyboard>
-			<storyboard event="deactivateNext" ifSubset="boxbackDisplay:yes">
+			<storyboard event="deactivateNext" ifSubset="previewDisplay:displayBoxback">
                 <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
             </storyboard>
-			<storyboard event="deactivatePrev" ifSubset="boxbackDisplay:yes">
+			<storyboard event="deactivatePrev" ifSubset="previewDisplay:displayBoxback">
                 <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
             </storyboard>
 		</image>
