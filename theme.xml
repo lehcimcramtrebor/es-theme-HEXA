@@ -1747,13 +1747,16 @@ By Helmic
 			<zIndex>3</zIndex>
 			<opacity>0</opacity>
 			<storyboard event="open" ifSubset="previewDisplay:displayMix">
-                <animation property="opacity" from="0" to="1" duration="500" mode="easeOut" begin="750"/>
+                <animation property="opacity" from="0" to="0" duration="900" mode="easeOut"/>
+                <animation property="opacity" from="0" to="1" duration="500" mode="easeIn" begin="900"/>
             </storyboard>
 			<storyboard event="activateNext" ifSubset="previewDisplay:displayMix">
-                <animation property="opacity" from="0" to="1" duration="500" mode="easeOut" begin="750"/>
+                <animation property="opacity" from="0" to="0" duration="900" mode="easeOut"/>
+                <animation property="opacity" from="0" to="1" duration="500" mode="easeIn" begin="900"/>
             </storyboard>
 			<storyboard event="activatePrev" ifSubset="previewDisplay:displayMix">
-                <animation property="opacity" from="0" to="1" duration="500" mode="easeOut" begin="750"/>
+               <animation property="opacity" from="0" to="0" duration="900" mode="easeOut"/>
+               <animation property="opacity" from="0" to="1" duration="500" mode="easeIn" begin="900"/>
           </storyboard>
 			<storyboard event="deactivateNext" ifSubset="previewDisplay:displayMix">
                 <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
