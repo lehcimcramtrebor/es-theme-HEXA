@@ -3520,6 +3520,73 @@ By Helmic
 
 		<image name="md_thumbnail">
 			<visible>false</visible>
+			<visible ifSubset="previewDisplay:displayMix">true</visible>
+
+			<storyboard event="open" ifSubset="previewDisplay:displayMix">
+                <animation property="opacity" from="0" to="0" duration="1000" mode="easeOut"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="1000"/>
+                <animation property="scale" from="1" to="0.5" duration="250" mode="linear" begin="750"/>
+                <animation property="origin" to="0 1" duration="250" mode="linear" begin="750"/>
+                <animation property="y" to="0.36" duration="250" mode="linear" begin="750"/>
+                <animation property="x" to="0.37" duration="250" mode="easeOut" begin="750"/>
+            </storyboard>
+			<storyboard event="activateNext" ifSubset="previewDisplay:displayMix">
+                <animation property="offsetY" from="0.005" to="0" duration="250" mode="easeOut"/>
+                <animation property="opacity" from="0" to="0" duration="1000" mode="easeOut"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="1000"/>
+                <animation property="scale" from="1" to="0.5" duration="250" mode="linear" begin="750"/>
+                <animation property="origin" to="0 1" duration="250" mode="linear" begin="750"/>
+                <animation property="y" to="0.36" duration="250" mode="linear" begin="750"/>
+                <animation property="x" to="0.37" duration="250" mode="easeOut" begin="750"/>
+            </storyboard>
+			<storyboard event="activatePrev" ifSubset="previewDisplay:displayMix">
+                <animation property="offsetY" from="-0.005" to="0" duration="250" mode="easeOut"/>
+                <animation property="opacity" from="0" to="0" duration="1000" mode="easeOut"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="1000"/>
+                <animation property="scale" from="1" to="0.5" duration="250" mode="linear" begin="750"/>
+                <animation property="origin" to="0 1" duration="250" mode="linear" begin="750"/>
+                <animation property="y" to="0.36" duration="250" mode="linear" begin="750"/>
+                <animation property="x" to="0.37" duration="250" mode="easeOut" begin="750"/>
+           </storyboard>
+			<storyboard event="deactivateNext" ifSubset="previewDisplay:displayMix">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+			<storyboard event="deactivatePrev" ifSubset="previewDisplay:displayMix">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+
+			<storyboard event="open" ifSubset="previewDisplay:displayMix,themeRatio:54|43">
+                <animation property="opacity" from="0" to="0" duration="1000" mode="easeOut"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="1000"/>
+                <animation property="scale" from="1" to="0.3" duration="250" mode="linear" begin="750"/>
+                <animation property="origin" to="0 1" duration="250" mode="linear" begin="750"/>
+                <animation property="y" to="0.44" duration="250" mode="linear" begin="750"/>
+                <animation property="x" to="0.37" duration="250" mode="easeOut" begin="750"/>
+            </storyboard>
+			<storyboard event="activateNext" ifSubset="previewDisplay:displayMix,themeRatio:54|43">
+                <animation property="offsetY" from="0.005" to="0" duration="250" mode="easeOut"/>
+                <animation property="opacity" from="0" to="0" duration="1000" mode="easeOut"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="1000"/>
+                <animation property="scale" from="1" to="0.3" duration="250" mode="linear" begin="750"/>
+                <animation property="origin" to="0 1" duration="250" mode="linear" begin="750"/>
+                <animation property="y" to="0.44" duration="250" mode="linear" begin="750"/>
+                <animation property="x" to="0.37" duration="250" mode="easeOut" begin="750"/>
+            </storyboard>
+			<storyboard event="activatePrev" ifSubset="previewDisplay:displayMix,themeRatio:54|43">
+                <animation property="offsetY" from="-0.005" to="0" duration="250" mode="easeOut"/>
+                <animation property="opacity" from="0" to="0" duration="1000" mode="easeOut"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="1000"/>
+                <animation property="scale" from="1" to="0.3" duration="250" mode="linear" begin="750"/>
+                <animation property="origin" to="0 1" duration="250" mode="linear" begin="750"/>
+                <animation property="y" to="0.44" duration="250" mode="linear" begin="750"/>
+                <animation property="x" to="0.37" duration="250" mode="easeOut" begin="750"/>
+           </storyboard>
+			<storyboard event="deactivateNext" ifSubset="previewDisplay:displayMix,themeRatio:54|43">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+			<storyboard event="deactivatePrev" ifSubset="previewDisplay:displayMix,themeRatio:54|43">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
 		</image>
 	
 	</view>
@@ -3544,6 +3611,91 @@ By Helmic
 
 		<image name="md_marquee">
 			<visible>false</visible>
+			<visible ifSubset="previewDisplay:displayMix">true</visible>
+			<storyboard event="open" ifSubset="previewDisplay:displayMix">
+                <animation property="opacity" from="0" to="0" duration="1000" mode="easeOut"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="1000"/>
+
+                <animation property="origin" to="1 1" duration="1" mode="easeOut" begin="1000"/>
+                <animation property="scale" to="0.25" duration="1" mode="easeOut" begin="1000"/>
+                <animation property="y" to="0.36" duration="1" mode="easeOut" begin="1000"/>
+                <animation property="x" to="0.61" duration="1" mode="easeOut" begin="1000"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="1001"/>
+                <animation property="offsetX" from="-0.05" duration="250" mode="easeOut" begin="1001"/>
+           </storyboard>
+			<storyboard event="activateNext" ifSubset="previewDisplay:displayMix">
+                <animation property="color" from="ffffff00" to="ffffff" duration="250" mode="easeOut"/>
+                <animation property="opacity" from="0" to="0" duration="1000" mode="easeOut"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="1000"/>
+
+                <animation property="origin" to="1 1" duration="1" mode="easeOut" begin="1000"/>
+                <animation property="scale" to="0.25" duration="1" mode="easeOut" begin="1000"/>
+                <animation property="y" to="0.36" duration="1" mode="easeOut" begin="1000"/>
+                <animation property="x" to="0.61" duration="1" mode="easeOut" begin="1000"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="1001"/>
+                <animation property="offsetX" from="-0.05" duration="250" mode="easeOut" begin="1001"/>
+            </storyboard>
+			<storyboard event="activatePrev" ifSubset="previewDisplay:displayMix">
+                <animation property="color" from="ffffff00" to="ffffff" duration="250" mode="easeOut"/>
+                <animation property="opacity" from="0" to="0" duration="1000" mode="easeOut"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="1000"/>
+
+                <animation property="origin" to="1 1" duration="1" mode="easeOut" begin="1000"/>
+                <animation property="scale" to="0.25" duration="1" mode="easeOut" begin="1000"/>
+                <animation property="y" to="0.36" duration="1" mode="easeOut" begin="1000"/>
+                <animation property="x" to="0.61" duration="1" mode="easeOut" begin="1000"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="1001"/>
+                <animation property="offsetX" from="-0.05" duration="250" mode="easeOut" begin="1001"/>
+          </storyboard>
+			<storyboard event="deactivateNext" ifSubset="previewDisplay:displayMix">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+			<storyboard event="deactivatePrev" ifSubset="previewDisplay:displayMix">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+
+			<storyboard event="open" ifSubset="previewDisplay:displayMix,themeRatio:54|43">
+                <animation property="opacity" from="0" to="0" duration="1000" mode="easeOut"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="1000"/>
+
+                <animation property="origin" to="1 1" duration="1" mode="easeOut" begin="1000"/>
+                <animation property="scale" to="0.25" duration="1" mode="easeOut" begin="1000"/>
+                <animation property="y" to="0.44" duration="1" mode="easeOut" begin="1000"/>
+                <animation property="x" to="0.61" duration="1" mode="easeOut" begin="1000"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="1001"/>
+                <animation property="offsetX" from="-0.05" duration="250" mode="easeOut" begin="1001"/>
+           </storyboard>
+			<storyboard event="activateNext" ifSubset="previewDisplay:displayMix,themeRatio:54|43">
+                <animation property="color" from="ffffff00" to="ffffff" duration="250" mode="easeOut"/>
+                <animation property="opacity" from="0" to="0" duration="1000" mode="easeOut"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="1000"/>
+
+                <animation property="origin" to="1 1" duration="1" mode="easeOut" begin="1000"/>
+                <animation property="scale" to="0.25" duration="1" mode="easeOut" begin="1000"/>
+                <animation property="y" to="0.44" duration="1" mode="easeOut" begin="1000"/>
+                <animation property="x" to="0.61" duration="1" mode="easeOut" begin="1000"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="1001"/>
+                <animation property="offsetX" from="-0.05" duration="250" mode="easeOut" begin="1001"/>
+            </storyboard>
+			<storyboard event="activatePrev" ifSubset="previewDisplay:displayMix,themeRatio:54|43">
+                <animation property="color" from="ffffff00" to="ffffff" duration="250" mode="easeOut"/>
+                <animation property="opacity" from="0" to="0" duration="1000" mode="easeOut"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="1000"/>
+
+                <animation property="origin" to="1 1" duration="1" mode="easeOut" begin="1000"/>
+                <animation property="scale" to="0.25" duration="1" mode="easeOut" begin="1000"/>
+                <animation property="y" to="0.44" duration="1" mode="easeOut" begin="1000"/>
+                <animation property="x" to="0.61" duration="1" mode="easeOut" begin="1000"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="1001"/>
+                <animation property="offsetX" from="-0.05" duration="250" mode="easeOut" begin="1001"/>
+          </storyboard>
+			<storyboard event="deactivateNext" ifSubset="previewDisplay:displayMix,themeRatio:54|43">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+			<storyboard event="deactivatePrev" ifSubset="previewDisplay:displayMix,themeRatio:54|43">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+			
 		</image>
 		
 		<text name="md_description">
