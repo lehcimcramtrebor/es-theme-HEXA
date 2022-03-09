@@ -315,6 +315,9 @@ By Helmic
 		<lang.tvOs>gamelist • display os on tv</lang.tvOs>
 		<lang.tvOs lang="fr">listes de jeux • afficher l'os sur la tv</lang.tvOs>
 
+		<lang.tvSnaphot>gamelist • display snapshot on tv</lang.tvSnaphot>
+		<lang.tvSnaphot lang="fr">listes de jeux • afficher le screenshot sur la tv</lang.tvSnaphot>
+
 		<!--wall choice-->
 		<lang.wall>theme • choose wall</lang.wall>
 		<lang.wall lang="fr">thème • choisir le mur</lang.wall>
@@ -557,6 +560,11 @@ By Helmic
 	<subset name="tvLogo" displayName="${lang.tvLogo}" appliesTo="system,basic,detailed,grid,gamecarousel">
 		<include name="yes" displayName="${lang.yes}"/>
 		<include name="no" displayName="${lang.no}"/>
+	</subset>
+
+	<subset name="tvSnaphot" displayName="${lang.tvSnaphot}" appliesTo="system,basic,detailed,grid,gamecarousel">
+		<include name="no" displayName="${lang.no}"/>
+		<include name="yes" displayName="${lang.yes}"/>
 	</subset>
 
 	<subset name="tvOs" displayName="${lang.tvOs}" appliesTo="system,basic,detailed,grid,gamecarousel">
@@ -2004,7 +2012,9 @@ By Helmic
 
         <video name="md_video">
 			<showSnapshotNoVideo>true</showSnapshotNoVideo>
+			<showSnapshotNoVideo ifSubset="tvSnaphot:no">false</showSnapshotNoVideo>
 			<showSnapshotDelay>true</showSnapshotDelay>
+			<showSnapshotDelay ifSubset="tvSnaphot:no">false</showSnapshotDelay>
 			<size ifSubset="randomRatio:stretched">0.5265625 0.503703704</size>
 			<size ifSubset="randomRatio:stretched,themeRatio:54">0.526666667 0.355208333</size>
 			<size ifSubset="randomRatio:stretched,themeRatio:43">0.526666667 0.378888889</size>
