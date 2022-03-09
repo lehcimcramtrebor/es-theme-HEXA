@@ -244,8 +244,8 @@ By Helmic
 		<lang.previewDisplay>gamelist • preview artwork</lang.previewDisplay>
 		<lang.previewDisplay lang="fr">listes de jeux • image d'apercu</lang.previewDisplay>
 
-		<lang.displayThumbnail>only thumnail</lang.displayThumbnail>
-		<lang.displayThumbnail lang="fr">boîte seulement</lang.displayThumbnail>
+		<lang.displayThumbnail>simple</lang.displayThumbnail>
+		<lang.displayThumbnail lang="fr">simple</lang.displayThumbnail>
 
 		<lang.displayBoxback>alternate box back</lang.displayBoxback>
 		<lang.displayBoxback lang="fr">alterner l'arrière de la boîte</lang.displayBoxback>
