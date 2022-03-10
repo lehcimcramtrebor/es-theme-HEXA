@@ -340,14 +340,14 @@ By Helmic
 		<lang.wallStain>steel (not paintable)</lang.wallStain>
 		<lang.wallStain lang="fr">métal (non peignable)</lang.wallStain>
 
-		<lang.wallSteelX>steel x (not paintable)</lang.wallSteelX>
-		<lang.wallSteelX lang="fr">x métal (non peignable)</lang.wallSteelX>
+		<lang.wallSteelX>steel x</lang.wallSteelX>
+		<lang.wallSteelX lang="fr">x métal</lang.wallSteelX>
 
 		<lang.wallAlu>alu (not paintable)</lang.wallAlu>
 		<lang.wallAlu lang="fr">aluminium (non peignable)</lang.wallAlu>
 
-		<lang.wallPlates>steel plates (not paintable)</lang.wallPlates>
-		<lang.wallPlates lang="fr">plaques de métal (non peignable)</lang.wallPlates>
+		<lang.wallPlates>steel plates</lang.wallPlates>
+		<lang.wallPlates lang="fr">plaques de métal</lang.wallPlates>
 
 		<lang.wallBrushedPlate>scratched steel plate</lang.wallBrushedPlate>
 		<lang.wallBrushedPlate lang="fr">plaque de métal griffée</lang.wallBrushedPlate>
@@ -416,6 +416,8 @@ By Helmic
     <subset name="wall" displayName="${lang.wall}">
          <include name="wallStainBroke" displayName="${lang.wallStainBroke}">./_inc/wallpapers/wallStainBroke.xml</include>
        <include name="wallBrushedPlate" displayName="${lang.wallBrushedPlate}">./_inc/wallpapers/wallBrushedPlate.xml</include>
+        <include name="wallPlates" displayName="${lang.wallPlates}">./_inc/wallpapers/wallPlates.xml</include>
+        <include name="wallSteelX" displayName="${lang.wallSteelX}">./_inc/wallpapers/wallSteelX.xml</include>
 		<include name="wallDefault" displayName="${lang.wallDefault}">./_inc/wallpapers/wall.xml</include>
 		<include name="wallLight" displayName="${lang.wallLight}">./_inc/wallpapers/wallLight.xml</include>
 		<include name="wallDark" displayName="${lang.wallDark}">./_inc/wallpapers/wallDark.xml</include>
@@ -427,10 +429,8 @@ By Helmic
         <include name="wallColorPurple" displayName="${lang.wallColorPurple}">./_inc/wallpapers/wallColorPurple.xml</include>
         <include name="wallColorOcean" displayName="${lang.wallColorOcean}">./_inc/wallpapers/wallColorOcean.xml</include>
         <include name="wallStain" displayName="${lang.wallStain}">./_inc/wallpapers/wallStain.xml</include>
-        <include name="wallSteelX" displayName="${lang.wallSteelX}">./_inc/wallpapers/wallSteelX.xml</include>
         <include name="wallAlu" displayName="${lang.wallAlu}">./_inc/wallpapers/wallAlu.xml</include>
         <include name="wallCarbon" displayName="${lang.wallCarbon}">./_inc/wallpapers/wallCarbon.xml</include>
-        <include name="wallPlates" displayName="${lang.wallPlates}">./_inc/wallpapers/wallPlates.xml</include>
         <include name="wallSteelHoles" displayName="${lang.wallSteelHoles}">./_inc/wallpapers/wallSteelHoles.xml</include>
         <include name="wallFuture" displayName="${lang.wallFuture}">./_inc/wallpapers/wallFuture.xml</include>
         <include name="wallFutureRed" displayName="${lang.wallFutureRed}">./_inc/wallpapers/wallFutureRed.xml</include>
@@ -443,7 +443,7 @@ By Helmic
         <include name="wallSynthwave" displayName="${lang.wallSynthwave}">./_inc/wallpapers/wallSynthwave.xml</include>
     </subset>
 
-    <subset name="carouselWallPaint" displayName="${lang.carouselWallPaint}" ifSubset="wall:wallDefault|wallLight|wallDark|wallFlatGrey|wallFlatDark|wallBrushedPlate|wallStainBroke">
+    <subset name="carouselWallPaint" displayName="${lang.carouselWallPaint}" ifSubset="wall:wallDefault|wallLight|wallDark|wallFlatGrey|wallFlatDark|wallBrushedPlate|wallStainBroke|wallPlates|wallSteelX">
 		<include name="yes" displayName="${lang.yes}"/>
         <include name="no" displayName="${lang.no}"/>
     </subset>
@@ -626,7 +626,7 @@ By Helmic
 		<include name="colorsetAdaptive" displayName="${lang.colorsetAdaptive}"/>
 	</subset>
 
-    <subset name="gamelistWallPaint" displayName="${lang.gamelistWallPaint}" appliesTo="system,basic,detailed,grid,gamecarousel" ifSubset="wall:wallDefault|wallLight|wallDark|wallFlatGrey|wallFlatDark|wallBrushedPlate|wallStainBroke">
+    <subset name="gamelistWallPaint" displayName="${lang.gamelistWallPaint}" appliesTo="system,basic,detailed,grid,gamecarousel" ifSubset="wall:wallDefault|wallLight|wallDark|wallFlatGrey|wallFlatDark|wallBrushedPlate|wallStainBroke|wallPlates|wallSteelX">
 		<include name="yes" displayName="${lang.yes}"/>
         <include name="no" displayName="${lang.no}"/>
     </subset>
@@ -927,7 +927,7 @@ By Helmic
 		</image>
 -->        
 		<image name="logoPaint" extra="true" ifSubset="carouselWallPaint:yes">
-			<visible ifSubset="wall:wallColorBlue|wallColorGreen|wallColorRed|wallColorPurple|wallColorOcean|wallStain|wallAlu|wallPlates|wallFuture|wallFutureRed|wallFutureGreen|wallFutureBlue|wallFutureOrange|wallFutureYellow|wallFuturePink|wallFuturePurple|wallSteelX|wallSteelHoles|wallSynthwave|wallCarbon">false</visible>
+			<visible ifSubset="wall:wallColorBlue|wallColorGreen|wallColorRed|wallColorPurple|wallColorOcean|wallStain|wallAlu|wallFuture|wallFutureRed|wallFutureGreen|wallFutureBlue|wallFutureOrange|wallFutureYellow|wallFuturePink|wallFuturePurple|wallSteelHoles|wallSynthwave|wallCarbon">false</visible>
             <linearSmooth>true</linearSmooth>
             <path>./default/color.png</path>
             <path>./default/color-${lang}.png</path>
@@ -1444,7 +1444,7 @@ By Helmic
         </image>
         
 		<image name="logoPaintFix" extra="true" ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff,carouselWallPaint:yes">
-			<visible ifSubset="wall:wallColorBlue|wallColorGreen|wallColorRed|wallColorPurple|wallColorOcean|wallStain|wallAlu|wallPlates|wallFuture|wallFutureRed|wallFutureGreen|wallFutureBlue|wallFutureOrange|wallFutureYellow|wallFuturePink|wallFuturePurple|wallSteelX|wallSteelHoles|wallSynthwave|wallCarbon">false</visible>
+			<visible ifSubset="wall:wallColorBlue|wallColorGreen|wallColorRed|wallColorPurple|wallColorOcean|wallStain|wallAlu|wallFuture|wallFutureRed|wallFutureGreen|wallFutureBlue|wallFutureOrange|wallFutureYellow|wallFuturePink|wallFuturePurple|wallSteelHoles|wallSynthwave|wallCarbon">false</visible>
             <linearSmooth>true</linearSmooth>
             <path>./default/color.png</path>
             <path>./default/color-${lang}.png</path>
@@ -2518,7 +2518,7 @@ By Helmic
 			<opacity>0</opacity>			
 			<scale>0</scale>	
 			<visible ifSubset="gamelistWallPaint:no">false</visible>			
-			<visible ifSubset="wall:wallColorBlue|wallColorGreen|wallColorRed|wallColorPurple|wallColorOcean|wallStain|wallAlu|wallPlates|wallFuture|wallFutureRed|wallFutureGreen|wallFutureBlue|wallFutureOrange|wallFutureYellow|wallFuturePink|wallFuturePurple|wallSteelX|wallSteelHoles|wallSynthwave|wallCarbon">false</visible>
+			<visible ifSubset="wall:wallColorBlue|wallColorGreen|wallColorRed|wallColorPurple|wallColorOcean|wallStain|wallAlu|wallFuture|wallFutureRed|wallFutureGreen|wallFutureBlue|wallFutureOrange|wallFutureYellow|wallFuturePink|wallFuturePurple|wallSteelHoles|wallSynthwave|wallCarbon">false</visible>
 			<storyboard event="open">
                 <animation property="scale" from="0" to="1" duration="1" mode="easeOut"/>
                 <animation property="opacity" from="0" to="0.3" duration="500" mode="easeOut"/>
