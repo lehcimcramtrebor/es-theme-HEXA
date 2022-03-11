@@ -42,17 +42,29 @@
 	<text name="compatibility" extra="true">
 		<text>16/9 - 5/4 - 4/3 batocera compatible theme
 
+optimal scrap: videos - box2d - in game screenshot - fanart - backcover - game logos
+
+
 by helmic</text>
 
 		<text ifArch="windows">16/9 - 5/4 - 4/3 retrobat compatible theme
+
+optimal scrap: videos - box2d - in game screenshot - fanart - backcover - game logos
+
 
 by helmic</text>
 
 		<text lang="fr">thème pour batocera compatible avec écrans 16/9 - 5/4 - 4/3
 
+scrap optimal: vidéos - boîtes 2D - images en jeu - fanart - dos des boîtes - logos de jeux
+
+
 par helmic</text>
 		
 		<text lang="fr" ifArch="windows">thème pour retrobat compatible avec écrans 16/9 - 5/4 - 4/3
+
+scrap optimal: vidéos - boîtes 2D - images en jeu - fanart - dos des boîtes - logos de jeux
+
 
 par helmic</text>
 
