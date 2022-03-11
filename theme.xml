@@ -19,7 +19,7 @@ By Helmic
         <lang.ambiance>system view • ambiance</lang.ambiance>
         <lang.ambiance lang="fr">vue système • ambiance</lang.ambiance>
 
-        <lang.overlayTransparence>system view • overlay transparence</lang.overlayTransparence>
+        <lang.overlayTransparence>system view • overlay transparency</lang.overlayTransparence>
         <lang.overlayTransparence lang="fr">vue système • overlay transparent</lang.overlayTransparence>
 
         <lang.randomAudioOn>random games sounds with music</lang.randomAudioOn>
@@ -1257,7 +1257,7 @@ By Helmic
                 <animation property="w" from="0" to="1" duration="500" mode="easeOut" begin="3250"/>
             </storyboard>
 		</image>
-<!-- CAUSE BUGS ON RETROBAT -->
+
 		<image name="randomArt01,randomArt02,randomArt03,randomArt04,randomArt05,randomArt06,randomArt07,randomArt08,randomArt09,randomArt10,randomArt11,randomArt12,randomArt13" extra="true" ifSubset="randomArt:marquee|thumbnail">
 			<linearSmooth>true</linearSmooth>
             <maxSize ifSubset="randomArt:marquee">0.22 0.15</maxSize>
@@ -1395,6 +1395,8 @@ By Helmic
             <opacity ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff">1</opacity>
             <size ifSubset="systemRandomRatio:stretched">1 1</size>
             <maxSize ifSubset="systemRandomRatio:original">1 1</maxSize>
+            <size ifSubset="systemRandomRatio:stretched,overlayTransparence:no">1 0.9259259259259259</size>
+            <maxSize ifSubset="systemRandomRatio:original,overlayTransparence:no">1 0.9259259259259259</maxSize>
             <origin>0.5 0.5</origin>
             <pos>0.5 0.5</pos>
             <delay>0.25</delay>
