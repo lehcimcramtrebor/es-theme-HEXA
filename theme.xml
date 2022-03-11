@@ -452,8 +452,8 @@ By Helmic
     </subset>
 
     <subset name="carouselWallPaint" displayName="${lang.carouselWallPaint}" ifSubset="wall:wallDefault|wallLight|wallDark|wallFlatGrey|wallFlatDark|wallBrushedPlate|wallStainBroke|wallPlates|wallSteelX|wallDiagonalPlates|wallDiagonalPlates2">
-		<include name="yes" displayName="${lang.yes}"/>
         <include name="no" displayName="${lang.no}"/>
+		<include name="yes" displayName="${lang.yes}"/>
     </subset>
 
     <subset name="logoVisualAssistance" displayName="${lang.logoVisualAssistance}">
