@@ -19,6 +19,9 @@ By Helmic
         <lang.ambiance>system view • ambiance</lang.ambiance>
         <lang.ambiance lang="fr">vue système • ambiance</lang.ambiance>
 
+        <lang.overlayTransparence>system view • overlay transparence</lang.overlayTransparence>
+        <lang.overlayTransparence lang="fr">vue système • overlay transparent</lang.overlayTransparence>
+
         <lang.randomAudioOn>random games sounds with music</lang.randomAudioOn>
         <lang.randomAudioOn lang="fr">sons des jeux avec musique</lang.randomAudioOn>
         
@@ -449,6 +452,11 @@ By Helmic
         <include name="wallFuturePink" displayName="${lang.wallFuturePink}">./_inc/wallpapers/wallFuturePink.xml</include>
         <include name="wallFuturePurple" displayName="${lang.wallFuturePurple}">./_inc/wallpapers/wallFuturePurple.xml</include>
         <include name="wallSynthwave" displayName="${lang.wallSynthwave}">./_inc/wallpapers/wallSynthwave.xml</include>
+    </subset>
+ 
+	<subset name="overlayTransparence" displayName="${lang.overlayTransparence}">
+		<include name="no" displayName="${lang.no}"/>
+        <include name="yes" displayName="${lang.yes}"/>
     </subset>
 
     <subset name="carouselWallPaint" displayName="${lang.carouselWallPaint}" ifSubset="wall:wallDefault|wallLight|wallDark|wallFlatGrey|wallFlatDark|wallBrushedPlate|wallStainBroke|wallPlates|wallSteelX|wallDiagonalPlates|wallDiagonalPlates2">
@@ -1530,7 +1538,8 @@ By Helmic
             <path>./_inc/overlay.png</path>
             <maxSize>99 1</maxSize>
             <zIndex>100</zIndex>
-			<color>${overlay.colorset}80</color>
+			<color>${overlay.colorset}</color>
+			<color ifSubset="overlayTransparence:yes">${overlay.colorset}80</color>
         </image>
  
         <image name="background" extra="true">
