@@ -948,7 +948,7 @@ By Helmic
 			<origin>0.5 0.7</origin>
             <zIndex>1</zIndex>
 			<gradientType>vertical</gradientType>			
-			<color>ffffffdf</color>
+			<color>ffffffbb</color>
 			<colorEnd>ffffff1a</colorEnd>
 		</image>
 		
@@ -1465,7 +1465,7 @@ By Helmic
 			<origin>0.5 0.7</origin>
             <zIndex>8</zIndex>
 			<gradientType>vertical</gradientType>			
-			<color>ffffffdf</color>
+			<color>ffffffbb</color>
 			<colorEnd>ffffff1a</colorEnd>
             <storyboard>
                 <animation property="opacity" from="1" to="1" duration="3000" mode="linear"/>
