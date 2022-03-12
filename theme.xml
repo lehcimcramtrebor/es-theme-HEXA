@@ -605,8 +605,8 @@ By Helmic
 	</subset>
  
 	<subset name="container" displayName="${lang.container}" appliesTo="system,basic,detailed,grid,gamecarousel">
-        <include name="cathod" displayName="${lang.cathod}"/>
         <include name="cathodBlack" displayName="${lang.cathodBlack}"/>
+        <include name="cathod" displayName="${lang.cathod}"/>
 		<include name="flat" displayName="${lang.flat}"/>
     </subset>
 
