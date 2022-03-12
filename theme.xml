@@ -577,12 +577,6 @@ By Helmic
         <include name="yes" displayName="${lang.yes}"/>
 		<include name="no" displayName="${lang.no}"/>
     </subset>
- 
-	<subset name="container" displayName="${lang.container}">
-        <include name="cathod" displayName="${lang.cathod}"/>
-        <include name="cathodBlack" displayName="${lang.cathodBlack}"/>
-		<include name="flat" displayName="${lang.flat}"/>
-    </subset>
 
 	<subset name="transition" displayName="${lang.transition}">
 		<include name="yes" displayName="${lang.yes}"/>
@@ -609,6 +603,12 @@ By Helmic
 		<include name="standard" displayName="${lang.standard}"/>
 		<include name="blue" displayName="${lang.blue}"/>
 	</subset>
+ 
+	<subset name="container" displayName="${lang.container}" appliesTo="system,basic,detailed,grid,gamecarousel">
+        <include name="cathod" displayName="${lang.cathod}"/>
+        <include name="cathodBlack" displayName="${lang.cathodBlack}"/>
+		<include name="flat" displayName="${lang.flat}"/>
+    </subset>
 
 	<subset name="tvLogo" displayName="${lang.tvLogo}" appliesTo="system,basic,detailed,grid,gamecarousel">
 		<include name="yes" displayName="${lang.yes}"/>
