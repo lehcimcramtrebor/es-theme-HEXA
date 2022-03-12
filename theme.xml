@@ -42,7 +42,18 @@ By Helmic
           
         <lang.gamelistFade>gamelist view • apply wall's vignetting</lang.gamelistFade>
         <lang.gamelistFade lang="fr">liste des jeux • appliquer un vignettage</lang.gamelistFade>
-  
+
+		<!--tv choice-->
+		
+        <lang.container>gamelist view • tv</lang.container>
+        <lang.container lang="fr">liste des jeux • télévision</lang.container>
+ 		
+        <lang.cathod>cathodic tv</lang.cathod>
+        <lang.cathod lang="fr">écran cathodique</lang.cathod>
+ 		
+        <lang.flat>flat tv</lang.flat>
+        <lang.flat lang="fr">écran plat</lang.flat>
+ 
         <!--help icons-->
         <lang.helpIcons>help • buttons style</lang.helpIcons>
         <lang.helpIcons lang="fr">aide • style des boutons</lang.helpIcons>
@@ -418,6 +429,7 @@ By Helmic
 		<lang.wallDiagonalPlates2>diagonal steel plates inversed</lang.wallDiagonalPlates2>
 		<lang.wallDiagonalPlates2 lang="fr">plaques de métal obliques inversé</lang.wallDiagonalPlates2>
 
+
 	</variables>
 
 <!--SUBSETS-->
@@ -561,6 +573,11 @@ By Helmic
 	<subset name="gamelistFade" displayName="${lang.gamelistFade}">
         <include name="yes" displayName="${lang.yes}"/>
 		<include name="no" displayName="${lang.no}"/>
+    </subset>
+ 
+	<subset name="container" displayName="${lang.container}">
+        <include name="cathod" displayName="${lang.cathod}"/>
+		<include name="flat" displayName="${lang.flat}"/>
     </subset>
 
 	<subset name="transition" displayName="${lang.transition}">
@@ -1808,7 +1825,7 @@ By Helmic
 			<zIndex>5</zIndex>
 			<opacity>0</opacity>
 			<color>00000000</color>
-			<reflexion>0.25 0</reflexion>
+			<reflexion>0.125 0</reflexion>
 			<storyboard event="open" ifSubset="previewDisplay:displayMix">
                 <animation property="color" from="00000000" to="ffffff" duration="1" mode="linear"/>
                 <animation property="opacity" from="0" to="1" duration="500" mode="easeOut" begin="750"/>
@@ -1937,6 +1954,8 @@ By Helmic
             <linearSmooth>true</linearSmooth>
 			<path>./_inc/container.png</path>
 			<path ifArch="windows">./_inc/containerRetrobat.png</path>
+			<path ifSubset="container:cathod">./_inc/containerCathod.png</path>
+			<path ifSubset="container:cathod" ifArch="windows">./_inc/containerCathodRetrobat.png</path>
 			<origin>0.5 0.5</origin>
 			<pos>0.14 0.64</pos>
 			<pos ifSubset="themeRatio:54">0.14 0.73</pos>
@@ -1951,8 +1970,11 @@ By Helmic
 			<path>./_inc/led.png</path>
 			<origin>0.5 0.5</origin>
 			<pos>0.14 0.64</pos>
+			<pos ifSubset="container:cathod">0.14 0.62</pos>
 			<pos ifSubset="themeRatio:54">0.14 0.73</pos>
 			<pos ifSubset="themeRatio:43">0.14 0.72</pos>
+			<pos ifSubset="themeRatio:43,container:cathod">0.14 0.707</pos>
+			<pos ifSubset="themeRatio:54,container:cathod">0.14 0.715</pos>
 			<maxSize>99 1</maxSize>
 			<maxSize ifSubset="themeRatio:54|43">1 99</maxSize>
 			<zIndex>16</zIndex>
@@ -1978,8 +2000,11 @@ By Helmic
 			<path>./_inc/rew.png</path>
 			<origin>0.5 0.5</origin>
 			<pos>0.14 0.64</pos>
+			<pos ifSubset="container:cathod">0.08 0.7</pos>
 			<pos ifSubset="themeRatio:54">0.14 0.73</pos>
 			<pos ifSubset="themeRatio:43">0.14 0.72</pos>
+			<pos ifSubset="themeRatio:43,container:cathod">0.08 0.77</pos>
+			<pos ifSubset="themeRatio:54,container:cathod">0.08 0.78</pos>
 			<maxSize>99 1</maxSize>
 			<maxSize ifSubset="themeRatio:54|43">1 99</maxSize>
 			<zIndex>13</zIndex>
@@ -2006,8 +2031,11 @@ By Helmic
 			<path>./_inc/next.png</path>
 			<origin>0.5 0.5</origin>
 			<pos>0.14 0.64</pos>
+			<pos ifSubset="container:cathod">0.08 0.7</pos>
 			<pos ifSubset="themeRatio:54">0.14 0.73</pos>
 			<pos ifSubset="themeRatio:43">0.14 0.72</pos>
+			<pos ifSubset="themeRatio:43,container:cathod">0.08 0.77</pos>
+			<pos ifSubset="themeRatio:54,container:cathod">0.08 0.78</pos>
 			<maxSize>99 1</maxSize>
 			<maxSize ifSubset="themeRatio:54|43">1 99</maxSize>
 			<zIndex>13</zIndex>
@@ -2034,8 +2062,11 @@ By Helmic
 			<path>./_inc/play.png</path>
 			<origin>0.5 0.5</origin>
 			<pos>0.14 0.64</pos>
+			<pos ifSubset="container:cathod">0.08 0.7</pos>
 			<pos ifSubset="themeRatio:54">0.14 0.73</pos>
 			<pos ifSubset="themeRatio:43">0.14 0.72</pos>
+			<pos ifSubset="themeRatio:43,container:cathod">0.08 0.77</pos>
+			<pos ifSubset="themeRatio:54,container:cathod">0.08 0.78</pos>
 			<maxSize>99 1</maxSize>
 			<maxSize ifSubset="themeRatio:54|43">1 99</maxSize>
 			<zIndex>13</zIndex>
@@ -2082,7 +2113,9 @@ By Helmic
             <fontSize ifSubset="tvOs:no">0.012</fontSize>
             <fontSize ifSubset="tvOs:no,themeRatio:54|43">0.01</fontSize>
             <pos>0.316822917 0.901</pos>
-            <pos ifSubset="themeRatio:54|43">0.316822917 0.9145</pos>
+ 			<pos ifSubset="container:cathod">0.316822917 0.874</pos>
+			<pos ifSubset="themeRatio:54|43">0.316822917 0.9145</pos>
+			<pos ifSubset="themeRatio:54|43,container:cathod">0.316822917 0.8975</pos>
             <origin>0.5 0.5</origin>
             <zIndex>10</zIndex>
 			<alignment>center</alignment>
@@ -2125,11 +2158,23 @@ By Helmic
 			<showSnapshotDelay>true</showSnapshotDelay>
 			<showSnapshotDelay ifSubset="tvSnaphot:no">false</showSnapshotDelay>
 			<size ifSubset="randomRatio:stretched">0.5265625 0.503703704</size>
+			<size ifSubset="randomRatio:stretched,container:cathod">0.4484375 0.4175925925925926</size>
+
 			<size ifSubset="randomRatio:stretched,themeRatio:54">0.526666667 0.355208333</size>
+			<size ifSubset="randomRatio:stretched,themeRatio:54,container:cathod">0.4496296296296296 0.2953703703703704</size>
+
 			<size ifSubset="randomRatio:stretched,themeRatio:43">0.526666667 0.378888889</size>
+			<size ifSubset="randomRatio:stretched,themeRatio:43,container:cathod">0.4486111111111111 0.3138888888888889</size>
+
             <maxSize ifSubset="randomRatio:original">0.5265625 0.503703704</maxSize>
+            <maxSize ifSubset="randomRatio:original,container:cathod">0.4484375 0.4175925925925926</maxSize>
+
 			<maxSize ifSubset="randomRatio:original,themeRatio:54">0.526666667 0.355208333</maxSize>
+			<maxSize ifSubset="randomRatio:original,themeRatio:54,container:cathod">0.4496296296296296 0.2953703703703704</maxSize>
+
 			<maxSize ifSubset="randomRatio:original,themeRatio:43">0.526666667 0.378888889</maxSize>
+			<maxSize ifSubset="randomRatio:original,themeRatio:43">0.4486111111111111 0.3138888888888889</maxSize>
+
             <pos>0.316822917 0.64</pos>
             <pos ifSubset="themeRatio:54">0.3175 0.73</pos>
             <pos ifSubset="themeRatio:43">0.3175 0.72</pos>
@@ -2163,10 +2208,13 @@ By Helmic
 		<linearSmooth>true</linearSmooth>
 		<zIndex>13</zIndex>
 		<maxSize>0.2 0.12</maxSize>
+		<maxSize ifSubset="container:cathod">0.14 0.08</maxSize>
 		<origin>0. 1</origin>
 		<pos>0.0625 0.88</pos>
+		<pos ifSubset="container:cathod">0.1 0.84</pos>
 		<color>ffffff</color>
 		<y ifSubset="themeRatio:43|54">0.9</y>
+		<y ifSubset="themeRatio:43|54,container:cathod">0.87</y>
 		<path ifArch="windows">./../es-theme-carbon/art/logos/${system.theme}.png</path>
 		<path ifArch="windows">./../es-theme-carbon/art/logos/${system.theme}.svg</path>
 		<path ifArch="windows">./../es-theme-carbon/art/logos/${system.theme}-w.png</path>
@@ -2416,7 +2464,7 @@ By Helmic
 			<zIndex>9</zIndex>
 			<color>ffffff</color>
 			<opacity>0</opacity>			
-			<reflexion>0.25 0</reflexion>
+			<reflexion>0.125 0</reflexion>
 			<storyboard event="open">
                 <animation property="opacity" from="0" to="1" duration="250" mode="easeOut"/>
            </storyboard>
@@ -3427,7 +3475,7 @@ By Helmic
 			<zIndex>9</zIndex>
 			<color>ffffff00</color>
 			<opacity>0</opacity>			
-			<reflexion>0.25 0</reflexion>
+			<reflexion>0.125 0</reflexion>
 			<storyboard event="open">
                 <animation property="opacity" from="0" to="0" duration="1" mode="easeOut"/>
            </storyboard>
@@ -3587,7 +3635,7 @@ By Helmic
 			<colorEnd>ffffff</colorEnd>
 			<gradientType>vertical</gradientType>			
 			<opacity>0</opacity>			
-			<reflexion>0.25 0</reflexion>
+			<reflexion>0.125 0</reflexion>
 
 			<storyboard event="open">
                 <animation property="opacity" from="0" to="1" duration="250" mode="easeOut"/>
