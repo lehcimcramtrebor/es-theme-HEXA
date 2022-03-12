@@ -1481,7 +1481,7 @@ By Helmic
             </storyboard>
         </image>
         
-		<image name="systemMaskFix" extra="true" ifSubset="systemFade:yes">
+		<image name="systemMaskFix" extra="true" ifSubset="systemFade:yes,ambiance:randomVideosAudioOn|randomVideosAudioOff">
             <path>./_inc/mask.png</path>
 			<size>1 1</size>
 			<pos>0.5 0.5</pos>
