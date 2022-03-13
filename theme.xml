@@ -4115,7 +4115,7 @@ By Helmic
 			<y>0.64</y>
 			<y ifSubset="themeRatio:43|54">0.59</y>
 			<x>0.3575</x>
-            <delay>3</delay>
+            <delay>6</delay>
 			<zIndex>15</zIndex>
 		</video>
 
