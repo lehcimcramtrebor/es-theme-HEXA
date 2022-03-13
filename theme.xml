@@ -2187,6 +2187,7 @@ By Helmic
 		</image>
 
         <video name="md_video">
+			<default ifSubset="container:bartop">./_inc/noise.mp4</default>
 			<showSnapshotNoVideo>true</showSnapshotNoVideo>
 			<showSnapshotNoVideo ifSubset="tvSnaphot:no">false</showSnapshotNoVideo>
 			<showSnapshotDelay>true</showSnapshotDelay>
@@ -2239,6 +2240,7 @@ By Helmic
 			<size>0.14 0.22</size>
 			<zIndex>11</zIndex>
 			<y ifSubset="themeRatio:43|54">0.75</y>
+			<color>dddddd</color>
 		</video>
 
         <video name="bartopNoise2" ifSubset="container:bartop" extra="true">
@@ -2249,6 +2251,7 @@ By Helmic
 			<size>0.14 0.22</size>
 			<zIndex>11</zIndex>
 			<y ifSubset="themeRatio:43|54">0.75</y>
+			<color>dddddd</color>
 		</video>
 
 	<image name="logoAssistFocus" extra="true">
@@ -3811,31 +3814,32 @@ By Helmic
 		<image name="md_thumbnail">
 			<visible>false</visible>
 			<visible ifSubset="previewDisplay:displayMix">true</visible>
-
+			<x>0.5</x>
+			<y>-0.5</y>
 			<storyboard event="open" ifSubset="previewDisplay:displayMix">
                 <animation property="opacity" from="0" to="0" duration="750" mode="easeOut"/>
-                <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="750"/>
-                <animation property="scale" from="1" to="0.45" duration="250" mode="linear" begin="750"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeInQuint" begin="750"/>
+                <animation property="scale" from="1" to="0.45" duration="250" mode="easeOutQuint" begin="0"/>
                 <animation property="origin" to="0 1" duration="250" mode="linear" begin="750"/>
-                <animation property="y" to="0.36" duration="250" mode="linear" begin="750"/>
+                <animation property="y" to="0.36" duration="250" mode="easeOuteaseOut" begin="750"/>
                 <animation property="x" to="0.37" duration="250" mode="easeOut" begin="750"/>
             </storyboard>
 			<storyboard event="activateNext" ifSubset="previewDisplay:displayMix">
                 <animation property="offsetY" from="0.005" to="0" duration="250" mode="easeOut"/>
                 <animation property="opacity" from="0" to="0" duration="750" mode="easeOut"/>
-                <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="750"/>
-                <animation property="scale" from="1" to="0.45" duration="250" mode="linear" begin="750"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeInQuint" begin="750"/>
+                <animation property="scale" from="1" to="0.45" duration="250" mode="easeOutQuint" begin="0"/>
                 <animation property="origin" to="0 1" duration="250" mode="linear" begin="750"/>
-                <animation property="y" to="0.36" duration="250" mode="linear" begin="750"/>
+                <animation property="y" to="0.36" duration="250" mode="easeOut" begin="750"/>
                 <animation property="x" to="0.37" duration="250" mode="easeOut" begin="750"/>
             </storyboard>
 			<storyboard event="activatePrev" ifSubset="previewDisplay:displayMix">
                 <animation property="offsetY" from="-0.005" to="0" duration="250" mode="easeOut"/>
                 <animation property="opacity" from="0" to="0" duration="750" mode="easeOut"/>
-                <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="750"/>
-                <animation property="scale" from="1" to="0.45" duration="250" mode="linear" begin="750"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeInQuint" begin="750"/>
+                <animation property="scale" from="1" to="0.45" duration="250" mode="easeOutQuint" begin="0"/>
                 <animation property="origin" to="0 1" duration="250" mode="linear" begin="750"/>
-                <animation property="y" to="0.36" duration="250" mode="linear" begin="750"/>
+                <animation property="y" to="0.36" duration="250" mode="easeOut" begin="750"/>
                 <animation property="x" to="0.37" duration="250" mode="easeOut" begin="750"/>
            </storyboard>
 			<storyboard event="deactivateNext" ifSubset="previewDisplay:displayMix">
@@ -3847,28 +3851,28 @@ By Helmic
 
 			<storyboard event="open" ifSubset="previewDisplay:displayMix,themeRatio:54|43">
                 <animation property="opacity" from="0" to="0" duration="750" mode="easeOut"/>
-                <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="750"/>
-                <animation property="scale" from="1" to="0.3" duration="250" mode="linear" begin="750"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeInQuint" begin="750"/>
+                <animation property="scale" from="1" to="0.3" duration="250" mode="easeOutQuint" begin="0"/>
                 <animation property="origin" to="0 1" duration="250" mode="linear" begin="750"/>
-                <animation property="y" to="0.44" duration="250" mode="linear" begin="750"/>
+                <animation property="y" to="0.44" duration="250" mode="easeOut" begin="750"/>
                 <animation property="x" to="0.37" duration="250" mode="easeOut" begin="750"/>
             </storyboard>
 			<storyboard event="activateNext" ifSubset="previewDisplay:displayMix,themeRatio:54|43">
                 <animation property="offsetY" from="0.005" to="0" duration="250" mode="easeOut"/>
                 <animation property="opacity" from="0" to="0" duration="750" mode="easeOut"/>
-                <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="750"/>
-                <animation property="scale" from="1" to="0.3" duration="250" mode="linear" begin="750"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeInQuint" begin="750"/>
+                <animation property="scale" from="1" to="0.3" duration="250" mode="easeOutQuint" begin="0"/>
                 <animation property="origin" to="0 1" duration="250" mode="linear" begin="750"/>
-                <animation property="y" to="0.44" duration="250" mode="linear" begin="750"/>
+                <animation property="y" to="0.44" duration="250" mode="easeOut" begin="750"/>
                 <animation property="x" to="0.37" duration="250" mode="easeOut" begin="750"/>
             </storyboard>
 			<storyboard event="activatePrev" ifSubset="previewDisplay:displayMix,themeRatio:54|43">
                 <animation property="offsetY" from="-0.005" to="0" duration="250" mode="easeOut"/>
                 <animation property="opacity" from="0" to="0" duration="750" mode="easeOut"/>
-                <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="750"/>
-                <animation property="scale" from="1" to="0.3" duration="250" mode="linear" begin="750"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeInQuint" begin="750"/>
+                <animation property="scale" from="1" to="0.3" duration="250" mode="easeOutQuint" begin="0"/>
                 <animation property="origin" to="0 1" duration="250" mode="linear" begin="750"/>
-                <animation property="y" to="0.44" duration="250" mode="linear" begin="750"/>
+                <animation property="y" to="0.44" duration="250" mode="easeOut" begin="750"/>
                 <animation property="x" to="0.37" duration="250" mode="easeOut" begin="750"/>
            </storyboard>
 			<storyboard event="deactivateNext" ifSubset="previewDisplay:displayMix,themeRatio:54|43">
@@ -3897,12 +3901,24 @@ By Helmic
 			<zIndex>13</zIndex>
 			<imageSource>marquee</imageSource>
 			<scrollSound>./_inc/gamelist.wav</scrollSound>
-            <logoRotation>17</logoRotation>
+            <logoRotation>-17</logoRotation>
             <logoRotationOrigin>4.1 0.5</logoRotationOrigin>		</gamecarousel>    
+
+
+		<text name="gamecarouselLogoText">
+			<color>FFFFFFFF</color>
+			<glowColor>${overlay.colorset}aa</glowColor>
+			<glowSize>3</glowSize>
+			<glowOffset>2</glowOffset>
+			<lineSpacing>1.0</lineSpacing>
+			<fontPath>./_inc/fonts/conthrax-sb.ttf</fontPath>
+			<fontSize>0.04</fontSize>
+		</text>		
 
 		<image name="md_marquee">
 			<visible>false</visible>
 			<visible ifSubset="previewDisplay:displayMix">true</visible>
+			<pos>-2 -2</pos>
 			<storyboard event="open" ifSubset="previewDisplay:displayMix">
                 <animation property="opacity" from="0" to="0" duration="1000" mode="easeOut"/>
                 <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="1000"/>
