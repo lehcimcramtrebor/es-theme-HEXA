@@ -2188,6 +2188,7 @@ By Helmic
 
         <video name="md_video">
 			<default ifSubset="container:bartop">./_inc/noise.mp4</default>
+			<default ifSubset="container:cathod|cathodBlack">./_inc/glitch.mp4</default>
 			<showSnapshotNoVideo>true</showSnapshotNoVideo>
 			<showSnapshotNoVideo ifSubset="tvSnaphot:no">false</showSnapshotNoVideo>
 			<showSnapshotDelay>true</showSnapshotDelay>
