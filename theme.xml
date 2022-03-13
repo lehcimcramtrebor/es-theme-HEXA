@@ -1837,17 +1837,17 @@ By Helmic
 			<storyboard event="open" ifSubset="previewDisplay:displayMix">
                 <animation property="color" from="00000000" to="ffffff" duration="1" mode="linear"/>
                 <animation property="opacity" from="0" to="1" duration="125" mode="easeOut" begin="750"/>
-                <animation property="offsetY" from="0.0125" duration="400" mode="easeOut" begin="750"/>
+                <animation property="offsetY" from="0.0125" duration="250" mode="easeOut" begin="750"/>
             </storyboard>
 			<storyboard event="activateNext" ifSubset="previewDisplay:displayMix">
                 <animation property="color" from="00000000" to="ffffff" duration="1" mode="linear"/>
                 <animation property="opacity" from="0" to="1" duration="125" mode="easeOut" begin="750"/>
-                <animation property="offsetY" from="0.0125" duration="400" mode="easeOut" begin="750"/>
+                <animation property="offsetY" from="0.0125" duration="250" mode="easeOut" begin="750"/>
             </storyboard>
 			<storyboard event="activatePrev" ifSubset="previewDisplay:displayMix">
                 <animation property="color" from="00000000" to="ffffff" duration="1" mode="linear"/>
                 <animation property="opacity" from="0" to="1" duration="125" mode="easeOut" begin="750"/>
-                <animation property="offsetY" from="0.0125" duration="400" mode="easeOut" begin="750"/>
+                <animation property="offsetY" from="0.0125" duration="250" mode="easeOut" begin="750"/>
           </storyboard>
 			<storyboard event="deactivateNext" ifSubset="previewDisplay:displayMix">
                 <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
@@ -1874,19 +1874,19 @@ By Helmic
                 <animation property="color" from="00000000" to="ffffff" duration="1" mode="linear"/>
                 <animation property="colorEnd" from="00000000" to="aaaaaa" duration="1" mode="linear"/>
                 <animation property="opacity" from="0" to="1" duration="500" mode="easeOut" begin="750"/>
-                <animation property="offsetY" from="0.0125" duration="400" mode="easeOut" begin="750"/>
+                <animation property="offsetY" from="0.0125" duration="250" mode="easeOut" begin="750"/>
             </storyboard>
 			<storyboard event="activateNext" ifSubset="previewDisplay:displayMix">
                 <animation property="color" from="00000000" to="ffffff" duration="1" mode="linear"/>
                 <animation property="colorEnd" from="00000000" to="aaaaaa" duration="1" mode="linear"/>
                 <animation property="opacity" from="0" to="1" duration="500" mode="easeOut" begin="750"/>
-                <animation property="offsetY" from="0.0125" duration="400" mode="easeOut" begin="750"/>
+                <animation property="offsetY" from="0.0125" duration="250" mode="easeOut" begin="750"/>
             </storyboard>
 			<storyboard event="activatePrev" ifSubset="previewDisplay:displayMix">
                 <animation property="color" from="00000000" to="ffffff" duration="1" mode="linear"/>
                 <animation property="colorEnd" from="00000000" to="aaaaaa" duration="1" mode="linear"/>
                 <animation property="opacity" from="0" to="1" duration="500" mode="easeOut" begin="750"/>
-                <animation property="offsetY" from="0.0125" duration="400" mode="easeOut" begin="750"/>
+                <animation property="offsetY" from="0.0125" duration="250" mode="easeOut" begin="750"/>
           </storyboard>
 			<storyboard event="deactivateNext" ifSubset="previewDisplay:displayMix">
                 <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
