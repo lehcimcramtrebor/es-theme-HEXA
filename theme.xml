@@ -4106,6 +4106,8 @@ By Helmic
 		</image>
  	
         <video name="md_video">
+			<showSnapshotNoVideo>true</showSnapshotNoVideo>
+			<showSnapshotDelay>true</showSnapshotDelay>
 			<size ifSubset="randomRatio:stretched">0.25 0.45</size>
 			<size ifSubset="randomRatio:stretched,themeRatio:43|54">0.25 0.35</size>
 			<maxSize ifSubset="randomRatio:original">0.25 0.45</maxSize>
