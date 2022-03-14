@@ -16,8 +16,8 @@ By Helmic
     <variables>
 
         <!--donation-->
-        <lang.donation>make a donation</lang.donation>
-        <lang.donation lang="fr">faire un don</lang.donation>
+        <lang.donation>make a donation with my smartphone</lang.donation>
+        <lang.donation lang="fr">faire un don avec mon téléphone</lang.donation>
 
         <!--ambiance-->
         <lang.ambiance>system view • ambiance</lang.ambiance>
