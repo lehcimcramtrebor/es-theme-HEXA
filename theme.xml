@@ -16,8 +16,8 @@ By Helmic
     <variables>
 
         <!--donation-->
-        <lang.donation>make a donation with my smartphone</lang.donation>
-        <lang.donation lang="fr">faire un don avec mon téléphone</lang.donation>
+        <lang.donation>support developers</lang.donation>
+        <lang.donation lang="fr">soutenir les développeurs</lang.donation>
 
         <!--ambiance-->
         <lang.ambiance>system view • ambiance</lang.ambiance>
@@ -446,9 +446,7 @@ By Helmic
 
     <subset name="donation" displayName="${lang.donation}">
 		<include name="no" displayName="${lang.no}"/>
-        <include name="batocera" displayName="${lang.batocera}"/>
-        <include name="retrobat" displayName="${lang.retrobat}"/>
-        <include name="helmic" displayName="${lang.helmic}"/>
+        <include name="yes" displayName="${lang.yes}"/>
     </subset>
 
     <subset name="themeRatio" displayName="${lang.themeRatio}">
@@ -815,9 +813,38 @@ By Helmic
 	</view>
 	
 <!--END OF LOGO VISUAL ASSISTANCE-->
-	
+
     <view name="system">
-       
+
+
+		<image name="donation" extra="true" ifSubset="donation:yes">
+			<linearSmooth>true</linearSmooth>
+			<path ifNotArch="windows">./_inc/pp/batocera.png</path>
+			<path ifArch="windows">./_inc/pp/retrobat.png</path>
+			<origin>1 0.5</origin>
+			<pos>0.5 0.5</pos>
+			<maxSize>0.5 0.7</maxSize>
+			<zIndex>9999</zIndex>
+		</image>
+
+		<image name="donationHelmic" extra="true" ifSubset="donation:yes">
+			<linearSmooth>true</linearSmooth>
+			<path>./_inc/pp/helmic.png</path>
+			<origin>0 0.5</origin>
+			<pos>0.5 0.5</pos>
+			<maxSize>0.5 0.7</maxSize>
+			<zIndex>9999</zIndex>
+		</image>
+  
+		<image name="donationFade" extra="true" ifSubset="donation:yes">
+			<path>./_inc/white.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.5</pos>
+			<size>1 1</size>
+			<zIndex>9998</zIndex>
+			<color>000000aa</color>
+		</image>
+      
 		<image name="systemMask" extra="true" ifSubset="systemFade:yes">
             <path>./_inc/mask.png</path>
 			<size>1 1</size>
@@ -931,9 +958,6 @@ By Helmic
             <path>./${system.theme}/color-${lang}.png</path>
             <path region="us">./${system.theme}/us/color.png</path>
             <path region="jp">./${system.theme}/jp/color.png</path>
-			<path ifSubset="donation:batocera">./_inc/pp/batocera.png</path>
-			<path ifSubset="donation:retrobat">./_inc/pp/retrobat.png</path>
-			<path ifSubset="donation:helmic">./_inc/pp/helmic.png</path>
 			<maxSize>1 0.92962963</maxSize>
 			<pos>0.5 0.5</pos>
 			<origin>0.5 0.5</origin>
@@ -4449,7 +4473,7 @@ By Helmic
     </view>
 
 	<view name="screen">
-
+ 
 		<image name="scratch" extra="true">
 			<origin>0.5 0.5</origin>
 			<pos>0.5 0.5</pos>
