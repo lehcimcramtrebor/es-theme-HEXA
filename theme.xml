@@ -15,6 +15,10 @@ By Helmic
     
     <variables>
 
+        <!--donation-->
+        <lang.donation>make a donation</lang.donation>
+        <lang.donation lang="fr">faire un don</lang.donation>
+
         <!--ambiance-->
         <lang.ambiance>system view • ambiance</lang.ambiance>
         <lang.ambiance lang="fr">vue système • ambiance</lang.ambiance>
@@ -440,6 +444,13 @@ By Helmic
 
 <!--SUBSETS-->
 
+    <subset name="donation" displayName="${lang.donation}">
+		<include name="no" displayName="${lang.no}"/>
+        <include name="batocera" displayName="${lang.batocera}"/>
+        <include name="retrobat" displayName="${lang.retrobat}"/>
+        <include name="helmic" displayName="${lang.helmic}"/>
+    </subset>
+
     <subset name="themeRatio" displayName="${lang.themeRatio}">
 		<include name="169" displayName="${lang.169}"/>
         <include name="54" displayName="${lang.54}"/>
@@ -806,7 +817,7 @@ By Helmic
 <!--END OF LOGO VISUAL ASSISTANCE-->
 	
     <view name="system">
-        
+       
 		<image name="systemMask" extra="true" ifSubset="systemFade:yes">
             <path>./_inc/mask.png</path>
 			<size>1 1</size>
@@ -920,6 +931,9 @@ By Helmic
             <path>./${system.theme}/color-${lang}.png</path>
             <path region="us">./${system.theme}/us/color.png</path>
             <path region="jp">./${system.theme}/jp/color.png</path>
+			<path ifSubset="donation:batocera">./_inc/pp/batocera.png</path>
+			<path ifSubset="donation:retrobat">./_inc/pp/retrobat.png</path>
+			<path ifSubset="donation:helmic">./_inc/pp/helmic.png</path>
 			<maxSize>1 0.92962963</maxSize>
 			<pos>0.5 0.5</pos>
 			<origin>0.5 0.5</origin>
