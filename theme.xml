@@ -4434,6 +4434,25 @@ By Helmic
             <lineSpacing>1.2</lineSpacing>
         </menuGroup>	
 
+		<menuIcons name="menuicons">
+			<iconKodi>./_inc/icons/Kodi.png</iconKodi>
+			<iconSystem>./_inc/icons/System.png</iconSystem>
+			<iconUpdates>./_inc/icons/Updates.png</iconUpdates>
+			<iconGames>./_inc/icons/Games.png</iconGames>
+			<iconControllers>./_inc/icons/Controllers.png</iconControllers>
+			<iconUI>./_inc/icons/UI.png</iconUI>
+			<iconSound>./_inc/icons/Sound.png</iconSound>
+			<iconNetwork>./_inc/icons/Network.png</iconNetwork>
+			<iconScraper>./_inc/icons/Scraper.png</iconScraper>
+			<iconAdvanced>./_inc/icons/Advanced.png</iconAdvanced>
+			<iconQuit>./_inc/icons/Quit.png</iconQuit>
+			<iconRestart>./_inc/icons/Restart.png</iconRestart>
+			<iconShutdown>./_inc/icons/Shutdown.png</iconShutdown>
+			<iconFastShutdown>./_inc/icons/Fastshutdown.png</iconFastShutdown>
+			<iconRetroachievements>./_inc/icons/Contest.png</iconRetroachievements>
+			<iconManual>./_inc/icons/Manual.png</iconManual>
+		</menuIcons>
+
     </view>
 
 	<view name="screen">
