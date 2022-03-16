@@ -21,8 +21,14 @@ By Helmic
         <lang.ambiance>system view • ambiance</lang.ambiance>
         <lang.ambiance lang="fr">vue système • ambiance</lang.ambiance>
 
-        <lang.overlayTransparence>overlay • transparency</lang.overlayTransparence>
-        <lang.overlayTransparence lang="fr">overlay • transparent</lang.overlayTransparence>
+        <lang.overlayType>overlay • color</lang.overlayType>
+        <lang.overlayType lang="fr">overlay • couleur</lang.overlayType>
+
+        <lang.plainDark>plain</lang.plainDark>
+        <lang.plainDark lang="fr">opaque</lang.plainDark>
+
+        <lang.transparent>transparent</lang.transparent>
+        <lang.transparent lang="fr">transparent</lang.transparent>
 
         <lang.randomAudioOn>random games sounds with music</lang.randomAudioOn>
         <lang.randomAudioOn lang="fr">sons des jeux avec musique</lang.randomAudioOn>
@@ -461,9 +467,9 @@ By Helmic
         <include name="43" displayName="${lang.43}"/>
     </subset>
  
-	<subset name="overlayTransparence" displayName="${lang.overlayTransparence}">
-		<include name="no" displayName="${lang.no}"/>
-        <include name="yes" displayName="${lang.yes}"/>
+	<subset name="overlayType" displayName="${lang.overlayType}">
+		<include name="plainDark" displayName="${lang.plainDark}"/>
+        <include name="transparent" displayName="${lang.transparent}"/>
     </subset>
 
     <subset name="wall" displayName="${lang.wall}">
@@ -1501,8 +1507,8 @@ By Helmic
             <opacity ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff">1</opacity>
             <size ifSubset="systemRandomRatio:stretched">1 1</size>
             <maxSize ifSubset="systemRandomRatio:original">1 1</maxSize>
-            <size ifSubset="systemRandomRatio:stretched,overlayTransparence:no">1 0.9259259259259259</size>
-            <maxSize ifSubset="systemRandomRatio:original,overlayTransparence:no">1 0.9259259259259259</maxSize>
+            <size ifSubset="systemRandomRatio:stretched,overlayType:plainDark">1 0.9259259259259259</size>
+            <maxSize ifSubset="systemRandomRatio:original,overlayType:plainDark">1 0.9259259259259259</maxSize>
             <origin>0.5 0.5</origin>
             <pos>0.5 0.5</pos>
             <delay>0.25</delay>
@@ -1655,7 +1661,7 @@ By Helmic
             <maxSize>99 1</maxSize>
             <zIndex>100</zIndex>
 			<color>${overlay.colorset}</color>
-			<color ifSubset="overlayTransparence:yes">${overlay.colorset}80</color>
+			<color ifSubset="overlayType:transparent">${overlay.colorset}80</color>
         </image>
  
         <image name="background" extra="true">
