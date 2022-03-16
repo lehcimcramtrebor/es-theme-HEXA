@@ -237,6 +237,19 @@ By Helmic
 		<lang.54>5/4</lang.54>
 		<lang.43>4/3</lang.43>
 
+		<!--arrows-->
+		<lang.arrows>carousel • arrows</lang.arrows>
+		<lang.arrows lang="fr">carrousel • flèches</lang.arrows>
+
+		<lang.plain>plain</lang.plain>
+		<lang.plain lang="fr">pleines</lang.plain>
+
+		<lang.textured>textured</lang.textured>
+		<lang.textured lang="fr">texturées</lang.textured>
+
+		<lang.noArrows>not display</lang.noArrows>
+		<lang.noArrows lang="fr">ne pas les afficher</lang.noArrows>
+
 		<!--space carousel 16/9-->
 		<lang.spaceCarousel>carousel • space</lang.spaceCarousel>
 		<lang.spaceCarousel lang="fr">carrousel • espace</lang.spaceCarousel>
@@ -498,6 +511,12 @@ By Helmic
     <subset name="logoVisualAssistance" displayName="${lang.logoVisualAssistance}">
         <include name="yes" displayName="${lang.yes}"/>
 		<include name="no" displayName="${lang.no}"/>
+    </subset>
+
+    <subset name="arrows" displayName="${lang.arrows}">
+        <include name="textured" displayName="${lang.textured}"/>
+		<include name="plain" displayName="${lang.plain}"/>
+		<include name="noArrows" displayName="${lang.noArrows}"/>
     </subset>
 
     <subset name="spaceCarousel" displayName="${lang.spaceCarousel}" ifSubset="themeRatio:169">
@@ -808,13 +827,49 @@ By Helmic
 <!--END OF LOGO VISUAL ASSISTANCE-->
 
     <view name="system">
-   
+
 		<image name="systemMask" extra="true" ifSubset="systemFade:yes">
             <path>./_inc/mask.png</path>
 			<size>1 1</size>
 			<pos>0.5 0.5</pos>
 			<origin>0.5 0.5</origin>
             <zIndex>4</zIndex>
+		</image>
+   
+		<image name="arrowL,arrowR" extra="true" ifSubset="arrows:plain|textured">
+			<linearSmooth>true</linearSmooth>
+            <path ifSubset="arrows:textured,overlayColorset:noColor">./_inc/arrow.png</path>
+            <path ifSubset="arrows:textured,overlayColorset:blue">./_inc/arrowBlue.png</path>
+            <path ifSubset="arrows:textured,overlayColorset:red">./_inc/arrowRed.png</path>
+            <path ifSubset="arrows:textured,overlayColorset:green">./_inc/arrowGreen.png</path>
+            <path ifSubset="arrows:textured,overlayColorset:orange">./_inc/arrowOrange.png</path>
+            <path ifSubset="arrows:textured,overlayColorset:pink">./_inc/arrowPink.png</path>
+            <path ifSubset="arrows:textured,overlayColorset:purple">./_inc/arrowPurple.png</path>
+            <path ifSubset="arrows:textured,overlayColorset:yellow">./_inc/arrowYellow.png</path>
+            <path ifSubset="arrows:plain">./_inc/arrowW.png</path>
+            <color ifSubset="arrows:plain">${overlay.colorset}</color>
+			<maxSize>0.0520833333333333 1</maxSize>
+			<maxSize ifSubset="themeRatio:54|43">0.0694444444444444 1</maxSize>
+			<pos>0 0.5</pos>
+			<origin>0 0.5</origin>
+            <zIndex>99</zIndex>
+		</image>
+   
+		<image name="arrowL" extra="true" ifSubset="arrows:plain|textured">
+			<pos>0 0.5</pos>
+			<origin>0 0.5</origin>
+			<storyboard>
+        		<animation property="offsetX" to="-0.003" autoreverse="true" duration="200" mode="easeOutCubic" repeat="forever"/>
+			</storyboard>
+		</image>
+
+		<image name="arrowR" extra="true" ifSubset="arrows:plain|textured">
+			<flipX>true</flipX>
+			<pos>1 0.5</pos>
+			<origin>1 0.5</origin>
+			<storyboard>
+        		<animation property="offsetX" to="0.003" autoreverse="true" duration="200" mode="easeOutCubic" repeat="forever"/>
+			</storyboard>
 		</image>
 
 <!--CAROUSEL-->
