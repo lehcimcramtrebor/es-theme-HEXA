@@ -30,6 +30,9 @@ By Helmic
         <lang.transparent>transparent</lang.transparent>
         <lang.transparent lang="fr">transparent</lang.transparent>
 
+        <lang.overlayAnime>color lines • anime</lang.overlayAnime>
+        <lang.overlayAnime lang="fr">lignes colorées • animer</lang.overlayAnime>
+  
         <lang.randomAudioOn>random games sounds with music</lang.randomAudioOn>
         <lang.randomAudioOn lang="fr">sons des jeux avec musique</lang.randomAudioOn>
         
@@ -104,7 +107,7 @@ By Helmic
         <!--colorsets-->
         <lang.overlayColorset>interface • colorset</lang.overlayColorset>
         <lang.overlayColorset lang="fr">interface • jeu de couleur</lang.overlayColorset>
-            
+          
         <lang.noColor>monochrome</lang.noColor>
         <lang.noColor lang="fr">monochrome</lang.noColor>
             
@@ -470,6 +473,11 @@ By Helmic
 	<subset name="overlayType" displayName="${lang.overlayType}">
 		<include name="plainDark" displayName="${lang.plainDark}"/>
         <include name="transparent" displayName="${lang.transparent}"/>
+    </subset>
+ 
+	<subset name="overlayAnime" displayName="${lang.overlayAnime}">
+		<include name="yes" displayName="${lang.yes}"/>
+        <include name="no" displayName="${lang.no}"/>
     </subset>
 
     <subset name="wall" displayName="${lang.wall}">
@@ -1656,12 +1664,32 @@ By Helmic
             </storyboard>
  		</image>
 		
-        <image name="overlay" extra="true">
-            <path>./_inc/overlay.png</path>
+        <image name="overlayUp" extra="true">
+            <path>./_inc/overlayUp.png</path>
+            <path ifSubset="overlayAnime:yes">./_inc/overlayUpAnime.png</path>
             <maxSize>99 1</maxSize>
-            <zIndex>100</zIndex>
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+			<zIndex>100</zIndex>
 			<color>${overlay.colorset}</color>
 			<color ifSubset="overlayType:transparent">${overlay.colorset}80</color>
+            <storyboard ifSubset="overlayAnime:yes">
+                <animation property="offsetX" from="0.5" to="-0.5" duration="750" autoreverse="true" mode="easeInOutQuint" repeat="forever"/>
+            </storyboard>
+        </image>
+		
+        <image name="overlayDown" extra="true">
+            <path>./_inc/overlayDown.png</path>
+            <path ifSubset="overlayAnime:yes">./_inc/overlayDownAnime.png</path>
+            <maxSize>99 1</maxSize>
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+			<zIndex>100</zIndex>
+			<color>${overlay.colorset}</color>
+			<color ifSubset="overlayType:transparent">${overlay.colorset}80</color>
+            <storyboard ifSubset="overlayAnime:yes">
+                <animation property="offsetX" from="-0.5" to="0.5" duration="750" autoreverse="true" mode="easeInOutQuint" repeat="forever"/>
+            </storyboard>
         </image>
  
         <image name="background" extra="true">
