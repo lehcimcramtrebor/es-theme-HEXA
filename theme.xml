@@ -1657,11 +1657,22 @@ By Helmic
  		</image>
 		
         <image name="overlay" extra="true">
-            <path>./_inc/overlay.png</path>
+            <path>./_inc/overlay.svg</path>
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
             <maxSize>99 1</maxSize>
             <zIndex>100</zIndex>
 			<color>${overlay.colorset}</color>
 			<color ifSubset="overlayType:transparent">${overlay.colorset}80</color>
+        </image>
+		
+        <image name="overlayShadow" extra="true">
+            <path>./_inc/overlayShadow.png</path>
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+            <maxSize>99 1</maxSize>
+            <zIndex>99</zIndex>
+			<color>ffffff</color>
         </image>
  
         <image name="background" extra="true">
