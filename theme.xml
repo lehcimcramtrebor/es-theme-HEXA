@@ -643,10 +643,11 @@ By Helmic
 	</subset>
  
 	<subset name="container" displayName="${lang.container}" appliesTo="system,basic,detailed,grid,gamecarousel">
-		<include name="bartop" displayName="${lang.bartop}"/>
-        <include name="cathodBlack" displayName="${lang.cathodBlack}"/>
-        <include name="cathod" displayName="${lang.cathod}"/>
-		<include name="flat" displayName="${lang.flat}"/>
+<!--	<include name="automatic" displayName="${lang.automatic}">./_inc/containers/automatic.xml</include>		-->
+		<include name="bartop" displayName="${lang.bartop}">./_inc/containers/bartop/container.xml</include>
+        <include name="cathodBlack" displayName="${lang.cathodBlack}">./_inc/containers/cathodBlack/container.xml</include>
+        <include name="cathod" displayName="${lang.cathod}">./_inc/containers/cathod/container.xml</include>
+		<include name="flat" displayName="${lang.flat}">./_inc/containers/flat/container.xml</include>
     </subset>
 
 	<subset name="tvLogo" displayName="${lang.tvLogo}" appliesTo="system,basic,detailed,grid,gamecarousel">
@@ -1725,7 +1726,7 @@ By Helmic
 <!--TRANSITION,COMMONS-->
 	
 	<view name="basic,detailed,grid,gamecarousel" ifSubset="transition:yes">
-       
+      
 		<image name="logoTransition" extra="true">
             <linearSmooth>true</linearSmooth>
             <path>./default/color.png</path>
@@ -1904,7 +1905,278 @@ By Helmic
 <!--DETAILED GRID GAMECAROUSEL-->
 		
 	<view name="detailed,grid,gamecarousel">
-        
+
+<!--CONTAINER COMMONS-->
+
+		<image name="videoContainer" extra="true">
+            <linearSmooth>true</linearSmooth>
+			<origin>0.5 0.5</origin>
+			<maxSize>99 1</maxSize>
+			<maxSize ifSubset="themeRatio:54|43">1 99</maxSize>
+			<zIndex>15</zIndex>
+			<pos>0.14 0.64</pos>
+			<pos ifSubset="themeRatio:54">0.14 0.73</pos>
+			<pos ifSubset="themeRatio:43">0.14 0.72</pos>
+			</image>
+
+		<image name="led" extra="true">
+            <linearSmooth>true</linearSmooth>
+			<path>./_inc/led.png</path>
+			<origin>0.5 0.5</origin>
+			<maxSize>99 1</maxSize>
+			<maxSize ifSubset="themeRatio:54|43">1 99</maxSize>
+			<zIndex>16</zIndex>
+			<color>00000000</color>
+			<storyboard event="open">
+            </storyboard>
+			<storyboard event="activateNext">
+                 <animation property="color" to="ffffff" duration="100" autoreverse="true" mode="bump"/>
+            </storyboard>
+			<storyboard event="activatePrev">
+                 <animation property="color" to="ffffff" duration="100" autoreverse="true" mode="bump"/>
+           </storyboard>
+			<storyboard event="deactivateNext">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+			<storyboard event="deactivatePrev">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+		</image>
+	
+		<image name="rew" extra="true">
+            <linearSmooth>true</linearSmooth>
+			<path>./_inc/rew.png</path>
+			<origin>0.5 0.5</origin>
+			<maxSize>99 1</maxSize>
+			<maxSize ifSubset="themeRatio:54|43">1 99</maxSize>
+			<zIndex>13</zIndex>
+			<color>00000000</color>
+			<storyboard event="open">
+            </storyboard>
+			<storyboard event="activateNext">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+			<storyboard event="activatePrev">
+                 <animation property="color" from="00000000" to="ffffff" duration="1" mode="linear"/>
+                 <animation property="color" to="00000000" duration="600" mode="easeInQuint" begin="600"/>
+           </storyboard>
+			<storyboard event="deactivateNext">
+                <animation property="color" from="00000000" to="00000000" duration="1" mode="easeIn"/>
+            </storyboard>
+			<storyboard event="deactivatePrev">
+                <animation property="color" from="00000000" to="00000000" duration="1" mode="easeIn"/>
+            </storyboard>
+		</image>
+	
+		<image name="next" extra="true">
+            <linearSmooth>true</linearSmooth>
+			<path>./_inc/next.png</path>
+			<origin>0.5 0.5</origin>
+			<maxSize>99 1</maxSize>
+			<maxSize ifSubset="themeRatio:54|43">1 99</maxSize>
+			<zIndex>13</zIndex>
+			<color>00000000</color>
+			<storyboard event="open">
+            </storyboard>
+			<storyboard event="activateNext">
+                 <animation property="color" from="00000000" to="ffffff" duration="1" mode="linear"/>
+                 <animation property="color" to="00000000" duration="600" mode="easeInQuint" begin="600"/>
+             </storyboard>
+			<storyboard event="activatePrev">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+           </storyboard>
+			<storyboard event="deactivateNext">
+                <animation property="color" from="00000000" to="00000000" duration="1" mode="easeIn"/>
+            </storyboard>
+			<storyboard event="deactivatePrev">
+                <animation property="color" from="00000000" to="00000000" duration="1" mode="easeIn"/>
+            </storyboard>
+		</image>
+	
+		<image name="play" extra="true">
+            <linearSmooth>true</linearSmooth>
+			<path>./_inc/play.png</path>
+			<origin>0.5 0.5</origin>
+			<maxSize>99 1</maxSize>
+			<maxSize ifSubset="themeRatio:54|43">1 99</maxSize>
+			<zIndex>13</zIndex>
+			<color>00000000</color>
+			<storyboard event="open">
+                 <animation property="color" to="00000000" duration="1000" mode="linear"/>
+                 <animation property="color" to="ffffff" duration="250" mode="easeOutQuint" begin="1000"/>
+                 <animation property="color" to="ffffff" duration="550" mode="linear" begin="1250"/>
+                 <animation property="color" to="00000000" duration="250" mode="easeIn" begin="1800"/>
+            </storyboard>
+			<storyboard event="activateNext">
+                 <animation property="color" to="00000000" duration="1000" mode="linear"/>
+                 <animation property="color" to="ffffff" duration="250" mode="easeOutQuint" begin="1000"/>
+                 <animation property="color" to="ffffff" duration="550" mode="linear" begin="1250"/>
+                 <animation property="color" to="00000000" duration="250" mode="easeIn" begin="1800"/>
+            </storyboard>
+			<storyboard event="activatePrev">
+                 <animation property="color" to="00000000" duration="1000" mode="linear"/>
+                 <animation property="color" to="ffffff" duration="250" mode="easeOutQuint" begin="1000"/>
+                 <animation property="color" to="ffffff" duration="550" mode="linear" begin="1250"/>
+                 <animation property="color" to="00000000" duration="250" mode="easeIn" begin="1800"/>
+           </storyboard>
+			<storyboard event="deactivateNext">
+                <animation property="color" from="00000000" to="00000000" duration="1" mode="easeIn"/>
+            </storyboard>
+			<storyboard event="deactivatePrev">
+                <animation property="color" from="00000000" to="00000000" duration="1" mode="easeIn"/>
+            </storyboard>
+		</image>
+		
+		<text name="logoContainer" extra="true">
+			<text>b a t o c e r a</text>
+			<text ifArch="windows">r e t r o b a t</text>
+			<text  ifSubset="tvOs:no"> e m u l a t i o n s t a t i o n</text>
+            <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
+            <fontPath ifArch="windows">./_inc/fonts/snes.ttf</fontPath>
+            <fontPath ifSubset="tvOs:no">./_inc/fonts/DJB Get Digital.ttf</fontPath>
+            <color>cccccc</color>
+            <glowColor>00000015</glowColor>
+            <fontSize>0.012</fontSize>
+            <fontSize ifSubset="themeRatio:54|43">0.01</fontSize>
+            <fontSize ifArch="windows">0.018</fontSize>
+            <fontSize ifArch="windows" ifSubset="themeRatio:54|43">0.013</fontSize>
+            <fontSize ifSubset="tvOs:no">0.012</fontSize>
+            <fontSize ifSubset="tvOs:no,themeRatio:54|43">0.01</fontSize>
+            <origin>0.5 0.5</origin>
+            <zIndex>10</zIndex>
+			<alignment>center</alignment>
+			<forceUppercase>true</forceUppercase>
+			<zIndex>16</zIndex>
+		</text>
+		
+		<image name="videoBackFrame" extra="true">
+			<path>./_inc/white.png</path>
+			<color>000800</color>
+			<color ifSubset="randomRatio:original,tvScreenColor:blue">000080</color>
+			<origin>0.5 0.5</origin>
+			<zIndex>10</zIndex>
+		</image>
+
+		<image name="randomVideosFx" extra="true">
+			<origin>0.5 0.5</origin>
+			<zIndex>14</zIndex>
+			<tile>true</tile>
+			<visible>false</visible>
+			<visible ifSubset="staticEffect:no">true</visible>
+		</image>
+
+        <video name="md_video">
+			<showSnapshotNoVideo>true</showSnapshotNoVideo>
+			<showSnapshotNoVideo ifSubset="tvSnaphot:no">false</showSnapshotNoVideo>
+			<showSnapshotDelay>true</showSnapshotDelay>
+			<showSnapshotDelay ifSubset="tvSnaphot:no">false</showSnapshotDelay>
+			<origin>0.5 0.5</origin>
+            <delay>1</delay>
+            <delay ifSubset="previewDisplay:displayMix">0.075</delay>
+            <effect>size</effect>
+            <zIndex>12</zIndex>
+            <color>ffffff</color>
+		</video>
+
+	<image name="logoTV" extra="true" ifSubset="tvLogo:yes">
+		<origin>0. 1</origin>
+		<zIndex>13</zIndex>
+		<color>ffffff</color>
+		<linearSmooth>true</linearSmooth>
+
+		<path ifArch="windows">./../es-theme-carbon/art/logos/${system.theme}.png</path>
+		<path ifArch="windows">./../es-theme-carbon/art/logos/${system.theme}.svg</path>
+		<path ifArch="windows">./../es-theme-carbon/art/logos/${system.theme}-w.png</path>
+		<path ifArch="windows">./../es-theme-carbon/art/logos/${system.theme}-w.svg</path>
+		<path ifArch="windows">./../es-theme-carbon/art/logos/${system.theme}-${lang}.png</path>
+		<path ifArch="windows">./../es-theme-carbon/art/logos/${system.theme}-${lang}.svg</path>
+
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}.png</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}.svg</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}-w.png</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}-w.svg</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}-${lang}.png</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}-${lang}.svg</path>
+
+		<path>./_inc/logos/${system.theme}.png</path>
+		<path>./_inc/logos/${system.theme}.svg</path>
+		<path>./_inc/logos/${system.theme}-clear.png</path>
+		<path>./_inc/logos/${system.theme}-clear.svg</path>
+		<path>./_inc/logos/${system.theme}-${lang}.png</path>
+		<path>./_inc/logos/${system.theme}-${lang}.svg</path>
+			<storyboard event="open">
+                <animation property="scale" to="0.6" duration="350" mode="easeInOut" begin="1500"/>
+            </storyboard>
+			<storyboard event="activateNext">
+                <animation property="scale" to="0.6" duration="350" mode="easeInOut" begin="1500"/>
+            </storyboard>
+			<storyboard event="activatePrev">
+                <animation property="scale" to="0.6" duration="350" mode="easeInOut" begin="1500"/>
+           </storyboard>
+			<storyboard event="deactivateNext">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+			<storyboard event="deactivatePrev">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+
+			<storyboard event="open" ifSubset="previewDisplay:displayMix">
+                <animation property="scale" to="0.6" duration="500" mode="easeInOut" begin="700"/>
+            </storyboard>
+			<storyboard event="activateNext" ifSubset="previewDisplay:displayMix">
+                <animation property="scale" to="0.6" duration="500" mode="easeInOut" begin="700"/>
+            </storyboard>
+			<storyboard event="activatePrev" ifSubset="previewDisplay:displayMix">
+                <animation property="scale" to="0.6" duration="500" mode="easeInOut" begin="700"/>
+           </storyboard>
+			<storyboard event="deactivateNext" ifSubset="previewDisplay:displayMix">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+			<storyboard event="deactivatePrev" ifSubset="previewDisplay:displayMix">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+	</image>
+
+	<image name="logoTV" region="us" extra="true" ifSubset="tvLogo:yes">
+
+		<path ifArch="windows">./../es-theme-carbon/art/logos/us/${system.theme}.png</path>
+		<path ifArch="windows">./../es-theme-carbon/art/logos/us/${system.theme}.svg</path>
+		<path ifArch="windows">./../es-theme-carbon/art/logos/us/${system.theme}-w.png</path>
+		<path ifArch="windows">./../es-theme-carbon/art/logos/us/${system.theme}-w.svg</path>
+
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/us/${system.theme}.png</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/us/${system.theme}.svg</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/us/${system.theme}-w.png</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/us/${system.theme}-w.svg</path>
+
+		<path>./_inc/logos/us/${system.theme}.png</path>
+		<path>./_inc/logos/us/${system.theme}.svg</path>
+		<path>./_inc/logos/us/${system.theme}-clear.png</path>
+		<path>./_inc/logos/us/${system.theme}-clear.svg</path>
+	</image>
+
+	<image name="logoTV" region="jp" extra="true" ifSubset="tvLogo:yes">
+
+		<path ifArch="windows">./../es-theme-carbon/art/logos/jp/${system.theme}.png</path>
+		<path ifArch="windows">./../es-theme-carbon/art/logos/jp/${system.theme}.svg</path>
+		<path ifArch="windows">./../es-theme-carbon/art/logos/jp/${system.theme}-w.png</path>
+		<path ifArch="windows">./../es-theme-carbon/art/logos/jp/${system.theme}-w.svg</path>
+
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/jp/${system.theme}.png</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/jp/${system.theme}.svg</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/jp/${system.theme}-w.png</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/jp/${system.theme}-w.svg</path>
+
+		<path>./_inc/logos/jp/${system.theme}.png</path>
+		<path>./_inc/logos/jp/${system.theme}.svg</path>
+		<path>./_inc/logos/jp/${system.theme}-clear.png</path>
+		<path>./_inc/logos/jp/${system.theme}-clear.svg</path>
+	</image>
+
+
+<!--END OF CONTAINER COMMONS-->
+
+       
 		<image name="gamelistMask" extra="true" ifSubset="gamelistFade:yes">
             <path>./_inc/mask.png</path>
 			<size>1 1</size>
@@ -2055,424 +2327,6 @@ By Helmic
                 <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
             </storyboard>
 		</image>
-
-		<image name="videoContainer" extra="true">
-            <linearSmooth>true</linearSmooth>
-			<path>./_inc/container.png</path>
-			<path ifArch="windows">./_inc/containerRetrobat.png</path>
-			<path ifSubset="container:cathod">./_inc/containerCathod.png</path>
-			<path ifSubset="container:cathod" ifArch="windows">./_inc/containerCathodRetrobat.png</path>
-			<path ifSubset="container:cathodBlack">./_inc/containerCathodBlack.png</path>
-			<path ifSubset="container:cathodBlack" ifArch="windows">./_inc/containerCathodBlackRetrobat.png</path>
-			<path ifSubset="container:bartop">./_inc/containerBartop.png</path>
-			<path>./_inc/test.png</path>
-			<origin>0.5 0.5</origin>
-			<pos>0.14 0.64</pos>
-			<pos ifSubset="themeRatio:54">0.14 0.73</pos>
-			<pos ifSubset="themeRatio:43">0.14 0.72</pos>
-			<maxSize>99 1</maxSize>
-			<maxSize ifSubset="themeRatio:54|43">1 99</maxSize>
-			<zIndex>15</zIndex>
-		</image>
-	
-		<image name="led" extra="true">
-            <linearSmooth>true</linearSmooth>
-			<path>./_inc/led.png</path>
-			<origin>0.5 0.5</origin>
-			<pos>0.14 0.64</pos>
-			<pos ifSubset="container:cathod|cathodBlack">0.14 0.62</pos>
-			<pos ifSubset="themeRatio:54">0.14 0.73</pos>
-			<pos ifSubset="themeRatio:43">0.14 0.72</pos>
-			<pos ifSubset="themeRatio:43,container:cathod|cathodBlack">0.14 0.707</pos>
-			<pos ifSubset="themeRatio:54,container:cathod|cathodBlack">0.14 0.715</pos>
-			<maxSize>99 1</maxSize>
-			<maxSize ifSubset="themeRatio:54|43">1 99</maxSize>
-			<zIndex>16</zIndex>
-			<color>00000000</color>
-			<visible ifSubset="container:bartop">false</visible>
-			<storyboard event="open">
-            </storyboard>
-			<storyboard event="activateNext">
-                 <animation property="color" to="ffffff" duration="100" autoreverse="true" mode="bump"/>
-            </storyboard>
-			<storyboard event="activatePrev">
-                 <animation property="color" to="ffffff" duration="100" autoreverse="true" mode="bump"/>
-           </storyboard>
-			<storyboard event="deactivateNext">
-                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
-            </storyboard>
-			<storyboard event="deactivatePrev">
-                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
-            </storyboard>
-		</image>
-	
-		<image name="rew" extra="true">
-            <linearSmooth>true</linearSmooth>
-			<path>./_inc/rew.png</path>
-			<origin>0.5 0.5</origin>
-			<pos>0.14 0.64</pos>
-			<pos ifSubset="container:cathod|cathodBlack">0.08 0.7</pos>
-			<pos ifSubset="themeRatio:54">0.14 0.73</pos>
-			<pos ifSubset="themeRatio:43">0.14 0.72</pos>
-			<pos ifSubset="themeRatio:43,container:cathod|cathodBlack">0.08 0.77</pos>
-			<pos ifSubset="themeRatio:54,container:cathod|cathodBlack">0.08 0.78</pos>
-			<maxSize>99 1</maxSize>
-			<maxSize ifSubset="themeRatio:54|43">1 99</maxSize>
-			<zIndex>13</zIndex>
-			<color>00000000</color>
-			<visible ifSubset="container:bartop">false</visible>
-			<storyboard event="open">
-            </storyboard>
-			<storyboard event="activateNext">
-                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
-            </storyboard>
-			<storyboard event="activatePrev">
-                 <animation property="color" from="00000000" to="ffffff" duration="1" mode="linear"/>
-                 <animation property="color" to="00000000" duration="600" mode="easeInQuint" begin="600"/>
-           </storyboard>
-			<storyboard event="deactivateNext">
-                <animation property="color" from="00000000" to="00000000" duration="1" mode="easeIn"/>
-            </storyboard>
-			<storyboard event="deactivatePrev">
-                <animation property="color" from="00000000" to="00000000" duration="1" mode="easeIn"/>
-            </storyboard>
-		</image>
-	
-		<image name="next" extra="true">
-            <linearSmooth>true</linearSmooth>
-			<path>./_inc/next.png</path>
-			<origin>0.5 0.5</origin>
-			<pos>0.14 0.64</pos>
-			<pos ifSubset="container:cathod|cathodBlack">0.08 0.7</pos>
-			<pos ifSubset="themeRatio:54">0.14 0.73</pos>
-			<pos ifSubset="themeRatio:43">0.14 0.72</pos>
-			<pos ifSubset="themeRatio:43,container:cathod|cathodBlack">0.08 0.77</pos>
-			<pos ifSubset="themeRatio:54,container:cathod|cathodBlack">0.08 0.78</pos>
-			<maxSize>99 1</maxSize>
-			<maxSize ifSubset="themeRatio:54|43">1 99</maxSize>
-			<zIndex>13</zIndex>
-			<color>00000000</color>
-			<visible ifSubset="container:bartop">false</visible>
-			<storyboard event="open">
-            </storyboard>
-			<storyboard event="activateNext">
-                 <animation property="color" from="00000000" to="ffffff" duration="1" mode="linear"/>
-                 <animation property="color" to="00000000" duration="600" mode="easeInQuint" begin="600"/>
-             </storyboard>
-			<storyboard event="activatePrev">
-                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
-           </storyboard>
-			<storyboard event="deactivateNext">
-                <animation property="color" from="00000000" to="00000000" duration="1" mode="easeIn"/>
-            </storyboard>
-			<storyboard event="deactivatePrev">
-                <animation property="color" from="00000000" to="00000000" duration="1" mode="easeIn"/>
-            </storyboard>
-		</image>
-	
-		<image name="play" extra="true">
-            <linearSmooth>true</linearSmooth>
-			<path>./_inc/play.png</path>
-			<origin>0.5 0.5</origin>
-			<pos>0.14 0.64</pos>
-			<pos ifSubset="container:cathod|cathodBlack">0.08 0.7</pos>
-			<pos ifSubset="themeRatio:54">0.14 0.73</pos>
-			<pos ifSubset="themeRatio:43">0.14 0.72</pos>
-			<pos ifSubset="themeRatio:43,container:cathod|cathodBlack">0.08 0.77</pos>
-			<pos ifSubset="themeRatio:54,container:cathod|cathodBlack">0.08 0.78</pos>
-			<maxSize>99 1</maxSize>
-			<maxSize ifSubset="themeRatio:54|43">1 99</maxSize>
-			<zIndex>13</zIndex>
-			<color>00000000</color>
-			<visible ifSubset="container:bartop">false</visible>
-			<storyboard event="open">
-                 <animation property="color" to="00000000" duration="1000" mode="linear"/>
-                 <animation property="color" to="ffffff" duration="250" mode="easeOutQuint" begin="1000"/>
-                 <animation property="color" to="ffffff" duration="550" mode="linear" begin="1250"/>
-                 <animation property="color" to="00000000" duration="250" mode="easeIn" begin="1800"/>
-            </storyboard>
-			<storyboard event="activateNext">
-                 <animation property="color" to="00000000" duration="1000" mode="linear"/>
-                 <animation property="color" to="ffffff" duration="250" mode="easeOutQuint" begin="1000"/>
-                 <animation property="color" to="ffffff" duration="550" mode="linear" begin="1250"/>
-                 <animation property="color" to="00000000" duration="250" mode="easeIn" begin="1800"/>
-            </storyboard>
-			<storyboard event="activatePrev">
-                 <animation property="color" to="00000000" duration="1000" mode="linear"/>
-                 <animation property="color" to="ffffff" duration="250" mode="easeOutQuint" begin="1000"/>
-                 <animation property="color" to="ffffff" duration="550" mode="linear" begin="1250"/>
-                 <animation property="color" to="00000000" duration="250" mode="easeIn" begin="1800"/>
-           </storyboard>
-			<storyboard event="deactivateNext">
-                <animation property="color" from="00000000" to="00000000" duration="1" mode="easeIn"/>
-            </storyboard>
-			<storyboard event="deactivatePrev">
-                <animation property="color" from="00000000" to="00000000" duration="1" mode="easeIn"/>
-            </storyboard>
-		</image>
-
-		<text name="logoContainer" extra="true">
-			<text>b a t o c e r a</text>
-			<text ifArch="windows">r e t r o b a t</text>
-			<text  ifSubset="tvOs:no"> e m u l a t i o n s t a t i o n</text>
-            <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
-            <fontPath ifArch="windows">./_inc/fonts/snes.ttf</fontPath>
-            <fontPath ifSubset="tvOs:no">./_inc/fonts/DJB Get Digital.ttf</fontPath>
-            <color>cccccc</color>
-            <glowColor>00000015</glowColor>
-            <fontSize>0.012</fontSize>
-            <fontSize ifSubset="themeRatio:54|43">0.01</fontSize>
-            <fontSize ifArch="windows">0.018</fontSize>
-            <fontSize ifArch="windows" ifSubset="themeRatio:54|43">0.013</fontSize>
-            <fontSize ifSubset="tvOs:no">0.012</fontSize>
-            <fontSize ifSubset="tvOs:no,themeRatio:54|43">0.01</fontSize>
-            <pos>0.316822917 0.901</pos>
- 			<pos ifSubset="container:cathod|cathodBlack">0.316822917 0.874</pos>
- 			<pos ifSubset="container:bartop">0.316822917 0.932</pos>
-			<pos ifSubset="themeRatio:54|43">0.316822917 0.9145</pos>
-			<pos ifSubset="themeRatio:54|43,container:cathod|cathodBlack">0.316822917 0.8975</pos>
-			<pos ifSubset="themeRatio:43,container:bartop">0.316822917 0.94</pos>
-			<pos ifSubset="themeRatio:54,container:bartop">0.316822917 0.936</pos>
-            <origin>0.5 0.5</origin>
-            <zIndex>10</zIndex>
-			<alignment>center</alignment>
-			<forceUppercase>true</forceUppercase>
-			<zIndex>16</zIndex>
-		</text>
-		
-		<image name="videoBackFrame" extra="true">
-			<path>./_inc/backFrame.png</path>
-			<color>000800</color>
-			<color ifSubset="randomRatio:original,tvScreenColor:blue">000080</color>
-			<origin>0.5 0.5</origin>
-			<pos>0.14 0.64</pos>
-			<pos ifSubset="themeRatio:54">0.14 0.73</pos>
-			<pos ifSubset="themeRatio:43">0.14 0.72</pos>
-			<maxSize>99 1</maxSize>
-            <maxSize ifSubset="themeRatio:54|43">1 99</maxSize>
-			<zIndex>10</zIndex>
-			<visible ifSubset="container:bartop">false</visible>
-		</image>
-		
-		<image name="videoBackFrameBartop" extra="true" ifSubset="container:bartop">
-			<path>./_inc/white.png</path>
-			<color>000800</color>
-			<color ifSubset="randomRatio:original,tvScreenColor:blue">000080</color>
-			<origin>0.5 0.5</origin>
-            <pos>0.3177083333333333 0.7041666666666667</pos>
-			<size>0.55 0.26</size>
-            <maxSize ifSubset="themeRatio:54|43">1 99</maxSize>
-			<zIndex>10</zIndex>
-			<y ifSubset="themeRatio:43|54">0.75</y>
-		</image>
-
-		<image name="randomVideosFx" extra="true">
-            <size>0.5265625 0.503703704</size>
-			<size ifSubset="themeRatio:54">0.526666667 0.355208333</size>
-			<size ifSubset="themeRatio:43">0.526666667 0.378888889</size>
-			<size ifSubset="container:bartop">0.1791666666666667 0.2453703703703704</size>
-            <pos>0.316822917 0.64</pos>
-            <pos ifSubset="container:bartop">0.3177083333333333 0.7041666666666667</pos>
-            <pos ifSubset="themeRatio:54">0.3175 0.73</pos>
-            <pos ifSubset="themeRatio:43">0.3175 0.72</pos>
-			<origin>0.5 0.5</origin>
-			<zIndex>14</zIndex>
-			<tile>true</tile>
-			<path>./_inc/crt.png</path>
-			<visible>false</visible>
-			<visible ifSubset="staticEffect:no">true</visible>
-			<color>ffffff90</color>
-		</image>
-
-        <video name="md_video">
-			<default ifSubset="container:bartop">./_inc/noise.mp4</default>
-			<default ifSubset="container:cathod|cathodBlack">./_inc/glitch.mp4</default>
-			<showSnapshotNoVideo>true</showSnapshotNoVideo>
-			<showSnapshotNoVideo ifSubset="tvSnaphot:no">false</showSnapshotNoVideo>
-			<showSnapshotDelay>true</showSnapshotDelay>
-			<showSnapshotDelay ifSubset="tvSnaphot:no">false</showSnapshotDelay>
-
-			<size ifSubset="randomRatio:stretched">0.5265625 0.503703704</size>
-			<size ifSubset="randomRatio:stretched,container:cathod|cathodBlack">0.4484375 0.4175925925925926</size>
-			<size ifSubset="randomRatio:stretched,container:bartop">0.1791666666666667 0.2453703703703704</size>
-
-			<size ifSubset="randomRatio:stretched,themeRatio:54">0.526666667 0.355208333</size>
-			<size ifSubset="randomRatio:stretched,themeRatio:54,container:cathod|cathodBlack">0.4496296296296296 0.2953703703703704</size>
-			<size ifSubset="randomRatio:stretched,themeRatio:54,container:bartop">0.1798611111111111 0.1740740740740741</size>
-
-			<size ifSubset="randomRatio:stretched,themeRatio:43">0.526666667 0.378888889</size>
-			<size ifSubset="randomRatio:stretched,themeRatio:43,container:cathod|cathodBlack">0.4486111111111111 0.3138888888888889</size>
-			<size ifSubset="randomRatio:stretched,themeRatio:43,container:bartop">0.1798611111111111 0.1851851851851852</size>
-
-
-
-            <maxSize ifSubset="randomRatio:original">0.5265625 0.503703704</maxSize>
-            <maxSize ifSubset="randomRatio:original,container:cathod|cathodBlack">0.4484375 0.4175925925925926</maxSize>
-			<maxSize ifSubset="randomRatio:original,container:bartop">0.1791666666666667 0.2453703703703704</maxSize>
-
-			<maxSize ifSubset="randomRatio:original,themeRatio:54">0.526666667 0.355208333</maxSize>
-			<maxSize ifSubset="randomRatio:original,themeRatio:54,container:cathod|cathodBlack">0.4496296296296296 0.2953703703703704</maxSize>
-
-			<maxSize ifSubset="randomRatio:original,themeRatio:43">0.526666667 0.378888889</maxSize>
-			<maxSize ifSubset="randomRatio:original,themeRatio:43,container:cathod|cathodBlack">0.4486111111111111 0.3138888888888889</maxSize>
-			<maxSize ifSubset="randomRatio:original,themeRatio:43,container:bartop">0.1798611111111111 0.1851851851851852</maxSize>
-
-            <pos>0.316822917 0.64</pos>
-            <pos ifSubset="themeRatio:54">0.3175 0.73</pos>
-            <pos ifSubset="themeRatio:43">0.3175 0.72</pos>
-            <pos ifSubset="container:bartop">0.3177083333333333 0.7041666666666667</pos>
-            <pos ifSubset="container:bartop,themeRatio:43">0.3184027777777778 0.7694444444444444</pos>
-            <pos ifSubset="container:bartop,themeRatio:54">0.3184027777777778 0.7759259259259259</pos>
-			<origin>0.5 0.5</origin>
-            <delay>1</delay>
-            <delay ifSubset="previewDisplay:displayMix">0.075</delay>
-            <effect>size</effect>
-            <zIndex>12</zIndex>
-            <color>ffffff</color>
-		</video>
-
-        <video name="bartopNoise1" ifSubset="container:bartop" extra="true">
-			<path>./_inc/noise.mp4</path>
-			<audio>false</audio>
-			<origin>0.5 0.5</origin>
-            <pos>0.14 0.68</pos>
-			<size>0.14 0.22</size>
-			<zIndex>11</zIndex>
-			<y ifSubset="themeRatio:43|54">0.75</y>
-			<color>dddddd</color>
-		</video>
-
-        <video name="bartopNoise2" ifSubset="container:bartop" extra="true">
-			<path>./_inc/noise.mp4</path>
-			<audio>false</audio>
-			<origin>0.5 0.5</origin>
-            <pos>0.49 0.68</pos>
-			<size>0.14 0.22</size>
-			<zIndex>11</zIndex>
-			<y ifSubset="themeRatio:43|54">0.75</y>
-			<color>dddddd</color>
-		</video>
-
-	<image name="logoAssistFocus" extra="true">
-		<linearSmooth>true</linearSmooth>
-		<zIndex>98</zIndex>
-		<size>1 1</size>
-		<origin>0.5 0.5</origin>
-		<pos>0.5 0.5</pos>
-		<path>./_inc/white.png</path>
-		<color>00000000</color>
-		<colorEnd>00000080</colorEnd>
-		<gradientType>vertical</gradientType>
-		<opacity>0</opacity>
-			<storyboard>
-                <animation property="opacity" from="0" to="1" duration="100" mode="linear"/>
-                <animation property="opacity" from="1" to="1" duration="150" mode="linear" begin="100"/>
-                <animation property="opacity" from="1" to="0" duration="250" mode="easeIn" begin="250"/>
-            </storyboard>
-	</image>
-
-	<image name="logoTV" extra="true" ifSubset="tvLogo:yes">
-		<linearSmooth>true</linearSmooth>
-		<zIndex>13</zIndex>
-		<maxSize>0.2 0.12</maxSize>
-		<maxSize ifSubset="container:cathod|cathodBlack">0.14 0.08</maxSize>
-		<maxSize ifSubset="container:bartop">0.1 0.06</maxSize>
-		<origin>0. 1</origin>
-		<pos>0.0625 0.88</pos>
-		<pos ifSubset="container:cathod|cathodBlack">0.1 0.84</pos>
-		<pos ifSubset="container:bartop">0.235 0.82</pos>
-		<color>ffffff</color>
-		<y ifSubset="themeRatio:43|54">0.9</y>
-		<y ifSubset="themeRatio:43|54,container:cathod|cathodBlack">0.87</y>
-		<y ifSubset="themeRatio:43|54,container:bartop">0.85</y>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/${system.theme}.png</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/${system.theme}.svg</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/${system.theme}-w.png</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/${system.theme}-w.svg</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/${system.theme}-${lang}.png</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/${system.theme}-${lang}.svg</path>
-
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}.png</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}.svg</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}-w.png</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}-w.svg</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}-${lang}.png</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}-${lang}.svg</path>
-
-		<path>./_inc/logos/${system.theme}.png</path>
-		<path>./_inc/logos/${system.theme}.svg</path>
-		<path>./_inc/logos/${system.theme}-clear.png</path>
-		<path>./_inc/logos/${system.theme}-clear.svg</path>
-		<path>./_inc/logos/${system.theme}-${lang}.png</path>
-		<path>./_inc/logos/${system.theme}-${lang}.svg</path>
-			<storyboard event="open">
-                <animation property="scale" to="0.6" duration="350" mode="easeInOut" begin="1500"/>
-            </storyboard>
-			<storyboard event="activateNext">
-                <animation property="scale" to="0.6" duration="350" mode="easeInOut" begin="1500"/>
-            </storyboard>
-			<storyboard event="activatePrev">
-                <animation property="scale" to="0.6" duration="350" mode="easeInOut" begin="1500"/>
-           </storyboard>
-			<storyboard event="deactivateNext">
-                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
-            </storyboard>
-			<storyboard event="deactivatePrev">
-                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
-            </storyboard>
-
-			<storyboard event="open" ifSubset="previewDisplay:displayMix">
-                <animation property="scale" to="0.6" duration="500" mode="easeInOut" begin="700"/>
-            </storyboard>
-			<storyboard event="activateNext" ifSubset="previewDisplay:displayMix">
-                <animation property="scale" to="0.6" duration="500" mode="easeInOut" begin="700"/>
-            </storyboard>
-			<storyboard event="activatePrev" ifSubset="previewDisplay:displayMix">
-                <animation property="scale" to="0.6" duration="500" mode="easeInOut" begin="700"/>
-           </storyboard>
-			<storyboard event="deactivateNext" ifSubset="previewDisplay:displayMix">
-                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
-            </storyboard>
-			<storyboard event="deactivatePrev" ifSubset="previewDisplay:displayMix">
-                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
-            </storyboard>
-	</image>
-
-	<image name="logoTV" region="us" extra="true" ifSubset="tvLogo:yes">
-
-		<path ifArch="windows">./../es-theme-carbon/art/logos/us/${system.theme}.png</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/us/${system.theme}.svg</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/us/${system.theme}-w.png</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/us/${system.theme}-w.svg</path>
-
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/us/${system.theme}.png</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/us/${system.theme}.svg</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/us/${system.theme}-w.png</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/us/${system.theme}-w.svg</path>
-
-		<path>./_inc/logos/us/${system.theme}.png</path>
-		<path>./_inc/logos/us/${system.theme}.svg</path>
-		<path>./_inc/logos/us/${system.theme}-clear.png</path>
-		<path>./_inc/logos/us/${system.theme}-clear.svg</path>
-	</image>
-
-	<image name="logoTV" region="jp" extra="true" ifSubset="tvLogo:yes">
-
-		<path ifArch="windows">./../es-theme-carbon/art/logos/jp/${system.theme}.png</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/jp/${system.theme}.svg</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/jp/${system.theme}-w.png</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/jp/${system.theme}-w.svg</path>
-
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/jp/${system.theme}.png</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/jp/${system.theme}.svg</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/jp/${system.theme}-w.png</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/jp/${system.theme}-w.svg</path>
-
-		<path>./_inc/logos/jp/${system.theme}.png</path>
-		<path>./_inc/logos/jp/${system.theme}.svg</path>
-		<path>./_inc/logos/jp/${system.theme}-clear.png</path>
-		<path>./_inc/logos/jp/${system.theme}-clear.svg</path>
-	</image>
 
 		<text name="md_name">
 			<text>${system.name}</text>
@@ -4129,7 +3983,7 @@ By Helmic
 	
 	<customView name="library" inherits="detailed" displayName="${lang.library}">
 
-		<image name="logoTV,tvMix,backTvMix,tvShadow,videoBackFrameBartop" extra="true">
+		<image name="logoTV,tvMix,backTvMix,tvShadow" extra="true">
 			<visible>false</visible>
 		</image>
 

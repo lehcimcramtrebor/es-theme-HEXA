@@ -1,0 +1,100 @@
+<!--
+HEXA Theme for Retrobat 4+ / Batocera v32+
+By Helmic
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+<formatVersion>7</formatVersion>
+		
+	<view name="detailed,grid,gamecarousel">
+        
+
+		<image name="videoContainer" extra="true">
+			<path ifNotArch="windows">./container.png</path>
+			<path ifArch="windows">./containerRetrobat.png</path>
+		</image>
+	
+		<image name="led" extra="true">
+			<pos>0.14 0.62</pos>
+			<pos ifSubset="themeRatio:43">0.14 0.707</pos>
+			<pos ifSubset="themeRatio:54">0.14 0.715</pos>
+		</image>
+	
+		<image name="rew" extra="true">
+			<pos>0.08 0.7</pos>
+			<pos ifSubset="themeRatio:43">0.08 0.77</pos>
+			<pos ifSubset="themeRatio:54">0.08 0.78</pos>
+		</image>
+	
+		<image name="next" extra="true">
+			<pos>0.08 0.7</pos>
+			<pos ifSubset="themeRatio:43">0.08 0.77</pos>
+			<pos ifSubset="themeRatio:54">0.08 0.78</pos>
+		</image>
+	
+		<image name="play" extra="true">
+			<pos>0.08 0.7</pos>
+			<pos ifSubset="themeRatio:43">0.08 0.77</pos>
+			<pos ifSubset="themeRatio:54">0.08 0.78</pos>
+		</image>
+
+		<text name="logoContainer" extra="true">
+ 			<pos>0.316822917 0.874</pos>
+			<pos ifSubset="themeRatio:54|43">0.316822917 0.8975</pos>
+		</text>
+		
+		<image name="videoBackFrame" extra="true">
+            <pos>0.316822917 0.64</pos>
+            <pos ifSubset="themeRatio:54">0.3175 0.73</pos>
+            <pos ifSubset="themeRatio:43">0.3175 0.72</pos>
+
+			<size>0.45 0.43</size>
+			<size ifSubset="themeRatio:54">0.45 0.31</size>
+			<size ifSubset="themeRatio:43">0.45 0.33</size>
+		</image>
+
+		<image name="randomVideosFx" extra="true">
+            <pos>0.316822917 0.64</pos>
+            <pos ifSubset="themeRatio:54">0.3175 0.73</pos>
+            <pos ifSubset="themeRatio:43">0.3175 0.72</pos>
+
+			<size>0.45 0.43</size>
+			<size ifSubset="themeRatio:54">0.45 0.31</size>
+			<size ifSubset="themeRatio:43">0.45 0.33</size>
+
+			<path>./../../crt.png</path>
+			<color>ffffff90</color>
+		</image>
+
+        <video name="md_video">
+			<default>./../../glitch.mp4</default>
+
+			<size ifSubset="randomRatio:stretched">0.4484375 0.4175925925925926</size>
+
+			<size ifSubset="randomRatio:stretched,themeRatio:54">0.4496296296296296 0.2953703703703704</size>
+
+			<size ifSubset="randomRatio:stretched,themeRatio:43">0.4486111111111111 0.3138888888888889</size>
+
+
+
+            <maxSize ifSubset="randomRatio:original">0.4484375 0.4175925925925926</maxSize>
+
+			<maxSize ifSubset="randomRatio:original,themeRatio:54">0.4496296296296296 0.2953703703703704</maxSize>
+
+			<maxSize ifSubset="randomRatio:original,themeRatio:43">0.4486111111111111 0.3138888888888889</maxSize>
+
+            <pos>0.316822917 0.64</pos>
+            <pos ifSubset="themeRatio:54">0.3175 0.73</pos>
+            <pos ifSubset="themeRatio:43">0.3175 0.72</pos>
+		</video>
+
+	<image name="logoTV" extra="true" ifSubset="tvLogo:yes">
+		<maxSize>0.14 0.08</maxSize>
+		<pos>0.1 0.84</pos>
+		<y ifSubset="themeRatio:43|54">0.87</y>
+	</image>
+
+	</view>
+	
+</theme>
