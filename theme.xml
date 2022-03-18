@@ -11,464 +11,32 @@ By Helmic
  
     <variables><defaultRegion region="eu">Choose your default region</defaultRegion></variables>
 
+    <!--DEVELOPERS FINANCIAL SUPPORT-->
+
 	<include>./_support/support.xml</include>
 	
     <!--LANGS-->
     
-    <variables>
-
-        <!--ambiance-->
-        <lang.ambiance>system view • ambiance</lang.ambiance>
-        <lang.ambiance lang="fr">vue système • ambiance</lang.ambiance>
-
-        <lang.overlayType>overlay • color</lang.overlayType>
-        <lang.overlayType lang="fr">overlay • couleur</lang.overlayType>
-
-        <lang.plainDark>plain</lang.plainDark>
-        <lang.plainDark lang="fr">opaque</lang.plainDark>
-
-        <lang.transparent>transparent</lang.transparent>
-        <lang.transparent lang="fr">transparent</lang.transparent>
-
-        <lang.overlayAnime>color lines • anime</lang.overlayAnime>
-        <lang.overlayAnime lang="fr">lignes colorées • animer</lang.overlayAnime>
-  
-        <lang.randomAudioOn>random games sounds with music</lang.randomAudioOn>
-        <lang.randomAudioOn lang="fr">sons des jeux avec musique</lang.randomAudioOn>
-        
-        <lang.randomAudioOff>random games sounds only</lang.randomAudioOff>
-        <lang.randomAudioOff lang="fr">uniquement le sons des jeux</lang.randomAudioOff>
-           
-        <lang.randomVideosAudioOn>random videos with music</lang.randomVideosAudioOn>
-        <lang.randomVideosAudioOn lang="fr">vidéos aléatoires et musique</lang.randomVideosAudioOn>
-            
-        <lang.randomVideosAudioOff>random videos without music</lang.randomVideosAudioOff>
-        <lang.randomVideosAudioOff lang="fr">vidéos aléatoires sans musique</lang.randomVideosAudioOff>
-        
-        <lang.randomNone>nothing</lang.randomNone>
-        <lang.randomNone lang="fr">aucune</lang.randomNone>
-         
-        <lang.systemFade>carousel • apply wall's vignetting</lang.systemFade>
-        <lang.systemFade lang="fr">carrousel • appliquer un vignettage</lang.systemFade>
-          
-        <lang.gamelistFade>gamelist view • apply wall's vignetting</lang.gamelistFade>
-        <lang.gamelistFade lang="fr">liste des jeux • appliquer un vignettage</lang.gamelistFade>
-
-		<!--tv choice-->
-		
-        <lang.container>gamelist view • video screen</lang.container>
-        <lang.container lang="fr">liste des jeux • écran vidéo</lang.container>
- 		
-        <lang.cathod>cathodic tv (white)</lang.cathod>
-        <lang.cathod lang="fr">écran cathodique (blanc)</lang.cathod>
- 		
-        <lang.cathodBlack>cathodic tv (black)</lang.cathodBlack>
-        <lang.cathodBlack lang="fr">écran cathodique (noir)</lang.cathodBlack>
- 		
-        <lang.flat>flat tv</lang.flat>
-        <lang.flat lang="fr">écran plat</lang.flat>
-  		
-        <lang.bartop>bartop</lang.bartop>
-        <lang.bartop lang="fr">bartop</lang.bartop>
- 
-        <!--help icons-->
-        <lang.helpIcons>help • buttons style</lang.helpIcons>
-        <lang.helpIcons lang="fr">aide • style des boutons</lang.helpIcons>
-            
-        <lang.defaultIcons>default buttons</lang.defaultIcons>
-        <lang.defaultIcons lang="fr">boutons par défaut</lang.defaultIcons>
-
-        <lang.arcadeIcons>arcade panel</lang.arcadeIcons>
-        <lang.arcadeIcons lang="fr">panel d'arcade</lang.arcadeIcons>
-
-        <lang.psxIcons>playstation controller</lang.psxIcons>
-        <lang.psxIcons lang="fr">manette playstation</lang.psxIcons>
-
-        <lang.snesIcons region="eu">super nintendo controller</lang.snesIcons>
-        <lang.snesIcons region="us">super nes controller</lang.snesIcons>
-        <lang.snesIcons region="jp">super famicom controller</lang.snesIcons>
-        <lang.snesIcons region="eu" lang="fr">manette super nintendo</lang.snesIcons>
-        <lang.snesIcons region="jp" lang="fr">manette super famicom</lang.snesIcons>
-        <lang.snesIcons region="us" lang="fr">manette super nes</lang.snesIcons>
-
-        <lang.snesAltIcons region="eu">alternate super nintendo controller</lang.snesAltIcons>
-        <lang.snesAltIcons region="us">alternate super nes controller</lang.snesAltIcons>
-        <lang.snesAltIcons region="jp">alternate super famicom controller</lang.snesAltIcons>
-        <lang.snesAltIcons region="eu" lang="fr">manette alternative super nintendo</lang.snesAltIcons>
-        <lang.snesAltIcons region="us" lang="fr">manette alternative super nes</lang.snesAltIcons>
-        <lang.snesAltIcons region="jp" lang="fr">manette alternative super famicom</lang.snesAltIcons>
-
-        <lang.xboxIcons>xbox controller</lang.xboxIcons>
-        <lang.xboxIcons lang="fr">manette xbox</lang.xboxIcons>
-
-        <lang.xboxOneIcons>xbox one controller</lang.xboxOneIcons>
-        <lang.xboxOneIcons lang="fr">manette xbox one</lang.xboxOneIcons>
-
-        <!--colorsets-->
-        <lang.overlayColorset>interface • colorset</lang.overlayColorset>
-        <lang.overlayColorset lang="fr">interface • jeu de couleur</lang.overlayColorset>
-          
-        <lang.noColor>monochrome</lang.noColor>
-        <lang.noColor lang="fr">monochrome</lang.noColor>
-            
-        <lang.red>red</lang.red>
-        <lang.red lang="fr">rouge</lang.red>
-            
-        <lang.green>green</lang.green>
-        <lang.green lang="fr">vert</lang.green>
-
-        <lang.blue>blue</lang.blue>
-        <lang.blue lang="fr">bleu</lang.blue>
-
-        <lang.orange>orange</lang.orange>
-        <lang.orange lang="fr">orange</lang.orange>
-
-        <lang.purple>purple</lang.purple>
-        <lang.purple lang="fr">violet</lang.purple>
-
-        <lang.pink>pink</lang.pink>
-        <lang.pink lang="fr">rose</lang.pink>
-
-        <lang.yellow>yellow</lang.yellow>
-        <lang.yellow lang="fr">jaune</lang.yellow>
-		
-		<!--static effects-->
-		<lang.staticEffect>screen • effect</lang.staticEffect>
-		<lang.staticEffect lang="fr">écran • effet</lang.staticEffect>
-
-		<lang.screenApply>to screen</lang.screenApply>
-		<lang.screenApply lang="fr">à l'écran</lang.screenApply>
-
-		<lang.scanlines>scanlines</lang.scanlines>
-		<lang.scanlines lang="fr">balayage</lang.scanlines>
-
-		<lang.scanlinesFine>scanlines fine</lang.scanlinesFine>
-		<lang.scanlinesFine lang="fr">balayage fin</lang.scanlinesFine>
-
-		<lang.scanlinesVertical>vertical scanlines</lang.scanlinesVertical>
-		<lang.scanlinesVertical lang="fr">balayage vertical</lang.scanlinesVertical>
-
-		<lang.scanlinesVerticalFine>vertical scanlines fine</lang.scanlinesVerticalFine>
-		<lang.scanlinesVerticalFine lang="fr">balayage vertical fin</lang.scanlinesVerticalFine>
-
-		<lang.crt>crt screen</lang.crt>
-		<lang.crt lang="fr">écran crt</lang.crt>
-
-		<lang.phosphore>phosphore</lang.phosphore>
-		<lang.phosphore lang="fr">phosphore</lang.phosphore>
-
-		<lang.phosphorePlus>phosphore strong</lang.phosphorePlus>
-		<lang.phosphorePlus lang="fr">phosphore plus prononcé</lang.phosphorePlus>
-
-		<lang.noEffect>no effect</lang.noEffect>
-		<lang.noEffect lang="fr">pas d'effet</lang.noEffect>
-
-		<!--scratch-->
-		<lang.scratch>glass • scratch</lang.scratch>
-		<lang.scratch lang="fr">vitre • état</lang.scratch>
-
-		<lang.scratch.no>no</lang.scratch.no>
-		<lang.scratch.no lang="fr">neuve</lang.scratch.no>
-
-		<lang.scratch.light>light</lang.scratch.light>
-		<lang.scratch.light lang="fr">occasion</lang.scratch.light>
-
-		<lang.scratch.medium>medium</lang.scratch.medium>
-		<lang.scratch.medium lang="fr">usée</lang.scratch.medium>
-
-		<lang.scratch.strong>strong</lang.scratch.strong>
-		<lang.scratch.strong lang="fr">en fin de vie</lang.scratch.strong>
-
-		<!--transition-->
-		<lang.transition>systems • transition</lang.transition>
-		<lang.transition lang="fr">systèmes • transition</lang.transition>
-
-		<!--shutter-->
-		<lang.shutter>shutter • rate</lang.shutter>
-		<lang.shutter lang="fr">balayage • fréquence</lang.shutter>
-
-		<lang.shutter.no>disabled</lang.shutter.no>
-		<lang.shutter.no lang="fr">désactivé</lang.shutter.no>
-
-		<lang.shutter.25>25p</lang.shutter.25>
-		<lang.shutter.30>30p</lang.shutter.30>
-		<lang.shutter.50>50p</lang.shutter.50>
-		<lang.shutter.60>60p</lang.shutter.60>
-
-		<!--system random ratio-->
-		<lang.systemRandomRatio>system view • video ratio</lang.systemRandomRatio>
-		<lang.systemRandomRatio lang="fr">vue système • aspect des vidéos</lang.systemRandomRatio>
-
-		<!--random ratio-->
-		<lang.randomRatio>gamelist • video ratio</lang.randomRatio>
-		<lang.randomRatio lang="fr">liste des jeux • aspect des vidéos</lang.randomRatio>
-
-		<lang.original>original</lang.original>
-		<lang.original lang="fr">respecté</lang.original>
-
-		<lang.stretched>stretched</lang.stretched>
-		<lang.stretched lang="fr">étiré</lang.stretched>
-
-		<!--bindings-->
-		<lang.releasedYear>released year</lang.releasedYear>
-		<lang.releasedYear lang="fr">année de sortie</lang.releasedYear>
-		
-		<lang.favorites>favorites in this section</lang.favorites>
-		<lang.favorites lang="fr">nombre de favoris</lang.favorites>
-		
-		<lang.gamesPlayed>last played games</lang.gamesPlayed>
-		<lang.gamesPlayed lang="fr">jeux déjà joués</lang.gamesPlayed>
-		
-		<lang.mostPlayed>most played game</lang.mostPlayed>
-		<lang.mostPlayed lang="fr">jeu le plus joué</lang.mostPlayed>
-
-		<lang.lastPlayed>last played</lang.lastPlayed>
-		<lang.lastPlayed lang="fr">dernière partie jouée le</lang.lastPlayed>
-
-		<lang.retroachievements>retroachievements</lang.retroachievements>
-		<lang.retroachievements lang="fr">succès</lang.retroachievements>
-
-		<lang.cheevosFalse>not supported / activated</lang.cheevosFalse>
-		<lang.cheevosFalse lang="fr">non supportés ou activés</lang.cheevosFalse>
-
-		<lang.cheevosTrue>supported</lang.cheevosTrue>
-		<lang.cheevosTrue lang="fr">supportés</lang.cheevosTrue>
-
-		<!--custom views-->
-		<lang.library>library</lang.library>
-		<lang.library lang="fr">librairie</lang.library>
-
-		<!--theme ratio-->
-		<lang.themeRatio>theme • ratio</lang.themeRatio>
-		<lang.themeRatio lang="fr">thème • format</lang.themeRatio>
-
-		<lang.169>16/9</lang.169>
-		<lang.54>5/4</lang.54>
-		<lang.43>4/3</lang.43>
-
-		<!--arrows-->
-		<lang.arrows>carousel • arrows</lang.arrows>
-		<lang.arrows lang="fr">carrousel • flèches</lang.arrows>
-
-		<lang.plain>plain</lang.plain>
-		<lang.plain lang="fr">pleines</lang.plain>
-
-		<lang.textured>textured</lang.textured>
-		<lang.textured lang="fr">texturées</lang.textured>
-
-		<lang.noArrows>not display</lang.noArrows>
-		<lang.noArrows lang="fr">ne pas les afficher</lang.noArrows>
-
-		<!--space carousel 16/9-->
-		<lang.spaceCarousel>carousel • space</lang.spaceCarousel>
-		<lang.spaceCarousel lang="fr">carrousel • espace</lang.spaceCarousel>
-
-		<lang.thin>thin</lang.thin>
-		<lang.thin lang="fr">mince</lang.thin>
-
-		<lang.large>large</lang.large>
-		<lang.large lang="fr">large</lang.large>
-
-		<!--carousel wall paint-->
-		<lang.carouselWallPaint>carousel • wall paint</lang.carouselWallPaint>
-		<lang.carouselWallPaint lang="fr">carrousel • peindre le mur</lang.carouselWallPaint>
-
-		<!--wall paint-->
-		<lang.gamelistWallPaint>gamelist • wall paint</lang.gamelistWallPaint>
-		<lang.gamelistWallPaint lang="fr">liste de jeux • peindre le mur</lang.gamelistWallPaint>
-
-		<lang.yes>yes</lang.yes>
-		<lang.yes lang="fr">oui</lang.yes>
-
-		<lang.no>no</lang.no>
-		<lang.no lang="fr">non</lang.no>
-
-		<!--tv screen color-->
-		<lang.tvScreenColor>gamelist • tv screen color</lang.tvScreenColor>
-		<lang.tvScreenColor lang="fr">listes de jeux • couleur de l'écran tv</lang.tvScreenColor>
-
-		<lang.standard>standard</lang.standard>
-		<lang.standard lang="fr">standard</lang.standard>
-
-		<!--boxback display-->
-		<lang.previewDisplay>gamelist • preview artwork</lang.previewDisplay>
-		<lang.previewDisplay lang="fr">listes de jeux • image d'apercu</lang.previewDisplay>
-
-		<lang.displayThumbnail>simple</lang.displayThumbnail>
-		<lang.displayThumbnail lang="fr">simple</lang.displayThumbnail>
-
-		<lang.displayBoxback>alternate box back</lang.displayBoxback>
-		<lang.displayBoxback lang="fr">alterner l'arrière de la boîte</lang.displayBoxback>
-
-		<lang.displayMix>mix composition</lang.displayMix>
-		<lang.displayMix lang="fr">composer un mix</lang.displayMix>
-
-		<!--elements colors-->
-		<lang.ratingColor>gamelist • rating colors</lang.ratingColor>
-		<lang.ratingColor lang="fr">listes de jeux • couleur de la notation</lang.ratingColor>
-
-		<lang.gamebarColor>gamelist • game bar icons active colors</lang.gamebarColor>
-		<lang.gamebarColor lang="fr">listes de jeux • couleur des icônes de la barre de jeux</lang.gamebarColor>
-
-		<lang.gameHeadColor>gamelist • game title color</lang.gameHeadColor>
-		<lang.gameHeadColor lang="fr">listes de jeux • couleur du titre du jeu</lang.gameHeadColor>
-
-		<lang.systemNameColor>gamelist • system name color</lang.systemNameColor>
-		<lang.systemNameColor lang="fr">listes de jeux • couleur du nom du système</lang.systemNameColor>
-
-		<lang.releaseColor>gamelist • release date color</lang.releaseColor>
-		<lang.releaseColor lang="fr">listes de jeux • couleur de la date de sortie</lang.releaseColor>
-
-		<lang.gamebindsColor>gamelist • game binds text color</lang.gamebindsColor>
-		<lang.gamebindsColor lang="fr">listes de jeux • couleur du texte des infos de jeux</lang.gamebindsColor>
-
-		<lang.lineColor>gamelist • lines color (description)</lang.lineColor>
-		<lang.lineColor lang="fr">listes de jeux • couleur des lignes de description</lang.lineColor>
-
-		<lang.descriptionColor>gamelist • description color</lang.descriptionColor>
-		<lang.descriptionColor lang="fr">listes de jeux • couleur de la description</lang.descriptionColor>
-
-		<lang.helpTextColor>help • text color</lang.helpTextColor>
-		<lang.helpTextColor lang="fr">aide • couleur du texte</lang.helpTextColor>
-
-		<lang.bindingBar>system infos bar • text color</lang.bindingBar>
-		<lang.bindingBar lang="fr">barre des infos système • couleur du texte</lang.bindingBar>
-
-		<lang.systemInfoColor>screen system infos • color</lang.systemInfoColor>
-		<lang.systemInfoColor lang="fr">infos système sur l'écran • couleur</lang.systemInfoColor>
-
-		<lang.colorYelllow>yellow</lang.colorYelllow>
-		<lang.colorYelllow lang="fr">jaune</lang.colorYelllow>
-
-		<lang.colorWhite>white</lang.colorWhite>
-		<lang.colorWhite lang="fr">blanc</lang.colorWhite>
-
-		<lang.colorsetAdaptive>colorset</lang.colorsetAdaptive>
-		<lang.colorsetAdaptive lang="fr">adaptif</lang.colorsetAdaptive>
-
-		<!--random art display-->
-		<lang.randomArt>system view • random arts</lang.randomArt>
-		<lang.randomArt lang="fr">vue système • images aléatoires</lang.randomArt>
-
-		<lang.thumbnail>thumbnails</lang.thumbnail>
-		<lang.thumbnail lang="fr">boîtes de jeux</lang.thumbnail>
-
-		<lang.marquee>marquees</lang.marquee>
-		<lang.marquee lang="fr">logos de jeux</lang.marquee>
-
-		<lang.logoVisualAssistance>carousel • display logo visual assistance</lang.logoVisualAssistance>
-		<lang.logoVisualAssistance lang="fr">carrousel • afficher l'assistance visuelle des logos</lang.logoVisualAssistance>
-
-		<lang.tvLogo>gamelist • display tv logos</lang.tvLogo>
-		<lang.tvLogo lang="fr">listes de jeux • afficher les logos dans la tv</lang.tvLogo>
-
-		<lang.tvOs>gamelist • display os on tv</lang.tvOs>
-		<lang.tvOs lang="fr">listes de jeux • afficher l'os sur la tv</lang.tvOs>
-
-		<lang.tvSnaphot>gamelist • display snapshot on tv</lang.tvSnaphot>
-		<lang.tvSnaphot lang="fr">listes de jeux • afficher le screenshot sur la tv</lang.tvSnaphot>
-
-		<!--wall choice-->
-		<lang.wall>theme • choose wall</lang.wall>
-		<lang.wall lang="fr">thème • choisir le mur</lang.wall>
-
-		<lang.wallDefault>wall</lang.wallDefault>
-		<lang.wallDefault lang="fr">mur</lang.wallDefault>
-
-		<lang.wallLight>lighter wall</lang.wallLight>
-		<lang.wallLight lang="fr">mur plur clair</lang.wallLight>
-
-		<lang.wallDark>darker wall</lang.wallDark>
-		<lang.wallDark lang="fr">mur plur sombre</lang.wallDark>
-
-		<lang.wallFlatGrey>flat style</lang.wallFlatGrey>
-		<lang.wallFlatGrey lang="fr">design plat</lang.wallFlatGrey>
-
-		<lang.wallFlatDark>dark flat style</lang.wallFlatDark>
-		<lang.wallFlatDark lang="fr">design plat plus sombre</lang.wallFlatDark>
-
-		<lang.wallStain>steel (not paintable)</lang.wallStain>
-		<lang.wallStain lang="fr">métal (non peignable)</lang.wallStain>
-
-		<lang.wallSteelX>steel x</lang.wallSteelX>
-		<lang.wallSteelX lang="fr">x métal</lang.wallSteelX>
-
-		<lang.wallAlu>alu (not paintable)</lang.wallAlu>
-		<lang.wallAlu lang="fr">aluminium (non peignable)</lang.wallAlu>
-
-		<lang.wallPlates>steel plates</lang.wallPlates>
-		<lang.wallPlates lang="fr">plaques de métal</lang.wallPlates>
-
-		<lang.wallBrushedPlate>scratched steel plate</lang.wallBrushedPlate>
-		<lang.wallBrushedPlate lang="fr">plaque de métal griffée</lang.wallBrushedPlate>
-
-		<lang.wallStainBroke>broken steel</lang.wallStainBroke>
-		<lang.wallStainBroke lang="fr">métal cassé</lang.wallStainBroke>
-
-		<lang.wallSteelHoles>holes grid (not paintable)</lang.wallSteelHoles>
-		<lang.wallSteelHoles lang="fr">métal troué (non peignable)</lang.wallSteelHoles>
-
-		<lang.wallFuture>futuristic steel (not paintable)</lang.wallFuture>
-		<lang.wallFuture lang="fr">métal futuriste (non peignable)</lang.wallFuture>
-
-		<lang.wallFutureRed> red futuristic steel (not paintable)</lang.wallFutureRed>
-		<lang.wallFutureRed lang="fr">métal futuriste rouge (non peignable)</lang.wallFutureRed>
-
-		<lang.wallFutureBlue> blue futuristic steel (not paintable)</lang.wallFutureBlue>
-		<lang.wallFutureBlue lang="fr">métal futuriste bleu (non peignable)</lang.wallFutureBlue>
-
-		<lang.wallFutureGreen> green futuristic steel (not paintable)</lang.wallFutureGreen>
-		<lang.wallFutureGreen lang="fr">métal futuriste vert (non peignable)</lang.wallFutureGreen>
-
-		<lang.wallFutureOrange> orange futuristic steel (not paintable)</lang.wallFutureOrange>
-		<lang.wallFutureOrange lang="fr">métal futuriste orange (non peignable)</lang.wallFutureOrange>
-
-		<lang.wallFutureYellow> yellow futuristic steel (not paintable)</lang.wallFutureYellow>
-		<lang.wallFutureYellow lang="fr">métal futuriste jaune (non peignable)</lang.wallFutureYellow>
-
-		<lang.wallFuturePink> pink futuristic steel (not paintable)</lang.wallFuturePink>
-		<lang.wallFuturePink lang="fr">métal futuriste rose (non peignable)</lang.wallFuturePink>
-
-		<lang.wallFuturePurple> purple futuristic steel (not paintable)</lang.wallFuturePurple>
-		<lang.wallFuturePurple lang="fr">métal futuriste violet (non peignable)</lang.wallFuturePurple>
-
-		<lang.wallColorBlue>solid blue (not paintable)</lang.wallColorBlue>
-		<lang.wallColorBlue lang="fr">uni bleu (non peignable)</lang.wallColorBlue>
-
-		<lang.wallColorGreen>solid green (not paintable)</lang.wallColorGreen>
-		<lang.wallColorGreen lang="fr">uni vert (non peignable)</lang.wallColorGreen>
-
-		<lang.wallColorRed>solid red (not paintable)</lang.wallColorRed>
-		<lang.wallColorRed lang="fr">uni rouge (non peignable)</lang.wallColorRed>
-
-		<lang.wallColorPurple>solid purple (not paintable)</lang.wallColorPurple>
-		<lang.wallColorPurple lang="fr">uni violet (non peignable)</lang.wallColorPurple>
-
-		<lang.wallColorOcean>solid ocean blue (not paintable)</lang.wallColorOcean>
-		<lang.wallColorOcean lang="fr">uni bleu océan (non peignable)</lang.wallColorOcean>
-
-		<lang.wallSynthwave>synthwave (not paintable)</lang.wallSynthwave>
-		<lang.wallSynthwave lang="fr">synthwave (non peignable)</lang.wallSynthwave>
-
-		<lang.wallCarbon>carbon (not paintable)</lang.wallCarbon>
-		<lang.wallCarbon lang="fr">carbone (non peignable)</lang.wallCarbon>
-
-		<lang.wallDiagonalPlates>diagonal steel plates</lang.wallDiagonalPlates>
-		<lang.wallDiagonalPlates lang="fr">plaques de métal obliques</lang.wallDiagonalPlates>
-
-		<lang.wallDiagonalPlates2>diagonal steel plates inversed</lang.wallDiagonalPlates2>
-		<lang.wallDiagonalPlates2 lang="fr">plaques de métal obliques inversé</lang.wallDiagonalPlates2>
-
-
-	</variables>
-
-<!--SUBSETS-->
+	<include>./_inc/_localization/localization.xml</include>
+	
+	<!--SUBSETS-->
 
     <subset name="themeRatio" displayName="${lang.themeRatio}">
 		<include name="169" displayName="${lang.169}"/>
         <include name="54" displayName="${lang.54}"/>
         <include name="43" displayName="${lang.43}"/>
     </subset>
+
+    <subset name="overlayColorset" displayName="${lang.overlayColorset}">
+        <include name="red" displayName="${lang.red}"/>
+        <include name="blue" displayName="${lang.blue}"/>
+        <include name="green" displayName="${lang.green}"/>
+        <include name="orange" displayName="${lang.orange}"/>
+        <include name="purple" displayName="${lang.purple}"/>
+        <include name="pink" displayName="${lang.pink}"/>
+        <include name="yellow" displayName="${lang.yellow}"/>
+        <include name="noColor" displayName="${lang.noColor}"/>
+   </subset>
  
 	<subset name="overlayType" displayName="${lang.overlayType}">
 		<include name="plainDark" displayName="${lang.plainDark}"/>
@@ -478,6 +46,77 @@ By Helmic
 	<subset name="overlayAnime" displayName="${lang.overlayAnime}">
 		<include name="yes" displayName="${lang.yes}"/>
         <include name="no" displayName="${lang.no}"/>
+    </subset>
+
+	<subset name="transition" displayName="${lang.transition}">
+		<include name="yes" displayName="${lang.yes}"/>
+		<include name="no" displayName="${lang.no}"/>
+	</subset>
+
+    <subset name="helpIcons" displayName="${lang.helpIcons}">
+        <include name="defaultIcons" displayName="${lang.defaultIcons}"/>
+        <include name="arcadeIcons" displayName="${lang.arcadeIcons}"/>
+        <include name="psxIcons" displayName="${lang.psxIcons}"/>
+        <include name="snesIcons" displayName="${lang.snesIcons}"/>
+        <include name="snesAltIcons" displayName="${lang.snesAltIcons}"/>
+        <include name="xboxIcons" displayName="${lang.xboxIcons}"/>
+        <include name="xboxOneIcons" displayName="${lang.xboxOneIcons}"/>
+    </subset>
+
+	<subset name="helpTextColor" displayName="${lang.helpTextColor}">
+		<include name="colorWhite" displayName="${lang.colorWhite}"/>
+		<include name="colorYellow" displayName="${lang.colorYelllow}"/>
+		<include name="colorsetAdaptive" displayName="${lang.colorsetAdaptive}"/>
+	</subset>
+
+    <subset name="logoVisualAssistance" displayName="${lang.logoVisualAssistance}">
+        <include name="yes" displayName="${lang.yes}"/>
+		<include name="no" displayName="${lang.no}"/>
+    </subset>
+
+    <subset name="arrows" displayName="${lang.arrows}">
+        <include name="textured" displayName="${lang.textured}"/>
+		<include name="plain" displayName="${lang.plain}"/>
+		<include name="noArrows" displayName="${lang.noArrows}"/>
+    </subset>
+
+    <subset name="spaceCarousel" displayName="${lang.spaceCarousel}" ifSubset="themeRatio:169">
+		<include name="thin" displayName="${lang.thin}"/>
+        <include name="large" displayName="${lang.large}"/>
+    </subset>
+
+	<subset name="staticEffect" displayName="${lang.staticEffect}">
+		<include name="scanlinesFine" displayName="${lang.scanlinesFine}"/>
+		<include name="scanlinesVerticalFine" displayName="${lang.scanlinesVerticalFine}"/>
+		<include name="crt" displayName="${lang.crt}"/>
+		<include name="phosphore" displayName="${lang.phosphore}"/>
+		<include name="phosphorePlus" displayName="${lang.phosphorePlus}"/>
+		<include name="scanlines" displayName="${lang.scanlines}"/>
+		<include name="scanlinesVertical" displayName="${lang.scanlinesVertical}"/>
+		<include name="no" displayName="${lang.noEffect}"/>
+	</subset>
+
+	<subset name="scratch" displayName="${lang.scratch}">
+		<include name="scratch.no" displayName="${lang.scratch.no}"/>
+		<include name="scratch.light" displayName="${lang.scratch.light}"/>
+		<include name="scratch.medium" displayName="${lang.scratch.medium}"/>
+		<include name="scratch.strong" displayName="${lang.scratch.strong}"/>
+	</subset>
+	
+	<subset name="shutter" displayName="${lang.shutter}">
+		<include name="25" displayName="${lang.shutter.25}"/>
+		<include name="30" displayName="${lang.shutter.30}"/>
+		<include name="50" displayName="${lang.shutter.50}"/>
+		<include name="60" displayName="${lang.shutter.60}"/>
+		<include name="no" displayName="${lang.shutter.no}"/>
+	</subset>
+
+    <subset name="ambiance" displayName="${lang.ambiance}">
+		<include name="randomAudioOff" displayName="${lang.randomAudioOff}"/>
+        <include name="randomAudioOn" displayName="${lang.randomAudioOn}"/>
+		<include name="randomVideosAudioOff" displayName="${lang.randomVideosAudioOff}"/>
+        <include name="randomVideosAudioOn" displayName="${lang.randomVideosAudioOn}"/>
+        <include name="randomNone" displayName="${lang.randomNone}"/>
     </subset>
 
     <subset name="wall" displayName="${lang.wall}">
@@ -511,56 +150,8 @@ By Helmic
         <include name="wallFuturePurple" displayName="${lang.wallFuturePurple}">./_inc/wallpapers/wallFuturePurple.xml</include>
         <include name="wallSynthwave" displayName="${lang.wallSynthwave}">./_inc/wallpapers/wallSynthwave.xml</include>
     </subset>
-
-    <subset name="carouselWallPaint" displayName="${lang.carouselWallPaint}" ifSubset="wall:wallDefault|wallLight|wallDark|wallFlatGrey|wallFlatDark|wallBrushedPlate|wallStainBroke|wallPlates|wallSteelX|wallDiagonalPlates|wallDiagonalPlates2">
-        <include name="no" displayName="${lang.no}"/>
-		<include name="yes" displayName="${lang.yes}"/>
-    </subset>
  
-	<subset name="systemFade" displayName="${lang.systemFade}">
-		<include name="no" displayName="${lang.no}"/>
-        <include name="yes" displayName="${lang.yes}"/>
-    </subset>
-
-    <subset name="logoVisualAssistance" displayName="${lang.logoVisualAssistance}">
-        <include name="yes" displayName="${lang.yes}"/>
-		<include name="no" displayName="${lang.no}"/>
-    </subset>
-
-    <subset name="arrows" displayName="${lang.arrows}">
-        <include name="textured" displayName="${lang.textured}"/>
-		<include name="plain" displayName="${lang.plain}"/>
-		<include name="noArrows" displayName="${lang.noArrows}"/>
-    </subset>
-
-    <subset name="spaceCarousel" displayName="${lang.spaceCarousel}" ifSubset="themeRatio:169">
-		<include name="thin" displayName="${lang.thin}"/>
-        <include name="large" displayName="${lang.large}"/>
-    </subset>
-
-    <subset name="ambiance" displayName="${lang.ambiance}">
-		<include name="randomAudioOff" displayName="${lang.randomAudioOff}"/>
-        <include name="randomAudioOn" displayName="${lang.randomAudioOn}"/>
-		<include name="randomVideosAudioOff" displayName="${lang.randomVideosAudioOff}"/>
-        <include name="randomVideosAudioOn" displayName="${lang.randomVideosAudioOn}"/>
-        <include name="randomNone" displayName="${lang.randomNone}"/>
-    </subset>
-
-    <subset name="helpIcons" displayName="${lang.helpIcons}">
-        <include name="defaultIcons" displayName="${lang.defaultIcons}"/>
-        <include name="arcadeIcons" displayName="${lang.arcadeIcons}"/>
-        <include name="psxIcons" displayName="${lang.psxIcons}"/>
-        <include name="snesIcons" displayName="${lang.snesIcons}"/>
-        <include name="snesAltIcons" displayName="${lang.snesAltIcons}"/>
-        <include name="xboxIcons" displayName="${lang.xboxIcons}"/>
-        <include name="xboxOneIcons" displayName="${lang.xboxOneIcons}"/>
-    </subset>
-
-	<subset name="helpTextColor" displayName="${lang.helpTextColor}">
-		<include name="colorWhite" displayName="${lang.colorWhite}"/>
-		<include name="colorYellow" displayName="${lang.colorYelllow}"/>
-		<include name="colorsetAdaptive" displayName="${lang.colorsetAdaptive}"/>
-	</subset>
+	<include>./_inc/wallpapers/${_paintSubset.allow}System.xml</include>
 
 	<subset name="bindingBar" displayName="${lang.bindingBar}">
 		<include name="colorWhite" displayName="${lang.colorWhite}"/>
@@ -574,52 +165,10 @@ By Helmic
 		<include name="colorsetAdaptive" displayName="${lang.colorsetAdaptive}"/>
 	</subset>
 
-    <subset name="overlayColorset" displayName="${lang.overlayColorset}">
-        <include name="red" displayName="${lang.red}"/>
-        <include name="blue" displayName="${lang.blue}"/>
-        <include name="green" displayName="${lang.green}"/>
-        <include name="orange" displayName="${lang.orange}"/>
-        <include name="purple" displayName="${lang.purple}"/>
-        <include name="pink" displayName="${lang.pink}"/>
-        <include name="yellow" displayName="${lang.yellow}"/>
-        <include name="noColor" displayName="${lang.noColor}"/>
-   </subset>
-
-	<subset name="staticEffect" displayName="${lang.staticEffect}">
-		<include name="scanlinesFine" displayName="${lang.scanlinesFine}"/>
-		<include name="scanlinesVerticalFine" displayName="${lang.scanlinesVerticalFine}"/>
-		<include name="crt" displayName="${lang.crt}"/>
-		<include name="phosphore" displayName="${lang.phosphore}"/>
-		<include name="phosphorePlus" displayName="${lang.phosphorePlus}"/>
-		<include name="scanlines" displayName="${lang.scanlines}"/>
-		<include name="scanlinesVertical" displayName="${lang.scanlinesVertical}"/>
-		<include name="no" displayName="${lang.noEffect}"/>
-	</subset>
-
-	<subset name="scratch" displayName="${lang.scratch}">
-		<include name="scratch.no" displayName="${lang.scratch.no}"/>
-		<include name="scratch.light" displayName="${lang.scratch.light}"/>
-		<include name="scratch.medium" displayName="${lang.scratch.medium}"/>
-		<include name="scratch.strong" displayName="${lang.scratch.strong}"/>
-	</subset>
-	
-	<subset name="shutter" displayName="${lang.shutter}">
-		<include name="25" displayName="${lang.shutter.25}"/>
-		<include name="30" displayName="${lang.shutter.30}"/>
-		<include name="50" displayName="${lang.shutter.50}"/>
-		<include name="60" displayName="${lang.shutter.60}"/>
-		<include name="no" displayName="${lang.shutter.no}"/>
-	</subset>
- 
-	<subset name="gamelistFade" displayName="${lang.gamelistFade}">
+	<subset name="systemFade" displayName="${lang.systemFade}" appliesTo="system,basic,detailed,grid,gamecarousel">
+		<include name="no" displayName="${lang.no}"/>
         <include name="yes" displayName="${lang.yes}"/>
-		<include name="no" displayName="${lang.no}"/>
     </subset>
-
-	<subset name="transition" displayName="${lang.transition}">
-		<include name="yes" displayName="${lang.yes}"/>
-		<include name="no" displayName="${lang.no}"/>
-	</subset>
 
 	<subset name="randomArt" displayName="${lang.randomArt}" appliesTo="system,basic,detailed,grid,gamecarousel">
 		<include name="marquee" displayName="${lang.marquee}"/>
@@ -719,9 +268,11 @@ By Helmic
 		<include name="colorsetAdaptive" displayName="${lang.colorsetAdaptive}"/>
 	</subset>
 
-    <subset name="gamelistWallPaint" displayName="${lang.gamelistWallPaint}" appliesTo="system,basic,detailed,grid,gamecarousel" ifSubset="wall:wallDefault|wallLight|wallDark|wallFlatGrey|wallFlatDark|wallBrushedPlate|wallStainBroke|wallPlates|wallSteelX|wallDiagonalPlates|wallDiagonalPlates2">
-		<include name="yes" displayName="${lang.yes}"/>
-        <include name="no" displayName="${lang.no}"/>
+	<include>./_inc/wallpapers/${_paintSubset.allow}Gamelist.xml</include>
+
+ 	<subset name="gamelistFade" displayName="${lang.gamelistFade}" appliesTo="basic,detailed,grid,gamecarousel">
+        <include name="yes" displayName="${lang.yes}"/>
+		<include name="no" displayName="${lang.no}"/>
     </subset>
 
 	<!--COLORSETS-->
@@ -1063,23 +614,6 @@ By Helmic
 			
 		</image>
 -->        
-		<image name="logoPaint" extra="true" ifSubset="carouselWallPaint:yes">
-			<visible ifSubset="wall:wallColorBlue|wallColorGreen|wallColorRed|wallColorPurple|wallColorOcean|wallStain|wallAlu|wallFuture|wallFutureRed|wallFutureGreen|wallFutureBlue|wallFutureOrange|wallFutureYellow|wallFuturePink|wallFuturePurple|wallSteelHoles|wallSynthwave|wallCarbon">false</visible>
-            <linearSmooth>true</linearSmooth>
-            <path>./default/color.png</path>
-            <path>./default/color-${lang}.png</path>
-            <path>./${system.theme}/color.png</path>
-            <path>./${system.theme}/color-${lang}.png</path>
-            <path region="us">./${system.theme}/us/color.png</path>
-            <path region="jp">./${system.theme}/jp/color.png</path>
-			<maxSize>1.3 99</maxSize>
-			<pos>0.5 0.5</pos>
-			<origin>0.5 0.7</origin>
-            <zIndex>1</zIndex>
-			<gradientType>vertical</gradientType>			
-			<color>ffffffbb</color>
-			<colorEnd>ffffff1a</colorEnd>
-		</image>
 		
         <text name="systemInfo">     
             <pos>0 0.9115</pos>
@@ -1589,29 +1123,7 @@ By Helmic
                 <animation property="opacity" from="1" to="0" duration="150" mode="linear" begin="3000"/>
             </storyboard>
 			</image>
-        
-		<image name="logoPaintFix" extra="true" ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff,carouselWallPaint:yes">
-			<visible ifSubset="wall:wallColorBlue|wallColorGreen|wallColorRed|wallColorPurple|wallColorOcean|wallStain|wallAlu|wallFuture|wallFutureRed|wallFutureGreen|wallFutureBlue|wallFutureOrange|wallFutureYellow|wallFuturePink|wallFuturePurple|wallSteelHoles|wallSynthwave|wallCarbon">false</visible>
-            <linearSmooth>true</linearSmooth>
-            <path>./default/color.png</path>
-            <path>./default/color-${lang}.png</path>
-            <path>./${system.theme}/color.png</path>
-            <path>./${system.theme}/color-${lang}.png</path>
-            <path region="us">./${system.theme}/us/color.png</path>
-            <path region="jp">./${system.theme}/jp/color.png</path>
-           <maxSize>1.3 99</maxSize>
-			<pos>0.5 0.5</pos>
-			<origin>0.5 0.7</origin>
-            <zIndex>8</zIndex>
-			<gradientType>vertical</gradientType>			
-			<color>ffffffbb</color>
-			<colorEnd>ffffff1a</colorEnd>
-            <storyboard>
-                <animation property="opacity" from="1" to="1" duration="3000" mode="linear"/>
-                <animation property="opacity" from="1" to="0" duration="150" mode="linear" begin="3000"/>
-            </storyboard>
- 		</image>
-	
+        	
 		<image name="videoBackFrame" extra="true" ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff">
 			<path>./_inc/white.png</path>
 			<color>000000</color>
@@ -1841,25 +1353,7 @@ By Helmic
 			<origin>0.5 0.5</origin>
             <zIndex>4</zIndex>
 		</image>
-        
-		<image name="wallPaint" extra="true">
-            <path>./default/color.png</path>
-            <path>./default/color-${lang}.png</path>
-            <path>./${system.theme}/color.png</path>
-            <path>./${system.theme}/color-${lang}.png</path>
-            <path region="us">./${system.theme}/us/color.png</path>
-            <path region="jp">./${system.theme}/jp/color.png</path>
-            <linearSmooth>true</linearSmooth>
-           <maxSize>1.3 99</maxSize>
-			<pos>0.5 0.5</pos>
-			<origin>0.5 0.5</origin>
-            <zIndex>1</zIndex>
-			<gradientType>vertical</gradientType>			
-			<color>ffffffdf</color>
-			<colorEnd>00000030</colorEnd>
-			<visible ifSubset="gamelistWallPaint:no">false</visible>			
-		</image>
- 
+
 		<textlist name="gamelist">
 			<origin>0.5 0.5</origin>
 			<pos>0.5 0.5</pos>
@@ -2632,42 +2126,6 @@ By Helmic
                 <animation property="offsetX" from="-0.025" to="0" duration="250" mode="easeOut" begin="5000"/>
                 <animation property="opacity" from="1" to="0" duration="250" mode="easeOut" begin="10000"/>
                 <animation property="opacity" from="0" to="0" duration="4750" mode="easeOut" begin="10250"/>
-           </storyboard>
-			<storyboard event="deactivateNext">
-                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
-            </storyboard>
-			<storyboard event="deactivatePrev">
-                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
-            </storyboard>
-		</image>
-
-		<image name="md_fanart">
-            <linearSmooth>true</linearSmooth>
-			<maxSize>1 99</maxSize>
-			<maxSize ifSubset="themeRatio:54|43">99 1</maxSize>
-			<origin>0.5 0.5</origin>
-			<pos>0.5 0.5</pos>
-			<zIndex>1</zIndex>
-			<color>ffffffdf</color>
-			<colorEnd>ffffff80</colorEnd>
-			<color ifSubset="wall:wallDark">ffffff8c</color>
-			<colorEnd ifSubset="wall:wallDark|wallLight">ffffff4d</colorEnd>
-			<gradientType>vertical</gradientType>			
-			<opacity>0</opacity>			
-			<scale>0</scale>	
-			<visible ifSubset="gamelistWallPaint:no">false</visible>			
-			<visible ifSubset="wall:wallColorBlue|wallColorGreen|wallColorRed|wallColorPurple|wallColorOcean|wallStain|wallAlu|wallFuture|wallFutureRed|wallFutureGreen|wallFutureBlue|wallFutureOrange|wallFutureYellow|wallFuturePink|wallFuturePurple|wallSteelHoles|wallSynthwave|wallCarbon">false</visible>
-			<storyboard event="open">
-                <animation property="scale" from="0" to="1" duration="1" mode="easeOut"/>
-                <animation property="opacity" from="0" to="0.3" duration="500" mode="easeOut"/>
-           </storyboard>
-			<storyboard event="activateNext">
-                <animation property="scale" from="0" to="1" duration="1" mode="easeOut"/>
-                <animation property="opacity" from="0" to="0.3" duration="500" mode="easeOut"/>
-            </storyboard>
-			<storyboard event="activatePrev">
-                <animation property="scale" from="0" to="1" duration="1" mode="easeOut"/>
-                <animation property="opacity" from="0" to="0.3" duration="500" mode="easeOut"/>
            </storyboard>
 			<storyboard event="deactivateNext">
                 <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
@@ -4013,25 +3471,7 @@ By Helmic
                 <animation property="opacity" from="0" to="1" duration="250" mode="easeInQuint" begin="100"/>
             </storyboard>
 		</text>
-        
-		<image name="wallPaint" extra="true">
-            <path>./default/color.png</path>
-            <path>./default/color-${lang}.png</path>
-            <path>./${system.theme}/color.png</path>
-            <path>./${system.theme}/color-${lang}.png</path>
-            <path region="us">./${system.theme}/us/color.png</path>
-            <path region="jp">./${system.theme}/jp/color.png</path>
-            <linearSmooth>true</linearSmooth>
-			<maxSize>1.3 99</maxSize>
-			<pos>0.5 0.5</pos>
-			<origin>0.5 0.5</origin>
-            <zIndex>1</zIndex>
-			<gradientType>vertical</gradientType>			
-			<color>ffffffdf</color>
-			<colorEnd>ffffff30</colorEnd>
-			<visible ifSubset="gamelistWallPaint:no">false</visible>			
-		</image>
-        
+       
 		<image name="libraryMask" extra="true">
             <path>./_inc/mask.png</path>
 			<size>1 1</size>

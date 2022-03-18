@@ -1,0 +1,98 @@
+<!--
+HEXA Theme for Retrobat 4+ / Batocera v32+
+By Helmic
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+<formatVersion>7</formatVersion>
+
+    <subset name="gamelistWallPaint" displayName="${lang.gamelistWallPaint}" appliesTo="system,basic,detailed,grid,gamecarousel">
+		<include name="yes" displayName="${lang.yes}"/>
+        <include name="no" displayName="${lang.no}"/>
+    </subset>
+
+	<view name="basic">
+
+		<image name="wallPaint" extra="true" ifSubset="gamelistWallPaint:yes">
+            <path>./../../default/color.png</path>
+            <path>./../../default/color-${lang}.png</path>
+            <path>./../../${system.theme}/color.png</path>
+            <path>./../../${system.theme}/color-${lang}.png</path>
+            <path region="us">./../../${system.theme}/us/color.png</path>
+            <path region="jp">./../../${system.theme}/jp/color.png</path>
+            <linearSmooth>true</linearSmooth>
+			<maxSize>1.3 99</maxSize>
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+            <zIndex>1</zIndex>
+			<gradientType>vertical</gradientType>			
+			<color>ffffffdf</color>
+			<colorEnd>00000030</colorEnd>
+			<visible ifSubset="gamelistWallPaint:no">false</visible>			
+		</image>
+ 	
+	</view>
+
+	<view name="detailed,grid,gamecarousel">
+
+		<image name="md_fanart" ifSubset="gamelistWallPaint:yes">
+            <linearSmooth>true</linearSmooth>
+			<maxSize>1 99</maxSize>
+			<maxSize ifSubset="themeRatio:54|43">99 1</maxSize>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.5</pos>
+			<zIndex>1</zIndex>
+			<color>ffffffdf</color>
+			<colorEnd>ffffff80</colorEnd>
+			<color ifSubset="wall:wallDark">ffffff8c</color>
+			<colorEnd ifSubset="wall:wallDark|wallLight">ffffff4d</colorEnd>
+			<gradientType>vertical</gradientType>			
+			<opacity>0</opacity>			
+			<scale>0</scale>	
+			<visible ifSubset="gamelistWallPaint:no">false</visible>			
+			<storyboard event="open">
+                <animation property="scale" from="0" to="1" duration="1" mode="easeOut"/>
+                <animation property="opacity" from="0" to="0.3" duration="500" mode="easeOut"/>
+           </storyboard>
+			<storyboard event="activateNext">
+                <animation property="scale" from="0" to="1" duration="1" mode="easeOut"/>
+                <animation property="opacity" from="0" to="0.3" duration="500" mode="easeOut"/>
+            </storyboard>
+			<storyboard event="activatePrev">
+                <animation property="scale" from="0" to="1" duration="1" mode="easeOut"/>
+                <animation property="opacity" from="0" to="0.3" duration="500" mode="easeOut"/>
+           </storyboard>
+			<storyboard event="deactivateNext">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+			<storyboard event="deactivatePrev">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+		</image>
+	
+	</view>
+
+	<customView name="library" inherits="detailed" displayName="${lang.library}">
+        
+		<image name="wallPaint" extra="true" ifSubset="gamelistWallPaint:yes">
+            <path>./../../default/color.png</path>
+            <path>./../../default/color-${lang}.png</path>
+            <path>./../../${system.theme}/color.png</path>
+            <path>./../../${system.theme}/color-${lang}.png</path>
+            <path region="us">./../../${system.theme}/us/color.png</path>
+            <path region="jp">./../../${system.theme}/jp/color.png</path>
+            <linearSmooth>true</linearSmooth>
+			<maxSize>1.3 99</maxSize>
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+            <zIndex>1</zIndex>
+			<gradientType>vertical</gradientType>			
+			<color>ffffffdf</color>
+			<colorEnd>ffffff30</colorEnd>
+			<visible ifSubset="gamelistWallPaint:no">false</visible>			
+		</image>
+
+	</customView>
+	
+</theme>

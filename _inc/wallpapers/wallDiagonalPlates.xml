@@ -5,6 +5,7 @@
 <formatVersion>7</formatVersion>
 
 	<variables>
+<!---->	<_paintSubset.allow>_paintSubset</_paintSubset.allow><!--Allow Paint Menu-->
 		<wallpaper>wallDiagonalPlates</wallpaper>
 	</variables>
 	
