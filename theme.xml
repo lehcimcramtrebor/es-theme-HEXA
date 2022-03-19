@@ -278,6 +278,12 @@ By Helmic
 		<include name="colorsetAdaptive" displayName="${lang.colorsetAdaptive}"/>
 	</subset>
 
+	<subset name="descriptionFontSize" displayName="${lang.descriptionFontSize}" appliesTo="system,basic,detailed,grid,gamecarousel">
+		<include name="0.016"/>
+		<include name="0.018"/>
+		<include name="0.020"/>
+	</subset>
+
 	<include>./_inc/wallpapers/${_paintSubset.allow}Gamelist.xml</include>
 
  	<subset name="gamelistFade" displayName="${lang.gamelistFade}" appliesTo="basic,detailed,grid,gamecarousel">
@@ -301,6 +307,31 @@ By Helmic
     </variables>
 
 
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------VARIABLES--------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+ 
+    <!--FONT1-->
+ 
+    <variables><font1>conthrax-sb.ttf</font1></variables>
+
+    <!--FONT2-->
+ 
+    <variables><font2>DJB Get Digital.ttf</font2></variables>
+
+    <!--GAMELIST FONT SIZE-->
+ 
+    <variables><gamelist.fontSize>0.02</gamelist.fontSize></variables>
+
+    <!--BASIC GAMELIST LINES-->
+ 
+    <variables><basic.gamelist.lines>21</basic.gamelist.lines></variables>
+
+    <!--DETAILED GAMELIST LINES-->
+ 
+    <variables><detailed.gamelist.lines>15</detailed.gamelist.lines></variables>
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
@@ -717,7 +748,7 @@ By Helmic
             <color ifSubset="systemInfoColor:colorWhite">dddddd</color>
             <color ifSubset="systemInfoColor:colorYellow">ffff00</color>
             <color ifSubset="systemInfoColor:colorsetAdaptive">${overlay.colorset}</color>
-            <fontPath>./_inc/fonts/conthrax-sb.ttf</fontPath>
+            <fontPath>./_inc/fonts/${font1}</fontPath>
             <fontSize>0.02</fontSize>
             <glowColor>00000005</glowColor>
             <zIndex>20</zIndex>
@@ -736,7 +767,7 @@ By Helmic
 
 		<text name="systemNameCarousel" extra="true">
 			<text>${system.fullName}</text>
-            <fontPath>./_inc/fonts/conthrax-sb.ttf</fontPath>
+            <fontPath>./_inc/fonts/${font1}</fontPath>
             <color ifSubset="systemInfoColor:colorWhite">dddddd</color>
             <color ifSubset="systemInfoColor:colorYellow">ffff00</color>
             <color ifSubset="systemInfoColor:colorsetAdaptive">${overlay.colorset}</color>
@@ -811,7 +842,7 @@ By Helmic
 
 		<text name="systemNameRandomVideo" extra="true" ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff">
 			<text>${system.name}</text>
-            <fontPath>./_inc/fonts/conthrax-sb.ttf</fontPath>
+            <fontPath>./_inc/fonts/${font1}</fontPath>
             <color>ffffff</color>
             <glowColor>00000040</glowColor>
             <fontSize>0.034</fontSize>
@@ -826,7 +857,7 @@ By Helmic
 
 		<text name="systemFullNameRandomVideo" extra="true" ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff">
 			<text>${system.fullName}</text>
-            <fontPath>./_inc/fonts/conthrax-sb.ttf</fontPath>
+            <fontPath>./_inc/fonts/${font1}</fontPath>
             <color>eeeeee</color>
             <glowColor>00000033</glowColor>
             <fontSize>0.014</fontSize>
@@ -914,7 +945,7 @@ By Helmic
 
 		<text name="bindingBar01" extra="true">
 			<text>${system.fullName}</text>
-            <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
+            <fontPath>./_inc/fonts/${font2}</fontPath>
             <color ifSubset="bindingBar:colorWhite">dddddd</color>
             <color ifSubset="bindingBar:colorYellow">ffff00</color>
             <color ifSubset="bindingBar:colorsetAdaptive">${overlay.colorset}</color>
@@ -939,7 +970,7 @@ By Helmic
 
 		<text name="bindingBar02" extra="true">
 			<text>${system.manufacturer}</text>
-            <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
+            <fontPath>./_inc/fonts/${font2}</fontPath>
             <color ifSubset="bindingBar:colorWhite">dddddd</color>
             <color ifSubset="bindingBar:colorYellow">ffff00</color>
             <color ifSubset="bindingBar:colorsetAdaptive">${overlay.colorset}</color>
@@ -964,7 +995,7 @@ By Helmic
 
 		<text name="bindingBar03" extra="true">
 			<text>${lang.releasedYear}: ${system.releaseYear}</text>
-            <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
+            <fontPath>./_inc/fonts/${font2}</fontPath>
             <color ifSubset="bindingBar:colorWhite">dddddd</color>
             <color ifSubset="bindingBar:colorYellow">ffff00</color>
             <color ifSubset="bindingBar:colorsetAdaptive">${overlay.colorset}</color>
@@ -989,7 +1020,7 @@ By Helmic
 
 		<text name="bindingBar04" extra="true">
 			<text>${lang.favorites}: {binding:favorites}</text>
-            <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
+            <fontPath>./_inc/fonts/${font2}</fontPath>
             <color ifSubset="bindingBar:colorWhite">dddddd</color>
             <color ifSubset="bindingBar:colorYellow">ffff00</color>
             <color ifSubset="bindingBar:colorsetAdaptive">${overlay.colorset}</color>
@@ -1014,7 +1045,7 @@ By Helmic
 
 		<text name="bindingBar05" extra="true">
 			<text>${lang.gamesPlayed}: {binding:gamesPlayed}</text>
-            <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
+            <fontPath>./_inc/fonts/${font2}</fontPath>
             <color ifSubset="bindingBar:colorWhite">dddddd</color>
             <color ifSubset="bindingBar:colorYellow">ffff00</color>
             <color ifSubset="bindingBar:colorsetAdaptive">${overlay.colorset}</color>
@@ -1039,7 +1070,7 @@ By Helmic
 
 		<text name="bindingBar06" extra="true">
 			<text>${lang.lastPlayed}: {binding:lastPlayedDate}</text>
-            <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
+            <fontPath>./_inc/fonts/${font2}</fontPath>
             <color ifSubset="bindingBar:colorWhite">dddddd</color>
             <color ifSubset="bindingBar:colorYellow">ffff00</color>
             <color ifSubset="bindingBar:colorsetAdaptive">${overlay.colorset}</color>
@@ -1064,7 +1095,7 @@ By Helmic
 
 		<text name="bindingBar07" extra="true">
 			<text>${lang.mostPlayed}: {binding:mostPlayed}</text>
-            <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
+            <fontPath>./_inc/fonts/${font2}</fontPath>
             <color ifSubset="bindingBar:colorWhite">dddddd</color>
             <color ifSubset="bindingBar:colorYellow">ffff00</color>
             <color ifSubset="bindingBar:colorsetAdaptive">${overlay.colorset}</color>
@@ -1090,7 +1121,7 @@ By Helmic
 		<text name="bindingBar08" extra="true">
 			<text>${lang.retroachievements}: ${lang.cheevosTrue} (${cheevos.username})</text>
 			<text ifCheevos="false">${lang.retroachievements} ${lang.cheevosFalse}</text>
-            <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
+            <fontPath>./_inc/fonts/${font2}</fontPath>
             <color ifSubset="bindingBar:colorWhite">dddddd</color>
             <color ifSubset="bindingBar:colorYellow">ffff00</color>
             <color ifSubset="bindingBar:colorsetAdaptive">${overlay.colorset}</color>
@@ -1309,7 +1340,7 @@ By Helmic
 
 		<text name="transitionFullName" extra="true">
 			<text>${system.fullName}</text>
-            <fontPath>./_inc/fonts/conthrax-sb.ttf</fontPath>
+            <fontPath>./_inc/fonts/${font1}</fontPath>
             <color>dddddd</color>
             <glowColor>00000080</glowColor>
             <fontSize>0.034</fontSize>
@@ -1330,7 +1361,7 @@ By Helmic
 
 		<text name="transitionManufacturer" extra="true">
 			<text>${system.manufacturer}</text>
-            <fontPath>./_inc/fonts/conthrax-sb.ttf</fontPath>
+            <fontPath>./_inc/fonts/${font1}</fontPath>
             <color>dddddd</color>
             <glowColor>00000080</glowColor>
             <fontSize>0.018</fontSize>
@@ -1393,19 +1424,19 @@ By Helmic
 			<secondaryColor>dddddd</secondaryColor>
 			<selectorColor>${overlay.colorset}ea</selectorColor>	  		
 			<selectorColor ifSubset="overlayColorset:noColor">ffffff</selectorColor>	  		
-			<fontPath>./_inc/fonts/conthrax-sb.ttf</fontPath>
-			<fontSize>0.022</fontSize>
+			<fontPath>./_inc/fonts/${font1}</fontPath>
+			<fontSize>${gamelist.fontSize}</fontSize>
 			<alignment>center</alignment>
 			<horizontalMargin>0.001</horizontalMargin>
 			<forceUppercase>true</forceUppercase>
 			<scrollSound>./_inc/scroll/gamelist.wav</scrollSound>
 			<zIndex>13</zIndex>
-			<lines>21</lines>
+			<lines>${basic.gamelist.lines}</lines>
  			</textlist>
 
 		<text name="basicBar" extra="true">
 			<text>${system.fullName}</text>
-            <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
+            <fontPath>./_inc/fonts/${font2}</fontPath>
             <color>dddddd</color>
             <glowColor>00000005</glowColor>
             <fontSize>0.022</fontSize>
@@ -1559,9 +1590,9 @@ By Helmic
 			<text>b a t o c e r a</text>
 			<text ifArch="windows">r e t r o b a t</text>
 			<text  ifSubset="tvOs:no"> e m u l a t i o n s t a t i o n</text>
-            <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
+            <fontPath>./_inc/fonts/${font2}</fontPath>
             <fontPath ifArch="windows">./_inc/fonts/snes.ttf</fontPath>
-            <fontPath ifSubset="tvOs:no">./_inc/fonts/DJB Get Digital.ttf</fontPath>
+            <fontPath ifSubset="tvOs:no">./_inc/fonts/${font2}</fontPath>
             <color>cccccc</color>
             <glowColor>00000015</glowColor>
             <fontSize>0.012</fontSize>
@@ -2023,7 +2054,7 @@ By Helmic
 
 		<text name="md_name">
 			<text>${system.name}</text>
-            <fontPath>./_inc/fonts/conthrax-sb.ttf</fontPath>
+            <fontPath>./_inc/fonts/${font1}</fontPath>
             <color ifSubset="gameHeadColor:colorWhite">ffffff</color>
             <color ifSubset="gameHeadColor:colorYellow">ffff00</color>
             <color ifSubset="gameHeadColor:colorsetAdaptive">${overlay.colorset}</color>
@@ -2073,7 +2104,7 @@ By Helmic
 	
 		<text name="systemFullNameRandomVideo" extra="true">
 			<text>${system.fullName}</text>
-            <fontPath>./_inc/fonts/conthrax-sb.ttf</fontPath>
+            <fontPath>./_inc/fonts/${font1}</fontPath>
 			<color ifSubset="systemNameColor:colorWhite">cccccc</color>
 			<color ifSubset="systemNameColor:colorYellow">cccc00</color>
 			<color ifSubset="systemNameColor:colorsetAdaptive">${overlay.colorset}</color>
@@ -2104,7 +2135,7 @@ By Helmic
 		</text>
 
 		<datetime name="md_releasedate">
-            <fontPath>./_inc/fonts/conthrax-sb.ttf</fontPath>
+            <fontPath>./_inc/fonts/${font1}</fontPath>
 			<color ifSubset="releaseColor:colorWhite">cccccc</color>
 			<color ifSubset="releaseColor:colorYellow">cccc00</color>
 			<color ifSubset="releaseColor:colorsetAdaptive">${overlay.colorset}</color>
@@ -2177,8 +2208,10 @@ By Helmic
             <color ifSubset="descriptionColor:colorsetAdaptive">${overlay.colorset}</color>
 			<glowColor>00000005</glowColor>
 			<glowColor ifSubset="descriptionColor:colorsetAdaptive">09090920</glowColor>
-			<fontPath>./_inc/fonts/conthrax-sb.ttf</fontPath>
+			<fontPath>./_inc/fonts/${font1}</fontPath>
 			<fontSize>0.016</fontSize>
+			<fontSize ifSubset="descriptionFontSize:0.018">0.018</fontSize>
+			<fontSize ifSubset="descriptionFontSize:0.020">0.020</fontSize>
 			<size>0.34 0.2425</size>
 			<size ifSubset="themeRatio:54|43">0.34 0.3825</size>
             <pos>0.0134375 0.1175</pos>
@@ -2487,7 +2520,7 @@ By Helmic
 		</rating>
 
 		<text name="md_genre">
-            <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
+            <fontPath>./_inc/fonts/${font2}</fontPath>
             <color ifSubset="gamebindsColor:colorYellow">ffff00</color>
             <color ifSubset="gamebindsColor:colorWhite">dddddd</color>
             <color ifSubset="gamebindsColor:colorsetAdaptive">${overlay.colorset}</color>
@@ -2535,7 +2568,7 @@ By Helmic
 		</text>
 
 		<text name="md_developer">
-            <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
+            <fontPath>./_inc/fonts/${font2}</fontPath>
             <color ifSubset="gamebindsColor:colorYellow">ffff00</color>
             <color ifSubset="gamebindsColor:colorWhite">dddddd</color>
             <color ifSubset="gamebindsColor:colorsetAdaptive">${overlay.colorset}</color>
@@ -2583,7 +2616,7 @@ By Helmic
 		</text>
 
 		<text name="md_lbl_developer">
-            <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
+            <fontPath>./_inc/fonts/${font2}</fontPath>
             <color ifSubset="gamebindsColor:colorYellow">ffff00</color>
             <color ifSubset="gamebindsColor:colorWhite">dddddd</color>
             <color ifSubset="gamebindsColor:colorsetAdaptive">${overlay.colorset}</color>
@@ -2631,7 +2664,7 @@ By Helmic
 		</text>
 
 		<text name="md_playcount">
-            <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
+            <fontPath>./_inc/fonts/${font2}</fontPath>
             <color ifSubset="gamebindsColor:colorYellow">ffff00</color>
             <color ifSubset="gamebindsColor:colorWhite">dddddd</color>
             <color ifSubset="gamebindsColor:colorsetAdaptive">${overlay.colorset}</color>
@@ -2679,7 +2712,7 @@ By Helmic
 		</text>
 
 		<text name="md_lbl_playcount">
-            <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
+            <fontPath>./_inc/fonts/${font2}</fontPath>
             <color ifSubset="gamebindsColor:colorYellow">ffff00</color>
             <color ifSubset="gamebindsColor:colorWhite">dddddd</color>
             <color ifSubset="gamebindsColor:colorsetAdaptive">${overlay.colorset}</color>
@@ -2727,7 +2760,7 @@ By Helmic
 		</text>
 
 		<text name="md_gametime">
-            <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
+            <fontPath>./_inc/fonts/${font2}</fontPath>
             <color ifSubset="gamebindsColor:colorYellow">ffff00</color>
             <color ifSubset="gamebindsColor:colorWhite">dddddd</color>
             <color ifSubset="gamebindsColor:colorsetAdaptive">${overlay.colorset}</color>
@@ -2774,7 +2807,7 @@ By Helmic
 		</text>
 
 		<text name="md_lbl_gametime">
-            <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
+            <fontPath>./_inc/fonts/${font2}</fontPath>
             <color ifSubset="gamebindsColor:colorYellow">ffff00</color>
             <color ifSubset="gamebindsColor:colorWhite">dddddd</color>
             <color ifSubset="gamebindsColor:colorsetAdaptive">${overlay.colorset}</color>
@@ -2822,7 +2855,7 @@ By Helmic
 		</text>
 
 		<datetime name="md_lastplayed">
-            <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
+            <fontPath>./_inc/fonts/${font2}</fontPath>
             <color ifSubset="gamebindsColor:colorYellow">ffff00</color>
             <color ifSubset="gamebindsColor:colorWhite">dddddd</color>
             <color ifSubset="gamebindsColor:colorsetAdaptive">${overlay.colorset}</color>
@@ -2867,7 +2900,7 @@ By Helmic
 
 
 		<text name="md_lbl_lastplayed">
-            <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
+            <fontPath>./_inc/fonts/${font2}</fontPath>
             <color ifSubset="gamebindsColor:colorYellow">ffff00</color>
             <color ifSubset="gamebindsColor:colorWhite">dddddd</color>
             <color ifSubset="gamebindsColor:colorsetAdaptive">${overlay.colorset}</color>
@@ -2940,17 +2973,17 @@ By Helmic
 			<selectorImagePath>./_inc/selector.png</selectorImagePath>
 			<selectorColor>${overlay.colorset}ea</selectorColor>	  		
 			<selectorColor ifSubset="overlayColorset:noColor">ffffff</selectorColor>	  		
-			<fontPath>./_inc/fonts/conthrax-sb.ttf</fontPath>
-			<fontSize>0.02</fontSize>
+			<fontPath>./_inc/fonts/${font1}</fontPath>
+			<fontSize>${gamelist.fontSize}</fontSize>
 			<alignment>left</alignment>
 			<horizontalMargin>0.02</horizontalMargin>
 			<forceUppercase>true</forceUppercase>
 			<scrollSound>./_inc/scroll/gamelist.wav</scrollSound>
 			<zIndex>13</zIndex>
-			<lines>15</lines>
+			<lines>${detailed.gamelist.lines}</lines>
  			</textlist>
 
-<!-------------------------------------------------------------MD_DESCRIPTION DATAILED SPECIFICATIONS------------------------------------------------------------------------------>
+<!-------------------------------------------------------------MD_DESCRIPTION DETAILED SPECIFICATIONS------------------------------------------------------------------------------>
 		
 		<text name="md_description">
 			<storyboard event="open">
@@ -3390,7 +3423,7 @@ By Helmic
 			<glowSize>3</glowSize>
 			<glowOffset>2</glowOffset>
 			<lineSpacing>1.0</lineSpacing>
-			<fontPath>./_inc/fonts/conthrax-sb.ttf</fontPath>
+			<fontPath>./_inc/fonts/${font1}</fontPath>
 			<fontSize>0.04</fontSize>
 		</text>		
 
@@ -3532,7 +3565,7 @@ By Helmic
 
 		<text name="basicBar" extra="true">
 			<text>${system.fullName}</text>
-            <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
+            <fontPath>./_inc/fonts/${font2}</fontPath>
             <color>dddddd</color>
             <glowColor>00000005</glowColor>
             <fontSize>0.022</fontSize>
@@ -3755,7 +3788,7 @@ By Helmic
 			<fontSize>0.02</fontSize>
 			<origin>0 1</origin>
 			<pos>0.004 0.99</pos>
-			<fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
+			<fontPath>./_inc/fonts/${font2}</fontPath>
 			<iconColor>${overlay.colorset}</iconColor>
 		</helpsystem>
 
@@ -3862,21 +3895,21 @@ By Helmic
     <view name="menu">
 
         <menuText name="menutitle">
-            <fontPath>./_inc/fonts/conthrax-sb.ttf</fontPath>
+            <fontPath>./_inc/fonts/${font1}</fontPath>
             <fontSize>0.03</fontSize>
             <color ifSubset="menuColor:light|lightPlain">202020</color>
             <color ifSubset="menuColor:dark|darkGlass|darkPlain">cccccc</color>
         </menuText>
 
         <menuText name="menufooter">
-            <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
+            <fontPath>./_inc/fonts/${font2}</fontPath>
             <fontSize>0.018</fontSize>
             <color ifSubset="menuColor:light|lightPlain">202020</color>
             <color ifSubset="menuColor:dark|darkGlass|darkPlain">aaaaaa</color>
         </menuText>
 
         <menuText name="menutext">
-            <fontPath>./_inc/fonts/conthrax-sb.ttf</fontPath>
+            <fontPath>./_inc/fonts/${font1}</fontPath>
             <fontSize>0.018</fontSize>
             <color ifSubset="menuColor:light||lightPlain">121212</color>
             <color ifSubset="menuColor:light">121212</color>
@@ -3890,7 +3923,7 @@ By Helmic
         </menuText>
 	
         <menuTextSmall name="menutextsmall">
-            <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
+            <fontPath>./_inc/fonts/${font2}</fontPath>
             <fontSize>0.014</fontSize>
         </menuTextSmall>
 
@@ -3904,7 +3937,7 @@ By Helmic
         </menuBackground>
 
         <menuGroup name="menugroup">
-            <fontPath>./_inc/fonts/conthrax-sb.ttf</fontPath>
+            <fontPath>./_inc/fonts/${font1}</fontPath>
             <fontSize>0.022</fontSize>
             <color ifSubset="menuColor:light|lightPlain">ffffff</color>
             <color ifSubset="menuColor:dark|darkGlass|darkPlain">aaaaaa</color>
@@ -3980,7 +4013,7 @@ By Helmic
 		<text name="clock">
 			<fontSize>0.02</fontSize>
 			<color>dddddd</color>
-			<fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
+			<fontPath>./_inc/fonts/${font2}</fontPath>
 			<pos>0.945 0.968</pos>
 		</text>
 

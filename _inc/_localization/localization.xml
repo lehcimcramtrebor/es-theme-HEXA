@@ -9,6 +9,9 @@ By Helmic
    
     <variables>
 
+        <lang.descriptionFontSize>game list view • description font size</lang.descriptionFontSize>
+        <lang.descriptionFontSize lang="fr">liste des jeux • taille de la police de la description</lang.descriptionFontSize>
+
         <!--menu-->
         <lang.menuColor>general • menu theme</lang.menuColor>
         <lang.menuColor lang="fr">général • thème du menu</lang.menuColor>
