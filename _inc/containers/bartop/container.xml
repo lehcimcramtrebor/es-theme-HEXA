@@ -36,7 +36,7 @@ By Helmic
             <pos ifSubset="themeRatio:54">0.32 0.73</pos>
             <pos ifSubset="themeRatio:43">0.32 0.72</pos>
 
-			<path>./../../crt.png</path>
+			<path>./../../scanlinesVerticalFine.png</path>
 
 			<color>ffffff90</color>
 		</image>
