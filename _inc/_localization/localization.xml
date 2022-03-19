@@ -13,11 +13,20 @@ By Helmic
         <lang.menuColor>general • menu theme</lang.menuColor>
         <lang.menuColor lang="fr">général • thème du menu</lang.menuColor>
 
-        <lang.dark>dark</lang.dark>
-        <lang.dark lang="fr">sombre</lang.dark>
+        <lang.dark>dark transparent</lang.dark>
+        <lang.dark lang="fr">sombre et transparent</lang.dark>
 
-        <lang.light>light</lang.light>
-        <lang.light lang="fr">clair</lang.light>
+        <lang.light>light transparent</lang.light>
+        <lang.light lang="fr">clair et transparent</lang.light>
+
+        <lang.darkGlass>dark glazed</lang.darkGlass>
+        <lang.darkGlass lang="fr">sombre et vitré</lang.darkGlass>
+
+        <lang.darkPlain>dark plain</lang.darkPlain>
+        <lang.darkPlain lang="fr">sombre et opaque</lang.darkPlain>
+
+        <lang.lightPlain>light plain</lang.lightPlain>
+        <lang.lightPlain lang="fr">clair et opaque</lang.lightPlain>
 
         <!--ambiance-->
         <lang.ambiance>system view • ambiance</lang.ambiance>

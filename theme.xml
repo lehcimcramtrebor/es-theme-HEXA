@@ -39,7 +39,10 @@ By Helmic
    </subset>
  
 	<subset name="menuColor" displayName="${lang.menuColor}">
+		<include name="darkGlass" displayName="${lang.darkGlass}"/>
 		<include name="dark" displayName="${lang.dark}"/>
+		<include name="darkPlain" displayName="${lang.darkPlain}"/>
+        <include name="lightPlain" displayName="${lang.lightPlain}"/>
         <include name="light" displayName="${lang.light}"/>
     </subset>
   
@@ -3850,24 +3853,25 @@ By Helmic
         <menuText name="menutitle">
             <fontPath>./_inc/fonts/conthrax-sb.ttf</fontPath>
             <fontSize>0.03</fontSize>
-            <color ifSubset="menuColor:light">202020</color>
-            <color ifSubset="menuColor:dark">cccccc</color>
+            <color ifSubset="menuColor:light|lightPlain">202020</color>
+            <color ifSubset="menuColor:dark|darkGlass|darkPlain">cccccc</color>
         </menuText>
 
         <menuText name="menufooter">
             <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
             <fontSize>0.018</fontSize>
-            <color ifSubset="menuColor:light">202020</color>
-            <color ifSubset="menuColor:dark">aaaaaa</color>
+            <color ifSubset="menuColor:light|lightPlain">202020</color>
+            <color ifSubset="menuColor:dark|darkGlass|darkPlain">aaaaaa</color>
         </menuText>
 
         <menuText name="menutext">
             <fontPath>./_inc/fonts/conthrax-sb.ttf</fontPath>
             <fontSize>0.018</fontSize>
+            <color ifSubset="menuColor:light||lightPlain">121212</color>
             <color ifSubset="menuColor:light">121212</color>
-            <color ifSubset="menuColor:dark">aaaaaa</color>
-            <separatorColor ifSubset="menuColor:light">202020</separatorColor>
-            <separatorColor ifSubset="menuColor:dark">161616</separatorColor>
+            <color ifSubset="menuColor:dark|darkGlass|darkPlain">aaaaaa</color>
+            <separatorColor ifSubset="menuColor:light|lightPlain">202020</separatorColor>
+            <separatorColor ifSubset="menuColor:dark|darkGlass|darkPlain">161616</separatorColor>
             <selectorColor>${overlay.colorset}</selectorColor>
             <selectedColor>ffffff</selectedColor>		
             <selectedColor ifSubset="overlayColorset:yellow">202020</selectedColor>		
@@ -3881,20 +3885,22 @@ By Helmic
 
         <menuBackground name="menubg">
             <color>d7d4cccc</color>
+            <color ifSubset="menuColor:darkPlain|lightPlain">d7d4cc</color>
             <cornerSize>21 21</cornerSize>
-            <path ifSubset="menuColor:light">./_inc/menubg.png</path>
-            <path ifSubset="menuColor:dark">./_inc/menubgDark.png</path>
+            <path ifSubset="menuColor:light|lightPlain">./_inc/menubg.png</path>
+            <path ifSubset="menuColor:dark|darkPlain">./_inc/menubgDark.png</path>
+            <path ifSubset="menuColor:darkGlass">./_inc/menubgDarkGlass.png</path>
         </menuBackground>
 
         <menuGroup name="menugroup">
             <fontPath>./_inc/fonts/conthrax-sb.ttf</fontPath>
             <fontSize>0.022</fontSize>
-            <color ifSubset="menuColor:light">ffffff</color>
-            <color ifSubset="menuColor:dark">aaaaaa</color>
-            <separatorColor ifSubset="menuColor:light">505050</separatorColor>
-            <separatorColor ifSubset="menuColor:dark">00000000</separatorColor>
-            <backgroundColor ifSubset="menuColor:light">606060</backgroundColor>
-            <backgroundColor ifSubset="menuColor:dark">303030</backgroundColor>
+            <color ifSubset="menuColor:light|lightPlain">ffffff</color>
+            <color ifSubset="menuColor:dark|darkGlass|darkPlain">aaaaaa</color>
+            <separatorColor ifSubset="menuColor:light|lightPlain">505050</separatorColor>
+            <separatorColor ifSubset="menuColor:dark|darkGlass|darkPlain">00000000</separatorColor>
+            <backgroundColor ifSubset="menuColor:light|lightPlain">606060</backgroundColor>
+            <backgroundColor ifSubset="menuColor:dark|darkGlass|darkPlain">303030</backgroundColor>
             <lineSpacing>1.2</lineSpacing>
         </menuGroup>	
 
