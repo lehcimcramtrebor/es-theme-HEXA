@@ -47,10 +47,10 @@ By Helmic
     </subset>
   
 	<subset name="overlayType" displayName="${lang.overlayType}">
-        <include name="plainGlazed" displayName="${lang.plainGlazed}"/>
-        <include name="transparentGlazed" displayName="${lang.transparentGlazed}"/>
 		<include name="plainDark" displayName="${lang.plainDark}"/>
         <include name="transparent" displayName="${lang.transparent}"/>
+        <include name="plainGlazed" displayName="${lang.plainGlazed}"/>
+        <include name="transparentGlazed" displayName="${lang.transparentGlazed}"/>
     </subset>
  
 	<subset name="overlayAnime" displayName="${lang.overlayAnime}">
