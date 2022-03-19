@@ -284,6 +284,29 @@ By Helmic
 		<include name="0.020"/>
 	</subset>
 
+	<subset name="gamelistFontSize" displayName="${lang.gamelistFontSize}" appliesTo="system,basic,detailed,grid,gamecarousel">
+		<include name="0.020"/>
+		<include name="0.022"/>
+		<include name="0.024"/>
+		<include name="0.026"/>
+	</subset>
+
+	<subset name="basicGamelistLines" displayName="${lang.basicGamelistLines}" appliesTo="system,basic,detailed,grid,gamecarousel">
+		<include name="21"/>
+		<include name="15"/>
+		<include name="17"/>
+		<include name="19"/>
+		<include name="23"/>
+	</subset>
+
+	<subset name="detailedGamelistLines" displayName="${lang.detailedGamelistLines}" appliesTo="system,basic,detailed,grid,gamecarousel">
+		<include name="15"/>
+		<include name="17"/>
+		<include name="19"/>
+		<include name="21"/>
+		<include name="23"/>
+	</subset>
+
 	<include>./_inc/wallpapers/${_paintSubset.allow}Gamelist.xml</include>
 
  	<subset name="gamelistFade" displayName="${lang.gamelistFade}" appliesTo="basic,detailed,grid,gamecarousel">
@@ -320,18 +343,6 @@ By Helmic
     <!--FONT2-->
  
     <variables><font2>DJB Get Digital.ttf</font2></variables>
-
-    <!--GAMELIST FONT SIZE-->
- 
-    <variables><gamelist.fontSize>0.02</gamelist.fontSize></variables>
-
-    <!--BASIC GAMELIST LINES-->
- 
-    <variables><basic.gamelist.lines>21</basic.gamelist.lines></variables>
-
-    <!--DETAILED GAMELIST LINES-->
- 
-    <variables><detailed.gamelist.lines>15</detailed.gamelist.lines></variables>
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
@@ -1425,13 +1436,20 @@ By Helmic
 			<selectorColor>${overlay.colorset}ea</selectorColor>	  		
 			<selectorColor ifSubset="overlayColorset:noColor">ffffff</selectorColor>	  		
 			<fontPath>./_inc/fonts/${font1}</fontPath>
-			<fontSize>${gamelist.fontSize}</fontSize>
+			<fontSize>0.020</fontSize>
+			<fontSize ifSubset="gamelistFontSize:0.022">0.022</fontSize>
+			<fontSize ifSubset="gamelistFontSize:0.024">0.024</fontSize>
+			<fontSize ifSubset="gamelistFontSize:0.026">0.026</fontSize>
 			<alignment>center</alignment>
 			<horizontalMargin>0.001</horizontalMargin>
 			<forceUppercase>true</forceUppercase>
 			<scrollSound>./_inc/scroll/gamelist.wav</scrollSound>
 			<zIndex>13</zIndex>
-			<lines>${basic.gamelist.lines}</lines>
+			<lines>21</lines>
+			<lines ifSubset="basicGamelistLines:15">15</lines>
+			<lines ifSubset="basicGamelistLines:17">17</lines>
+			<lines ifSubset="basicGamelistLines:19">19</lines>
+			<lines ifSubset="basicGamelistLines:23">23</lines>
  			</textlist>
 
 		<text name="basicBar" extra="true">
@@ -2974,13 +2992,20 @@ By Helmic
 			<selectorColor>${overlay.colorset}ea</selectorColor>	  		
 			<selectorColor ifSubset="overlayColorset:noColor">ffffff</selectorColor>	  		
 			<fontPath>./_inc/fonts/${font1}</fontPath>
-			<fontSize>${gamelist.fontSize}</fontSize>
+			<fontSize>0.020</fontSize>
+			<fontSize ifSubset="gamelistFontSize:0.022">0.022</fontSize>
+			<fontSize ifSubset="gamelistFontSize:0.024">0.024</fontSize>
+			<fontSize ifSubset="gamelistFontSize:0.026">0.026</fontSize>
 			<alignment>left</alignment>
 			<horizontalMargin>0.02</horizontalMargin>
 			<forceUppercase>true</forceUppercase>
 			<scrollSound>./_inc/scroll/gamelist.wav</scrollSound>
 			<zIndex>13</zIndex>
-			<lines>${detailed.gamelist.lines}</lines>
+			<lines>15</lines>
+			<lines ifSubset="detailedGamelistLines:17">17</lines>
+			<lines ifSubset="detailedGamelistLines:19">19</lines>
+			<lines ifSubset="detailedGamelistLines:21">21</lines>
+			<lines ifSubset="detailedGamelistLines:23">23</lines>
  			</textlist>
 
 <!-------------------------------------------------------------MD_DESCRIPTION DETAILED SPECIFICATIONS------------------------------------------------------------------------------>

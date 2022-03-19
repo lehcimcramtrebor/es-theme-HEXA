@@ -12,6 +12,15 @@ By Helmic
         <lang.descriptionFontSize>game list view • description font size</lang.descriptionFontSize>
         <lang.descriptionFontSize lang="fr">liste des jeux • taille de la police de la description</lang.descriptionFontSize>
 
+        <lang.gamelistFontSize>game list view • gamelist font size</lang.gamelistFontSize>
+        <lang.gamelistFontSize lang="fr">liste des jeux • taille de la police de la liste</lang.gamelistFontSize>
+
+        <lang.basicGamelistLines>game list view • basic gamelist lines</lang.basicGamelistLines>
+        <lang.basicGamelistLines lang="fr">liste des jeux • nombre de lignes de la liste basique</lang.basicGamelistLines>
+
+        <lang.detailedGamelistLines>game list view • detailed gamelist lines</lang.detailedGamelistLines>
+        <lang.detailedGamelistLines lang="fr">liste des jeux • nombre de lignes de la liste détaillée</lang.detailedGamelistLines>
+
         <!--menu-->
         <lang.menuColor>general • menu theme</lang.menuColor>
         <lang.menuColor lang="fr">général • thème du menu</lang.menuColor>
