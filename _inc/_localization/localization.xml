@@ -9,6 +9,16 @@ By Helmic
    
     <variables>
 
+        <!--menu-->
+        <lang.menuColor>general • menu theme</lang.menuColor>
+        <lang.menuColor lang="fr">général • thème du menu</lang.menuColor>
+
+        <lang.dark>dark</lang.dark>
+        <lang.dark lang="fr">sombre</lang.dark>
+
+        <lang.light>light</lang.light>
+        <lang.light lang="fr">clair</lang.light>
+
         <!--ambiance-->
         <lang.ambiance>system view • ambiance</lang.ambiance>
         <lang.ambiance lang="fr">vue système • ambiance</lang.ambiance>

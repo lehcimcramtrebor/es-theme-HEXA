@@ -38,6 +38,11 @@ By Helmic
         <include name="noColor" displayName="${lang.noColor}"/>
    </subset>
  
+	<subset name="menuColor" displayName="${lang.menuColor}">
+		<include name="dark" displayName="${lang.dark}"/>
+        <include name="light" displayName="${lang.light}"/>
+    </subset>
+  
 	<subset name="overlayType" displayName="${lang.overlayType}">
 		<include name="plainDark" displayName="${lang.plainDark}"/>
         <include name="transparent" displayName="${lang.transparent}"/>
@@ -3845,20 +3850,24 @@ By Helmic
         <menuText name="menutitle">
             <fontPath>./_inc/fonts/conthrax-sb.ttf</fontPath>
             <fontSize>0.03</fontSize>
-            <color>202020</color>
+            <color ifSubset="menuColor:light">202020</color>
+            <color ifSubset="menuColor:dark">cccccc</color>
         </menuText>
 
         <menuText name="menufooter">
             <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
             <fontSize>0.018</fontSize>
-            <color>202020</color>
+            <color ifSubset="menuColor:light">202020</color>
+            <color ifSubset="menuColor:dark">aaaaaa</color>
         </menuText>
 
         <menuText name="menutext">
             <fontPath>./_inc/fonts/conthrax-sb.ttf</fontPath>
             <fontSize>0.018</fontSize>
-            <color>121212</color>
-            <separatorColor>202020</separatorColor>
+            <color ifSubset="menuColor:light">121212</color>
+            <color ifSubset="menuColor:dark">aaaaaa</color>
+            <separatorColor ifSubset="menuColor:light">202020</separatorColor>
+            <separatorColor ifSubset="menuColor:dark">161616</separatorColor>
             <selectorColor>${overlay.colorset}</selectorColor>
             <selectedColor>ffffff</selectedColor>		
             <selectedColor ifSubset="overlayColorset:yellow">202020</selectedColor>		
@@ -3866,23 +3875,26 @@ By Helmic
         </menuText>
 	
         <menuTextSmall name="menutextsmall">
-            <fontPath>./_inc/fonts/conthrax-sb.ttf</fontPath>
+            <fontPath>./_inc/fonts/DJB Get Digital.ttf</fontPath>
             <fontSize>0.014</fontSize>
-            <color>ffffff</color>
         </menuTextSmall>
 
         <menuBackground name="menubg">
             <color>d7d4cccc</color>
             <cornerSize>21 21</cornerSize>
-            <path>./_inc/menubg.png</path>
+            <path ifSubset="menuColor:light">./_inc/menubg.png</path>
+            <path ifSubset="menuColor:dark">./_inc/menubgDark.png</path>
         </menuBackground>
 
         <menuGroup name="menugroup">
             <fontPath>./_inc/fonts/conthrax-sb.ttf</fontPath>
             <fontSize>0.022</fontSize>
-            <color>ffffff</color>
-            <separatorColor>505050</separatorColor>
-            <backgroundColor>606060</backgroundColor>
+            <color ifSubset="menuColor:light">ffffff</color>
+            <color ifSubset="menuColor:dark">aaaaaa</color>
+            <separatorColor ifSubset="menuColor:light">505050</separatorColor>
+            <separatorColor ifSubset="menuColor:dark">00000000</separatorColor>
+            <backgroundColor ifSubset="menuColor:light">606060</backgroundColor>
+            <backgroundColor ifSubset="menuColor:dark">303030</backgroundColor>
             <lineSpacing>1.2</lineSpacing>
         </menuGroup>	
 
