@@ -41,6 +41,12 @@ By Helmic
         <lang.transparent>transparent</lang.transparent>
         <lang.transparent lang="fr">transparent</lang.transparent>
 
+        <lang.plainGlazed>plain glazed</lang.plainGlazed>
+        <lang.plainGlazed lang="fr">opaque et vitré</lang.plainGlazed>
+
+        <lang.transparentGlazed>transparent glazed</lang.transparentGlazed>
+        <lang.transparentGlazed lang="fr">transparent et vitré</lang.transparentGlazed>
+
         <lang.overlayAnime>general • anime overlay lines</lang.overlayAnime>
         <lang.overlayAnime lang="fr">général • animer les lignes de l'overlay</lang.overlayAnime>
   

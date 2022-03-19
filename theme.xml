@@ -47,6 +47,8 @@ By Helmic
     </subset>
   
 	<subset name="overlayType" displayName="${lang.overlayType}">
+        <include name="plainGlazed" displayName="${lang.plainGlazed}"/>
+        <include name="transparentGlazed" displayName="${lang.transparentGlazed}"/>
 		<include name="plainDark" displayName="${lang.plainDark}"/>
         <include name="transparent" displayName="${lang.transparent}"/>
     </subset>
@@ -339,6 +341,15 @@ By Helmic
             </storyboard>
  		</image>
 		
+        <image name="overlayGlass" extra="true" ifSubset="overlayType:plainGlazed|transparentGlazed">
+            <path>./_inc/overlayGlass.png</path>
+            <maxSize>99 1</maxSize>
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+			<zIndex>101</zIndex>
+			<color>d7d4cccc</color>
+        </image>
+		
         <image name="overlayUp" extra="true">
             <path>./_inc/overlayUp.png</path>
             <path ifSubset="overlayAnime:yes">./_inc/overlayUpAnime.png</path>
@@ -347,7 +358,7 @@ By Helmic
 			<origin>0.5 0.5</origin>
 			<zIndex>100</zIndex>
 			<color>${overlay.colorset}</color>
-			<color ifSubset="overlayType:transparent">${overlay.colorset}80</color>
+			<color ifSubset="overlayType:transparent|transparentGlazed">${overlay.colorset}80</color>
             <storyboard ifSubset="overlayAnime:yes">
                 <animation property="offsetX" from="0.5" to="-0.5" duration="750" autoreverse="true" mode="easeInOutQuint" repeat="forever"/>
             </storyboard>
@@ -361,7 +372,7 @@ By Helmic
 			<origin>0.5 0.5</origin>
 			<zIndex>100</zIndex>
 			<color>${overlay.colorset}</color>
-			<color ifSubset="overlayType:transparent">${overlay.colorset}80</color>
+			<color ifSubset="overlayType:transparent|transparentGlazed">${overlay.colorset}80</color>
             <storyboard ifSubset="overlayAnime:yes">
                 <animation property="offsetX" from="-0.5" to="0.5" duration="750" autoreverse="true" mode="easeInOutQuint" repeat="forever"/>
             </storyboard>
@@ -752,8 +763,8 @@ By Helmic
             <opacity ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff">1</opacity>
             <size ifSubset="systemRandomRatio:stretched">1 1</size>
             <maxSize ifSubset="systemRandomRatio:original">1 1</maxSize>
-            <size ifSubset="systemRandomRatio:stretched,overlayType:plainDark">1 0.9259259259259259</size>
-            <maxSize ifSubset="systemRandomRatio:original,overlayType:plainDark">1 0.9259259259259259</maxSize>
+            <size ifSubset="systemRandomRatio:stretched,overlayType:plainDark|plainGlazed">1 0.9259259259259259</size>
+            <maxSize ifSubset="systemRandomRatio:original,overlayType:plainDark|plainGlazed">1 0.9259259259259259</maxSize>
             <origin>0.5 0.5</origin>
             <pos>0.5 0.5</pos>
             <delay>0.25</delay>
