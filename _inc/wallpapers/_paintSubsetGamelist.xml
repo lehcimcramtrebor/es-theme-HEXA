@@ -28,7 +28,10 @@ By Helmic
             <zIndex>1</zIndex>
 			<gradientType>vertical</gradientType>			
 			<color>ffffffdf</color>
-			<colorEnd>00000030</colorEnd>
+			<colorEnd>ffffff80</colorEnd>
+			<color ifSubset="wall:wallDark">ffffff8c</color>
+			<colorEnd ifSubset="wall:wallDark|wallLight">ffffff4d</colorEnd>
+			<opacity>0.5</opacity>			
 			<visible ifSubset="gamelistWallPaint:no">false</visible>			
 		</image>
  	
@@ -89,7 +92,10 @@ By Helmic
             <zIndex>1</zIndex>
 			<gradientType>vertical</gradientType>			
 			<color>ffffffdf</color>
-			<colorEnd>ffffff30</colorEnd>
+			<colorEnd>ffffff80</colorEnd>
+			<color ifSubset="wall:wallDark">ffffff8c</color>
+			<colorEnd ifSubset="wall:wallDark|wallLight">ffffff4d</colorEnd>
+			<opacity>0.5</opacity>			
 			<visible ifSubset="gamelistWallPaint:no">false</visible>			
 		</image>
 
