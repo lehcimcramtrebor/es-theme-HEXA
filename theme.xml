@@ -519,15 +519,15 @@ By Helmic
    
 		<image name="arrowL,arrowR" extra="true" ifSubset="arrows:plain|textured">
 			<linearSmooth>true</linearSmooth>
-            <path ifSubset="arrows:textured,overlayColorset:noColor">./_inc/arrow.png</path>
-            <path ifSubset="arrows:textured,overlayColorset:blue">./_inc/arrowBlue.png</path>
-            <path ifSubset="arrows:textured,overlayColorset:red">./_inc/arrowRed.png</path>
-            <path ifSubset="arrows:textured,overlayColorset:green">./_inc/arrowGreen.png</path>
-            <path ifSubset="arrows:textured,overlayColorset:orange">./_inc/arrowOrange.png</path>
-            <path ifSubset="arrows:textured,overlayColorset:pink">./_inc/arrowPink.png</path>
-            <path ifSubset="arrows:textured,overlayColorset:purple">./_inc/arrowPurple.png</path>
-            <path ifSubset="arrows:textured,overlayColorset:yellow">./_inc/arrowYellow.png</path>
-            <path ifSubset="arrows:plain">./_inc/arrowW.png</path>
+            <path ifSubset="arrows:textured,overlayColorset:noColor">./_inc/arrows/arrow.png</path>
+            <path ifSubset="arrows:textured,overlayColorset:blue">./_inc/arrows/arrowBlue.png</path>
+            <path ifSubset="arrows:textured,overlayColorset:red">./_inc/arrows/arrowRed.png</path>
+            <path ifSubset="arrows:textured,overlayColorset:green">./_inc/arrows/arrowGreen.png</path>
+            <path ifSubset="arrows:textured,overlayColorset:orange">./_inc/arrows/arrowOrange.png</path>
+            <path ifSubset="arrows:textured,overlayColorset:pink">./_inc/arrows/arrowPink.png</path>
+            <path ifSubset="arrows:textured,overlayColorset:purple">./_inc/arrows/arrowPurple.png</path>
+            <path ifSubset="arrows:textured,overlayColorset:yellow">./_inc/arrows/arrowYellow.png</path>
+            <path ifSubset="arrows:plain">./_inc/arrows/arrowW.png</path>
             <color ifSubset="arrows:plain">${overlay.colorset}</color>
 			<maxSize>0.0520833333333333 1</maxSize>
 			<maxSize ifSubset="themeRatio:54|43">0.0694444444444444 1</maxSize>
@@ -571,7 +571,7 @@ By Helmic
             <maxLogoCount ifSubset="themeRatio:54|43">2</maxLogoCount>
             <zIndex>10</zIndex>
             <defaultTransition>instant</defaultTransition>
-            <scrollSound>./_inc/wheel.wav</scrollSound>
+            <scrollSound>./_inc/scroll/wheel.wav</scrollSound>
         </carousel>
 
         <image name="logo">
@@ -1379,7 +1379,7 @@ By Helmic
 			<alignment>center</alignment>
 			<horizontalMargin>0.001</horizontalMargin>
 			<forceUppercase>true</forceUppercase>
-			<scrollSound>./_inc/gamelist.wav</scrollSound>
+			<scrollSound>./_inc/scroll/gamelist.wav</scrollSound>
 			<zIndex>13</zIndex>
 			<lines>21</lines>
  			</textlist>
@@ -2926,7 +2926,7 @@ By Helmic
 			<alignment>left</alignment>
 			<horizontalMargin>0.02</horizontalMargin>
 			<forceUppercase>true</forceUppercase>
-			<scrollSound>./_inc/gamelist.wav</scrollSound>
+			<scrollSound>./_inc/scroll/gamelist.wav</scrollSound>
 			<zIndex>13</zIndex>
 			<lines>15</lines>
  			</textlist>
@@ -3115,7 +3115,7 @@ By Helmic
 			<autoLayoutSelectedZoom>1.2</autoLayoutSelectedZoom>
 			<animateSelection>false</animateSelection>
 			<zIndex>5</zIndex>
-			<scrollSound>./_inc/gamelist.wav</scrollSound>
+			<scrollSound>./_inc/scroll/gamelist.wav</scrollSound>
 			<imageSource>thumbnail</imageSource>
 		</imagegrid>
 
@@ -3359,7 +3359,7 @@ By Helmic
 			<maxLogoCount>5</maxLogoCount>
 			<zIndex>13</zIndex>
 			<imageSource>marquee</imageSource>
-			<scrollSound>./_inc/gamelist.wav</scrollSound>
+			<scrollSound>./_inc/scroll/gamelist.wav</scrollSound>
             <logoRotation>-17</logoRotation>
             <logoRotationOrigin>4.1 0.5</logoRotationOrigin>
 			</gamecarousel>    
