@@ -66,6 +66,9 @@ By Helmic
 
 			<path>./../../phosphore.png</path>
 			<color>ffffff90</color>
+			<storyboard>
+                <animation property="opacity" from="0" to="1" autoreverse="true" repeat="forever" duration="25" mode="linear"/>
+            </storyboard>
 		</image>
 
         <video name="md_video">
