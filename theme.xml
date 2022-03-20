@@ -128,11 +128,11 @@ By Helmic
 	</subset>
 	
 	<subset name="shutter" displayName="${lang.shutter}">
+		<include name="no" displayName="${lang.shutter.no}"/>
 		<include name="25" displayName="${lang.shutter.25}"/>
 		<include name="30" displayName="${lang.shutter.30}"/>
 		<include name="50" displayName="${lang.shutter.50}"/>
 		<include name="60" displayName="${lang.shutter.60}"/>
-		<include name="no" displayName="${lang.shutter.no}"/>
 	</subset>
 
     <subset name="ambiance" displayName="${lang.ambiance}">
