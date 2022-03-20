@@ -628,6 +628,7 @@ By Helmic
 			<pos>0 0.5</pos>
 			<origin>0 0.5</origin>
 			<storyboard>
+        		<animation property="x" from="-0.2" duration="500" mode="easeIn"/>
         		<animation property="offsetX" to="-0.003" autoreverse="true" duration="200" mode="easeOutCubic" repeat="forever"/>
 			</storyboard>
 		</image>
@@ -637,6 +638,7 @@ By Helmic
 			<pos>1 0.5</pos>
 			<origin>1 0.5</origin>
 			<storyboard>
+        		<animation property="x" from="1.2" duration="500" mode="easeIn"/>
         		<animation property="offsetX" to="0.003" autoreverse="true" duration="200" mode="easeOutCubic" repeat="forever"/>
 			</storyboard>
 		</image>
