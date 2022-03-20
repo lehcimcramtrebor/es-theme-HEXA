@@ -284,6 +284,10 @@ By Helmic
 		<lang.54>5/4</lang.54>
 		<lang.43>4/3</lang.43>
 
+		<!--static tiles-->
+		<lang.staticTiles>carousel • immobilize inactive tiles</lang.staticTiles>
+		<lang.staticTiles lang="fr">carrousel • immobiliser les tuiles non actives</lang.staticTiles>
+
 		<!--arrows-->
 		<lang.arrows>carousel • arrows</lang.arrows>
 		<lang.arrows lang="fr">carrousel • flèches</lang.arrows>
