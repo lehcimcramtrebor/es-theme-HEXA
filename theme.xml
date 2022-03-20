@@ -79,6 +79,15 @@ By Helmic
 		<include name="colorsetAdaptive" displayName="${lang.colorsetAdaptive}"/>
 	</subset>
 
+	<subset name="helpFontSize" displayName="${lang.helpFontSize}">
+		<include name="0.020"/>
+		<include name="0.022"/>
+		<include name="0.024"/>
+		<include name="0.026"/>
+		<include name="0.016"/>
+		<include name="0.018"/>
+	</subset>
+
     <subset name="logoVisualAssistance" displayName="${lang.logoVisualAssistance}">
         <include name="yes" displayName="${lang.yes}"/>
 		<include name="no" displayName="${lang.no}"/>
@@ -169,6 +178,15 @@ By Helmic
 		<include name="colorsetAdaptive" displayName="${lang.colorsetAdaptive}"/>
 	</subset>
 
+	<subset name="bindingBarFontSize" displayName="${lang.bindingBarFontSize}">
+		<include name="0.020"/>
+		<include name="0.022"/>
+		<include name="0.024"/>
+		<include name="0.026"/>
+		<include name="0.016"/>
+		<include name="0.018"/>
+	</subset>
+
 	<subset name="systemInfoColor" displayName="${lang.systemInfoColor}">
 		<include name="colorWhite" displayName="${lang.colorWhite}"/>
 		<include name="colorYellow" displayName="${lang.colorYelllow}"/>
@@ -242,6 +260,15 @@ By Helmic
 		<include name="colorsetAdaptive" displayName="${lang.colorsetAdaptive}"/>
 	</subset>
 
+	<subset name="gameInfosBarFontSize" displayName="${lang.gameInfosBarFontSize}" appliesTo="system,basic,detailed,grid,gamecarousel">
+		<include name="0.020"/>
+		<include name="0.022"/>
+		<include name="0.024"/>
+		<include name="0.026"/>
+		<include name="0.016"/>
+		<include name="0.018"/>
+	</subset>
+
 	<subset name="gameHeadColor" displayName="${lang.gameHeadColor}" appliesTo="system,basic,detailed,grid,gamecarousel">
 		<include name="colorYellow" displayName="${lang.colorYelllow}"/>
 		<include name="colorWhite" displayName="${lang.colorWhite}"/>
@@ -293,10 +320,10 @@ By Helmic
 
 	<subset name="basicGamelistLines" displayName="${lang.basicGamelistLines}" appliesTo="system,basic,detailed,grid,gamecarousel">
 		<include name="21"/>
+		<include name="23"/>
 		<include name="15"/>
 		<include name="17"/>
 		<include name="19"/>
-		<include name="23"/>
 	</subset>
 
 	<subset name="detailedGamelistLines" displayName="${lang.detailedGamelistLines}" appliesTo="system,basic,detailed,grid,gamecarousel">
@@ -961,7 +988,12 @@ By Helmic
             <color ifSubset="bindingBar:colorYellow">ffff00</color>
             <color ifSubset="bindingBar:colorsetAdaptive">${overlay.colorset}</color>
             <glowColor>00000005</glowColor>
-            <fontSize>0.02</fontSize>
+			<fontSize>0.02</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.016">0.016</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.018">0.018</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.022">0.022</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.024">0.024</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.026">0.026</fontSize>
             <pos>0.5 0.018</pos>
             <origin>0.5 0.5</origin>
             <zIndex>110</zIndex>
@@ -986,7 +1018,12 @@ By Helmic
             <color ifSubset="bindingBar:colorYellow">ffff00</color>
             <color ifSubset="bindingBar:colorsetAdaptive">${overlay.colorset}</color>
             <glowColor>00000005</glowColor>
-            <fontSize>0.02</fontSize>
+			<fontSize>0.02</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.016">0.016</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.018">0.018</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.022">0.022</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.024">0.024</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.026">0.026</fontSize>
             <pos>0.5 0.018</pos>
             <origin>0.5 0.5</origin>
             <zIndex>110</zIndex>
@@ -1011,7 +1048,12 @@ By Helmic
             <color ifSubset="bindingBar:colorYellow">ffff00</color>
             <color ifSubset="bindingBar:colorsetAdaptive">${overlay.colorset}</color>
             <glowColor>00000005</glowColor>
-            <fontSize>0.02</fontSize>
+			<fontSize>0.02</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.016">0.016</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.018">0.018</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.022">0.022</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.024">0.024</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.026">0.026</fontSize>
             <pos>0.5 0.018</pos>
             <origin>0.5 0.5</origin>
             <zIndex>110</zIndex>
@@ -1036,7 +1078,12 @@ By Helmic
             <color ifSubset="bindingBar:colorYellow">ffff00</color>
             <color ifSubset="bindingBar:colorsetAdaptive">${overlay.colorset}</color>
             <glowColor>00000005</glowColor>
-            <fontSize>0.02</fontSize>
+			<fontSize>0.02</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.016">0.016</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.018">0.018</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.022">0.022</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.024">0.024</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.026">0.026</fontSize>
             <pos>0.5 0.018</pos>
             <origin>0.5 0.5</origin>
             <zIndex>110</zIndex>
@@ -1061,7 +1108,12 @@ By Helmic
             <color ifSubset="bindingBar:colorYellow">ffff00</color>
             <color ifSubset="bindingBar:colorsetAdaptive">${overlay.colorset}</color>
             <glowColor>00000005</glowColor>
-            <fontSize>0.02</fontSize>
+			<fontSize>0.02</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.016">0.016</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.018">0.018</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.022">0.022</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.024">0.024</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.026">0.026</fontSize>
             <pos>0.5 0.018</pos>
             <origin>0.5 0.5</origin>
             <zIndex>110</zIndex>
@@ -1086,7 +1138,12 @@ By Helmic
             <color ifSubset="bindingBar:colorYellow">ffff00</color>
             <color ifSubset="bindingBar:colorsetAdaptive">${overlay.colorset}</color>
             <glowColor>00000005</glowColor>
-            <fontSize>0.02</fontSize>
+			<fontSize>0.02</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.016">0.016</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.018">0.018</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.022">0.022</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.024">0.024</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.026">0.026</fontSize>
             <pos>0.5 0.018</pos>
             <origin>0.5 0.5</origin>
             <zIndex>110</zIndex>
@@ -1111,7 +1168,12 @@ By Helmic
             <color ifSubset="bindingBar:colorYellow">ffff00</color>
             <color ifSubset="bindingBar:colorsetAdaptive">${overlay.colorset}</color>
             <glowColor>00000005</glowColor>
-            <fontSize>0.02</fontSize>
+			<fontSize>0.02</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.016">0.016</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.018">0.018</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.022">0.022</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.024">0.024</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.026">0.026</fontSize>
             <pos>0.5 0.018</pos>
             <origin>0.5 0.5</origin>
             <zIndex>110</zIndex>
@@ -1137,7 +1199,12 @@ By Helmic
             <color ifSubset="bindingBar:colorYellow">ffff00</color>
             <color ifSubset="bindingBar:colorsetAdaptive">${overlay.colorset}</color>
             <glowColor>00000005</glowColor>
-            <fontSize>0.02</fontSize>
+			<fontSize>0.02</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.016">0.016</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.018">0.018</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.022">0.022</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.024">0.024</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.026">0.026</fontSize>
             <pos>0.5 0.018</pos>
             <origin>0.5 0.5</origin>
             <zIndex>110</zIndex>
@@ -2240,8 +2307,9 @@ By Helmic
 			<forceUppercase>true</forceUppercase>
 		</text>
 
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 <!------------------------------------------------------------------GAME STATE/INFOS ICONS------------------------------------------------------------------------------------------>
-		
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->		
 		<image name="md_flag">
 			<origin>0 1</origin>
 			<pos>0.08 0.112</pos>
@@ -2495,8 +2563,9 @@ By Helmic
             </storyboard>
 		</image>
 
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 <!------------------------------------------------------------------GAME INFOS BAR-------------------------------------------------------------------------------------------------->
-		
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->		
 		<rating name="md_rating">
             <color ifSubset="ratingColor:colorYellow">ffff00</color>
             <color ifSubset="ratingColor:colorWhite">dddddd</color>
@@ -2505,7 +2574,12 @@ By Helmic
             <origin>0 0.5</origin>
             <zIndex>110</zIndex>
 			<w>0.5</w>
-			<h>0.02</h>
+            <h>0.02</h>
+            <h ifSubset="gameInfosBarFontSize:0.016">0.016</h>
+            <h ifSubset="gameInfosBarFontSize:0.018">0.018</h>
+            <h ifSubset="gameInfosBarFontSize:0.022">0.022</h>
+            <h ifSubset="gameInfosBarFontSize:0.024">0.024</h>
+            <h ifSubset="gameInfosBarFontSize:0.026">0.026</h>
 			<opacity>0</opacity>
 			<storyboard event="open" repeatAt="1">
                 <animation property="offsetX" from="0" to="0" duration="250" mode="linear" begin="1"/>
@@ -2544,6 +2618,11 @@ By Helmic
             <color ifSubset="gamebindsColor:colorsetAdaptive">${overlay.colorset}</color>
             <glowColor>00000005</glowColor>
             <fontSize>0.02</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.016">0.016</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.018">0.018</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.022">0.022</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.024">0.024</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.026">0.026</fontSize>
             <pos>0.5 0.018</pos>
             <origin>0.5 0.5</origin>
             <zIndex>110</zIndex>
@@ -2592,6 +2671,11 @@ By Helmic
             <color ifSubset="gamebindsColor:colorsetAdaptive">${overlay.colorset}</color>
             <glowColor>00000005</glowColor>
             <fontSize>0.02</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.016">0.016</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.018">0.018</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.022">0.022</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.024">0.024</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.026">0.026</fontSize>
             <pos>0.5 0.018</pos>
             <origin>0 0.5</origin>
             <zIndex>110</zIndex>
@@ -2640,6 +2724,11 @@ By Helmic
             <color ifSubset="gamebindsColor:colorsetAdaptive">${overlay.colorset}</color>
             <glowColor>00000005</glowColor>
             <fontSize>0.02</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.016">0.016</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.018">0.018</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.022">0.022</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.024">0.024</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.026">0.026</fontSize>
             <pos>0.5 0.018</pos>
             <origin>1 0.5</origin>
             <zIndex>110</zIndex>
@@ -2687,7 +2776,12 @@ By Helmic
             <color ifSubset="gamebindsColor:colorWhite">dddddd</color>
             <color ifSubset="gamebindsColor:colorsetAdaptive">${overlay.colorset}</color>
             <glowColor>00000005</glowColor>
-            <fontSize>0.020</fontSize>
+            <fontSize>0.02</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.016">0.016</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.018">0.018</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.022">0.022</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.024">0.024</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.026">0.026</fontSize>
             <pos>0.5 0.018</pos>
             <origin>0 0.5</origin>
             <zIndex>110</zIndex>
@@ -2736,6 +2830,11 @@ By Helmic
             <color ifSubset="gamebindsColor:colorsetAdaptive">${overlay.colorset}</color>
             <glowColor>00000005</glowColor>
             <fontSize>0.02</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.016">0.016</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.018">0.018</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.022">0.022</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.024">0.024</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.026">0.026</fontSize>
             <pos>0.5 0.018</pos>
             <origin>1 0.5</origin>
             <zIndex>110</zIndex>
@@ -2783,6 +2882,11 @@ By Helmic
             <color ifSubset="gamebindsColor:colorWhite">dddddd</color>
             <color ifSubset="gamebindsColor:colorsetAdaptive">${overlay.colorset}</color>
             <fontSize>0.02</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.016">0.016</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.018">0.018</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.022">0.022</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.024">0.024</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.026">0.026</fontSize>
             <pos>0.5 0.018</pos>
             <origin>0 0.5</origin>
             <zIndex>110</zIndex>
@@ -2831,6 +2935,11 @@ By Helmic
             <color ifSubset="gamebindsColor:colorsetAdaptive">${overlay.colorset}</color>
             <glowColor>00000005</glowColor>
             <fontSize>0.02</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.016">0.016</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.018">0.018</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.022">0.022</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.024">0.024</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.026">0.026</fontSize>
             <pos>0.5 0.018</pos>
             <origin>1 0.5</origin>
             <zIndex>110</zIndex>
@@ -2878,6 +2987,11 @@ By Helmic
             <color ifSubset="gamebindsColor:colorWhite">dddddd</color>
             <color ifSubset="gamebindsColor:colorsetAdaptive">${overlay.colorset}</color>
             <fontSize>0.02</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.016">0.016</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.018">0.018</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.022">0.022</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.024">0.024</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.026">0.026</fontSize>
             <pos>0.5 0.018</pos>
             <origin>0 0.5</origin>
             <zIndex>110</zIndex>
@@ -2924,6 +3038,11 @@ By Helmic
             <color ifSubset="gamebindsColor:colorsetAdaptive">${overlay.colorset}</color>
             <glowColor>00000005</glowColor>
             <fontSize>0.02</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.016">0.016</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.018">0.018</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.022">0.022</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.024">0.024</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.026">0.026</fontSize>
             <pos>0.5 0.018</pos>
             <origin>1 0.5</origin>
             <zIndex>110</zIndex>
@@ -3811,8 +3930,13 @@ By Helmic
 			<textColor ifSubset="helpTextColor:colorYellow">ffff00</textColor>
 			<textColor ifSubset="helpTextColor:colorsetAdaptive">${overlay.colorset}</textColor>
 			<fontSize>0.02</fontSize>
-			<origin>0 1</origin>
-			<pos>0.004 0.99</pos>
+            <fontSize ifSubset="helpFontSize:0.016">0.016</fontSize>
+            <fontSize ifSubset="helpFontSize:0.018">0.018</fontSize>
+            <fontSize ifSubset="helpFontSize:0.022">0.022</fontSize>
+            <fontSize ifSubset="helpFontSize:0.024">0.024</fontSize>
+            <fontSize ifSubset="helpFontSize:0.026">0.026</fontSize>
+			<origin>0 0.5</origin>
+			<pos>0.004 0.982</pos>
 			<fontPath>./_inc/fonts/${font2}</fontPath>
 			<iconColor>${overlay.colorset}</iconColor>
 		</helpsystem>

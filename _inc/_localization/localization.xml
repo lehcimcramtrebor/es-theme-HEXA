@@ -15,6 +15,15 @@ By Helmic
         <lang.gamelistFontSize>game list view • gamelist font size</lang.gamelistFontSize>
         <lang.gamelistFontSize lang="fr">liste des jeux • taille de la police de la liste</lang.gamelistFontSize>
 
+        <lang.bindingBarFontSize>system view • info bar font size</lang.bindingBarFontSize>
+        <lang.bindingBarFontSize lang="fr">vue système • taille de la police de la barre d'infos</lang.bindingBarFontSize>
+
+        <lang.helpFontSize>help • help font size</lang.helpFontSize>
+        <lang.helpFontSize lang="fr">aide • taille de la police de l'aide</lang.helpFontSize>
+
+        <lang.gameInfosBarFontSize>game list view • game binds font size</lang.gameInfosBarFontSize>
+        <lang.gameInfosBarFontSize lang="fr">liste des jeux • taille de la police des infos de jeux</lang.gameInfosBarFontSize>
+
         <lang.basicGamelistLines>game list view • basic gamelist lines</lang.basicGamelistLines>
         <lang.basicGamelistLines lang="fr">liste des jeux • nombre de lignes de la liste basique</lang.basicGamelistLines>
 
@@ -101,8 +110,8 @@ By Helmic
         <lang.bartop lang="fr">bartop</lang.bartop>
  
         <!--help icons-->
-        <lang.helpIcons>general • help buttons style</lang.helpIcons>
-        <lang.helpIcons lang="fr">général • style des boutons de l'aide</lang.helpIcons>
+        <lang.helpIcons>help • buttons style</lang.helpIcons>
+        <lang.helpIcons lang="fr">Aide • style des boutons</lang.helpIcons>
             
         <lang.defaultIcons>default buttons</lang.defaultIcons>
         <lang.defaultIcons lang="fr">boutons par défaut</lang.defaultIcons>
@@ -357,8 +366,8 @@ By Helmic
 		<lang.descriptionColor>gamelist • description color</lang.descriptionColor>
 		<lang.descriptionColor lang="fr">listes de jeux • couleur de la description</lang.descriptionColor>
 
-		<lang.helpTextColor>general • help text color</lang.helpTextColor>
-		<lang.helpTextColor lang="fr">général • couleur du texte de l'aide</lang.helpTextColor>
+		<lang.helpTextColor>help • text color</lang.helpTextColor>
+		<lang.helpTextColor lang="fr">aide • couleur du texte</lang.helpTextColor>
 
 		<lang.bindingBar>system view • info bar text color</lang.bindingBar>
 		<lang.bindingBar lang="fr">vue système • couleur du texte de la barre d'infos</lang.bindingBar>
