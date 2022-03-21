@@ -17,8 +17,8 @@ By Helmic
             <path>./../../../${system.theme}/color-${lang}.png</path>
             <path region="us">./../../../${system.theme}/us/color.png</path>
             <path region="jp">./../../../${system.theme}/jp/color.png</path>
-			<maxSize>0.253 1</maxSize>
-			<pos>0 0.985</pos>
+			<maxSize>0.2345 1</maxSize>
+			<pos>0 0.987</pos>
 			<pos ifSubset="themeRatio:54">0 0.975</pos>
 			<pos ifSubset="themeRatio:43">0 0.98</pos>
 			<origin>0.02 1</origin>
