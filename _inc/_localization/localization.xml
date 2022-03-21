@@ -114,6 +114,9 @@ By Helmic
   		
         <lang.trinitronTile>trinitron with system plate</lang.trinitronTile>
         <lang.trinitronTile lang="fr">trinitron et plaque système</lang.trinitronTile>
+   		
+        <lang.trinitronGamerZone>trinitron with "gamer zone" plate</lang.trinitronGamerZone>
+        <lang.trinitronGamerZone lang="fr">trinitron et plaque "gamer zone"</lang.trinitronGamerZone>
  
         <!--help icons-->
         <lang.helpIcons>help • buttons style</lang.helpIcons>

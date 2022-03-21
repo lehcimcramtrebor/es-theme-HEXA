@@ -232,6 +232,7 @@ By Helmic
 		<include name="flat" displayName="${lang.flat}">./_inc/containers/flat/container.xml</include>
 		<include name="trinitron" displayName="${lang.trinitron}">./_inc/containers/trinitron/container.xml</include>
  		<include name="trinitronTile" displayName="${lang.trinitronTile}">./_inc/containers/trinitronTile/container.xml</include>
+ 		<include name="trinitronGamerZone" displayName="${lang.trinitronGamerZone}">./_inc/containers/trinitronTile/container.xml</include>
    </subset>
 
 	<subset name="tvLogo" displayName="${lang.tvLogo}" appliesTo="system,basic,detailed,grid,gamecarousel">
