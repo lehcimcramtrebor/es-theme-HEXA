@@ -231,7 +231,8 @@ By Helmic
         <include name="cathod" displayName="${lang.cathod}">./_inc/containers/cathod/container.xml</include>
 		<include name="flat" displayName="${lang.flat}">./_inc/containers/flat/container.xml</include>
 		<include name="trinitron" displayName="${lang.trinitron}">./_inc/containers/trinitron/container.xml</include>
-    </subset>
+ 		<include name="trinitronTile" displayName="${lang.trinitronTile}">./_inc/containers/trinitronTile/container.xml</include>
+   </subset>
 
 	<subset name="tvLogo" displayName="${lang.tvLogo}" appliesTo="system,basic,detailed,grid,gamecarousel">
 		<include name="yes" displayName="${lang.yes}"/>

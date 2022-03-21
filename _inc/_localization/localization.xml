@@ -108,6 +108,12 @@ By Helmic
   		
         <lang.bartop>bartop</lang.bartop>
         <lang.bartop lang="fr">bartop</lang.bartop>
+  		
+        <lang.trinitron>trinitron</lang.trinitron>
+        <lang.trinitron lang="fr">trinitron</lang.trinitron>
+  		
+        <lang.trinitronTile>trinitron with system plate</lang.trinitronTile>
+        <lang.trinitronTile lang="fr">trinitron et plaque système</lang.trinitronTile>
  
         <!--help icons-->
         <lang.helpIcons>help • buttons style</lang.helpIcons>
