@@ -115,8 +115,8 @@ By Helmic
         <lang.trinitronTile>trinitron with system plate</lang.trinitronTile>
         <lang.trinitronTile lang="fr">trinitron et plaque système</lang.trinitronTile>
    		
-        <lang.trinitronGamerZone>trinitron with "gamer zone" plate</lang.trinitronGamerZone>
-        <lang.trinitronGamerZone lang="fr">trinitron et plaque "gamer zone"</lang.trinitronGamerZone>
+        <lang.trinitronCustomTile>trinitron with custom plate</lang.trinitronCustomTile>
+        <lang.trinitronCustomTile lang="fr">trinitron et plaque custom</lang.trinitronCustomTile>
  
         <!--help icons-->
         <lang.helpIcons>help • buttons style</lang.helpIcons>
@@ -229,6 +229,9 @@ By Helmic
 		<!--transition-->
 		<lang.transition>general • anime gamelist transitions</lang.transition>
 		<lang.transition lang="fr">général • animer la transition des listes de jeux</lang.transition>
+
+		<lang.transitionCustom>general • use custom plate for transition</lang.transitionCustom>
+		<lang.transitionCustom lang="fr">général • utiliser la plaque custom pour les transitions</lang.transitionCustom>
 
 		<!--shutter-->
 		<lang.shutter>screen • shutter rate</lang.shutter>

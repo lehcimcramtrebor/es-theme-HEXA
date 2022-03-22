@@ -63,6 +63,11 @@ By Helmic
 		<include name="no" displayName="${lang.no}"/>
 	</subset>
 
+	<subset name="transitionCustom" displayName="${lang.transitionCustom}" ifSubset="transition:yes">
+		<include name="no" displayName="${lang.no}"/>
+		<include name="yes" displayName="${lang.yes}"/>
+	</subset>
+
     <subset name="helpIcons" displayName="${lang.helpIcons}">
         <include name="defaultIcons" displayName="${lang.defaultIcons}"/>
         <include name="arcadeIcons" displayName="${lang.arcadeIcons}"/>
@@ -232,7 +237,7 @@ By Helmic
 		<include name="flat" displayName="${lang.flat}">./_inc/containers/flat/container.xml</include>
 		<include name="trinitron" displayName="${lang.trinitron}">./_inc/containers/trinitron/container.xml</include>
  		<include name="trinitronTile" displayName="${lang.trinitronTile}">./_inc/containers/trinitronTile/container.xml</include>
- 		<include name="trinitronGamerZone" displayName="${lang.trinitronGamerZone}">./_inc/containers/trinitronTile/container.xml</include>
+ 		<include name="trinitronCustomTile" displayName="${lang.trinitronCustomTile}">./_inc/containers/trinitronTile/container.xml</include>
    </subset>
 
 	<subset name="tvLogo" displayName="${lang.tvLogo}" appliesTo="system,basic,detailed,grid,gamecarousel">
@@ -1438,6 +1443,7 @@ By Helmic
             <path>./${system.theme}/color-${lang}.png</path>
             <path region="us">./${system.theme}/us/color.png</path>
             <path region="jp">./${system.theme}/jp/color.png</path>
+			<path ifSubset="transitionCustom:yes">./custom.png</path>
            	<maxSize>1 0.80</maxSize>
 			<pos>0.5 0.425</pos>
 			<origin>0.5 0.5</origin>

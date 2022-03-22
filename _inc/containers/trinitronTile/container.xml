@@ -17,7 +17,7 @@ By Helmic
             <path>./../../../${system.theme}/color-${lang}.png</path>
             <path region="us">./../../../${system.theme}/us/color.png</path>
             <path region="jp">./../../../${system.theme}/jp/color.png</path>
-            <path ifSubset="container:trinitronGamerZone">./../../gamerZone.png</path>
+            <path ifSubset="container:trinitronCustomTile">./../../../custom.png</path>
 			<maxSize>0.248 1</maxSize>
 			<pos>0 0.989</pos>
 			<pos ifSubset="themeRatio:54">0 0.975</pos>
