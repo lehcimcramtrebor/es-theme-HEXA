@@ -3761,7 +3761,7 @@ By Helmic
 	
 	<customView name="library" inherits="detailed" displayName="${lang.library}">
 
-		<image name="logoTV,tvMix,backTvMix,tvShadow" extra="true">
+		<image name="logoTV,tvMix,backTvMix,tvShadow,logoColorContainer" extra="true">
 			<visible>false</visible>
 		</image>
 

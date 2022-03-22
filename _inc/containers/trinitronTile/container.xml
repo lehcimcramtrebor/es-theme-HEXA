@@ -9,7 +9,7 @@ By Helmic
 		
 	<view name="detailed,grid,gamecarousel">
         
-		<image name="logoColorTrinitron" extra="true">
+		<image name="logoColorContainer" extra="true">
             <linearSmooth>true</linearSmooth>
             <path>./../../../default/color.png</path>
             <path>./../../../default/color-${lang}.png</path>
