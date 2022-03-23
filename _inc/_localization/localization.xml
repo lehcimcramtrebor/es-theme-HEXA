@@ -117,6 +117,39 @@ By Helmic
    		
         <lang.trinitronCustomTile>trinitron with custom plate</lang.trinitronCustomTile>
         <lang.trinitronCustomTile lang="fr">trinitron et plaque custom</lang.trinitronCustomTile>
+   		
+        <lang.retro3Tile>retro x3 with system plate</lang.retro3Tile>
+        <lang.retro3Tile lang="fr">retro 3x avec plaque système</lang.retro3Tile>
+    		
+        <lang.retro3CustomTile>retro x3 with custom plate</lang.retro3CustomTile>
+        <lang.retro3CustomTile lang="fr">rétro 3x avec plaque custom</lang.retro3CustomTile>
+     		
+        <lang.retroRedTile>retro red with system plate</lang.retroRedTile>
+        <lang.retroRedTile lang="fr">rétro rouge avec plaque système</lang.retroRedTile>
+     		
+        <lang.retroRedCustomTile>retro red with custom plate</lang.retroRedCustomTile>
+        <lang.retroRedCustomTile lang="fr">rétro rouge avec plaque custom</lang.retroRedCustomTile>
+     		
+        <lang.retroWhiteTile>retro white with system plate</lang.retroWhiteTile>
+        <lang.retroWhiteTile lang="fr">rétro blanche avec plaque système</lang.retroWhiteTile>
+     		
+        <lang.retroWhiteCustomTile>retro white with custom plate</lang.retroWhiteCustomTile>
+        <lang.retroWhiteCustomTile lang="fr">rétro blanche avec plaque custom</lang.retroWhiteCustomTile>
+     		
+        <lang.retroBlackTile>retro black with system plate</lang.retroBlackTile>
+        <lang.retroBlackTile lang="fr">rétro noire avec plaque système</lang.retroBlackTile>
+     		
+        <lang.retroBlackCustomTile>retro black with custom plate</lang.retroBlackCustomTile>
+        <lang.retroBlackCustomTile lang="fr">rétro noire avec plaque custom</lang.retroBlackCustomTile>
+     		
+        <lang.retroRed>retro red</lang.retroRed>
+        <lang.retroRed lang="fr">rétro rouge</lang.retroRed>
+     		
+        <lang.retroWhite>retro white</lang.retroWhite>
+        <lang.retroWhite lang="fr">rétro blanche</lang.retroWhite>
+     		
+        <lang.retroBlack>retro black</lang.retroBlack>
+        <lang.retroBlack lang="fr">rétro noire</lang.retroBlack>
  
         <!--help icons-->
         <lang.helpIcons>help • buttons style</lang.helpIcons>

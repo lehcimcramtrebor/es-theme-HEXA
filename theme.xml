@@ -238,6 +238,17 @@ By Helmic
 		<include name="trinitron" displayName="${lang.trinitron}">./_inc/containers/trinitron/container.xml</include>
  		<include name="trinitronTile" displayName="${lang.trinitronTile}">./_inc/containers/trinitronTile/container.xml</include>
  		<include name="trinitronCustomTile" displayName="${lang.trinitronCustomTile}">./_inc/containers/trinitronTile/container.xml</include>
+ 		<include name="retro3Tile" displayName="${lang.retro3Tile}">./_inc/containers/retro3Tile/container.xml</include>
+ 		<include name="retro3CustomTile" displayName="${lang.retro3CustomTile}">./_inc/containers/retro3Tile/container.xml</include>
+ 		<include name="retroRedTile" displayName="${lang.retroRedTile}">./_inc/containers/retroRedTile/container.xml</include>
+ 		<include name="retroRedCustomTile" displayName="${lang.retroRedCustomTile}">./_inc/containers/retroRedTile/container.xml</include>
+ 		<include name="retroWhiteTile" displayName="${lang.retroWhiteTile}">./_inc/containers/retroWhiteTile/container.xml</include>
+ 		<include name="retroWhiteCustomTile" displayName="${lang.retroWhiteCustomTile}">./_inc/containers/retroWhiteTile/container.xml</include>
+ 		<include name="retroBlackTile" displayName="${lang.retroBlackTile}">./_inc/containers/retroBlackTile/container.xml</include>
+ 		<include name="retroBlackCustomTile" displayName="${lang.retroBlackCustomTile}">./_inc/containers/retroBlackTile/container.xml</include>
+ 		<include name="retroRed" displayName="${lang.retroRed}">./_inc/containers/retroRed/container.xml</include>
+ 		<include name="retroWhite" displayName="${lang.retroWhite}">./_inc/containers/retroWhite/container.xml</include>
+ 		<include name="retroBlack" displayName="${lang.retroBlack}">./_inc/containers/retroBlack/container.xml</include>
    </subset>
 
 	<subset name="tvLogo" displayName="${lang.tvLogo}" appliesTo="system,basic,detailed,grid,gamecarousel">
@@ -3761,7 +3772,7 @@ By Helmic
 	
 	<customView name="library" inherits="detailed" displayName="${lang.library}">
 
-		<image name="logoTV,tvMix,backTvMix,tvShadow,logoColorContainer" extra="true">
+		<image name="logoTV,tvMix,backTvMix,tvShadow,logoColorContainer,mire" extra="true">
 			<visible>false</visible>
 		</image>
 
@@ -3839,7 +3850,7 @@ By Helmic
 			<visible>false</visible>
 		</datetime>
 
-		<image name="line,line2,videoContainer,videoBackFrame,randomVideosFx,led,rew,next,play" extra="true">
+		<image name="line,line2,videoContainer,videoBackFrame,videoBackFrame2,videoBackFrame3,randomVideosFx,randomVideosFx2,randomVideosFx3,led,rew,next,play" extra="true">
 			<visible>false</visible>
 		</image>
 

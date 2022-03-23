@@ -1,0 +1,231 @@
+<!--
+HEXA Theme for Retrobat 4+ / Batocera v32+
+By Helmic
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+<formatVersion>7</formatVersion>
+		
+	<view name="detailed,grid,gamecarousel">
+        
+		<image name="logoColorContainer" extra="true">
+            <linearSmooth>true</linearSmooth>
+            <path>./../../../default/color.png</path>
+            <path>./../../../default/color-${lang}.png</path>
+            <path>./../../../${system.theme}/color.png</path>
+            <path>./../../../${system.theme}/color-${lang}.png</path>
+            <path region="us">./../../../${system.theme}/us/color.png</path>
+            <path region="jp">./../../../${system.theme}/jp/color.png</path>
+            <path ifSubset="container:retro3CustomTile">./../../../custom.png</path>
+			<maxSize>0.21 1</maxSize>
+			<pos>0.6375 0.959</pos>
+			<pos ifSubset="themeRatio:54">0.6375 0.955</pos>
+			<pos ifSubset="themeRatio:43">0.6375 0.955</pos>
+			<origin>1 1</origin>
+            <zIndex>15</zIndex>
+			<color>ffffff</color>
+			</image>
+			
+		<image name="videoContainer" extra="true">
+			<path>./container.png</path>
+		</image>
+	
+		<image name="led" extra="true">
+			<visible>false</visible>
+		</image>
+	
+		<image name="rew" extra="true">
+			<visible>false</visible>
+		</image>
+	
+		<image name="next" extra="true">
+			<visible>false</visible>
+		</image>
+	
+		<image name="play" extra="true">
+			<visible>false</visible>
+		</image>
+
+		<text name="logoContainer" extra="true">
+            <pos>0.28515625 0.8268518518518519</pos>
+            <pos ifSubset="themeRatio:54">0.28515625 0.8606481481481481</pos>
+            <pos ifSubset="themeRatio:43">0.28515625 0.8606481481481481</pos>
+		</text>
+		
+		<image name="videoBackFrame" extra="true">
+            <pos>0.2174479166666667 0.5953703703703704</pos>
+            <pos ifSubset="themeRatio:54">0.2174479166666667 0.699537037037037</pos>
+            <pos ifSubset="themeRatio:43">0.2174479166666667 0.687037037037037</pos>
+
+			<size>0.129 0.18</size>
+			<size ifSubset="themeRatio:54">0.129 0.124</size>
+			<size ifSubset="themeRatio:43">0.129 0.132</size>
+		</image>
+		
+		<image name="videoBackFrame2" extra="true">
+            <path>./../../white.png</path>
+			<origin>0.5 0.5</origin>
+			<color>000000</color>
+            <pos>0.0908854166666667 0.8268518518518519</pos>
+            <pos ifSubset="themeRatio:54">0.0908854166666667 0.8606481481481481</pos>
+            <pos ifSubset="themeRatio:43">0.0908854166666667 0.8606481481481481</pos>
+
+			<size>0.129 0.18</size>
+			<size ifSubset="themeRatio:54">0.129 0.124</size>
+			<size ifSubset="themeRatio:43">0.129 0.124</size>
+
+			<zIndex>5</zIndex>
+		</image>
+		
+		<image name="videoBackFrame3" extra="true">
+            <path>./../../white.png</path>
+			<origin>0.5 0.5</origin>
+			<color>000000</color>
+            <pos>0.28515625 0.8268518518518519</pos>
+            <pos ifSubset="themeRatio:54">0.28515625 0.8268518518518519</pos>
+            <pos ifSubset="themeRatio:43">0.28515625 0.8268518518518519</pos>
+
+			<size>0.129 0.18</size>
+			<size ifSubset="themeRatio:54">0.129 0.124</size>
+			<size ifSubset="themeRatio:43">0.129 0.124</size>
+
+			<zIndex>5</zIndex>
+		</image>
+		
+		<image name="mire" extra="true">
+            <path>./../../mire.png</path>
+			<origin>0.5 0.5</origin>
+			<color>ffffff</color>
+            <pos>0.0908854166666667 0.8268518518518519</pos>
+            <pos ifSubset="themeRatio:54">0.0908854166666667 0.8606481481481481</pos>
+            <pos ifSubset="themeRatio:43">0.0908854166666667 0.8606481481481481</pos>
+
+			<size>0.129 0.18</size>
+			<size ifSubset="themeRatio:54">0.129 0.1231481481481481</size>
+			<size ifSubset="themeRatio:43">0.129 0.1231481481481481</size>
+
+			<zIndex>12</zIndex>
+			<storyboard repeat="forever" >
+                <animation property="color" to="ccffcc" duration="7500" mode="linear"/>
+                <animation property="color" to="ccccff" duration="7500" mode="linear" begin="7500"/>
+                <animation property="color" to="ffcccc" duration="7500" mode="linear" begin="15000"/>
+                <animation property="color" to="ffffff" duration="7500" mode="linear" begin="22750"/>
+                <animation property="offsetX" to="-0.001" autoreverse="true" duration="25" mode="linear" begin="2000"/>
+                <animation property="offsetX" to="-0.001" autoreverse="true" duration="25" mode="linear" begin="3500"/>
+                <animation property="offsetX" to="-0.001" autoreverse="true" duration="25" repeat="2" mode="linear" begin="5000"/>
+                <animation property="offsetX" to="-0.001" autoreverse="true" duration="25" mode="linear" begin="5000"/>
+                <animation property="offsetX" to="-0.001" autoreverse="true" duration="25" mode="linear" begin="8000"/>
+                <animation property="offsetX" to="-0.001" autoreverse="true" duration="25" repeat="3" mode="linear" begin="1100"/>
+                <animation property="offsetX" to="-0.001" autoreverse="true" duration="25" repeat="3" mode="linear" begin="12500"/>
+                <animation property="offsetX" to="-0.001" autoreverse="true" duration="25" mode="linear" begin="15000"/>
+                <animation property="offsetX" to="-0.001" autoreverse="true" duration="25" mode="linear" begin="16500"/>
+                <animation property="offsetX" to="-0.001" autoreverse="true" duration="25" mode="linear" begin="16750"/>
+                <animation property="offsetX" to="-0.001" autoreverse="true" duration="25" repeat="2" mode="linear" begin="18500"/>
+                <animation property="offsetX" to="-0.001" autoreverse="true" duration="25" repeat="2" mode="linear" begin="21000"/>
+                <animation property="offsetX" to="-0.001" autoreverse="true" duration="25" mode="linear" begin="21800"/>
+            </storyboard>
+		</image>
+
+        <video name="bartopNoise1" extra="true">
+			<path>./../../noise.mp4</path>
+			<audio>false</audio>
+			<origin>0.5 0.5</origin>
+            <pos>0.28515625 0.8268518518518519</pos>
+            <pos ifSubset="themeRatio:54">0.28515625 0.8606481481481481</pos>
+            <pos ifSubset="themeRatio:43">0.28515625 0.8606481481481481</pos>
+
+			<size>0.129 0.18</size>
+			<size ifSubset="themeRatio:54">0.129 0.1231481481481481</size>
+			<size ifSubset="themeRatio:43">0.129 0.1231481481481481</size>
+			<zIndex>11</zIndex>
+			<color>808080</color>
+		</video>
+
+		<image name="randomVideosFx" extra="true">
+            <pos>0.2174479166666667 0.5953703703703704</pos>
+            <pos ifSubset="themeRatio:54">0.2174479166666667 0.699537037037037</pos>
+            <pos ifSubset="themeRatio:43">0.2174479166666667 0.687037037037037</pos>
+
+			<size>0.1276041666666667 0.1759259259259259</size>
+			<size ifSubset="themeRatio:54">0.1276041666666667 0.1231481481481481</size>
+			<size ifSubset="themeRatio:43">0.1276041666666667 0.1314814814814815</size>
+
+			<path>./../../phosphore.png</path>
+			<color>ffffff80</color>
+			<storyboard>
+                <animation property="opacity" from="0" to="1" autoreverse="true" repeat="forever" duration="25" mode="linear"/>
+            </storyboard>
+		</image>
+
+		<image name="randomVideosFx2" extra="true">
+            <pos>0.0908854166666667 0.8268518518518519</pos>
+            <pos ifSubset="themeRatio:54">0.0908854166666667 0.8606481481481481</pos>
+            <pos ifSubset="themeRatio:43">0.0908854166666667 0.8606481481481481</pos>
+
+			<size>0.129 0.18</size>
+			<size ifSubset="themeRatio:54">0.129 0.1231481481481481</size>
+			<size ifSubset="themeRatio:43">0.129 0.1231481481481481</size>
+
+			<path>./../../phosphore.png</path>
+			<color>ffffff80</color>
+			<storyboard>
+                <animation property="opacity" from="0" to="1" autoreverse="true" repeat="forever" duration="25" mode="linear"/>
+            </storyboard>
+			<origin>0.5 0.5</origin>
+			<zIndex>7</zIndex>
+			<tile>true</tile>
+			<color>ffffff90</color>
+		</image>
+
+		<image name="randomVideosFx3" extra="true">
+            <pos>0.28515625 0.8268518518518519</pos>
+            <pos ifSubset="themeRatio:54">0.28515625 0.8606481481481481</pos>
+            <pos ifSubset="themeRatio:43">0.28515625 0.8606481481481481</pos>
+
+			<size>0.129 0.18</size>
+			<size ifSubset="themeRatio:54">0.129 0.1231481481481481</size>
+			<size ifSubset="themeRatio:43">0.129 0.1231481481481481</size>
+
+			<path>./../../phosphore.png</path>
+			<color>ffffff80</color>
+			<storyboard>
+                <animation property="opacity" from="0" to="1" autoreverse="true" repeat="forever" duration="25" mode="linear"/>
+            </storyboard>
+			<origin>0.5 0.5</origin>
+			<zIndex>7</zIndex>
+			<tile>true</tile>
+			<color>ffffff90</color>
+		</image>
+
+        <video name="md_video">
+			<default>./../../glitch.mp4</default>
+
+			<size ifSubset="randomRatio:stretched">0.1276041666666667 0.1759259259259259</size>
+
+			<size ifSubset="randomRatio:stretched,themeRatio:54">0.1276041666666667 0.1231481481481481</size>
+
+			<size ifSubset="randomRatio:stretched,themeRatio:43">0.1276041666666667 0.1314814814814815</size>
+
+
+
+            <maxSize ifSubset="randomRatio:original">0.1276041666666667 0.1759259259259259</maxSize>
+
+			<maxSize ifSubset="randomRatio:original,themeRatio:54">0.1276041666666667 0.1231481481481481</maxSize>
+
+			<maxSize ifSubset="randomRatio:original,themeRatio:43">0.1276041666666667 0.1314814814814815</maxSize>
+
+            <pos>0.2174479166666667 0.5953703703703704</pos>
+            <pos ifSubset="themeRatio:54">0.2174479166666667 0.699537037037037</pos>
+            <pos ifSubset="themeRatio:43">0.2174479166666667 0.687037037037037</pos>
+		</video>
+
+	<image name="logoTV" extra="true" ifSubset="tvLogo:yes">
+		<maxSize>0.1 0.06</maxSize>
+		<pos>0.23 0.9</pos>
+		<y ifSubset="themeRatio:43|54">0.918</y>
+	</image>
+
+	</view>
+	
+</theme>
