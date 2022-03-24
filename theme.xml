@@ -911,6 +911,9 @@ By Helmic
             <default>./_inc/noise.mp4</default>
             <path>{random}</path>
             <path ifSubset="randomCustom:yes">./${system.theme}/video.mp4</path>
+            <path ifSubset="randomCustom:yes">./_customVideos/${system.theme}.mp4</path>
+            <path ifArch="windows" ifSubset="randomCustom:yes">./../../../../_customVideos/${system.theme}.mp4</path>
+            <path ifNotArch="windows" ifSubset="randomCustom:yes">./../../_customVideos/${system.theme}.mp4</path>
             <opacity>0</opacity>
             <opacity ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff">1</opacity>
             <size ifSubset="systemRandomRatio:stretched">1 1</size>
@@ -1462,6 +1465,8 @@ By Helmic
             <path region="us">./${system.theme}/us/color.png</path>
             <path region="jp">./${system.theme}/jp/color.png</path>
 			<path ifSubset="transitionCustom:yes">./custom.png</path>
+            <path ifArch="windows" ifSubset="transitionCustom:yes">./../../../../custom.png</path>
+            <path ifNotArch="windows" ifSubset="transitionCustom:yes">./../../custom.png</path>
            	<maxSize>1 0.80</maxSize>
 			<pos>0.5 0.425</pos>
 			<origin>0.5 0.5</origin>
