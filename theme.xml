@@ -2117,7 +2117,7 @@ By Helmic
 			<color>00000000</color>
 			<colorEnd>00000000</colorEnd>
 			<gradientType>vertical</gradientType>
-			<reflexion>0 0</reflexion>
+			<reflexion>0.1 0</reflexion>
 			<storyboard event="open" ifSubset="previewDisplay:displayMix">
                 <animation property="color" from="00000000" to="ffffff" duration="1" mode="linear"/>
                 <animation property="colorEnd" from="00000000" to="aaaaaa" duration="1" mode="linear"/>
@@ -2155,7 +2155,6 @@ By Helmic
 			<x ifSubset="themeRatio:54|43">0.495</x>
 			<zIndex>3</zIndex>
 			<opacity>0</opacity>
-			<reflexion>0.1 0</reflexion>
 			<storyboard event="open" ifSubset="previewDisplay:displayMix">
                 <animation property="color" from="00000000" to="ffffff" duration="1" mode="linear"/>
                 <animation property="opacity" from="0" to="0" duration="900" mode="easeOut"/>
