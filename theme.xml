@@ -1530,7 +1530,7 @@ By Helmic
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-<!------------------------------------------------------------------TRANSITION,COMMONS--------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------TRANSITIONS,COMMONS--------------------------------------------------------------------------------------------->
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 	
@@ -1584,6 +1584,79 @@ By Helmic
 				<animation property="opacity" to="0" duration="300" mode="easeIn" begin="900"/>
 			</storyboard>
 		</image>
+
+		<image name="logoAssistTransition,logoAssistTransition2" extra="true">
+			<linearSmooth>true</linearSmooth>
+			<zIndex>99</zIndex>
+			<maxSize>0.3 0.18</maxSize>
+			<origin>1 1</origin>
+			<pos>1 0.8</pos>
+			<color>ffffff</color>
+			<opacity>0</opacity>
+
+			<storyboard>
+                <animation property="opacity" from="0" to="1" duration="75" mode="linear"/>
+                <animation property="opacity" from="1" to="1" duration="925" mode="linear" begin="75"/>
+                <animation property="opacity" from="1" to="0" duration="150" mode="easeOutQuint" begin="1000"/>
+            </storyboard>
+
+		<path ifArch="windows">./../es-theme-carbon/art/logos/${system.theme}.png</path>
+		<path ifArch="windows">./../es-theme-carbon/art/logos/${system.theme}.svg</path>
+		<path ifArch="windows">./../es-theme-carbon/art/logos/${system.theme}-w.png</path>
+		<path ifArch="windows">./../es-theme-carbon/art/logos/${system.theme}-w.svg</path>
+		<path ifArch="windows">./../es-theme-carbon/art/logos/${system.theme}-${lang}.png</path>
+		<path ifArch="windows">./../es-theme-carbon/art/logos/${system.theme}-${lang}.svg</path>
+
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}.png</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}.svg</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}-w.png</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}-w.svg</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}-${lang}.png</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}-${lang}.svg</path>
+
+		<path>./_inc/logos/${system.theme}.png</path>
+		<path>./_inc/logos/${system.theme}.svg</path>
+		<path>./_inc/logos/${system.theme}-clear.png</path>
+		<path>./_inc/logos/${system.theme}-clear.svg</path>
+		<path>./_inc/logos/${system.theme}-${lang}.png</path>
+		<path>./_inc/logos/${system.theme}-${lang}.svg</path>
+	</image>
+
+	<image name="logoAssistTransition" region="us" extra="true">
+
+		<path ifArch="windows">./../es-theme-carbon/art/logos/us/${system.theme}.png</path>
+		<path ifArch="windows">./../es-theme-carbon/art/logos/us/${system.theme}.svg</path>
+		<path ifArch="windows">./../es-theme-carbon/art/logos/us/${system.theme}-w.png</path>
+		<path ifArch="windows">./../es-theme-carbon/art/logos/us/${system.theme}-w.svg</path>
+
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/us/${system.theme}.png</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/us/${system.theme}.svg</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/us/${system.theme}-w.png</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/us/${system.theme}-w.svg</path>
+
+		<path>./_inc/logos/us/${system.theme}.png</path>
+		<path>./_inc/logos/us/${system.theme}.svg</path>
+		<path>./_inc/logos/us/${system.theme}-clear.png</path>
+		<path>./_inc/logos/us/${system.theme}-clear.svg</path>
+	</image>
+
+	<image name="logoAssistTransition" region="jp" extra="true">
+
+		<path ifArch="windows">./../es-theme-carbon/art/logos/jp/${system.theme}.png</path>
+		<path ifArch="windows">./../es-theme-carbon/art/logos/jp/${system.theme}.svg</path>
+		<path ifArch="windows">./../es-theme-carbon/art/logos/jp/${system.theme}-w.png</path>
+		<path ifArch="windows">./../es-theme-carbon/art/logos/jp/${system.theme}-w.svg</path>
+
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/jp/${system.theme}.png</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/jp/${system.theme}.svg</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/jp/${system.theme}-w.png</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/jp/${system.theme}-w.svg</path>
+
+		<path>./_inc/logos/jp/${system.theme}.png</path>
+		<path>./_inc/logos/jp/${system.theme}.svg</path>
+		<path>./_inc/logos/jp/${system.theme}-clear.png</path>
+		<path>./_inc/logos/jp/${system.theme}-clear.svg</path>
+	</image>
 
 		<text name="transitionFullName" extra="true">
 			<text>${system.fullName}</text>
