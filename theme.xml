@@ -1585,10 +1585,10 @@ By Helmic
 			</storyboard>
 		</image>
 
-		<image name="logoAssistTransition,logoAssistTransition2" extra="true">
+		<image name="logoAssistTransition" extra="true">
 			<linearSmooth>true</linearSmooth>
 			<zIndex>99</zIndex>
-			<maxSize>0.3 0.18</maxSize>
+			<maxSize>0.28 0.18</maxSize>
 			<origin>1 1</origin>
 			<pos>1 0.8</pos>
 			<color>ffffff</color>
