@@ -238,6 +238,7 @@ By Helmic
 		<include name="trinitron" displayName="${lang.trinitron}">./_inc/containers/trinitron/container.xml</include>
  		<include name="trinitronTile" displayName="${lang.trinitronTile}">./_inc/containers/trinitronTile/container.xml</include>
  		<include name="trinitronCustomTile" displayName="${lang.trinitronCustomTile}">./_inc/containers/trinitronTile/container.xml</include>
+ 		<include name="retro3" displayName="${lang.retro3}">./_inc/containers/retro3/container.xml</include>
  		<include name="retro3Tile" displayName="${lang.retro3Tile}">./_inc/containers/retro3Tile/container.xml</include>
  		<include name="retro3CustomTile" displayName="${lang.retro3CustomTile}">./_inc/containers/retro3Tile/container.xml</include>
  		<include name="retroRedTile" displayName="${lang.retroRedTile}">./_inc/containers/retroRedTile/container.xml</include>

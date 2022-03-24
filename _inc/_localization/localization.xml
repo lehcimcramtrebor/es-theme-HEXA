@@ -118,11 +118,15 @@ By Helmic
         <lang.trinitronCustomTile>trinitron with custom plate</lang.trinitronCustomTile>
         <lang.trinitronCustomTile lang="fr">trinitron et plaque custom</lang.trinitronCustomTile>
    		
-        <lang.retro3Tile>retro x3 with system plate</lang.retro3Tile>
-        <lang.retro3Tile lang="fr">retro 3x avec plaque système</lang.retro3Tile>
+        <lang.retro3>retro triple</lang.retro3>
+        <lang.retro3 lang="fr">retro triple</lang.retro3>
     		
-        <lang.retro3CustomTile>retro x3 with custom plate</lang.retro3CustomTile>
-        <lang.retro3CustomTile lang="fr">rétro 3x avec plaque custom</lang.retro3CustomTile>
+    		
+        <lang.retro3Tile>retro triple with system plate</lang.retro3Tile>
+        <lang.retro3Tile lang="fr">retro triple avec plaque système</lang.retro3Tile>
+    		
+        <lang.retro3CustomTile>retro triple with custom plate</lang.retro3CustomTile>
+        <lang.retro3CustomTile lang="fr">rétro triple avec plaque custom</lang.retro3CustomTile>
      		
         <lang.retroRedTile>retro red with system plate</lang.retroRedTile>
         <lang.retroRedTile lang="fr">rétro rouge avec plaque système</lang.retroRedTile>
