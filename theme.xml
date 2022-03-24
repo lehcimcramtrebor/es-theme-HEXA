@@ -204,6 +204,11 @@ By Helmic
 		<include name="colorsetAdaptive" displayName="${lang.colorsetAdaptive}"/>
 	</subset>
 
+	<subset name="randomCustom" displayName="${lang.randomCustom}" appliesTo="system,basic,detailed,grid,gamecarousel">
+        <include name="yes" displayName="${lang.yes}"/>
+		<include name="no" displayName="${lang.no}"/>
+    </subset>
+
 	<subset name="systemFade" displayName="${lang.systemFade}" appliesTo="system,basic,detailed,grid,gamecarousel">
 		<include name="no" displayName="${lang.no}"/>
         <include name="yes" displayName="${lang.yes}"/>
@@ -905,7 +910,7 @@ By Helmic
         <video name="randomVideos" extra="true">
             <default>./_inc/noise.mp4</default>
             <path>{random}</path>
-            <path>./${system.theme}/video.mp4</path>
+            <path ifSubset="randomCustom:yes">./${system.theme}/video.mp4</path>
             <opacity>0</opacity>
             <opacity ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff">1</opacity>
             <size ifSubset="systemRandomRatio:stretched">1 1</size>

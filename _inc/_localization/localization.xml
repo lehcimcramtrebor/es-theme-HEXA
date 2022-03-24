@@ -85,6 +85,9 @@ By Helmic
         
         <lang.randomNone>nothing</lang.randomNone>
         <lang.randomNone lang="fr">aucune</lang.randomNone>
+        
+        <lang.randomCustom>system view • allow custom videos</lang.randomCustom>
+        <lang.randomCustom lang="fr">vue système • autoriser les vidéos personnalisées</lang.randomCustom>
          
         <lang.systemFade>system view • apply wall's vignetting</lang.systemFade>
         <lang.systemFade lang="fr">vue système • appliquer un vignettage</lang.systemFade>
