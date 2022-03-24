@@ -159,6 +159,16 @@ By Helmic
 		<include name="scanlinesVertical" displayName="${lang.scanlinesVertical}"/>
     </subset>
 
+    <subset name="randomLogo" displayName="${lang.randomLogo}">
+		<include name="yes" displayName="${lang.yes}"/>
+        <include name="no" displayName="${lang.no}"/>
+    </subset>
+
+    <subset name="barName" displayName="${lang.barName}">
+		<include name="yes" displayName="${lang.yes}"/>
+        <include name="no" displayName="${lang.no}"/>
+    </subset>
+
     <subset name="wall" displayName="${lang.wall}">
         <include name="wallSynthwave2" displayName="${lang.wallSynthwave2}">./_inc/wallpapers/wallSynthwave2.xml</include>
         <include name="wallStainBroke" displayName="${lang.wallStainBroke}">./_inc/wallpapers/wallStainBroke.xml</include>
@@ -871,6 +881,36 @@ By Helmic
         		<animation property="pos" to="-0.01 0.98" duration="500" mode="easeOut" begin="3000"/>
         		<animation property="scale" to="0.35" duration="500" mode="easeOut" begin="3000"/>
 			</storyboard>
+
+
+
+
+
+			<!--videos without plate-->
+
+           <storyboard repeatAt="3500" ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff,randomLogo:no">
+                <animation property="color" from="ffffff00" to="ffffff00" duration="250" mode="linear"/>
+                <animation property="color" from="ffffff00" to="ffffff" duration="250" mode="easeOutQuint" begin="250"/>
+        		<animation property="offsetY" to="-0.03" autoreverse="true" duration="200" mode="easeOutCubic" begin="8950"/>
+
+			   <animation property="origin" to="0 1" duration="500" mode="easeOut" begin="3000"/>
+        		<animation property="pos" to="-0.01 0.98" duration="500" mode="easeOut" begin="3000"/>
+        		<animation property="scale" to="0.5" duration="500" mode="easeOut" begin="3000"/>
+        		<animation property="opacity" to="0" duration="500" mode="easeOut" begin="3000"/>
+			</storyboard>
+
+			<!--videos on 54 43 screens whithout plate-->
+
+           <storyboard repeatAt="3500" ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff,themeRatio:54|43,randomLogo:no">
+                <animation property="color" from="ffffff00" to="ffffff00" duration="250" mode="linear"/>
+                <animation property="color" from="ffffff00" to="ffffff" duration="250" mode="easeOutQuint" begin="250"/>
+        		<animation property="offsetY" to="-0.03" autoreverse="true" duration="200" mode="easeOutCubic" begin="8950"/>
+
+			   <animation property="origin" to="0 1" duration="500" mode="easeOut" begin="3000"/>
+        		<animation property="pos" to="-0.01 0.98" duration="500" mode="easeOut" begin="3000"/>
+        		<animation property="scale" to="0.35" duration="500" mode="easeOut" begin="3000"/>
+        		<animation property="opacity" to="0" duration="500" mode="easeOut" begin="3000"/>
+			</storyboard>
 			
 		</image>        
 		
@@ -1004,7 +1044,7 @@ By Helmic
 
 <!-----------------------------------------------------------------RANDOM VIDEO OSD------------------------------------------------------------------------------------------------->
 
-		<text name="systemNameRandomVideo" extra="true" ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff">
+		<text name="systemNameRandomVideo" extra="true" ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff,barName:yes">
 			<text>${system.name}</text>
             <fontPath>./_inc/fonts/${font1}</fontPath>
             <color>ffffff</color>
@@ -1019,7 +1059,7 @@ By Helmic
 			<h>0.034</h>
 		</text>
 
-		<text name="systemFullNameRandomVideo" extra="true" ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff">
+		<text name="systemFullNameRandomVideo" extra="true" ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff,barName:yes">
 			<text>${system.fullName}</text>
             <fontPath>./_inc/fonts/${font1}</fontPath>
             <color>eeeeee</color>
@@ -1041,7 +1081,7 @@ By Helmic
            </storyboard>
 		</control>
 
-		<image name="barName" extra="true" ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff">
+		<image name="barName" extra="true" ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff,barName:yes">
 			<linearSmooth>true</linearSmooth>
             <size>1 0.06</size>
             <pos>0.165 0.93075</pos>
