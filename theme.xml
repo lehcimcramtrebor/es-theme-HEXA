@@ -178,6 +178,7 @@ By Helmic
         <include name="wallFuturePink" displayName="${lang.wallFuturePink}">./_inc/wallpapers/wallFuturePink.xml</include>
         <include name="wallFuturePurple" displayName="${lang.wallFuturePurple}">./_inc/wallpapers/wallFuturePurple.xml</include>
         <include name="wallSynthwave" displayName="${lang.wallSynthwave}">./_inc/wallpapers/wallSynthwave.xml</include>
+        <include name="wallSynthwave2" displayName="${lang.wallSynthwave2}">./_inc/wallpapers/wallSynthwave2.xml</include>
     </subset>
  
 	<include>./_inc/wallpapers/${_paintSubset.allow}System.xml</include>
