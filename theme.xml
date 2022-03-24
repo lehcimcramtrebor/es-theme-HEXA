@@ -148,6 +148,17 @@ By Helmic
         <include name="randomNone" displayName="${lang.randomNone}"/>
     </subset>
 
+    <subset name="randomFx" displayName="${lang.randomFx}">
+		<include name="no" displayName="${lang.no}"/>
+		<include name="scanlinesFine" displayName="${lang.scanlinesFine}"/>
+		<include name="scanlinesVerticalFine" displayName="${lang.scanlinesVerticalFine}"/>
+		<include name="crt" displayName="${lang.crt}"/>
+		<include name="phosphore" displayName="${lang.phosphore}"/>
+		<include name="phosphorePlus" displayName="${lang.phosphorePlus}"/>
+		<include name="scanlines" displayName="${lang.scanlines}"/>
+		<include name="scanlinesVertical" displayName="${lang.scanlinesVertical}"/>
+    </subset>
+
     <subset name="wall" displayName="${lang.wall}">
         <include name="wallSynthwave2" displayName="${lang.wallSynthwave2}">./_inc/wallpapers/wallSynthwave2.xml</include>
         <include name="wallStainBroke" displayName="${lang.wallStainBroke}">./_inc/wallpapers/wallStainBroke.xml</include>
@@ -938,9 +949,9 @@ By Helmic
 			<origin>0.5 0.5</origin>
 			<zIndex>7</zIndex>
 			<tile>true</tile>
-			<path>./_inc/crt.png</path>
 			<visible>false</visible>
 			<visible ifSubset="staticEffect:no">true</visible>
+			<visible ifSubset="randomFx:no">false</visible>
 			<color>ffffff90</color>
 			<storyboard>
                 <animation property="opacity" from="0" to="0" duration="2850" mode="easeOut"/>
@@ -948,6 +959,35 @@ By Helmic
             </storyboard>
 		</image>
 
+
+		<image name="randomVideosFx" extra="true" ifSubset="randomFx:scanlines">
+			<path>./_inc/scanlines.png</path>
+		</image>
+
+		<image name="randomVideosFx" extra="true" ifSubset="randomFx:scanlinesFine">
+			<path>./_inc/scanlinesFine.png</path>
+		</image>
+
+		<image name="randomVideosFx" extra="true" ifSubset="randomFx:scanlinesVertical">
+			<path>./_inc/scanlinesVertical.png</path>
+		</image>
+
+		<image name="randomVideosFx" extra="true" ifSubset="randomFx:scanlinesVerticalFine">
+			<path>./_inc/scanlinesVerticalFine.png</path>
+		</image>
+
+		<image name="randomVideosFx" extra="true" ifSubset="randomFx:crt">
+			<path>./_inc/crt.png</path>
+			<color>ffffff90</color>
+		</image>
+
+		<image name="randomVideosFx" extra="true" ifSubset="randomFx:phosphore">
+			<path>./_inc/phosphore.png</path>
+		</image>
+
+		<image name="randomVideosFx" extra="true" ifSubset="randomFx:phosphorePlus">
+			<path>./_inc/phosphorePlus.png</path>
+		</image>
         	
 		<image name="videoBackFrame" extra="true" ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff">
 			<path>./_inc/white.png</path>
@@ -4140,14 +4180,14 @@ By Helmic
 
         <menuText name="menufooter">
             <fontPath>./_inc/fonts/${font2}</fontPath>
-            <fontSize>0.018</fontSize>
+            <fontSize>0.016</fontSize>
             <color ifSubset="menuColor:light|lightPlain">202020</color>
             <color ifSubset="menuColor:dark|darkGlass|darkPlain">aaaaaa</color>
         </menuText>
 
         <menuText name="menutext">
             <fontPath>./_inc/fonts/${font1}</fontPath>
-            <fontSize>0.018</fontSize>
+            <fontSize>0.016</fontSize>
             <color ifSubset="menuColor:light||lightPlain">121212</color>
             <color ifSubset="menuColor:light">121212</color>
             <color ifSubset="menuColor:dark|darkGlass|darkPlain">aaaaaa</color>

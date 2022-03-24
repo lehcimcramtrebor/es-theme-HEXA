@@ -10,10 +10,10 @@ By Helmic
     <variables>
 
         <lang.descriptionFontSize>game list view • description font size</lang.descriptionFontSize>
-        <lang.descriptionFontSize lang="fr">liste des jeux • taille de la police de la description</lang.descriptionFontSize>
+        <lang.descriptionFontSize lang="fr">listes de jeux • taille de la police de la description</lang.descriptionFontSize>
 
         <lang.gamelistFontSize>game list view • gamelist font size</lang.gamelistFontSize>
-        <lang.gamelistFontSize lang="fr">liste des jeux • taille de la police de la liste</lang.gamelistFontSize>
+        <lang.gamelistFontSize lang="fr">listes de jeux • taille de la police de la listes</lang.gamelistFontSize>
 
         <lang.bindingBarFontSize>system view • info bar font size</lang.bindingBarFontSize>
         <lang.bindingBarFontSize lang="fr">vue système • taille de la police de la barre d'infos</lang.bindingBarFontSize>
@@ -22,13 +22,13 @@ By Helmic
         <lang.helpFontSize lang="fr">aide • taille de la police de l'aide</lang.helpFontSize>
 
         <lang.gameInfosBarFontSize>game list view • game binds font size</lang.gameInfosBarFontSize>
-        <lang.gameInfosBarFontSize lang="fr">liste des jeux • taille de la police des infos de jeux</lang.gameInfosBarFontSize>
+        <lang.gameInfosBarFontSize lang="fr">listes de jeux • taille de la police des infos de jeux</lang.gameInfosBarFontSize>
 
         <lang.basicGamelistLines>game list view • basic gamelist lines</lang.basicGamelistLines>
-        <lang.basicGamelistLines lang="fr">liste des jeux • nombre de lignes de la liste basique</lang.basicGamelistLines>
+        <lang.basicGamelistLines lang="fr">listes de jeux • nombre de lignes de la listes basique</lang.basicGamelistLines>
 
         <lang.detailedGamelistLines>game list view • detailed gamelist lines</lang.detailedGamelistLines>
-        <lang.detailedGamelistLines lang="fr">liste des jeux • nombre de lignes de la liste détaillée</lang.detailedGamelistLines>
+        <lang.detailedGamelistLines lang="fr">listes de jeux • nombre de lignes de la listes détaillée</lang.detailedGamelistLines>
 
         <!--menu-->
         <lang.menuColor>general • menu theme</lang.menuColor>
@@ -52,6 +52,9 @@ By Helmic
         <!--ambiance-->
         <lang.ambiance>system view • ambiance</lang.ambiance>
         <lang.ambiance lang="fr">vue système • ambiance</lang.ambiance>
+
+        <lang.randomFx>system view • random videos fx when shader is off</lang.randomFx>
+        <lang.randomFx lang="fr">vue système • effet sur vidéos quand shader désactivé</lang.randomFx>
 
         <lang.overlayType>general • overlay type</lang.overlayType>
         <lang.overlayType lang="fr">général • type de l'overlay</lang.overlayType>
@@ -93,12 +96,12 @@ By Helmic
         <lang.systemFade lang="fr">vue système • appliquer un vignettage</lang.systemFade>
           
         <lang.gamelistFade>gamelist view • apply wall's vignetting</lang.gamelistFade>
-        <lang.gamelistFade lang="fr">liste des jeux • appliquer un vignettage</lang.gamelistFade>
+        <lang.gamelistFade lang="fr">listes de jeux • appliquer un vignettage</lang.gamelistFade>
 
 		<!--tv choice-->
 		
         <lang.container>gamelist view • video screen</lang.container>
-        <lang.container lang="fr">liste des jeux • écran vidéo</lang.container>
+        <lang.container lang="fr">listes de jeux • écran vidéo</lang.container>
  		
         <lang.cathod>cathodic tv (white)</lang.cathod>
         <lang.cathod lang="fr">écran cathodique (blanc)</lang.cathod>
@@ -291,7 +294,7 @@ By Helmic
 
 		<!--random ratio-->
 		<lang.randomRatio>gamelist • video ratio</lang.randomRatio>
-		<lang.randomRatio lang="fr">liste des jeux • aspect des vidéos</lang.randomRatio>
+		<lang.randomRatio lang="fr">listes de jeux • aspect des vidéos</lang.randomRatio>
 
 		<lang.original>original</lang.original>
 		<lang.original lang="fr">respecté</lang.original>
@@ -369,7 +372,7 @@ By Helmic
 
 		<!--wall paint-->
 		<lang.gamelistWallPaint>gamelist • wall paint</lang.gamelistWallPaint>
-		<lang.gamelistWallPaint lang="fr">liste de jeux • peindre le mur</lang.gamelistWallPaint>
+		<lang.gamelistWallPaint lang="fr">listes de jeux • peindre le mur</lang.gamelistWallPaint>
 
 		<lang.yes>yes</lang.yes>
 		<lang.yes lang="fr">oui</lang.yes>
