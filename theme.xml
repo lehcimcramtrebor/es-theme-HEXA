@@ -231,8 +231,8 @@ By Helmic
     </subset>
 
 	<subset name="systemFade" displayName="${lang.systemFade}" appliesTo="system,basic,detailed,grid,gamecarousel">
-		<include name="no" displayName="${lang.no}"/>
         <include name="yes" displayName="${lang.yes}"/>
+		<include name="no" displayName="${lang.no}"/>
     </subset>
 
 	<subset name="randomArt" displayName="${lang.randomArt}" appliesTo="system,basic,detailed,grid,gamecarousel">
