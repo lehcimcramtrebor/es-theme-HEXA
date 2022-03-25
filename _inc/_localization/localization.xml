@@ -56,6 +56,9 @@ By Helmic
         <lang.randomFx>system view • random videos fx when shader is off</lang.randomFx>
         <lang.randomFx lang="fr">vue système • effet sur vidéos quand shader désactivé</lang.randomFx>
 
+        <lang.randomOverlay>system view • display overlay on random videos</lang.randomOverlay>
+        <lang.randomOverlay lang="fr">vue système • afficher l'overlay sur les vidéos</lang.randomOverlay>
+
         <lang.barName>system view • display info bar on random videos</lang.barName>
         <lang.barName lang="fr">vue système • afficher la barre d'infos sur les vidéos</lang.barName>
 
