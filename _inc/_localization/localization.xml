@@ -126,6 +126,12 @@ By Helmic
 
         <lang.astro>astro city</lang.astro>
         <lang.astro lang="fr">astro city</lang.astro>
+ 
+        <lang.astroTile>astro city with system plate</lang.astroTile>
+        <lang.astroTile lang="fr">astro city et plaque système</lang.astroTile>
+ 
+        <lang.astroCustomTile>astro city with custom plate</lang.astroCustomTile>
+        <lang.astroCustomTile lang="fr">astro city et plaque custom</lang.astroCustomTile>
   		
         <lang.trinitron>trinitron</lang.trinitron>
         <lang.trinitron lang="fr">trinitron</lang.trinitron>

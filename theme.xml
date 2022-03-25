@@ -265,6 +265,8 @@ By Helmic
 <!--	<include name="automatic" displayName="${lang.automatic}">./_inc/containers/automatic.xml</include>		-->
 		<include name="bartop" displayName="${lang.bartop}">./_inc/containers/bartop/container.xml</include>
 		<include name="astro" displayName="${lang.astro}">./_inc/containers/astro/container.xml</include>
+		<include name="astroTile" displayName="${lang.astroTile}">./_inc/containers/astroTile/container.xml</include>
+		<include name="astroCustomTile" displayName="${lang.astroCustomTile}">./_inc/containers/astroTile/container.xml</include>
         <include name="cathodBlack" displayName="${lang.cathodBlack}">./_inc/containers/cathodBlack/container.xml</include>
         <include name="cathod" displayName="${lang.cathod}">./_inc/containers/cathod/container.xml</include>
 		<include name="flat" displayName="${lang.flat}">./_inc/containers/flat/container.xml</include>
@@ -2818,7 +2820,7 @@ By Helmic
 <!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 <!------------------------------------------------------------------GAME INFOS BAR-------------------------------------------------------------------------------------------------->
 <!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->		
-		<text name="md_lbl_genre,md_lbl_releasedate,md_lbl_rating,md_lbl_publisher,md_publisher">
+		<text name="md_lbl_genre,md_lbl_releasedate,md_lbl_rating,md_lbl_publisher,md_publisher,md_lbl_players">
 			<color>00000000</color>
 		</text>
 
