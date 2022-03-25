@@ -264,7 +264,7 @@ By Helmic
 	<subset name="container" displayName="${lang.container}" appliesTo="system,basic,detailed,grid,gamecarousel">
 <!--	<include name="automatic" displayName="${lang.automatic}">./_inc/containers/automatic.xml</include>		-->
 		<include name="bartop" displayName="${lang.bartop}">./_inc/containers/bartop/container.xml</include>
-		<include name="arcade" displayName="${lang.arcade}">./_inc/containers/arcade/container.xml</include>
+		<include name="astro" displayName="${lang.astro}">./_inc/containers/astro/container.xml</include>
         <include name="cathodBlack" displayName="${lang.cathodBlack}">./_inc/containers/cathodBlack/container.xml</include>
         <include name="cathod" displayName="${lang.cathod}">./_inc/containers/cathod/container.xml</include>
 		<include name="flat" displayName="${lang.flat}">./_inc/containers/flat/container.xml</include>
