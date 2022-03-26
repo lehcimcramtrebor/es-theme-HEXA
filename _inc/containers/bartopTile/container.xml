@@ -74,8 +74,9 @@ By Helmic
 			<size ifSubset="themeRatio:54">0.1791666666666667 0.1740740740740741</size>
 			<size ifSubset="themeRatio:43">0.1791666666666667 0.1851851851851852</size>
 
-			<path>./../../phosphore.png</path>
-			<color>ffffff80</color>
+			<path>./../../scanlinesVerticalFine.png</path>
+
+			<color>ffffff90</color>
 			<storyboard>
                 <animation property="opacity" from="0" to="1" autoreverse="true" repeat="forever" duration="25" mode="linear"/>
             </storyboard>

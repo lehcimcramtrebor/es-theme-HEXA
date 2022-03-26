@@ -82,11 +82,17 @@ By Helmic
 			<size>0.3416666666666667 0.3185185185185185</size>
 			<size ifSubset="themeRatio:54">0.3416666666666667 0.2462962962962963</size>
 			<size ifSubset="themeRatio:43">0.3416666666666667 0.2435185185185185</size>
-			<path>./../../crt.png</path>
+			<path>./../../phosphore.png</path>
+
 			<color>ffffff90</color>
+			<storyboard>
+                <animation property="opacity" from="0" to="1" autoreverse="true" repeat="forever" duration="25" mode="linear"/>
+            </storyboard>
 		</image>
 
         <video name="md_video">
+			<default>./../../glitch.mp4</default>
+
 			<size ifSubset="randomRatio:stretched">0.3416666666666667 0.3185185185185185</size>
 
 			<size ifSubset="randomRatio:stretched,themeRatio:54">0.3416666666666667 0.2462962962962963</size>
