@@ -272,21 +272,23 @@ By Helmic
         <include name="cathodBlack" displayName="${lang.cathodBlack}">./_inc/containers/cathodBlack/container.xml</include>
         <include name="cathod" displayName="${lang.cathod}">./_inc/containers/cathod/container.xml</include>
 		<include name="flat" displayName="${lang.flat}">./_inc/containers/flat/container.xml</include>
+		<include name="flatTile" displayName="${lang.flatTile}">./_inc/containers/flatTile/container.xml</include>
+		<include name="flatCustomTile" displayName="${lang.flatCustomTile}">./_inc/containers/flatTile/container.xml</include>
 		<include name="trinitron" displayName="${lang.trinitron}">./_inc/containers/trinitron/container.xml</include>
  		<include name="trinitronTile" displayName="${lang.trinitronTile}">./_inc/containers/trinitronTile/container.xml</include>
  		<include name="trinitronCustomTile" displayName="${lang.trinitronCustomTile}">./_inc/containers/trinitronTile/container.xml</include>
  		<include name="retro3" displayName="${lang.retro3}">./_inc/containers/retro3/container.xml</include>
  		<include name="retro3Tile" displayName="${lang.retro3Tile}">./_inc/containers/retro3Tile/container.xml</include>
  		<include name="retro3CustomTile" displayName="${lang.retro3CustomTile}">./_inc/containers/retro3Tile/container.xml</include>
+ 		<include name="retroRed" displayName="${lang.retroRed}">./_inc/containers/retroRed/container.xml</include>
  		<include name="retroRedTile" displayName="${lang.retroRedTile}">./_inc/containers/retroRedTile/container.xml</include>
  		<include name="retroRedCustomTile" displayName="${lang.retroRedCustomTile}">./_inc/containers/retroRedTile/container.xml</include>
+ 		<include name="retroWhite" displayName="${lang.retroWhite}">./_inc/containers/retroWhite/container.xml</include>
  		<include name="retroWhiteTile" displayName="${lang.retroWhiteTile}">./_inc/containers/retroWhiteTile/container.xml</include>
  		<include name="retroWhiteCustomTile" displayName="${lang.retroWhiteCustomTile}">./_inc/containers/retroWhiteTile/container.xml</include>
+ 		<include name="retroBlack" displayName="${lang.retroBlack}">./_inc/containers/retroBlack/container.xml</include>
  		<include name="retroBlackTile" displayName="${lang.retroBlackTile}">./_inc/containers/retroBlackTile/container.xml</include>
  		<include name="retroBlackCustomTile" displayName="${lang.retroBlackCustomTile}">./_inc/containers/retroBlackTile/container.xml</include>
- 		<include name="retroRed" displayName="${lang.retroRed}">./_inc/containers/retroRed/container.xml</include>
- 		<include name="retroWhite" displayName="${lang.retroWhite}">./_inc/containers/retroWhite/container.xml</include>
- 		<include name="retroBlack" displayName="${lang.retroBlack}">./_inc/containers/retroBlack/container.xml</include>
    </subset>
 
 	<subset name="tvLogo" displayName="${lang.tvLogo}" appliesTo="system,basic,detailed,grid,gamecarousel">

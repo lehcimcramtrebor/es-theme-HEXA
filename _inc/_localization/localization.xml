@@ -121,6 +121,12 @@ By Helmic
         <lang.flat>flat tv</lang.flat>
         <lang.flat lang="fr">écran plat</lang.flat>
   		
+        <lang.flatTile>flat tv with system plate</lang.flatTile>
+        <lang.flatTile lang="fr">écran plat et plaque système</lang.flatTile>
+  		
+        <lang.flatCustomTile>flat tv with custom plate</lang.flatCustomTile>
+        <lang.flatCustomTile lang="fr">écran plat et plaque custom</lang.flatCustomTile>
+  		
         <lang.bartop>bartop</lang.bartop>
         <lang.bartop lang="fr">bartop</lang.bartop>
   		
