@@ -148,6 +148,32 @@ By Helmic
         <include name="randomNone" displayName="${lang.randomNone}"/>
     </subset>
 
+    <subset name="randomOverlay" displayName="${lang.randomOverlay}">
+		<include name="yes" displayName="${lang.yes}"/>
+        <include name="no" displayName="${lang.no}"/>
+    </subset>
+
+    <subset name="randomFx" displayName="${lang.randomFx}">
+		<include name="no" displayName="${lang.no}"/>
+		<include name="scanlinesFine" displayName="${lang.scanlinesFine}"/>
+		<include name="scanlinesVerticalFine" displayName="${lang.scanlinesVerticalFine}"/>
+		<include name="crt" displayName="${lang.crt}"/>
+		<include name="phosphore" displayName="${lang.phosphore}"/>
+		<include name="phosphorePlus" displayName="${lang.phosphorePlus}"/>
+		<include name="scanlines" displayName="${lang.scanlines}"/>
+		<include name="scanlinesVertical" displayName="${lang.scanlinesVertical}"/>
+    </subset>
+
+    <subset name="randomLogo" displayName="${lang.randomLogo}">
+		<include name="yes" displayName="${lang.yes}"/>
+        <include name="no" displayName="${lang.no}"/>
+    </subset>
+
+    <subset name="barName" displayName="${lang.barName}">
+		<include name="yes" displayName="${lang.yes}"/>
+        <include name="no" displayName="${lang.no}"/>
+    </subset>
+
     <subset name="wall" displayName="${lang.wall}">
         <include name="wallSynthwave2" displayName="${lang.wallSynthwave2}">./_inc/wallpapers/wallSynthwave2.xml</include>
         <include name="wallStainBroke" displayName="${lang.wallStainBroke}">./_inc/wallpapers/wallStainBroke.xml</include>
@@ -207,32 +233,6 @@ By Helmic
 	<subset name="randomCustom" displayName="${lang.randomCustom}" appliesTo="system,basic,detailed,grid,gamecarousel">
         <include name="yes" displayName="${lang.yes}"/>
 		<include name="no" displayName="${lang.no}"/>
-    </subset>
-
-    <subset name="randomOverlay" displayName="${lang.randomOverlay}" appliesTo="system,basic,detailed,grid,gamecarousel">
-		<include name="yes" displayName="${lang.yes}"/>
-        <include name="no" displayName="${lang.no}"/>
-    </subset>
-
-    <subset name="randomFx" displayName="${lang.randomFx}" appliesTo="system,basic,detailed,grid,gamecarousel">
-		<include name="no" displayName="${lang.no}"/>
-		<include name="scanlinesFine" displayName="${lang.scanlinesFine}"/>
-		<include name="scanlinesVerticalFine" displayName="${lang.scanlinesVerticalFine}"/>
-		<include name="crt" displayName="${lang.crt}"/>
-		<include name="phosphore" displayName="${lang.phosphore}"/>
-		<include name="phosphorePlus" displayName="${lang.phosphorePlus}"/>
-		<include name="scanlines" displayName="${lang.scanlines}"/>
-		<include name="scanlinesVertical" displayName="${lang.scanlinesVertical}"/>
-    </subset>
-
-    <subset name="randomLogo" displayName="${lang.randomLogo}" appliesTo="system,basic,detailed,grid,gamecarousel">
-		<include name="yes" displayName="${lang.yes}"/>
-        <include name="no" displayName="${lang.no}"/>
-    </subset>
-
-    <subset name="barName" displayName="${lang.barName}" appliesTo="system,basic,detailed,grid,gamecarousel">
-		<include name="yes" displayName="${lang.yes}"/>
-        <include name="no" displayName="${lang.no}"/>
     </subset>
 
 	<subset name="systemFade" displayName="${lang.systemFade}" appliesTo="system,basic,detailed,grid,gamecarousel">
