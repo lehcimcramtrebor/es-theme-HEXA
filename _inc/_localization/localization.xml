@@ -115,8 +115,21 @@ By Helmic
         <lang.cathod>cathodic tv (white)</lang.cathod>
         <lang.cathod lang="fr">écran cathodique (blanc)</lang.cathod>
  		
+        <lang.cathodTile>cathodic tv (white) with system plate</lang.cathodTile>
+        <lang.cathodTile lang="fr">écran cathodique (blanc) et plaque système</lang.cathodTile>
+ 		
+        <lang.cathodCustomTile>cathodic tv (white) with custom plate</lang.cathodCustomTile>
+        <lang.cathodCustomTile lang="fr">écran cathodique (blanc) et plaque custom</lang.cathodCustomTile>
+ 		
         <lang.cathodBlack>cathodic tv (black)</lang.cathodBlack>
         <lang.cathodBlack lang="fr">écran cathodique (noir)</lang.cathodBlack>
+
+        <lang.cathodBlackTile>cathodic tv (black) with system plate</lang.cathodBlackTile>
+        <lang.cathodBlackTile lang="fr">écran cathodique (noir) et plaque système</lang.cathodBlackTile>
+ 		
+        <lang.cathodBlackCustomTile>cathodic tv (black) with custom plate</lang.cathodBlackCustomTile>
+        <lang.cathodBlackCustomTile lang="fr">écran cathodique (noir) et plaque custom</lang.cathodBlackCustomTile>
+ 		
  		
         <lang.flat>flat tv</lang.flat>
         <lang.flat lang="fr">écran plat</lang.flat>
