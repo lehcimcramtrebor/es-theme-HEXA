@@ -1,0 +1,63 @@
+<!--
+HEXA Theme for Retrobat 4+ / Batocera v32+
+By Helmic
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+<formatVersion>7</formatVersion>
+		
+	<view name="detailed,grid,gamecarousel">
+
+		<image name="led,rev,next,play" extra="true">
+			<visible>false</visible>
+		</image>
+
+		<text name="logoContainer" extra="true">
+			<visible>false</visible>
+		</text>
+		
+		<image name="videoBackFrame" extra="true">
+			<visible>false</visible>
+		</image>
+
+		<image name="randomVideosFx" extra="true">
+
+            <pos>0.3182291666666667 0.6634259259259259</pos>
+            <pos ifSubset="themeRatio:54">0.3182291666666667 0.7467592592592593</pos>
+            <pos ifSubset="themeRatio:43">0.3182291666666667 0.737962962962963</pos>
+
+			<size>0.6072916666666667 0.5768518518518519</size>
+			<size ifSubset="themeRatio:54">0.6072916666666667 0.4046296296296296</size>
+			<size ifSubset="themeRatio:43">0.6072916666666667 0.4333333333333333</size>
+
+			<path>./../../scanlinesVerticalFine.png</path>
+
+			<color>ffffff90</color>
+			<storyboard>
+                <animation property="opacity" from="0" to="1" autoreverse="true" repeat="forever" duration="25" mode="linear"/>
+            </storyboard>
+		</image>
+
+        <video name="md_video">
+
+			<size ifSubset="randomRatio:stretched">0.6072916666666667 0.5768518518518519</size>
+			<size ifSubset="randomRatio:stretched,themeRatio:54">0.6072916666666667 0.4046296296296296</size>
+			<size ifSubset="randomRatio:stretched,themeRatio:43">0.6072916666666667 0.4333333333333333</size>
+
+			<maxSize ifSubset="randomRatio:original">0.6072916666666667 0.5768518518518519</maxSize>
+			<maxSize ifSubset="randomRatio:original,themeRatio:54">0.6072916666666667 0.4046296296296296</maxSize>
+			<maxSize ifSubset="randomRatio:original,themeRatio:43">0.6072916666666667 0.4333333333333333</maxSize>
+
+            <pos>0.3182291666666667 0.6634259259259259</pos>
+            <pos ifSubset="themeRatio:54">0.3182291666666667 0.7467592592592593</pos>
+            <pos ifSubset="themeRatio:43">0.3182291666666667 0.737962962962963</pos>
+		</video>
+
+	<image name="logoTV" extra="true" ifSubset="tvLogo:yes">
+			<visible>false</visible>
+	</image>
+
+	</view>
+	
+</theme>

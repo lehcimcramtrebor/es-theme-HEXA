@@ -203,6 +203,54 @@ By Helmic
      		
         <lang.retroBlack>retro black</lang.retroBlack>
         <lang.retroBlack lang="fr">rétro noire</lang.retroBlack>
+     		
+        <lang.16x9>16x9 frame</lang.16x9>
+        <lang.16x9 lang="fr">cadre chromatique 16x9</lang.16x9>
+     		
+        <lang.16x9Tile>16x9 frame with system plate</lang.16x9Tile>
+        <lang.16x9Tile lang="fr">cadre chromatique 16x9 avec plaque système</lang.16x9Tile>
+     		
+        <lang.16x9CustomTile>16x9 frame with custom plate</lang.16x9CustomTile>
+        <lang.16x9CustomTile lang="fr">cadre chromatique 16x9 avec plaque custom</lang.16x9CustomTile>
+     		
+        <lang.4x3>4x3 frame</lang.4x3>
+        <lang.4x3 lang="fr">cadre chromatique 4x3</lang.4x3>
+     		
+        <lang.4x3Tile>4x3 frame with system plate</lang.4x3Tile>
+        <lang.4x3Tile lang="fr">cadre chromatique 4x3 avec plaque système</lang.4x3Tile>
+     		
+        <lang.4x3CustomTile>4x3 frame with custom plate</lang.4x3CustomTile>
+        <lang.4x3CustomTile lang="fr">cadre chromatique 4x3 avec plaque custom</lang.4x3CustomTile>
+     		
+        <lang.3x2>3x2 frame</lang.3x2>
+        <lang.3x2 lang="fr">cadre chromatique 3x2</lang.3x2>
+     		
+        <lang.3x2Tile>3x2 frame with system plate</lang.3x2Tile>
+        <lang.3x2Tile lang="fr">cadre chromatique 3x2 avec plaque système</lang.3x2Tile>
+     		
+        <lang.3x2CustomTile>3x2 frame with custom plate</lang.3x2CustomTile>
+        <lang.3x2CustomTile lang="fr">cadre chromatique 3x2 avec plaque custom</lang.3x2CustomTile>
+     		
+        <lang.10x9>10x9 frame</lang.10x9>
+        <lang.10x9 lang="fr">cadre chromatique 10x9</lang.10x9>
+     		
+        <lang.10x9Tile>10x9 frame with system plate</lang.10x9Tile>
+        <lang.10x9Tile lang="fr">cadre chromatique 10x9 avec plaque système</lang.10x9Tile>
+     		
+        <lang.10x9CustomTile>10x9 frame with custom plate</lang.10x9CustomTile>
+        <lang.10x9CustomTile lang="fr">cadre chromatique 10x9 avec plaque custom</lang.10x9CustomTile>
+     		
+        <lang.2x3>2x3 frame</lang.2x3>
+        <lang.2x3 lang="fr">cadre chromatique 2x3</lang.2x3>
+     		
+        <lang.2x3Tile>2x3 frame with system plate</lang.2x3Tile>
+        <lang.2x3Tile lang="fr">cadre chromatique 2x3 avec plaque système</lang.2x3Tile>
+     		
+        <lang.2x3CustomTile>2x3 frame with custom plate</lang.2x3CustomTile>
+        <lang.2x3CustomTile lang="fr">cadre chromatique 2x3 avec plaque custom</lang.2x3CustomTile>
+     		
+        <lang.justVideo>no container</lang.justVideo>
+        <lang.justVideo lang="fr">juste la vidéo</lang.justVideo>
  
         <!--help icons-->
         <lang.helpIcons>help • buttons style</lang.helpIcons>

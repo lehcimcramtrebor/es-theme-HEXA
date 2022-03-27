@@ -305,6 +305,29 @@ By Helmic
  		<include name="retroBlackTile" displayName="${lang.retroBlackTile}">./_inc/containers/retroBlackTile/container.xml</include>
  		<include name="retroBlackCustomTile" displayName="${lang.retroBlackCustomTile}">./_inc/containers/retroBlackTile/container.xml</include>
 
+
+ 		<include name="16x9" displayName="${lang.16x9}">./_inc/containers/16x9/container.xml</include>
+ 		<include name="16x9Tile" displayName="${lang.16x9Tile}">./_inc/containers/16x9Tile/container.xml</include>
+ 		<include name="16x9CustomTile" displayName="${lang.16x9CustomTile}">./_inc/containers/16x9Tile/container.xml</include>
+
+ 		<include name="4x3" displayName="${lang.4x3}">./_inc/containers/4x3/container.xml</include>
+ 		<include name="4x3Tile" displayName="${lang.4x3Tile}">./_inc/containers/4x3Tile/container.xml</include>
+ 		<include name="4x3CustomTile" displayName="${lang.4x3CustomTile}">./_inc/containers/4x3Tile/container.xml</include>
+
+ 		<include name="3x2" displayName="${lang.3x2}">./_inc/containers/3x2/container.xml</include>
+ 		<include name="3x2Tile" displayName="${lang.3x2Tile}">./_inc/containers/3x2Tile/container.xml</include>
+ 		<include name="3x2CustomTile" displayName="${lang.3x2CustomTile}">./_inc/containers/3x2Tile/container.xml</include>
+
+ 		<include name="10x9" displayName="${lang.10x9}">./_inc/containers/10x9/container.xml</include>
+ 		<include name="10x9Tile" displayName="${lang.10x9Tile}">./_inc/containers/10x9Tile/container.xml</include>
+ 		<include name="10x9CustomTile" displayName="${lang.10x9CustomTile}">./_inc/containers/10x9Tile/container.xml</include>
+
+ 		<include name="2x3" displayName="${lang.2x3}">./_inc/containers/2x3/container.xml</include>
+ 		<include name="2x3Tile" displayName="${lang.2x3Tile}">./_inc/containers/2x3Tile/container.xml</include>
+ 		<include name="2x3CustomTile" displayName="${lang.2x3CustomTile}">./_inc/containers/2x3Tile/container.xml</include>
+
+ 		<include name="justVideo" displayName="${lang.justVideo}">./_inc/containers/justVideo/container.xml</include>
+
    </subset>
 
 	<subset name="tvLogo" displayName="${lang.tvLogo}" appliesTo="system,basic,detailed,grid,gamecarousel">
