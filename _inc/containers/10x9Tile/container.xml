@@ -20,11 +20,11 @@ By Helmic
             <path ifSubset="container:10x9CustomTile">./../../../custom.png</path>
             <path ifArch="windows" ifSubset="container:10x9CustomTile">./../../../../../../../custom.png</path>
             <path ifNotArch="windows" ifSubset="container:10x9CustomTile">./../../../../../custom.png</path>
-			<maxSize>0.155 1</maxSize>
-			<pos>0 0.972</pos>
-			<pos ifSubset="themeRatio:54">0 0.965</pos>
-			<pos ifSubset="themeRatio:43">0 0.969</pos>
-			<origin>0.02 1</origin>
+			<maxSize>0.14 1</maxSize>
+			<pos>0.535 0.913</pos>
+			<pos ifSubset="themeRatio:54">0.535 0.922</pos>
+			<pos ifSubset="themeRatio:43">0.535 0.925</pos>
+			<origin>1 1</origin>
             <zIndex>15</zIndex>
 			<color>ffffff</color>
 			</image>
@@ -50,25 +50,25 @@ By Helmic
 		</image>
 
 		<text name="logoContainer" extra="true">
- 			<pos>0.3845 0.9265</pos>
-			<pos ifSubset="themeRatio:54">0.3869791666666667 0.933</pos>
-			<pos ifSubset="themeRatio:43">0.3869791666666667 0.936</pos>
+ 			<pos>0.249 0.8675</pos>
+			<pos ifSubset="themeRatio:54">0.249 0.891</pos>
+			<pos ifSubset="themeRatio:43">0.249 0.892</pos>
 		</text>
 		
 		<image name="videoBackFrame" extra="true">
-            <pos>0.3869791666666667 0.7148148148148148</pos>
-            <pos ifSubset="themeRatio:54">0.3869791666666667 0.7828703703703704</pos>
-            <pos ifSubset="themeRatio:43">0.3869791666666667 0.7773148148148148</pos>
+            <pos>0.2502604166666667 0.6560185185185185</pos>
+            <pos ifSubset="themeRatio:54">0.2502604166666667 0.7412037037037037</pos>
+            <pos ifSubset="themeRatio:43">0.2502604166666667 0.7328703703703704</pos>
 
 			<size>0.28 0.44</size>
-			<size ifSubset="themeRatio:54">0.28 0.301</size>
-			<size ifSubset="themeRatio:43">0.28 0.332</size>
+			<size ifSubset="themeRatio:54">0.28 0.33</size>
+			<size ifSubset="themeRatio:43">0.28 0.335</size>
 		</image>
 
 		<image name="randomVideosFx" extra="true">
-            <pos>0.3869791666666667 0.7148148148148148</pos>
-            <pos ifSubset="themeRatio:54">0.3869791666666667 0.7828703703703704</pos>
-            <pos ifSubset="themeRatio:43">0.3869791666666667 0.7773148148148148</pos>
+            <pos>0.2502604166666667 0.6560185185185185</pos>
+            <pos ifSubset="themeRatio:54">0.2502604166666667 0.7412037037037037</pos>
+            <pos ifSubset="themeRatio:43">0.2502604166666667 0.7328703703703704</pos>
 
 			<size>0.2744791666666667 0.4388888888888889</size>
 			<size ifSubset="themeRatio:54">0.2744791666666667 0.3083333333333333</size>
@@ -92,15 +92,15 @@ By Helmic
 			<maxSize ifSubset="randomRatio:original,themeRatio:54">0.2744791666666667 0.3083333333333333</maxSize>
 			<maxSize ifSubset="randomRatio:original,themeRatio:43">0.2744791666666667 0.3305555555555556</maxSize>
 
-            <pos>0.3869791666666667 0.7148148148148148</pos>
-            <pos ifSubset="themeRatio:54">0.3869791666666667 0.7828703703703704</pos>
-            <pos ifSubset="themeRatio:43">0.3869791666666667 0.7773148148148148</pos>
+            <pos>0.2502604166666667 0.6560185185185185</pos>
+            <pos ifSubset="themeRatio:54">0.2502604166666667 0.7412037037037037</pos>
+            <pos ifSubset="themeRatio:43">0.2502604166666667 0.7328703703703704</pos>
 		</video>
 
 	<image name="logoTV" extra="true" ifSubset="tvLogo:yes">
 		<maxSize>0.09 0.08</maxSize>
-		<pos>0.25 0.92</pos>
-		<y ifSubset="themeRatio:43|54">0.93</y>
+		<pos>0.115 0.86</pos>
+		<y ifSubset="themeRatio:43|54">0.885</y>
 	</image>
 
 	</view>
