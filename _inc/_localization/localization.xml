@@ -114,86 +114,24 @@ By Helmic
  		
         <lang.cathod>cathodic tv (white)</lang.cathod>
         <lang.cathod lang="fr">écran cathodique (blanc)</lang.cathod>
- 		
-        <lang.cathodTile>cathodic tv (white) with system plate</lang.cathodTile>
-        <lang.cathodTile lang="fr">écran cathodique (blanc) et plaque système</lang.cathodTile>
- 		
-        <lang.cathodCustomTile>cathodic tv (white) with custom plate</lang.cathodCustomTile>
-        <lang.cathodCustomTile lang="fr">écran cathodique (blanc) et plaque custom</lang.cathodCustomTile>
- 		
+		 		
         <lang.cathodBlack>cathodic tv (black)</lang.cathodBlack>
         <lang.cathodBlack lang="fr">écran cathodique (noir)</lang.cathodBlack>
-
-        <lang.cathodBlackTile>cathodic tv (black) with system plate</lang.cathodBlackTile>
-        <lang.cathodBlackTile lang="fr">écran cathodique (noir) et plaque système</lang.cathodBlackTile>
- 		
-        <lang.cathodBlackCustomTile>cathodic tv (black) with custom plate</lang.cathodBlackCustomTile>
-        <lang.cathodBlackCustomTile lang="fr">écran cathodique (noir) et plaque custom</lang.cathodBlackCustomTile>
- 		
- 		
+			
         <lang.flat>flat tv</lang.flat>
         <lang.flat lang="fr">écran plat</lang.flat>
-  		
-        <lang.flatTile>flat tv with system plate</lang.flatTile>
-        <lang.flatTile lang="fr">écran plat et plaque système</lang.flatTile>
-  		
-        <lang.flatCustomTile>flat tv with custom plate</lang.flatCustomTile>
-        <lang.flatCustomTile lang="fr">écran plat et plaque custom</lang.flatCustomTile>
-  		
+		
         <lang.bartop>bartop</lang.bartop>
         <lang.bartop lang="fr">bartop</lang.bartop>
-  		
-        <lang.bartopTile>bartop with system plate</lang.bartopTile>
-        <lang.bartopTile lang="fr">bartop et plaque système</lang.bartopTile>
-  		
-        <lang.bartopCustomTile>bartop with custom plate</lang.bartopCustomTile>
-        <lang.bartopCustomTile lang="fr">bartop et plaque custom</lang.bartopCustomTile>
 
         <lang.astro>astro city</lang.astro>
         <lang.astro lang="fr">astro city</lang.astro>
- 
-        <lang.astroTile>astro city with system plate</lang.astroTile>
-        <lang.astroTile lang="fr">astro city et plaque système</lang.astroTile>
- 
-        <lang.astroCustomTile>astro city with custom plate</lang.astroCustomTile>
-        <lang.astroCustomTile lang="fr">astro city et plaque custom</lang.astroCustomTile>
-  		
+
         <lang.trinitron>trinitron</lang.trinitron>
         <lang.trinitron lang="fr">trinitron</lang.trinitron>
-  		
-        <lang.trinitronTile>trinitron with system plate</lang.trinitronTile>
-        <lang.trinitronTile lang="fr">trinitron et plaque système</lang.trinitronTile>
-   		
-        <lang.trinitronCustomTile>trinitron with custom plate</lang.trinitronCustomTile>
-        <lang.trinitronCustomTile lang="fr">trinitron et plaque custom</lang.trinitronCustomTile>
-   		
+
         <lang.retro3>retro triple</lang.retro3>
         <lang.retro3 lang="fr">retro triple</lang.retro3>
-    		
-    		
-        <lang.retro3Tile>retro triple with system plate</lang.retro3Tile>
-        <lang.retro3Tile lang="fr">retro triple avec plaque système</lang.retro3Tile>
-    		
-        <lang.retro3CustomTile>retro triple with custom plate</lang.retro3CustomTile>
-        <lang.retro3CustomTile lang="fr">rétro triple avec plaque custom</lang.retro3CustomTile>
-     		
-        <lang.retroRedTile>retro red with system plate</lang.retroRedTile>
-        <lang.retroRedTile lang="fr">rétro rouge avec plaque système</lang.retroRedTile>
-     		
-        <lang.retroRedCustomTile>retro red with custom plate</lang.retroRedCustomTile>
-        <lang.retroRedCustomTile lang="fr">rétro rouge avec plaque custom</lang.retroRedCustomTile>
-     		
-        <lang.retroWhiteTile>retro white with system plate</lang.retroWhiteTile>
-        <lang.retroWhiteTile lang="fr">rétro blanche avec plaque système</lang.retroWhiteTile>
-     		
-        <lang.retroWhiteCustomTile>retro white with custom plate</lang.retroWhiteCustomTile>
-        <lang.retroWhiteCustomTile lang="fr">rétro blanche avec plaque custom</lang.retroWhiteCustomTile>
-     		
-        <lang.retroBlackTile>retro black with system plate</lang.retroBlackTile>
-        <lang.retroBlackTile lang="fr">rétro noire avec plaque système</lang.retroBlackTile>
-     		
-        <lang.retroBlackCustomTile>retro black with custom plate</lang.retroBlackCustomTile>
-        <lang.retroBlackCustomTile lang="fr">rétro noire avec plaque custom</lang.retroBlackCustomTile>
      		
         <lang.retroRed>retro red</lang.retroRed>
         <lang.retroRed lang="fr">rétro rouge</lang.retroRed>
@@ -206,54 +144,39 @@ By Helmic
      		
         <lang.16x9>16x9 frame</lang.16x9>
         <lang.16x9 lang="fr">cadre chromatique 16x9</lang.16x9>
-     		
-        <lang.16x9Tile>16x9 frame with system plate</lang.16x9Tile>
-        <lang.16x9Tile lang="fr">cadre chromatique 16x9 avec plaque système</lang.16x9Tile>
-     		
-        <lang.16x9CustomTile>16x9 frame with custom plate</lang.16x9CustomTile>
-        <lang.16x9CustomTile lang="fr">cadre chromatique 16x9 avec plaque custom</lang.16x9CustomTile>
-     		
+  		
         <lang.4x3>4x3 frame</lang.4x3>
         <lang.4x3 lang="fr">cadre chromatique 4x3</lang.4x3>
-     		
-        <lang.4x3Tile>4x3 frame with system plate</lang.4x3Tile>
-        <lang.4x3Tile lang="fr">cadre chromatique 4x3 avec plaque système</lang.4x3Tile>
-     		
-        <lang.4x3CustomTile>4x3 frame with custom plate</lang.4x3CustomTile>
-        <lang.4x3CustomTile lang="fr">cadre chromatique 4x3 avec plaque custom</lang.4x3CustomTile>
-     		
+ 		
         <lang.3x2>3x2 frame</lang.3x2>
         <lang.3x2 lang="fr">cadre chromatique 3x2</lang.3x2>
-     		
-        <lang.3x2Tile>3x2 frame with system plate</lang.3x2Tile>
-        <lang.3x2Tile lang="fr">cadre chromatique 3x2 avec plaque système</lang.3x2Tile>
-     		
-        <lang.3x2CustomTile>3x2 frame with custom plate</lang.3x2CustomTile>
-        <lang.3x2CustomTile lang="fr">cadre chromatique 3x2 avec plaque custom</lang.3x2CustomTile>
-     		
+ 		
         <lang.10x9>10x9 frame</lang.10x9>
         <lang.10x9 lang="fr">cadre chromatique 10x9</lang.10x9>
-     		
-        <lang.10x9Tile>10x9 frame with system plate</lang.10x9Tile>
-        <lang.10x9Tile lang="fr">cadre chromatique 10x9 avec plaque système</lang.10x9Tile>
-     		
-        <lang.10x9CustomTile>10x9 frame with custom plate</lang.10x9CustomTile>
-        <lang.10x9CustomTile lang="fr">cadre chromatique 10x9 avec plaque custom</lang.10x9CustomTile>
-     		
+		
         <lang.2x3>2x3 frame</lang.2x3>
         <lang.2x3 lang="fr">cadre chromatique 2x3</lang.2x3>
-     		
-        <lang.2x3Tile>2x3 frame with system plate</lang.2x3Tile>
-        <lang.2x3Tile lang="fr">cadre chromatique 2x3 avec plaque système</lang.2x3Tile>
-     		
-        <lang.2x3CustomTile>2x3 frame with custom plate</lang.2x3CustomTile>
-        <lang.2x3CustomTile lang="fr">cadre chromatique 2x3 avec plaque custom</lang.2x3CustomTile>
-     		
+    		
         <lang.justVideo>no container</lang.justVideo>
-        <lang.justVideo lang="fr">juste la vidéo</lang.justVideo>
+        <lang.justVideo lang="fr">aucun</lang.justVideo>
      		
         <lang.justVideoLittle>no container (little video)</lang.justVideoLittle>
-        <lang.justVideoLittle lang="fr">juste la vidéo (plus petite)</lang.justVideoLittle>
+        <lang.justVideoLittle lang="fr">aucun (petite vidéo)</lang.justVideoLittle>
+     		
+
+
+
+
+
+        <lang.containerTile>gamelist view • display plate with video container</lang.containerTile>
+        <lang.containerTile lang="fr">listes de jeux • afficher une tuile avec le container vidéo</lang.containerTile>
+
+        <lang.tile>system</lang.tile>
+        <lang.tile lang="fr">système</lang.tile>
+
+        <lang.customTile>custom</lang.customTile>
+        <lang.customTile lang="fr">custom</lang.customTile>
+ 
  
         <!--help icons-->
         <lang.helpIcons>help • buttons style</lang.helpIcons>
