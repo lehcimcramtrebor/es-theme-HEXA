@@ -327,6 +327,7 @@ By Helmic
  		<include name="2x3CustomTile" displayName="${lang.2x3CustomTile}">./_inc/containers/2x3Tile/container.xml</include>
 
  		<include name="justVideo" displayName="${lang.justVideo}">./_inc/containers/justVideo/container.xml</include>
+ 		<include name="justVideoLittle" displayName="${lang.justVideoLittle}">./_inc/containers/justVideoLittle/container.xml</include>
 
    </subset>
 

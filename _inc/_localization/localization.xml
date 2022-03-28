@@ -251,6 +251,9 @@ By Helmic
      		
         <lang.justVideo>no container</lang.justVideo>
         <lang.justVideo lang="fr">juste la vidéo</lang.justVideo>
+     		
+        <lang.justVideoLittle>no container (little video)</lang.justVideoLittle>
+        <lang.justVideoLittle lang="fr">juste la vidéo (plus petite)</lang.justVideoLittle>
  
         <!--help icons-->
         <lang.helpIcons>help • buttons style</lang.helpIcons>
