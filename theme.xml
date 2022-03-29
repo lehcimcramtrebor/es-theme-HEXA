@@ -314,6 +314,8 @@ By Helmic
 
  		<include name="monitorIbm" displayName="${lang.monitorIbm}">./_inc/containers/monitorIbm.xml</include>
 
+ 		<include name="monitorAmstrad" displayName="${lang.monitorAmstrad}">./_inc/containers/monitorAmstrad.xml</include>
+
  		<include name="16x9" displayName="${lang.16x9}">./_inc/containers/16x9.xml</include>
 
  		<include name="4x3" displayName="${lang.4x3}">./_inc/containers/4x3.xml</include>
