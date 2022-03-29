@@ -18,6 +18,13 @@ By Helmic
     <!--LANGS-->
     
 	<include>./_inc/_localization/localization.xml</include>
+ 
+	<!-- DEFAULT AUTOMATIC CONTAINER-->
+	<variables><container>4x3</container></variables>
+
+	<!-- INCLUDE SYSTEM VARIABLES-->
+	<include>./${system.theme}/container.xml</include>
+ 
 	
 	<!--SUBSETS-->
 
@@ -267,9 +274,13 @@ By Helmic
 <!---------------------------------------------------------CONTAINERS---------------------------------------------------------------------------------------->
 <!----------------------------------------------------------------------------------------------------------------------------------------------------------->
 <!----------------------------------------------------------------------------------------------------------------------------------------------------------->
- 
+
 	<subset name="container" displayName="${lang.container}" appliesTo="system,basic,detailed,grid,gamecarousel">
-<!--	<include name="automatic" displayName="${lang.automatic}">./_inc/containers/automatic.xml</include>		-->
+
+
+		<include name="automatic" displayName="${lang.automatic}">./_inc/containers/automatic.xml</include>		
+
+
 
 		<include name="bartop" displayName="${lang.bartop}">./_inc/containers/bartop.xml</include>
 

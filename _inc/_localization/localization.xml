@@ -109,6 +109,9 @@ By Helmic
 
 		<!--tv choice-->
 		
+        <lang.automatic>automatic (in build for now)</lang.automatic>
+        <lang.automatic lang="fr">automatique (non opérationnel encore)</lang.automatic>
+
         <lang.container>gamelist view • video screen</lang.container>
         <lang.container lang="fr">listes de jeux • écran vidéo</lang.container>
  		
