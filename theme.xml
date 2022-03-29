@@ -316,6 +316,8 @@ By Helmic
 
  		<include name="monitorAmstrad" displayName="${lang.monitorAmstrad}">./_inc/containers/monitorAmstrad.xml</include>
 
+ 		<include name="monitorAmiga" displayName="${lang.monitorAmiga}">./_inc/containers/monitorAmiga.xml</include>
+
  		<include name="16x9" displayName="${lang.16x9}">./_inc/containers/16x9.xml</include>
 
  		<include name="4x3" displayName="${lang.4x3}">./_inc/containers/4x3.xml</include>
