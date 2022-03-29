@@ -320,6 +320,8 @@ By Helmic
 
  		<include name="monitorAmiga1081" displayName="${lang.monitorAmiga1081}">./_inc/containers/monitorAmiga1081.xml</include>
 
+ 		<include name="monitorAmiga1084" displayName="${lang.monitorAmiga1084}">./_inc/containers/monitorAmiga1084.xml</include>
+
  		<include name="16x9" displayName="${lang.16x9}">./_inc/containers/16x9.xml</include>
 
  		<include name="4x3" displayName="${lang.4x3}">./_inc/containers/4x3.xml</include>
