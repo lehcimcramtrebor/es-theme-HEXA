@@ -308,6 +308,8 @@ By Helmic
 
  		<include name="tv43Philips" displayName="${lang.tv43Philips}">./_inc/containers/tv43Philips.xml</include>
 
+ 		<include name="monitor" displayName="${lang.monitor}">./_inc/containers/monitor.xml</include>
+
 
  		<include name="16x9" displayName="${lang.16x9}">./_inc/containers/16x9.xml</include>
 
