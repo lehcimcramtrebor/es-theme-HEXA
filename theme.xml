@@ -302,6 +302,8 @@ By Helmic
 
  		<include name="retroBlack" displayName="${lang.retroBlack}">./_inc/containers/retroBlack.xml</include>
 
+ 		<include name="tv43" displayName="${lang.tv43}">./_inc/containers/tv43.xml</include>
+
 
  		<include name="16x9" displayName="${lang.16x9}">./_inc/containers/16x9.xml</include>
 
@@ -313,6 +315,10 @@ By Helmic
 
  		<include name="2x3" displayName="${lang.2x3}">./_inc/containers/2x3.xml</include>
 
+ 		<include name="justVideo" displayName="${lang.justVideo}">./_inc/containers/justVideo.xml</include>
+
+ 		<include name="justVideoLittle" displayName="${lang.justVideoLittle}">./_inc/containers/justVideoLittle.xml</include>
+
 
    </subset>
 
@@ -322,16 +328,8 @@ By Helmic
 		<include name="customTile" displayName="${lang.customTile}">./_inc/containers/Tile.xml</include>
 	</subset>
 
+	<include>./_inc/containers/${container}/container.xml</include>
 	<include>./_inc/containers/${container}${tile}/container.xml</include>
- 
-	<!--FIX INEXISTANT TILE OPTIONS-->
-	<subset name="container" displayName="${lang.container}" appliesTo="system,basic,detailed,grid,gamecarousel">
-
- 		<include name="justVideo" displayName="${lang.justVideo}">./_inc/containers/justVideo/container.xml</include>
-
- 		<include name="justVideoLittle" displayName="${lang.justVideoLittle}">./_inc/containers/justVideoLittle/container.xml</include>
-
-   </subset>
 
 <!----------------------------------------------------------------------------------------------------------------------------------------------------------->
 <!----------------------------------------------------------------------------------------------------------------------------------------------------------->

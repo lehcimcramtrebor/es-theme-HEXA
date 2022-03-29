@@ -22,18 +22,7 @@ By Helmic
 		</image>
 
 		<image name="randomVideosFx" extra="true">
-
-            <pos>0.3182291666666667 0.6634259259259259</pos>
-            <pos ifSubset="themeRatio:54">0.3182291666666667 0.7467592592592593</pos>
-            <pos ifSubset="themeRatio:43">0.3182291666666667 0.737962962962963</pos>
-
-			<size>0.4385416666666667 0.4388888888888889</size>
-			<size ifSubset="themeRatio:54">0.4385416666666667 0.3083333333333333</size>
-			<size ifSubset="themeRatio:43">0.4385416666666667 0.3305555555555556</size>
-
-			<path>./../../scanlinesFine.png</path>
-
-			<color>ffffff90</color>
+			<visible>false</visible>
 		</image>
 
         <video name="md_video">
