@@ -304,6 +304,8 @@ By Helmic
 
  		<include name="tv43" displayName="${lang.tv43}">./_inc/containers/tv43.xml</include>
 
+ 		<include name="tv43White" displayName="${lang.tv43White}">./_inc/containers/tv43White.xml</include>
+
 
  		<include name="16x9" displayName="${lang.16x9}">./_inc/containers/16x9.xml</include>
 
