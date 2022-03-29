@@ -139,6 +139,9 @@ By Helmic
         <lang.tv43White>4:3 white tv</lang.tv43White>
         <lang.tv43White lang="fr">tv 4:3 blanche</lang.tv43White>
 
+        <lang.tv43Philips>4:3 philips tv</lang.tv43Philips>
+        <lang.tv43Philips lang="fr">tv 4:3 philips</lang.tv43Philips>
+
         <lang.retro3>retro triple</lang.retro3>
         <lang.retro3 lang="fr">retro triple</lang.retro3>
      		
