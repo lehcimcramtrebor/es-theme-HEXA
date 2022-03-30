@@ -347,9 +347,9 @@ By Helmic
    </subset>
 
 	<subset name="containerTile" displayName="${lang.containerTile}" appliesTo="system,basic,detailed,grid,gamecarousel">
-		<include name="no" displayName="${lang.no}"/>
 		<include name="tile" displayName="${lang.tile}">./_inc/containers/Tile.xml</include>
 		<include name="customTile" displayName="${lang.customTile}">./_inc/containers/Tile.xml</include>
+		<include name="no" displayName="${lang.no}"/>
 	</subset>
 
 	<include>./_inc/containers/${container}/container.xml</include>
