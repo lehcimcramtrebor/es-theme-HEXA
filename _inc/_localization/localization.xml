@@ -142,6 +142,9 @@ By Helmic
         <lang.tv43Philips>4:3 philips tv</lang.tv43Philips>
         <lang.tv43Philips lang="fr">tv 4:3 philips</lang.tv43Philips>
 
+        <lang.monitorTeknina>teknina mi-22 monitor</lang.monitorTeknina>
+        <lang.monitorTeknina lang="fr">moniteur teknina mi-22</lang.monitorTeknina>
+
         <lang.monitor>crt monitor</lang.monitor>
         <lang.monitor lang="fr">moniteur crt</lang.monitor>
 

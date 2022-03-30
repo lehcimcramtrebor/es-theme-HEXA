@@ -324,6 +324,8 @@ By Helmic
 
  		<include name="monitorAtari" displayName="${lang.monitorAtari}">./_inc/containers/monitorAtari.xml</include>
 
+ 		<include name="monitorTeknina" displayName="${lang.monitorTeknina}">./_inc/containers/monitorTeknina.xml</include>
+
  		<include name="gw" displayName="${lang.gw}">./_inc/containers/gw.xml</include>
 
  		<include name="16x9" displayName="${lang.16x9}">./_inc/containers/16x9.xml</include>
@@ -340,7 +342,7 @@ By Helmic
 
  		<include name="justVideoLittle" displayName="${lang.justVideoLittle}">./_inc/containers/justVideoLittle.xml</include>
 
- 		<include name="monitorAtari" displayName="${lang.monitorAtari}">./_inc/containers/monitorAtari.xml</include>
+
 
    </subset>
 
