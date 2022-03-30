@@ -169,6 +169,12 @@ By Helmic
         <lang.monitorAtari>atari sc1224 monitor</lang.monitorAtari>
         <lang.monitorAtari lang="fr">moniteur atari sc1224</lang.monitorAtari>
 
+        <lang.sf1>super famicom naizou tv sf1</lang.sf1>
+        <lang.sf1 lang="fr">super famicom naizou tv sf1</lang.sf1>
+
+        <lang.x1>sharp x1</lang.x1>
+        <lang.x1 lang="fr">sharp x1</lang.x1>
+
         <lang.gw>game & watch frame</lang.gw>
         <lang.gw lang="fr">cadre game & watch</lang.gw>
 
@@ -211,7 +217,7 @@ By Helmic
 
 
         <lang.containerTile>gamelist view • display plate with video container</lang.containerTile>
-        <lang.containerTile lang="fr">listes de jeux • afficher une tuile avec le container vidéo</lang.containerTile>
+        <lang.containerTile lang="fr">listes de jeux • afficher une plaque avec le container vidéo</lang.containerTile>
 
         <lang.tile>system</lang.tile>
         <lang.tile lang="fr">système</lang.tile>
@@ -399,8 +405,8 @@ By Helmic
 		<lang.43>4/3</lang.43>
 
 		<!--static tiles-->
-		<lang.staticTiles>carousel • immobilize inactive tiles</lang.staticTiles>
-		<lang.staticTiles lang="fr">carrousel • immobiliser les tuiles non actives</lang.staticTiles>
+		<lang.staticTiles>carousel • immobilize inactive plates</lang.staticTiles>
+		<lang.staticTiles lang="fr">carrousel • immobiliser les plaques non actives</lang.staticTiles>
 
 		<!--arrows-->
 		<lang.arrows>carousel • arrows</lang.arrows>
@@ -515,14 +521,14 @@ By Helmic
 		<lang.logoVisualAssistance>carousel • display logo visual assistance</lang.logoVisualAssistance>
 		<lang.logoVisualAssistance lang="fr">carrousel • afficher l'assistance visuelle des logos</lang.logoVisualAssistance>
 
-		<lang.tvLogo>gamelist • display tv logos</lang.tvLogo>
-		<lang.tvLogo lang="fr">listes de jeux • afficher les logos dans la tv</lang.tvLogo>
+		<lang.tvLogo>gamelist • display system logos on video</lang.tvLogo>
+		<lang.tvLogo lang="fr">listes de jeux • afficher les logos système dans la vidéo</lang.tvLogo>
 
-		<lang.tvOs>gamelist • display os on tv</lang.tvOs>
-		<lang.tvOs lang="fr">listes de jeux • afficher l'os sur la tv</lang.tvOs>
+		<lang.tvOs>gamelist • display os on video container (when available)</lang.tvOs>
+		<lang.tvOs lang="fr">listes de jeux • afficher l'os sur le cadre vidéo (quand disponible)</lang.tvOs>
 
-		<lang.tvSnaphot>gamelist • display snapshot on tv</lang.tvSnaphot>
-		<lang.tvSnaphot lang="fr">listes de jeux • afficher le screenshot sur la tv</lang.tvSnaphot>
+		<lang.tvSnaphot>gamelist • display snapshot before video</lang.tvSnaphot>
+		<lang.tvSnaphot lang="fr">listes de jeux • afficher le screenshot avant la vidéo</lang.tvSnaphot>
 
 		<!--wall choice-->
 		<lang.wall>system view • choose wall</lang.wall>

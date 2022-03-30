@@ -326,6 +326,10 @@ By Helmic
 
  		<include name="monitorTeknina" displayName="${lang.monitorTeknina}">./_inc/containers/monitorTeknina.xml</include>
 
+ 		<include name="sf1" displayName="${lang.sf1}">./_inc/containers/sf1.xml</include>
+
+ 		<include name="x1" displayName="${lang.x1}">./_inc/containers/x1.xml</include>
+
  		<include name="gw" displayName="${lang.gw}">./_inc/containers/gw.xml</include>
 
  		<include name="16x9" displayName="${lang.16x9}">./_inc/containers/16x9.xml</include>
