@@ -330,6 +330,12 @@ By Helmic
 
  		<include name="x1" displayName="${lang.x1}">./_inc/containers/x1.xml</include>
 
+ 		<include name="cx1" displayName="${lang.cx1}">./_inc/containers/cx1.xml</include>
+
+ 		<include name="helmet" displayName="${lang.helmet}">./_inc/containers/helmet.xml</include>
+
+ 		<include name="pokemon" displayName="${lang.pokemon}">./_inc/containers/pokemon.xml</include>
+
  		<include name="gw" displayName="${lang.gw}">./_inc/containers/gw.xml</include>
 
  		<include name="16x9" displayName="${lang.16x9}">./_inc/containers/16x9.xml</include>
