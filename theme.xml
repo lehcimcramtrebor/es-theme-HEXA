@@ -340,7 +340,7 @@ By Helmic
 
  		<include name="justVideoLittle" displayName="${lang.justVideoLittle}">./_inc/containers/justVideoLittle.xml</include>
 
- 		<include name="" displayName="${lang.monitorAtari}">./_inc/containers/monitorAtari.xml</include>
+ 		<include name="monitorAtari" displayName="${lang.monitorAtari}">./_inc/containers/monitorAtari.xml</include>
 
    </subset>
 
