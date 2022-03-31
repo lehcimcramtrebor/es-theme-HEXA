@@ -204,6 +204,21 @@ By Helmic
       		
         <lang.retroOld2>old tv (alt)</lang.retroOld2>
         <lang.retroOld2 lang="fr">vieille tv (alt)</lang.retroOld2>
+      		
+        <lang.retroOld3>old tv (alt wood)</lang.retroOld3>
+        <lang.retroOld3 lang="fr">vieille tv (alt bois)</lang.retroOld3>
+      		
+        <lang.pico8>pico-8</lang.pico8>
+        <lang.pico8 lang="fr">pico-8</lang.pico8>
+      		
+        <lang.tic80>tic-80 (pico style blue)</lang.tic80>
+        <lang.tic80 lang="fr">tic-80 (style pico bleu)</lang.tic80>
+      		
+        <lang.pygame>pygame (pico style grey)</lang.pygame>
+        <lang.pygame lang="fr">pygame (style pico gris)</lang.pygame>
+      		
+        <lang.easyrpg>easy rpg (pico style green)</lang.easyrpg>
+        <lang.easyrpg lang="fr">easy rpg (style pico vert)</lang.easyrpg>
       		     		
         <lang.16x9>16x9 frame</lang.16x9>
         <lang.16x9 lang="fr">cadre chromatique 16x9</lang.16x9>

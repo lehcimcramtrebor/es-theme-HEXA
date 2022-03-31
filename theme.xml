@@ -306,6 +306,8 @@ By Helmic
 
  		<include name="retroOld2" displayName="${lang.retroOld2}">./_inc/containers/retroOld2.xml</include>
 
+ 		<include name="retroOld3" displayName="${lang.retroOld3}">./_inc/containers/retroOld3.xml</include>
+
  		<include name="tv43" displayName="${lang.tv43}">./_inc/containers/tv43.xml</include>
 
  		<include name="tv43White" displayName="${lang.tv43White}">./_inc/containers/tv43White.xml</include>
@@ -337,6 +339,14 @@ By Helmic
  		<include name="cx1" displayName="${lang.cx1}">./_inc/containers/cx1.xml</include>
 
  		<include name="helmet" displayName="${lang.helmet}">./_inc/containers/helmet.xml</include>
+
+ 		<include name="pico8" displayName="${lang.pico8}">./_inc/containers/pico8.xml</include>
+
+ 		<include name="tic80" displayName="${lang.tic80}">./_inc/containers/tic80.xml</include>
+
+ 		<include name="pygame" displayName="${lang.pygame}">./_inc/containers/pygame.xml</include>
+
+ 		<include name="easyrpg" displayName="${lang.easyrpg}">./_inc/containers/easyrpg.xml</include>
 
  		<include name="pokemon" displayName="${lang.pokemon}">./_inc/containers/pokemon.xml</include>
 
