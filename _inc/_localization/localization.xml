@@ -198,7 +198,13 @@ By Helmic
      		
         <lang.retroBlack>retro black</lang.retroBlack>
         <lang.retroBlack lang="fr">rétro noire</lang.retroBlack>
-     		
+      		
+        <lang.retroOld>old tv</lang.retroOld>
+        <lang.retroOld lang="fr">veille tv</lang.retroOld>
+      		
+        <lang.retroOld2>old tv (alt)</lang.retroOld2>
+        <lang.retroOld2 lang="fr">vieille tv (alt)</lang.retroOld2>
+      		     		
         <lang.16x9>16x9 frame</lang.16x9>
         <lang.16x9 lang="fr">cadre chromatique 16x9</lang.16x9>
   		

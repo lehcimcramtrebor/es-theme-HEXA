@@ -302,6 +302,10 @@ By Helmic
 
  		<include name="retroBlack" displayName="${lang.retroBlack}">./_inc/containers/retroBlack.xml</include>
 
+ 		<include name="retroOld" displayName="${lang.retroOld}">./_inc/containers/retroOld.xml</include>
+
+ 		<include name="retroOld2" displayName="${lang.retroOld2}">./_inc/containers/retroOld2.xml</include>
+
  		<include name="tv43" displayName="${lang.tv43}">./_inc/containers/tv43.xml</include>
 
  		<include name="tv43White" displayName="${lang.tv43White}">./_inc/containers/tv43White.xml</include>
