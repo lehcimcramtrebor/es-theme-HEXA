@@ -9,7 +9,7 @@ By Helmic
 		
 <variables>
 
-<container>pico8</container>
+<container>pygame</container>
 
 </variables>
 

@@ -277,9 +277,8 @@ By Helmic
 
 	<subset name="container" displayName="${lang.container}" appliesTo="system,basic,detailed,grid,gamecarousel">
 
-<!--
-		<include name="automatic" displayName="${lang.automatic}">./_inc/containers/automatic.xml</include>		
--->
+
+
 
 
 		<include name="bartop" displayName="${lang.bartop}">./_inc/containers/bartop.xml</include>
@@ -315,6 +314,8 @@ By Helmic
  		<include name="tv43Philips" displayName="${lang.tv43Philips}">./_inc/containers/tv43Philips.xml</include>
 
  		<include name="monitor" displayName="${lang.monitor}">./_inc/containers/monitor.xml</include>
+
+ 		<include name="monitorWhite" displayName="${lang.monitorWhite}">./_inc/containers/monitorWhite.xml</include>
 
  		<include name="monitorGrey" displayName="${lang.monitorGrey}">./_inc/containers/monitorGrey.xml</include>
 
@@ -366,6 +367,7 @@ By Helmic
 
  		<include name="justVideoLittle" displayName="${lang.justVideoLittle}">./_inc/containers/justVideoLittle.xml</include>
 
+		<include name="automatic" displayName="${lang.automatic}">./_inc/containers/automatic.xml</include>		
 
 
    </subset>

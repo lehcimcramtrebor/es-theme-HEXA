@@ -9,7 +9,9 @@ By Helmic
 		
 <variables>
 
-<container>4x3</container>
+
+<container>tv43Philips</container>
+<container region="us">trinitron</container>
 
 </variables>
 

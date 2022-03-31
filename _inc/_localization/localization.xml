@@ -110,7 +110,7 @@ By Helmic
 		<!--tv choice-->
 		
         <lang.automatic>automatic (in build for now)</lang.automatic>
-        <lang.automatic lang="fr">automatique (non opérationnel encore)</lang.automatic>
+        <lang.automatic lang="fr">automatique (encore en construction)</lang.automatic>
 
         <lang.container>gamelist view • video screen</lang.container>
         <lang.container lang="fr">listes de jeux • écran vidéo</lang.container>
@@ -147,6 +147,9 @@ By Helmic
 
         <lang.monitor>crt monitor</lang.monitor>
         <lang.monitor lang="fr">moniteur crt</lang.monitor>
+
+        <lang.monitorWhite>crt monitor (white)</lang.monitorWhite>
+        <lang.monitorWhite lang="fr">moniteur crt (blanc)</lang.monitorWhite>
 
         <lang.monitorGrey>crt monitor (grey)</lang.monitorGrey>
         <lang.monitorGrey lang="fr">moniteur crt (gris)</lang.monitorGrey>

@@ -54,6 +54,10 @@ By Helmic
 			<pos ifSubset="themeRatio:54">0.4630208333333333 0.936</pos>
 			<pos ifSubset="themeRatio:43">0.4630208333333333 0.939</pos>
 		</text>
+
+        <video name="bartopNoise1,bartopNoise2" extra="true">
+			<visible>false</visible>
+		</video>
 		
 		<image name="videoBackFrame" extra="true">
             <pos>0.4630208333333333 0.7046296296296296</pos>
