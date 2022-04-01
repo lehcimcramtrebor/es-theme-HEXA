@@ -156,10 +156,9 @@ By Helmic
     </subset>
 
     <subset name="wall" displayName="${lang.wall}">
-        <include name="wallSynthwave3" displayName="${lang.wallSynthwave3}">./_inc/wallpapers/wallSynthwave3.xml</include>
+        <include name="wallPlates" displayName="${lang.wallPlates}">./_inc/wallpapers/wallPlates.xml</include>
         <include name="wallStainBroke" displayName="${lang.wallStainBroke}">./_inc/wallpapers/wallStainBroke.xml</include>
 		<include name="wallBrushedPlate" displayName="${lang.wallBrushedPlate}">./_inc/wallpapers/wallBrushedPlate.xml</include>
-        <include name="wallPlates" displayName="${lang.wallPlates}">./_inc/wallpapers/wallPlates.xml</include>
         <include name="wallSteelX" displayName="${lang.wallSteelX}">./_inc/wallpapers/wallSteelX.xml</include>
         <include name="wallDiagonalPlates" displayName="${lang.wallDiagonalPlates}">./_inc/wallpapers/wallDiagonalPlates.xml</include>
         <include name="wallDiagonalPlates2" displayName="${lang.wallDiagonalPlates2}">./_inc/wallpapers/wallDiagonalPlates2.xml</include>
@@ -187,6 +186,7 @@ By Helmic
         <include name="wallFuturePurple" displayName="${lang.wallFuturePurple}">./_inc/wallpapers/wallFuturePurple.xml</include>
         <include name="wallSynthwave" displayName="${lang.wallSynthwave}">./_inc/wallpapers/wallSynthwave.xml</include>
         <include name="wallSynthwave2" displayName="${lang.wallSynthwave2}">./_inc/wallpapers/wallSynthwave2.xml</include>
+        <include name="wallSynthwave3" displayName="${lang.wallSynthwave3}">./_inc/wallpapers/wallSynthwave3.xml</include>
     </subset>
  
 	<include>./_inc/wallpapers/${_paintSubset.allow}System.xml</include>
@@ -499,8 +499,8 @@ By Helmic
 	<include>./_inc/wallpapers/${_paintSubset.allow}Gamelist.xml</include>
 
  	<subset name="gamelistFade" displayName="${lang.gamelistFade}" appliesTo="basic,detailed,grid,gamecarousel">
-		<include name="no" displayName="${lang.no}"/>
         <include name="yes" displayName="${lang.yes}"/>
+		<include name="no" displayName="${lang.no}"/>
     </subset>
 
 	<!--COLORSETS-->
