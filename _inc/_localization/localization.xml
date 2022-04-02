@@ -145,6 +145,9 @@ By Helmic
         <lang.taitoHb>taito (hb mame color)</lang.taitoHb>
         <lang.taitoHb lang="fr">taito (style hbmame)</lang.taitoHb>
 
+        <lang.taitoTriforce>taito (triforce color)</lang.taitoTriforce>
+        <lang.taitoTriforce lang="fr">taito (style triforce)</lang.taitoTriforce>
+
         <lang.trinitron>trinitron</lang.trinitron>
         <lang.trinitron lang="fr">trinitron</lang.trinitron>
 

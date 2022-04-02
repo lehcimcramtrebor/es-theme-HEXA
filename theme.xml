@@ -293,6 +293,8 @@ By Helmic
 
 		<include name="taitoTekno" displayName="${lang.taitoTekno}">./_inc/containers/taitoTekno.xml</include>
 
+		<include name="taitoTriforce" displayName="${lang.taitoTriforce}">./_inc/containers/taitoTriforce.xml</include>
+
         <include name="cathodBlack" displayName="${lang.cathodBlack}">./_inc/containers/cathodBlack.xml</include>
 
         <include name="cathod" displayName="${lang.cathod}">./_inc/containers/cathod.xml</include>
