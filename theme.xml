@@ -285,6 +285,14 @@ By Helmic
 
 		<include name="astro" displayName="${lang.astro}">./_inc/containers/astro.xml</include>
 
+		<include name="taito" displayName="${lang.taito}">./_inc/containers/taito.xml</include>
+
+		<include name="taitoFb" displayName="${lang.taitoFb}">./_inc/containers/taitoFb.xml</include>
+
+		<include name="taitoMame" displayName="${lang.taitoMame}">./_inc/containers/taitoMame.xml</include>
+
+		<include name="taitoTekno" displayName="${lang.taitoTekno}">./_inc/containers/taitoTekno.xml</include>
+
         <include name="cathodBlack" displayName="${lang.cathodBlack}">./_inc/containers/cathodBlack.xml</include>
 
         <include name="cathod" displayName="${lang.cathod}">./_inc/containers/cathod.xml</include>

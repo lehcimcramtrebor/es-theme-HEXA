@@ -130,6 +130,21 @@ By Helmic
         <lang.astro>astro city</lang.astro>
         <lang.astro lang="fr">astro city</lang.astro>
 
+        <lang.taito>taito</lang.taito>
+        <lang.taito lang="fr">taito</lang.taito>
+
+        <lang.taitoFb>taito (final Burn color)</lang.taitoFb>
+        <lang.taitoFb lang="fr">taito (style final burn)</lang.taitoFb>
+
+        <lang.taitoMame>taito (mame color)</lang.taitoMame>
+        <lang.taitoMame lang="fr">taito (style mame)</lang.taitoMame>
+
+        <lang.taitoTekno>taito (teknoparrot color)</lang.taitoTekno>
+        <lang.taitoTekno lang="fr">taito (style teknoparrot)</lang.taitoTekno>
+
+        <lang.taitoHb>taito (hb mame color)</lang.taitoHb>
+        <lang.taitoHb lang="fr">taito (style hbmame)</lang.taitoHb>
+
         <lang.trinitron>trinitron</lang.trinitron>
         <lang.trinitron lang="fr">trinitron</lang.trinitron>
 
