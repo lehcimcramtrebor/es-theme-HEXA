@@ -281,6 +281,8 @@ By Helmic
 
 
 
+		<include name="colorfulArcade" displayName="${lang.colorfulArcade}">./_inc/containers/colorfulArcade.xml</include>
+
 		<include name="bartop" displayName="${lang.bartop}">./_inc/containers/bartop.xml</include>
 
 		<include name="astro" displayName="${lang.astro}">./_inc/containers/astro.xml</include>
