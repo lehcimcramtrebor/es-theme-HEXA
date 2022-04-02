@@ -381,6 +381,8 @@ By Helmic
 
  		<include name="gameboy" displayName="${lang.gameboy}">./_inc/containers/gameboy.xml</include>
 
+ 		<include name="gameboyColor" displayName="${lang.gameboyColor}">./_inc/containers/gameboyColor.xml</include>
+
 		<include name="automatic" displayName="${lang.automatic}">./_inc/containers/automatic.xml</include>		
 
 
