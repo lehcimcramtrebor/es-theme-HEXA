@@ -22,13 +22,13 @@ By Helmic
             <path ifNotArch="windows" ifSubset="containerTile:customTile">./../../../../../custom.png</path>
 			<maxSize>0.155 1</maxSize>
 			<pos>0.007 0.85</pos>
-			<pos ifSubset="themeRatio:54">0.02 0.92</pos>
-			<pos ifSubset="themeRatio:43">0.02 0.92</pos>
+			<pos ifSubset="themeRatio:54">0.007 0.87</pos>
+			<pos ifSubset="themeRatio:43">0.007 0.87</pos>
 			<origin>0.02 1</origin>
             <zIndex>14</zIndex>
 			<color>ffffff</color>
 			</image>
- 			
+			
 		<image name="videoContainer" extra="true">
 			<path>./container.png</path>
 		</image>
