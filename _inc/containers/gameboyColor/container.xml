@@ -53,7 +53,7 @@ By Helmic
 			<size ifSubset="themeRatio:54">0.1770833333333333 0.2046296296296296</size>
 			<size ifSubset="themeRatio:43">0.1770833333333333 0.2185185185185185</size>
 
-			<path>./../../phosphore.png</path>
+			<path>./../../crt.png</path>
 			<color>ffffff80</color>
 		</image>
 
