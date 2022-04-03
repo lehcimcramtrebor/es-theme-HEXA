@@ -387,6 +387,8 @@ By Helmic
 
  		<include name="ds" displayName="${lang.ds}">./_inc/containers/ds.xml</include>
 
+ 		<include name="3ds" displayName="${lang.3ds}">./_inc/containers/3ds.xml</include>
+
 		<include name="automatic" displayName="${lang.automatic}">./_inc/containers/automatic.xml</include>		
 
 
