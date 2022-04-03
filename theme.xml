@@ -385,6 +385,8 @@ By Helmic
 
  		<include name="gameboyAdvance" displayName="${lang.gameboyAdvance}">./_inc/containers/gameboyAdvance.xml</include>
 
+ 		<include name="ds" displayName="${lang.ds}">./_inc/containers/ds.xml</include>
+
 		<include name="automatic" displayName="${lang.automatic}">./_inc/containers/automatic.xml</include>		
 
 
