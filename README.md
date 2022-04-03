@@ -5,4 +5,4 @@ Some graphical parts on tiles can be Mega Bezels' arts from Duimon.
 
 Some wallpapers are use under liscence you can find in /_inc/liscences
 
-Arcade video container from Colorful Resources by Viking.
+Some video containers from Colorful Resources by Viking.
