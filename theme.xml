@@ -389,6 +389,8 @@ By Helmic
 
  		<include name="3ds" displayName="${lang.3ds}">./_inc/containers/3ds.xml</include>
 
+ 		<include name="gamegear" displayName="${lang.gamegear}">./_inc/containers/gamegear.xml</include>
+
 		<include name="automatic" displayName="${lang.automatic}">./_inc/containers/automatic.xml</include>		
 
 
