@@ -391,6 +391,8 @@ By Helmic
 
  		<include name="3dsTop" displayName="${lang.3dsTop}">./_inc/containers/3dsTop.xml</include>
 
+ 		<include name="lynx" displayName="${lang.lynx}">./_inc/containers/lynx.xml</include>
+
  		<include name="gamegear" displayName="${lang.gamegear}">./_inc/containers/gamegear.xml</include>
 
 		<include name="automatic" displayName="${lang.automatic}">./_inc/containers/automatic.xml</include>		
