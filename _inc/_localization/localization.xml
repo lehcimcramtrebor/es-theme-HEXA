@@ -169,6 +169,9 @@ By Helmic
         <lang.3ds>nintendo 3ds</lang.3ds>
         <lang.3ds lang="fr">nintendo 3ds</lang.3ds>
 
+        <lang.3dsTop>nintendo 3ds top screen only</lang.3dsTop>
+        <lang.3dsTop lang="fr">nintendo 3ds (écran du haut seulement)</lang.3dsTop>
+
         <lang.gamegear>sega game gear</lang.gamegear>
         <lang.gamegear lang="fr">sega game gear</lang.gamegear>
 
