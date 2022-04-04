@@ -278,14 +278,11 @@ By Helmic
 	<subset name="container" displayName="${lang.container}" appliesTo="system,basic,detailed,grid,gamecarousel">
 
 
-
-
-
-		<include name="colorfulArcade" displayName="${lang.colorfulArcade}">./_inc/containers/colorfulArcade.xml</include>
-
 		<include name="bartop" displayName="${lang.bartop}">./_inc/containers/bartop.xml</include>
 
 		<include name="astro" displayName="${lang.astro}">./_inc/containers/astro.xml</include>
+
+		<include name="colorfulArcade" displayName="${lang.colorfulArcade}">./_inc/containers/colorfulArcade.xml</include>
 
 		<include name="taito" displayName="${lang.taito}">./_inc/containers/taito.xml</include>
 
