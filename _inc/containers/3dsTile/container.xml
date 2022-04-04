@@ -58,9 +58,9 @@ By Helmic
             <pos ifSubset="themeRatio:54">0.45390625 0.7384259259259259</pos>
             <pos ifSubset="themeRatio:43">0.45390625 0.7287037037037037</pos>
 
-			<size>0.16 0.43</size>
-			<size ifSubset="themeRatio:54">0.16 0.3</size>
-			<size ifSubset="themeRatio:43">0.16 0.32</size>
+			<size>0.2 0.43</size>
+			<size ifSubset="themeRatio:54">0.2 0.3</size>
+			<size ifSubset="themeRatio:43">0.2 0.32</size>
 
 		</image>
 
@@ -69,9 +69,9 @@ By Helmic
             <pos ifSubset="themeRatio:54">0.45390625 0.7384259259259259</pos>
             <pos ifSubset="themeRatio:43">0.45390625 0.7287037037037037</pos>
 
-			<size>0.1598958333333333 0.4212962962962963</size>
-			<size ifSubset="themeRatio:54">0.1598958333333333 0.2972222222222222</size>
-			<size ifSubset="themeRatio:43">0.1598958333333333 0.3166666666666667</size>
+			<size>0.1932291666666667 0.4212962962962963</size>
+			<size ifSubset="themeRatio:54">0.1932291666666667 0.2972222222222222</size>
+			<size ifSubset="themeRatio:43">0.1932291666666667 0.3166666666666667</size>
 
 			<path>./../../crt.png</path>
 			<color>ffffff80</color>
@@ -80,19 +80,19 @@ By Helmic
         <video name="md_video">
 			<default>./../../crt.mp4</default>
 
-			<size ifSubset="randomRatio:stretched">0.1598958333333333 0.4212962962962963</size>
+			<size ifSubset="randomRatio:stretched">0.1932291666666667 0.4212962962962963</size>
 
-			<size ifSubset="randomRatio:stretched,themeRatio:54">0.1598958333333333 0.2972222222222222</size>
+			<size ifSubset="randomRatio:stretched,themeRatio:54">0.1932291666666667 0.2972222222222222</size>
 
-			<size ifSubset="randomRatio:stretched,themeRatio:43">0.1598958333333333 0.3166666666666667</size>
+			<size ifSubset="randomRatio:stretched,themeRatio:43">0.1932291666666667 0.3166666666666667</size>
 
 
 
-            <maxSize ifSubset="randomRatio:original">0.1598958333333333 0.4212962962962963</maxSize>
+            <maxSize ifSubset="randomRatio:original">0.1932291666666667 0.4212962962962963</maxSize>
 
-			<maxSize ifSubset="randomRatio:original,themeRatio:54">0.1598958333333333 0.2972222222222222</maxSize>
+			<maxSize ifSubset="randomRatio:original,themeRatio:54">0.1932291666666667 0.2972222222222222</maxSize>
 
-			<maxSize ifSubset="randomRatio:original,themeRatio:43">0.1598958333333333 0.3166666666666667</maxSize>
+			<maxSize ifSubset="randomRatio:original,themeRatio:43">0.1932291666666667 0.3166666666666667</maxSize>
 
             <pos>0.45390625 0.6513888888888889</pos>
             <pos ifSubset="themeRatio:54">0.45390625 0.7384259259259259</pos>
