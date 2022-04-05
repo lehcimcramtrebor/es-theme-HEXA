@@ -396,6 +396,10 @@ By Helmic
 
  		<include name="wonderswancolor" displayName="${lang.wonderswancolor}">./_inc/containers/wonderswancolor.xml</include>
 
+ 		<include name="ngp" displayName="${lang.ngp}">./_inc/containers/ngp.xml</include>
+
+ 		<include name="ngpc" displayName="${lang.ngpc}">./_inc/containers/ngpc.xml</include>
+
 		<include name="automatic" displayName="${lang.automatic}">./_inc/containers/automatic.xml</include>		
 
 
