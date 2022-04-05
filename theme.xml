@@ -400,6 +400,8 @@ By Helmic
 
  		<include name="ngpc" displayName="${lang.ngpc}">./_inc/containers/ngpc.xml</include>
 
+ 		<include name="psp" displayName="${lang.psp}">./_inc/containers/psp.xml</include>
+
 		<include name="automatic" displayName="${lang.automatic}">./_inc/containers/automatic.xml</include>		
 
 
