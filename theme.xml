@@ -392,6 +392,10 @@ By Helmic
 
  		<include name="gamegear" displayName="${lang.gamegear}">./_inc/containers/gamegear.xml</include>
 
+ 		<include name="wonderswan" displayName="${lang.wonderswan}">./_inc/containers/wonderswan.xml</include>
+
+ 		<include name="wonderswancolor" displayName="${lang.wonderswancolor}">./_inc/containers/wonderswancolor.xml</include>
+
 		<include name="automatic" displayName="${lang.automatic}">./_inc/containers/automatic.xml</include>		
 
 
