@@ -16,5 +16,13 @@ By Helmic
 		</imagegrid>
 
 	</view>
+
+	<view name="detailed,grid,gamecarousel">
+
+        <video name="md_video">
+			<showSnapshotNoVideo>true</showSnapshotNoVideo>
+			<showSnapshotDelay>true</showSnapshotDelay>
+		</video>
+	</view>
 	
 </theme>
