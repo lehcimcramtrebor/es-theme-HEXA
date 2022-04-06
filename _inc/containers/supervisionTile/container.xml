@@ -84,7 +84,7 @@ By Helmic
 
         <video name="md_video">
 			<default>./../../crt.mp4</default>
-			<color>7f9458</color>
+			<color>7f945880</color>
 
 			<size ifSubset="randomRatio:stretched">0.190625 0.3398148148148148</size>
 
