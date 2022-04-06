@@ -8,6 +8,10 @@ By Helmic
 <formatVersion>7</formatVersion>
 		
 	<view name="detailed,grid,gamecarousel">
+
+		<image name="md_image" ifSubset="previewDisplay:displayMix">
+			<color>7f9458</color>
+		</image>
         
 		<image name="logoColorContainer" extra="true">
             <linearSmooth>true</linearSmooth>
