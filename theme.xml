@@ -402,6 +402,8 @@ By Helmic
 
  		<include name="psp" displayName="${lang.psp}">./_inc/containers/psp.xml</include>
 
+ 		<include name="supervision" displayName="${lang.supervision}">./_inc/containers/supervision.xml</include>
+
 		<include name="automatic" displayName="${lang.automatic}">./_inc/containers/automatic.xml</include>		
 
 
