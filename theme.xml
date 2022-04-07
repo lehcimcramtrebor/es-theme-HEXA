@@ -406,6 +406,8 @@ By Helmic
 
  		<include name="megaduck" displayName="${lang.megaduck}">./_inc/containers/megaduck.xml</include>
 
+ 		<include name="gamepocket" displayName="${lang.gamepocket}">./_inc/containers/gamepocket.xml</include>
+
 		<include name="automatic" displayName="${lang.automatic}">./_inc/containers/automatic.xml</include>		
 
 
