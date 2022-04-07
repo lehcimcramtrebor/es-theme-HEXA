@@ -404,6 +404,8 @@ By Helmic
 
  		<include name="supervision" displayName="${lang.supervision}">./_inc/containers/supervision.xml</include>
 
+ 		<include name="megaduck" displayName="${lang.megaduck}">./_inc/containers/megaduck.xml</include>
+
 		<include name="automatic" displayName="${lang.automatic}">./_inc/containers/automatic.xml</include>		
 
 
