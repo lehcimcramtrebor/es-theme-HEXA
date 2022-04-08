@@ -408,6 +408,8 @@ By Helmic
 
  		<include name="gamepocket" displayName="${lang.gamepocket}">./_inc/containers/gamepocket.xml</include>
 
+ 		<include name="gamecom" displayName="${lang.gamecom}">./_inc/containers/gamecom.xml</include>
+
 		<include name="automatic" displayName="${lang.automatic}">./_inc/containers/automatic.xml</include>		
 
 
