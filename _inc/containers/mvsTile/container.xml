@@ -1,0 +1,105 @@
+<!--
+HEXA Theme for Retrobat 4+ / Batocera v32+
+By Helmic
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+<formatVersion>7</formatVersion>
+		
+	<view name="detailed,grid,gamecarousel">
+        
+		<image name="logoColorContainer" extra="true">
+            <linearSmooth>true</linearSmooth>
+            <path>./../../../default/color.png</path>
+            <path>./../../../default/color-${lang}.png</path>
+            <path>./../../../${system.theme}/color.png</path>
+            <path>./../../../${system.theme}/color-${lang}.png</path>
+            <path region="us">./../../../${system.theme}/us/color.png</path>
+            <path region="jp">./../../../${system.theme}/jp/color.png</path>
+            <path ifSubset="containerTile:customTile">./../../../custom.png</path>
+            <path ifArch="windows" ifSubset="containerTile:customTile">./../../../../../../../custom.png</path>
+            <path ifNotArch="windows" ifSubset="containerTile:customTile">./../../../../../custom.png</path>
+			<maxSize>0.20 1</maxSize>
+			<pos>0.02 0.92</pos>
+			<pos ifSubset="themeRatio:54">0.02 0.92</pos>
+			<pos ifSubset="themeRatio:43">0.02 0.92</pos>
+			<origin>0.02 1</origin>
+            <zIndex>14</zIndex>
+			<color>ffffff</color>
+			</image>
+        
+		<image name="videoContainer" extra="true">
+			<path>./container.png</path>
+		</image>
+
+		<image name="led,rev,next,play" extra="true">
+			<visible>false</visible>
+		</image>
+
+		<text name="logoContainer" extra="true">
+ 			<pos>0.3190104166666667 0.84</pos>
+			<pos ifSubset="themeRatio:54">0.316 0.87</pos>
+			<pos ifSubset="themeRatio:43">0.316 0.87</pos>
+		</text>
+		
+		<image name="videoBackFrame" extra="true">
+            <pos>0.3963541666666667 0.6592592592592593</pos>
+			<size>0.3 0.186</size>
+			<y ifSubset="themeRatio:43|54">0.75</y>
+		</image>
+
+		<image name="randomVideosFx" extra="true">
+            <pos>0.3963541666666667 0.6592592592592593</pos>
+			<size>0.3 0.186</size>
+			<size ifSubset="themeRatio:43|54">0.55 0.22</size>
+			<y ifSubset="themeRatio:43|54">0.75</y>
+
+			<path>./../../scanlinesVerticalFine.png</path>
+
+			<color>ffffff90</color>
+			<storyboard>
+                <animation property="opacity" from="0" to="1" autoreverse="true" repeat="forever" duration="25" mode="linear"/>
+            </storyboard>
+		</image>
+
+        <video name="md_video">
+			<default>./../../noise.mp4</default>
+
+			<size ifSubset="randomRatio:stretched">0.1234375 0.1666666666666667</size>
+			<size ifSubset="randomRatio:stretched,themeRatio:54">0.1234375 0.1175925925925926</size>
+			<size ifSubset="randomRatio:stretched,themeRatio:43">0.1234375 0.1259259259259259</size>
+
+			<maxSize ifSubset="randomRatio:original">0.1234375 0.1666666666666667</maxSize>
+			<maxSize ifSubset="randomRatio:original,themeRatio:54">0.1234375 0.1175925925925926</maxSize>
+			<maxSize ifSubset="randomRatio:original,themeRatio:43">0.1234375 0.1259259259259259</maxSize>
+
+            <pos>0.3190104166666667 0.6592592592592593</pos>
+            <pos ifSubset="themeRatio:54">0.3190104166666667 0.7439814814814815</pos>
+            <pos ifSubset="themeRatio:43">0.3190104166666667 0.7351851851851852</pos>
+		</video>
+
+        <video name="bartopNoise1" extra="true">
+			<visible>false</visible>
+		</video>
+
+        <video name="bartopNoise2" extra="true">
+			<path>./../../noise.mp4</path>
+			<audio>false</audio>
+			<origin>0.5 0.5</origin>
+            <pos>0.5065104166666667 0.6657407407407407</pos>
+			<size>0.0786458333333333 0.1555555555555556</size>
+			<zIndex>11</zIndex>
+			<y ifSubset="themeRatio:43|54">0.75</y>
+			<color>dddddd80</color>
+		</video>
+
+	<image name="logoTV" extra="true" ifSubset="tvLogo:yes">
+		<maxSize>0.07 0.09</maxSize>
+		<pos>0.26 0.74</pos>
+		<y ifSubset="themeRatio:43|54">0.875</y>
+	</image>
+
+	</view>
+	
+</theme>

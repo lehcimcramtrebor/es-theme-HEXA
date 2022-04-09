@@ -307,6 +307,8 @@ By Helmic
 
 		<include name="stv" displayName="${lang.stv}">./_inc/containers/stv.xml</include>
 
+		<include name="mvs" displayName="${lang.mvs}">./_inc/containers/mvs.xml</include>
+
         <include name="cathodBlack" displayName="${lang.cathodBlack}">./_inc/containers/cathodBlack.xml</include>
 
         <include name="cathod" displayName="${lang.cathod}">./_inc/containers/cathod.xml</include>
