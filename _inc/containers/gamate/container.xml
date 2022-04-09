@@ -1,0 +1,93 @@
+<!--
+HEXA Theme for Retrobat 4+ / Batocera v32+
+By Helmic
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+<formatVersion>7</formatVersion>
+		
+	<view name="detailed,grid,gamecarousel">
+			
+		<image name="videoContainer" extra="true">
+			<path>./container.png</path>
+		</image>
+	
+		<image name="led" extra="true">
+			<visible>false</visible>
+		</image>
+	
+		<image name="rew" extra="true">
+			<visible>false</visible>
+		</image>
+	
+		<image name="next" extra="true">
+			<visible>false</visible>
+		</image>
+	
+		<image name="play" extra="true">
+			<visible>false</visible>
+		</image>
+
+		<text name="logoContainer" extra="true">
+			<visible>false</visible>
+		</text>
+		
+		<image name="videoBackFrame" extra="true">
+            <pos>0.3174479166666667 0.6185185185185185</pos>
+            <pos ifSubset="themeRatio:54">0.3174479166666667 0.7152777777777778</pos>
+            <pos ifSubset="themeRatio:43">0.3174479166666667 0.7046296296296296</pos>
+
+			<size>0.16 0.27</size>
+			<size ifSubset="themeRatio:54">0.16 0.19</size>
+			<size ifSubset="themeRatio:43">0.16 0.21</size>
+			<color>7f9458</color>
+
+		</image>
+
+		<image name="randomVideosFx" extra="true">
+            <pos>0.3174479166666667 0.6185185185185185</pos>
+            <pos ifSubset="themeRatio:54">0.3174479166666667 0.7152777777777778</pos>
+            <pos ifSubset="themeRatio:43">0.3174479166666667 0.7046296296296296</pos>
+
+			<size>0.1578125 0.2666666666666667</size>
+			<size ifSubset="themeRatio:54">0.1578125 0.187962962962963</size>
+			<size ifSubset="themeRatio:43">0.1578125 0.2</size>
+
+			<path>./../../crt.png</path>
+			<color>ffffff80</color>
+		</image>
+
+        <video name="md_video">
+			<default>./../../crt.mp4</default>
+			<color>7f945880</color>
+
+			<size ifSubset="randomRatio:stretched">0.1578125 0.2666666666666667</size>
+
+			<size ifSubset="randomRatio:stretched,themeRatio:54">0.1578125 0.187962962962963</size>
+
+			<size ifSubset="randomRatio:stretched,themeRatio:43">0.1578125 0.2</size>
+
+
+
+            <maxSize ifSubset="randomRatio:original">0.1578125 0.2666666666666667</maxSize>
+
+			<maxSize ifSubset="randomRatio:original,themeRatio:54">0.1578125 0.187962962962963</maxSize>
+
+			<maxSize ifSubset="randomRatio:original,themeRatio:43">0.1578125 0.2</maxSize>
+
+            <pos>0.3174479166666667 0.6185185185185185</pos>
+            <pos ifSubset="themeRatio:54">0.3174479166666667 0.7152777777777778</pos>
+            <pos ifSubset="themeRatio:43">0.3174479166666667 0.7046296296296296</pos>
+		</video>
+
+	<image name="logoTV" extra="true" ifSubset="tvLogo:yes">
+		<maxSize>0.1 0.08</maxSize>
+		<pos>0.243 0.74</pos>
+		<y ifSubset="themeRatio:54">0.8</y>
+		<y ifSubset="themeRatio:43">0.795</y>
+	</image>
+
+	</view>
+	
+</theme>

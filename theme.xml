@@ -410,6 +410,8 @@ By Helmic
 
  		<include name="gamecom" displayName="${lang.gamecom}">./_inc/containers/gamecom.xml</include>
 
+ 		<include name="gamate" displayName="${lang.gamate}">./_inc/containers/gamate.xml</include>
+
 		<include name="automatic" displayName="${lang.automatic}">./_inc/containers/automatic.xml</include>		
 
 
