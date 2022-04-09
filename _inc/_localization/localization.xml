@@ -130,8 +130,20 @@ By Helmic
         <lang.bartop>bartop</lang.bartop>
         <lang.bartop lang="fr">bartop</lang.bartop>
 
-        <lang.astro>astro city</lang.astro>
-        <lang.astro lang="fr">astro city</lang.astro>
+        <lang.astro>bartop astro city</lang.astro>
+        <lang.astro lang="fr">bartop astro city</lang.astro>
+
+        <lang.naomi>sega naomi</lang.naomi>
+        <lang.naomi lang="fr">sega naomi</lang.naomi>
+
+        <lang.naomi2>sega naomi 2</lang.naomi2>
+        <lang.naomi2 lang="fr">sega naomi 2</lang.naomi2>
+
+        <lang.stv>sega stv</lang.stv>
+        <lang.stv lang="fr">sega stv</lang.stv>
+
+        <lang.atomis>sammy atomiswave</lang.atomis>
+        <lang.atomis lang="fr">sammy atomiswave</lang.atomis>
 
         <lang.taito>taito</lang.taito>
         <lang.taito lang="fr">taito</lang.taito>

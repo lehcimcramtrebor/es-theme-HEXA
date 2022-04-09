@@ -298,6 +298,14 @@ By Helmic
 
 		<include name="model3" displayName="${lang.model3}">./_inc/containers/model3.xml</include>
 
+		<include name="naomi" displayName="${lang.naomi}">./_inc/containers/naomi.xml</include>
+
+		<include name="naomi2" displayName="${lang.naomi2}">./_inc/containers/naomi2.xml</include>
+
+		<include name="atomis" displayName="${lang.atomis}">./_inc/containers/atomis.xml</include>
+
+		<include name="stv" displayName="${lang.stv}">./_inc/containers/stv.xml</include>
+
         <include name="cathodBlack" displayName="${lang.cathodBlack}">./_inc/containers/cathodBlack.xml</include>
 
         <include name="cathod" displayName="${lang.cathod}">./_inc/containers/cathod.xml</include>
