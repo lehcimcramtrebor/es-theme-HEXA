@@ -6,11 +6,7 @@ By Helmic
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
 <formatVersion>7</formatVersion>
-		
-<variables>
 
-<container>wiiu</container>
-
-</variables>
-
+	<include>./../theme.xml</include>
+	
 </theme>
