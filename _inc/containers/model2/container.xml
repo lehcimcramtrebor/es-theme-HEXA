@@ -18,9 +18,12 @@ By Helmic
 		</image>
 
 		<text name="logoContainer" extra="true">
- 			<pos>0.3190104166666667 0.84</pos>
-			<pos ifSubset="themeRatio:54">0.316 0.87</pos>
-			<pos ifSubset="themeRatio:43">0.316 0.87</pos>
+			<origin>0 0.5</origin>
+			<color>808080</color>
+			<glowColor>00000003</glowColor>
+ 			<pos>0.21 0.8235</pos>
+			<pos ifSubset="themeRatio:54">0.21 0.859</pos>
+			<pos ifSubset="themeRatio:43">0.21 0.8593</pos>
 		</text>
 		
 		<image name="videoBackFrame" extra="true">
