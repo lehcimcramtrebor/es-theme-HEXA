@@ -414,6 +414,8 @@ By Helmic
 
  		<include name="wiiu" displayName="${lang.wiiu}">./_inc/containers/wiiu.xml</include>
 
+ 		<include name="switch" displayName="${lang.switch}">./_inc/containers/switch.xml</include>
+
 		<include name="automatic" displayName="${lang.automatic}">./_inc/containers/automatic.xml</include>		
 
 
