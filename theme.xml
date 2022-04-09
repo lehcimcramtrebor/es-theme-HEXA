@@ -294,6 +294,8 @@ By Helmic
 
 		<include name="taitoTriforce" displayName="${lang.taitoTriforce}">./_inc/containers/taitoTriforce.xml</include>
 
+		<include name="model2" displayName="${lang.model2}">./_inc/containers/model2.xml</include>
+
         <include name="cathodBlack" displayName="${lang.cathodBlack}">./_inc/containers/cathodBlack.xml</include>
 
         <include name="cathod" displayName="${lang.cathod}">./_inc/containers/cathod.xml</include>
