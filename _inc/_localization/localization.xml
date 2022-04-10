@@ -160,23 +160,32 @@ By Helmic
         <lang.genericArcade>generic cabs</lang.genericArcade>
         <lang.genericArcade lang="fr">bornes génériques</lang.genericArcade>
 
-        <lang.taito>taito</lang.taito>
-        <lang.taito lang="fr">taito</lang.taito>
+        <lang.taito>bartop taito</lang.taito>
+        <lang.taito lang="fr">bartop taito</lang.taito>
 
-        <lang.taitoFb>taito (final Burn color)</lang.taitoFb>
-        <lang.taitoFb lang="fr">taito (style final burn)</lang.taitoFb>
+        <lang.taitoFb>bartop taito (final Burn color)</lang.taitoFb>
+        <lang.taitoFb lang="fr">bartop taito (style final burn)</lang.taitoFb>
 
-        <lang.taitoMame>taito (mame color)</lang.taitoMame>
-        <lang.taitoMame lang="fr">taito (style mame)</lang.taitoMame>
+        <lang.taitoMame>bartop taito (mame color)</lang.taitoMame>
+        <lang.taitoMame lang="fr">bartop taito (style mame)</lang.taitoMame>
 
-        <lang.taitoTekno>taito (teknoparrot color)</lang.taitoTekno>
-        <lang.taitoTekno lang="fr">taito (style teknoparrot)</lang.taitoTekno>
+        <lang.taitoTekno>bartop taito (teknoparrot color)</lang.taitoTekno>
+        <lang.taitoTekno lang="fr">bartop taito (style teknoparrot)</lang.taitoTekno>
 
-        <lang.taitoHb>taito (hb mame color)</lang.taitoHb>
-        <lang.taitoHb lang="fr">taito (style hbmame)</lang.taitoHb>
+        <lang.taitoHb>bartop taito (hb mame color)</lang.taitoHb>
+        <lang.taitoHb lang="fr">bartop taito (style hbmame)</lang.taitoHb>
 
-        <lang.taitoTriforce>taito (triforce color)</lang.taitoTriforce>
-        <lang.taitoTriforce lang="fr">taito (style triforce)</lang.taitoTriforce>
+        <lang.taitoTriforce>bartop taito (triforce color)</lang.taitoTriforce>
+        <lang.taitoTriforce lang="fr">bartop taito (style triforce)</lang.taitoTriforce>
+
+        <lang.colorfulTaito>colorful taito (by viking)</lang.colorfulTaito>
+        <lang.colorfulTaito lang="fr">colorful taito (by viking)</lang.colorfulTaito>
+
+        <lang.colorfulTaitoTriforce>colorful taito (triforce style)</lang.colorfulTaitoTriforce>
+        <lang.colorfulTaitoTriforce lang="fr">colorful taito (style triforce)</lang.colorfulTaitoTriforce>
+
+        <lang.colorfulTaitoTekno>colorful taito (teknoparrot style)</lang.colorfulTaitoTekno>
+        <lang.colorfulTaitoTekno lang="fr">colorful taito (style teknoparrot)</lang.colorfulTaitoTekno>
 
         <lang.trinitron>trinitron</lang.trinitron>
         <lang.trinitron lang="fr">trinitron</lang.trinitron>
