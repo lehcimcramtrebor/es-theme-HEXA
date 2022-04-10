@@ -122,6 +122,7 @@ By Helmic
     </subset>
 
 	<subset name="staticEffect" displayName="${lang.staticEffect}">
+		<include name="no" displayName="${lang.noEffect}"/>
 		<include name="scanlinesFine" displayName="${lang.scanlinesFine}"/>
 		<include name="scanlinesVerticalFine" displayName="${lang.scanlinesVerticalFine}"/>
 		<include name="crt" displayName="${lang.crt}"/>
@@ -129,7 +130,6 @@ By Helmic
 		<include name="phosphorePlus" displayName="${lang.phosphorePlus}"/>
 		<include name="scanlines" displayName="${lang.scanlines}"/>
 		<include name="scanlinesVertical" displayName="${lang.scanlinesVertical}"/>
-		<include name="no" displayName="${lang.noEffect}"/>
 	</subset>
 
 	<subset name="scratch" displayName="${lang.scratch}">
