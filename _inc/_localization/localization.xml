@@ -157,6 +157,9 @@ By Helmic
         <lang.chihiro>sega chihiro</lang.chihiro>
         <lang.chihiro lang="fr">sega chihiro</lang.chihiro>
 
+        <lang.genericArcade>generic cabs</lang.genericArcade>
+        <lang.genericArcade lang="fr">bornes génériques</lang.genericArcade>
+
         <lang.taito>taito</lang.taito>
         <lang.taito lang="fr">taito</lang.taito>
 

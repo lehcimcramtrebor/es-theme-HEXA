@@ -287,6 +287,8 @@ By Helmic
 
 		<include name="colorfulAstro" displayName="${lang.colorfulAstro}">./_inc/containers/colorfulAstro.xml</include>
 
+		<include name="genericArcade" displayName="${lang.genericArcade}">./_inc/containers/genericArcade.xml</include>
+
 		<include name="taito" displayName="${lang.taito}">./_inc/containers/taito.xml</include>
 
 		<include name="taitoFb" displayName="${lang.taitoFb}">./_inc/containers/taitoFb.xml</include>
