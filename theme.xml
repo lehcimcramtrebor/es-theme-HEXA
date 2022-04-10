@@ -445,6 +445,8 @@ By Helmic
 
  		<include name="switch" displayName="${lang.switch}">./_inc/containers/switch.xml</include>
 
+ 		<include name="vboy" displayName="${lang.vboy}">./_inc/containers/vboy.xml</include>
+
 
 
    </subset>
