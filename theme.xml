@@ -301,6 +301,10 @@ By Helmic
 
 		<include name="model3" displayName="${lang.model3}">./_inc/containers/model3.xml</include>
 
+		<include name="hikaru" displayName="${lang.hikaru}">./_inc/containers/hikaru.xml</include>
+
+		<include name="chihiro" displayName="${lang.chihiro}">./_inc/containers/chihiro.xml</include>
+
 		<include name="naomi" displayName="${lang.naomi}">./_inc/containers/naomi.xml</include>
 
 		<include name="naomi2" displayName="${lang.naomi2}">./_inc/containers/naomi2.xml</include>
