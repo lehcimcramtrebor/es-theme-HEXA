@@ -1,0 +1,118 @@
+<!--
+HEXA Theme for Retrobat 4+ / Batocera v32+
+By Helmic
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+<formatVersion>7</formatVersion>
+		
+	<view name="detailed,grid,gamecarousel">
+        
+		<image name="logoColorContainer" extra="true">
+            <linearSmooth>true</linearSmooth>
+            <path>./../../../default/color.png</path>
+            <path>./../../../default/color-${lang}.png</path>
+            <path>./../../../${system.theme}/color.png</path>
+            <path>./../../../${system.theme}/color-${lang}.png</path>
+            <path region="us">./../../../${system.theme}/us/color.png</path>
+            <path region="jp">./../../../${system.theme}/jp/color.png</path>
+            <path ifSubset="containerTile:customTile">./../../../custom.png</path>
+            <path ifArch="windows" ifSubset="containerTile:customTile">./../../../../../../../custom.png</path>
+            <path ifNotArch="windows" ifSubset="containerTile:customTile">./../../../../../custom.png</path>
+			<maxSize>0.248 1</maxSize>
+			<pos>0.05 0.989</pos>
+			<pos ifSubset="themeRatio:54">0 0.975</pos>
+			<pos ifSubset="themeRatio:43">0 0.98</pos>
+			<origin>0.02 1</origin>
+            <zIndex>15</zIndex>
+			<color>ffffff</color>
+			</image>
+			
+		<image name="videoContainer" extra="true">
+			<path>./container.png</path>
+		</image>
+	
+		<image name="led" extra="true">
+			<visible>false</visible>
+		</image>
+	
+		<image name="rew" extra="true">
+			<visible>false</visible>
+		</image>
+	
+		<image name="next" extra="true">
+			<visible>false</visible>
+		</image>
+	
+		<image name="play" extra="true">
+			<visible>false</visible>
+		</image>
+
+		<text name="logoContainer" extra="true">
+			<origin>1 0.5</origin>
+ 			<pos>0.525 0.845</pos>
+			<pos ifSubset="themeRatio:54">0.525 0.875</pos>
+			<pos ifSubset="themeRatio:43">0.525 0.876</pos>
+			<color>dddddddd</color>
+		</text>
+		
+		<image name="videoBackFrame" extra="true">
+            <pos>0.4494791666666667 0.6092592592592593</pos>
+            <pos ifSubset="themeRatio:54">0.4494791666666667 0.7087962962962963</pos>
+            <pos ifSubset="themeRatio:43">0.4494791666666667 0.6976851851851852</pos>
+
+			<size>0.14 0.31</size>
+			<size ifSubset="themeRatio:54">0.14 0.22</size>
+			<size ifSubset="themeRatio:43">0.14 0.23</size>
+			<color>202020</color>
+		</image>
+
+		<image name="randomVideosFx" extra="true">
+            <pos>0.4494791666666667 0.6092592592592593</pos>
+            <pos ifSubset="themeRatio:54">0.4494791666666667 0.7087962962962963</pos>
+            <pos ifSubset="themeRatio:43">0.4494791666666667 0.6976851851851852</pos>
+
+			<size>0.1364583333333333 0.3037037037037037</size>
+			<size ifSubset="themeRatio:54">0.1364583333333333 0.2138888888888889</size>
+			<size ifSubset="themeRatio:43">0.1364583333333333 0.2287037037037037</size>
+
+			<path>./../../phosphore.png</path>
+			<color>ffffff</color>
+			<storyboard>
+                <animation property="opacity" from="0" to="1" autoreverse="true" repeat="forever" duration="25" mode="linear"/>
+            </storyboard>
+		</image>
+
+        <video name="md_video">
+			<color>ffffff80</color>
+			<default>./../../glitch.mp4</default>
+
+			<size ifSubset="randomRatio:stretched">0.1364583333333333 0.3037037037037037</size>
+
+			<size ifSubset="randomRatio:stretched,themeRatio:54">0.1364583333333333 0.2138888888888889</size>
+
+			<size ifSubset="randomRatio:stretched,themeRatio:43">0.1364583333333333 0.2287037037037037</size>
+
+
+
+            <maxSize ifSubset="randomRatio:original">0.1364583333333333 0.3037037037037037</maxSize>
+
+			<maxSize ifSubset="randomRatio:original,themeRatio:54">0.1364583333333333 0.2138888888888889</maxSize>
+
+			<maxSize ifSubset="randomRatio:original,themeRatio:43">0.1364583333333333 0.2287037037037037</maxSize>
+
+            <pos>0.4494791666666667 0.6092592592592593</pos>
+            <pos ifSubset="themeRatio:54">0.4494791666666667 0.7087962962962963</pos>
+            <pos ifSubset="themeRatio:43">0.4494791666666667 0.6976851851851852</pos>
+		</video>
+
+	<image name="logoTV" extra="true" ifSubset="tvLogo:yes">
+		<maxSize>0.1 0.05</maxSize>
+		<pos>0.388 0.745</pos>
+		<y ifSubset="themeRatio:43|54">0.8</y>
+	</image>
+
+	</view>
+	
+</theme>

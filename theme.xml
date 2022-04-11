@@ -447,6 +447,8 @@ By Helmic
 
  		<include name="vboy" displayName="${lang.vboy}">./_inc/containers/vboy.xml</include>
 
+ 		<include name="vectrex" displayName="${lang.vectrex}">./_inc/containers/vectrex.xml</include>
+
 
 
    </subset>
