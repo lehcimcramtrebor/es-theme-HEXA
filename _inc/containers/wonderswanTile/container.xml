@@ -61,6 +61,7 @@ By Helmic
 			<size>0.22 0.26</size>
 			<size ifSubset="themeRatio:54">0.22 0.19</size>
 			<size ifSubset="themeRatio:43">0.22 0.2</size>
+			<color>b3bfbc</color>
 
 		</image>
 
@@ -78,6 +79,7 @@ By Helmic
 		</image>
 
         <video name="md_video">
+			<color>b3bfbc80</color>
 			<default>./../../crt.mp4</default>
 
 			<size ifSubset="randomRatio:stretched">0.2161458333333333 0.2583333333333333</size>
