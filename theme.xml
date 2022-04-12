@@ -451,6 +451,8 @@ By Helmic
 
  		<include name="gaming" displayName="${lang.gaming}">./_inc/containers/gaming.xml</include>
 
+ 		<include name="pinball" displayName="${lang.pinball}">./_inc/containers/pinball.xml</include>
+
 
 
    </subset>
