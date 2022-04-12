@@ -449,6 +449,8 @@ By Helmic
 
  		<include name="vectrex" displayName="${lang.vectrex}">./_inc/containers/vectrex.xml</include>
 
+ 		<include name="gaming" displayName="${lang.gaming}">./_inc/containers/gaming.xml</include>
+
 
 
    </subset>
