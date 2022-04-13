@@ -455,6 +455,8 @@ By Helmic
 
  		<include name="1080p" displayName="${lang.1080p}">./_inc/containers/1080p.xml</include>
 
+ 		<include name="adventureVision" displayName="${lang.adventureVision}">./_inc/containers/adventureVision.xml</include>
+
 
 
    </subset>
