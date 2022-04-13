@@ -453,6 +453,8 @@ By Helmic
 
  		<include name="pinball" displayName="${lang.pinball}">./_inc/containers/pinball.xml</include>
 
+ 		<include name="1080p" displayName="${lang.1080p}">./_inc/containers/1080p.xml</include>
+
 
 
    </subset>

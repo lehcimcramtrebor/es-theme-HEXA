@@ -348,6 +348,15 @@ By Helmic
       		
         <lang.easyrpg>easy rpg (pico style green)</lang.easyrpg>
         <lang.easyrpg lang="fr">easy rpg (style pico vert)</lang.easyrpg>
+       		
+        <lang.gaming>1080p gaming monitor</lang.gaming>
+        <lang.gaming lang="fr">moniteur gamer 1080p</lang.gaming>
+        		
+        <lang.1080p>1080p monitor</lang.1080p>
+        <lang.1080p lang="fr">moniteur 1080p</lang.1080p>
+         		
+        <lang.pinball>pinball frame</lang.pinball>
+        <lang.pinball lang="fr">cadre flipper</lang.pinball>
       		     		
         <lang.16x9>16x9 frame</lang.16x9>
         <lang.16x9 lang="fr">cadre chromatique 16x9</lang.16x9>
