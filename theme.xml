@@ -1950,6 +1950,7 @@ By Helmic
 			<gradientType>vertical</gradientType>
 			<storyboard ifSubset="logoAnime:onTop" repeatAt="1">
                 <animation property="maxSize" to="99 0.3" duration="1" mode="linear"/>
+                <animation property="reflexion" to="0.5 0" duration="1" mode="linear"/>
                 <animation property="colorEnd" to="ffffff80" duration="1" mode="linear"/>
                 <animation property="opacity" from="0" to="1" duration="75" mode="linear"/>
                 <animation property="origin" from="0 0" to="1 0" duration="20000" autoreverse="true" mode="easeInOut"/>
@@ -1968,6 +1969,7 @@ By Helmic
 
 			<storyboard ifSubset="logoAnime:inGamelist" repeatAt="1">
                 <animation property="maxSize" to="0.36 99" duration="1" mode="linear"/>
+                <animation property="reflexion" to="0.5 0" duration="1" mode="linear"/>
                 <animation property="colorEnd" to="ffffff80" duration="1" mode="linear"/>
 				<animation property="opacity" from="0" to="1" duration="75" mode="linear"/>
                 <animation property="origin" from="1 0" to="1 1" duration="20000" autoreverse="true" mode="easeInOut"/>
@@ -1986,6 +1988,7 @@ By Helmic
 
 			<storyboard ifSubset="logoAnime:onScreen" repeatAt="1">
                 <animation property="maxSize" to="99 0.9259259259259259" duration="1" mode="linear"/>
+                <animation property="reflexion" to="0 0" duration="1" mode="linear"/>
                 <animation property="colorEnd" to="ffffff00" duration="1" mode="linear"/>
                 <animation property="opacity" from="0" to="1" duration="75" mode="linear"/>
                 <animation property="origin" from="0 0.5" to="1 0.5" duration="40000" autoreverse="true" mode="easeInOut"/>
@@ -2005,6 +2008,7 @@ By Helmic
 			<storyboard ifSubset="logoAnime:mix3" repeatAt="1">
 
                 <animation property="maxSize" to="99 0.9259259259259259" duration="1" mode="linear" begin="2"/>
+                <animation property="reflexion" to="0 0" duration="1" mode="linear" begin="2"/>
                 <animation property="colorEnd" to="ffffff00" duration="1" mode="linear"/>
                 <animation property="origin" from="0 0.5" to="1 0.5" duration="40000" mode="linear"/>
                 <animation property="pos" from="1 0.5" to="0 0.5" duration="40000" mode="linear"/>
@@ -2015,6 +2019,7 @@ By Helmic
         		<animation property="w" to="0" begin="30000" duration="8" repeat="2" autoreverse="true" mode="easeInOut"/>				
 
                 <animation property="maxSize" to="0.36 99" duration="1" mode="linear" begin="40000"/>
+                <animation property="reflexion" to="0.5 0" duration="1" mode="linear" begin="40000"/>
                 <animation property="colorEnd" to="ffffff80" duration="1" mode="linear" begin="40000"/>
                 <animation property="origin" from="1 0" to="1 1" duration="20000" mode="easeInOut" begin="40000"/>
                 <animation property="pos" from="1 1" to="1 0" duration="20000" mode="easeInOut" begin="40000"/>
@@ -2025,6 +2030,7 @@ By Helmic
         		<animation property="w" to="0" begin="55000" duration="25" repeat="2" autoreverse="true" mode="easeInOut"/>				
 
                 <animation property="maxSize" to="99 0.3" duration="1" mode="linear" begin="60000"/>
+                <animation property="reflexion" to="0.5 0" duration="1" mode="linear" begin="60000"/>
                 <animation property="colorEnd" to="ffffff80" duration="1" mode="linear" begin="60000"/>
                 <animation property="origin" from="0 0" to="1 0" duration="20000" mode="easeInOut" begin="60000"/>
                 <animation property="pos" from="1 0.06" to="0 0.06" duration="20000" mode="easeInOut" begin="60000"/>
