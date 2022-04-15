@@ -407,9 +407,15 @@ By Helmic
 
  		<include name="gameboy" displayName="${lang.gameboy}">./_inc/containers/gameboy.xml</include>
 
+ 		<include name="gameboy2" displayName="${lang.gameboy2}">./_inc/containers/gameboy2.xml</include>
+
  		<include name="gameboyColor" displayName="${lang.gameboyColor}">./_inc/containers/gameboyColor.xml</include>
 
+ 		<include name="gameboyColor2" displayName="${lang.gameboyColor2}">./_inc/containers/gameboyColor2.xml</include>
+
  		<include name="gameboyAdvance" displayName="${lang.gameboyAdvance}">./_inc/containers/gameboyAdvance.xml</include>
+
+ 		<include name="gameboyAdvance2" displayName="${lang.gameboyAdvance2}">./_inc/containers/gameboyAdvance2.xml</include>
 
  		<include name="ds" displayName="${lang.ds}">./_inc/containers/ds.xml</include>
 

@@ -193,11 +193,20 @@ By Helmic
         <lang.gameboy>gameboy</lang.gameboy>
         <lang.gameboy lang="fr">gameboy</lang.gameboy>
 
+        <lang.gameboy2>gameboy 2 players</lang.gameboy2>
+        <lang.gameboy2 lang="fr">gameboy 2 joueurs</lang.gameboy2>
+
         <lang.gameboyColor>gameboy color</lang.gameboyColor>
         <lang.gameboyColor lang="fr">gameboy color</lang.gameboyColor>
 
+        <lang.gameboyColor2>gameboy color 2 players</lang.gameboyColor2>
+        <lang.gameboyColor2 lang="fr">gameboy color 2 joueurs</lang.gameboyColor2>
+
         <lang.gameboyAdvance>gameboy advance</lang.gameboyAdvance>
         <lang.gameboyAdvance lang="fr">gameboy advance</lang.gameboyAdvance>
+
+        <lang.gameboyAdvance2>gameboy advance 2 players</lang.gameboyAdvance2>
+        <lang.gameboyAdvance2 lang="fr">gameboy advance 2 joueurs</lang.gameboyAdvance2>
 
         <lang.ds>nintendo ds</lang.ds>
         <lang.ds lang="fr">nintendo ds</lang.ds>
