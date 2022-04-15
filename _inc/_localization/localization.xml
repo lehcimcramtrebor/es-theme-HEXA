@@ -807,6 +807,12 @@ By Helmic
 		<lang.wallDiagonalPlates2>diagonal steel plates inversed</lang.wallDiagonalPlates2>
 		<lang.wallDiagonalPlates2 lang="fr">plaques de métal obliques inversé</lang.wallDiagonalPlates2>
 
+		<lang.wallSynthPaint>synthwave paint</lang.wallSynthPaint>
+		<lang.wallSynthPaint lang="fr">synthwave mix</lang.wallSynthPaint>
+
+		<lang.wallScanlines>scanlines</lang.wallScanlines>
+		<lang.wallScanlines lang="fr">scanlines</lang.wallScanlines>
+
 
 	</variables>
 
