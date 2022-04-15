@@ -593,10 +593,10 @@ By Helmic
 	<include>./_inc/wallpapers/${_paintSubset.allow}Gamelist.xml</include>
 
  	<subset name="logoAnime" displayName="${lang.logoAnime}" appliesTo="basic,detailed,grid,gamecarousel">
+        <include name="mix3" displayName="${lang.mix3}"/>
         <include name="onTop" displayName="${lang.onTop}"/>
         <include name="inGamelist" displayName="${lang.inGamelist}"/>
         <include name="onScreen" displayName="${lang.onScreen}"/>
-        <include name="mix3" displayName="${lang.mix3}"/>
 		<include name="no" displayName="${lang.no}"/>
     </subset>
 
