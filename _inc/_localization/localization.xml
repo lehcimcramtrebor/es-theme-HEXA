@@ -9,6 +9,21 @@ By Helmic
    
     <variables>
 
+        <lang.logoAnime>game list view • display wall logo animation</lang.logoAnime>
+        <lang.logoAnime lang="fr">listes de jeux • afficher le logo animé sur le mur</lang.logoAnime>
+
+        <lang.onTop>on top</lang.onTop>
+        <lang.onTop lang="fr">en haut</lang.onTop>
+
+        <lang.inGamelist>behind gamelist</lang.inGamelist>
+        <lang.inGamelist lang="fr">derrière la liste</lang.inGamelist>
+
+        <lang.onScreen>on screen</lang.onScreen>
+        <lang.onScreen lang="fr">sur l'écran</lang.onScreen>
+
+        <lang.mix3>full mix</lang.mix3>
+        <lang.mix3 lang="fr">toutes</lang.mix3>
+
         <lang.descriptionFontSize>game list view • description font size</lang.descriptionFontSize>
         <lang.descriptionFontSize lang="fr">listes de jeux • taille de la police de la description</lang.descriptionFontSize>
 
