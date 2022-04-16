@@ -6,3 +6,5 @@ Some graphical parts on tiles can be Mega Bezels' arts from Duimon.
 Some wallpapers are use under liscence you can find in /_inc/liscences
 
 Some video containers from Colorful Resources by Viking.
+
+Max Logos updated from Dan Patrick Collection.

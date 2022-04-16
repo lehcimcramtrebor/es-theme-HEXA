@@ -851,6 +851,12 @@ By Helmic
 		<path>./_inc/logos/jp/${system.theme}-clear.svg</path>
 	</image>
 
+	<image name="logoAssist" extra="true">
+
+		<path>./_inc/logos/test.svg</path>
+
+	</image>
+
 	</view>
 	
 <!-------------------------------------------------------------------END OF LOGO VISUAL ASSISTANCE--------------------------------------------------------------------------------->
@@ -1842,6 +1848,7 @@ By Helmic
 		<path>./_inc/logos/${system.theme}-clear.svg</path>
 		<path>./_inc/logos/${system.theme}-${lang}.png</path>
 		<path>./_inc/logos/${system.theme}-${lang}.svg</path>
+
 	</image>
 
 	<image name="logoAssistTransition" region="us" extra="true">
@@ -1878,6 +1885,12 @@ By Helmic
 		<path>./_inc/logos/jp/${system.theme}.svg</path>
 		<path>./_inc/logos/jp/${system.theme}-clear.png</path>
 		<path>./_inc/logos/jp/${system.theme}-clear.svg</path>
+	</image>
+
+	<image name="logoAssistTransition" extra="true">
+
+		<path>./_inc/logos/test.svg</path>
+
 	</image>
 
 		<text name="transitionFullName" extra="true">
@@ -2109,6 +2122,13 @@ By Helmic
 		<path>./logo.png</path>
         <path ifArch="windows" ifSubset="transitionCustom:yes">./../../../../logo.png</path>
         <path ifNotArch="windows" ifSubset="transitionCustom:yes">./../../logo.png</path>
+	</image>
+
+
+	<image name="logoAnime" extra="true">
+
+		<path>./_inc/logos/test.svg</path>
+
 	</image>
 
 	</view>
