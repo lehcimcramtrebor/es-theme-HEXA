@@ -600,6 +600,11 @@ By Helmic
 		<include name="no" displayName="${lang.no}"/>
     </subset>
 
+ 	<subset name="logoCustom" displayName="${lang.logoCustom}" appliesTo="basic,detailed,grid,gamecarousel" ifSubset="logoAnime:mix3|onTop|inGamelist|onScreen">
+		<include name="no" displayName="${lang.no}"/>
+		<include name="yes" displayName="${lang.yes}"/>
+    </subset>
+
  	<subset name="gamelistFade" displayName="${lang.gamelistFade}" appliesTo="basic,detailed,grid,gamecarousel">
         <include name="yes" displayName="${lang.yes}"/>
 		<include name="no" displayName="${lang.no}"/>
@@ -2098,6 +2103,12 @@ By Helmic
 		<path>./_inc/logos/jp/${system.theme}.svg</path>
 		<path>./_inc/logos/jp/${system.theme}-clear.png</path>
 		<path>./_inc/logos/jp/${system.theme}-clear.svg</path>
+	</image>
+
+		<image name="logoAnime" extra="true" ifSubset="logoCustom:yes">
+		<path>./logo.png</path>
+        <path ifArch="windows" ifSubset="transitionCustom:yes">./../../../../logo.png</path>
+        <path ifNotArch="windows" ifSubset="transitionCustom:yes">./../../logo.png</path>
 	</image>
 
 	</view>

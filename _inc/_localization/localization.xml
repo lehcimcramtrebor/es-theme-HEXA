@@ -12,6 +12,9 @@ By Helmic
         <lang.logoAnime>game list view • display wall logo animation</lang.logoAnime>
         <lang.logoAnime lang="fr">listes de jeux • afficher le logo animé sur le mur</lang.logoAnime>
 
+        <lang.logoCustom>game list view • use custom logo</lang.logoCustom>
+        <lang.logoCustom lang="fr">listes de jeux • utiliser le logo personnalisé</lang.logoCustom>
+
         <lang.onTop>on top</lang.onTop>
         <lang.onTop lang="fr">en haut</lang.onTop>
 
