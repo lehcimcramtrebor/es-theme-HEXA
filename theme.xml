@@ -2120,8 +2120,11 @@ By Helmic
 
 		<image name="logoAnime" extra="true" ifSubset="logoCustom:yes">
 		<path>./logo.png</path>
+		<path>./logo.svg</path>
         <path ifArch="windows" ifSubset="transitionCustom:yes">./../../../../logo.png</path>
+        <path ifArch="windows" ifSubset="transitionCustom:yes">./../../../../logo.svg</path>
         <path ifNotArch="windows" ifSubset="transitionCustom:yes">./../../logo.png</path>
+        <path ifNotArch="windows" ifSubset="transitionCustom:yes">./../../logo.svg</path>
 	</image>
 
 
