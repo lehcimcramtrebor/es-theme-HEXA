@@ -103,7 +103,7 @@ By Helmic
 
 	<image name="logoTV" extra="true" ifSubset="tvLogo:yes">
 		<maxSize>0.1 0.08</maxSize>
-		<pos>0.313 0.715</pos>
+		<pos>0.313 0.705</pos>
 		<y ifSubset="themeRatio:54">0.785</y>
 		<y ifSubset="themeRatio:43">0.778</y>
 	</image>
