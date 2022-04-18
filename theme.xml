@@ -847,6 +847,7 @@ By Helmic
 
 	<image name="logoAssist" extra="true">
 
+		<path>./_inc/logos/test.png</path>
 		<path>./_inc/logos/test.svg</path>
 
 	</image>
@@ -1877,6 +1878,7 @@ By Helmic
 
 	<image name="logoAssistTransition" extra="true">
 
+		<path>./_inc/logos/test.png</path>
 		<path>./_inc/logos/test.svg</path>
 
 	</image>
@@ -2112,6 +2114,7 @@ By Helmic
 
 	<image name="logoAnime" extra="true">
 
+		<path>./_inc/logos/test.png</path>
 		<path>./_inc/logos/test.svg</path>
 
 	</image>
