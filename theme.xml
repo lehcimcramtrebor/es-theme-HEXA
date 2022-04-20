@@ -494,8 +494,10 @@ By Helmic
 	</subset>
 
 	<subset name="tvOs" displayName="${lang.tvOs}" appliesTo="system,basic,detailed,grid,gamecarousel">
-		<include name="yes" displayName="${lang.yes}"/>
 		<include name="no" displayName="${lang.no}"/>
+		<include name="retrobat" displayName="${lang.retrobat}"/>
+		<include name="batocera" displayName="${lang.batocera}"/>
+		<include name="emuelec" displayName="${lang.batocera}"/>
 	</subset>
 
 	<subset name="previewDisplay" displayName="${lang.previewDisplay}" appliesTo="system,basic,detailed,grid,gamecarousel">
@@ -2318,21 +2320,20 @@ By Helmic
 		</image>
 		
 		<text name="logoContainer" extra="true">
-			<text>b a t o c e r a</text>
-			<text ifArch="windows">r e t r o b a t</text>
-			<text  ifSubset="tvOs:no"> e m u l a t i o n s t a t i o n</text>
+			<text> e m u l a t i o n s t a t i o n</text>
+			<text ifSubset="tvOs:batocera">b a t o c e r a</text>
+			<text ifSubset="tvOs:retrobat">r e t r o b a t</text>
+			<text ifSubset="tvOs:emuelec">e m u e l e c</text>
             <fontPath>./_inc/fonts/${font2}</fontPath>
-            <fontPath ifArch="windows">./_inc/fonts/snes.ttf</fontPath>
-            <fontPath ifSubset="tvOs:no">./_inc/fonts/${font2}</fontPath>
+            <fontPath ifSubset="tvOs:retrobat">./_inc/fonts/snes.ttf</fontPath>
             <color>cccccc</color>
             <glowColor>00000015</glowColor>
             <fontSize>0.012</fontSize>
             <fontSize ifSubset="themeRatio:54|43">0.01</fontSize>
-            <fontSize ifArch="windows">0.018</fontSize>
-            <fontSize ifArch="windows" ifSubset="themeRatio:54|43">0.013</fontSize>
-            <fontSize ifSubset="tvOs:no">0.012</fontSize>
-            <fontSize ifSubset="tvOs:no,themeRatio:54|43">0.01</fontSize>
+            <fontSize ifSubset="tvOs:retrobat">0.018</fontSize>
+            <fontSize ifSubset="themeRatio:54|43,tvOs:retrobat">0.013</fontSize>
             <origin>0.5 0.5</origin>
+            <origin ifSubset="tvOs:batocera|emuelec|no">0.5 0.483</origin>
             <zIndex>10</zIndex>
 			<alignment>center</alignment>
 			<forceUppercase>true</forceUppercase>
