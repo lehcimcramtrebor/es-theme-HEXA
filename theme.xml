@@ -6,19 +6,24 @@ By Helmic
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
 <formatVersion>7</formatVersion>
-
-    <!--REGION DEFAULT (CHANGE "eu" to "jp" or "us")-->
- 
-    <variables><defaultRegion region="eu">Choose your default region</defaultRegion></variables>
-
-    <!--DEVELOPERS FINANCIAL SUPPORT-->
-
-	<include>./_support/support.xml</include>
 	
     <!--LANGS-->
     
 	<include>./_inc/_localization/localization.xml</include>
  
+    <!--REGION DEFAULT (CHANGE "eu" to "jp" or "us")-->
+ 
+    <variables><defaultRegion region="eu">Choose your default region</defaultRegion></variables>
+
+    <subset name="regionChoice" displayName="${lang.regionChoice}" appliesTo="system,basic,detailed,grid,gamecarousel">
+		<include name="yes" displayName="${lang.yes}"/>
+        <include name="no" displayName="${lang.no}"/>
+    </subset>
+
+    <!--DEVELOPERS FINANCIAL SUPPORT-->
+
+	<include>./_support/support.xml</include>
+
 	<!-- DEFAULT AUTOMATIC CONTAINER-->
 	<variables><container>4x3</container></variables>
 
@@ -27,6 +32,11 @@ By Helmic
  
 	
 	<!--SUBSETS-->
+
+    <subset name="regionChoice" displayName="${lang.regionChoice}">
+		<include name="yes" displayName="${lang.yes}"/>
+        <include name="no" displayName="${lang.no}"/>
+    </subset>
 
     <subset name="themeRatio" displayName="${lang.themeRatio}">
 		<include name="169" displayName="${lang.169}"/>
@@ -815,7 +825,7 @@ By Helmic
 		<path>./_inc/logos/${system.theme}-${lang}.svg</path>
 	</image>
 
-	<image name="logoAssist" region="us" extra="true">
+	<image name="logoAssist" region="us" extra="true" ifSubset="regionChoice:yes">
 
 		<path ifArch="windows">./../es-theme-carbon/art/logos/us/${system.theme}.png</path>
 		<path ifArch="windows">./../es-theme-carbon/art/logos/us/${system.theme}.svg</path>
@@ -831,7 +841,7 @@ By Helmic
 		<path>./_inc/logos/us/${system.theme}.svg</path>
 	</image>
 
-	<image name="logoAssist" region="jp" extra="true">
+	<image name="logoAssist" region="jp" extra="true" ifSubset="regionChoice:yes">
 
 		<path ifArch="windows">./../es-theme-carbon/art/logos/jp/${system.theme}.png</path>
 		<path ifArch="windows">./../es-theme-carbon/art/logos/jp/${system.theme}.svg</path>
@@ -1042,12 +1052,12 @@ By Helmic
 
         <image name="logo" region="eu"></image>
 
-        <image name="logo" region="us">
+        <image name="logo" region="us" ifSubset="regionChoice:yes">
             <path>./${system.theme}/us/mono.png</path>
         </image>
 
 
-        <image name="logo" region="jp">
+        <image name="logo" region="jp" ifSubset="regionChoice:yes">
             <path>./${system.theme}/jp/mono.png</path>
         </image>
 
@@ -1065,8 +1075,8 @@ By Helmic
             <path>./default/color-${lang}.png</path>
             <path>./${system.theme}/color.png</path>
             <path>./${system.theme}/color-${lang}.png</path>
-            <path region="us">./${system.theme}/us/color.png</path>
-            <path region="jp">./${system.theme}/jp/color.png</path>
+            <path region="us" ifSubset="regionChoice:yes">./${system.theme}/us/color.png</path>
+            <path region="jp" ifSubset="regionChoice:yes">./${system.theme}/jp/color.png</path>
 			<maxSize>1 0.92962963</maxSize>
 			<pos>0.5 0.5</pos>
 			<origin>0.5 0.5</origin>
@@ -1767,8 +1777,8 @@ By Helmic
             <path>./default/color-${lang}.png</path>
             <path>./${system.theme}/color.png</path>
             <path>./${system.theme}/color-${lang}.png</path>
-            <path region="us">./${system.theme}/us/color.png</path>
-            <path region="jp">./${system.theme}/jp/color.png</path>
+            <path region="us" ifSubset="regionChoice:yes">./${system.theme}/us/color.png</path>
+            <path region="jp" ifSubset="regionChoice:yes">./${system.theme}/jp/color.png</path>
 			<path ifSubset="transitionCustom:yes">./custom.png</path>
             <path ifArch="windows" ifSubset="transitionCustom:yes">./../../../../custom.png</path>
             <path ifNotArch="windows" ifSubset="transitionCustom:yes">./../../custom.png</path>
@@ -1846,7 +1856,7 @@ By Helmic
 
 	</image>
 
-	<image name="logoAssistTransition" region="us" extra="true">
+	<image name="logoAssistTransition" region="us" extra="true" ifSubset="regionChoice:yes">
 
 		<path ifArch="windows">./../es-theme-carbon/art/logos/us/${system.theme}.png</path>
 		<path ifArch="windows">./../es-theme-carbon/art/logos/us/${system.theme}.svg</path>
@@ -1862,7 +1872,7 @@ By Helmic
 		<path>./_inc/logos/us/${system.theme}.svg</path>
 	</image>
 
-	<image name="logoAssistTransition" region="jp" extra="true">
+	<image name="logoAssistTransition" region="jp" extra="true" ifSubset="regionChoice:yes">
 
 		<path ifArch="windows">./../es-theme-carbon/art/logos/jp/${system.theme}.png</path>
 		<path ifArch="windows">./../es-theme-carbon/art/logos/jp/${system.theme}.svg</path>
@@ -2072,7 +2082,7 @@ By Helmic
 		<path>./_inc/logos/${system.theme}-${lang}.svg</path>
 	</image>
 
-	<image name="logoAnime" region="us" extra="true">
+	<image name="logoAnime" region="us" extra="true" ifSubset="regionChoice:yes">
 
 		<path ifArch="windows">./../es-theme-carbon/art/logos/us/${system.theme}.png</path>
 		<path ifArch="windows">./../es-theme-carbon/art/logos/us/${system.theme}.svg</path>
@@ -2088,7 +2098,7 @@ By Helmic
 		<path>./_inc/logos/us/${system.theme}.svg</path>
 	</image>
 
-	<image name="logoAnime" region="jp" extra="true">
+	<image name="logoAnime" region="jp" extra="true" ifSubset="regionChoice:yes">
 
 		<path ifArch="windows">./../es-theme-carbon/art/logos/jp/${system.theme}.png</path>
 		<path ifArch="windows">./../es-theme-carbon/art/logos/jp/${system.theme}.svg</path>
@@ -2426,7 +2436,7 @@ By Helmic
             </storyboard>
 	</image>
 
-	<image name="logoTV" region="us" extra="true" ifSubset="tvLogo:yes">
+	<image name="logoTV" region="us" extra="true" ifSubset="tvLogo:yes" ifSubset="regionChoice:yes">
 
 		<path ifArch="windows">./../es-theme-carbon/art/logos/us/${system.theme}.png</path>
 		<path ifArch="windows">./../es-theme-carbon/art/logos/us/${system.theme}.svg</path>
@@ -2442,7 +2452,7 @@ By Helmic
 		<path>./_inc/logos/us/${system.theme}.svg</path>
 	</image>
 
-	<image name="logoTV" region="jp" extra="true" ifSubset="tvLogo:yes">
+	<image name="logoTV" region="jp" extra="true" ifSubset="tvLogo:yes" ifSubset="regionChoice:yes">
 
 		<path ifArch="windows">./../es-theme-carbon/art/logos/jp/${system.theme}.png</path>
 		<path ifArch="windows">./../es-theme-carbon/art/logos/jp/${system.theme}.svg</path>

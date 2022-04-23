@@ -9,6 +9,9 @@ By Helmic
    
     <variables>
 
+        <lang.regionChoice>allow region settings</lang.regionChoice>
+        <lang.regionChoice lang="fr">autoriser le paramètre région</lang.regionChoice>
+
         <lang.logoAnime>game list view • display wall logo animation</lang.logoAnime>
         <lang.logoAnime lang="fr">listes de jeux • afficher le logo animé sur le mur</lang.logoAnime>
 
