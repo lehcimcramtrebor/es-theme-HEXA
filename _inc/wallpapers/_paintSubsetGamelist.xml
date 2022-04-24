@@ -8,8 +8,8 @@ By Helmic
 <formatVersion>7</formatVersion>
 
     <subset name="gamelistWallPaint" displayName="${lang.gamelistWallPaint}" appliesTo="system,basic,detailed,grid,gamecarousel">
-		<include name="yes" displayName="${lang.yes}"/>
         <include name="no" displayName="${lang.no}"/>
+		<include name="yes" displayName="${lang.yes}"/>
     </subset>
 
 	<view name="basic">

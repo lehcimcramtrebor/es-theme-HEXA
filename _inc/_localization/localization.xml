@@ -633,12 +633,12 @@ By Helmic
 		<lang.large lang="fr">large</lang.large>
 
 		<!--carousel wall paint-->
-		<lang.carouselWallPaint>system view • wall paint</lang.carouselWallPaint>
-		<lang.carouselWallPaint lang="fr">vue système • peindre le mur</lang.carouselWallPaint>
+		<lang.carouselWallPaint>system view • wall paint (+ resources)</lang.carouselWallPaint>
+		<lang.carouselWallPaint lang="fr">vue système • peindre le mur (+ ressources)</lang.carouselWallPaint>
 
 		<!--wall paint-->
-		<lang.gamelistWallPaint>gamelist • wall paint</lang.gamelistWallPaint>
-		<lang.gamelistWallPaint lang="fr">listes de jeux • peindre le mur</lang.gamelistWallPaint>
+		<lang.gamelistWallPaint>gamelist • wall paint (++ resources)</lang.gamelistWallPaint>
+		<lang.gamelistWallPaint lang="fr">listes de jeux • peindre le mur (++ ressources)</lang.gamelistWallPaint>
 
 		<lang.yes>yes</lang.yes>
 		<lang.yes lang="fr">oui</lang.yes>
