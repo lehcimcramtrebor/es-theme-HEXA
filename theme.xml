@@ -76,8 +76,8 @@ By Helmic
     </subset>
 
 	<subset name="transition" displayName="${lang.transition}">
-		<include name="yes" displayName="${lang.yes}"/>
 		<include name="no" displayName="${lang.no}"/>
+		<include name="yes" displayName="${lang.yes}"/>
 	</subset>
 
 	<subset name="transitionCustom" displayName="${lang.transitionCustom}" ifSubset="transition:yes">
@@ -111,8 +111,8 @@ By Helmic
 	</subset>
 
     <subset name="logoVisualAssistance" displayName="${lang.logoVisualAssistance}">
-        <include name="yes" displayName="${lang.yes}"/>
 		<include name="no" displayName="${lang.no}"/>
+        <include name="yes" displayName="${lang.yes}"/>
     </subset>
 
     <subset name="arrows" displayName="${lang.arrows}">
@@ -605,11 +605,11 @@ By Helmic
 	<include>./_inc/wallpapers/${_paintSubset.allow}Gamelist.xml</include>
 
  	<subset name="logoAnime" displayName="${lang.logoAnime}" appliesTo="basic,detailed,grid,gamecarousel">
+		<include name="no" displayName="${lang.no}"/>
         <include name="mix3" displayName="${lang.mix3}"/>
         <include name="onTop" displayName="${lang.onTop}"/>
         <include name="inGamelist" displayName="${lang.inGamelist}"/>
         <include name="onScreen" displayName="${lang.onScreen}"/>
-		<include name="no" displayName="${lang.no}"/>
     </subset>
 
  	<subset name="logoCustom" displayName="${lang.logoCustom}" appliesTo="basic,detailed,grid,gamecarousel" ifSubset="logoAnime:mix3|onTop|inGamelist|onScreen">

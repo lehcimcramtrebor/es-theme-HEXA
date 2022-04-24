@@ -12,8 +12,8 @@ By Helmic
         <lang.regionChoice>allow region settings</lang.regionChoice>
         <lang.regionChoice lang="fr">autoriser le paramètre région</lang.regionChoice>
 
-        <lang.logoAnime>game list view • display wall logo animation</lang.logoAnime>
-        <lang.logoAnime lang="fr">listes de jeux • afficher le logo animé sur le mur</lang.logoAnime>
+        <lang.logoAnime>game list view • display wall logo animation (+++ resources)</lang.logoAnime>
+        <lang.logoAnime lang="fr">listes de jeux • afficher le logo animé sur le mur (+++ ressources)</lang.logoAnime>
 
         <lang.logoCustom>game list view • use custom logo</lang.logoCustom>
         <lang.logoCustom lang="fr">listes de jeux • utiliser le logo personnalisé</lang.logoCustom>
@@ -536,8 +536,8 @@ By Helmic
 		<lang.scratch.strong lang="fr">en fin de vie</lang.scratch.strong>
 
 		<!--transition-->
-		<lang.transition>general • anime gamelist transitions</lang.transition>
-		<lang.transition lang="fr">général • animer la transition des listes de jeux</lang.transition>
+		<lang.transition>general • anime gamelist transitions (+ resources)</lang.transition>
+		<lang.transition lang="fr">général • animer la transition des listes de jeux (+ ressources)</lang.transition>
 
 		<lang.transitionCustom>general • use custom plate for transition</lang.transitionCustom>
 		<lang.transitionCustom lang="fr">général • utiliser la plaque custom pour les transitions</lang.transitionCustom>
@@ -710,8 +710,8 @@ By Helmic
 		<lang.colorsetAdaptive lang="fr">adaptif</lang.colorsetAdaptive>
 
 		<!--random art display-->
-		<lang.randomArt>system view • random arts</lang.randomArt>
-		<lang.randomArt lang="fr">vue système • images aléatoires</lang.randomArt>
+		<lang.randomArt>system view • random arts (+ resources)</lang.randomArt>
+		<lang.randomArt lang="fr">vue système • images aléatoires (+ ressources)</lang.randomArt>
 
 		<lang.thumbnail>thumbnails</lang.thumbnail>
 		<lang.thumbnail lang="fr">boîtes de jeux</lang.thumbnail>
@@ -719,8 +719,8 @@ By Helmic
 		<lang.marquee>marquees</lang.marquee>
 		<lang.marquee lang="fr">logos de jeux</lang.marquee>
 
-		<lang.logoVisualAssistance>carousel • display logo visual assistance</lang.logoVisualAssistance>
-		<lang.logoVisualAssistance lang="fr">carrousel • afficher l'assistance visuelle des logos</lang.logoVisualAssistance>
+		<lang.logoVisualAssistance>carousel • display logo visual assistance (+ resources)</lang.logoVisualAssistance>
+		<lang.logoVisualAssistance lang="fr">carrousel • afficher l'assistance visuelle des logos (+ ressources)</lang.logoVisualAssistance>
 
 		<lang.tvLogo>gamelist • display system logos on video</lang.tvLogo>
 		<lang.tvLogo lang="fr">listes de jeux • afficher les logos système dans la vidéo</lang.tvLogo>
