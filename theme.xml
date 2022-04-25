@@ -76,8 +76,8 @@ By Helmic
     </subset>
 
 	<subset name="transition" displayName="${lang.transition}">
-		<include name="no" displayName="${lang.no}"/>
 		<include name="yes" displayName="${lang.yes}"/>
+		<include name="no" displayName="${lang.no}"/>
 	</subset>
 
 	<subset name="transitionCustom" displayName="${lang.transitionCustom}" ifSubset="transition:yes">
@@ -111,8 +111,13 @@ By Helmic
 	</subset>
 
     <subset name="logoVisualAssistance" displayName="${lang.logoVisualAssistance}">
-		<include name="no" displayName="${lang.no}"/>
         <include name="yes" displayName="${lang.yes}"/>
+		<include name="no" displayName="${lang.no}"/>
+    </subset>
+
+    <subset name="logoSource" displayName="${lang.logoSource}">
+        <include name="png" displayName="${lang.png}">./_inc/png.xml</include>
+        <include name="svg" displayName="${lang.svg}">./_inc/svg.xml</include>
     </subset>
 
     <subset name="arrows" displayName="${lang.arrows}">
@@ -605,11 +610,11 @@ By Helmic
 	<include>./_inc/wallpapers/${_paintSubset.allow}Gamelist.xml</include>
 
  	<subset name="logoAnime" displayName="${lang.logoAnime}" appliesTo="basic,detailed,grid,gamecarousel">
-		<include name="no" displayName="${lang.no}"/>
         <include name="mix3" displayName="${lang.mix3}"/>
         <include name="onTop" displayName="${lang.onTop}"/>
         <include name="inGamelist" displayName="${lang.inGamelist}"/>
         <include name="onScreen" displayName="${lang.onScreen}"/>
+		<include name="no" displayName="${lang.no}"/>
     </subset>
 
  	<subset name="logoCustom" displayName="${lang.logoCustom}" appliesTo="basic,detailed,grid,gamecarousel" ifSubset="logoAnime:mix3|onTop|inGamelist|onScreen">
@@ -805,62 +810,62 @@ By Helmic
                 <animation property="scale" from="1" to="2" duration="250" mode="easeOut" begin="250"/>
             </storyboard>
 
-		<path ifArch="windows">./../es-theme-carbon/art/logos/${system.theme}.png</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/${system.theme}.svg</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/${system.theme}-w.png</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/${system.theme}-w.svg</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/${system.theme}-${lang}.png</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/${system.theme}-${lang}.svg</path>
+		<path ifArch="windows">./../es-theme-carbon/art/${logoSource}/${system.theme}.png</path>
+		<path ifArch="windows">./../es-theme-carbon/art/${logoSource}/${system.theme}.svg</path>
+		<path ifArch="windows">./../es-theme-carbon/art/${logoSource}/${system.theme}-w.png</path>
+		<path ifArch="windows">./../es-theme-carbon/art/${logoSource}/${system.theme}-w.svg</path>
+		<path ifArch="windows">./../es-theme-carbon/art/${logoSource}/${system.theme}-${lang}.png</path>
+		<path ifArch="windows">./../es-theme-carbon/art/${logoSource}/${system.theme}-${lang}.svg</path>
 
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}.png</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}.svg</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}-w.png</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}-w.svg</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}-${lang}.png</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}-${lang}.svg</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/${logoSource}/${system.theme}.png</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/${logoSource}/${system.theme}.svg</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/${logoSource}/${system.theme}-w.png</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/${logoSource}/${system.theme}-w.svg</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/${logoSource}/${system.theme}-${lang}.png</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/${logoSource}/${system.theme}-${lang}.svg</path>
 
-		<path>./_inc/logos/${system.theme}.png</path>
-		<path>./_inc/logos/${system.theme}.svg</path>
-		<path>./_inc/logos/${system.theme}-${lang}.png</path>
-		<path>./_inc/logos/${system.theme}-${lang}.svg</path>
+		<path>./_inc/${logoSource}/${system.theme}.png</path>
+		<path>./_inc/${logoSource}/${system.theme}.svg</path>
+		<path>./_inc/${logoSource}/${system.theme}-${lang}.png</path>
+		<path>./_inc/${logoSource}/${system.theme}-${lang}.svg</path>
 	</image>
 
 	<image name="logoAssist" region="us" extra="true" ifSubset="regionChoice:yes">
 
-		<path ifArch="windows">./../es-theme-carbon/art/logos/us/${system.theme}.png</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/us/${system.theme}.svg</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/us/${system.theme}-w.png</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/us/${system.theme}-w.svg</path>
+		<path ifArch="windows">./../es-theme-carbon/art/${logoSource}/us/${system.theme}.png</path>
+		<path ifArch="windows">./../es-theme-carbon/art/${logoSource}/us/${system.theme}.svg</path>
+		<path ifArch="windows">./../es-theme-carbon/art/${logoSource}/us/${system.theme}-w.png</path>
+		<path ifArch="windows">./../es-theme-carbon/art/${logoSource}/us/${system.theme}-w.svg</path>
 
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/us/${system.theme}.png</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/us/${system.theme}.svg</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/us/${system.theme}-w.png</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/us/${system.theme}-w.svg</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/${logoSource}/us/${system.theme}.png</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/${logoSource}/us/${system.theme}.svg</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/${logoSource}/us/${system.theme}-w.png</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/${logoSource}/us/${system.theme}-w.svg</path>
 
-		<path>./_inc/logos/us/${system.theme}.png</path>
-		<path>./_inc/logos/us/${system.theme}.svg</path>
+		<path>./_inc/${logoSource}/us/${system.theme}.png</path>
+		<path>./_inc/${logoSource}/us/${system.theme}.svg</path>
 	</image>
 
 	<image name="logoAssist" region="jp" extra="true" ifSubset="regionChoice:yes">
 
-		<path ifArch="windows">./../es-theme-carbon/art/logos/jp/${system.theme}.png</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/jp/${system.theme}.svg</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/jp/${system.theme}-w.png</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/jp/${system.theme}-w.svg</path>
+		<path ifArch="windows">./../es-theme-carbon/art/${logoSource}/jp/${system.theme}.png</path>
+		<path ifArch="windows">./../es-theme-carbon/art/${logoSource}/jp/${system.theme}.svg</path>
+		<path ifArch="windows">./../es-theme-carbon/art/${logoSource}/jp/${system.theme}-w.png</path>
+		<path ifArch="windows">./../es-theme-carbon/art/${logoSource}/jp/${system.theme}-w.svg</path>
 
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/jp/${system.theme}.png</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/jp/${system.theme}.svg</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/jp/${system.theme}-w.png</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/jp/${system.theme}-w.svg</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/${logoSource}/jp/${system.theme}.png</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/${logoSource}/jp/${system.theme}.svg</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/${logoSource}/jp/${system.theme}-w.png</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/${logoSource}/jp/${system.theme}-w.svg</path>
 
-		<path>./_inc/logos/jp/${system.theme}.png</path>
-		<path>./_inc/logos/jp/${system.theme}.svg</path>
+		<path>./_inc/${logoSource}/jp/${system.theme}.png</path>
+		<path>./_inc/${logoSource}/jp/${system.theme}.svg</path>
 	</image>
 
 	<image name="logoAssist" extra="true">
 
-		<path>./_inc/logos/test.png</path>
-		<path>./_inc/logos/test.svg</path>
+		<path>./_inc/${logoSource}/test.png</path>
+		<path>./_inc/${logoSource}/test.svg</path>
 
 	</image>
 
@@ -1835,63 +1840,63 @@ By Helmic
                 <animation property="opacity" from="1" to="0" duration="150" mode="easeOutQuint" begin="1000"/>
             </storyboard>
 
-		<path ifArch="windows">./../es-theme-carbon/art/logos/${system.theme}.png</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/${system.theme}.svg</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/${system.theme}-w.png</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/${system.theme}-w.svg</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/${system.theme}-${lang}.png</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/${system.theme}-${lang}.svg</path>
+		<path ifArch="windows">./../es-theme-carbon/art/${logoSource}/${system.theme}.png</path>
+		<path ifArch="windows">./../es-theme-carbon/art/${logoSource}/${system.theme}.svg</path>
+		<path ifArch="windows">./../es-theme-carbon/art/${logoSource}/${system.theme}-w.png</path>
+		<path ifArch="windows">./../es-theme-carbon/art/${logoSource}/${system.theme}-w.svg</path>
+		<path ifArch="windows">./../es-theme-carbon/art/${logoSource}/${system.theme}-${lang}.png</path>
+		<path ifArch="windows">./../es-theme-carbon/art/${logoSource}/${system.theme}-${lang}.svg</path>
 
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}.png</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}.svg</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}-w.png</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}-w.svg</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}-${lang}.png</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}-${lang}.svg</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/${logoSource}/${system.theme}.png</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/${logoSource}/${system.theme}.svg</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/${logoSource}/${system.theme}-w.png</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/${logoSource}/${system.theme}-w.svg</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/${logoSource}/${system.theme}-${lang}.png</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/${logoSource}/${system.theme}-${lang}.svg</path>
 
-		<path>./_inc/logos/${system.theme}.png</path>
-		<path>./_inc/logos/${system.theme}.svg</path>
-		<path>./_inc/logos/${system.theme}-${lang}.png</path>
-		<path>./_inc/logos/${system.theme}-${lang}.svg</path>
+		<path>./_inc/${logoSource}/${system.theme}.png</path>
+		<path>./_inc/${logoSource}/${system.theme}.svg</path>
+		<path>./_inc/${logoSource}/${system.theme}-${lang}.png</path>
+		<path>./_inc/${logoSource}/${system.theme}-${lang}.svg</path>
 
 	</image>
 
 	<image name="logoAssistTransition" region="us" extra="true" ifSubset="regionChoice:yes">
 
-		<path ifArch="windows">./../es-theme-carbon/art/logos/us/${system.theme}.png</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/us/${system.theme}.svg</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/us/${system.theme}-w.png</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/us/${system.theme}-w.svg</path>
+		<path ifArch="windows">./../es-theme-carbon/art/${logoSource}/us/${system.theme}.png</path>
+		<path ifArch="windows">./../es-theme-carbon/art/${logoSource}/us/${system.theme}.svg</path>
+		<path ifArch="windows">./../es-theme-carbon/art/${logoSource}/us/${system.theme}-w.png</path>
+		<path ifArch="windows">./../es-theme-carbon/art/${logoSource}/us/${system.theme}-w.svg</path>
 
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/us/${system.theme}.png</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/us/${system.theme}.svg</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/us/${system.theme}-w.png</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/us/${system.theme}-w.svg</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/${logoSource}/us/${system.theme}.png</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/${logoSource}/us/${system.theme}.svg</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/${logoSource}/us/${system.theme}-w.png</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/${logoSource}/us/${system.theme}-w.svg</path>
 
-		<path>./_inc/logos/us/${system.theme}.png</path>
-		<path>./_inc/logos/us/${system.theme}.svg</path>
+		<path>./_inc/${logoSource}/us/${system.theme}.png</path>
+		<path>./_inc/${logoSource}/us/${system.theme}.svg</path>
 	</image>
 
 	<image name="logoAssistTransition" region="jp" extra="true" ifSubset="regionChoice:yes">
 
-		<path ifArch="windows">./../es-theme-carbon/art/logos/jp/${system.theme}.png</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/jp/${system.theme}.svg</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/jp/${system.theme}-w.png</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/jp/${system.theme}-w.svg</path>
+		<path ifArch="windows">./../es-theme-carbon/art/${logoSource}/jp/${system.theme}.png</path>
+		<path ifArch="windows">./../es-theme-carbon/art/${logoSource}/jp/${system.theme}.svg</path>
+		<path ifArch="windows">./../es-theme-carbon/art/${logoSource}/jp/${system.theme}-w.png</path>
+		<path ifArch="windows">./../es-theme-carbon/art/${logoSource}/jp/${system.theme}-w.svg</path>
 
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/jp/${system.theme}.png</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/jp/${system.theme}.svg</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/jp/${system.theme}-w.png</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/jp/${system.theme}-w.svg</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/${logoSource}/jp/${system.theme}.png</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/${logoSource}/jp/${system.theme}.svg</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/${logoSource}/jp/${system.theme}-w.png</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/${logoSource}/jp/${system.theme}-w.svg</path>
 
-		<path>./_inc/logos/jp/${system.theme}.png</path>
-		<path>./_inc/logos/jp/${system.theme}.svg</path>
+		<path>./_inc/${logoSource}/jp/${system.theme}.png</path>
+		<path>./_inc/${logoSource}/jp/${system.theme}.svg</path>
 	</image>
 
 	<image name="logoAssistTransition" extra="true">
 
-		<path>./_inc/logos/test.png</path>
-		<path>./_inc/logos/test.svg</path>
+		<path>./_inc/${logoSource}/test.png</path>
+		<path>./_inc/${logoSource}/test.svg</path>
 
 	</image>
 
@@ -2062,56 +2067,56 @@ By Helmic
 
             </storyboard>
 
-		<path ifArch="windows">./../es-theme-carbon/art/logos/${system.theme}.png</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/${system.theme}.svg</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/${system.theme}-w.png</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/${system.theme}-w.svg</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/${system.theme}-${lang}.png</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/${system.theme}-${lang}.svg</path>
+		<path ifArch="windows">./../es-theme-carbon/art/${logoSource}/${system.theme}.png</path>
+		<path ifArch="windows">./../es-theme-carbon/art/${logoSource}/${system.theme}.svg</path>
+		<path ifArch="windows">./../es-theme-carbon/art/${logoSource}/${system.theme}-w.png</path>
+		<path ifArch="windows">./../es-theme-carbon/art/${logoSource}/${system.theme}-w.svg</path>
+		<path ifArch="windows">./../es-theme-carbon/art/${logoSource}/${system.theme}-${lang}.png</path>
+		<path ifArch="windows">./../es-theme-carbon/art/${logoSource}/${system.theme}-${lang}.svg</path>
 
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}.png</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}.svg</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}-w.png</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}-w.svg</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}-${lang}.png</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}-${lang}.svg</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/${logoSource}/${system.theme}.png</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/${logoSource}/${system.theme}.svg</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/${logoSource}/${system.theme}-w.png</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/${logoSource}/${system.theme}-w.svg</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/${logoSource}/${system.theme}-${lang}.png</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/${logoSource}/${system.theme}-${lang}.svg</path>
 
-		<path>./_inc/logos/${system.theme}.png</path>
-		<path>./_inc/logos/${system.theme}.svg</path>
-		<path>./_inc/logos/${system.theme}-${lang}.png</path>
-		<path>./_inc/logos/${system.theme}-${lang}.svg</path>
+		<path>./_inc/${logoSource}/${system.theme}.png</path>
+		<path>./_inc/${logoSource}/${system.theme}.svg</path>
+		<path>./_inc/${logoSource}/${system.theme}-${lang}.png</path>
+		<path>./_inc/${logoSource}/${system.theme}-${lang}.svg</path>
 	</image>
 
 	<image name="logoAnime" region="us" extra="true" ifSubset="regionChoice:yes">
 
-		<path ifArch="windows">./../es-theme-carbon/art/logos/us/${system.theme}.png</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/us/${system.theme}.svg</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/us/${system.theme}-w.png</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/us/${system.theme}-w.svg</path>
+		<path ifArch="windows">./../es-theme-carbon/art/${logoSource}/us/${system.theme}.png</path>
+		<path ifArch="windows">./../es-theme-carbon/art/${logoSource}/us/${system.theme}.svg</path>
+		<path ifArch="windows">./../es-theme-carbon/art/${logoSource}/us/${system.theme}-w.png</path>
+		<path ifArch="windows">./../es-theme-carbon/art/${logoSource}/us/${system.theme}-w.svg</path>
 
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/us/${system.theme}.png</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/us/${system.theme}.svg</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/us/${system.theme}-w.png</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/us/${system.theme}-w.svg</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/${logoSource}/us/${system.theme}.png</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/${logoSource}/us/${system.theme}.svg</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/${logoSource}/us/${system.theme}-w.png</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/${logoSource}/us/${system.theme}-w.svg</path>
 
-		<path>./_inc/logos/us/${system.theme}.png</path>
-		<path>./_inc/logos/us/${system.theme}.svg</path>
+		<path>./_inc/${logoSource}/us/${system.theme}.png</path>
+		<path>./_inc/${logoSource}/us/${system.theme}.svg</path>
 	</image>
 
 	<image name="logoAnime" region="jp" extra="true" ifSubset="regionChoice:yes">
 
-		<path ifArch="windows">./../es-theme-carbon/art/logos/jp/${system.theme}.png</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/jp/${system.theme}.svg</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/jp/${system.theme}-w.png</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/jp/${system.theme}-w.svg</path>
+		<path ifArch="windows">./../es-theme-carbon/art/${logoSource}/jp/${system.theme}.png</path>
+		<path ifArch="windows">./../es-theme-carbon/art/${logoSource}/jp/${system.theme}.svg</path>
+		<path ifArch="windows">./../es-theme-carbon/art/${logoSource}/jp/${system.theme}-w.png</path>
+		<path ifArch="windows">./../es-theme-carbon/art/${logoSource}/jp/${system.theme}-w.svg</path>
 
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/jp/${system.theme}.png</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/jp/${system.theme}.svg</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/jp/${system.theme}-w.png</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/jp/${system.theme}-w.svg</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/${logoSource}/jp/${system.theme}.png</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/${logoSource}/jp/${system.theme}.svg</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/${logoSource}/jp/${system.theme}-w.png</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/${logoSource}/jp/${system.theme}-w.svg</path>
 
-		<path>./_inc/logos/jp/${system.theme}.png</path>
-		<path>./_inc/logos/jp/${system.theme}.svg</path>
+		<path>./_inc/${logoSource}/jp/${system.theme}.png</path>
+		<path>./_inc/${logoSource}/jp/${system.theme}.svg</path>
 	</image>
 
 		<image name="logoAnime" extra="true" ifSubset="logoCustom:yes">
@@ -2126,8 +2131,8 @@ By Helmic
 
 	<image name="logoAnime" extra="true">
 
-		<path>./_inc/logos/test.png</path>
-		<path>./_inc/logos/test.svg</path>
+		<path>./_inc/${logoSource}/test.png</path>
+		<path>./_inc/${logoSource}/test.svg</path>
 
 	</image>
 
@@ -2385,24 +2390,24 @@ By Helmic
 		<color>ffffff</color>
 		<linearSmooth>true</linearSmooth>
 
-		<path ifArch="windows">./../es-theme-carbon/art/logos/${system.theme}.png</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/${system.theme}.svg</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/${system.theme}-w.png</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/${system.theme}-w.svg</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/${system.theme}-${lang}.png</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/${system.theme}-${lang}.svg</path>
+		<path ifArch="windows">./../es-theme-carbon/art/${logoSource}/${system.theme}.png</path>
+		<path ifArch="windows">./../es-theme-carbon/art/${logoSource}/${system.theme}.svg</path>
+		<path ifArch="windows">./../es-theme-carbon/art/${logoSource}/${system.theme}-w.png</path>
+		<path ifArch="windows">./../es-theme-carbon/art/${logoSource}/${system.theme}-w.svg</path>
+		<path ifArch="windows">./../es-theme-carbon/art/${logoSource}/${system.theme}-${lang}.png</path>
+		<path ifArch="windows">./../es-theme-carbon/art/${logoSource}/${system.theme}-${lang}.svg</path>
 
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}.png</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}.svg</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}-w.png</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}-w.svg</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}-${lang}.png</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}-${lang}.svg</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/${logoSource}/${system.theme}.png</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/${logoSource}/${system.theme}.svg</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/${logoSource}/${system.theme}-w.png</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/${logoSource}/${system.theme}-w.svg</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/${logoSource}/${system.theme}-${lang}.png</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/${logoSource}/${system.theme}-${lang}.svg</path>
 
-		<path>./_inc/logos/${system.theme}.png</path>
-		<path>./_inc/logos/${system.theme}.svg</path>
-		<path>./_inc/logos/${system.theme}-${lang}.png</path>
-		<path>./_inc/logos/${system.theme}-${lang}.svg</path>
+		<path>./_inc/${logoSource}/${system.theme}.png</path>
+		<path>./_inc/${logoSource}/${system.theme}.svg</path>
+		<path>./_inc/${logoSource}/${system.theme}-${lang}.png</path>
+		<path>./_inc/${logoSource}/${system.theme}-${lang}.svg</path>
 			<storyboard event="open">
                 <animation property="scale" to="0.6" duration="350" mode="easeInOut" begin="1500"/>
             </storyboard>
@@ -2438,34 +2443,34 @@ By Helmic
 
 	<image name="logoTV" region="us" extra="true" ifSubset="tvLogo:yes" ifSubset="regionChoice:yes">
 
-		<path ifArch="windows">./../es-theme-carbon/art/logos/us/${system.theme}.png</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/us/${system.theme}.svg</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/us/${system.theme}-w.png</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/us/${system.theme}-w.svg</path>
+		<path ifArch="windows">./../es-theme-carbon/art/${logoSource}/us/${system.theme}.png</path>
+		<path ifArch="windows">./../es-theme-carbon/art/${logoSource}/us/${system.theme}.svg</path>
+		<path ifArch="windows">./../es-theme-carbon/art/${logoSource}/us/${system.theme}-w.png</path>
+		<path ifArch="windows">./../es-theme-carbon/art/${logoSource}/us/${system.theme}-w.svg</path>
 
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/us/${system.theme}.png</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/us/${system.theme}.svg</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/us/${system.theme}-w.png</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/us/${system.theme}-w.svg</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/${logoSource}/us/${system.theme}.png</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/${logoSource}/us/${system.theme}.svg</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/${logoSource}/us/${system.theme}-w.png</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/${logoSource}/us/${system.theme}-w.svg</path>
 
-		<path>./_inc/logos/us/${system.theme}.png</path>
-		<path>./_inc/logos/us/${system.theme}.svg</path>
+		<path>./_inc/${logoSource}/us/${system.theme}.png</path>
+		<path>./_inc/${logoSource}/us/${system.theme}.svg</path>
 	</image>
 
 	<image name="logoTV" region="jp" extra="true" ifSubset="tvLogo:yes" ifSubset="regionChoice:yes">
 
-		<path ifArch="windows">./../es-theme-carbon/art/logos/jp/${system.theme}.png</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/jp/${system.theme}.svg</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/jp/${system.theme}-w.png</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/jp/${system.theme}-w.svg</path>
+		<path ifArch="windows">./../es-theme-carbon/art/${logoSource}/jp/${system.theme}.png</path>
+		<path ifArch="windows">./../es-theme-carbon/art/${logoSource}/jp/${system.theme}.svg</path>
+		<path ifArch="windows">./../es-theme-carbon/art/${logoSource}/jp/${system.theme}-w.png</path>
+		<path ifArch="windows">./../es-theme-carbon/art/${logoSource}/jp/${system.theme}-w.svg</path>
 
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/jp/${system.theme}.png</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/jp/${system.theme}.svg</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/jp/${system.theme}-w.png</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/jp/${system.theme}-w.svg</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/${logoSource}/jp/${system.theme}.png</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/${logoSource}/jp/${system.theme}.svg</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/${logoSource}/jp/${system.theme}-w.png</path>
+		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/${logoSource}/jp/${system.theme}-w.svg</path>
 
-		<path>./_inc/logos/jp/${system.theme}.png</path>
-		<path>./_inc/logos/jp/${system.theme}.svg</path>
+		<path>./_inc/${logoSource}/jp/${system.theme}.png</path>
+		<path>./_inc/${logoSource}/jp/${system.theme}.svg</path>
 	</image>
 
 <!---------------------------------------------------------------------GAMELIST FADE----------------------------------------------------------------------------------------------->

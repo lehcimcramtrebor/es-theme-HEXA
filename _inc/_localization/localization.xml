@@ -9,6 +9,15 @@ By Helmic
    
     <variables>
 
+        <lang.logoSource>carousel • logos source</lang.logoSource>
+        <lang.logoSource lang="fr">carrousel • source des logos</lang.logoSource>
+
+        <lang.png>png (fast)</lang.png>
+        <lang.png lang="fr">png (rapide)</lang.png>
+
+        <lang.svg>svg (lags)</lang.svg>
+        <lang.svg lang="fr">svg (ralentissements)</lang.svg>
+
         <lang.regionChoice>allow region settings</lang.regionChoice>
         <lang.regionChoice lang="fr">autoriser le paramètre région</lang.regionChoice>
 
