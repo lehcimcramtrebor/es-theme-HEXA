@@ -1,0 +1,20 @@
+<!--
+HEXA Theme for Retrobat 4+ / Batocera v32+
+By Helmic
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+<formatVersion>7</formatVersion>
+
+	<view name="grid">
+
+		<imagegrid name="gamegrid">
+			<autoLayout>3 3</autoLayout>
+			<autoLayout ifSubset="themeRatio:54|43">2 3</autoLayout>
+
+		</imagegrid>
+
+	</view>
+	
+</theme>
