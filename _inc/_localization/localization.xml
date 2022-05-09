@@ -15,6 +15,15 @@ By Helmic
         <lang.png>png (fast)</lang.png>
         <lang.png lang="fr">png (rapide)</lang.png>
 
+        <lang.logoAssistTransitionCustom>general • use custom logo in gamelist transitions</lang.logoAssistTransitionCustom>
+        <lang.logoAssistTransitionCustom lang="fr">general • utiliser le logo personnalisé dans les transitions</lang.logoAssistTransitionCustom>
+
+        <lang.transitionCustomName>general • use custom label in gamelist transitions</lang.transitionCustomName>
+        <lang.transitionCustomName lang="fr">general • utiliser le label personnalisé dans les transitions</lang.transitionCustomName>
+
+        <lang.customs>customs wallpapers (deactivate paints)</lang.customs>
+        <lang.customs lang="fr">customs (désactive les peintures)</lang.customs>
+
         <lang.svg>svg (lags)</lang.svg>
         <lang.svg lang="fr">svg (ralentissements)</lang.svg>
 

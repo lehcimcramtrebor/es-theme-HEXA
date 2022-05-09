@@ -21,9 +21,9 @@ By Helmic
             <path>./../../../${system.theme}/color-${lang}.png</path>
             <path region="us">./../../../${system.theme}/us/color.png</path>
             <path region="jp">./../../../${system.theme}/jp/color.png</path>
-            <path ifSubset="containerTile:customTile">./../../../custom.png</path>
-            <path ifArch="windows" ifSubset="containerTile:customTile">./../../../../../../../custom.png</path>
-            <path ifNotArch="windows" ifSubset="containerTile:customTile">./../../../../../custom.png</path>
+            <path ifSubset="containerTile:customTile">./../../../_hexaCustom/tile/custom.png</path>
+            <path ifArch="windows" ifSubset="containerTile:customTile">./../../../../../../../_hexaCustom/tile/custom.png</path>
+            <path ifNotArch="windows" ifSubset="containerTile:customTile">./../../../../../_hexaCustom/tile/custom.png</path>
 			<maxSize>0.243 1</maxSize>
 			<pos>0.04 0.984</pos>
 			<pos ifSubset="themeRatio:54">0.04 0.975</pos>

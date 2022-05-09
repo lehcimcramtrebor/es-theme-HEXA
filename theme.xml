@@ -10,6 +10,12 @@ By Helmic
     <!--LANGS-->
     
 	<include>./_inc/_localization/localization.xml</include>
+ 	
+    <!--CUSTOM NAME-->
+    
+	<include>./_hexaCustom/name/name.xml</include>
+    <include ifArch="windows">./../../../../_hexaCustom/name/name.xml</include>
+    <include ifNotArch="windows">./../../_hexaCustom/name/name.xml</include>
  
     <!--REGION DEFAULT (CHANGE "eu" to "jp" or "us")-->
  
@@ -78,6 +84,16 @@ By Helmic
 	<subset name="transition" displayName="${lang.transition}">
 		<include name="yes" displayName="${lang.yes}"/>
 		<include name="no" displayName="${lang.no}"/>
+	</subset>
+
+	<subset name="logoAssistTransitionCustom" displayName="${lang.logoAssistTransitionCustom}">
+		<include name="no" displayName="${lang.no}"/>
+		<include name="yes" displayName="${lang.yes}"/>
+	</subset>
+
+	<subset name="transitionCustomName" displayName="${lang.transitionCustomName}">
+		<include name="no" displayName="${lang.no}"/>
+		<include name="yes" displayName="${lang.yes}"/>
 	</subset>
 
 	<subset name="transitionCustom" displayName="${lang.transitionCustom}" ifSubset="transition:yes">
@@ -204,6 +220,7 @@ By Helmic
         <include name="wallSynthwave" displayName="${lang.wallSynthwave}">./_inc/wallpapers/wallSynthwave.xml</include>
         <include name="wallSynthwave2" displayName="${lang.wallSynthwave2}">./_inc/wallpapers/wallSynthwave2.xml</include>
         <include name="wallSynthwave3" displayName="${lang.wallSynthwave3}">./_inc/wallpapers/wallSynthwave3.xml</include>
+        <include name="customs" displayName="${lang.customs}"/>
     </subset>
  
 	<include>./_inc/wallpapers/${_paintSubset.allow}System.xml</include>
@@ -737,11 +754,19 @@ By Helmic
  
         <image name="background" extra="true">
             <path>./_inc/wallpapers/${wallpaper}.jpg</path>
+            <path ifSubset="wall:customs">./_hexaCustom/wallpapers/custom.jpg</path>
+            <path ifSubset="wall:customs">./_hexaCustom/wallpapers/${system.theme}.jpg</path>
+            <path ifSubset="wall:customs" ifArch="windows">./../../../../_hexaCustom/wallpapers/custom.jpg</path>
+            <path ifSubset="wall:customs" ifNotArch="windows">./../../_hexaCustom/wallpapers/custom.jpg</path>
+            <path ifSubset="wall:customs" ifArch="windows">./../../../../_hexaCustom/wallpapers/${system.theme}.jpg</path>
+            <path ifSubset="wall:customs" ifNotArch="windows">./../../_hexaCustom/wallpapers/${system.theme}.jpg</path>
             <maxSize>99 1</maxSize>
             <pos>0.5 0.5</pos>
             <origin>0.5 0.5</origin>
             <color>808080</color>
             <colorEnd>303030</colorEnd>
+            <color ifSubset="wall:customs">ffffff</color>
+            <colorEnd ifSubset="wall:customs">808080</colorEnd>
             <gradientType>vertical</gradientType>
             <opacity>1</opacity>
             <zIndex>0</zIndex>
@@ -1200,9 +1225,9 @@ By Helmic
             <default>./_inc/noise.mp4</default>
             <path>{random}</path>
             <path ifSubset="randomCustom:yes">./${system.theme}/video.mp4</path>
-            <path ifSubset="randomCustom:yes">./_customVideos/${system.theme}.mp4</path>
-            <path ifArch="windows" ifSubset="randomCustom:yes">./../../../../_customVideos/${system.theme}.mp4</path>
-            <path ifNotArch="windows" ifSubset="randomCustom:yes">./../../_customVideos/${system.theme}.mp4</path>
+            <path ifSubset="randomCustom:yes">./_hexaCustom/videos/${system.theme}.mp4</path>
+            <path ifArch="windows" ifSubset="randomCustom:yes">./../../../../_hexaCustom/videos/${system.theme}.mp4</path>
+            <path ifNotArch="windows" ifSubset="randomCustom:yes">./../../_hexaCustom/videos/${system.theme}.mp4</path>
             <opacity>0</opacity>
             <opacity ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff">1</opacity>
             <size ifSubset="systemRandomRatio:stretched">1 1</size>
@@ -1343,11 +1368,19 @@ By Helmic
  
         <image name="backgroundVideoFix" extra="true" ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff">
             <path>./_inc/wallpapers/${wallpaper}.jpg</path>
+            <path ifSubset="wall:customs">./_hexaCustom/wallpapers/custom.jpg</path>
+            <path ifSubset="wall:customs">./_hexaCustom/wallpapers/${system.theme}.jpg</path>
+            <path ifSubset="wall:customs" ifArch="windows">./../../../../_hexaCustom/wallpapers/custom.jpg</path>
+            <path ifSubset="wall:customs" ifNotArch="windows">./../../_hexaCustom/wallpapers/custom.jpg</path>
+            <path ifSubset="wall:customs" ifArch="windows">./../../../../_hexaCustom/wallpapers/${system.theme}.jpg</path>
+            <path ifSubset="wall:customs" ifNotArch="windows">./../../_hexaCustom/wallpapers/${system.theme}.jpg</path>
             <maxSize>99 1</maxSize>
             <pos>0.5 0.5</pos>
             <origin>0.5 0.5</origin>
             <color>808080</color>
             <colorEnd>303030</colorEnd>
+            <color ifSubset="wall:customs">ffffff</color>
+            <colorEnd ifSubset="wall:customs">808080</colorEnd>
             <gradientType>vertical</gradientType>
             <opacity>1</opacity>
             <zIndex>7</zIndex>
@@ -1784,9 +1817,9 @@ By Helmic
             <path>./${system.theme}/color-${lang}.png</path>
             <path region="us" ifSubset="regionChoice:yes">./${system.theme}/us/color.png</path>
             <path region="jp" ifSubset="regionChoice:yes">./${system.theme}/jp/color.png</path>
-			<path ifSubset="transitionCustom:yes">./custom.png</path>
-            <path ifArch="windows" ifSubset="transitionCustom:yes">./../../../../custom.png</path>
-            <path ifNotArch="windows" ifSubset="transitionCustom:yes">./../../custom.png</path>
+			<path ifSubset="transitionCustom:yes">./_hexaCustom/tile/custom.png</path>
+            <path ifArch="windows" ifSubset="transitionCustom:yes">./../../../../_hexaCustom/tile/custom.png</path>
+            <path ifNotArch="windows" ifSubset="transitionCustom:yes">./../../_hexaCustom/tile/custom.png</path>
            	<maxSize>1 0.80</maxSize>
 			<pos>0.5 0.425</pos>
 			<origin>0.5 0.5</origin>
@@ -1809,12 +1842,20 @@ By Helmic
 		<image name="transitionBack" extra="true">
             <linearSmooth>true</linearSmooth>
             <path>./_inc/wallpapers/${wallpaper}.jpg</path>
+            <path ifSubset="wall:customs">./_hexaCustom/wallpapers/custom.jpg</path>
+            <path ifSubset="wall:customs">./_hexaCustom/wallpapers/${system.theme}.jpg</path>
+            <path ifSubset="wall:customs" ifArch="windows">./../../../../_hexaCustom/wallpapers/custom.jpg</path>
+            <path ifSubset="wall:customs" ifNotArch="windows">./../../_hexaCustom/wallpapers/custom.jpg</path>
+            <path ifSubset="wall:customs" ifArch="windows">./../../../../_hexaCustom/wallpapers/${system.theme}.jpg</path>
+            <path ifSubset="wall:customs" ifNotArch="windows">./../../_hexaCustom/wallpapers/${system.theme}.jpg</path>
            	<maxSize>99 1</maxSize>
 			<pos>0.5 0.5</pos>
 			<origin>0.5 0.5</origin>
             <zIndex>96</zIndex>
             <color>808080</color>
             <colorEnd>303030</colorEnd>
+            <color ifSubset="wall:customs">ffffff</color>
+            <colorEnd ifSubset="wall:customs">808080</colorEnd>
             <gradientType>vertical</gradientType>
 			<storyboard>
 
@@ -1898,6 +1939,14 @@ By Helmic
 		<path>./_inc/${logoSource}/test.png</path>
 		<path>./_inc/${logoSource}/test.svg</path>
 
+		<path ifSubset="logoAssistTransitionCustom:yes">./_hexaCustom/logo/logo.png</path>
+		<path ifSubset="logoAssistTransitionCustom:yes">./_hexaCustom/logo/logo.svg</path>
+
+		<path ifSubset="logoAssistTransitionCustom:yes" ifArch="windows">./../../../../_hexaCustom/logo/logo.png</path>
+		<path ifSubset="logoAssistTransitionCustom:yes" ifArch="windows">./../../../../_hexaCustom/logo/logo.svg</path>
+		
+		<path ifSubset="logoAssistTransitionCustom:yes" ifNotArch="windows">./../../_hexaCustom/logo/logo.png</path>
+		<path ifSubset="logoAssistTransitionCustom:yes" ifNotArch="windows">./../../_hexaCustom/logo/logo.svg</path>
 	</image>
 
 		<text name="transitionFullName" extra="true">
@@ -1923,6 +1972,7 @@ By Helmic
 
 		<text name="transitionManufacturer" extra="true">
 			<text>${system.manufacturer}</text>
+			<text ifSubset="transitionCustomName:yes">${customName}</text>
             <fontPath>./_inc/fonts/${font1}</fontPath>
             <color>dddddd</color>
             <glowColor>00000080</glowColor>
@@ -2120,12 +2170,12 @@ By Helmic
 	</image>
 
 		<image name="logoAnime" extra="true" ifSubset="logoCustom:yes">
-		<path>./logo.png</path>
-		<path>./logo.svg</path>
-        <path ifArch="windows" ifSubset="transitionCustom:yes">./../../../../logo.png</path>
-        <path ifArch="windows" ifSubset="transitionCustom:yes">./../../../../logo.svg</path>
-        <path ifNotArch="windows" ifSubset="transitionCustom:yes">./../../logo.png</path>
-        <path ifNotArch="windows" ifSubset="transitionCustom:yes">./../../logo.svg</path>
+		<path>./_hexaCustom/logo/logo.png</path>
+		<path>./_hexaCustom/logo/logo.svg</path>
+        <path ifArch="windows" ifSubset="transitionCustom:yes">./../../../../_hexaCustom/logo/logo.png</path>
+        <path ifArch="windows" ifSubset="transitionCustom:yes">./../../../../_hexaCustom/logo/logo.svg</path>
+        <path ifNotArch="windows" ifSubset="transitionCustom:yes">./../../_hexaCustom/logo/logo.png</path>
+        <path ifNotArch="windows" ifSubset="transitionCustom:yes">./../../_hexaCustom/logo/logo.svg</path>
 	</image>
 
 
@@ -2135,6 +2185,103 @@ By Helmic
 		<path>./_inc/${logoSource}/test.svg</path>
 
 	</image>
+
+		<image name="logoAnime" extra="true" ifSubset="wall:customs">
+			<storyboard ifSubset="logoAnime:onTop" repeatAt="1">
+                <animation property="maxSize" to="99 0.3" duration="1" mode="linear"/>
+                <animation property="reflexion" to="0.5 0" duration="1" mode="linear"/>
+                <animation property="colorEnd" to="ffffffaa" duration="1" mode="linear"/>
+                <animation property="opacity" from="0" to="1" duration="75" mode="linear"/>
+                <animation property="origin" from="0 0" to="1 0" duration="20000" autoreverse="true" mode="easeInOut"/>
+                <animation property="pos" from="1 0.06" to="0 0.06" duration="20000" autoreverse="true" mode="easeInOut"/>
+        		<animation property="h" to="0" begin="5000" duration="25" repeat="2" autoreverse="true" mode="easeInOut"/>				
+        		<animation property="h" to="0" begin="7500" duration="25" repeat="3" autoreverse="true" mode="easeInOut"/>				
+        		<animation property="h" to="0" begin="10000" duration="15" repeat="5" autoreverse="true" mode="easeInOut"/>				
+        		<animation property="h" to="0" begin="12500" duration="25" repeat="3" autoreverse="true" mode="easeInOut"/>				
+        		<animation property="h" to="0" begin="15000" duration="25" repeat="2" autoreverse="true" mode="easeInOut"/>				
+        		<animation property="h" to="0" begin="25000" duration="25" repeat="2" autoreverse="true" mode="easeInOut"/>				
+        		<animation property="h" to="0" begin="27500" duration="25" repeat="3" autoreverse="true" mode="easeInOut"/>				
+        		<animation property="h" to="0" begin="30000" duration="15" repeat="5" autoreverse="true" mode="easeInOut"/>				
+        		<animation property="h" to="0" begin="32500" duration="25" repeat="3" autoreverse="true" mode="easeInOut"/>				
+        		<animation property="h" to="0" begin="35000" duration="25" repeat="2" autoreverse="true" mode="easeInOut"/>				
+            </storyboard>
+
+			<storyboard ifSubset="logoAnime:inGamelist" repeatAt="1">
+                <animation property="maxSize" to="0.36 99" duration="1" mode="linear"/>
+                <animation property="reflexion" to="0.5 0" duration="1" mode="linear"/>
+                <animation property="colorEnd" to="ffffffaa" duration="1" mode="linear"/>
+				<animation property="opacity" from="0" to="1" duration="75" mode="linear"/>
+                <animation property="origin" from="1 0" to="1 1" duration="20000" autoreverse="true" mode="easeInOut"/>
+                <animation property="pos" from="1 1" to="1 0" duration="20000" autoreverse="true" mode="easeInOut"/>
+        		<animation property="w" to="0" begin="5000" duration="25" repeat="2" autoreverse="true" mode="easeInOut"/>				
+        		<animation property="w" to="0" begin="7500" duration="25" repeat="3" autoreverse="true" mode="easeInOut"/>				
+        		<animation property="w" to="0" begin="10000" duration="15" repeat="5" autoreverse="true" mode="easeInOut"/>				
+        		<animation property="w" to="0" begin="12500" duration="25" repeat="3" autoreverse="true" mode="easeInOut"/>				
+        		<animation property="w" to="0" begin="15000" duration="25" repeat="2" autoreverse="true" mode="easeInOut"/>				
+        		<animation property="w" to="0" begin="25000" duration="25" repeat="2" autoreverse="true" mode="easeInOut"/>				
+        		<animation property="w" to="0" begin="27500" duration="25" repeat="3" autoreverse="true" mode="easeInOut"/>				
+        		<animation property="w" to="0" begin="30000" duration="15" repeat="5" autoreverse="true" mode="easeInOut"/>				
+        		<animation property="w" to="0" begin="32500" duration="25" repeat="3" autoreverse="true" mode="easeInOut"/>				
+        		<animation property="w" to="0" begin="35000" duration="25" repeat="2" autoreverse="true" mode="easeInOut"/>				
+            </storyboard>
+
+			<storyboard ifSubset="logoAnime:onScreen" repeatAt="1">
+                <animation property="maxSize" to="99 0.9259259259259259" duration="1" mode="linear"/>
+                <animation property="reflexion" to="0 0" duration="1" mode="linear"/>
+                <animation property="colorEnd" to="ffffff00" duration="1" mode="linear"/>
+                <animation property="opacity" from="0" to="1" duration="75" mode="linear"/>
+                <animation property="origin" from="0 0.5" to="1 0.5" duration="40000" autoreverse="true" mode="easeInOut"/>
+                <animation property="pos" from="1 0.5" to="0 0.5" duration="40000" autoreverse="true" mode="easeInOut"/>
+        		<animation property="w" to="0" begin="10000" duration="8" repeat="2" autoreverse="true" mode="easeInOut"/>				
+        		<animation property="w" to="0" begin="15000" duration="10" repeat="3" autoreverse="true" mode="easeInOut"/>				
+        		<animation property="w" to="0" begin="20000" duration="15" repeat="5" autoreverse="true" mode="easeInOut"/>				
+        		<animation property="w" to="0" begin="25000" duration="10" repeat="3" autoreverse="true" mode="easeInOut"/>				
+        		<animation property="w" to="0" begin="30000" duration="8" repeat="2" autoreverse="true" mode="easeInOut"/>				
+        		<animation property="w" to="0" begin="50000" duration="8" repeat="2" autoreverse="true" mode="easeInOut"/>				
+        		<animation property="w" to="0" begin="55000" duration="10" repeat="3" autoreverse="true" mode="easeInOut"/>				
+        		<animation property="w" to="0" begin="60000" duration="15" repeat="5" autoreverse="true" mode="easeInOut"/>				
+        		<animation property="w" to="0" begin="65000" duration="10" repeat="3" autoreverse="true" mode="easeInOut"/>				
+        		<animation property="w" to="0" begin="70000" duration="8" repeat="2" autoreverse="true" mode="easeInOut"/>				
+            </storyboard>
+
+			<storyboard ifSubset="logoAnime:mix3" repeatAt="1">
+
+                <animation property="maxSize" to="99 0.9259259259259259" duration="1" mode="linear" begin="2"/>
+                <animation property="reflexion" to="0 0" duration="1" mode="linear" begin="2"/>
+                <animation property="colorEnd" to="ffffff00" duration="1" mode="linear"/>
+                <animation property="origin" from="0 0.5" to="1 0.5" duration="40000" mode="linear"/>
+                <animation property="pos" from="1 0.5" to="0 0.5" duration="40000" mode="linear"/>
+        		<animation property="w" to="0" begin="10000" duration="8" repeat="2" autoreverse="true" mode="easeInOut"/>				
+        		<animation property="w" to="0" begin="15000" duration="10" repeat="3" autoreverse="true" mode="easeInOut"/>				
+        		<animation property="w" to="0" begin="20000" duration="15" repeat="5" autoreverse="true" mode="easeInOut"/>				
+        		<animation property="w" to="0" begin="25000" duration="10" repeat="3" autoreverse="true" mode="easeInOut"/>				
+        		<animation property="w" to="0" begin="30000" duration="8" repeat="2" autoreverse="true" mode="easeInOut"/>				
+
+                <animation property="maxSize" to="0.36 99" duration="1" mode="linear" begin="40000"/>
+                <animation property="reflexion" to="0.5 0" duration="1" mode="linear" begin="40000"/>
+                <animation property="colorEnd" to="ffffffaa" duration="1" mode="linear" begin="40000"/>
+                <animation property="origin" from="1 0" to="1 1" duration="20000" mode="easeInOut" begin="40000"/>
+                <animation property="pos" from="1 1" to="1 0" duration="20000" mode="easeInOut" begin="40000"/>
+        		<animation property="w" to="0" begin="45000" duration="25" repeat="2" autoreverse="true" mode="easeInOut"/>				
+        		<animation property="w" to="0" begin="47500" duration="25" repeat="3" autoreverse="true" mode="easeInOut"/>				
+        		<animation property="w" to="0" begin="50000" duration="15" repeat="5" autoreverse="true" mode="easeInOut"/>				
+        		<animation property="w" to="0" begin="52500" duration="25" repeat="3" autoreverse="true" mode="easeInOut"/>				
+        		<animation property="w" to="0" begin="55000" duration="25" repeat="2" autoreverse="true" mode="easeInOut"/>				
+
+                <animation property="maxSize" to="99 0.3" duration="1" mode="linear" begin="60000"/>
+                <animation property="reflexion" to="0.5 0" duration="1" mode="linear" begin="60000"/>
+                <animation property="colorEnd" to="ffffffaa" duration="1" mode="linear" begin="60000"/>
+                <animation property="origin" from="0 0" to="1 0" duration="20000" mode="easeInOut" begin="60000"/>
+                <animation property="pos" from="1 0.06" to="0 0.06" duration="20000" mode="easeInOut" begin="60000"/>
+        		<animation property="h" to="0" begin="65000" duration="25" repeat="2" autoreverse="true" mode="easeInOut"/>				
+        		<animation property="h" to="0" begin="67500" duration="25" repeat="3" autoreverse="true" mode="easeInOut"/>				
+        		<animation property="h" to="0" begin="70000" duration="15" repeat="5" autoreverse="true" mode="easeInOut"/>				
+        		<animation property="h" to="0" begin="72500" duration="25" repeat="3" autoreverse="true" mode="easeInOut"/>				
+        		<animation property="h" to="0" begin="75000" duration="25" repeat="2" autoreverse="true" mode="easeInOut"/>				
+
+            </storyboard>
+
+		</image>
 
 	</view>
 
@@ -4934,5 +5081,45 @@ By Helmic
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--- FIX PAINT WITH CUSTOM WALLPAPERS --->
+
+
+	<view name="basic" ifSubset="wall:customs">
+
+		<image name="wallPaint" extra="true">
+			<visible>false</visible>
+		</image>
+ 	
+	</view>
+
+	<view name="detailed,grid,gamecarousel" ifSubset="wall:customs">
+
+		<image name="md_fanart">
+ 			<visible>false</visible>
+		</image>
+	
+	</view>
+
+	<customView name="library" inherits="detailed" displayName="${lang.library}" ifSubset="wall:customs">
+        
+		<image name="wallPaint" extra="true">
+			<visible>false</visible>
+		</image>
+
+	</customView>
+
+	<view name="system">
+
+		<image name="logoPaint" extra="true" ifSubset="wall:customs">
+			<visible>false</visible>
+		</image>
+
+		<image name="logoPaintFix" extra="true" ifSubset="wall:customs">
+			<visible>false</visible>
+ 		</image>
+
+	</view>
 
 </theme>
