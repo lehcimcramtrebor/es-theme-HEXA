@@ -525,6 +525,11 @@ By Helmic
 		<include name="yes" displayName="${lang.yes}"/>
 	</subset>
 
+	<subset name="mdVideoShortDelay" displayName="${lang.mdVideoShortDelay}" appliesTo="system,basic,detailed,grid,gamecarousel">
+		<include name="no" displayName="${lang.no}"/>
+		<include name="yes" displayName="${lang.yes}"/>
+	</subset>
+
 	<subset name="tvOs" displayName="${lang.tvOs}" appliesTo="system,basic,detailed,grid,gamecarousel">
 		<include name="no" displayName="${lang.no}"/>
 		<include name="retrobat" displayName="${lang.retrobat}"/>
@@ -2525,7 +2530,7 @@ By Helmic
 			<showSnapshotDelay ifSubset="tvSnaphot:no">false</showSnapshotDelay>
 			<origin>0.5 0.5</origin>
             <delay>1</delay>
-            <delay ifSubset="previewDisplay:displayMix">0.075</delay>
+            <delay ifSubset="mdVideoShortDelay:yes">0.075</delay>
             <effect>size</effect>
             <zIndex>12</zIndex>
             <color>ffffff</color>

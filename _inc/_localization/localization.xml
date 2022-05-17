@@ -749,6 +749,9 @@ By Helmic
 		<lang.tvSnaphot>gamelist • display snapshot before video</lang.tvSnaphot>
 		<lang.tvSnaphot lang="fr">listes de jeux • afficher le screenshot avant la vidéo</lang.tvSnaphot>
 
+        <lang.mdVideoShortDelay>gamelist • shorter video delay</lang.mdVideoShortDelay>
+        <lang.mdVideoShortDelay lang="fr">listes de jeux • raccourcir le délai d'affichage des vidéos</lang.mdVideoShortDelay>
+
 		<!--wall choice-->
 		<lang.wall>system view • choose wall</lang.wall>
 		<lang.wall lang="fr">vue système • choisir le mur</lang.wall>
