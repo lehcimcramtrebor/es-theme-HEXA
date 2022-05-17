@@ -10,6 +10,8 @@ By Helmic
 <variables>
 
 <container>mvs</container>
+<container ifSubset="neogeoaes:yes">tv43</container>
+<container ifSubset="neogeoaes:no">mvs</container>
 
 </variables>
 

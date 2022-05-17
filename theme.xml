@@ -246,6 +246,11 @@ By Helmic
 		<include name="colorsetAdaptive" displayName="${lang.colorsetAdaptive}"/>
 	</subset>
 
+	<subset name="neogeoaes" displayName="${lang.neogeoaes}">
+		<include name="no" displayName="${lang.no}"/>
+        <include name="yes" displayName="${lang.yes}"/>
+	</subset>
+
 	<subset name="randomCustom" displayName="${lang.randomCustom}" appliesTo="system,basic,detailed,grid,gamecarousel">
         <include name="yes" displayName="${lang.yes}"/>
 		<include name="no" displayName="${lang.no}"/>
@@ -893,6 +898,8 @@ By Helmic
 	</image>
 
 	<image name="logoAssist" extra="true">
+		<path ifSubset="neogeoaes:yes">./_inc/${logoSource}/${system.theme}aes.png</path>
+		<path ifSubset="neogeoaes:yes">./_inc/${logoSource}/${system.theme}aes.svg</path>
 
 		<path>./_inc/${logoSource}/test.png</path>
 		<path>./_inc/${logoSource}/test.svg</path>
@@ -990,6 +997,7 @@ By Helmic
             <path>./default/mono-${lang}.png</path>
             <path>./${system.theme}/mono.png</path>
             <path>./${system.theme}/mono-${lang}.png</path>
+            <path ifSubset="neogeoaes:yes">./${system.theme}/mono-aes.png</path>
  
  			<!--simple-->
 
@@ -1112,6 +1120,7 @@ By Helmic
             <path>./${system.theme}/color-${lang}.png</path>
             <path region="us" ifSubset="regionChoice:yes">./${system.theme}/us/color.png</path>
             <path region="jp" ifSubset="regionChoice:yes">./${system.theme}/jp/color.png</path>
+            <path ifSubset="neogeoaes:yes">./${system.theme}/color-aes.png</path>
 			<maxSize>1 0.92962963</maxSize>
 			<pos>0.5 0.5</pos>
 			<origin>0.5 0.5</origin>
@@ -1822,6 +1831,7 @@ By Helmic
             <path>./${system.theme}/color-${lang}.png</path>
             <path region="us" ifSubset="regionChoice:yes">./${system.theme}/us/color.png</path>
             <path region="jp" ifSubset="regionChoice:yes">./${system.theme}/jp/color.png</path>
+            <path ifSubset="neogeoaes:yes">./${system.theme}/color-aes.png</path>
 			<path ifSubset="transitionCustom:yes">./_hexaCustom/tile/custom.png</path>
             <path ifArch="windows" ifSubset="transitionCustom:yes">./../../../../_hexaCustom/tile/custom.png</path>
             <path ifNotArch="windows" ifSubset="transitionCustom:yes">./../../_hexaCustom/tile/custom.png</path>
@@ -2185,6 +2195,9 @@ By Helmic
 
 
 	<image name="logoAnime" extra="true">
+
+		<path ifSubset="neogeoaes:yes">./_inc/${logoSource}/${system.theme}aes.png</path>
+		<path ifSubset="neogeoaes:yes">./_inc/${logoSource}/${system.theme}aes.svg</path>
 
 		<path>./_inc/${logoSource}/test.png</path>
 		<path>./_inc/${logoSource}/test.svg</path>

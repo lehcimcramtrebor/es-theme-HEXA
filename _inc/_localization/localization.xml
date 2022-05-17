@@ -9,6 +9,9 @@ By Helmic
    
     <variables>
 
+        <lang.neogeoaes>neo geo • force aes</lang.neogeoaes>
+        <lang.neogeoaes lang="fr">neo geo • forcer aes</lang.neogeoaes>
+
         <lang.logoSource>carousel • logos source</lang.logoSource>
         <lang.logoSource lang="fr">carrousel • source des logos</lang.logoSource>
 
