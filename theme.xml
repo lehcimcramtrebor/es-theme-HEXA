@@ -1950,6 +1950,8 @@ By Helmic
 	</image>
 
 	<image name="logoAssistTransition" extra="true">
+		<path ifSubset="neogeoaes:yes">./_inc/${logoSource}/${system.theme}aes.png</path>
+		<path ifSubset="neogeoaes:yes">./_inc/${logoSource}/${system.theme}aes.svg</path>
 
 		<path>./_inc/${logoSource}/test.png</path>
 		<path>./_inc/${logoSource}/test.svg</path>
