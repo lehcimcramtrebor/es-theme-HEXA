@@ -1238,7 +1238,6 @@ By Helmic
         <video name="randomVideos" extra="true">
             <default>./_inc/noise.mp4</default>
             <path>{random}</path>
-            <path ifSubset="randomCustom:yes">./${system.theme}/video.mp4</path>
             <path ifSubset="randomCustom:yes">./_hexaCustom/videos/${system.theme}.mp4</path>
             <path ifArch="windows" ifSubset="randomCustom:yes">./../../../../_hexaCustom/videos/${system.theme}.mp4</path>
             <path ifNotArch="windows" ifSubset="randomCustom:yes">./../../_hexaCustom/videos/${system.theme}.mp4</path>
