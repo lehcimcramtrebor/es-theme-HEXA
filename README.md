@@ -8,3 +8,4 @@ Some wallpapers are use under liscence you can find in /_inc/liscences
 Some video containers from Colorful Resources by Viking.
 
 Max Logos updated from Dan Patrick Collection.
+![patchwork](https://user-images.githubusercontent.com/59354081/170428805-06230652-8c23-4cdb-bedc-91e48547a313.jpg)
