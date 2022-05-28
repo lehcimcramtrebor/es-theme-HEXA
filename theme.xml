@@ -6,6 +6,19 @@ By Helmic
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
 <formatVersion>7</formatVersion>
+
+	<!--EXPERIENCE-->
+
+	<variables>
+        <lang.fullHexa>♠ hexa ♠ • full experience (pc recommended)</lang.fullHexa>
+        <lang.fullHexa lang="fr">♠ hexa ♠ • expérience complète ( pc recommandé)</lang.fullHexa>
+	</variables>
+	
+	
+    <subset name="fullHexa" displayName="${lang.fullHexa}" >
+        <include name="no" displayName="${lang.no}"/>
+		<include name="yes" displayName="${lang.yes}"/>
+    </subset>
 	
     <!--LANGS-->
     
@@ -17,6 +30,7 @@ By Helmic
     <include ifArch="windows">./../../../../_hexaCustom/name/name.xml</include>
     <include ifNotArch="windows">./../../_hexaCustom/name/name.xml</include>
  
+
     <!--REGION DEFAULT (CHANGE "eu" to "jp" or "us")-->
  
     <variables><defaultRegion region="eu">Choose your default region</defaultRegion></variables>
@@ -81,22 +95,22 @@ By Helmic
         <include name="no" displayName="${lang.no}"/>
     </subset>
 
-	<subset name="transition" displayName="${lang.transition}">
+	<subset name="transition" displayName="${lowSpecs}${lang.transition}${lowSpecs}">
 		<include name="yes" displayName="${lang.yes}"/>
 		<include name="no" displayName="${lang.no}"/>
 	</subset>
 
-	<subset name="logoAssistTransitionCustom" displayName="${lang.logoAssistTransitionCustom}">
+	<subset name="logoAssistTransitionCustom" displayName="${lowSpecs}${lang.logoAssistTransitionCustom}">
 		<include name="no" displayName="${lang.no}"/>
 		<include name="yes" displayName="${lang.yes}"/>
 	</subset>
 
-	<subset name="transitionCustomName" displayName="${lang.transitionCustomName}">
+	<subset name="transitionCustomName" displayName="${lowSpecs}${lang.transitionCustomName}">
 		<include name="no" displayName="${lang.no}"/>
 		<include name="yes" displayName="${lang.yes}"/>
 	</subset>
 
-	<subset name="transitionCustom" displayName="${lang.transitionCustom}" ifSubset="transition:yes">
+	<subset name="transitionCustom" displayName="${lowSpecs}${lang.transitionCustom}">
 		<include name="no" displayName="${lang.no}"/>
 		<include name="yes" displayName="${lang.yes}"/>
 	</subset>
@@ -126,12 +140,12 @@ By Helmic
 		<include name="0.018"/>
 	</subset>
 
-    <subset name="logoVisualAssistance" displayName="${lang.logoVisualAssistance}">
+    <subset name="logoVisualAssistance" displayName="${lowSpecs}${lang.logoVisualAssistance}">
         <include name="yes" displayName="${lang.yes}"/>
 		<include name="no" displayName="${lang.no}"/>
     </subset>
 
-    <subset name="logoSource" displayName="${lang.logoSource}">
+    <subset name="logoSource" displayName="${lowSpecs}${lang.logoSource}">
         <include name="png" displayName="${lang.png}">./_inc/png.xml</include>
         <include name="svg" displayName="${lang.svg}">./_inc/svg.xml</include>
     </subset>
@@ -163,14 +177,14 @@ By Helmic
 		<include name="scanlinesVertical" displayName="${lang.scanlinesVertical}"/>
 	</subset>
 
-	<subset name="scratch" displayName="${lang.scratch}">
+	<subset name="scratch" displayName="${lowSpecs}${lang.scratch}">
 		<include name="scratch.no" displayName="${lang.scratch.no}"/>
 		<include name="scratch.light" displayName="${lang.scratch.light}"/>
 		<include name="scratch.medium" displayName="${lang.scratch.medium}"/>
 		<include name="scratch.strong" displayName="${lang.scratch.strong}"/>
 	</subset>
 	
-	<subset name="shutter" displayName="${lang.shutter}">
+	<subset name="shutter" displayName="${lowSpecs}${lang.shutter}">
 		<include name="no" displayName="${lang.shutter.no}"/>
 		<include name="25" displayName="${lang.shutter.25}"/>
 		<include name="30" displayName="${lang.shutter.30}"/>
@@ -287,7 +301,7 @@ By Helmic
 		<include name="no" displayName="${lang.no}"/>
     </subset>
 
-	<subset name="randomArt" displayName="${lang.randomArt}" appliesTo="system,basic,detailed,grid,gamecarousel">
+	<subset name="randomArt" displayName="${lowSpecs}${lang.randomArt}" appliesTo="system,basic,detailed,grid,gamecarousel">
 		<include name="marquee" displayName="${lang.marquee}"/>
 		<include name="thumbnail" displayName="${lang.thumbnail}"/>
 		<include name="no" displayName="${lang.no}"/>
@@ -520,7 +534,7 @@ By Helmic
 
 
 
-	<subset name="tvLogo" displayName="${lang.tvLogo}" appliesTo="system,basic,detailed,grid,gamecarousel">
+	<subset name="tvLogo" displayName="${lowSpecs}${lang.tvLogo}" appliesTo="system,basic,detailed,grid,gamecarousel">
 		<include name="yes" displayName="${lang.yes}"/>
 		<include name="no" displayName="${lang.no}"/>
 	</subset>
@@ -636,7 +650,7 @@ By Helmic
 
 	<include>./_inc/wallpapers/${_paintSubset.allow}Gamelist.xml</include>
 
- 	<subset name="logoAnime" displayName="${lang.logoAnime}" appliesTo="basic,detailed,grid,gamecarousel">
+ 	<subset name="logoAnime" displayName="${lowSpecs}${lang.logoAnime}" appliesTo="basic,detailed,grid,gamecarousel">
         <include name="mix3" displayName="${lang.mix3}"/>
         <include name="onTop" displayName="${lang.onTop}"/>
         <include name="inGamelist" displayName="${lang.inGamelist}"/>
@@ -644,7 +658,7 @@ By Helmic
 		<include name="no" displayName="${lang.no}"/>
     </subset>
 
- 	<subset name="logoCustom" displayName="${lang.logoCustom}" appliesTo="basic,detailed,grid,gamecarousel" ifSubset="logoAnime:mix3|onTop|inGamelist|onScreen">
+ 	<subset name="logoCustom" displayName="${lowSpecs}${lang.logoCustom}" appliesTo="basic,detailed,grid,gamecarousel" ifSubset="logoAnime:mix3|onTop|inGamelist|onScreen">
 		<include name="no" displayName="${lang.no}"/>
 		<include name="yes" displayName="${lang.yes}"/>
     </subset>
@@ -701,7 +715,7 @@ By Helmic
             <glowColor>00000000</glowColor>
         </text>     
  
-		<image name="shutter" extra="true" ifSubset="shutter:25|30|50|60">
+		<image name="shutter" extra="true" ifSubset="shutter:25|30|50|60,fullHexa:yes">
 			<path>./_inc/white.png</path>
 			<size>1 1</size>
 			<origin>0.5 0.5</origin>
@@ -782,7 +796,7 @@ By Helmic
             <zIndex>0</zIndex>
        </image>
  
-        <image name="backgroundMask" extra="true">
+        <image name="backgroundMask" extra="true" ifSubset="fullHexa:yes">
             <path>./_inc/wallpapers/${wallpaper}_mask.png</path>
             <maxSize>99 1</maxSize>
             <pos>0.5 0.5</pos>
@@ -807,7 +821,7 @@ By Helmic
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
-    <view name="system" ifSubset="logoVisualAssistance:yes">
+    <view name="system" ifSubset="logoVisualAssistance:yes,fullHexa:yes">
 
 	<image name="logoAssistFocus" extra="true">
 		<linearSmooth>true</linearSmooth>
@@ -1379,7 +1393,7 @@ By Helmic
 
 <!-------------------------------------------------------------------------BACKGROUND FIX------------------------------------------------------------------------------------------->
  
-        <image name="backgroundVideoFix" extra="true" ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff">
+        <image name="backgroundVideoFix" extra="true" ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff,fullHexa:yes">
             <path>./_inc/wallpapers/${wallpaper}.jpg</path>
             <path ifSubset="wall:customs">./_hexaCustom/wallpapers/custom.jpg</path>
             <path ifSubset="wall:customs">./_hexaCustom/wallpapers/${system.theme}.jpg</path>
@@ -1403,7 +1417,7 @@ By Helmic
             </storyboard>
         </image>
  
-        <image name="backgroundVideoFixMask" extra="true" ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff">
+        <image name="backgroundVideoFixMask" extra="true" ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff,fullHexa:yes">
             <path>./_inc/wallpapers/${wallpaper}_mask.png</path>
             <maxSize>99 1</maxSize>
             <pos>0.5 0.5</pos>
@@ -1419,7 +1433,7 @@ By Helmic
             </storyboard>
         </image>
         
-		<image name="systemMaskFix" extra="true" ifSubset="systemFade:yes,ambiance:randomVideosAudioOn|randomVideosAudioOff">
+		<image name="systemMaskFix" extra="true" ifSubset="systemFade:yes,ambiance:randomVideosAudioOn|randomVideosAudioOff,fullHexa:yes">
             <path>./_inc/mask.png</path>
 			<size>1 1</size>
 			<pos>0.5 0.5</pos>
@@ -1676,7 +1690,7 @@ By Helmic
 
 <!-----------------------------------------------------------------------RANDOM ARTS----------------------------------------------------------------------------------------------->
 
-		<image name="randomArt01,randomArt02,randomArt03,randomArt04,randomArt05,randomArt06,randomArt07,randomArt08,randomArt09,randomArt10,randomArt11,randomArt12,randomArt13" extra="true" ifSubset="randomArt:marquee|thumbnail">
+		<image name="randomArt01,randomArt02,randomArt03,randomArt04,randomArt05,randomArt06,randomArt07,randomArt08,randomArt09,randomArt10,randomArt11,randomArt12,randomArt13" extra="true" ifSubset="randomArt:marquee|thumbnail,fullHexa:yes">
 			<linearSmooth>true</linearSmooth>
             <maxSize ifSubset="randomArt:marquee">0.22 0.15</maxSize>
             <maxSize ifSubset="randomArt:thumbnail">0.14 0.26</maxSize>
@@ -1820,7 +1834,7 @@ By Helmic
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 	
-	<view name="basic,detailed,grid,gamecarousel" ifSubset="transition:yes">
+	<view name="basic,detailed,grid,gamecarousel" ifSubset="transition:yes,fullHexa:yes">
       
 		<image name="logoTransition" extra="true">
             <linearSmooth>true</linearSmooth>
@@ -2027,7 +2041,7 @@ By Helmic
 	</view>
 <!--------------------------------------------------------------------END OF TRANSITIONS------------------------------------------------------------------------------------------>
 
-	<view name="basic,detailed,grid,gamecarousel" ifSubset="logoAnime:onTop|inGamelist|onScreen|mix3">
+	<view name="basic,detailed,grid,gamecarousel" ifSubset="logoAnime:onTop|inGamelist|onScreen|mix3,fullHexa:yes">
 	
 		<image name="logoAnime" extra="true">
 			<linearSmooth>true</linearSmooth>
@@ -2550,7 +2564,7 @@ By Helmic
             <color>ffffff</color>
 		</video>
 
-	<image name="logoTV" extra="true" ifSubset="tvLogo:yes">
+	<image name="logoTV" extra="true" ifSubset="tvLogo:yes,fullHexa:yes">
 		<origin>0. 1</origin>
 		<zIndex>13</zIndex>
 		<color>ffffff</color>
@@ -2607,7 +2621,7 @@ By Helmic
             </storyboard>
 	</image>
 
-	<image name="logoTV" region="us" extra="true" ifSubset="tvLogo:yes" ifSubset="regionChoice:yes">
+	<image name="logoTV" region="us" extra="true" ifSubset="tvLogo:yes,regionChoice:yes,fullHexa:yes">
 
 		<path ifArch="windows">./../es-theme-carbon/art/logos/us/${system.theme}.png</path>
 		<path ifArch="windows">./../es-theme-carbon/art/logos/us/${system.theme}.svg</path>
@@ -2623,7 +2637,7 @@ By Helmic
 		<path>./_inc/${logoSource}/us/${system.theme}.svg</path>
 	</image>
 
-	<image name="logoTV" region="jp" extra="true" ifSubset="tvLogo:yes" ifSubset="regionChoice:yes">
+	<image name="logoTV" region="jp" extra="true" ifSubset="tvLogo:yes,regionChoice:yes,fullHexa:yes">
 
 		<path ifArch="windows">./../es-theme-carbon/art/logos/jp/${system.theme}.png</path>
 		<path ifArch="windows">./../es-theme-carbon/art/logos/jp/${system.theme}.svg</path>
@@ -4969,7 +4983,7 @@ By Helmic
 
 	<view name="screen">
  
-		<image name="scratch" extra="true">
+		<image name="scratch" extra="true" ifSubset="fullHexa:yes">
 			<origin>0.5 0.5</origin>
 			<pos>0.5 0.5</pos>
 			<maxSize>99 1</maxSize>

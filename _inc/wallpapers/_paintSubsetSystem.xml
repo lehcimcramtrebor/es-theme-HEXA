@@ -7,14 +7,14 @@ By Helmic
 <theme>
 <formatVersion>7</formatVersion>
 
-    <subset name="carouselWallPaint" displayName="${lang.carouselWallPaint}">
+    <subset name="carouselWallPaint" displayName="${lowSpecs}${lang.carouselWallPaint}">
         <include name="no" displayName="${lang.no}"/>
 		<include name="yes" displayName="${lang.yes}"/>
     </subset>
 
 	<view name="system">
 
-		<image name="logoPaint" extra="true" ifSubset="carouselWallPaint:yes">
+		<image name="logoPaint" extra="true" ifSubset="carouselWallPaint:yes,fullHexa:yes">
             <linearSmooth>true</linearSmooth>
             <path>./../../default/color.png</path>
             <path>./../../default/color-${lang}.png</path>
@@ -35,7 +35,7 @@ By Helmic
 			<visible ifSubset="carouselWallPaint:no">false</visible>			
 		</image>
 
-		<image name="logoPaintFix" extra="true" ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff,carouselWallPaint:yes">
+		<image name="logoPaintFix" extra="true" ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff,carouselWallPaint:yes,fullHexa:yes">
             <linearSmooth>true</linearSmooth>
             <path>./../../default/color.png</path>
             <path>./../../default/color-${lang}.png</path>

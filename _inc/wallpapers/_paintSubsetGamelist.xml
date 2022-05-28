@@ -7,14 +7,14 @@ By Helmic
 <theme>
 <formatVersion>7</formatVersion>
 
-    <subset name="gamelistWallPaint" displayName="${lang.gamelistWallPaint}" appliesTo="system,basic,detailed,grid,gamecarousel">
+    <subset name="gamelistWallPaint" displayName="${lowSpecs}${lang.gamelistWallPaint}" appliesTo="system,basic,detailed,grid,gamecarousel">
 		<include name="yes" displayName="${lang.yes}"/>
         <include name="no" displayName="${lang.no}"/>
     </subset>
 
 	<view name="basic">
 
-		<image name="wallPaint" extra="true" ifSubset="gamelistWallPaint:yes">
+		<image name="wallPaint" extra="true" ifSubset="gamelistWallPaint:yes,fullHexa:yes">
             <path>./../../default/color.png</path>
             <path>./../../default/color-${lang}.png</path>
             <path>./../../${system.theme}/color.png</path>
@@ -39,7 +39,7 @@ By Helmic
 
 	<view name="detailed,grid,gamecarousel">
 
-		<image name="md_fanart" ifSubset="gamelistWallPaint:yes">
+		<image name="md_fanart" ifSubset="gamelistWallPaint:yes,fullHexa:yes">
             <linearSmooth>true</linearSmooth>
 			<maxSize>1 99</maxSize>
 			<maxSize ifSubset="themeRatio:54|43">99 1</maxSize>
@@ -78,7 +78,7 @@ By Helmic
 
 	<customView name="library" inherits="detailed" displayName="${lang.library}">
         
-		<image name="wallPaint" extra="true" ifSubset="gamelistWallPaint:yes">
+		<image name="wallPaint" extra="true" ifSubset="gamelistWallPaint:yes,fullHexa:yes">
             <path>./../../default/color.png</path>
             <path>./../../default/color-${lang}.png</path>
             <path>./../../${system.theme}/color.png</path>

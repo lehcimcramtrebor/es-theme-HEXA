@@ -9,6 +9,9 @@ By Helmic
    
     <variables>
 
+        <lowSpecs ifSubset="fullHexa:no">♠disabled ♠ •  </lowSpecs>
+        <lowSpecs ifSubset="fullHexa:no" lang="fr">♠ désactivé ♠ • </lowSpecs>
+
         <lang.neogeoaes>neo geo • force aes</lang.neogeoaes>
         <lang.neogeoaes lang="fr">neo geo • forcer aes</lang.neogeoaes>
 
@@ -33,11 +36,11 @@ By Helmic
         <lang.regionChoice>allow region settings</lang.regionChoice>
         <lang.regionChoice lang="fr">autoriser le paramètre région</lang.regionChoice>
 
-        <lang.logoAnime>game list view • display wall logo animation (+++ resources)</lang.logoAnime>
-        <lang.logoAnime lang="fr">listes de jeux • afficher le logo animé sur le mur (+++ ressources)</lang.logoAnime>
+        <lang.logoAnime>game list view •  wall logo animations (+++ resources)</lang.logoAnime>
+        <lang.logoAnime lang="fr">listes de jeux • animations des logos sur le mur (+++ ressources)</lang.logoAnime>
 
-        <lang.logoCustom>game list view • use custom logo</lang.logoCustom>
-        <lang.logoCustom lang="fr">listes de jeux • utiliser le logo personnalisé</lang.logoCustom>
+        <lang.logoCustom>game list view • anime custom logo</lang.logoCustom>
+        <lang.logoCustom lang="fr">listes de jeux • animer le logo personnalisé</lang.logoCustom>
 
         <lang.onTop>on top</lang.onTop>
         <lang.onTop lang="fr">en haut</lang.onTop>
@@ -151,8 +154,8 @@ By Helmic
 
 		<!--tv choice-->
 		
-        <lang.automatic>automatic (in build for now)</lang.automatic>
-        <lang.automatic lang="fr">automatique (encore en construction)</lang.automatic>
+        <lang.automatic>automatic</lang.automatic>
+        <lang.automatic lang="fr">automatique</lang.automatic>
 
         <lang.container>gamelist view • video screen</lang.container>
         <lang.container lang="fr">listes de jeux • écran vidéo</lang.container>
