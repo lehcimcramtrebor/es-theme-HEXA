@@ -201,8 +201,8 @@ By Helmic
     </subset>
 
     <subset name="wall" displayName="${lang.wall}">
-        <include name="wallSynthPaint" displayName="${lang.wallSynthPaint}">./_inc/wallpapers/wallSynthPaint.xml</include>
         <include name="wallScanlines" displayName="${lang.wallScanlines}">./_inc/wallpapers/wallScanlines.xml</include>
+        <include name="wallSynthPaint" displayName="${lang.wallSynthPaint}">./_inc/wallpapers/wallSynthPaint.xml</include>
 		<include name="wallBrushedPlate" displayName="${lang.wallBrushedPlate}">./_inc/wallpapers/wallBrushedPlate.xml</include>
         <include name="wallPlates" displayName="${lang.wallPlates}">./_inc/wallpapers/wallPlates.xml</include>
         <include name="wallStainBroke" displayName="${lang.wallStainBroke}">./_inc/wallpapers/wallStainBroke.xml</include>
@@ -1446,6 +1446,31 @@ By Helmic
 			</image>
 
 <!-------------------------------------------------------------------------BINDING BAR---------------------------------------------------------------------------------------------->
+
+		<text name="customNameBar" extra="true">
+			<text>${customName}</text>
+            <fontPath>./_inc/fonts/${font2}</fontPath>
+            <color ifSubset="bindingBar:colorWhite">dddddd</color>
+            <color ifSubset="bindingBar:colorYellow">ffff00</color>
+            <color ifSubset="bindingBar:colorsetAdaptive">${overlay.colorset}</color>
+            <glowColor>00000040</glowColor>
+			<fontSize>0.02</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.016">0.016</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.018">0.018</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.022">0.022</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.024">0.024</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.026">0.026</fontSize>
+            <pos>0.5 0.018</pos>
+            <origin>0.5 0.5</origin>
+            <zIndex>110</zIndex>
+			<alignment>center</alignment>
+			<forceUppercase>true</forceUppercase>
+			<w>0.5</w>
+			<h>0.022</h>
+			<storyboard>
+                <animation property="opacity" to="0" duration="250" mode="easeOutQuint" begin="1250"/>
+            </storyboard>
+		</text>
 
 		<text name="bindingBar01" extra="true">
 			<text>${system.fullName}</text>
