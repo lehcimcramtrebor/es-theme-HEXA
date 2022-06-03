@@ -12,6 +12,12 @@ By Helmic
 	<variables>
         <lang.fullHexa>♠ hexa ♠ • full experience (pc recommended)</lang.fullHexa>
         <lang.fullHexa lang="fr">♠ hexa ♠ • expérience complète ( pc recommandé)</lang.fullHexa>
+
+		<lang.yes>yes</lang.yes>
+		<lang.yes lang="fr">oui</lang.yes>
+
+		<lang.no>no</lang.no>
+		<lang.no lang="fr">non</lang.no>
 	</variables>
 	
 	
