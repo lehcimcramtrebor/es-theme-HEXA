@@ -80,7 +80,22 @@ By Helmic
         <include name="yellow" displayName="${lang.yellow}"/>
         <include name="noColor" displayName="${lang.noColor}"/>
    </subset>
+
+<!--FONTS-->
+
+    <!--FONT2--><variables><font2>DJB Get Digital.ttf</font2></variables>
  
+	<subset name="themeFont" displayName="${lang.themeFont}">
+        <include name="conthrax">./_inc/fonts/conthrax.xml</include>
+        <include name="nulshock">./_inc/fonts/nulshock.xml</include>
+        <include name="venus">./_inc/fonts/venus.xml</include>
+        <include name="recharge">./_inc/fonts/recharge.xml</include>
+        <include name="quadrangle">./_inc/fonts/quadrangle.xml</include>
+        <include name="good timing">./_inc/fonts/good.xml</include>
+    </subset>
+
+<!--END FONTS-->
+
 	<subset name="menuColor" displayName="${lang.menuColor}">
 		<include name="darkGlass" displayName="${lang.darkGlass}"/>
 		<include name="dark" displayName="${lang.dark}"/>
@@ -688,21 +703,6 @@ By Helmic
         <overlay.colorset ifSubset="overlayColorset:red">b53737</overlay.colorset>
 
     </variables>
-
-
-<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-<!-------------------------------------------------------------------------VARIABLES--------------------------------------------------------------------------------------------------->
-<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
- 
-    <!--FONT1-->
- 
-    <variables><font1>conthrax-sb.ttf</font1></variables>
-
-    <!--FONT2-->
- 
-    <variables><font2>DJB Get Digital.ttf</font2></variables>
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
@@ -4931,21 +4931,21 @@ By Helmic
     <view name="menu">
 
         <menuText name="menutitle">
-            <fontPath>./_inc/fonts/${font1}</fontPath>
+            <fontPath>./_inc/fonts/conthrax-sb.ttf</fontPath>
             <fontSize>0.03</fontSize>
             <color ifSubset="menuColor:light|lightPlain">202020</color>
             <color ifSubset="menuColor:dark|darkGlass|darkPlain">cccccc</color>
         </menuText>
 
         <menuText name="menufooter">
-            <fontPath>./_inc/fonts/${font2}</fontPath>
+            <fontPath>./_inc/fonts/conthrax-sb.ttf</fontPath>
             <fontSize>0.016</fontSize>
             <color ifSubset="menuColor:light|lightPlain">202020</color>
             <color ifSubset="menuColor:dark|darkGlass|darkPlain">aaaaaa</color>
         </menuText>
 
         <menuText name="menutext">
-            <fontPath>./_inc/fonts/${font1}</fontPath>
+            <fontPath>./_inc/fonts/conthrax-sb.ttf</fontPath>
             <fontSize>0.016</fontSize>
             <color ifSubset="menuColor:light||lightPlain">121212</color>
             <color ifSubset="menuColor:light">121212</color>
@@ -4959,7 +4959,7 @@ By Helmic
         </menuText>
 	
         <menuTextSmall name="menutextsmall">
-            <fontPath>./_inc/fonts/${font2}</fontPath>
+            <fontPath>./_inc/fonts/conthrax-sb.ttf</fontPath>
             <fontSize>0.014</fontSize>
         </menuTextSmall>
 
@@ -4973,7 +4973,7 @@ By Helmic
         </menuBackground>
 
         <menuGroup name="menugroup">
-            <fontPath>./_inc/fonts/${font1}</fontPath>
+            <fontPath>./_inc/fonts/conthrax-sb.ttf</fontPath>
             <fontSize>0.022</fontSize>
             <color ifSubset="menuColor:light|lightPlain">ffffff</color>
             <color ifSubset="menuColor:dark|darkGlass|darkPlain">aaaaaa</color>
