@@ -178,8 +178,8 @@ By Helmic
     </subset>
 
     <subset name="staticTiles" displayName="${lang.staticTiles}">
-		<include name="no" displayName="${lang.no}"/>
         <include name="yes" displayName="${lang.yes}"/>
+		<include name="no" displayName="${lang.no}"/>
     </subset>
 
     <subset name="spaceCarousel" displayName="${lang.spaceCarousel}" ifSubset="themeRatio:169">
