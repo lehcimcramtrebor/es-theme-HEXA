@@ -318,8 +318,8 @@ By Helmic
     </subset>
 
 	<subset name="systemFade" displayName="${lang.systemFade}" appliesTo="system,basic,detailed,grid,gamecarousel">
-        <include name="yes" displayName="${lang.yes}"/>
 		<include name="no" displayName="${lang.no}"/>
+        <include name="yes" displayName="${lang.yes}"/>
     </subset>
 
 	<subset name="randomArt" displayName="${lowSpecs}${lang.randomArt}" appliesTo="system,basic,detailed,grid,gamecarousel">
@@ -685,8 +685,8 @@ By Helmic
     </subset>
 
  	<subset name="gamelistFade" displayName="${lang.gamelistFade}" appliesTo="basic,detailed,grid,gamecarousel">
-        <include name="yes" displayName="${lang.yes}"/>
 		<include name="no" displayName="${lang.no}"/>
+        <include name="yes" displayName="${lang.yes}"/>
     </subset>
 
 	<!--COLORSETS-->
