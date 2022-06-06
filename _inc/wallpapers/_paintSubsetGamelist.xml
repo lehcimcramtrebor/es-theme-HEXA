@@ -107,7 +107,7 @@ By Helmic
 
 	<customView name="library" inherits="detailed" displayName="${lang.library}">
         
-		<image name="wallPaint" extra="true" ifSubset="gamelistWallPaint:yes,fullHexa:yes">
+		<image name="wallPaint" extra="true" ifSubset="gamelistWallPaint:yes|custom,fullHexa:yes">
             <path>./../../default/color.png</path>
             <path>./../../default/color-${lang}.png</path>
             <path>./../../${system.theme}/color.png</path>
