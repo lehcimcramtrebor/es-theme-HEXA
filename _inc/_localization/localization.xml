@@ -15,6 +15,9 @@ By Helmic
         <lang.neogeoaes>neo geo • force aes</lang.neogeoaes>
         <lang.neogeoaes lang="fr">neo geo • forcer aes</lang.neogeoaes>
 
+        <lang.custom>with custom backgrounds</lang.custom>
+        <lang.custom lang="fr">avec les fonds personnalisés</lang.custom>
+
         <lang.themeFont>general • choose font</lang.themeFont>
         <lang.themeFont lang="fr">général • choisir une police</lang.themeFont>
 
