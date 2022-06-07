@@ -537,6 +537,8 @@ By Helmic
 
  		<include name="adventureVision" displayName="${lang.adventureVision}">./_inc/containers/adventureVision.xml</include>
 
+ 		<include name="gp32" displayName="${lang.gp32}">./_inc/containers/gp32.xml</include>
+
 
 
    </subset>
