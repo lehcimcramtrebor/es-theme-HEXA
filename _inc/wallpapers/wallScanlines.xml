@@ -8,5 +8,24 @@
 <!---->	<_paintSubset.allow>_paintSubset</_paintSubset.allow><!--Allow Paint Menu-->
 		<wallpaper>wallScanlines</wallpaper>
 	</variables>
-	
+
+    <view name="menu,system,basic,detailed,grid,gamecarousel">
+
+        <image name="background" extra="true">
+			<tile>true</tile>
+       </image>
+	</view>
+
+	<view name="basic,detailed,grid,gamecarousel" ifSubset="transition:yes,fullHexa:yes">
+		<image name="transitionBack" extra="true">
+			<tile>true</tile>
+		</image>
+	</view>
+
+	<view name="system">
+        <image name="backgroundVideoFix" extra="true" ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff,fullHexa:yes">
+			<tile>true</tile>
+        </image>
+	</view>
+ 	
 </theme>
