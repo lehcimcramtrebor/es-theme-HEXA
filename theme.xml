@@ -1258,7 +1258,10 @@ By Helmic
 <!---------------------------------------------------------------------------RANDOM VIDEOS------------------------------------------------------------------------------------------>
 	
         <video name="randomVideos" extra="true">
-            <default>./_inc/noise.mp4</default>
+            <default ifSubset="themeRatio:169">./_inc/hexa.mp4</default>
+            <default ifSubset="themeRatio:169">./_inc/hexa-${lang}.mp4</default>
+            <default ifSubset="themeRatio:43|54">./_inc/hexa43.mp4</default>
+            <default ifSubset="themeRatio:43|54">./_inc/hexa43-${lang}.mp4</default>
             <path>{random}</path>
             <path ifSubset="randomCustom:yes">./_hexaCustom/videos/${system.theme}.mp4</path>
             <path ifArch="windows" ifSubset="randomCustom:yes">./../../../../_hexaCustom/videos/${system.theme}.mp4</path>
