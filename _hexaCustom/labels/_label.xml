@@ -1,0 +1,58 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+<formatVersion>7</formatVersion>
+
+<!--------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------->
+<!----------------------- DON'T TOUCH ANYTHING, CLOSE THIS FILE -------------------------------------> 
+<!--------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------->
+    <view name="menu,system,basic,detailed,grid,gamecarousel">
+        <text name="logoText">
+            <text>${custom.collection.name}</text>
+        </text>     
+	</view>
+    <view name="system">
+		<text name="systemNameCarousel" extra="true">
+			<text>${custom.collection.name}</text>
+		</text>
+		<text name="systemNameRandomVideo" extra="true" ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff,barName:yes">
+			<text>${custom.collection.name}</text>
+		</text>
+		<text name="systemFullNameRandomVideo" extra="true" ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff,barName:yes">
+			<text>${custom.collection.name}</text>
+		</text>
+		<text name="bindingBar01" extra="true">
+			<text>${custom.collection.name}</text>
+		</text>
+	</view>
+	<view name="basic,detailed,grid,gamecarousel" ifSubset="transition:yes,fullHexa:yes">
+		<text name="transitionFullName" extra="true">
+			<text>${custom.collection.name}</text>
+		</text>
+	</view>
+	<view name="basic">
+		<text name="basicBar" extra="true">
+			<text>${custom.collection.name}</text>
+		</text>
+	</view>
+	<view name="detailed,grid,gamecarousel">
+		<text name="systemFullNameRandomVideo" extra="true">
+			<text>${custom.collection.name}</text>
+		</text>
+	</view>
+	<customView name="library" inherits="detailed" displayName="${lang.library}">
+		<text name="basicBar" extra="true">
+			<text>${custom.collection.name}</text>
+		</text>
+	</customView>
+</theme>

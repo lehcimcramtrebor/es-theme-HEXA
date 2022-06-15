@@ -5191,4 +5191,10 @@ By Helmic
 
 	</view>
 
+    <!--CUSTOM COLLECTION NAMES-->
+    
+	<include>./_hexaCustom/labels/${system.theme}.xml</include>
+    <include ifArch="windows">./../../../../_hexaCustom/labels/${system.theme}.xml</include>
+    <include ifNotArch="windows">./../../_hexaCustom/labels/${system.theme}.xml</include>
+
 </theme>
