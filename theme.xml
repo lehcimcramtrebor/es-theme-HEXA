@@ -1027,7 +1027,7 @@ By Helmic
                 <animation property="scale" from="0.9" to="1" duration="250" mode="easeOutQuint"/>
                 <animation property="scale" from="0.9" to="1" duration="150" mode="EaseOut"/>
                 <animation property="opacity" from="1" to="1" duration="1" mode="Linear"/>
-                <animation property="opacity" from="1" to="0" duration="150" mode="easeOut" begin="350"/>
+                <animation property="opacity" from="1" to="0" duration="150" mode="linear" begin="400"/>
             </storyboard>
             <storyboard event="scroll" repeatAt="1">
                 <animation property="scale" from="1" to="0.9" duration="1" mode="EaseOut"/>
@@ -1048,7 +1048,7 @@ By Helmic
                 <animation property="scale" from="0.9" to="1" duration="250" mode="easeOutQuint"/>
                 <animation property="scale" from="0.9" to="1" duration="150" mode="EaseOut"/>
                 <animation property="opacity" from="1" to="1" duration="1" mode="Linear"/>
-                <animation property="opacity" from="1" to="0" duration="150" mode="easeOut" begin="350"/>
+                <animation property="opacity" from="1" to="0" duration="150" mode="linear" begin="400"/>
             </storyboard>
             <storyboard event="scroll" repeatAt="1" ifSubset="staticTiles:yes">
                 <animation property="scale" from="1" to="0.9" duration="1" mode="EaseOut"/>
@@ -1067,7 +1067,7 @@ By Helmic
                 <animation property="scale" from="0.9" to="1" duration="250" mode="easeOutQuint"/>
                 <animation property="scale" from="0.9" to="1" duration="150" mode="EaseOut"/>
                 <animation property="opacity" from="1" to="1" duration="1" mode="Linear"/>
-                <animation property="opacity" from="1" to="0" duration="150" mode="easeOut" begin="350"/>
+                <animation property="opacity" from="1" to="0" duration="150" mode="linear" begin="400"/>
             </storyboard>
             <storyboard event="scroll" ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff">
                 <animation property="scale" from="1" to="0.9" duration="1" mode="EaseOut"/>
@@ -1098,7 +1098,7 @@ By Helmic
                 <animation property="scale" from="0.9" to="1" duration="250" mode="easeOutQuint"/>
                 <animation property="scale" from="0.9" to="1" duration="150" mode="EaseOut"/>
                 <animation property="opacity" from="1" to="1" duration="1" mode="Linear"/>
-                <animation property="opacity" from="1" to="0" duration="150" mode="easeOut" begin="350"/>
+                <animation property="opacity" from="1" to="0" duration="150" mode="linear" begin="400"/>
             </storyboard>
             <storyboard event="scroll" ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff,staticTiles:yes">
                 <animation property="scale" from="1" to="0.9" duration="1" mode="EaseOut"/>
@@ -1152,16 +1152,16 @@ By Helmic
 			<!--simple-->
 
 			<storyboard repeatAt="950">
-				<animation property="color" from="ffffff00" to="ffffff00" duration="250" mode="linear"/>
-                <animation property="color" from="ffffff00" to="ffffff" duration="250" mode="easeOutQuint" begin="250"/>
+				<animation property="color" from="ffffff00" to="ffffff00" duration="275" mode="linear"/>
+                <animation property="color" from="ffffff00" to="ffffff" duration="150" mode="linear" begin="275"/>
         		<animation property="offsetY" to="-0.03" autoreverse="true" duration="200" mode="easeOutCubic" begin="5950"/>
 			</storyboard>
 
 			<!--videos-->
 
            <storyboard repeatAt="3500" ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff">
-                <animation property="color" from="ffffff00" to="ffffff00" duration="250" mode="linear"/>
-                <animation property="color" from="ffffff00" to="ffffff" duration="250" mode="easeOutQuint" begin="250"/>
+                <animation property="color" from="ffffff00" to="ffffff00" duration="275" mode="linear"/>
+                <animation property="color" from="ffffff00" to="ffffff" duration="150" mode="linear" begin="275"/>
         		<animation property="offsetY" to="-0.03" autoreverse="true" duration="200" mode="easeOutCubic" begin="8950"/>
 
 			   <animation property="origin" to="0 1" duration="500" mode="easeOut" begin="3000"/>
@@ -1172,8 +1172,8 @@ By Helmic
 			<!--videos on 54 43 screens-->
 
            <storyboard repeatAt="3500" ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff,themeRatio:54|43">
-                <animation property="color" from="ffffff00" to="ffffff00" duration="250" mode="linear"/>
-                <animation property="color" from="ffffff00" to="ffffff" duration="250" mode="easeOutQuint" begin="250"/>
+                <animation property="color" from="ffffff00" to="ffffff00" duration="275" mode="linear"/>
+                <animation property="color" from="ffffff00" to="ffffff" duration="150" mode="linear" begin="275"/>
         		<animation property="offsetY" to="-0.03" autoreverse="true" duration="200" mode="easeOutCubic" begin="8950"/>
 
 			   <animation property="origin" to="0 1" duration="500" mode="easeOut" begin="3000"/>
@@ -1188,8 +1188,8 @@ By Helmic
 			<!--videos without plate-->
 
            <storyboard repeatAt="3500" ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff,randomLogo:no">
-                <animation property="color" from="ffffff00" to="ffffff00" duration="250" mode="linear"/>
-                <animation property="color" from="ffffff00" to="ffffff" duration="250" mode="easeOutQuint" begin="250"/>
+                <animation property="color" from="ffffff00" to="ffffff00" duration="275" mode="linear"/>
+                <animation property="color" from="ffffff00" to="ffffff" duration="150" mode="linear" begin="275"/>
         		<animation property="offsetY" to="-0.03" autoreverse="true" duration="200" mode="easeOutCubic" begin="8950"/>
 
 			   <animation property="origin" to="0 1" duration="500" mode="easeOut" begin="3000"/>
@@ -1201,8 +1201,8 @@ By Helmic
 			<!--videos on 54 43 screens whithout plate-->
 
            <storyboard repeatAt="3500" ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff,themeRatio:54|43,randomLogo:no">
-                <animation property="color" from="ffffff00" to="ffffff00" duration="250" mode="linear"/>
-                <animation property="color" from="ffffff00" to="ffffff" duration="250" mode="easeOutQuint" begin="250"/>
+                <animation property="color" from="ffffff00" to="ffffff00" duration="275" mode="linear"/>
+                <animation property="color" from="ffffff00" to="ffffff" duration="150" mode="linear" begin="275"/>
         		<animation property="offsetY" to="-0.03" autoreverse="true" duration="200" mode="easeOutCubic" begin="8950"/>
 
 			   <animation property="origin" to="0 1" duration="500" mode="easeOut" begin="3000"/>
