@@ -2595,7 +2595,7 @@ By Helmic
 			<origin>0.5 0.5</origin>
             <delay>1</delay>
             <delay ifSubset="mdVideoShortDelay:yes">0.075</delay>
-            <effect>size</effect>
+            <effect>fade</effect>
             <zIndex>12</zIndex>
             <color>ffffff</color>
 		</video>
