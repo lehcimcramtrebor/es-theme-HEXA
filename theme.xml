@@ -1868,7 +1868,7 @@ By Helmic
 			<opacity>0</opacity>
 			<size>0 0</size>
 			<pos>2 2</pos>
-			<loop>0</loop>
+			<loops>0</loops>
 			</video>
     </view>
 
