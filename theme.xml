@@ -1010,6 +1010,7 @@ By Helmic
             <maxLogoCount ifSubset="themeRatio:54|43">2</maxLogoCount>
             <zIndex>10</zIndex>
             <defaultTransition>instant</defaultTransition>
+			<scrollSound>./_inc/scroll/wheel.wav</scrollSound>
         </carousel>
 
         <image name="logo">
@@ -1862,7 +1863,7 @@ By Helmic
 
     </view>
 <!-----------------------------------------------------------------FX-------------------------------------------------------------------------------------------------------------->
-	<view name="system,basic,detailed,grid,gamecarousel">
+	<view name="basic,detailed,grid,gamecarousel">
 		<video name="fx" extra="true">
             <path>./_inc/fx.mp4</path>
 			<opacity>0</opacity>
