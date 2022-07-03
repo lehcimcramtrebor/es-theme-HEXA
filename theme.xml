@@ -5043,6 +5043,7 @@ By Helmic
 			<size>0.065 0.020</size>
 			<itemSpacing>0.003</itemSpacing>
 			<imagePath>./_inc/icons/gamepad.svg</imagePath>
+			<gunPath>./_inc/icons/gun.svg</gunPath>
 			<color>dddddd</color>
 			<activityColor>808080</activityColor>
 			<hotkeyColor>ff8080</hotkeyColor>
