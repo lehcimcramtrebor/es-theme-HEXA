@@ -639,6 +639,9 @@ By Helmic
 		<lang.staticTiles>carousel • immobilize inactive plates</lang.staticTiles>
 		<lang.staticTiles lang="fr">carrousel • immobiliser les plaques non actives</lang.staticTiles>
 
+		<lang.carouselColorisation>carousel • desaturate inactive plates (v35/v5+)</lang.carouselColorisation>
+		<lang.carouselColorisation lang="fr">carrousel • désaturer les plaques non actives (v35/v5+)</lang.carouselColorisation>
+
 		<!--arrows-->
 		<lang.arrows>carousel • arrows</lang.arrows>
 		<lang.arrows lang="fr">carrousel • flèches</lang.arrows>
