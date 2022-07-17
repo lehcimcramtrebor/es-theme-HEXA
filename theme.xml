@@ -338,6 +338,14 @@ By Helmic
 		<include name="original" displayName="${lang.original}"/>
 	</subset>
 
+	<subset name="gamesZoneBack" displayName="${lang.gamesZoneBack}" appliesTo="system,basic,detailed,grid,gamecarousel">
+		<include name="carbonColorset" displayName="${lang.carbonColorset}"/>
+		<include name="simple" displayName="${lang.simple}"/>
+		<include name="simpleColorset" displayName="${lang.simpleColorset}"/>
+		<include name="carbon" displayName="${lang.carbon}"/>
+		<include name="no" displayName="${lang.no}"/>
+	</subset>
+
 	<subset name="randomRatio" displayName="${lang.randomRatio}" appliesTo="system,basic,detailed,grid,gamecarousel">
 		<include name="stretched" displayName="${lang.stretched}"/>
 		<include name="original" displayName="${lang.original}"/>
@@ -2496,7 +2504,7 @@ By Helmic
 		</text>
 	
 	</view>
-<!------------------------------------------------------------------------END OF BASIC--------------------------------------------------------------------6------------------------>
+<!------------------------------------------------------------------------END OF BASIC--------------------------------------------------------------------------------------------->
 
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
@@ -2508,6 +2516,38 @@ By Helmic
 	<view name="detailed,grid,gamecarousel">
 
 <!------------------------------------------------------------CONTAINER COMMONS, SUBSETS FOR INDIVIDUAL PARAMETERS----------------------------------------------------------------->
+
+<!-----------------------------------------------------------------GAMELIST BACK--------------------------------------------------------------------------------------------------->
+
+		<image name="gamesZoneBack" extra="true">
+            <linearSmooth>true</linearSmooth>
+			<origin>1 0</origin>
+			<pos>1 0.04</pos>
+			<size>0.37 0.92</size>
+			<size ifSubset="gamesZoneBack:carbon|carbonColorset">0.5 0.92</size>
+			<zIndex>12</zIndex>
+			<path ifSubset="gamesZoneBack:simple|simpleColorset">./_inc/white.png</path>
+			<path ifSubset="gamesZoneBack:carbon|carbonColorset">./_inc/carbon.png</path>
+			<tile ifSubset="gamesZoneBack:carbon|carbonColorset">true</tile>
+			</image>
+
+		<image name="gamesZoneBack" extra="true" ifSubset="gamesZoneBack:simple|carbon">
+			<color>00000080</color>
+			<color ifSubset="gamesZoneBack:carbon">00000000</color>
+			<colorEnd>00000080</colorEnd>
+			<colorEnd ifSubset="gamesZoneBack:carbon">ffffff80</colorEnd>
+			<gradientType>horizontal</gradientType>
+			</image>
+
+		<image name="gamesZoneBack" extra="true" ifSubset="gamesZoneBack:simpleColorset|carbonColorset">
+			<color>00000080</color>
+			<color ifSubset="gamesZoneBack:carbonColorset">00000000</color>
+			<colorEnd>${overlay.colorset}80</colorEnd>
+			<colorEnd ifSubset="overlayColorset:noColor">30303080</colorEnd>
+			<gradientType>horizontal</gradientType>
+			</image>
+			
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
 		<image name="videoContainer" extra="true">
             <linearSmooth>true</linearSmooth>
@@ -4263,7 +4303,7 @@ By Helmic
 			<padding>0.02 0.02 0.02 0.02</padding>
 			<autoLayoutSelectedZoom>1.2</autoLayoutSelectedZoom>
 			<animateSelection>false</animateSelection>
-			<zIndex>5</zIndex>
+			<zIndex>13</zIndex>
 			<scrollSound>./_inc/scroll/gamelist.wav</scrollSound>
 			<imageSource>thumbnail</imageSource>
 		</imagegrid>

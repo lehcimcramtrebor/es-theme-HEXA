@@ -584,6 +584,21 @@ By Helmic
 		<lang.shutter.50>50p</lang.shutter.50>
 		<lang.shutter.60>60p</lang.shutter.60>
 
+		<lang.gamesZoneBack>gamelist • area of games ​​selection background</lang.gamesZoneBack>
+		<lang.gamesZoneBack lang="fr">listes de jeux • arrière-plan de la zone de sélection</lang.gamesZoneBack>
+
+		<lang.simple>simple</lang.simple>
+		<lang.simple lang="fr">simple</lang.simple>
+
+		<lang.simpleColorset>simple colorset adaptive</lang.simpleColorset>
+		<lang.simpleColorset lang="fr">simple aux couleurs du thème</lang.simpleColorset>
+
+		<lang.carbon>carbon</lang.carbon>
+		<lang.carbon lang="fr">carbone</lang.carbon>
+
+		<lang.carbonColorset>carbon colorset adaptive</lang.carbonColorset>
+		<lang.carbonColorset lang="fr">carbon aux couleurs du thème</lang.carbonColorset>
+
 		<!--system random ratio-->
 		<lang.systemRandomRatio>system view • video ratio</lang.systemRandomRatio>
 		<lang.systemRandomRatio lang="fr">vue système • aspect des vidéos</lang.systemRandomRatio>
