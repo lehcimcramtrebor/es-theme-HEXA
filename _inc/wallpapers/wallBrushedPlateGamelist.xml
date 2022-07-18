@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<theme>
+
+<formatVersion>7</formatVersion>
+
+	<variables>
+<!---->	<_paintSubsetGamelist.allow>_paintSubset</_paintSubsetGamelist.allow><!--Allow Paint Menu-->
+		<wallpaperGamelist>wallBrushedPlate</wallpaperGamelist>
+	</variables>
+	
+</theme>

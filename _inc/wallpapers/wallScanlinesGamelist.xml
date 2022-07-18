@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<theme>
+
+<formatVersion>7</formatVersion>
+
+	<variables>
+<!---->	<_paintSubsetGamelist.allow>_paintSubset</_paintSubsetGamelist.allow><!--Allow Paint Menu-->
+		<wallpaperGamelist>wallScanlines</wallpaperGamelist>
+	</variables>
+
+    <view name="menu,system,basic,detailed,grid,gamecarousel">
+
+        <image name="backgroundGamelist" extra="true">
+			<tile>true</tile>
+       </image>
+	</view>
+
+	<view name="basic,detailed,grid,gamecarousel" ifSubset="transition:yes,fullHexa:yes,transitionWallpaper:gamelist">
+		<image name="transitionBack" extra="true">
+			<tile>true</tile>
+		</image>
+	</view>
+ 	
+</theme>

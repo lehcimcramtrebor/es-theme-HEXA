@@ -20,6 +20,10 @@ By Helmic
 		<lang.no lang="fr">non</lang.no>
 	</variables>
 	
+
+    <subset name="_" displayName="------------------------------------------------------------------------------------------------------------------------------------------">
+		<include name="-----"/>
+    </subset>
 	
     <subset name="fullHexa" displayName="${lang.fullHexa}" >
         <include name="no" displayName="${lang.no}"/>
@@ -46,6 +50,10 @@ By Helmic
         <include name="no" displayName="${lang.no}"/>
     </subset>
 
+    <subset name="." displayName="------------------------------------------------------------------------------------------------------------------------------------------" appliesTo="system,basic,detailed,grid,gamecarousel">
+		<include name="-----"/>
+    </subset>
+
     <!--DEVELOPERS FINANCIAL SUPPORT-->
 
 	<include>./_support/support.xml</include>
@@ -68,6 +76,10 @@ By Helmic
 		<include name="169" displayName="${lang.169}"/>
         <include name="54" displayName="${lang.54}"/>
         <include name="43" displayName="${lang.43}"/>
+    </subset>
+
+    <subset name="-" displayName="------------------------------------------------------------------------------------------------------------------------------------------">
+		<include name="-----"/>
     </subset>
 
     <subset name="overlayColorset" displayName="${lang.overlayColorset}">
@@ -116,9 +128,18 @@ By Helmic
         <include name="no" displayName="${lang.no}"/>
     </subset>
 
-	<subset name="transition" displayName="${lowSpecs}${lang.transition}${lowSpecs}">
+    <subset name="--" displayName="------------------------------------------------------------------------------------------------------------------------------------------">
+		<include name="-----"/>
+    </subset>
+
+	<subset name="transition" displayName="${lowSpecs}${lang.transition}">
 		<include name="yes" displayName="${lang.yes}"/>
 		<include name="no" displayName="${lang.no}"/>
+	</subset>
+
+	<subset name="transitionWallpaper" displayName="${lowSpecs}${lang.transitionWallpaper}">
+		<include name="gamelist" displayName="${lang.gamelist}"/>
+		<include name="system" displayName="${lang.system}"/>
 	</subset>
 
 	<subset name="logoAssistTransitionCustom" displayName="${lowSpecs}${lang.logoAssistTransitionCustom}">
@@ -135,6 +156,10 @@ By Helmic
 		<include name="no" displayName="${lang.no}"/>
 		<include name="yes" displayName="${lang.yes}"/>
 	</subset>
+
+    <subset name="---" displayName="------------------------------------------------------------------------------------------------------------------------------------------">
+		<include name="-----"/>
+    </subset>
 
     <subset name="helpIcons" displayName="${lang.helpIcons}">
         <include name="defaultIcons" displayName="${lang.defaultIcons}"/>
@@ -160,6 +185,10 @@ By Helmic
 		<include name="0.016"/>
 		<include name="0.018"/>
 	</subset>
+
+    <subset name="----" displayName="------------------------------------------------------------------------------------------------------------------------------------------">
+		<include name="-----"/>
+    </subset>
 
     <subset name="logoVisualAssistance" displayName="${lowSpecs}${lang.logoVisualAssistance}">
         <include name="yes" displayName="${lang.yes}"/>
@@ -192,6 +221,10 @@ By Helmic
         <include name="large" displayName="${lang.large}"/>
     </subset>
 
+    <subset name="-----" displayName="------------------------------------------------------------------------------------------------------------------------------------------">
+		<include name="-----"/>
+    </subset>
+
 	<subset name="staticEffect" displayName="${lang.staticEffect}">
 		<include name="no" displayName="${lang.noEffect}"/>
 		<include name="scanlinesFine" displayName="${lang.scanlinesFine}"/>
@@ -218,12 +251,8 @@ By Helmic
 		<include name="60" displayName="${lang.shutter.60}"/>
 	</subset>
 
-    <subset name="ambiance" displayName="${lang.ambiance}">
-		<include name="randomAudioOff" displayName="${lang.randomAudioOff}"/>
-        <include name="randomAudioOn" displayName="${lang.randomAudioOn}"/>
-		<include name="randomVideosAudioOff" displayName="${lang.randomVideosAudioOff}"/>
-        <include name="randomVideosAudioOn" displayName="${lang.randomVideosAudioOn}"/>
-        <include name="randomNone" displayName="${lang.randomNone}"/>
+    <subset name="------" displayName="------------------------------------------------------------------------------------------------------------------------------------------">
+		<include name="-----"/>
     </subset>
 
     <subset name="wall" displayName="${lang.wall}">
@@ -262,8 +291,57 @@ By Helmic
         <include name="wallSynthwave3" displayName="${lang.wallSynthwave3}">./_inc/wallpapers/wallSynthwave3.xml</include>
         <include name="customs" displayName="${lang.customs}"/>
     </subset>
+
+    <subset name="wallGamelist" displayName="${lang.wallGamelist}">
+        <include name="wallScanlines" displayName="${lang.wallScanlines}">./_inc/wallpapers/wallScanlinesGamelist.xml</include>
+        <include name="wallSynthPaint" displayName="${lang.wallSynthPaint}">./_inc/wallpapers/wallSynthPaintGamelist.xml</include>
+		<include name="wallBrushedPlate" displayName="${lang.wallBrushedPlate}">./_inc/wallpapers/wallBrushedPlateGamelist.xml</include>
+        <include name="wallPlates" displayName="${lang.wallPlates}">./_inc/wallpapers/wallPlatesGamelist.xml</include>
+        <include name="wallStainBroke" displayName="${lang.wallStainBroke}">./_inc/wallpapers/wallStainBrokeGamelist.xml</include>
+        <include name="wallSteelX" displayName="${lang.wallSteelX}">./_inc/wallpapers/wallSteelXGamelist.xml</include>
+        <include name="wallDiagonalPlates" displayName="${lang.wallDiagonalPlates}">./_inc/wallpapers/wallDiagonalPlatesGamelist.xml</include>
+        <include name="wallDiagonalPlates2" displayName="${lang.wallDiagonalPlates2}">./_inc/wallpapers/wallDiagonalPlates2Gamelist.xml</include>
+		<include name="wallDefault" displayName="${lang.wallDefault}">./_inc/wallpapers/wallGamelist.xml</include>
+		<include name="wallLight" displayName="${lang.wallLight}">./_inc/wallpapers/wallLightGamelist.xml</include>
+		<include name="wallDark" displayName="${lang.wallDark}">./_inc/wallpapers/wallDarkGamelist.xml</include>
+        <include name="wallFlatGrey" displayName="${lang.wallFlatGrey}">./_inc/wallpapers/wallFlatGreyGamelist.xml</include>
+        <include name="wallFlatDark" displayName="${lang.wallFlatDark}">./_inc/wallpapers/wallFlatDarkGamelist.xml</include>
+        <include name="wallFlatDark" displayName="${lang.wallFlatDark}">./_inc/wallpapers/wallFlatDarkGamelist.xml</include>
+        <include name="wallColorGreen" displayName="${lang.wallColorGreen}">./_inc/wallpapers/wallColorGreenGamelist.xml</include>
+        <include name="wallColorRed" displayName="${lang.wallColorRed}">./_inc/wallpapers/wallColorRedGamelist.xml</include>
+        <include name="wallColorPurple" displayName="${lang.wallColorPurple}">./_inc/wallpapers/wallColorPurpleGamelist.xml</include>
+        <include name="wallColorOcean" displayName="${lang.wallColorOcean}">./_inc/wallpapers/wallColorOceanGamelist.xml</include>
+        <include name="wallStain" displayName="${lang.wallStain}">./_inc/wallpapers/wallStainGamelist.xml</include>
+        <include name="wallAlu" displayName="${lang.wallAlu}">./_inc/wallpapers/wallAluGamelist.xml</include>
+        <include name="wallCarbon" displayName="${lang.wallCarbon}">./_inc/wallpapers/wallCarbonGamelist.xml</include>
+        <include name="wallSteelHoles" displayName="${lang.wallSteelHoles}">./_inc/wallpapers/wallSteelHolesGamelist.xml</include>
+        <include name="wallFuture" displayName="${lang.wallFuture}">./_inc/wallpapers/wallFutureGamelist.xml</include>
+        <include name="wallFutureRed" displayName="${lang.wallFutureRed}">./_inc/wallpapers/wallFutureRedGamelist.xml</include>
+        <include name="wallFutureBlue" displayName="${lang.wallFutureBlue}">./_inc/wallpapers/wallFutureBlueGamelist.xml</include>
+        <include name="wallFutureGreen" displayName="${lang.wallFutureGreen}">./_inc/wallpapers/wallFutureGreenGamelist.xml</include>
+        <include name="wallFutureOrange" displayName="${lang.wallFutureOrange}">./_inc/wallpapers/wallFutureOrangeGamelist.xml</include>
+        <include name="wallFutureYellow" displayName="${lang.wallFutureYellow}">./_inc/wallpapers/wallFutureYellowGamelist.xml</include>
+        <include name="wallFuturePink" displayName="${lang.wallFuturePink}">./_inc/wallpapers/wallFuturePinkGamelist.xml</include>
+        <include name="wallFuturePurple" displayName="${lang.wallFuturePurple}">./_inc/wallpapers/wallFuturePurpleGamelist.xml</include>
+        <include name="wallSynthwave" displayName="${lang.wallSynthwave}">./_inc/wallpapers/wallSynthwaveGamelist.xml</include>
+        <include name="wallSynthwave2" displayName="${lang.wallSynthwave2}">./_inc/wallpapers/wallSynthwave2Gamelist.xml</include>
+        <include name="wallSynthwave3" displayName="${lang.wallSynthwave3}">./_inc/wallpapers/wallSynthwave3Gamelist.xml</include>
+        <include name="customs" displayName="${lang.customs}"/>
+    </subset>
  
 	<include>./_inc/wallpapers/${_paintSubset.allow}System.xml</include>
+
+    <subset name="-------" displayName="------------------------------------------------------------------------------------------------------------------------------------------">
+		<include name="-----"/>
+    </subset>
+
+    <subset name="ambiance" displayName="${lang.ambiance}">
+		<include name="randomAudioOff" displayName="${lang.randomAudioOff}"/>
+        <include name="randomAudioOn" displayName="${lang.randomAudioOn}"/>
+		<include name="randomVideosAudioOff" displayName="${lang.randomVideosAudioOff}"/>
+        <include name="randomVideosAudioOn" displayName="${lang.randomVideosAudioOn}"/>
+        <include name="randomNone" displayName="${lang.randomNone}"/>
+    </subset>
 
 	<subset name="bindingBar" displayName="${lang.bindingBar}">
 		<include name="colorWhite" displayName="${lang.colorWhite}"/>
@@ -286,9 +364,22 @@ By Helmic
 		<include name="colorsetAdaptive" displayName="${lang.colorsetAdaptive}"/>
 	</subset>
 
+    <subset name="--------" displayName="------------------------------------------------------------------------------------------------------------------------------------------">
+		<include name="-----"/>
+    </subset>
+
 	<subset name="neogeoaes" displayName="${lang.neogeoaes}">
 		<include name="no" displayName="${lang.no}"/>
         <include name="yes" displayName="${lang.yes}"/>
+	</subset>
+
+    <subset name="---------" displayName="------------------------------------------------------------------------------------------------------------------------------------------">
+		<include name="-----"/>
+    </subset>
+
+	<subset name="systemRandomRatio" displayName="${lang.systemRandomRatio}" appliesTo="system,basic,detailed,grid,gamecarousel">
+		<include name="stretched" displayName="${lang.stretched}"/>
+		<include name="original" displayName="${lang.original}"/>
 	</subset>
 
 	<subset name="randomCustom" displayName="${lang.randomCustom}" appliesTo="system,basic,detailed,grid,gamecarousel">
@@ -333,10 +424,9 @@ By Helmic
 		<include name="no" displayName="${lang.no}"/>
 	</subset>
 
-	<subset name="systemRandomRatio" displayName="${lang.systemRandomRatio}" appliesTo="system,basic,detailed,grid,gamecarousel">
-		<include name="stretched" displayName="${lang.stretched}"/>
-		<include name="original" displayName="${lang.original}"/>
-	</subset>
+    <subset name="..." displayName="------------------------------------------------------------------------------------------------------------------------------------------" appliesTo="system,basic,detailed,grid,gamecarousel">
+		<include name="-----"/>
+    </subset>
 
 	<subset name="gamesZoneBack" displayName="${lang.gamesZoneBack}" appliesTo="system,basic,detailed,grid,gamecarousel">
 		<include name="carbonColorset" displayName="${lang.carbonColorset}"/>
@@ -684,7 +774,7 @@ By Helmic
 		<include name="23"/>
 	</subset>
 
-	<include>./_inc/wallpapers/${_paintSubset.allow}Gamelist.xml</include>
+	<include>./_inc/wallpapers/${_paintSubsetGamelist.allow}Gamelist.xml</include>
 
  	<subset name="logoAnime" displayName="${lowSpecs}${lang.logoAnime}" appliesTo="basic,detailed,grid,gamecarousel">
 		<include name="no" displayName="${lang.no}"/>
@@ -794,42 +884,6 @@ By Helmic
 
             <storyboard ifSubset="overlayAnime:yes">
                 <animation property="offsetX" from="-0.5" to="0.5" duration="750" autoreverse="true" mode="easeInOutQuint" repeat="forever"/>
-            </storyboard>
-        </image>
- 
-        <image name="background" extra="true">
-            <path>./_inc/wallpapers/${wallpaper}.jpg</path>
-            <path ifSubset="wall:customs">./_hexaCustom/wallpapers/custom.jpg</path>
-            <path ifSubset="wall:customs">./_hexaCustom/wallpapers/${system.theme}.jpg</path>
-            <path ifSubset="wall:customs" ifArch="windows">./../../../../_hexaCustom/wallpapers/custom.jpg</path>
-            <path ifSubset="wall:customs" ifNotArch="windows">./../../_hexaCustom/wallpapers/custom.jpg</path>
-            <path ifSubset="wall:customs" ifArch="windows">./../../../../_hexaCustom/wallpapers/${system.theme}.jpg</path>
-            <path ifSubset="wall:customs" ifNotArch="windows">./../../_hexaCustom/wallpapers/${system.theme}.jpg</path>
-            <maxSize>99 1</maxSize>
-            <pos>0.5 0.5</pos>
-            <origin>0.5 0.5</origin>
-            <color>808080</color>
-            <colorEnd>303030</colorEnd>
-            <color ifSubset="wall:customs">ffffff</color>
-            <colorEnd ifSubset="wall:customs">808080</colorEnd>
-            <gradientType>vertical</gradientType>
-            <opacity>1</opacity>
-            <zIndex>0</zIndex>
-       </image>
- 
-        <image name="backgroundMask" extra="true" ifSubset="fullHexa:yes">
-            <path>./_inc/wallpapers/${wallpaper}_mask.png</path>
-            <maxSize>99 1</maxSize>
-            <pos>0.5 0.5</pos>
-            <origin>0.5 0.5</origin>
-            <color>808080</color>
-            <colorEnd>303030</colorEnd>
-            <gradientType>vertical</gradientType>
-            <opacity>1</opacity>
-            <zIndex>2</zIndex>
-            <storyboard repeat="forever">
-                <animation property="color" from="808080" to="303030" duration="3500" autoreverse="true" mode="linear"/>
-                <animation property="colorEnd" from="303030" to="808080" duration="3500" autoreverse="true" mode="linear"/>
             </storyboard>
         </image>
 
@@ -946,6 +1000,48 @@ By Helmic
 <!-------------------------------------------------------------------END OF LOGO VISUAL ASSISTANCE--------------------------------------------------------------------------------->
 
 
+<!-------------------------------------------------------------------WALLPAPERS GAMELIST------------------------------------------------------------------------------------------->
+
+	<view name="basic,detailed,grid,gamecarousel">
+
+ 
+        <image name="backgroundGamelist" extra="true">
+            <path>./_inc/wallpapers/${wallpaperGamelist}.jpg</path>
+            <path ifSubset="wallGamelist:customs">./_hexaCustom/wallpapers/custom.jpg</path>
+            <path ifSubset="wallGamelist:customs">./_hexaCustom/wallpapers/${system.theme}.jpg</path>
+            <path ifSubset="wallGamelist:customs" ifArch="windows">./../../../../_hexaCustom/wallpapers/custom.jpg</path>
+            <path ifSubset="wallGamelist:customs" ifNotArch="windows">./../../_hexaCustom/wallpapers/custom.jpg</path>
+            <path ifSubset="wallGamelist:customs" ifArch="windows">./../../../../_hexaCustom/wallpapers/${system.theme}.jpg</path>
+            <path ifSubset="wallGamelist:customs" ifNotArch="windows">./../../_hexaCustom/wallpapers/${system.theme}.jpg</path>
+            <maxSize>99 1</maxSize>
+            <pos>0.5 0.5</pos>
+            <origin>0.5 0.5</origin>
+            <color>808080</color>
+            <colorEnd>303030</colorEnd>
+            <color ifSubset="wallGamelist:customs">ffffff</color>
+            <colorEnd ifSubset="wallGamelist:customs">808080</colorEnd>
+            <gradientType>vertical</gradientType>
+            <opacity>1</opacity>
+            <zIndex>0</zIndex>
+       </image>
+ 
+        <image name="backgroundMaskGamelist" extra="true" ifSubset="fullHexa:yes">
+            <path>./_inc/wallpapers/${wallpaperGamelist}_mask.png</path>
+            <maxSize>99 1</maxSize>
+            <pos>0.5 0.5</pos>
+            <origin>0.5 0.5</origin>
+            <color>808080</color>
+            <colorEnd>303030</colorEnd>
+            <gradientType>vertical</gradientType>
+            <opacity>1</opacity>
+            <zIndex>2</zIndex>
+            <storyboard repeat="forever">
+                <animation property="color" from="808080" to="303030" duration="3500" autoreverse="true" mode="linear"/>
+                <animation property="colorEnd" from="303030" to="808080" duration="3500" autoreverse="true" mode="linear"/>
+            </storyboard>
+        </image>
+	
+	</view>
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 <!--------------------------------------------------------------------------SYSTEM------------------------------------------------------------------------------------------------->
@@ -954,6 +1050,43 @@ By Helmic
 
     <view name="system">
 
+<!-------------------------------------------------------------------WALLPAPERS SYSTEM--------------------------------------------------------------------------------------------->
+ 
+        <image name="background" extra="true">
+            <path>./_inc/wallpapers/${wallpaper}.jpg</path>
+            <path ifSubset="wall:customs">./_hexaCustom/wallpapers/custom.jpg</path>
+            <path ifSubset="wall:customs">./_hexaCustom/wallpapers/${system.theme}.jpg</path>
+            <path ifSubset="wall:customs" ifArch="windows">./../../../../_hexaCustom/wallpapers/custom.jpg</path>
+            <path ifSubset="wall:customs" ifNotArch="windows">./../../_hexaCustom/wallpapers/custom.jpg</path>
+            <path ifSubset="wall:customs" ifArch="windows">./../../../../_hexaCustom/wallpapers/${system.theme}.jpg</path>
+            <path ifSubset="wall:customs" ifNotArch="windows">./../../_hexaCustom/wallpapers/${system.theme}.jpg</path>
+            <maxSize>99 1</maxSize>
+            <pos>0.5 0.5</pos>
+            <origin>0.5 0.5</origin>
+            <color>808080</color>
+            <colorEnd>303030</colorEnd>
+            <color ifSubset="wall:customs">ffffff</color>
+            <colorEnd ifSubset="wall:customs">808080</colorEnd>
+            <gradientType>vertical</gradientType>
+            <opacity>1</opacity>
+            <zIndex>0</zIndex>
+       </image>
+ 
+        <image name="backgroundMask" extra="true" ifSubset="fullHexa:yes">
+            <path>./_inc/wallpapers/${wallpaper}_mask.png</path>
+            <maxSize>99 1</maxSize>
+            <pos>0.5 0.5</pos>
+            <origin>0.5 0.5</origin>
+            <color>808080</color>
+            <colorEnd>303030</colorEnd>
+            <gradientType>vertical</gradientType>
+            <opacity>1</opacity>
+            <zIndex>2</zIndex>
+            <storyboard repeat="forever">
+                <animation property="color" from="808080" to="303030" duration="3500" autoreverse="true" mode="linear"/>
+                <animation property="colorEnd" from="303030" to="808080" duration="3500" autoreverse="true" mode="linear"/>
+            </storyboard>
+        </image>
 
 <!----------------------------------------------------------------------------FADE------------------------------------------------------------------------------------------------->
 
@@ -1991,13 +2124,20 @@ By Helmic
 
 		<image name="transitionBack" extra="true">
             <linearSmooth>true</linearSmooth>
-            <path>./_inc/wallpapers/${wallpaper}.jpg</path>
-            <path ifSubset="wall:customs">./_hexaCustom/wallpapers/custom.jpg</path>
-            <path ifSubset="wall:customs">./_hexaCustom/wallpapers/${system.theme}.jpg</path>
-            <path ifSubset="wall:customs" ifArch="windows">./../../../../_hexaCustom/wallpapers/custom.jpg</path>
-            <path ifSubset="wall:customs" ifNotArch="windows">./../../_hexaCustom/wallpapers/custom.jpg</path>
-            <path ifSubset="wall:customs" ifArch="windows">./../../../../_hexaCustom/wallpapers/${system.theme}.jpg</path>
-            <path ifSubset="wall:customs" ifNotArch="windows">./../../_hexaCustom/wallpapers/${system.theme}.jpg</path>
+            <path ifSubset="transitionWallpaper:system">./_inc/wallpapers/${wallpaper}.jpg</path>
+            <path ifSubset="transitionWallpaper:gamelist">./_inc/wallpapers/${wallpaperGamelist}.jpg</path>
+            <path ifSubset="transitionWallpaper:system,wall:customs">./_hexaCustom/wallpapers/custom.jpg</path>
+            <path ifSubset="transitionWallpaper:system,wall:customs">./_hexaCustom/wallpapers/${system.theme}.jpg</path>
+            <path ifSubset="transitionWallpaper:system,wall:customs" ifArch="windows">./../../../../_hexaCustom/wallpapers/custom.jpg</path>
+            <path ifSubset="transitionWallpaper:system,wall:customs" ifNotArch="windows">./../../_hexaCustom/wallpapers/custom.jpg</path>
+            <path ifSubset="transitionWallpaper:system,wall:customs" ifArch="windows">./../../../../_hexaCustom/wallpapers/${system.theme}.jpg</path>
+            <path ifSubset="transitionWallpaper:system,wall:customs" ifNotArch="windows">./../../_hexaCustom/wallpapers/${system.theme}.jpg</path>
+            <path ifSubset="transitionWallpaper:gamelist,wallGamelist:customs">./_hexaCustom/wallpapers/custom.jpg</path>
+            <path ifSubset="transitionWallpaper:gamelist,wallGamelist:customs">./_hexaCustom/wallpapers/${system.theme}.jpg</path>
+            <path ifSubset="transitionWallpaper:gamelist,wallGamelist:customs" ifArch="windows">./../../../../_hexaCustom/wallpapers/custom.jpg</path>
+            <path ifSubset="transitionWallpaper:gamelist,wallGamelist:customs" ifNotArch="windows">./../../_hexaCustom/wallpapers/custom.jpg</path>
+            <path ifSubset="transitionWallpaper:gamelist,wallGamelist:customs" ifArch="windows">./../../../../_hexaCustom/wallpapers/${system.theme}.jpg</path>
+            <path ifSubset="transitionWallpaper:gamelist,wallGamelist:customs" ifNotArch="windows">./../../_hexaCustom/wallpapers/${system.theme}.jpg</path>
            	<maxSize>99 1</maxSize>
 			<pos>0.5 0.5</pos>
 			<origin>0.5 0.5</origin>

@@ -16,7 +16,7 @@
        </image>
 	</view>
 
-	<view name="basic,detailed,grid,gamecarousel" ifSubset="transition:yes,fullHexa:yes">
+	<view name="basic,detailed,grid,gamecarousel" ifSubset="transition:yes,fullHexa:yes,transitionWallpaper:system">
 		<image name="transitionBack" extra="true">
 			<tile>true</tile>
 		</image>

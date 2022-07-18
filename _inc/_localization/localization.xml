@@ -27,11 +27,11 @@ By Helmic
         <lang.png>png (fast)</lang.png>
         <lang.png lang="fr">png (rapide)</lang.png>
 
-        <lang.logoAssistTransitionCustom>general • use custom logo in gamelist transitions</lang.logoAssistTransitionCustom>
-        <lang.logoAssistTransitionCustom lang="fr">général • utiliser le logo personnalisé dans les transitions</lang.logoAssistTransitionCustom>
+        <lang.logoAssistTransitionCustom>transition • use custom logo</lang.logoAssistTransitionCustom>
+        <lang.logoAssistTransitionCustom lang="fr">transition • utiliser le logo personnalisé</lang.logoAssistTransitionCustom>
 
-        <lang.transitionCustomName>general • use custom label in gamelist transitions</lang.transitionCustomName>
-        <lang.transitionCustomName lang="fr">général • utiliser le label personnalisé dans les transitions</lang.transitionCustomName>
+        <lang.transitionCustomName>transition • use custom label</lang.transitionCustomName>
+        <lang.transitionCustomName lang="fr">transition • utiliser le label personnalisé</lang.transitionCustomName>
 
         <lang.customs>customs wallpapers (deactivate paints)</lang.customs>
         <lang.customs lang="fr">customs (désactive les peintures)</lang.customs>
@@ -566,11 +566,20 @@ By Helmic
 		<lang.scratch.strong lang="fr">en fin de vie</lang.scratch.strong>
 
 		<!--transition-->
-		<lang.transition>general • anime gamelist transitions (+ resources)</lang.transition>
-		<lang.transition lang="fr">général • animer la transition des listes de jeux (+ ressources)</lang.transition>
+		<lang.transition>transition • anime (+ resources)</lang.transition>
+		<lang.transition lang="fr">transition • animer (+ ressources)</lang.transition>
 
-		<lang.transitionCustom>general • use custom plate for transition</lang.transitionCustom>
-		<lang.transitionCustom lang="fr">général • utiliser la plaque custom pour les transitions</lang.transitionCustom>
+		<lang.transitionWallpaper>transition • use wallpaper from</lang.transitionWallpaper>
+		<lang.transitionWallpaper lang="fr">transition • utiliser le fond</lang.transitionWallpaper>
+
+		<lang.gamelist>gamelist</lang.gamelist>
+		<lang.gamelist lang="fr">de la liste des jeux</lang.gamelist>
+
+		<lang.system>system view</lang.system>
+		<lang.system lang="fr">de la vue système</lang.system>
+
+		<lang.transitionCustom>transition • use custom plate</lang.transitionCustom>
+		<lang.transitionCustom lang="fr">transition • utiliser la plaque custom</lang.transitionCustom>
 
 		<!--shutter-->
 		<lang.shutter>screen • shutter rate</lang.shutter>
@@ -681,8 +690,8 @@ By Helmic
 		<lang.large lang="fr">large</lang.large>
 
 		<!--carousel wall paint-->
-		<lang.carouselWallPaint>system view • wall paint (+ resources)</lang.carouselWallPaint>
-		<lang.carouselWallPaint lang="fr">vue système • peindre le mur (+ ressources)</lang.carouselWallPaint>
+		<lang.carouselWallPaint>wallpaper • paint system view (+ resources)</lang.carouselWallPaint>
+		<lang.carouselWallPaint lang="fr">fond d'écran • peindre la vue système (+ ressources)</lang.carouselWallPaint>
 
 		<!--wall paint-->
 		<lang.gamelistWallPaint>gamelist • wall paint (++ resources)</lang.gamelistWallPaint>
@@ -783,8 +792,11 @@ By Helmic
         <lang.mdVideoShortDelay lang="fr">listes de jeux • raccourcir le délai d'affichage des vidéos</lang.mdVideoShortDelay>
 
 		<!--wall choice-->
-		<lang.wall>system view • choose wall</lang.wall>
-		<lang.wall lang="fr">vue système • choisir le mur</lang.wall>
+		<lang.wall>wallpaper • choose for system view</lang.wall>
+		<lang.wall lang="fr">fond d'écran • choisir pour la vue système</lang.wall>
+
+		<lang.wallGamelist>wallpaper • choose for gamelist view</lang.wallGamelist>
+		<lang.wallGamelist lang="fr">fond d'écran • choisir pour la liste des jeux</lang.wallGamelist>
 
 		<lang.wallDefault>wall</lang.wallDefault>
 		<lang.wallDefault lang="fr">mur</lang.wallDefault>
