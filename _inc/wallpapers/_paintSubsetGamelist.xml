@@ -7,7 +7,7 @@ By Helmic
 <theme>
 <formatVersion>7</formatVersion>
 
-    <subset name="gamelistWallPaint" displayName="${lowSpecs}${lang.gamelistWallPaint}" appliesTo="system,basic,detailed,grid,gamecarousel">
+    <subset name="gamelistWallPaint" displayName="${lowSpecs}${lang.gamelistWallPaint}" appliesTo="wallpaper                                                                                                                                                                                                                                                            ,system,basic,detailed,grid,gamecarousel">
         <include name="no" displayName="${lang.no}"/>
 		<include name="yes" displayName="${lang.yes}"/>
         <include name="custom" displayName="${lang.custom}"/>

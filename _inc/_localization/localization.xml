@@ -42,11 +42,11 @@ By Helmic
         <lang.regionChoice>allow region settings</lang.regionChoice>
         <lang.regionChoice lang="fr">autoriser le paramètre région</lang.regionChoice>
 
-        <lang.logoAnime>game list view •  wall logo animations (+++ resources)</lang.logoAnime>
-        <lang.logoAnime lang="fr">listes de jeux • animations des logos sur le mur (+++ ressources)</lang.logoAnime>
+        <lang.logoAnime>  wall logo animations (+++ resources)</lang.logoAnime>
+        <lang.logoAnime lang="fr">animations des logos sur le mur (+++ ressources)</lang.logoAnime>
 
-        <lang.logoCustom>game list view • use custom logo in animation</lang.logoCustom>
-        <lang.logoCustom lang="fr">listes de jeux • utiliser le logo personnalisé pour l'animation</lang.logoCustom>
+        <lang.logoCustom> use custom logo in animation</lang.logoCustom>
+        <lang.logoCustom lang="fr">utiliser le logo personnalisé pour l'animation</lang.logoCustom>
 
         <lang.onTop>on top</lang.onTop>
         <lang.onTop lang="fr">en haut</lang.onTop>
@@ -60,11 +60,11 @@ By Helmic
         <lang.mix3>full mix</lang.mix3>
         <lang.mix3 lang="fr">toutes</lang.mix3>
 
-        <lang.descriptionFontSize>game list view • description font size</lang.descriptionFontSize>
-        <lang.descriptionFontSize lang="fr">listes de jeux • taille de la police de la description</lang.descriptionFontSize>
+        <lang.descriptionFontSize> description font size</lang.descriptionFontSize>
+        <lang.descriptionFontSize lang="fr">taille de la police de la description</lang.descriptionFontSize>
 
-        <lang.gamelistFontSize>game list view • gamelist font size</lang.gamelistFontSize>
-        <lang.gamelistFontSize lang="fr">listes de jeux • taille de la police de la listes</lang.gamelistFontSize>
+        <lang.gamelistFontSize> gamelist font size</lang.gamelistFontSize>
+        <lang.gamelistFontSize lang="fr">taille de la police de la listes</lang.gamelistFontSize>
 
         <lang.bindingBarFontSize>system view • info bar font size</lang.bindingBarFontSize>
         <lang.bindingBarFontSize lang="fr">vue système • taille de la police de la barre d'infos</lang.bindingBarFontSize>
@@ -72,14 +72,14 @@ By Helmic
         <lang.helpFontSize>help • help font size</lang.helpFontSize>
         <lang.helpFontSize lang="fr">aide • taille de la police de l'aide</lang.helpFontSize>
 
-        <lang.gameInfosBarFontSize>game list view • game binds font size</lang.gameInfosBarFontSize>
-        <lang.gameInfosBarFontSize lang="fr">listes de jeux • taille de la police des infos de jeux</lang.gameInfosBarFontSize>
+        <lang.gameInfosBarFontSize> game binds font size</lang.gameInfosBarFontSize>
+        <lang.gameInfosBarFontSize lang="fr">taille de la police des infos de jeux</lang.gameInfosBarFontSize>
 
-        <lang.basicGamelistLines>game list view • basic gamelist lines</lang.basicGamelistLines>
-        <lang.basicGamelistLines lang="fr">listes de jeux • nombre de lignes de la listes basique</lang.basicGamelistLines>
+        <lang.basicGamelistLines> basic gamelist lines</lang.basicGamelistLines>
+        <lang.basicGamelistLines lang="fr">nombre de lignes de la listes basique</lang.basicGamelistLines>
 
-        <lang.detailedGamelistLines>game list view • detailed gamelist lines</lang.detailedGamelistLines>
-        <lang.detailedGamelistLines lang="fr">listes de jeux • nombre de lignes de la listes détaillée</lang.detailedGamelistLines>
+        <lang.detailedGamelistLines> detailed gamelist lines</lang.detailedGamelistLines>
+        <lang.detailedGamelistLines lang="fr">nombre de lignes de la listes détaillée</lang.detailedGamelistLines>
 
         <!--menu-->
         <lang.menuColor>general • menu theme</lang.menuColor>
@@ -104,17 +104,17 @@ By Helmic
         <lang.ambiance>system view • ambiance</lang.ambiance>
         <lang.ambiance lang="fr">vue système • ambiance</lang.ambiance>
 
-        <lang.randomFx>system view • random videos fx when shader is off</lang.randomFx>
-        <lang.randomFx lang="fr">vue système • effet sur vidéos quand shader désactivé</lang.randomFx>
+        <lang.randomFx>random videos • fx when shader is off</lang.randomFx>
+        <lang.randomFx lang="fr">vidéos aléatoires • effet quand shader principal désactivé</lang.randomFx>
 
-        <lang.randomOverlay>system view • display overlay on random videos</lang.randomOverlay>
-        <lang.randomOverlay lang="fr">vue système • afficher l'overlay sur les vidéos</lang.randomOverlay>
+        <lang.randomOverlay>random videos • display overlay</lang.randomOverlay>
+        <lang.randomOverlay lang="fr">vidéos aléatoires • afficher l'overlay</lang.randomOverlay>
 
-        <lang.barName>system view • display info bar on random videos</lang.barName>
-        <lang.barName lang="fr">vue système • afficher la barre d'infos sur les vidéos</lang.barName>
+        <lang.barName>random videos • display info bar</lang.barName>
+        <lang.barName lang="fr">vidéos aléatoires • afficher la barre d'infos</lang.barName>
 
-        <lang.randomLogo>system view • display plate on random videos</lang.randomLogo>
-        <lang.randomLogo lang="fr">vue système • afficher la plaque système sur les vidéos</lang.randomLogo>
+        <lang.randomLogo>random videos • display plate</lang.randomLogo>
+        <lang.randomLogo lang="fr">vidéos aléatoires • afficher la plaque système</lang.randomLogo>
 
         <lang.overlayType>general • overlay type</lang.overlayType>
         <lang.overlayType lang="fr">général • type de l'overlay</lang.overlayType>
@@ -149,14 +149,14 @@ By Helmic
         <lang.randomNone>nothing</lang.randomNone>
         <lang.randomNone lang="fr">aucune</lang.randomNone>
         
-        <lang.randomCustom>system view • allow custom videos</lang.randomCustom>
-        <lang.randomCustom lang="fr">vue système • autoriser les vidéos personnalisées</lang.randomCustom>
+        <lang.randomCustom>random videos • allow custom</lang.randomCustom>
+        <lang.randomCustom lang="fr">vidéos aléatoires • autoriser la personnalisation</lang.randomCustom>
          
-        <lang.systemFade>system view • apply wall's vignetting</lang.systemFade>
-        <lang.systemFade lang="fr">vue système • appliquer un vignettage</lang.systemFade>
+        <lang.systemFade>vignetting on system view </lang.systemFade>
+        <lang.systemFade lang="fr">vignettage de lavue système</lang.systemFade>
           
-        <lang.gamelistFade>gamelist view • apply wall's vignetting</lang.gamelistFade>
-        <lang.gamelistFade lang="fr">listes de jeux • appliquer un vignettage</lang.gamelistFade>
+        <lang.gamelistFade>vignetting on gamelist view</lang.gamelistFade>
+        <lang.gamelistFade lang="fr">vignettage de la liste des jeux</lang.gamelistFade>
 
 		<!--tv choice-->
 		
@@ -164,7 +164,7 @@ By Helmic
         <lang.automatic lang="fr">automatique</lang.automatic>
 
         <lang.container>gamelist view • video screen</lang.container>
-        <lang.container lang="fr">listes de jeux • écran vidéo</lang.container>
+        <lang.container lang="fr">écran vidéo</lang.container>
  		
         <lang.cathod>cathodic tv (white)</lang.cathod>
         <lang.cathod lang="fr">écran cathodique (blanc)</lang.cathod>
@@ -448,7 +448,7 @@ By Helmic
 
 
         <lang.containerTile>gamelist view • display plate with video container</lang.containerTile>
-        <lang.containerTile lang="fr">listes de jeux • afficher une plaque avec le container vidéo</lang.containerTile>
+        <lang.containerTile lang="fr">afficher une plaque avec le container vidéo</lang.containerTile>
 
         <lang.tile>system</lang.tile>
         <lang.tile lang="fr">système</lang.tile>
@@ -593,8 +593,8 @@ By Helmic
 		<lang.shutter.50>50p</lang.shutter.50>
 		<lang.shutter.60>60p</lang.shutter.60>
 
-		<lang.gamesZoneBack>gamelist • area of games ​​selection background</lang.gamesZoneBack>
-		<lang.gamesZoneBack lang="fr">listes de jeux • arrière-plan de la zone de sélection</lang.gamesZoneBack>
+		<lang.gamesZoneBack>area of games ​​selection background</lang.gamesZoneBack>
+		<lang.gamesZoneBack lang="fr">arrière-plan de la zone de sélection</lang.gamesZoneBack>
 
 		<lang.simple>simple</lang.simple>
 		<lang.simple lang="fr">simple</lang.simple>
@@ -609,12 +609,12 @@ By Helmic
 		<lang.carbonColorset lang="fr">carbon aux couleurs du thème</lang.carbonColorset>
 
 		<!--system random ratio-->
-		<lang.systemRandomRatio>system view • video ratio</lang.systemRandomRatio>
-		<lang.systemRandomRatio lang="fr">vue système • aspect des vidéos</lang.systemRandomRatio>
+		<lang.systemRandomRatio>random  video • ratio</lang.systemRandomRatio>
+		<lang.systemRandomRatio lang="fr">vidéos aléatoires • aspect</lang.systemRandomRatio>
 
 		<!--random ratio-->
-		<lang.randomRatio>gamelist • video ratio</lang.randomRatio>
-		<lang.randomRatio lang="fr">listes de jeux • aspect des vidéos</lang.randomRatio>
+		<lang.randomRatio>video ratio</lang.randomRatio>
+		<lang.randomRatio lang="fr">aspect des vidéos</lang.randomRatio>
 
 		<lang.original>original</lang.original>
 		<lang.original lang="fr">respecté</lang.original>
@@ -694,8 +694,8 @@ By Helmic
 		<lang.carouselWallPaint lang="fr">fond d'écran • peindre la vue système (+ ressources)</lang.carouselWallPaint>
 
 		<!--wall paint-->
-		<lang.gamelistWallPaint>gamelist • wall paint (++ resources)</lang.gamelistWallPaint>
-		<lang.gamelistWallPaint lang="fr">listes de jeux • peindre le mur (++ ressources)</lang.gamelistWallPaint>
+		<lang.gamelistWallPaint>paint gamelist wall (++ resources)</lang.gamelistWallPaint>
+		<lang.gamelistWallPaint lang="fr">peindre le mur de la liste des jeux (++ ressources)</lang.gamelistWallPaint>
 
 		<lang.yes>yes</lang.yes>
 		<lang.yes lang="fr">oui</lang.yes>
@@ -704,15 +704,15 @@ By Helmic
 		<lang.no lang="fr">non</lang.no>
 
 		<!--tv screen color-->
-		<lang.tvScreenColor>gamelist • tv screen color</lang.tvScreenColor>
-		<lang.tvScreenColor lang="fr">listes de jeux • couleur de l'écran tv</lang.tvScreenColor>
+		<lang.tvScreenColor>tv screen color</lang.tvScreenColor>
+		<lang.tvScreenColor lang="fr">couleur de l'écran tv</lang.tvScreenColor>
 
 		<lang.standard>standard</lang.standard>
 		<lang.standard lang="fr">standard</lang.standard>
 
 		<!--boxback display-->
-		<lang.previewDisplay>gamelist • preview artwork</lang.previewDisplay>
-		<lang.previewDisplay lang="fr">listes de jeux • image d'apercu</lang.previewDisplay>
+		<lang.previewDisplay>preview artwork</lang.previewDisplay>
+		<lang.previewDisplay lang="fr">image d'apercu</lang.previewDisplay>
 
 		<lang.displayThumbnail>simple</lang.displayThumbnail>
 		<lang.displayThumbnail lang="fr">simple</lang.displayThumbnail>
@@ -724,29 +724,29 @@ By Helmic
 		<lang.displayMix lang="fr">composer un mix</lang.displayMix>
 
 		<!--elements colors-->
-		<lang.ratingColor>gamelist • rating colors</lang.ratingColor>
-		<lang.ratingColor lang="fr">listes de jeux • couleur de la notation</lang.ratingColor>
+		<lang.ratingColor>rating colors</lang.ratingColor>
+		<lang.ratingColor lang="fr">couleur de la notation</lang.ratingColor>
 
-		<lang.gamebarColor>gamelist • game bar icons active colors</lang.gamebarColor>
-		<lang.gamebarColor lang="fr">listes de jeux • couleur des icônes de la barre de jeux</lang.gamebarColor>
+		<lang.gamebarColor>game bar icons active colors</lang.gamebarColor>
+		<lang.gamebarColor lang="fr">couleur des icônes de la barre de jeux</lang.gamebarColor>
 
-		<lang.gameHeadColor>gamelist • game title color</lang.gameHeadColor>
-		<lang.gameHeadColor lang="fr">listes de jeux • couleur du titre du jeu</lang.gameHeadColor>
+		<lang.gameHeadColor>game title color</lang.gameHeadColor>
+		<lang.gameHeadColor lang="fr">couleur du titre du jeu</lang.gameHeadColor>
 
-		<lang.systemNameColor>gamelist • system name color</lang.systemNameColor>
-		<lang.systemNameColor lang="fr">listes de jeux • couleur du nom du système</lang.systemNameColor>
+		<lang.systemNameColor>system name color</lang.systemNameColor>
+		<lang.systemNameColor lang="fr">couleur du nom du système</lang.systemNameColor>
 
-		<lang.releaseColor>gamelist • release date color</lang.releaseColor>
-		<lang.releaseColor lang="fr">listes de jeux • couleur de la date de sortie</lang.releaseColor>
+		<lang.releaseColor>release date color</lang.releaseColor>
+		<lang.releaseColor lang="fr">couleur de la date de sortie</lang.releaseColor>
 
-		<lang.gamebindsColor>gamelist • game binds text color</lang.gamebindsColor>
-		<lang.gamebindsColor lang="fr">listes de jeux • couleur du texte des infos de jeux</lang.gamebindsColor>
+		<lang.gamebindsColor>game binds text color</lang.gamebindsColor>
+		<lang.gamebindsColor lang="fr">couleur du texte des infos de jeux</lang.gamebindsColor>
 
-		<lang.lineColor>gamelist • lines color (description)</lang.lineColor>
-		<lang.lineColor lang="fr">listes de jeux • couleur des lignes de description</lang.lineColor>
+		<lang.lineColor>lines color (description)</lang.lineColor>
+		<lang.lineColor lang="fr">couleur des lignes de description</lang.lineColor>
 
-		<lang.descriptionColor>gamelist • description color</lang.descriptionColor>
-		<lang.descriptionColor lang="fr">listes de jeux • couleur de la description</lang.descriptionColor>
+		<lang.descriptionColor>description color</lang.descriptionColor>
+		<lang.descriptionColor lang="fr">couleur de la description</lang.descriptionColor>
 
 		<lang.helpTextColor>help • text color</lang.helpTextColor>
 		<lang.helpTextColor lang="fr">aide • couleur du texte</lang.helpTextColor>
@@ -767,8 +767,8 @@ By Helmic
 		<lang.colorsetAdaptive lang="fr">adaptif</lang.colorsetAdaptive>
 
 		<!--random art display-->
-		<lang.randomArt>system view • random arts (+ resources)</lang.randomArt>
-		<lang.randomArt lang="fr">vue système • images aléatoires (+ ressources)</lang.randomArt>
+		<lang.randomArt>random arts (+ resources)</lang.randomArt>
+		<lang.randomArt lang="fr">images aléatoires (+ ressources)</lang.randomArt>
 
 		<lang.thumbnail>thumbnails</lang.thumbnail>
 		<lang.thumbnail lang="fr">boîtes de jeux</lang.thumbnail>
@@ -779,17 +779,17 @@ By Helmic
 		<lang.logoVisualAssistance>carousel • display logo visual assistance (+ resources)</lang.logoVisualAssistance>
 		<lang.logoVisualAssistance lang="fr">carrousel • afficher l'assistance visuelle des logos (+ ressources)</lang.logoVisualAssistance>
 
-		<lang.tvLogo>gamelist • display system logos on video</lang.tvLogo>
-		<lang.tvLogo lang="fr">listes de jeux • afficher les logos système dans la vidéo</lang.tvLogo>
+		<lang.tvLogo>display system logos on video</lang.tvLogo>
+		<lang.tvLogo lang="fr">afficher les logos système dans la vidéo</lang.tvLogo>
 
-		<lang.tvOs>gamelist • display os on video container (when available)</lang.tvOs>
-		<lang.tvOs lang="fr">listes de jeux • afficher l'os sur le cadre vidéo (quand disponible)</lang.tvOs>
+		<lang.tvOs>display os on video container (when available)</lang.tvOs>
+		<lang.tvOs lang="fr">afficher l'os sur le cadre vidéo (quand disponible)</lang.tvOs>
 
-		<lang.tvSnaphot>gamelist • display snapshot before video</lang.tvSnaphot>
-		<lang.tvSnaphot lang="fr">listes de jeux • afficher le screenshot avant la vidéo</lang.tvSnaphot>
+		<lang.tvSnaphot>display snapshot before video</lang.tvSnaphot>
+		<lang.tvSnaphot lang="fr">afficher le screenshot avant la vidéo</lang.tvSnaphot>
 
-        <lang.mdVideoShortDelay>gamelist • shorter video delay</lang.mdVideoShortDelay>
-        <lang.mdVideoShortDelay lang="fr">listes de jeux • raccourcir le délai d'affichage des vidéos</lang.mdVideoShortDelay>
+        <lang.mdVideoShortDelay>shorter video delay</lang.mdVideoShortDelay>
+        <lang.mdVideoShortDelay lang="fr">raccourcir le délai d'affichage des vidéos</lang.mdVideoShortDelay>
 
 		<!--wall choice-->
 		<lang.wall>wallpaper • choose for system view</lang.wall>
