@@ -15,6 +15,9 @@ By Helmic
         <lang.neogeoaes>neo geo • force aes</lang.neogeoaes>
         <lang.neogeoaes lang="fr">neo geo • forcer aes</lang.neogeoaes>
 
+        <lang.menuFontSize>general • menu font size adjustment</lang.menuFontSize>
+        <lang.menuFontSize lang="fr">général • ajustement de la police des menus</lang.menuFontSize>
+
         <lang.custom>with custom backgrounds</lang.custom>
         <lang.custom lang="fr">avec les fonds personnalisés</lang.custom>
 
@@ -164,7 +167,7 @@ By Helmic
         <lang.automatic lang="fr">automatique</lang.automatic>
 
         <lang.container>gamelist view • video screen</lang.container>
-        <lang.container lang="fr">écran vidéo</lang.container>
+        <lang.container lang="fr">conteneur vidéo</lang.container>
  		
         <lang.cathod>cathodic tv (white)</lang.cathod>
         <lang.cathod lang="fr">écran cathodique (blanc)</lang.cathod>
@@ -783,7 +786,7 @@ By Helmic
 		<lang.tvLogo lang="fr">afficher les logos système dans la vidéo</lang.tvLogo>
 
 		<lang.tvOs>display os on video container (when available)</lang.tvOs>
-		<lang.tvOs lang="fr">afficher l'os sur le cadre vidéo (quand disponible)</lang.tvOs>
+		<lang.tvOs lang="fr">afficher l'os sur le conteneur vidéo (quand disponible)</lang.tvOs>
 
 		<lang.tvSnaphot>display snapshot before video</lang.tvSnaphot>
 		<lang.tvSnaphot lang="fr">afficher le screenshot avant la vidéo</lang.tvSnaphot>
