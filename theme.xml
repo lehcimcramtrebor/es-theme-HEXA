@@ -827,10 +827,10 @@ By Helmic
 	</subset>
 
 	<subset name="gamesZoneBack" displayName="${lang.gamesZoneBack}" appliesTo="gamelist                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
-		<include name="carbonColorset" displayName="${lang.carbonColorset}"/>
-		<include name="simple" displayName="${lang.simple}"/>
 		<include name="simpleColorset" displayName="${lang.simpleColorset}"/>
+		<include name="simple" displayName="${lang.simple}"/>
 		<include name="carbon" displayName="${lang.carbon}"/>
+		<include name="carbonColorset" displayName="${lang.carbonColorset}"/>
 		<include name="no" displayName="${lang.no}"/>
 	</subset>
 
