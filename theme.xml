@@ -22,7 +22,7 @@ By Helmic
 	
 
     <subset name="_" displayName="                                                                                                                                                                                                                                                            ">
-		<include name="-----"/>
+		<include name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "/>
     </subset>
 	
     <subset name="fullHexa" displayName="${lang.fullHexa}" >
@@ -75,7 +75,7 @@ By Helmic
     </subset>
 
     <subset name="-" displayName="                                                                                                                                                                                                                                                            ">
-		<include name="-----"/>
+		<include name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "/>
     </subset>
 
     <subset name="overlayColorset" displayName="${lang.overlayColorset}">
@@ -141,7 +141,7 @@ By Helmic
     </subset>
 
     <subset name="--" displayName="                                                                                                                                                                                                                                                            ">
-		<include name="-----"/>
+		<include name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "/>
     </subset>
 
 	<subset name="transition" displayName="${lowSpecs}${lang.transition}">
@@ -170,7 +170,7 @@ By Helmic
 	</subset>
 
     <subset name="---" displayName="                                                                                                                                                                                                                                                            ">
-		<include name="-----"/>
+		<include name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "/>
     </subset>
 
     <subset name="helpIcons" displayName="${lang.helpIcons}">
@@ -199,7 +199,7 @@ By Helmic
 	</subset>
 
     <subset name="----" displayName="                                                                                                                                                                                                                                                            ">
-		<include name="-----"/>
+		<include name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "/>
     </subset>
 
     <subset name="logoVisualAssistance" displayName="${lowSpecs}${lang.logoVisualAssistance}">
@@ -234,7 +234,7 @@ By Helmic
     </subset>
 
     <subset name="-----" displayName="                                                                                                                                                                                                                                                            ">
-		<include name="-----"/>
+		<include name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "/>
     </subset>
 
 	<subset name="staticEffect" displayName="${lang.staticEffect}">
@@ -264,7 +264,7 @@ By Helmic
 	</subset>
 
     <subset name="------" displayName="                                                                                                                                                                                                                                                            ">
-		<include name="-----"/>
+		<include name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "/>
     </subset>
 
     <subset name="wall" displayName="${lang.wall}">
@@ -344,7 +344,7 @@ By Helmic
 	<include>./_inc/wallpapers/${_paintSubset.allow}System.xml</include>
 
     <subset name="-------" displayName="                                                                                                                                                                                                                                                            ">
-		<include name="-----"/>
+		<include name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "/>
     </subset>
 
     <subset name="ambiance" displayName="${lang.ambiance}">
@@ -377,7 +377,7 @@ By Helmic
 	</subset>
 
     <subset name="--------" displayName="                                                                                                                                                                                                                                                            ">
-		<include name="-----"/>
+		<include name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "/>
     </subset>
 
 	<subset name="neogeoaes" displayName="${lang.neogeoaes}">
@@ -386,11 +386,11 @@ By Helmic
 	</subset>
 
     <subset name="---------" displayName="                                                                                                                                                                                                                                                            ">
-		<include name="-----"/>
+		<include name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "/>
     </subset>
 
 	<subset name=".........." displayName="                                                                                                                            " appliesTo="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
-		<include name="-----"/>
+		<include name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "/>
 	</subset>
 
 	<subset name="systemRandomRatio" displayName="${lang.systemRandomRatio}" appliesTo="system view                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
@@ -430,7 +430,7 @@ By Helmic
     </subset>
 
 	<subset name="............" displayName="                                                                                                                            " appliesTo="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
-		<include name="-----"/>
+		<include name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "/>
 	</subset>
 
 	<include>./_inc/wallpapers/${_paintSubsetGamelist.allow}Gamelist.xml</include>
@@ -459,7 +459,7 @@ By Helmic
     </subset>
 
 	<subset name="............." displayName="                                                                                                                            " appliesTo="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
-		<include name="-----"/>
+		<include name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "/>
 	</subset>
 
 	<subset name="randomArt" displayName="${lowSpecs}${lang.randomArt}" appliesTo="system view animations                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
@@ -469,7 +469,7 @@ By Helmic
 	</subset>
 
     <subset name=".................." displayName="                                                                                                                            " appliesTo="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
-		<include name="-----"/>
+		<include name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "/>
     </subset>
 
 	<subset name="randomRatio" displayName="${lang.randomRatio}" appliesTo="game video                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
@@ -725,7 +725,7 @@ By Helmic
 	</subset>
 
     <subset name="..................." displayName="                                                                                                                            " appliesTo="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
-		<include name="-----"/>
+		<include name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "/>
     </subset>
 
 	<subset name="ratingColor" displayName="${lang.ratingColor}" appliesTo="game infos                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
@@ -777,7 +777,7 @@ By Helmic
 	</subset>
 
 	<subset name=".........................................." displayName="                                                                                                                            " appliesTo="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
-		<include name="-----"/>
+		<include name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "/>
 	</subset>
 
 	<subset name="gameInfosBarFontSize" displayName="${lang.gameInfosBarFontSize}" appliesTo="game infos                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
@@ -803,7 +803,7 @@ By Helmic
 	</subset>
 
 	<subset name="......................................" displayName="                                                                                                                            " appliesTo="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
-		<include name="-----"/>
+		<include name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "/>
 	</subset>
 
 	<subset name="basicGamelistLines" displayName="${lang.basicGamelistLines}" appliesTo="gamelist                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
@@ -823,7 +823,7 @@ By Helmic
 	</subset>
 
 	<subset name=".............................................." displayName="                                                                                                                            " appliesTo="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
-		<include name="-----"/>
+		<include name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "/>
 	</subset>
 
 	<subset name="gamesZoneBack" displayName="${lang.gamesZoneBack}" appliesTo="gamelist                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
