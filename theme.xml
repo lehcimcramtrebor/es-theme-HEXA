@@ -2711,6 +2711,9 @@ By Helmic
 			<path ifSubset="gamesZoneBack:simple|simpleColorset">./_inc/white.png</path>
 			<path ifSubset="gamesZoneBack:carbon|carbonColorset">./_inc/carbon.png</path>
 			<tile ifSubset="gamesZoneBack:carbon|carbonColorset">true</tile>
+			<storyboard repeatAt="forever">
+                <animation property="saturation" to="0.5" autoreverse="true" duration="5000" mode="linear" begin="3500"/>
+            </storyboard>
 			</image>
 
 		<image name="gamesZoneBack" extra="true" ifSubset="gamesZoneBack:simple|carbon">
@@ -2719,6 +2722,9 @@ By Helmic
 			<colorEnd>00000080</colorEnd>
 			<colorEnd ifSubset="gamesZoneBack:carbon">ffffff80</colorEnd>
 			<gradientType>horizontal</gradientType>
+			<storyboard repeatAt="forever" ifSubset="gamesZoneBack:simple">
+                <animation property="colorEnd" to="05050550" autoreverse="true" duration="125" mode="bump" begin="3500"/>
+            </storyboard>
 			</image>
 
 		<image name="gamesZoneBack" extra="true" ifSubset="gamesZoneBack:simpleColorset|carbonColorset">
@@ -3060,28 +3066,43 @@ By Helmic
                 <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
             </storyboard>
 
-			<storyboard event="open" ifSubset="previewDisplay:displayMix">
+			<storyboard event="open" repeatAt="2000" ifSubset="previewDisplay:displayMix">
                 <animation property="opacity" from="0" to="1" duration="250" mode="easeOut"/>
                 <animation property="scale" from="1" to="0.45" duration="250" mode="linear" begin="750"/>
                 <animation property="origin" to="0 1" duration="250" mode="linear" begin="750"/>
                 <animation property="y" to="0.36" duration="250" mode="linear" begin="750"/>
                 <animation property="x" to="0.37" duration="250" mode="easeOut" begin="750"/>
+                <animation property="saturation" to="0.5" duration="60" mode="bump" autoreverse="true" begin="5000"/>
+                <animation property="opacity" to="0.5" duration="60" mode="bump" autoreverse="true" begin="5000"/>
+                <animation property="offsetX" to="0.0015" duration="60" mode="bump" autoreverse="true" begin="5060"/>
+                <animation property="saturation" to="2" duration="60" mode="bump" autoreverse="true" begin="5120"/>
+                <animation property="color" from="ffffff" to="ffffff" duration="60" mode="easeOut" begin="9000"/>
             </storyboard>
-			<storyboard event="activateNext" ifSubset="previewDisplay:displayMix">
+			<storyboard event="activateNext" repeatAt="2000" ifSubset="previewDisplay:displayMix">
                 <animation property="offsetY" from="0.005" to="0" duration="250" mode="easeOut"/>
                 <animation property="opacity" from="0" to="1" duration="250" mode="easeOut"/>
                 <animation property="scale" from="1" to="0.45" duration="250" mode="linear" begin="750"/>
                 <animation property="origin" to="0 1" duration="250" mode="linear" begin="750"/>
                 <animation property="y" to="0.36" duration="250" mode="linear" begin="750"/>
                 <animation property="x" to="0.37" duration="250" mode="easeOut" begin="750"/>
+                <animation property="saturation" to="0.5" duration="60" mode="bump" autoreverse="true" begin="5000"/>
+                <animation property="opacity" to="0.5" duration="60" mode="bump" autoreverse="true" begin="5000"/>
+                <animation property="offsetX" to="0.0015" duration="60" mode="bump" autoreverse="true" begin="5060"/>
+                <animation property="saturation" to="2" duration="60" mode="bump" autoreverse="true" begin="5120"/>
+                <animation property="color" from="ffffff" to="ffffff" duration="60" mode="easeOut" begin="9000"/>
             </storyboard>
-			<storyboard event="activatePrev" ifSubset="previewDisplay:displayMix">
+			<storyboard event="activatePrev" repeatAt="2000" ifSubset="previewDisplay:displayMix">
                 <animation property="offsetY" from="-0.005" to="0" duration="250" mode="easeOut"/>
                 <animation property="opacity" from="0" to="1" duration="250" mode="easeOut"/>
                 <animation property="scale" from="1" to="0.45" duration="250" mode="linear" begin="750"/>
                 <animation property="origin" to="0 1" duration="250" mode="linear" begin="750"/>
                 <animation property="y" to="0.36" duration="250" mode="linear" begin="750"/>
                 <animation property="x" to="0.37" duration="250" mode="easeOut" begin="750"/>
+                <animation property="saturation" to="0.5" duration="60" mode="bump" autoreverse="true" begin="5000"/>
+                <animation property="opacity" to="0.5" duration="60" mode="bump" autoreverse="true" begin="5000"/>
+                <animation property="offsetX" to="0.0015" duration="60" mode="bump" autoreverse="true" begin="5060"/>
+                <animation property="saturation" to="2" duration="60" mode="bump" autoreverse="true" begin="5120"/>
+                <animation property="color" from="ffffff" to="ffffff" duration="60" mode="easeOut" begin="9000"/>
            </storyboard>
 			<storyboard event="deactivateNext" ifSubset="previewDisplay:displayMix">
                 <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
@@ -3090,28 +3111,43 @@ By Helmic
                 <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
             </storyboard>
 
-			<storyboard event="open" ifSubset="previewDisplay:displayMix,themeRatio:54|43">
+			<storyboard event="open" repeatAt="2000" ifSubset="previewDisplay:displayMix,themeRatio:54|43">
                 <animation property="opacity" from="0" to="1" duration="250" mode="easeOut"/>
                 <animation property="scale" from="1" to="0.3" duration="250" mode="linear" begin="750"/>
                 <animation property="origin" to="0 1" duration="250" mode="linear" begin="750"/>
                 <animation property="y" to="0.44" duration="250" mode="linear" begin="750"/>
                 <animation property="x" to="0.37" duration="250" mode="easeOut" begin="750"/>
+                <animation property="saturation" to="0.5" duration="60" mode="bump" autoreverse="true" begin="5000"/>
+                <animation property="opacity" to="0.5" duration="60" mode="bump" autoreverse="true" begin="5000"/>
+                <animation property="offsetX" to="0.0015" duration="60" mode="bump" autoreverse="true" begin="5060"/>
+                <animation property="saturation" to="2" duration="60" mode="bump" autoreverse="true" begin="5120"/>
+                <animation property="color" from="ffffff" to="ffffff" duration="60" mode="easeOut" begin="9000"/>
             </storyboard>
-			<storyboard event="activateNext" ifSubset="previewDisplay:displayMix,themeRatio:54|43">
+			<storyboard event="activateNext" repeatAt="2000" ifSubset="previewDisplay:displayMix,themeRatio:54|43">
                 <animation property="offsetY" from="0.005" to="0" duration="250" mode="easeOut"/>
                 <animation property="opacity" from="0" to="1" duration="250" mode="easeOut"/>
                 <animation property="scale" from="1" to="0.3" duration="250" mode="linear" begin="750"/>
                 <animation property="origin" to="0 1" duration="250" mode="linear" begin="750"/>
                 <animation property="y" to="0.44" duration="250" mode="linear" begin="750"/>
                 <animation property="x" to="0.37" duration="250" mode="easeOut" begin="750"/>
+                <animation property="saturation" to="0.5" duration="60" mode="bump" autoreverse="true" begin="5000"/>
+                <animation property="opacity" to="0.5" duration="60" mode="bump" autoreverse="true" begin="5000"/>
+                <animation property="offsetX" to="0.0015" duration="60" mode="bump" autoreverse="true" begin="5060"/>
+                <animation property="saturation" to="2" duration="60" mode="bump" autoreverse="true" begin="5120"/>
+                <animation property="color" from="ffffff" to="ffffff" duration="60" mode="easeOut" begin="9000"/>
             </storyboard>
-			<storyboard event="activatePrev" ifSubset="previewDisplay:displayMix,themeRatio:54|43">
+			<storyboard event="activatePrev" repeatAt="2000" ifSubset="previewDisplay:displayMix,themeRatio:54|43">
                 <animation property="offsetY" from="-0.005" to="0" duration="250" mode="easeOut"/>
                 <animation property="opacity" from="0" to="1" duration="250" mode="easeOut"/>
                 <animation property="scale" from="1" to="0.3" duration="250" mode="linear" begin="750"/>
                 <animation property="origin" to="0 1" duration="250" mode="linear" begin="750"/>
                 <animation property="y" to="0.44" duration="250" mode="linear" begin="750"/>
                 <animation property="x" to="0.37" duration="250" mode="easeOut" begin="750"/>
+                <animation property="saturation" to="0.5" duration="60" mode="bump" autoreverse="true" begin="5000"/>
+                <animation property="opacity" to="0.5" duration="60" mode="bump" autoreverse="true" begin="5000"/>
+                <animation property="offsetX" to="0.0015" duration="60" mode="bump" autoreverse="true" begin="5060"/>
+                <animation property="saturation" to="2" duration="60" mode="bump" autoreverse="true" begin="5120"/>
+                <animation property="color" from="ffffff" to="ffffff" duration="60" mode="easeOut" begin="9000"/>
            </storyboard>
 			<storyboard event="deactivateNext" ifSubset="previewDisplay:displayMix,themeRatio:54|43">
                 <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
@@ -3172,7 +3208,7 @@ By Helmic
 			<x ifSubset="themeRatio:54|43">0.495</x>
 			<size>0.19 0.285</size>
 			<size ifSubset="themeRatio:54|43">0.22 0.24</size>
-			<zIndex>5</zIndex>
+			<zIndex>6</zIndex>
 			<opacity>0</opacity>
 			<color>00000000</color>
 			<reflexion>0.125 0</reflexion>
@@ -3199,6 +3235,38 @@ By Helmic
             </storyboard>
 		</image>
 
+		<video name="fxMix" extra="true" ifSubset="previewDisplay:displayMix">
+			<path>./_inc/effect_glitch.mp4</path>
+			<effect>none</effect>
+			<origin>0.5 1</origin>
+			<pos>0.485 0.35</pos>
+			<size>0.19 0.285</size>
+			<size ifSubset="themeRatio:54|43">0.22 0.24</size>
+			<y ifSubset="themeRatio:54|43">0.4</y>
+			<x ifSubset="themeRatio:54|43">0.495</x>
+			<zIndex>5</zIndex>
+			<opacity>0</opacity>
+			<color>00000000</color>
+			<storyboard event="open" ifSubset="previewDisplay:displayMix">
+                <animation property="color" from="00000000" to="ffffff20" duration="1" mode="linear"/>
+                <animation property="opacity" from="0" to="1" duration="500" mode="easeOut" begin="750"/>
+            </storyboard>
+			<storyboard event="activateNext" ifSubset="previewDisplay:displayMix">
+                <animation property="color" from="00000000" to="ffffff10" duration="1" mode="linear"/>
+                <animation property="opacity" from="0" to="1" duration="500" mode="easeOut" begin="750"/>
+            </storyboard>
+			<storyboard event="activatePrev" ifSubset="previewDisplay:displayMix">
+                <animation property="color" from="00000000" to="ffffff10" duration="1" mode="linear"/>
+                <animation property="opacity" from="0" to="1" duration="500" mode="easeOut" begin="750"/>
+          </storyboard>
+			<storyboard event="deactivateNext" ifSubset="previewDisplay:displayMix">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+			<storyboard event="deactivatePrev" ifSubset="previewDisplay:displayMix">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+		</video>
+
 		<image name="md_image" ifSubset="previewDisplay:displayMix">
 			<origin>0.5 1</origin>
 			<pos>0.485 0.35</pos>
@@ -3211,24 +3279,38 @@ By Helmic
 			<color>00000000</color>
 			<colorEnd>00000000</colorEnd>
 			<gradientType>vertical</gradientType>
-			<reflexion>0.1 0</reflexion>
-			<storyboard event="open" ifSubset="previewDisplay:displayMix">
+			<storyboard event="open" repeatAt="2000" ifSubset="previewDisplay:displayMix">
                 <animation property="color" from="00000000" to="ffffff" duration="1" mode="linear"/>
                 <animation property="colorEnd" from="00000000" to="aaaaaa" duration="1" mode="linear"/>
                 <animation property="opacity" from="0" to="1" duration="500" mode="easeOut" begin="750"/>
-                <animation property="offsetY" from="0.0125" duration="250" mode="easeOut" begin="750"/>
+                <animation property="saturation" from="0" to="0" duration="750" mode="linear"/>
+                <animation property="saturation" from="0" to="1" duration="250" mode="easeOut" begin="750"/>
+				<animation property="offsetY" from="0.0125" duration="250" mode="easeOut" begin="750"/>
+				<animation property="w" to="0" duration="75" mode="bump" autoreverse="true" begin="3000"/>
+				<animation property="saturation" to="0" duration="75" mode="bump" autoreverse="true" begin="3000"/>
+				<animation property="color" to="ffffff" duration="250" mode="easeOut" autoreverse="true" begin="8000"/>
             </storyboard>
-			<storyboard event="activateNext" ifSubset="previewDisplay:displayMix">
+			<storyboard event="activateNext" repeatAt="2000" ifSubset="previewDisplay:displayMix">
                 <animation property="color" from="00000000" to="ffffff" duration="1" mode="linear"/>
                 <animation property="colorEnd" from="00000000" to="aaaaaa" duration="1" mode="linear"/>
                 <animation property="opacity" from="0" to="1" duration="500" mode="easeOut" begin="750"/>
+                <animation property="saturation" from="0" to="0" duration="750" mode="linear"/>
+                <animation property="saturation" from="0" to="1" duration="250" mode="easeOut" begin="750"/>
                 <animation property="offsetY" from="0.0125" duration="250" mode="easeOut" begin="750"/>
-            </storyboard>
-			<storyboard event="activatePrev" ifSubset="previewDisplay:displayMix">
+				<animation property="w" to="0" duration="75" mode="bump" autoreverse="true" begin="3000"/>
+				<animation property="saturation" to="0" duration="75" mode="bump" autoreverse="true" begin="3000"/>
+				<animation property="color" to="ffffff" duration="250" mode="easeOut" autoreverse="true" begin="8000"/>
+             </storyboard>
+			<storyboard event="activatePrev" repeatAt="2000" ifSubset="previewDisplay:displayMix">
                 <animation property="color" from="00000000" to="ffffff" duration="1" mode="linear"/>
                 <animation property="colorEnd" from="00000000" to="aaaaaa" duration="1" mode="linear"/>
                 <animation property="opacity" from="0" to="1" duration="500" mode="easeOut" begin="750"/>
+                <animation property="saturation" from="0" to="0" duration="750" mode="linear"/>
+                <animation property="saturation" from="0" to="1" duration="250" mode="easeOut" begin="750"/>
                 <animation property="offsetY" from="0.0125" duration="250" mode="easeOut" begin="750"/>
+ 				<animation property="w" to="0" duration="75" mode="bump" autoreverse="true" begin="3000"/>
+				<animation property="saturation" to="0" duration="75" mode="bump" autoreverse="true" begin="3000"/>
+				<animation property="color" to="ffffff" duration="250" mode="easeOut" autoreverse="true" begin="8000"/>
           </storyboard>
 			<storyboard event="deactivateNext" ifSubset="previewDisplay:displayMix">
                 <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
@@ -3249,20 +3331,66 @@ By Helmic
 			<x ifSubset="themeRatio:54|43">0.495</x>
 			<zIndex>3</zIndex>
 			<opacity>0</opacity>
-			<storyboard event="open" ifSubset="previewDisplay:displayMix">
+			<storyboard event="open" repeatAt="2000" ifSubset="previewDisplay:displayMix">
                 <animation property="color" from="00000000" to="ffffff" duration="1" mode="linear"/>
                 <animation property="opacity" from="0" to="0" duration="900" mode="easeOut"/>
                 <animation property="opacity" from="0" to="1" duration="500" mode="easeIn" begin="900"/>
+ 				<animation property="w" to="0" duration="75" mode="bump" autoreverse="true" begin="3000"/>
+				<animation property="color" to="ffffff" duration="250" mode="easeOut" autoreverse="true" begin="8000"/>
             </storyboard>
-			<storyboard event="activateNext" ifSubset="previewDisplay:displayMix">
+			<storyboard event="activateNext" repeatAt="2000" ifSubset="previewDisplay:displayMix">
                 <animation property="color" from="00000000" to="ffffff" duration="1" mode="linear"/>
                 <animation property="opacity" from="0" to="0" duration="900" mode="easeOut"/>
                 <animation property="opacity" from="0" to="1" duration="500" mode="easeIn" begin="900"/>
+ 				<animation property="w" to="0" duration="75" mode="bump" autoreverse="true" begin="3000"/>
+				<animation property="color" to="ffffff" duration="250" mode="easeOut" autoreverse="true" begin="8000"/>
             </storyboard>
-			<storyboard event="activatePrev" ifSubset="previewDisplay:displayMix">
+			<storyboard event="activatePrev" repeatAt="2000" ifSubset="previewDisplay:displayMix">
                 <animation property="color" from="00000000" to="ffffff" duration="1" mode="linear"/>
                <animation property="opacity" from="0" to="0" duration="900" mode="easeOut"/>
                <animation property="opacity" from="0" to="1" duration="500" mode="easeIn" begin="900"/>
+ 				<animation property="w" to="0" duration="75" mode="bump" autoreverse="true" begin="3000"/>
+				<animation property="color" to="ffffff" duration="250" mode="easeOut" autoreverse="true" begin="8000"/>
+          </storyboard>
+			<storyboard event="deactivateNext" ifSubset="previewDisplay:displayMix">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+			<storyboard event="deactivatePrev" ifSubset="previewDisplay:displayMix">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+		</image>
+
+		<image name="backTvMixblack" extra="true" ifSubset="previewDisplay:displayMix">
+			<path>./_inc/white.png</path>
+			<color>00000000</color>
+			<origin>0.5 1</origin>
+			<pos>0.485 0.35</pos>
+			<size>0.19 0.285</size>
+			<size ifSubset="themeRatio:54|43">0.22 0.24</size>
+			<y ifSubset="themeRatio:54|43">0.4</y>
+			<x ifSubset="themeRatio:54|43">0.495</x>
+			<zIndex>2</zIndex>
+			<opacity>0</opacity>
+			<storyboard event="open" repeatAt="2000" ifSubset="previewDisplay:displayMix">
+                <animation property="color" from="00000000" to="000000" duration="1" mode="linear"/>
+                <animation property="opacity" from="0" to="0" duration="900" mode="easeOut"/>
+                <animation property="opacity" from="0" to="1" duration="500" mode="easeIn" begin="900"/>
+ 				<animation property="w" to="0" duration="75" mode="bump" autoreverse="true" begin="3000"/>
+				<animation property="color" to="ffffff" duration="250" mode="easeOut" autoreverse="true" begin="8000"/>
+            </storyboard>
+			<storyboard event="activateNext" repeatAt="2000" ifSubset="previewDisplay:displayMix">
+                <animation property="color" from="00000000" to="000000" duration="1" mode="linear"/>
+                <animation property="opacity" from="0" to="0" duration="900" mode="easeOut"/>
+                <animation property="opacity" from="0" to="1" duration="500" mode="easeIn" begin="900"/>
+ 				<animation property="w" to="0" duration="75" mode="bump" autoreverse="true" begin="3000"/>
+				<animation property="color" to="ffffff" duration="250" mode="easeOut" autoreverse="true" begin="8000"/>
+            </storyboard>
+			<storyboard event="activatePrev" repeatAt="2000" ifSubset="previewDisplay:displayMix">
+                <animation property="color" from="00000000" to="000000" duration="1" mode="linear"/>
+               <animation property="opacity" from="0" to="0" duration="900" mode="easeOut"/>
+               <animation property="opacity" from="0" to="1" duration="500" mode="easeIn" begin="900"/>
+ 				<animation property="w" to="0" duration="75" mode="bump" autoreverse="true" begin="3000"/>
+				<animation property="color" to="ffffff" duration="250" mode="easeOut" autoreverse="true" begin="8000"/>
           </storyboard>
 			<storyboard event="deactivateNext" ifSubset="previewDisplay:displayMix">
                 <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
@@ -4378,7 +4506,7 @@ By Helmic
                 <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
             </storyboard>
 
-			<storyboard event="open" ifSubset="previewDisplay:displayMix">
+			<storyboard event="open" repeatAt="2000" ifSubset="previewDisplay:displayMix">
                 <animation property="opacity" from="0" to="0" duration="1" mode="easeOut"/>
 
                 <animation property="origin" to="1 1" duration="1" mode="easeOut" begin="1000"/>
@@ -4387,8 +4515,11 @@ By Helmic
                 <animation property="x" to="0.61" duration="1" mode="easeOut" begin="1000"/>
                 <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="1001"/>
                 <animation property="offsetX" from="-0.05" duration="250" mode="easeOut" begin="1001"/>
+                <animation property="rotation" from="0" to="-2" duration="60" mode="bump" autoreverse="true" begin="3000"/>
+                <animation property="rotation" from="0" to="2" duration="60" mode="bump" autoreverse="true" begin="3120"/>
+                <animation property="color" from="ffffff" to="ffffff" duration="60" mode="easeOut" begin="6000"/>
            </storyboard>
-			<storyboard event="activateNext" ifSubset="previewDisplay:displayMix">
+			<storyboard event="activateNext" repeatAt="2000" ifSubset="previewDisplay:displayMix">
                 <animation property="color" from="ffffff00" to="ffffff" duration="250" mode="easeOut"/>
                 <animation property="opacity" from="0" to="1" duration="250" mode="easeOut"/>
                 <animation property="opacity" from="1" to="0" duration="250" mode="easeOut" begin="750"/>
@@ -4399,8 +4530,11 @@ By Helmic
                 <animation property="x" to="0.61" duration="1" mode="easeOut" begin="1000"/>
                 <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="1001"/>
                 <animation property="offsetX" from="-0.05" duration="250" mode="easeOut" begin="1001"/>
-            </storyboard>
-			<storyboard event="activatePrev" ifSubset="previewDisplay:displayMix">
+                <animation property="rotation" from="0" to="-2" duration="60" mode="bump" autoreverse="true" begin="3000"/>
+                <animation property="rotation" from="0" to="2" duration="60" mode="bump" autoreverse="true" begin="3120"/>
+                <animation property="color" from="ffffff" to="ffffff" duration="60" mode="easeOut" begin="6000"/>
+           </storyboard>
+			<storyboard event="activatePrev" repeatAt="2000" ifSubset="previewDisplay:displayMix">
                 <animation property="color" from="ffffff00" to="ffffff" duration="250" mode="easeOut"/>
                 <animation property="opacity" from="0" to="1" duration="250" mode="easeOut"/>
                 <animation property="opacity" from="1" to="0" duration="250" mode="easeOut" begin="750"/>
@@ -4411,7 +4545,10 @@ By Helmic
                 <animation property="x" to="0.61" duration="1" mode="easeOut" begin="1000"/>
                 <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="1001"/>
                 <animation property="offsetX" from="-0.05" duration="250" mode="easeOut" begin="1001"/>
-          </storyboard>
+                <animation property="rotation" from="0" to="-2" duration="60" mode="bump" autoreverse="true" begin="3000"/>
+                <animation property="rotation" from="0" to="2" duration="60" mode="bump" autoreverse="true" begin="3120"/>
+                <animation property="color" from="ffffff" to="ffffff" duration="60" mode="easeOut" begin="6000"/>
+        </storyboard>
 			<storyboard event="deactivateNext" ifSubset="previewDisplay:displayMix">
                 <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
             </storyboard>
@@ -4419,7 +4556,7 @@ By Helmic
                 <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
             </storyboard>
 
-			<storyboard event="open" ifSubset="previewDisplay:displayMix,themeRatio:54|43">
+			<storyboard event="open" repeatAt="2000" ifSubset="previewDisplay:displayMix,themeRatio:54|43">
                 <animation property="opacity" from="0" to="0" duration="1" mode="easeOut"/>
 
                 <animation property="origin" to="1 1" duration="1" mode="easeOut" begin="1000"/>
@@ -4428,8 +4565,11 @@ By Helmic
                 <animation property="x" to="0.61" duration="1" mode="easeOut" begin="1000"/>
                 <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="1001"/>
                 <animation property="offsetX" from="-0.05" duration="250" mode="easeOut" begin="1001"/>
+                <animation property="rotation" from="0" to="-2" duration="60" mode="bump" autoreverse="true" begin="3000"/>
+                <animation property="rotation" from="0" to="2" duration="60" mode="bump" autoreverse="true" begin="3120"/>
+                <animation property="color" from="ffffff" to="ffffff" duration="60" mode="easeOut" begin="6000"/>
            </storyboard>
-			<storyboard event="activateNext" ifSubset="previewDisplay:displayMix,themeRatio:54|43">
+			<storyboard event="activateNext" repeatAt="2000" ifSubset="previewDisplay:displayMix,themeRatio:54|43">
                 <animation property="color" from="ffffff00" to="ffffff" duration="250" mode="easeOut"/>
                 <animation property="opacity" from="0" to="1" duration="250" mode="easeOut"/>
                 <animation property="opacity" from="1" to="0" duration="250" mode="easeOut" begin="750"/>
@@ -4440,8 +4580,11 @@ By Helmic
                 <animation property="x" to="0.61" duration="1" mode="easeOut" begin="1000"/>
                 <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="1001"/>
                 <animation property="offsetX" from="-0.05" duration="250" mode="easeOut" begin="1001"/>
+                <animation property="rotation" from="0" to="-2" duration="60" mode="bump" autoreverse="true" begin="3000"/>
+                <animation property="rotation" from="0" to="2" duration="60" mode="bump" autoreverse="true" begin="3120"/>
+                <animation property="color" from="ffffff" to="ffffff" duration="60" mode="easeOut" begin="6000"/>
             </storyboard>
-			<storyboard event="activatePrev" ifSubset="previewDisplay:displayMix,themeRatio:54|43">
+			<storyboard event="activatePrev" repeatAt="2000" ifSubset="previewDisplay:displayMix,themeRatio:54|43">
                 <animation property="color" from="ffffff00" to="ffffff" duration="250" mode="easeOut"/>
                 <animation property="opacity" from="0" to="1" duration="250" mode="easeOut"/>
                 <animation property="opacity" from="1" to="0" duration="250" mode="easeOut" begin="750"/>
@@ -4452,7 +4595,10 @@ By Helmic
                 <animation property="x" to="0.61" duration="1" mode="easeOut" begin="1000"/>
                 <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="1001"/>
                 <animation property="offsetX" from="-0.05" duration="250" mode="easeOut" begin="1001"/>
-          </storyboard>
+                 <animation property="rotation" from="0" to="-2" duration="60" mode="bump" autoreverse="true" begin="3000"/>
+                <animation property="rotation" from="0" to="2" duration="60" mode="bump" autoreverse="true" begin="3120"/>
+                <animation property="color" from="ffffff" to="ffffff" duration="60" mode="easeOut" begin="6000"/>
+         </storyboard>
 			<storyboard event="deactivateNext" ifSubset="previewDisplay:displayMix,themeRatio:54|43">
                 <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
             </storyboard>
@@ -4555,25 +4701,34 @@ By Helmic
                 <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
             </storyboard>
 
-			<storyboard event="open" ifSubset="previewDisplay:displayMix">
+			<storyboard event="open" repeatAt="2000" ifSubset="previewDisplay:displayMix">
                 <animation property="opacity" from="0" to="1" duration="250" mode="easeOut"/>
                 <animation property="scale" to="0.5" duration="250" mode="easeOut" begin="750"/>
                 <animation property="origin" to="1 1" duration="250" mode="easeOut" begin="750"/>
                 <animation property="y" to="0.36" duration="250" mode="easeOut" begin="750"/>
+                <animation property="rotation" from="0" to="-2" duration="60" mode="bump" autoreverse="true" begin="3000"/>
+                <animation property="rotation" from="0" to="2" duration="60" mode="bump" autoreverse="true" begin="3120"/>
+                <animation property="color" from="ffffff" to="ffffff" duration="60" mode="easeOut" begin="6000"/>
            </storyboard>
-			<storyboard event="activateNext" ifSubset="previewDisplay:displayMix">
+			<storyboard event="activateNext" repeatAt="2000" ifSubset="previewDisplay:displayMix">
                 <animation property="opacity" from="0" to="1" duration="250" mode="easeOut"/>
                 <animation property="offsetY" from="0.005" to="0" duration="250" mode="easeOut"/>
                 <animation property="scale" to="0.5" duration="250" mode="easeOut" begin="750"/>
                 <animation property="origin" to="1 1" duration="250" mode="easeOut" begin="750"/>
                 <animation property="y" to="0.36" duration="250" mode="easeOut" begin="750"/>
+                <animation property="rotation" from="0" to="-2" duration="60" mode="bump" autoreverse="true" begin="3000"/>
+                <animation property="rotation" from="0" to="2" duration="60" mode="bump" autoreverse="true" begin="3120"/>
+                <animation property="color" from="ffffff" to="ffffff" duration="60" mode="easeOut" begin="6000"/>
              </storyboard>
-			<storyboard event="activatePrev" ifSubset="previewDisplay:displayMix">
+			<storyboard event="activatePrev" repeatAt="2000" ifSubset="previewDisplay:displayMix">
                 <animation property="opacity" from="0" to="1" duration="250" mode="easeOut"/>
                 <animation property="offsetY" from="-0.005" to="0" duration="250" mode="easeOut"/>
                 <animation property="scale" to="0.5" duration="250" mode="easeOut" begin="750"/>
                 <animation property="origin" to="1 1" duration="250" mode="easeOut" begin="750"/>
                 <animation property="y" to="0.36" duration="250" mode="easeOut" begin="750"/>
+                <animation property="rotation" from="0" to="-2" duration="60" mode="bump" autoreverse="true" begin="3000"/>
+                <animation property="rotation" from="0" to="2" duration="60" mode="bump" autoreverse="true" begin="3120"/>
+                <animation property="color" from="ffffff" to="ffffff" duration="60" mode="easeOut" begin="6000"/>
             </storyboard>
 			<storyboard event="deactivateNext" ifSubset="previewDisplay:displayMix">
                 <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
@@ -4582,25 +4737,34 @@ By Helmic
                 <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
             </storyboard>
 
-			<storyboard event="open" ifSubset="previewDisplay:displayMix,themeRatio:54|43">
+			<storyboard event="open" repeatAt="2000" ifSubset="previewDisplay:displayMix,themeRatio:54|43">
                 <animation property="opacity" from="0" to="1" duration="250" mode="easeOut"/>
                 <animation property="scale" to="0.5" duration="250" mode="easeOut" begin="750"/>
                 <animation property="origin" to="1 1" duration="250" mode="easeOut" begin="750"/>
                 <animation property="y" to="0.42" duration="250" mode="easeOut" begin="750"/>
+                <animation property="rotation" from="0" to="-2" duration="60" mode="bump" autoreverse="true" begin="3000"/>
+                <animation property="rotation" from="0" to="2" duration="60" mode="bump" autoreverse="true" begin="3120"/>
+                <animation property="color" from="ffffff" to="ffffff" duration="60" mode="easeOut" begin="6000"/>
            </storyboard>
-			<storyboard event="activateNext" ifSubset="previewDisplay:displayMix,themeRatio:54|43">
+			<storyboard event="activateNext" repeatAt="2000" ifSubset="previewDisplay:displayMix,themeRatio:54|43">
                 <animation property="opacity" from="0" to="1" duration="250" mode="easeOut"/>
                 <animation property="offsetY" from="0.005" to="0" duration="250" mode="easeOut"/>
                 <animation property="scale" to="0.5" duration="250" mode="easeOut" begin="750"/>
                 <animation property="origin" to="1 1" duration="250" mode="easeOut" begin="750"/>
                 <animation property="y" to="0.42" duration="250" mode="easeOut" begin="750"/>
-             </storyboard>
-			<storyboard event="activatePrev" ifSubset="previewDisplay:displayMix,themeRatio:54|43">
+                 <animation property="rotation" from="0" to="-2" duration="60" mode="bump" autoreverse="true" begin="3000"/>
+                <animation property="rotation" from="0" to="2" duration="60" mode="bump" autoreverse="true" begin="3120"/>
+                <animation property="color" from="ffffff" to="ffffff" duration="60" mode="easeOut" begin="6000"/>
+            </storyboard>
+			<storyboard event="activatePrev" repeatAt="2000" ifSubset="previewDisplay:displayMix,themeRatio:54|43">
                 <animation property="opacity" from="0" to="1" duration="250" mode="easeOut"/>
                 <animation property="offsetY" from="-0.005" to="0" duration="250" mode="easeOut"/>
                 <animation property="scale" to="0.5" duration="250" mode="easeOut" begin="750"/>
                 <animation property="origin" to="1 1" duration="250" mode="easeOut" begin="750"/>
                 <animation property="y" to="0.42" duration="250" mode="easeOut" begin="750"/>
+                <animation property="rotation" from="0" to="-2" duration="60" mode="bump" autoreverse="true" begin="3000"/>
+                <animation property="rotation" from="0" to="2" duration="60" mode="bump" autoreverse="true" begin="3120"/>
+                <animation property="color" from="ffffff" to="ffffff" duration="60" mode="easeOut" begin="6000"/>
             </storyboard>
 			<storyboard event="deactivateNext" ifSubset="previewDisplay:displayMix,themeRatio:54|43">
                 <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
@@ -4647,15 +4811,20 @@ By Helmic
 			<visible ifSubset="previewDisplay:displayMix">true</visible>
 			<x>0.5</x>
 			<y>-0.5</y>
-			<storyboard event="open" ifSubset="previewDisplay:displayMix">
+			<storyboard event="open" repeatAt="2000" ifSubset="previewDisplay:displayMix">
                 <animation property="opacity" from="0" to="0" duration="750" mode="easeOut"/>
                 <animation property="opacity" from="0" to="1" duration="250" mode="easeInQuint" begin="750"/>
                 <animation property="scale" from="1" to="0.45" duration="250" mode="easeOutQuint" begin="0"/>
                 <animation property="origin" to="0 1" duration="250" mode="linear" begin="750"/>
                 <animation property="y" to="0.36" duration="250" mode="easeOuteaseOut" begin="750"/>
                 <animation property="x" to="0.37" duration="250" mode="easeOut" begin="750"/>
+                <animation property="saturation" to="0.5" duration="60" mode="bump" autoreverse="true" begin="5000"/>
+                <animation property="opacity" to="0.5" duration="60" mode="bump" autoreverse="true" begin="5000"/>
+                <animation property="offsetX" to="0.0015" duration="60" mode="bump" autoreverse="true" begin="5060"/>
+                <animation property="saturation" to="2" duration="60" mode="bump" autoreverse="true" begin="5120"/>
+                <animation property="color" from="ffffff" to="ffffff" duration="60" mode="easeOut" begin="9000"/>
             </storyboard>
-			<storyboard event="activateNext" ifSubset="previewDisplay:displayMix">
+			<storyboard event="activateNext" repeatAt="2000" ifSubset="previewDisplay:displayMix">
                 <animation property="offsetY" from="0.005" to="0" duration="250" mode="easeOut"/>
                 <animation property="opacity" from="0" to="0" duration="750" mode="easeOut"/>
                 <animation property="opacity" from="0" to="1" duration="250" mode="easeInQuint" begin="750"/>
@@ -4663,8 +4832,13 @@ By Helmic
                 <animation property="origin" to="0 1" duration="250" mode="linear" begin="750"/>
                 <animation property="y" to="0.36" duration="250" mode="easeOut" begin="750"/>
                 <animation property="x" to="0.37" duration="250" mode="easeOut" begin="750"/>
+                <animation property="saturation" to="0.5" duration="60" mode="bump" autoreverse="true" begin="5000"/>
+                <animation property="opacity" to="0.5" duration="60" mode="bump" autoreverse="true" begin="5000"/>
+                <animation property="offsetX" to="0.0015" duration="60" mode="bump" autoreverse="true" begin="5060"/>
+                <animation property="saturation" to="2" duration="60" mode="bump" autoreverse="true" begin="5120"/>
+                <animation property="color" from="ffffff" to="ffffff" duration="60" mode="easeOut" begin="9000"/>
             </storyboard>
-			<storyboard event="activatePrev" ifSubset="previewDisplay:displayMix">
+			<storyboard event="activatePrev" repeatAt="2000" ifSubset="previewDisplay:displayMix">
                 <animation property="offsetY" from="-0.005" to="0" duration="250" mode="easeOut"/>
                 <animation property="opacity" from="0" to="0" duration="750" mode="easeOut"/>
                 <animation property="opacity" from="0" to="1" duration="250" mode="easeInQuint" begin="750"/>
@@ -4672,6 +4846,11 @@ By Helmic
                 <animation property="origin" to="0 1" duration="250" mode="linear" begin="750"/>
                 <animation property="y" to="0.36" duration="250" mode="easeOut" begin="750"/>
                 <animation property="x" to="0.37" duration="250" mode="easeOut" begin="750"/>
+                <animation property="saturation" to="0.5" duration="60" mode="bump" autoreverse="true" begin="5000"/>
+                <animation property="opacity" to="0.5" duration="60" mode="bump" autoreverse="true" begin="5000"/>
+                <animation property="offsetX" to="0.0015" duration="60" mode="bump" autoreverse="true" begin="5060"/>
+                <animation property="saturation" to="2" duration="60" mode="bump" autoreverse="true" begin="5120"/>
+                <animation property="color" from="ffffff" to="ffffff" duration="60" mode="easeOut" begin="9000"/>
            </storyboard>
 			<storyboard event="deactivateNext" ifSubset="previewDisplay:displayMix">
                 <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
@@ -4680,15 +4859,20 @@ By Helmic
                 <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
             </storyboard>
 
-			<storyboard event="open" ifSubset="previewDisplay:displayMix,themeRatio:54|43">
+			<storyboard event="open" repeatAt="2000" ifSubset="previewDisplay:displayMix,themeRatio:54|43">
                 <animation property="opacity" from="0" to="0" duration="750" mode="easeOut"/>
                 <animation property="opacity" from="0" to="1" duration="250" mode="easeInQuint" begin="750"/>
                 <animation property="scale" from="1" to="0.3" duration="250" mode="easeOutQuint" begin="0"/>
                 <animation property="origin" to="0 1" duration="250" mode="linear" begin="750"/>
                 <animation property="y" to="0.44" duration="250" mode="easeOut" begin="750"/>
                 <animation property="x" to="0.37" duration="250" mode="easeOut" begin="750"/>
+                <animation property="saturation" to="0.5" duration="60" mode="bump" autoreverse="true" begin="5000"/>
+                <animation property="opacity" to="0.5" duration="60" mode="bump" autoreverse="true" begin="5000"/>
+                <animation property="offsetX" to="0.0015" duration="60" mode="bump" autoreverse="true" begin="5060"/>
+                <animation property="saturation" to="2" duration="60" mode="bump" autoreverse="true" begin="5120"/>
+                <animation property="color" from="ffffff" to="ffffff" duration="60" mode="easeOut" begin="9000"/>
             </storyboard>
-			<storyboard event="activateNext" ifSubset="previewDisplay:displayMix,themeRatio:54|43">
+			<storyboard event="activateNext" repeatAt="2000" ifSubset="previewDisplay:displayMix,themeRatio:54|43">
                 <animation property="offsetY" from="0.005" to="0" duration="250" mode="easeOut"/>
                 <animation property="opacity" from="0" to="0" duration="750" mode="easeOut"/>
                 <animation property="opacity" from="0" to="1" duration="250" mode="easeInQuint" begin="750"/>
@@ -4696,8 +4880,13 @@ By Helmic
                 <animation property="origin" to="0 1" duration="250" mode="linear" begin="750"/>
                 <animation property="y" to="0.44" duration="250" mode="easeOut" begin="750"/>
                 <animation property="x" to="0.37" duration="250" mode="easeOut" begin="750"/>
+                <animation property="saturation" to="0.5" duration="60" mode="bump" autoreverse="true" begin="5000"/>
+                <animation property="opacity" to="0.5" duration="60" mode="bump" autoreverse="true" begin="5000"/>
+                <animation property="offsetX" to="0.0015" duration="60" mode="bump" autoreverse="true" begin="5060"/>
+                <animation property="saturation" to="2" duration="60" mode="bump" autoreverse="true" begin="5120"/>
+                <animation property="color" from="ffffff" to="ffffff" duration="60" mode="easeOut" begin="9000"/>
             </storyboard>
-			<storyboard event="activatePrev" ifSubset="previewDisplay:displayMix,themeRatio:54|43">
+			<storyboard event="activatePrev" repeatAt="2000" ifSubset="previewDisplay:displayMix,themeRatio:54|43">
                 <animation property="offsetY" from="-0.005" to="0" duration="250" mode="easeOut"/>
                 <animation property="opacity" from="0" to="0" duration="750" mode="easeOut"/>
                 <animation property="opacity" from="0" to="1" duration="250" mode="easeInQuint" begin="750"/>
@@ -4705,6 +4894,11 @@ By Helmic
                 <animation property="origin" to="0 1" duration="250" mode="linear" begin="750"/>
                 <animation property="y" to="0.44" duration="250" mode="easeOut" begin="750"/>
                 <animation property="x" to="0.37" duration="250" mode="easeOut" begin="750"/>
+                <animation property="saturation" to="0.5" duration="60" mode="bump" autoreverse="true" begin="5000"/>
+                <animation property="opacity" to="0.5" duration="60" mode="bump" autoreverse="true" begin="5000"/>
+                <animation property="offsetX" to="0.0015" duration="60" mode="bump" autoreverse="true" begin="5060"/>
+                <animation property="saturation" to="2" duration="60" mode="bump" autoreverse="true" begin="5120"/>
+                <animation property="color" from="ffffff" to="ffffff" duration="60" mode="easeOut" begin="9000"/>
            </storyboard>
 			<storyboard event="deactivateNext" ifSubset="previewDisplay:displayMix,themeRatio:54|43">
                 <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
@@ -4761,7 +4955,7 @@ By Helmic
 			<visible>false</visible>
 			<visible ifSubset="previewDisplay:displayMix">true</visible>
 			<pos>-2 -2</pos>
-			<storyboard event="open" ifSubset="previewDisplay:displayMix">
+			<storyboard event="open" repeatAt="2000" ifSubset="previewDisplay:displayMix">
                 <animation property="opacity" from="0" to="0" duration="1000" mode="easeOut"/>
                 <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="1000"/>
 
@@ -4771,8 +4965,11 @@ By Helmic
                 <animation property="x" to="0.61" duration="1" mode="easeOut" begin="1000"/>
                 <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="1001"/>
                 <animation property="offsetX" from="-0.05" duration="250" mode="easeOut" begin="1001"/>
+                <animation property="rotation" from="0" to="-2" duration="60" mode="bump" autoreverse="true" begin="3000"/>
+                <animation property="rotation" from="0" to="2" duration="60" mode="bump" autoreverse="true" begin="3120"/>
+                <animation property="color" from="ffffff" to="ffffff" duration="60" mode="easeOut" begin="6000"/>
            </storyboard>
-			<storyboard event="activateNext" ifSubset="previewDisplay:displayMix">
+			<storyboard event="activateNext" repeatAt="2000" ifSubset="previewDisplay:displayMix">
                 <animation property="color" from="ffffff00" to="ffffff" duration="250" mode="easeOut"/>
                 <animation property="opacity" from="0" to="0" duration="1000" mode="easeOut"/>
                 <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="1000"/>
@@ -4783,8 +4980,11 @@ By Helmic
                 <animation property="x" to="0.61" duration="1" mode="easeOut" begin="1000"/>
                 <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="1001"/>
                 <animation property="offsetX" from="-0.05" duration="250" mode="easeOut" begin="1001"/>
+                <animation property="rotation" from="0" to="-2" duration="60" mode="bump" autoreverse="true" begin="3000"/>
+                <animation property="rotation" from="0" to="2" duration="60" mode="bump" autoreverse="true" begin="3120"/>
+                <animation property="color" from="ffffff" to="ffffff" duration="60" mode="easeOut" begin="6000"/>
             </storyboard>
-			<storyboard event="activatePrev" ifSubset="previewDisplay:displayMix">
+			<storyboard event="activatePrev" repeatAt="2000" ifSubset="previewDisplay:displayMix">
                 <animation property="color" from="ffffff00" to="ffffff" duration="250" mode="easeOut"/>
                 <animation property="opacity" from="0" to="0" duration="1000" mode="easeOut"/>
                 <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="1000"/>
@@ -4795,6 +4995,9 @@ By Helmic
                 <animation property="x" to="0.61" duration="1" mode="easeOut" begin="1000"/>
                 <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="1001"/>
                 <animation property="offsetX" from="-0.05" duration="250" mode="easeOut" begin="1001"/>
+                <animation property="rotation" from="0" to="-2" duration="60" mode="bump" autoreverse="true" begin="3000"/>
+                <animation property="rotation" from="0" to="2" duration="60" mode="bump" autoreverse="true" begin="3120"/>
+                <animation property="color" from="ffffff" to="ffffff" duration="60" mode="easeOut" begin="6000"/>
           </storyboard>
 			<storyboard event="deactivateNext" ifSubset="previewDisplay:displayMix">
                 <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
@@ -4803,7 +5006,7 @@ By Helmic
                 <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
             </storyboard>
 
-			<storyboard event="open" ifSubset="previewDisplay:displayMix,themeRatio:54|43">
+			<storyboard event="open" repeatAt="2000" ifSubset="previewDisplay:displayMix,themeRatio:54|43">
                 <animation property="opacity" from="0" to="0" duration="1000" mode="easeOut"/>
                 <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="1000"/>
 
@@ -4813,8 +5016,11 @@ By Helmic
                 <animation property="x" to="0.61" duration="1" mode="easeOut" begin="1000"/>
                 <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="1001"/>
                 <animation property="offsetX" from="-0.05" duration="250" mode="easeOut" begin="1001"/>
+                <animation property="rotation" from="0" to="-2" duration="60" mode="bump" autoreverse="true" begin="3000"/>
+                <animation property="rotation" from="0" to="2" duration="60" mode="bump" autoreverse="true" begin="3120"/>
+                <animation property="color" from="ffffff" to="ffffff" duration="60" mode="easeOut" begin="6000"/>
            </storyboard>
-			<storyboard event="activateNext" ifSubset="previewDisplay:displayMix,themeRatio:54|43">
+			<storyboard event="activateNext" repeatAt="2000" ifSubset="previewDisplay:displayMix,themeRatio:54|43">
                 <animation property="color" from="ffffff00" to="ffffff" duration="250" mode="easeOut"/>
                 <animation property="opacity" from="0" to="0" duration="1000" mode="easeOut"/>
                 <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="1000"/>
@@ -4825,8 +5031,11 @@ By Helmic
                 <animation property="x" to="0.61" duration="1" mode="easeOut" begin="1000"/>
                 <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="1001"/>
                 <animation property="offsetX" from="-0.05" duration="250" mode="easeOut" begin="1001"/>
+                <animation property="rotation" from="0" to="-2" duration="60" mode="bump" autoreverse="true" begin="3000"/>
+                <animation property="rotation" from="0" to="2" duration="60" mode="bump" autoreverse="true" begin="3120"/>
+                <animation property="color" from="ffffff" to="ffffff" duration="60" mode="easeOut" begin="6000"/>
             </storyboard>
-			<storyboard event="activatePrev" ifSubset="previewDisplay:displayMix,themeRatio:54|43">
+			<storyboard event="activatePrev" repeatAt="2000" ifSubset="previewDisplay:displayMix,themeRatio:54|43">
                 <animation property="color" from="ffffff00" to="ffffff" duration="250" mode="easeOut"/>
                 <animation property="opacity" from="0" to="0" duration="1000" mode="easeOut"/>
                 <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="1000"/>
@@ -4837,6 +5046,9 @@ By Helmic
                 <animation property="x" to="0.61" duration="1" mode="easeOut" begin="1000"/>
                 <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="1001"/>
                 <animation property="offsetX" from="-0.05" duration="250" mode="easeOut" begin="1001"/>
+                <animation property="rotation" from="0" to="-2" duration="60" mode="bump" autoreverse="true" begin="3000"/>
+                <animation property="rotation" from="0" to="2" duration="60" mode="bump" autoreverse="true" begin="3120"/>
+                <animation property="color" from="ffffff" to="ffffff" duration="60" mode="easeOut" begin="6000"/>
           </storyboard>
 			<storyboard event="deactivateNext" ifSubset="previewDisplay:displayMix,themeRatio:54|43">
                 <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
@@ -4887,11 +5099,11 @@ By Helmic
 	
 	<customView name="library" inherits="detailed" displayName="${lang.library}">
 
-		<image name="logoTV,tvMix,backTvMix,tvShadow,logoColorContainer,mire,taitoFx" extra="true">
+		<image name="backTvMixblack,logoTV,tvMix,backTvMix,tvShadow,logoColorContainer,mire,taitoFx" extra="true">
 			<visible>false</visible>
 		</image>
 
-		<video name="bartopNoise1,bartopNoise2" extra="true">
+		<video name="fxMix,bartopNoise1,bartopNoise2" extra="true">
 			<visible>false</visible>
 		</video>
 
@@ -5562,5 +5774,17 @@ By Helmic
 	<include>./_hexaCustom/labels/${system.theme}.xml</include>
     <include ifArch="windows">./../../../../_hexaCustom/labels/${system.theme}.xml</include>
     <include ifNotArch="windows">./../../_hexaCustom/labels/${system.theme}.xml</include>
+
+    <!--ANIMATIONS LOGOCOLORCONTAINER-->
+
+	<view name="detailed,grid,gamecarousel">
+
+		<image name="logoColorContainer" extra="true">
+ 			<storyboard repeatAt="950">
+        		<animation property="offsetY" to="-0.015" autoreverse="true" duration="200" mode="easeOutCubic" begin="5950"/>
+			</storyboard>
+		</image>
+	
+	</view>
 
 </theme>
