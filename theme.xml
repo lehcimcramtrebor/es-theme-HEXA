@@ -3236,7 +3236,7 @@ By Helmic
 		</image>
 
 		<video name="fxMix" extra="true" ifSubset="previewDisplay:displayMix">
-			<path>./_inc/effect_glitch.mp4</path>
+			<path>./_inc/glitch.mp4</path>
 			<effect>none</effect>
 			<origin>0.5 1</origin>
 			<pos>0.485 0.35</pos>
