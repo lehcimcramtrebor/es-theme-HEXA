@@ -4507,18 +4507,20 @@ By Helmic
             </storyboard>
 
 			<storyboard event="open" repeatAt="2000" ifSubset="previewDisplay:displayMix">
-                <animation property="opacity" from="0" to="0" duration="1" mode="easeOut"/>
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeOut"/>
+                <animation property="opacity" from="1" to="0" duration="250" mode="easeOut" begin="750"/>
 
                 <animation property="origin" to="1 1" duration="1" mode="easeOut" begin="1000"/>
                 <animation property="scale" to="0.45" duration="1" mode="easeOut" begin="1000"/>
                 <animation property="y" to="0.36" duration="1" mode="easeOut" begin="1000"/>
                 <animation property="x" to="0.61" duration="1" mode="easeOut" begin="1000"/>
                 <animation property="opacity" from="0" to="1" duration="250" mode="easeOut" begin="1001"/>
+                 <animation property="color" from="ffffff00" to="ffffff" duration="250" mode="easeOut" begin="1001"/>
                 <animation property="offsetX" from="-0.05" duration="250" mode="easeOut" begin="1001"/>
                 <animation property="rotation" from="0" to="-2" duration="60" mode="bump" autoreverse="true" begin="3000"/>
                 <animation property="rotation" from="0" to="2" duration="60" mode="bump" autoreverse="true" begin="3120"/>
                 <animation property="color" from="ffffff" to="ffffff" duration="60" mode="easeOut" begin="6000"/>
-           </storyboard>
+         </storyboard>
 			<storyboard event="activateNext" repeatAt="2000" ifSubset="previewDisplay:displayMix">
                 <animation property="color" from="ffffff00" to="ffffff" duration="250" mode="easeOut"/>
                 <animation property="opacity" from="0" to="1" duration="250" mode="easeOut"/>
