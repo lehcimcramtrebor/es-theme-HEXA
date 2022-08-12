@@ -348,10 +348,10 @@ By Helmic
     </subset>
 
     <subset name="ambiance" displayName="${lang.ambiance}">
-		<include name="randomAudioOff" displayName="${lang.randomAudioOff}"/>
-        <include name="randomAudioOn" displayName="${lang.randomAudioOn}"/>
 		<include name="randomVideosAudioOff" displayName="${lang.randomVideosAudioOff}"/>
         <include name="randomVideosAudioOn" displayName="${lang.randomVideosAudioOn}"/>
+		<include name="randomAudioOff" displayName="${lang.randomAudioOff}"/>
+        <include name="randomAudioOn" displayName="${lang.randomAudioOn}"/>
         <include name="randomNone" displayName="${lang.randomNone}"/>
     </subset>
 
@@ -409,13 +409,13 @@ By Helmic
     </subset>
 
     <subset name="randomFx" displayName="${lang.randomFx}" appliesTo="system view                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
+		<include name="phosphorePlus" displayName="${lang.phosphorePlus}"/>
+		<include name="phosphore" displayName="${lang.phosphore}"/>
 		<include name="scanlines" displayName="${lang.scanlines}"/>
 		<include name="scanlinesVertical" displayName="${lang.scanlinesVertical}"/>
 		<include name="scanlinesFine" displayName="${lang.scanlinesFine}"/>
 		<include name="scanlinesVerticalFine" displayName="${lang.scanlinesVerticalFine}"/>
 		<include name="crt" displayName="${lang.crt}"/>
-		<include name="phosphore" displayName="${lang.phosphore}"/>
-		<include name="phosphorePlus" displayName="${lang.phosphorePlus}"/>
 		<include name="no" displayName="${lang.no}"/>
     </subset>
 
@@ -964,6 +964,7 @@ By Helmic
 		<pos>0.5 0.75</pos>
 		<color>ffffff</color>
 		<opacity>0</opacity>
+		<saturation>1.3</saturation>
 
 			<storyboard>
                 <animation property="opacity" from="0" to="1" duration="75" mode="linear"/>
@@ -972,6 +973,7 @@ By Helmic
 
                 <animation property="scale" from="0.9" to="1" duration="250" mode="linear"/>
                 <animation property="scale" from="1" to="2" duration="250" mode="easeOut" begin="250"/>
+                <animation property="saturation" to="0" duration="250" mode="easeOut" begin="250"/>
             </storyboard>
 
 		<path ifArch="windows">./../es-theme-carbon/art/logos/${system.theme}.png</path>
@@ -1212,7 +1214,7 @@ By Helmic
                 <animation property="scale" from="0.9" to="1" duration="250" mode="easeOutQuint"/>
                 <animation property="scale" from="0.9" to="1" duration="150" mode="EaseOut"/>
                 <animation property="opacity" from="1" to="1" duration="1" mode="Linear"/>
-                <animation property="saturation" from="0" to="1" duration="1" mode="Linear"/>
+                <animation property="saturation" from="0" to="1.1" duration="1" mode="Linear"/>
         		<animation property="offsetY" to="-0.03" autoreverse="true" duration="200" mode="easeOutCubic" begin="5950"/>
             </storyboard>
 
@@ -1220,7 +1222,7 @@ By Helmic
                 <animation property="scale" from="0.9" to="1" duration="250" mode="easeOutQuint"/>
                 <animation property="scale" from="0.9" to="1" duration="150" mode="EaseOut"/>
                 <animation property="opacity" from="1" to="1" duration="1" mode="Linear"/>
-                <animation property="saturation" from="0" to="1" duration="1" mode="Linear"/>
+                <animation property="saturation" from="0" to="1.1" duration="1" mode="Linear"/>
         		<animation property="offsetY" to="-0.03" autoreverse="true" duration="200" mode="easeOutCubic" begin="8950"/>
 				<animation property="origin" to="0 1" duration="500" mode="easeOut" begin="3000"/>
         		<animation property="pos" to="-0.01 0.94" duration="500" mode="easeOut" begin="3000"/>
@@ -1231,7 +1233,7 @@ By Helmic
                 <animation property="scale" from="0.9" to="1" duration="250" mode="easeOutQuint"/>
                 <animation property="scale" from="0.9" to="1" duration="150" mode="EaseOut"/>
                 <animation property="opacity" from="1" to="1" duration="1" mode="Linear"/>
-                <animation property="saturation" from="0" to="1" duration="1" mode="Linear"/>
+                <animation property="saturation" from="0" to="1.1" duration="1" mode="Linear"/>
         		<animation property="offsetY" to="-0.03" autoreverse="true" duration="200" mode="easeOutCubic" begin="8950"/>
         		<animation property="opacity" to="0" duration="500" mode="easeOut" begin="3000"/>
             </storyboard>
@@ -1240,7 +1242,7 @@ By Helmic
                 <animation property="scale" from="0.9" to="1" duration="250" mode="easeOutQuint"/>
                 <animation property="scale" from="0.9" to="1" duration="150" mode="EaseOut"/>
                 <animation property="opacity" from="1" to="1" duration="1" mode="Linear"/>
-                <animation property="saturation" from="0" to="1" duration="1" mode="Linear"/>
+                <animation property="saturation" from="0" to="1.1" duration="1" mode="Linear"/>
         		<animation property="offsetY" to="-0.03" autoreverse="true" duration="200" mode="easeOutCubic" begin="8950"/>
 				<animation property="origin" to="0 1" duration="500" mode="easeOut" begin="3000"/>
         		<animation property="pos" to="-0.01 0.94" duration="500" mode="easeOut" begin="3000"/>
@@ -1251,7 +1253,7 @@ By Helmic
                 <animation property="scale" from="0.9" to="1" duration="250" mode="easeOutQuint"/>
                 <animation property="scale" from="0.9" to="1" duration="150" mode="EaseOut"/>
                 <animation property="opacity" from="1" to="1" duration="1" mode="Linear"/>
-                <animation property="saturation" from="0" to="1" duration="1" mode="Linear"/>
+                <animation property="saturation" from="0" to="1.1" duration="1" mode="Linear"/>
         		<animation property="offsetY" to="-0.03" autoreverse="true" duration="200" mode="easeOutCubic" begin="8950"/>
         		<animation property="opacity" to="0" duration="500" mode="easeOut" begin="3000"/>
             </storyboard>
@@ -1400,6 +1402,7 @@ By Helmic
             <path ifArch="windows" ifSubset="randomCustom:yes">./../../../../_hexaCustom/videos/${system.theme}.mp4</path>
             <path ifNotArch="windows" ifSubset="randomCustom:yes">./../../_hexaCustom/videos/${system.theme}.mp4</path>
             <opacity>0</opacity>
+            <saturation>1.2</saturation>
             <opacity ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff">1</opacity>
             <size ifSubset="systemRandomRatio:stretched">1 1</size>
             <maxSize ifSubset="systemRandomRatio:original">1 1</maxSize>
@@ -1528,6 +1531,7 @@ By Helmic
 			<zIndex>9</zIndex>
 			<path>./_inc/bar.png</path>
 			<color>${overlay.colorset}</color>
+			<saturation>1.6</saturation>
 			<colorEnd>${overlay.colorset}00</colorEnd>
 			<gradientType>horizontal</gradientType>
 			<storyboard>
@@ -1872,6 +1876,7 @@ By Helmic
 			<path ifSubset="randomArt:marquee">{random:marquee}</path>
 			<path ifSubset="randomArt:thumbnail">{random:thumbnail}</path>
 			<color>ffffff</color>
+			<saturation>1.3</saturation>
 			<offsetX>0.23</offsetX>
 		</image>
  
@@ -2125,7 +2130,7 @@ By Helmic
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-<!------------------------------------------------------------------TRANSITIONS,COMMONS--------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------zS,COMMONS--------------------------------------------------------------------------------------------->
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 	
@@ -2143,22 +2148,23 @@ By Helmic
 			<path ifSubset="transitionCustom:yes">./_hexaCustom/tile/custom.png</path>
             <path ifArch="windows" ifSubset="transitionCustom:yes">./../../../../_hexaCustom/tile/custom.png</path>
             <path ifNotArch="windows" ifSubset="transitionCustom:yes">./../../_hexaCustom/tile/custom.png</path>
-           	<maxSize>1 0.80</maxSize>
-			<pos>0.5 0.425</pos>
+           	<maxSize>1 0.72</maxSize>
+			<pos>0.5 0.4</pos>
 			<origin>0.5 0.5</origin>
             <zIndex>97</zIndex>
-			<reflexion>0.25 0</reflexion>
+			<reflexion>0.15 0</reflexion>
 			<storyboard>
-				<animation property="offsetY" from="0" to="-0.02" duration="250" mode="easeOut" autoreverse="true"  begin="500"/>
+				<animation property="offsetY" from="0" to="-0.02" duration="390" mode="easeOut" autoreverse="true"  begin="250"/>
 
-				<animation property="color" from="000000" duration="350" mode="easeOut" begin="0"/>
+				<animation property="color" from="000000" duration="500" mode="easeOut" begin="0"/>
+				<animation property="scale" from="0.6" duration="250" mode="easeOut" begin="0"/>
 
-				<animation property="opacity" to="0" duration="150" mode="easeInQuint" begin="1000"/>
+				<animation property="opacity" to="0" duration="150" mode="linear" begin="1000"/>
 
-				<animation property="scale" from="1" to="0.43" duration="150" mode="easeOut" begin="1000"/>
-				<animation property="x" to="0.6255" duration="150" mode="easeOut" begin="1000"/>
-				<animation property="y" to="0.034" duration="150" mode="easeOut" begin="1000"/>
-				<animation property="origin" to="1 0" duration="150" mode="easeOut" begin="1000"/>
+				<animation property="scale" from="1" to="0" duration="150" mode="easeOut" begin="1000"/>
+				<animation property="w" to="20" duration="150" mode="bump" begin="1000"/>
+				<animation property="y" to="0.5" duration="150" mode="bump" begin="1000"/>
+				<animation property="saturation" to="0" duration="150" mode="bump" begin="1000"/>
 				</storyboard>
 		</image>
 
@@ -2201,15 +2207,16 @@ By Helmic
 		<image name="logoAssistTransition" extra="true">
 			<linearSmooth>true</linearSmooth>
 			<zIndex>99</zIndex>
-			<maxSize>0.28 0.18</maxSize>
-			<origin>1 1</origin>
-			<pos>1 0.8</pos>
+			<maxSize>0.24 0.14</maxSize>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.85</pos>
 			<color>ffffff</color>
 			<opacity>0</opacity>
 
 			<storyboard>
-                <animation property="opacity" from="0" to="1" duration="75" mode="linear"/>
-                <animation property="opacity" from="1" to="1" duration="925" mode="linear" begin="75"/>
+                <animation property="opacity" from="0" to="1" duration="150" mode="linear" begin="0"/>
+				<animation property="scale" from="0.6" duration="250" mode="easeOut" begin="0"/>
+                <animation property="opacity" from="1" to="1" duration="500" mode="linear" begin="500"/>
                 <animation property="opacity" from="1" to="0" duration="150" mode="easeOutQuint" begin="1000"/>
             </storyboard>
 
@@ -2282,62 +2289,6 @@ By Helmic
 		<path ifSubset="logoAssistTransitionCustom:yes" ifNotArch="windows">./../../_hexaCustom/logo/logo.png</path>
 		<path ifSubset="logoAssistTransitionCustom:yes" ifNotArch="windows">./../../_hexaCustom/logo/logo.svg</path>
 	</image>
-
-		<text name="transitionFullName" extra="true">
-			<text>${system.fullName}</text>
-            <fontPath>./_inc/fonts/${font1}</fontPath>
-            <color>dddddd</color>
-            <glowColor>00000080</glowColor>
-            <fontSize>0.034</fontSize>
-            <pos>0.5 0.85</pos>
-            <origin>0.5 0.5</origin>
-            <zIndex>99</zIndex>
-			<alignment>center</alignment>
-			<forceUppercase>true</forceUppercase>
-			<w>0.9</w>
-			<h>0.1</h>
-			<storyboard>
-				<animation property="opacity" from="0" to="1" duration="100" mode="easeIn"/>
-				<animation property="opacity" to="0" duration="150" mode="easeIn" begin="1000"/>
-				<animation property="offsetX" from="0.02" to="0" duration="1000" mode="linear" begin="0"/>
-				<animation property="offsetX" from="0" to="-2" duration="300" mode="easeIn" begin="1000"/>
-			</storyboard>
-		</text>
-
-		<text name="transitionManufacturer" extra="true">
-			<text>${system.manufacturer}</text>
-			<text ifSubset="transitionCustomName:yes">${customName}</text>
-            <fontPath>./_inc/fonts/${font1}</fontPath>
-            <color>dddddd</color>
-            <glowColor>00000080</glowColor>
-            <fontSize>0.018</fontSize>
-            <pos>0.5 0.9</pos>
-            <origin>0.5 0.5</origin>
-            <zIndex>99</zIndex>
-			<alignment>center</alignment>
-			<forceUppercase>true</forceUppercase>
-			<w>0.9</w>
-			<h>0.1</h>
-			<storyboard>
-				<animation property="opacity" from="0" to="1" duration="100" mode="easeIn"/>
-				<animation property="opacity" to="0" duration="150" mode="easeIn" begin="1000"/>
-				<animation property="offsetX" from="-0.02" to="0" duration="1000" mode="linear" begin="0"/>
-				<animation property="offsetX" from="0" to="2" duration="300" mode="easeIn" begin="1000"/>
-			</storyboard>
-		</text>
-
-		<image name="transitionbarName" extra="true">
-			<linearSmooth>true</linearSmooth>
-            <size>2 0.1</size>
-            <pos>0.5 0.87</pos>
-			<origin>0.5 0.5</origin>
-			<zIndex>98</zIndex>
-			<path>./_inc/bar.png</path>
-			<color>${overlay.colorset}</color>
-			<storyboard>
-				<animation property="opacity" to="0" duration="300" mode="easeIn" begin="900"/>
-			</storyboard>
-		</image>
 
 
 
