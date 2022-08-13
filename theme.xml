@@ -2181,7 +2181,7 @@ By Helmic
 				<animation property="offsetY" from="0" to="-0.02" duration="390" mode="easeOut" autoreverse="true"  begin="250"/>
 
 				<animation property="color" from="000000" duration="500" mode="easeOut" begin="0"/>
-				<animation property="scale" from="0.6" duration="250" mode="easeOut" begin="0"/>
+				<animation property="scale" from="0.2" duration="250" mode="easeOut" begin="0"/>
 
 				<animation property="opacity" to="0" duration="150" mode="linear" begin="1000"/>
 
@@ -3227,7 +3227,7 @@ By Helmic
 			<opacity>0</opacity>
 			<color>00000000</color>
 			<storyboard event="open" ifSubset="previewDisplay:displayMix">
-                <animation property="color" from="00000000" to="ffffff20" duration="1" mode="linear"/>
+                <animation property="color" from="00000000" to="ffffff10" duration="1" mode="linear"/>
                 <animation property="opacity" from="0" to="1" duration="500" mode="easeOut" begin="750"/>
             </storyboard>
 			<storyboard event="activateNext" ifSubset="previewDisplay:displayMix">
@@ -3263,7 +3263,7 @@ By Helmic
                 <animation property="colorEnd" from="00000000" to="aaaaaa" duration="1" mode="linear"/>
                 <animation property="opacity" from="0" to="1" duration="500" mode="easeOut" begin="750"/>
                 <animation property="saturation" from="0" to="0" duration="750" mode="linear"/>
-                <animation property="saturation" from="0" to="1" duration="250" mode="easeOut" begin="750"/>
+                <animation property="saturation" from="0" to="1.1" duration="250" mode="easeOut" begin="750"/>
 				<animation property="offsetY" from="0.0125" duration="250" mode="easeOut" begin="750"/>
 				<animation property="w" to="0" duration="75" mode="bump" autoreverse="true" begin="3000"/>
 				<animation property="saturation" to="0" duration="75" mode="bump" autoreverse="true" begin="3000"/>
@@ -3274,7 +3274,7 @@ By Helmic
                 <animation property="colorEnd" from="00000000" to="aaaaaa" duration="1" mode="linear"/>
                 <animation property="opacity" from="0" to="1" duration="500" mode="easeOut" begin="750"/>
                 <animation property="saturation" from="0" to="0" duration="750" mode="linear"/>
-                <animation property="saturation" from="0" to="1" duration="250" mode="easeOut" begin="750"/>
+                <animation property="saturation" from="0" to="1.1" duration="250" mode="easeOut" begin="750"/>
                 <animation property="offsetY" from="0.0125" duration="250" mode="easeOut" begin="750"/>
 				<animation property="w" to="0" duration="75" mode="bump" autoreverse="true" begin="3000"/>
 				<animation property="saturation" to="0" duration="75" mode="bump" autoreverse="true" begin="3000"/>
@@ -3285,7 +3285,7 @@ By Helmic
                 <animation property="colorEnd" from="00000000" to="aaaaaa" duration="1" mode="linear"/>
                 <animation property="opacity" from="0" to="1" duration="500" mode="easeOut" begin="750"/>
                 <animation property="saturation" from="0" to="0" duration="750" mode="linear"/>
-                <animation property="saturation" from="0" to="1" duration="250" mode="easeOut" begin="750"/>
+                <animation property="saturation" from="0" to="1.1" duration="250" mode="easeOut" begin="750"/>
                 <animation property="offsetY" from="0.0125" duration="250" mode="easeOut" begin="750"/>
  				<animation property="w" to="0" duration="75" mode="bump" autoreverse="true" begin="3000"/>
 				<animation property="saturation" to="0" duration="75" mode="bump" autoreverse="true" begin="3000"/>
@@ -4617,7 +4617,6 @@ By Helmic
 			<scrollSound>./_inc/scroll/gamelist.wav</scrollSound>
 			<imageSource>thumbnail</imageSource>
 		</imagegrid>
-
 
 		<gridtile name="default">
 			<backgroundColor>FFFFFF00</backgroundColor>
