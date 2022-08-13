@@ -4909,15 +4909,15 @@ By Helmic
 			<pos>1 0.5005</pos>
 			<size>0.37 0.926</size>
 			<origin>1 0.5</origin>
-			<logoScale>3</logoScale>
-			<logoSize>0.300 0.24</logoSize>
+			<logoScale>2</logoScale>
+			<logoSize>0.47 0.24</logoSize>
 			<logoAlignment>center</logoAlignment>
-			<maxLogoCount>5</maxLogoCount>
+			<maxLogoCount>7</maxLogoCount>
 			<zIndex>13</zIndex>
 			<imageSource>marquee</imageSource>
 			<scrollSound>./_inc/scroll/gamelist.wav</scrollSound>
-            <logoRotation>-17</logoRotation>
-            <logoRotationOrigin>4.1 0.5</logoRotationOrigin>
+            <logoRotation>-15</logoRotation>
+            <logoRotationOrigin>3.1 0.5</logoRotationOrigin>
 			</gamecarousel>    
 
 
