@@ -2137,6 +2137,28 @@ By Helmic
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 	
 	<view name="basic,detailed,grid,gamecarousel" ifSubset="transition:yes,fullHexa:yes">
+
+		<text name="transitionManufacturer" extra="true">
+			<text>${system.manufacturer}</text>
+			<text ifSubset="transitionCustomName:yes">${customName}</text>
+            <fontPath>./_inc/fonts/${font1}</fontPath>
+            <color>dddddd</color>
+            <glowColor>00000080</glowColor>
+            <fontSize>0.018</fontSize>
+            <pos>0.5 0.94</pos>
+            <origin>0.5 0.5</origin>
+            <zIndex>99</zIndex>
+			<alignment>center</alignment>
+			<forceUppercase>true</forceUppercase>
+			<w>0.9</w>
+			<h>0.1</h>
+			<storyboard>
+				<animation property="opacity" from="0" to="1" duration="100" mode="easeIn"/>
+				<animation property="opacity" to="0" duration="150" mode="easeIn" begin="1000"/>
+				<animation property="offsetX" from="-0.02" to="0" duration="1000" mode="linear" begin="0"/>
+				<animation property="offsetX" from="0" to="2" duration="300" mode="easeIn" begin="1000"/>
+			</storyboard>
+		</text>
 		
 		<image name="logoTransition" extra="true">
             <linearSmooth>true</linearSmooth>
@@ -2211,7 +2233,7 @@ By Helmic
 			<zIndex>99</zIndex>
 			<maxSize>0.24 0.14</maxSize>
 			<origin>0.5 0.5</origin>
-			<pos>0.5 0.85</pos>
+			<pos>0.5 0.83</pos>
 			<color>ffffff</color>
 			<opacity>0</opacity>
 
