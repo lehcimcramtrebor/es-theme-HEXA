@@ -2221,6 +2221,7 @@ By Helmic
                 <animation property="opacity" from="1" to="1" duration="500" mode="linear" begin="500"/>
                 <animation property="opacity" from="1" to="0" duration="150" mode="easeOutQuint" begin="1000"/>
                 <animation property="offsetX" from="0.01" to="-0.01" duration="1150" mode="linear"/>
+                <animation property="saturation" from="0" to="1.2" duration="575" autoreverse="true" mode="bump"/>
             </storyboard>
 
 		<path ifArch="windows">./../es-theme-carbon/art/logos/${system.theme}.png</path>
