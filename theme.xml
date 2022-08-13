@@ -1502,7 +1502,7 @@ By Helmic
 		</text>
 
 		<text name="systemFullNameRandomVideo" extra="true" ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff,barName:yes">
-			<text>${system.name}</text>
+			<text>${system.manufacturer}</text>
             <fontPath>./_inc/fonts/${font1}</fontPath>
             <color>cccccc</color>
             <glowColor>00000033</glowColor>
