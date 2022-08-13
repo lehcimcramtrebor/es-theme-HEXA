@@ -2155,8 +2155,8 @@ By Helmic
 			<storyboard>
 				<animation property="opacity" from="0" to="1" duration="100" mode="easeIn"/>
 				<animation property="opacity" to="0" duration="150" mode="easeIn" begin="1000"/>
-				<animation property="offsetX" from="-0.02" to="0" duration="1000" mode="linear" begin="0"/>
-				<animation property="offsetX" from="0" to="2" duration="300" mode="easeIn" begin="1000"/>
+				<animation property="offsetX" from="-0.02" to="0.02" duration="1150" mode="linear" begin="0"/>
+				<animation property="opacity" from="1" to="0" duration="150" mode="easeOutQuint" begin="900"/>
 			</storyboard>
 		</text>
 		
