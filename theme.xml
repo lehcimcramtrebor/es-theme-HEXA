@@ -1486,11 +1486,11 @@ By Helmic
 <!-----------------------------------------------------------------RANDOM VIDEO OSD------------------------------------------------------------------------------------------------->
 
 		<text name="systemNameRandomVideo" extra="true" ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff,barName:yes">
-			<text>${system.name}</text>
+			<text>${system.fullName}</text>
             <fontPath>./_inc/fonts/${font1}</fontPath>
             <color>ffffff</color>
-            <glowColor>00000040</glowColor>
-            <fontSize>0.034</fontSize>
+            <glowColor>00000060</glowColor>
+            <fontSize>0.028</fontSize>
             <pos>0.185 0.905</pos>
             <pos ifSubset="randomLogo:no">0.02 0.905</pos>
             <origin>0 0</origin>
@@ -1502,9 +1502,9 @@ By Helmic
 		</text>
 
 		<text name="systemFullNameRandomVideo" extra="true" ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff,barName:yes">
-			<text>${system.fullName}</text>
+			<text>${system.name}</text>
             <fontPath>./_inc/fonts/${font1}</fontPath>
-            <color>eeeeee</color>
+            <color>cccccc</color>
             <glowColor>00000033</glowColor>
             <fontSize>0.014</fontSize>
             <pos>0.185 0.94</pos>
