@@ -907,10 +907,11 @@ By Helmic
 			<color>${overlay.colorset}</color>
 			<color ifSubset="overlayType:transparent|transparentGlazed">${overlay.colorset}80</color>
 
-            <storyboard ifSubset="overlayAnime:yes">
-                <animation property="offsetX" from="0.5" to="-0.5" duration="750" autoreverse="true" mode="easeInOutQuint" repeat="forever"/>
+            <storyboard ifSubset="overlayAnime:yes" repeat="forever">
+                <animation property="offsetX" from="0.5" to="-0.5" duration="750" autoreverse="true" mode="easeInOutQuint"/>
+                <animation property="saturation" from="1" to="2" duration="325" autoreverse="true" mode="easeInOutQuint" repeat="2"/>
             </storyboard>
-        </image>
+       </image>
 		
         <image name="overlayDown" extra="true">
             <path>./_inc/overlayDown.png</path>
@@ -922,8 +923,9 @@ By Helmic
 			<color>${overlay.colorset}</color>
 			<color ifSubset="overlayType:transparent|transparentGlazed">${overlay.colorset}80</color>
 
-            <storyboard ifSubset="overlayAnime:yes">
-                <animation property="offsetX" from="-0.5" to="0.5" duration="750" autoreverse="true" mode="easeInOutQuint" repeat="forever"/>
+            <storyboard ifSubset="overlayAnime:yes" repeat="forever">
+                <animation property="offsetX" from="-0.5" to="0.5" duration="750" autoreverse="true" mode="easeInOutQuint"/>
+                <animation property="saturation" from="1" to="2" duration="325" autoreverse="true" mode="easeInOutQuint" repeat="2"/>
             </storyboard>
         </image>
 
