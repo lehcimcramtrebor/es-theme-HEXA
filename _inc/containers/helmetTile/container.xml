@@ -21,7 +21,7 @@ By Helmic
             <path ifSubset="containerTile:customTile">./../../../_hexaCustom/tile/custom.png</path>
             <path ifArch="windows" ifSubset="containerTile:customTile">./../../../../../../../_hexaCustom/tile/custom.png</path>
             <path ifNotArch="windows" ifSubset="containerTile:customTile">./../../../../../_hexaCustom/tile/custom.png</path>
-			<maxSize>0.23 1</maxSize>
+			<maxSize>0.23 0.63</maxSize>
 			<pos>0 0.984</pos>
 			<pos ifSubset="themeRatio:54">0 0.975</pos>
 			<pos ifSubset="themeRatio:43">0 0.98</pos>
