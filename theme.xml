@@ -2731,7 +2731,8 @@ By Helmic
             <linearSmooth>true</linearSmooth>
 			<origin>0.5 0.5</origin>
 			<size ifSubset="themeRatio:169">1 1</size>
-			<maxSize ifSubset="themeRatio:54|43">1 99</maxSize>
+            <size ifSubset="themeRatio:43">1 0.75</size>
+            <size ifSubset="themeRatio:54">1 0.703125</size>
 			<zIndex>15</zIndex>
 			<pos>0.14 0.64</pos>
 			<pos ifSubset="themeRatio:54">0.14 0.73</pos>
@@ -2743,7 +2744,8 @@ By Helmic
 			<path>./_inc/led.png</path>
 			<origin>0.5 0.5</origin>
             <size ifSubset="themeRatio:169">1 1</size>
-			<maxSize ifSubset="themeRatio:54|43">1 99</maxSize>
+            <size ifSubset="themeRatio:43">1 0.75</size>
+            <size ifSubset="themeRatio:54">1 0.703125</size>
 			<zIndex>16</zIndex>
 			<color>00000000</color>
 			<storyboard event="open">
@@ -2767,7 +2769,8 @@ By Helmic
 			<path>./_inc/rew.png</path>
 			<origin>0.5 0.5</origin>
             <size ifSubset="themeRatio:169">1 1</size>
-			<maxSize ifSubset="themeRatio:54|43">1 99</maxSize>
+            <size ifSubset="themeRatio:43">1 0.75</size>
+            <size ifSubset="themeRatio:54">1 0.703125</size>
 			<zIndex>13</zIndex>
 			<color>00000000</color>
 			<storyboard event="open">
@@ -2792,7 +2795,8 @@ By Helmic
 			<path>./_inc/next.png</path>
 			<origin>0.5 0.5</origin>
             <size ifSubset="themeRatio:169">1 1</size>
-			<maxSize ifSubset="themeRatio:54|43">1 99</maxSize>
+            <size ifSubset="themeRatio:43">1 0.75</size>
+            <size ifSubset="themeRatio:54">1 0.703125</size>
 			<zIndex>13</zIndex>
 			<color>00000000</color>
 			<storyboard event="open">
@@ -2817,7 +2821,8 @@ By Helmic
 			<path>./_inc/play.png</path>
 			<origin>0.5 0.5</origin>
             <size ifSubset="themeRatio:169">1 1</size>
-			<maxSize ifSubset="themeRatio:54|43">1 99</maxSize>
+            <size ifSubset="themeRatio:43">1 0.75</size>
+            <size ifSubset="themeRatio:54">1 0.703125</size>
 			<zIndex>13</zIndex>
 			<color>00000000</color>
 			<storyboard event="open">
@@ -5137,7 +5142,8 @@ By Helmic
 		<image name="tablet,tabletGlass" extra="true">
             <linearSmooth>true</linearSmooth>
             <size ifSubset="themeRatio:169">1 1</size>
-            <maxSize ifSubset="themeRatio:43|54">99 1</maxSize>
+            <size ifSubset="themeRatio:43">1 0.75</size>
+            <size ifSubset="themeRatio:54">1 0.703125</size>
 			<origin>0 0.5</origin>
 			<pos>0 0.5</pos>
 		</image>

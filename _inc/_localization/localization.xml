@@ -664,7 +664,7 @@ By Helmic
 		<lang.themeRatio>screen ratio</lang.themeRatio>
 		<lang.themeRatio lang="fr">format de l'écran</lang.themeRatio>
 
-		<lang.169>16/9</lang.169>
+		<lang.169>16/9 ( 17/9 - 16/10 - 3/2 compatible)</lang.169>
 		<lang.54>5/4</lang.54>
 		<lang.43>4/3</lang.43>
 
@@ -689,8 +689,8 @@ By Helmic
 		<lang.noArrows lang="fr">ne pas les afficher</lang.noArrows>
 
 		<!--space carousel 16/9-->
-		<lang.spaceCarousel>carousel • space</lang.spaceCarousel>
-		<lang.spaceCarousel lang="fr">carrousel • espacement</lang.spaceCarousel>
+		<lang.spaceCarousel>carousel • space (usefull 16/10 - 3/2)</lang.spaceCarousel>
+		<lang.spaceCarousel lang="fr">carrousel • espacement (utile 16/10 - 3/2)</lang.spaceCarousel>
 
 		<lang.thin>thin</lang.thin>
 		<lang.thin lang="fr">mince</lang.thin>
