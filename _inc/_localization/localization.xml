@@ -445,11 +445,11 @@ By Helmic
         <lang.2x3>2x3 frame</lang.2x3>
         <lang.2x3 lang="fr">cadre chromatique 2x3</lang.2x3>
     		
-        <lang.justVideo>no container</lang.justVideo>
-        <lang.justVideo lang="fr">aucun</lang.justVideo>
+        <lang.justVideo>no container (without tile)</lang.justVideo>
+        <lang.justVideo lang="fr">aucun (tuile désactivée)</lang.justVideo>
      		
-        <lang.justVideoLittle>no container (little video)</lang.justVideoLittle>
-        <lang.justVideoLittle lang="fr">aucun (petite vidéo)</lang.justVideoLittle>
+        <lang.justVideoLittle>no container (little video without tile)</lang.justVideoLittle>
+        <lang.justVideoLittle lang="fr">aucun (petite vidéo, tuile désactivée)</lang.justVideoLittle>
      		
 
 
