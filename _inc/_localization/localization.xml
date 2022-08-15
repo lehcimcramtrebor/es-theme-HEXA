@@ -30,11 +30,17 @@ By Helmic
         <lang.png>png (fast)</lang.png>
         <lang.png lang="fr">png (rapide)</lang.png>
 
-        <lang.logoAssistTransitionCustom>transition • use custom logo</lang.logoAssistTransitionCustom>
-        <lang.logoAssistTransitionCustom lang="fr">transition • utiliser le logo personnalisé</lang.logoAssistTransitionCustom>
+        <lang.logoAssistTransitionCustom>transition • custom logo</lang.logoAssistTransitionCustom>
+        <lang.logoAssistTransitionCustom lang="fr">transition • logo personnalisé</lang.logoAssistTransitionCustom>
 
-        <lang.transitionCustomName>transition • use custom label</lang.transitionCustomName>
-        <lang.transitionCustomName lang="fr">transition • utiliser le label personnalisé</lang.transitionCustomName>
+        <lang.transitionCustomName>transition • text label</lang.transitionCustomName>
+        <lang.transitionCustomName lang="fr">transition • label texte</lang.transitionCustomName>
+
+        <lang.manufacturer>manufacturer</lang.manufacturer>
+        <lang.manufacturer lang="fr">fabriquant</lang.manufacturer>
+
+        <lang.customName>custom</lang.customName>
+        <lang.customName lang="fr">personnalisé</lang.customName>
 
         <lang.customs>customs wallpapers (deactivate paints)</lang.customs>
         <lang.customs lang="fr">customs (désactive les peintures)</lang.customs>
@@ -581,8 +587,8 @@ By Helmic
 		<lang.system>system view</lang.system>
 		<lang.system lang="fr">de la vue système</lang.system>
 
-		<lang.transitionCustom>transition • use custom plate</lang.transitionCustom>
-		<lang.transitionCustom lang="fr">transition • utiliser la plaque custom</lang.transitionCustom>
+		<lang.transitionCustom>transition • custom plate</lang.transitionCustom>
+		<lang.transitionCustom lang="fr">transition • plaque custom</lang.transitionCustom>
 
 		<!--shutter-->
 		<lang.shutter>screen • shutter rate</lang.shutter>

@@ -149,22 +149,25 @@ By Helmic
 		<include name="no" displayName="${lang.no}"/>
 	</subset>
 
-	<subset name="transitionWallpaper" displayName="${lowSpecs}${lang.transitionWallpaper}">
+	<subset name="transitionWallpaper" displayName="${lowSpecs}${lang.transitionWallpaper}" ifSubset="transition:yes">
 		<include name="gamelist" displayName="${lang.gamelist}"/>
 		<include name="system" displayName="${lang.system}"/>
 	</subset>
 
-	<subset name="logoAssistTransitionCustom" displayName="${lowSpecs}${lang.logoAssistTransitionCustom}">
+	<subset name="logoAssistTransitionCustom" displayName="${lowSpecs}${lang.logoAssistTransitionCustom}" ifSubset="transition:yes">
 		<include name="no" displayName="${lang.no}"/>
 		<include name="yes" displayName="${lang.yes}"/>
 	</subset>
 
-	<subset name="transitionCustomName" displayName="${lowSpecs}${lang.transitionCustomName}">
-		<include name="no" displayName="${lang.no}"/>
-		<include name="yes" displayName="${lang.yes}"/>
+	<subset name="transitionCustomName" displayName="${lowSpecs}${lang.transitionCustomName}" ifSubset="transition:yes">
+		<include name="manufacturer" displayName="${lang.manufacturer}"/>
+		<include name="customName" displayName="${lang.customName}"/>
+		<include name="retrobat" displayName="${lang.retrobat}"/>
+		<include name="batocera" displayName="${lang.batocera}"/>
+		<include name="emuelec" displayName="${lang.emuelec}"/>
 	</subset>
 
-	<subset name="transitionCustom" displayName="${lowSpecs}${lang.transitionCustom}">
+	<subset name="transitionCustom" displayName="${lowSpecs}${lang.transitionCustom}" ifSubset="transition:yes">
 		<include name="no" displayName="${lang.no}"/>
 		<include name="yes" displayName="${lang.yes}"/>
 	</subset>
@@ -2140,7 +2143,10 @@ By Helmic
 
 		<text name="transitionManufacturer" extra="true">
 			<text>${system.manufacturer}</text>
-			<text ifSubset="transitionCustomName:yes">${customName}</text>
+			<text ifSubset="transitionCustomName:customName">${customName}</text>
+			<text ifSubset="transitionCustomName:batocera">batocera - ready to retro</text>
+			<text ifSubset="transitionCustomName:retrobat">retrobat - the best retrogaming experience</text>
+			<text ifSubset="transitionCustomName:emuelec">emuelec</text>
             <fontPath>./_inc/fonts/${font1}</fontPath>
             <color>dddddd</color>
             <glowColor>00000080</glowColor>
