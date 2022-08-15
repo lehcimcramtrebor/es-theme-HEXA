@@ -397,8 +397,8 @@ By Helmic
 	</subset>
 
 	<subset name="systemRandomRatio" displayName="${lang.systemRandomRatio}" appliesTo="system view                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
-		<include name="stretched" displayName="${lang.stretched}"/>
 		<include name="original" displayName="${lang.original}"/>
+		<include name="stretched" displayName="${lang.stretched}"/>
 	</subset>
 
 	<subset name="randomCustom" displayName="${lang.randomCustom}" appliesTo="system view                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
