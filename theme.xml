@@ -1075,7 +1075,8 @@ By Helmic
  
         <image name="backgroundMaskGamelist" extra="true" ifSubset="fullHexa:yes">
             <path>./_inc/wallpapers/${wallpaperGamelist}_mask.png</path>
-            <maxSize>99 1</maxSize>
+            <size ifSubset="themeRatio:169">1 1</size>
+            <maxSize ifSubset="themeRatio:43|54">99 1</maxSize>
             <pos>0.5 0.5</pos>
             <origin>0.5 0.5</origin>
             <color>808080</color>
@@ -1123,7 +1124,8 @@ By Helmic
  
         <image name="backgroundMask" extra="true" ifSubset="fullHexa:yes">
             <path>./_inc/wallpapers/${wallpaper}_mask.png</path>
-            <maxSize>99 1</maxSize>
+            <size ifSubset="themeRatio:169">1 1</size>
+            <maxSize ifSubset="themeRatio:43|54">99 1</maxSize>
             <pos>0.5 0.5</pos>
             <origin>0.5 0.5</origin>
             <color>808080</color>
@@ -1578,7 +1580,8 @@ By Helmic
  
         <image name="backgroundVideoFixMask" extra="true" ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff,fullHexa:yes">
             <path>./_inc/wallpapers/${wallpaper}_mask.png</path>
-            <maxSize>99 1</maxSize>
+            <size ifSubset="themeRatio:169">1 1</size>
+            <maxSize ifSubset="themeRatio:43|54">99 1</maxSize>
             <pos>0.5 0.5</pos>
             <origin>0.5 0.5</origin>
             <color>808080</color>
@@ -2739,7 +2742,7 @@ By Helmic
             <linearSmooth>true</linearSmooth>
 			<path>./_inc/led.png</path>
 			<origin>0.5 0.5</origin>
-			<maxSize>99 1</maxSize>
+            <size ifSubset="themeRatio:169">1 1</size>
 			<maxSize ifSubset="themeRatio:54|43">1 99</maxSize>
 			<zIndex>16</zIndex>
 			<color>00000000</color>
@@ -2763,7 +2766,7 @@ By Helmic
             <linearSmooth>true</linearSmooth>
 			<path>./_inc/rew.png</path>
 			<origin>0.5 0.5</origin>
-			<maxSize>99 1</maxSize>
+            <size ifSubset="themeRatio:169">1 1</size>
 			<maxSize ifSubset="themeRatio:54|43">1 99</maxSize>
 			<zIndex>13</zIndex>
 			<color>00000000</color>
@@ -2788,7 +2791,7 @@ By Helmic
             <linearSmooth>true</linearSmooth>
 			<path>./_inc/next.png</path>
 			<origin>0.5 0.5</origin>
-			<maxSize>99 1</maxSize>
+            <size ifSubset="themeRatio:169">1 1</size>
 			<maxSize ifSubset="themeRatio:54|43">1 99</maxSize>
 			<zIndex>13</zIndex>
 			<color>00000000</color>
@@ -2813,7 +2816,7 @@ By Helmic
             <linearSmooth>true</linearSmooth>
 			<path>./_inc/play.png</path>
 			<origin>0.5 0.5</origin>
-			<maxSize>99 1</maxSize>
+            <size ifSubset="themeRatio:169">1 1</size>
 			<maxSize ifSubset="themeRatio:54|43">1 99</maxSize>
 			<zIndex>13</zIndex>
 			<color>00000000</color>
@@ -5133,7 +5136,8 @@ By Helmic
 
 		<image name="tablet,tabletGlass" extra="true">
             <linearSmooth>true</linearSmooth>
-			<maxSize>1 99</maxSize>
+            <size ifSubset="themeRatio:169">1 1</size>
+            <maxSize ifSubset="themeRatio:43|54">99 1</maxSize>
 			<origin>0 0.5</origin>
 			<pos>0 0.5</pos>
 		</image>
@@ -5592,7 +5596,8 @@ By Helmic
 		<image name="scratch" extra="true" ifSubset="fullHexa:yes">
 			<origin>0.5 0.5</origin>
 			<pos>0.5 0.5</pos>
-			<maxSize>99 1</maxSize>
+            <size ifSubset="themeRatio:169">1 1</size>
+            <maxSize ifSubset="themeRatio:43|54">99 1</maxSize>
 			<zIndex>9999</zIndex>
 			<path ifSubset="scratch:scratch.light">./_inc/glass_light.png</path>
 			<path ifSubset="scratch:scratch.medium">./_inc/glass_medium.png</path>
