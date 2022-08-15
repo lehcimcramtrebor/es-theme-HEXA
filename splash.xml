@@ -18,7 +18,7 @@
         <color>808080</color>
         <colorEnd>303030</colorEnd>
         <gradientType>vertical</gradientType>
-   		<maxSize>99 1</maxSize>
+   		<maxSize>99 1.1</maxSize>
 		<zIndex>1</zIndex>
 	</image>
 

@@ -1060,7 +1060,8 @@ By Helmic
             <path ifSubset="wallGamelist:customs" ifNotArch="windows">./../../_hexaCustom/wallpapers/custom.jpg</path>
             <path ifSubset="wallGamelist:customs" ifArch="windows">./../../../../_hexaCustom/wallpapers/${system.theme}.jpg</path>
             <path ifSubset="wallGamelist:customs" ifNotArch="windows">./../../_hexaCustom/wallpapers/${system.theme}.jpg</path>
-            <maxSize>99 1</maxSize>
+            <size ifSubset="themeRatio:169">1 1</size>
+            <maxSize ifSubset="themeRatio:43|54">99 1</maxSize>
             <pos>0.5 0.5</pos>
             <origin>0.5 0.5</origin>
             <color>808080</color>
@@ -1107,7 +1108,8 @@ By Helmic
             <path ifSubset="wall:customs" ifNotArch="windows">./../../_hexaCustom/wallpapers/custom.jpg</path>
             <path ifSubset="wall:customs" ifArch="windows">./../../../../_hexaCustom/wallpapers/${system.theme}.jpg</path>
             <path ifSubset="wall:customs" ifNotArch="windows">./../../_hexaCustom/wallpapers/${system.theme}.jpg</path>
-            <maxSize>99 1</maxSize>
+            <size ifSubset="themeRatio:169">1 1</size>
+            <maxSize ifSubset="themeRatio:43|54">99 1</maxSize>
             <pos>0.5 0.5</pos>
             <origin>0.5 0.5</origin>
             <color>808080</color>
@@ -1557,7 +1559,8 @@ By Helmic
             <path ifSubset="wall:customs" ifNotArch="windows">./../../_hexaCustom/wallpapers/custom.jpg</path>
             <path ifSubset="wall:customs" ifArch="windows">./../../../../_hexaCustom/wallpapers/${system.theme}.jpg</path>
             <path ifSubset="wall:customs" ifNotArch="windows">./../../_hexaCustom/wallpapers/${system.theme}.jpg</path>
-            <maxSize>99 1</maxSize>
+            <size ifSubset="themeRatio:169">1 1</size>
+            <maxSize ifSubset="themeRatio:43|54">99 1</maxSize>
             <pos>0.5 0.5</pos>
             <origin>0.5 0.5</origin>
             <color>808080</color>
@@ -2214,7 +2217,8 @@ By Helmic
             <path ifSubset="transitionWallpaper:gamelist,wallGamelist:customs" ifNotArch="windows">./../../_hexaCustom/wallpapers/custom.jpg</path>
             <path ifSubset="transitionWallpaper:gamelist,wallGamelist:customs" ifArch="windows">./../../../../_hexaCustom/wallpapers/${system.theme}.jpg</path>
             <path ifSubset="transitionWallpaper:gamelist,wallGamelist:customs" ifNotArch="windows">./../../_hexaCustom/wallpapers/${system.theme}.jpg</path>
-           	<maxSize>99 1</maxSize>
+            <size ifSubset="themeRatio:169">1 1</size>
+            <maxSize ifSubset="themeRatio:43|54">99 1</maxSize>
 			<pos>0.5 0.5</pos>
 			<origin>0.5 0.5</origin>
             <zIndex>96</zIndex>
@@ -2723,7 +2727,7 @@ By Helmic
 		<image name="videoContainer" extra="true">
             <linearSmooth>true</linearSmooth>
 			<origin>0.5 0.5</origin>
-			<maxSize>99 1</maxSize>
+			<size ifSubset="themeRatio:169">1 1</size>
 			<maxSize ifSubset="themeRatio:54|43">1 99</maxSize>
 			<zIndex>15</zIndex>
 			<pos>0.14 0.64</pos>
