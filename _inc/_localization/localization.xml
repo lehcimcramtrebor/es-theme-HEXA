@@ -785,6 +785,9 @@ By Helmic
 		<lang.marquee>marquees</lang.marquee>
 		<lang.marquee lang="fr">logos de jeux</lang.marquee>
 
+		<lang.image>screenshots</lang.image>
+		<lang.image lang="fr">écrans de jeux</lang.image>
+
 		<lang.logoVisualAssistance>carousel • display logo visual assistance (+ resources)</lang.logoVisualAssistance>
 		<lang.logoVisualAssistance lang="fr">carrousel • afficher l'assistance visuelle des logos (+ ressources)</lang.logoVisualAssistance>
 
