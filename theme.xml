@@ -1903,7 +1903,7 @@ By Helmic
                 <animation property="offsetX" from="0.23" to="0.23" duration="350" mode="linear"/>
                 <animation property="offsetX" from="0.23" to="0" duration="250" mode="easeOutCubic" begin="350"/>
                 <animation property="offsetX" from="0" to="0.23" duration="250" mode="easeInQuint" begin="1750"/>
-                 <animation property="offsetX" from="0.23" to="0.23" duration="8001" mode="linear" begin="2000"/>
+                <animation property="offsetX" from="0.23" to="0.23" duration="8001" mode="linear" begin="2000"/>
            </storyboard>
 		</image>
  
