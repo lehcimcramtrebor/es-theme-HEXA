@@ -2630,8 +2630,8 @@ By Helmic
             <linearSmooth>true</linearSmooth>
 			<origin>1 0</origin>
 			<pos>1 0.04</pos>
-			<size>0.37 0.92</size>
-			<size ifSubset="gamesZoneBack:carbon|carbonColorset">0.5 0.92</size>
+			<size>0.37 0.926</size>
+			<size ifSubset="gamesZoneBack:carbon|carbonColorset">0.5 0.926</size>
 			<zIndex>12</zIndex>
 			<path ifSubset="gamesZoneBack:simple|simpleColorset">./_inc/white.png</path>
 			<path ifSubset="gamesZoneBack:carbon|carbonColorset">./_inc/carbon.png</path>
@@ -2663,6 +2663,7 @@ By Helmic
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
 		<image name="videoContainer" extra="true">
+			<saturation>1.2</saturation>
             <linearSmooth>true</linearSmooth>
 			<origin>0.5 0.5</origin>
 			<size ifSubset="themeRatio:169">1 1</size>

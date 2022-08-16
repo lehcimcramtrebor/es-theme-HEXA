@@ -8,14 +8,17 @@ By Helmic
 <formatVersion>7</formatVersion>
 
     <subset name="gamelistWallPaint" displayName="${lowSpecs}${lang.gamelistWallPaint}" appliesTo="wallpaper                                                                                                                                                                                                                                                            ,system,basic,detailed,grid,gamecarousel">
-        <include name="no" displayName="${lang.no}"/>
-		<include name="yes" displayName="${lang.yes}"/>
+		<include name="yesBw" displayName="${lang.yesBw}"/>
+		<include name="yesColor" displayName="${lang.yesColor}"/>
         <include name="custom" displayName="${lang.custom}"/>
+        <include name="no" displayName="${lang.no}"/>
     </subset>
 
 	<view name="basic">
 
-		<image name="wallPaint" extra="true" ifSubset="gamelistWallPaint:yes|custom,fullHexa:yes">
+		<image name="wallPaint" extra="true" ifSubset="gamelistWallPaint:yesColor|yesBw|custom,fullHexa:yes">
+			<saturation>1.4</saturation>
+			<saturation ifSubset="gamelistWallPaint:yesBw">0</saturation>
             <path>./../../default/color.png</path>
             <path>./../../default/color-${lang}.png</path>
             <path>./../../${system.theme}/color.png</path>
@@ -48,6 +51,7 @@ By Helmic
 	<view name="detailed,grid,gamecarousel">
 
 		<image name="wallPaint" extra="true" ifSubset="gamelistWallPaint:custom,fullHexa:yes">
+			<saturation>1.4</saturation>
             <path ifSubset="gamelistWallPaint:custom">./../../_hexaCustom/wallpapers/custom.jpg</path>
             <path ifSubset="gamelistWallPaint:custom">./../../_hexaCustom/wallpapers/${system.theme}.jpg</path>
             <path ifSubset="gamelistWallPaint:custom" ifArch="windows">./../../../../../../_hexaCustom/wallpapers/custom.jpg</path>
@@ -60,23 +64,24 @@ By Helmic
 			<origin>0.5 0.5</origin>
             <zIndex>1</zIndex>
 			<gradientType>vertical</gradientType>			
-			<color>ffffffdf</color>
-			<colorEnd>ffffff80</colorEnd>
+			<color>ffffff</color>
+			<colorEnd>0000004d</colorEnd>
 			<color ifSubset="wall:wallDark">ffffff8c</color>
 			<colorEnd ifSubset="wall:wallDark|wallLight">ffffff4d</colorEnd>
-			<opacity>0.5</opacity>			
+			<opacity>0.3</opacity>			
 			<visible ifSubset="gamelistWallPaint:no">false</visible>			
 		</image>
 
-		<image name="md_fanart" ifSubset="gamelistWallPaint:yes,fullHexa:yes">
-            <linearSmooth>true</linearSmooth>
-			<maxSize>1 99</maxSize>
-			<maxSize ifSubset="themeRatio:54|43">99 1</maxSize>
+		<image name="md_fanart" ifSubset="gamelistWallPaint:yesColor|yesBw,fullHexa:yes">
+			<saturation>1.4</saturation>
+			<saturation ifSubset="gamelistWallPaint:yesBw">0</saturation>
+            <linearSmooth>false</linearSmooth>
+			<size>1 1</size>
 			<origin>0.5 0.5</origin>
 			<pos>0.5 0.5</pos>
 			<zIndex>1</zIndex>
-			<color>ffffffdf</color>
-			<colorEnd>ffffff80</colorEnd>
+			<color>ffffff</color>
+			<colorEnd>0000004d</colorEnd>
 			<color ifSubset="wall:wallDark">ffffff8c</color>
 			<colorEnd ifSubset="wall:wallDark|wallLight">ffffff4d</colorEnd>
 			<gradientType>vertical</gradientType>			
@@ -107,7 +112,9 @@ By Helmic
 
 	<customView name="library" inherits="detailed" displayName="${lang.library}">
         
-		<image name="wallPaint" extra="true" ifSubset="gamelistWallPaint:yes|custom,fullHexa:yes">
+		<image name="wallPaint" extra="true" ifSubset="gamelistWallPaint:yesColor|yesBw|custom,fullHexa:yes">
+			<saturation>1.4</saturation>
+			<saturation ifSubset="gamelistWallPaint:yesBw">0</saturation>
             <path>./../../default/color.png</path>
             <path>./../../default/color-${lang}.png</path>
             <path>./../../${system.theme}/color.png</path>
@@ -127,11 +134,11 @@ By Helmic
 			<origin>0.5 0.5</origin>
             <zIndex>1</zIndex>
 			<gradientType>vertical</gradientType>			
-			<color>ffffffdf</color>
-			<colorEnd>ffffff80</colorEnd>
+			<color>ffffff</color>
+			<colorEnd>0000004d</colorEnd>
 			<color ifSubset="wall:wallDark">ffffff8c</color>
 			<colorEnd ifSubset="wall:wallDark|wallLight">ffffff4d</colorEnd>
-			<opacity>0.5</opacity>			
+			<opacity>0.3</opacity>			
 			<visible ifSubset="gamelistWallPaint:no">false</visible>			
 		</image>
 

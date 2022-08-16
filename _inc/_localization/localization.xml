@@ -709,6 +709,12 @@ By Helmic
 		<lang.yes>yes</lang.yes>
 		<lang.yes lang="fr">oui</lang.yes>
 
+		<lang.yesColor>yes (color)</lang.yesColor>
+		<lang.yesColor lang="fr">oui (couleur)</lang.yesColor>
+
+		<lang.yesBw>yes (black and white)</lang.yesBw>
+		<lang.yesBw lang="fr">oui (noir et blanc)</lang.yesBw>
+
 		<lang.no>no</lang.no>
 		<lang.no lang="fr">non</lang.no>
 

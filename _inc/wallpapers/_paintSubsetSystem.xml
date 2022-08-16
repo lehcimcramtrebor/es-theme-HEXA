@@ -9,13 +9,16 @@ By Helmic
 
     <subset name="carouselWallPaint" displayName="${lowSpecs}${lang.carouselWallPaint}">
         <include name="no" displayName="${lang.no}"/>
-		<include name="yes" displayName="${lang.yes}"/>
+		<include name="yesBw" displayName="${lang.yesBw}"/>
+		<include name="yesColor" displayName="${lang.yesColor}"/>
 		<include name="custom" displayName="${lang.custom}"/>
     </subset>
 
 	<view name="system">
 
-		<image name="logoPaint" extra="true" ifSubset="carouselWallPaint:yes|custom,fullHexa:yes">
+		<image name="logoPaint" extra="true" ifSubset="carouselWallPaint:yesColor|yesBw|custom,fullHexa:yes">
+			<saturation>1.4</saturation>
+			<saturation ifSubset="carouselWallPaint:yesBw">0</saturation>
             <linearSmooth>true</linearSmooth>
             <path>./../../default/color.png</path>
             <path>./../../default/color-${lang}.png</path>
@@ -43,7 +46,9 @@ By Helmic
 			<visible ifSubset="carouselWallPaint:no">false</visible>			
 		</image>
 
-		<image name="logoPaintFix" extra="true" ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff,carouselWallPaint:yes|custom,fullHexa:yes">
+		<image name="logoPaintFix" extra="true" ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff,carouselWallPaint:yesColor|yesBw|custom,fullHexa:yes">
+			<saturation>1.4</saturation>
+			<saturation ifSubset="carouselWallPaint:yesBw">0</saturation>
             <linearSmooth>true</linearSmooth>
             <path>./../../default/color.png</path>
             <path>./../../default/color-${lang}.png</path>
