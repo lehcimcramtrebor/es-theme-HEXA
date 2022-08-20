@@ -69,8 +69,8 @@ By Helmic
     </subset>
 
     <subset name="themeRatio" displayName="${lang.themeRatio}">
-		<include name="169" displayName="${lang.169}"/>
-        <include name="54" displayName="${lang.54}"/>
+		<include tinyScreen="false" name="169" displayName="${lang.169}"/>
+        <include tinyScreen="false" name="54" displayName="${lang.54}"/>
         <include name="43" displayName="${lang.43}"/>
     </subset>
 
@@ -105,7 +105,7 @@ By Helmic
         <include name="good timing">./_inc/fonts/good.xml</include>
     </subset>
 
-	<subset name="menuFontSize" displayName="${lang.menuFontSize}">
+	<subset name="menuFontSize" displayName="${lang.menuFontSize}" tinyScreen="false">
 		<include name="0"/>
 		<include name="+1"/>
 		<include name="+2"/>
@@ -192,7 +192,7 @@ By Helmic
 		<include name="colorsetAdaptive" displayName="${lang.colorsetAdaptive}"/>
 	</subset>
 
-	<subset name="helpFontSize" displayName="${lang.helpFontSize}">
+	<subset name="helpFontSize" displayName="${lang.helpFontSize}" tinyScreen="false">
 		<include name="0.020"/>
 		<include name="0.022"/>
 		<include name="0.024"/>
@@ -240,7 +240,7 @@ By Helmic
 		<include name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "/>
     </subset>
 
-	<subset name="staticEffect" displayName="${lang.staticEffect}">
+	<subset name="staticEffect" displayName="${lang.staticEffect}" tinyScreen="false">
 		<include name="no" displayName="${lang.noEffect}"/>
 		<include name="scanlinesFine" displayName="${lang.scanlinesFine}"/>
 		<include name="scanlinesVerticalFine" displayName="${lang.scanlinesVerticalFine}"/>
@@ -364,7 +364,7 @@ By Helmic
 		<include name="colorsetAdaptive" displayName="${lang.colorsetAdaptive}"/>
 	</subset>
 
-	<subset name="bindingBarFontSize" displayName="${lang.bindingBarFontSize}">
+	<subset name="bindingBarFontSize" displayName="${lang.bindingBarFontSize}" tinyScreen="false">
 		<include name="0.020"/>
 		<include name="0.022"/>
 		<include name="0.024"/>
@@ -411,7 +411,7 @@ By Helmic
         <include name="no" displayName="${lang.no}"/>
     </subset>
 
-    <subset name="randomFx" displayName="${lang.randomFx}" appliesTo="system view                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
+    <subset name="randomFx" displayName="${lang.randomFx}" tinyScreen="false" appliesTo="system view                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
 		<include name="phosphorePlus" displayName="${lang.phosphorePlus}"/>
 		<include name="phosphore" displayName="${lang.phosphore}"/>
 		<include name="scanlines" displayName="${lang.scanlines}"/>
@@ -784,7 +784,7 @@ By Helmic
 		<include name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "/>
 	</subset>
 
-	<subset name="gameInfosBarFontSize" displayName="${lang.gameInfosBarFontSize}" appliesTo="game infos                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
+	<subset name="gameInfosBarFontSize" displayName="${lang.gameInfosBarFontSize}" tinyScreen="false" appliesTo="game infos                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
 		<include name="0.020"/>
 		<include name="0.022"/>
 		<include name="0.024"/>
@@ -793,13 +793,13 @@ By Helmic
 		<include name="0.018"/>
 	</subset>
 
-	<subset name="descriptionFontSize" displayName="${lang.descriptionFontSize}" appliesTo="game infos                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
+	<subset name="descriptionFontSize" displayName="${lang.descriptionFontSize}" tinyScreen="false" appliesTo="game infos                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
 		<include name="0.016"/>
 		<include name="0.018"/>
 		<include name="0.020"/>
 	</subset>
 
-	<subset name="gamelistFontSize" displayName="${lang.gamelistFontSize}" appliesTo="gamelist                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
+	<subset name="gamelistFontSize" displayName="${lang.gamelistFontSize}" tinyScreen="false" appliesTo="gamelist                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
 		<include name="0.020"/>
 		<include name="0.022"/>
 		<include name="0.024"/>
@@ -810,7 +810,7 @@ By Helmic
 		<include name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "/>
 	</subset>
 
-	<subset name="basicGamelistLines" displayName="${lang.basicGamelistLines}" appliesTo="gamelist                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
+	<subset name="basicGamelistLines" displayName="${lang.basicGamelistLines}" tinyScreen="false" appliesTo="gamelist                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
 		<include name="21"/>
 		<include name="23"/>
 		<include name="15"/>
@@ -818,7 +818,7 @@ By Helmic
 		<include name="19"/>
 	</subset>
 
-	<subset name="detailedGamelistLines" displayName="${lang.detailedGamelistLines}" appliesTo="gamelist                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
+	<subset name="detailedGamelistLines" displayName="${lang.detailedGamelistLines}" tinyScreen="false" appliesTo="gamelist                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
 		<include name="15"/>
 		<include name="17"/>
 		<include name="19"/>
@@ -1360,12 +1360,14 @@ By Helmic
 
         <text name="systemInfo">     
             <pos>0 0.9115</pos>
+            <pos tinyScreen="true">0 0.905</pos>
             <backgroundColor>00000000</backgroundColor>
             <color ifSubset="systemInfoColor:colorWhite">dddddd</color>
             <color ifSubset="systemInfoColor:colorYellow">ffff00</color>
             <color ifSubset="systemInfoColor:colorsetAdaptive">${overlay.colorset}</color>
             <fontPath>./_inc/fonts/${font1}</fontPath>
             <fontSize>0.02</fontSize>
+            <fontSize tinyScreen="true">0.026</fontSize>
             <glowColor>00000005</glowColor>
             <zIndex>20</zIndex>
             <opacity>0</opacity>
@@ -1389,7 +1391,9 @@ By Helmic
             <color ifSubset="systemInfoColor:colorsetAdaptive">${overlay.colorset}</color>
              <glowColor>00000005</glowColor>
             <fontSize>0.02</fontSize>
+            <fontSize tinyScreen="true">0.026</fontSize>
             <pos>0.5 0.94</pos>
+            <pos tinyScreen="true">0.5 0.9335</pos>
             <origin>0.5 0.5</origin>
             <zIndex>100</zIndex>
 			<alignment>center</alignment>
@@ -1432,7 +1436,7 @@ By Helmic
             </storyboard>
 		</video>
  
-		<image name="randomVideosFx" extra="true" ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff">
+		<image name="randomVideosFx" extra="true" ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff" tinyScreen="false">
             <size>1 1</size>
             <pos>0.5 0.5</pos>
 			<origin>0.5 0.5</origin>
@@ -1523,6 +1527,7 @@ By Helmic
 			<forceUppercase>true</forceUppercase>
 			<w>0.83</w>
 			<h>0.014</h>
+			<visible tinyScreen="true">false</visible>
 		</text>
 
 		<control name="systemNameRandomVideo,systemFullNameRandomVideo">
@@ -1618,11 +1623,12 @@ By Helmic
             <color ifSubset="bindingBar:colorsetAdaptive">${overlay.colorset}</color>
             <glowColor>00000040</glowColor>
 			<fontSize>0.02</fontSize>
-            <fontSize ifSubset="bindingBarFontSize:0.016">0.016</fontSize>
-            <fontSize ifSubset="bindingBarFontSize:0.018">0.018</fontSize>
-            <fontSize ifSubset="bindingBarFontSize:0.022">0.022</fontSize>
-            <fontSize ifSubset="bindingBarFontSize:0.024">0.024</fontSize>
-            <fontSize ifSubset="bindingBarFontSize:0.026">0.026</fontSize>
+			<fontSize tinyScreen="true">0.026</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.016" tinyScreen="false">0.016</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.018" tinyScreen="false">0.018</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.022" tinyScreen="false">0.022</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.024" tinyScreen="false">0.024</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.026" tinyScreen="false">0.026</fontSize>
             <pos>0.5 0.018</pos>
             <origin>0.5 0.5</origin>
             <zIndex>110</zIndex>
@@ -1643,12 +1649,13 @@ By Helmic
             <color ifSubset="bindingBar:colorsetAdaptive">${overlay.colorset}</color>
             <glowColor>00000040</glowColor>
 			<fontSize>0.02</fontSize>
-            <fontSize ifSubset="bindingBarFontSize:0.016">0.016</fontSize>
-            <fontSize ifSubset="bindingBarFontSize:0.018">0.018</fontSize>
-            <fontSize ifSubset="bindingBarFontSize:0.022">0.022</fontSize>
-            <fontSize ifSubset="bindingBarFontSize:0.024">0.024</fontSize>
-            <fontSize ifSubset="bindingBarFontSize:0.026">0.026</fontSize>
-            <pos>0.5 0.018</pos>
+			<fontSize tinyScreen="true">0.026</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.016" tinyScreen="false">0.016</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.018" tinyScreen="false">0.018</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.022" tinyScreen="false">0.022</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.024" tinyScreen="false">0.024</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.026" tinyScreen="false">0.026</fontSize>
+           <pos>0.5 0.018</pos>
             <origin>0.5 0.5</origin>
             <zIndex>110</zIndex>
 			<alignment>center</alignment>
@@ -1673,11 +1680,12 @@ By Helmic
             <color ifSubset="bindingBar:colorsetAdaptive">${overlay.colorset}</color>
             <glowColor>00000040</glowColor>
 			<fontSize>0.02</fontSize>
-            <fontSize ifSubset="bindingBarFontSize:0.016">0.016</fontSize>
-            <fontSize ifSubset="bindingBarFontSize:0.018">0.018</fontSize>
-            <fontSize ifSubset="bindingBarFontSize:0.022">0.022</fontSize>
-            <fontSize ifSubset="bindingBarFontSize:0.024">0.024</fontSize>
-            <fontSize ifSubset="bindingBarFontSize:0.026">0.026</fontSize>
+			<fontSize tinyScreen="true">0.026</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.016" tinyScreen="false">0.016</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.018" tinyScreen="false">0.018</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.022" tinyScreen="false">0.022</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.024" tinyScreen="false">0.024</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.026" tinyScreen="false">0.026</fontSize>
             <pos>0.5 0.018</pos>
             <origin>0.5 0.5</origin>
             <zIndex>110</zIndex>
@@ -1703,11 +1711,12 @@ By Helmic
             <color ifSubset="bindingBar:colorsetAdaptive">${overlay.colorset}</color>
             <glowColor>00000040</glowColor>
 			<fontSize>0.02</fontSize>
-            <fontSize ifSubset="bindingBarFontSize:0.016">0.016</fontSize>
-            <fontSize ifSubset="bindingBarFontSize:0.018">0.018</fontSize>
-            <fontSize ifSubset="bindingBarFontSize:0.022">0.022</fontSize>
-            <fontSize ifSubset="bindingBarFontSize:0.024">0.024</fontSize>
-            <fontSize ifSubset="bindingBarFontSize:0.026">0.026</fontSize>
+			<fontSize tinyScreen="true">0.026</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.016" tinyScreen="false">0.016</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.018" tinyScreen="false">0.018</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.022" tinyScreen="false">0.022</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.024" tinyScreen="false">0.024</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.026" tinyScreen="false">0.026</fontSize>
             <pos>0.5 0.018</pos>
             <origin>0.5 0.5</origin>
             <zIndex>110</zIndex>
@@ -1733,11 +1742,12 @@ By Helmic
             <color ifSubset="bindingBar:colorsetAdaptive">${overlay.colorset}</color>
             <glowColor>00000040</glowColor>
 			<fontSize>0.02</fontSize>
-            <fontSize ifSubset="bindingBarFontSize:0.016">0.016</fontSize>
-            <fontSize ifSubset="bindingBarFontSize:0.018">0.018</fontSize>
-            <fontSize ifSubset="bindingBarFontSize:0.022">0.022</fontSize>
-            <fontSize ifSubset="bindingBarFontSize:0.024">0.024</fontSize>
-            <fontSize ifSubset="bindingBarFontSize:0.026">0.026</fontSize>
+			<fontSize tinyScreen="true">0.026</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.016" tinyScreen="false">0.016</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.018" tinyScreen="false">0.018</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.022" tinyScreen="false">0.022</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.024" tinyScreen="false">0.024</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.026" tinyScreen="false">0.026</fontSize>
             <pos>0.5 0.018</pos>
             <origin>0.5 0.5</origin>
             <zIndex>110</zIndex>
@@ -1763,11 +1773,12 @@ By Helmic
             <color ifSubset="bindingBar:colorsetAdaptive">${overlay.colorset}</color>
             <glowColor>00000040</glowColor>
 			<fontSize>0.02</fontSize>
-            <fontSize ifSubset="bindingBarFontSize:0.016">0.016</fontSize>
-            <fontSize ifSubset="bindingBarFontSize:0.018">0.018</fontSize>
-            <fontSize ifSubset="bindingBarFontSize:0.022">0.022</fontSize>
-            <fontSize ifSubset="bindingBarFontSize:0.024">0.024</fontSize>
-            <fontSize ifSubset="bindingBarFontSize:0.026">0.026</fontSize>
+			<fontSize tinyScreen="true">0.026</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.016" tinyScreen="false">0.016</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.018" tinyScreen="false">0.018</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.022" tinyScreen="false">0.022</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.024" tinyScreen="false">0.024</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.026" tinyScreen="false">0.026</fontSize>
             <pos>0.5 0.018</pos>
             <origin>0.5 0.5</origin>
             <zIndex>110</zIndex>
@@ -1793,11 +1804,12 @@ By Helmic
             <color ifSubset="bindingBar:colorsetAdaptive">${overlay.colorset}</color>
             <glowColor>00000040</glowColor>
 			<fontSize>0.02</fontSize>
-            <fontSize ifSubset="bindingBarFontSize:0.016">0.016</fontSize>
-            <fontSize ifSubset="bindingBarFontSize:0.018">0.018</fontSize>
-            <fontSize ifSubset="bindingBarFontSize:0.022">0.022</fontSize>
-            <fontSize ifSubset="bindingBarFontSize:0.024">0.024</fontSize>
-            <fontSize ifSubset="bindingBarFontSize:0.026">0.026</fontSize>
+			<fontSize tinyScreen="true">0.026</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.016" tinyScreen="false">0.016</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.018" tinyScreen="false">0.018</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.022" tinyScreen="false">0.022</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.024" tinyScreen="false">0.024</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.026" tinyScreen="false">0.026</fontSize>
             <pos>0.5 0.018</pos>
             <origin>0.5 0.5</origin>
             <zIndex>110</zIndex>
@@ -1823,11 +1835,12 @@ By Helmic
             <color ifSubset="bindingBar:colorsetAdaptive">${overlay.colorset}</color>
             <glowColor>00000040</glowColor>
 			<fontSize>0.02</fontSize>
-            <fontSize ifSubset="bindingBarFontSize:0.016">0.016</fontSize>
-            <fontSize ifSubset="bindingBarFontSize:0.018">0.018</fontSize>
-            <fontSize ifSubset="bindingBarFontSize:0.022">0.022</fontSize>
-            <fontSize ifSubset="bindingBarFontSize:0.024">0.024</fontSize>
-            <fontSize ifSubset="bindingBarFontSize:0.026">0.026</fontSize>
+			<fontSize tinyScreen="true">0.026</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.016" tinyScreen="false">0.016</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.018" tinyScreen="false">0.018</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.022" tinyScreen="false">0.022</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.024" tinyScreen="false">0.024</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.026" tinyScreen="false">0.026</fontSize>
             <pos>0.5 0.018</pos>
             <origin>0.5 0.5</origin>
             <zIndex>110</zIndex>
@@ -1854,11 +1867,12 @@ By Helmic
             <color ifSubset="bindingBar:colorsetAdaptive">${overlay.colorset}</color>
             <glowColor>00000040</glowColor>
 			<fontSize>0.02</fontSize>
-            <fontSize ifSubset="bindingBarFontSize:0.016">0.016</fontSize>
-            <fontSize ifSubset="bindingBarFontSize:0.018">0.018</fontSize>
-            <fontSize ifSubset="bindingBarFontSize:0.022">0.022</fontSize>
-            <fontSize ifSubset="bindingBarFontSize:0.024">0.024</fontSize>
-            <fontSize ifSubset="bindingBarFontSize:0.026">0.026</fontSize>
+			<fontSize tinyScreen="true">0.026</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.016" tinyScreen="false">0.016</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.018" tinyScreen="false">0.018</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.022" tinyScreen="false">0.022</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.024" tinyScreen="false">0.024</fontSize>
+            <fontSize ifSubset="bindingBarFontSize:0.026" tinyScreen="false">0.026</fontSize>
             <pos>0.5 0.018</pos>
             <origin>0.5 0.5</origin>
             <zIndex>110</zIndex>
@@ -2092,6 +2106,7 @@ By Helmic
             <color>dddddd</color>
             <glowColor>00000080</glowColor>
             <fontSize>0.018</fontSize>
+            <fontSize tinyScreen="true">0.024</fontSize>
             <pos>0.5 0.94</pos>
             <origin>0.5 0.5</origin>
             <zIndex>99</zIndex>
@@ -2576,19 +2591,20 @@ By Helmic
 			<selectorColor ifSubset="overlayColorset:noColor">ffffff</selectorColor>	  		
 			<fontPath>./_inc/fonts/${font1}</fontPath>
 			<fontSize>0.020</fontSize>
-			<fontSize ifSubset="gamelistFontSize:0.022">0.022</fontSize>
-			<fontSize ifSubset="gamelistFontSize:0.024">0.024</fontSize>
-			<fontSize ifSubset="gamelistFontSize:0.026">0.026</fontSize>
+			<fontSize tinyScreen="true">0.022</fontSize>
+			<fontSize ifSubset="gamelistFontSize:0.022" tinyScreen="false">0.022</fontSize>
+			<fontSize ifSubset="gamelistFontSize:0.024" tinyScreen="false">0.024</fontSize>
+			<fontSize ifSubset="gamelistFontSize:0.026" tinyScreen="false">0.026</fontSize>
 			<alignment>center</alignment>
 			<horizontalMargin>0.001</horizontalMargin>
 			<forceUppercase>true</forceUppercase>
 			<scrollSound>./_inc/scroll/gamelist.wav</scrollSound>
 			<zIndex>13</zIndex>
 			<lines>21</lines>
-			<lines ifSubset="basicGamelistLines:15">15</lines>
-			<lines ifSubset="basicGamelistLines:17">17</lines>
-			<lines ifSubset="basicGamelistLines:19">19</lines>
-			<lines ifSubset="basicGamelistLines:23">23</lines>
+			<lines ifSubset="basicGamelistLines:15" tinyScreen="false">15</lines>
+			<lines ifSubset="basicGamelistLines:17" tinyScreen="false">17</lines>
+			<lines ifSubset="basicGamelistLines:19" tinyScreen="false">19</lines>
+			<lines ifSubset="basicGamelistLines:23" tinyScreen="false">23</lines>
  			</textlist>
 
 		<text name="basicBar" extra="true">
@@ -2816,7 +2832,7 @@ By Helmic
 			<zIndex>10</zIndex>
 		</image>
 
-		<image name="randomVideosFx" extra="true">
+		<image name="randomVideosFx" extra="true" tinyScreen="false">
 			<origin>0.5 0.5</origin>
 			<zIndex>14</zIndex>
 			<tile>true</tile>
@@ -3377,8 +3393,10 @@ By Helmic
             <color ifSubset="gameHeadColor:colorsetAdaptive">${overlay.colorset}</color>
             <glowColor>00000005</glowColor>
             <glowColor ifSubset="gameHeadColor:colorsetAdaptive">09090920</glowColor>
-            <fontSize>0.02</fontSize>
+            <fontSize>0.018</fontSize>
+            <fontSize tinyScreen="true">0.024</fontSize>
             <pos>0.0134375 0.0425</pos>
+            <offsetY tinyScreen="true">-0.015</offsetY>
             <origin>0 0</origin>
             <zIndex>10</zIndex>
 			<alignment>left</alignment>
@@ -3387,7 +3405,7 @@ By Helmic
 			<w ifSubset="themeRatio:54|43">0.6</w>
 			<h>0.034</h>
 			<storyboard event="open">
-                <animation property="w" from="0.34" to="0.34" duration="1" mode="linear"/>
+                 <animation property="w" from="0" to="0.34" duration="750" mode="easeOut"/>
             </storyboard>
 			<storyboard event="activateNext">
                  <animation property="w" from="0" to="0.34" duration="750" mode="easeOut"/>
@@ -3403,7 +3421,7 @@ By Helmic
             </storyboard>
 
 			<storyboard event="open" ifSubset="themeRatio:54|43">
-                <animation property="w" from="0.6" to="0.6" duration="1" mode="linear"/>
+                 <animation property="w" from="0" to="0.6" duration="750" mode="easeOut"/>
             </storyboard>
 			<storyboard event="activateNext" ifSubset="themeRatio:54|43">
                  <animation property="w" from="0" to="0.6" duration="750" mode="easeOut"/>
@@ -3427,7 +3445,9 @@ By Helmic
 			<color ifSubset="systemNameColor:colorsetAdaptive">${overlay.colorset}</color>
             <glowColor ifSubset="systemNameColor:colorsetAdaptive">09090920</glowColor>
             <fontSize>0.014</fontSize>
+			<fontSize tinyScreen="true">0.016</fontSize>
             <pos>0.0134375 0.075</pos>
+            <offsetY tinyScreen="true">-0.01</offsetY>
             <origin>0 0</origin>
             <zIndex>10</zIndex>
 			<alignment>left</alignment>
@@ -3457,6 +3477,7 @@ By Helmic
 			<color ifSubset="releaseColor:colorYellow">cccc00</color>
 			<color ifSubset="releaseColor:colorsetAdaptive">${overlay.colorset}</color>
 			<fontSize>0.014</fontSize>
+			<fontSize tinyScreen="true">0.016</fontSize>
             <pos>0.0134375 0.095</pos>
             <origin>0 0</origin>
             <zIndex>10</zIndex>
@@ -3469,6 +3490,7 @@ By Helmic
 		<image name="line" extra="true">
 			<path>./_inc/white.png</path>
 			<size>0.34 0.001</size>
+			<size tinyScreen="true">0.34 0.0015</size>
             <pos>0.0134375 0.1155</pos>
             <origin>0 1</origin>>
 			<zIndex>10</zIndex>
@@ -3495,6 +3517,7 @@ By Helmic
 		<image name="line2" extra="true">
 			<path>./_inc/white.png</path>
 			<size>0.34 0.001</size>
+			<size tinyScreen="true">0.34 0.0015</size>
             <pos>0.0134375 0.36</pos>
             <pos ifSubset="themeRatio:54|43">0.0134375 0.5</pos>
             <origin>0 0</origin>>
@@ -3527,8 +3550,9 @@ By Helmic
 			<glowColor ifSubset="descriptionColor:colorsetAdaptive">09090920</glowColor>
 			<fontPath>./_inc/fonts/${font1}</fontPath>
 			<fontSize>0.016</fontSize>
-			<fontSize ifSubset="descriptionFontSize:0.018">0.018</fontSize>
-			<fontSize ifSubset="descriptionFontSize:0.020">0.020</fontSize>
+			<fontSize tinyScreen="true">0.02</fontSize>
+			<fontSize ifSubset="descriptionFontSize:0.018" tinyScreen="false">0.018</fontSize>
+			<fontSize ifSubset="descriptionFontSize:0.020" tinyScreen="false">0.020</fontSize>
 			<size>0.34 0.2425</size>
 			<size ifSubset="themeRatio:54|43">0.34 0.3825</size>
             <pos>0.0134375 0.1175</pos>
@@ -3584,6 +3608,7 @@ By Helmic
 			<origin>0 1</origin>
 			<pos>0.105 0.112</pos>
 			<pos ifSubset="themeRatio:54|43">0.155 0.111</pos>
+			<pos tinyScreen="true" ifSubset="themeRatio:54|43">0.155 0.108</pos>
 			<zIndex>15</zIndex>
 			<color ifSubset="gamebarColor:colorWhite">dddddd</color>
 			<color ifSubset="gamebarColor:colorYellow">dddd00</color>
@@ -3811,11 +3836,12 @@ By Helmic
             <zIndex>110</zIndex>
 			<w>0.5</w>
             <h>0.02</h>
-            <h ifSubset="gameInfosBarFontSize:0.016">0.016</h>
-            <h ifSubset="gameInfosBarFontSize:0.018">0.018</h>
-            <h ifSubset="gameInfosBarFontSize:0.022">0.022</h>
-            <h ifSubset="gameInfosBarFontSize:0.024">0.024</h>
-            <h ifSubset="gameInfosBarFontSize:0.026">0.026</h>
+            <h tinyScreen="true">0.026</h>
+            <h ifSubset="gameInfosBarFontSize:0.016" tinyScreen="false">0.016</h>
+            <h ifSubset="gameInfosBarFontSize:0.018" tinyScreen="false">0.018</h>
+            <h ifSubset="gameInfosBarFontSize:0.022" tinyScreen="false">0.022</h>
+            <h ifSubset="gameInfosBarFontSize:0.024" tinyScreen="false">0.024</h>
+            <h ifSubset="gameInfosBarFontSize:0.026" tinyScreen="false">0.026</h>
 			<opacity>0</opacity>
 			<storyboard event="open" repeatAt="1">
                 <animation property="offsetX" from="0" to="0" duration="250" mode="linear" begin="1"/>
@@ -3854,11 +3880,12 @@ By Helmic
             <color ifSubset="gamebindsColor:colorsetAdaptive">${overlay.colorset}</color>
             <glowColor>00000005</glowColor>
             <fontSize>0.02</fontSize>
-            <fontSize ifSubset="gameInfosBarFontSize:0.016">0.016</fontSize>
-            <fontSize ifSubset="gameInfosBarFontSize:0.018">0.018</fontSize>
-            <fontSize ifSubset="gameInfosBarFontSize:0.022">0.022</fontSize>
-            <fontSize ifSubset="gameInfosBarFontSize:0.024">0.024</fontSize>
-            <fontSize ifSubset="gameInfosBarFontSize:0.026">0.026</fontSize>
+            <fontSize tinyScreen="true">0.026</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.016" tinyScreen="false">0.016</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.018" tinyScreen="false">0.018</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.022" tinyScreen="false">0.022</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.024" tinyScreen="false">0.024</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.026" tinyScreen="false">0.026</fontSize>
             <pos>0.5 0.018</pos>
             <origin>0.5 0.5</origin>
             <zIndex>110</zIndex>
@@ -3907,11 +3934,12 @@ By Helmic
             <color ifSubset="gamebindsColor:colorsetAdaptive">${overlay.colorset}</color>
             <glowColor>00000005</glowColor>
             <fontSize>0.02</fontSize>
-            <fontSize ifSubset="gameInfosBarFontSize:0.016">0.016</fontSize>
-            <fontSize ifSubset="gameInfosBarFontSize:0.018">0.018</fontSize>
-            <fontSize ifSubset="gameInfosBarFontSize:0.022">0.022</fontSize>
-            <fontSize ifSubset="gameInfosBarFontSize:0.024">0.024</fontSize>
-            <fontSize ifSubset="gameInfosBarFontSize:0.026">0.026</fontSize>
+            <fontSize tinyScreen="true">0.026</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.016" tinyScreen="false">0.016</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.018" tinyScreen="false">0.018</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.022" tinyScreen="false">0.022</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.024" tinyScreen="false">0.024</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.026" tinyScreen="false">0.026</fontSize>
             <pos>0.5 0.018</pos>
             <origin>0 0.5</origin>
             <zIndex>110</zIndex>
@@ -3960,11 +3988,12 @@ By Helmic
             <color ifSubset="gamebindsColor:colorsetAdaptive">${overlay.colorset}</color>
             <glowColor>00000005</glowColor>
             <fontSize>0.02</fontSize>
-            <fontSize ifSubset="gameInfosBarFontSize:0.016">0.016</fontSize>
-            <fontSize ifSubset="gameInfosBarFontSize:0.018">0.018</fontSize>
-            <fontSize ifSubset="gameInfosBarFontSize:0.022">0.022</fontSize>
-            <fontSize ifSubset="gameInfosBarFontSize:0.024">0.024</fontSize>
-            <fontSize ifSubset="gameInfosBarFontSize:0.026">0.026</fontSize>
+            <fontSize tinyScreen="true">0.026</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.016" tinyScreen="false">0.016</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.018" tinyScreen="false">0.018</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.022" tinyScreen="false">0.022</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.024" tinyScreen="false">0.024</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.026" tinyScreen="false">0.026</fontSize>
             <pos>0.5 0.018</pos>
             <origin>1 0.5</origin>
             <zIndex>110</zIndex>
@@ -4013,11 +4042,12 @@ By Helmic
             <color ifSubset="gamebindsColor:colorsetAdaptive">${overlay.colorset}</color>
             <glowColor>00000005</glowColor>
             <fontSize>0.02</fontSize>
-            <fontSize ifSubset="gameInfosBarFontSize:0.016">0.016</fontSize>
-            <fontSize ifSubset="gameInfosBarFontSize:0.018">0.018</fontSize>
-            <fontSize ifSubset="gameInfosBarFontSize:0.022">0.022</fontSize>
-            <fontSize ifSubset="gameInfosBarFontSize:0.024">0.024</fontSize>
-            <fontSize ifSubset="gameInfosBarFontSize:0.026">0.026</fontSize>
+            <fontSize tinyScreen="true">0.026</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.016" tinyScreen="false">0.016</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.018" tinyScreen="false">0.018</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.022" tinyScreen="false">0.022</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.024" tinyScreen="false">0.024</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.026" tinyScreen="false">0.026</fontSize>
             <pos>0.5 0.018</pos>
             <origin>0 0.5</origin>
             <zIndex>110</zIndex>
@@ -4066,11 +4096,12 @@ By Helmic
             <color ifSubset="gamebindsColor:colorsetAdaptive">${overlay.colorset}</color>
             <glowColor>00000005</glowColor>
             <fontSize>0.02</fontSize>
-            <fontSize ifSubset="gameInfosBarFontSize:0.016">0.016</fontSize>
-            <fontSize ifSubset="gameInfosBarFontSize:0.018">0.018</fontSize>
-            <fontSize ifSubset="gameInfosBarFontSize:0.022">0.022</fontSize>
-            <fontSize ifSubset="gameInfosBarFontSize:0.024">0.024</fontSize>
-            <fontSize ifSubset="gameInfosBarFontSize:0.026">0.026</fontSize>
+            <fontSize tinyScreen="true">0.026</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.016" tinyScreen="false">0.016</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.018" tinyScreen="false">0.018</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.022" tinyScreen="false">0.022</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.024" tinyScreen="false">0.024</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.026" tinyScreen="false">0.026</fontSize>
             <pos>0.5 0.018</pos>
             <origin>1 0.5</origin>
             <zIndex>110</zIndex>
@@ -4118,11 +4149,12 @@ By Helmic
             <color ifSubset="gamebindsColor:colorWhite">dddddd</color>
             <color ifSubset="gamebindsColor:colorsetAdaptive">${overlay.colorset}</color>
             <fontSize>0.02</fontSize>
-            <fontSize ifSubset="gameInfosBarFontSize:0.016">0.016</fontSize>
-            <fontSize ifSubset="gameInfosBarFontSize:0.018">0.018</fontSize>
-            <fontSize ifSubset="gameInfosBarFontSize:0.022">0.022</fontSize>
-            <fontSize ifSubset="gameInfosBarFontSize:0.024">0.024</fontSize>
-            <fontSize ifSubset="gameInfosBarFontSize:0.026">0.026</fontSize>
+            <fontSize tinyScreen="true">0.026</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.016" tinyScreen="false">0.016</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.018" tinyScreen="false">0.018</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.022" tinyScreen="false">0.022</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.024" tinyScreen="false">0.024</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.026" tinyScreen="false">0.026</fontSize>
             <pos>0.5 0.018</pos>
             <origin>0 0.5</origin>
             <zIndex>110</zIndex>
@@ -4171,11 +4203,12 @@ By Helmic
             <color ifSubset="gamebindsColor:colorsetAdaptive">${overlay.colorset}</color>
             <glowColor>00000005</glowColor>
             <fontSize>0.02</fontSize>
-            <fontSize ifSubset="gameInfosBarFontSize:0.016">0.016</fontSize>
-            <fontSize ifSubset="gameInfosBarFontSize:0.018">0.018</fontSize>
-            <fontSize ifSubset="gameInfosBarFontSize:0.022">0.022</fontSize>
-            <fontSize ifSubset="gameInfosBarFontSize:0.024">0.024</fontSize>
-            <fontSize ifSubset="gameInfosBarFontSize:0.026">0.026</fontSize>
+            <fontSize tinyScreen="true">0.026</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.016" tinyScreen="false">0.016</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.018" tinyScreen="false">0.018</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.022" tinyScreen="false">0.022</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.024" tinyScreen="false">0.024</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.026" tinyScreen="false">0.026</fontSize>
             <pos>0.5 0.018</pos>
             <origin>1 0.5</origin>
             <zIndex>110</zIndex>
@@ -4223,11 +4256,12 @@ By Helmic
             <color ifSubset="gamebindsColor:colorWhite">dddddd</color>
             <color ifSubset="gamebindsColor:colorsetAdaptive">${overlay.colorset}</color>
             <fontSize>0.02</fontSize>
-            <fontSize ifSubset="gameInfosBarFontSize:0.016">0.016</fontSize>
-            <fontSize ifSubset="gameInfosBarFontSize:0.018">0.018</fontSize>
-            <fontSize ifSubset="gameInfosBarFontSize:0.022">0.022</fontSize>
-            <fontSize ifSubset="gameInfosBarFontSize:0.024">0.024</fontSize>
-            <fontSize ifSubset="gameInfosBarFontSize:0.026">0.026</fontSize>
+            <fontSize tinyScreen="true">0.026</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.016" tinyScreen="false">0.016</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.018" tinyScreen="false">0.018</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.022" tinyScreen="false">0.022</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.024" tinyScreen="false">0.024</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.026" tinyScreen="false">0.026</fontSize>
             <pos>0.5 0.018</pos>
             <origin>0 0.5</origin>
             <zIndex>110</zIndex>
@@ -4274,11 +4308,12 @@ By Helmic
             <color ifSubset="gamebindsColor:colorsetAdaptive">${overlay.colorset}</color>
             <glowColor>00000005</glowColor>
             <fontSize>0.02</fontSize>
-            <fontSize ifSubset="gameInfosBarFontSize:0.016">0.016</fontSize>
-            <fontSize ifSubset="gameInfosBarFontSize:0.018">0.018</fontSize>
-            <fontSize ifSubset="gameInfosBarFontSize:0.022">0.022</fontSize>
-            <fontSize ifSubset="gameInfosBarFontSize:0.024">0.024</fontSize>
-            <fontSize ifSubset="gameInfosBarFontSize:0.026">0.026</fontSize>
+            <fontSize tinyScreen="true">0.026</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.016" tinyScreen="false">0.016</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.018" tinyScreen="false">0.018</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.022" tinyScreen="false">0.022</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.024" tinyScreen="false">0.024</fontSize>
+            <fontSize ifSubset="gameInfosBarFontSize:0.026" tinyScreen="false">0.026</fontSize>
             <pos>0.5 0.018</pos>
             <origin>1 0.5</origin>
             <zIndex>110</zIndex>
@@ -4348,19 +4383,20 @@ By Helmic
 			<selectorColor ifSubset="overlayColorset:noColor">ffffff</selectorColor>	  		
 			<fontPath>./_inc/fonts/${font1}</fontPath>
 			<fontSize>0.020</fontSize>
-			<fontSize ifSubset="gamelistFontSize:0.022">0.022</fontSize>
-			<fontSize ifSubset="gamelistFontSize:0.024">0.024</fontSize>
-			<fontSize ifSubset="gamelistFontSize:0.026">0.026</fontSize>
+			<fontSize tinyScreen="true">0.022</fontSize>
+			<fontSize ifSubset="gamelistFontSize:0.022" tinyScreen="false">0.022</fontSize>
+			<fontSize ifSubset="gamelistFontSize:0.024" tinyScreen="false">0.024</fontSize>
+			<fontSize ifSubset="gamelistFontSize:0.026" tinyScreen="false">0.026</fontSize>
 			<alignment>left</alignment>
 			<horizontalMargin>0.02</horizontalMargin>
 			<forceUppercase>true</forceUppercase>
 			<scrollSound>./_inc/scroll/gamelist.wav</scrollSound>
 			<zIndex>13</zIndex>
 			<lines>15</lines>
-			<lines ifSubset="detailedGamelistLines:17">17</lines>
-			<lines ifSubset="detailedGamelistLines:19">19</lines>
-			<lines ifSubset="detailedGamelistLines:21">21</lines>
-			<lines ifSubset="detailedGamelistLines:23">23</lines>
+			<lines ifSubset="detailedGamelistLines:17" tinyScreen="false">17</lines>
+			<lines ifSubset="detailedGamelistLines:19" tinyScreen="false">19</lines>
+			<lines ifSubset="detailedGamelistLines:21" tinyScreen="false">21</lines>
+			<lines ifSubset="detailedGamelistLines:23" tinyScreen="false">23</lines>
  			</textlist>
 
 <!-------------------------------------------------------------MD_DESCRIPTION DETAILED SPECIFICATIONS------------------------------------------------------------------------------>
@@ -5273,11 +5309,12 @@ By Helmic
 			<textColor ifSubset="helpTextColor:colorYellow">ffff00</textColor>
 			<textColor ifSubset="helpTextColor:colorsetAdaptive">${overlay.colorset}</textColor>
 			<fontSize>0.02</fontSize>
-            <fontSize ifSubset="helpFontSize:0.016">0.016</fontSize>
-            <fontSize ifSubset="helpFontSize:0.018">0.018</fontSize>
-            <fontSize ifSubset="helpFontSize:0.022">0.022</fontSize>
-            <fontSize ifSubset="helpFontSize:0.024">0.024</fontSize>
-            <fontSize ifSubset="helpFontSize:0.026">0.026</fontSize>
+			<fontSize tinyScreen="true">0.026</fontSize>
+            <fontSize ifSubset="helpFontSize:0.016" tinyScreen="false">0.016</fontSize>
+            <fontSize ifSubset="helpFontSize:0.018" tinyScreen="false">0.018</fontSize>
+            <fontSize ifSubset="helpFontSize:0.022" tinyScreen="false">0.022</fontSize>
+            <fontSize ifSubset="helpFontSize:0.024" tinyScreen="false">0.024</fontSize>
+            <fontSize ifSubset="helpFontSize:0.026" tinyScreen="false">0.026</fontSize>
 			<origin>0 0.5</origin>
 			<pos>0.004 0.982</pos>
 			<fontPath>./_inc/fonts/${font2}</fontPath>
@@ -5388,20 +5425,21 @@ By Helmic
 
         <menuText name="menutitle">
             <fontPath>./_inc/fonts/${font1}</fontPath>
-            <fontSize>0.03</fontSize>
-            <fontSize ifSubset="menuFontSize:+1">0.031</fontSize>
-            <fontSize ifSubset="menuFontSize:+2">0.032</fontSize>
-            <fontSize ifSubset="menuFontSize:+3">0.033</fontSize>
-            <fontSize ifSubset="menuFontSize:+4">0.034</fontSize>
-            <fontSize ifSubset="menuFontSize:+5">0.035</fontSize>
-            <fontSize ifSubset="menuFontSize:+6">0.036</fontSize>
-            <fontSize ifSubset="menuFontSize:+7">0.037</fontSize>
-            <fontSize ifSubset="menuFontSize:+8">0.038</fontSize>
-            <fontSize ifSubset="menuFontSize:+9">0.039</fontSize>
-            <fontSize ifSubset="menuFontSize:+10">0.040</fontSize>
-            <fontSize ifSubset="menuFontSize:-1">0.029</fontSize>
-            <fontSize ifSubset="menuFontSize:-2">0.028</fontSize>
-            <fontSize ifSubset="menuFontSize:-3">0.027</fontSize>
+            <fontSize>0.028</fontSize>
+            <fontSize tinyScreen="true">0.04</fontSize>
+            <fontSize ifSubset="menuFontSize:+1" tinyScreen="false">0.031</fontSize>
+            <fontSize ifSubset="menuFontSize:+2" tinyScreen="false">0.032</fontSize>
+            <fontSize ifSubset="menuFontSize:+3" tinyScreen="false">0.033</fontSize>
+            <fontSize ifSubset="menuFontSize:+4" tinyScreen="false">0.034</fontSize>
+            <fontSize ifSubset="menuFontSize:+5" tinyScreen="false">0.035</fontSize>
+            <fontSize ifSubset="menuFontSize:+6" tinyScreen="false">0.036</fontSize>
+            <fontSize ifSubset="menuFontSize:+7" tinyScreen="false">0.037</fontSize>
+            <fontSize ifSubset="menuFontSize:+8" tinyScreen="false">0.038</fontSize>
+            <fontSize ifSubset="menuFontSize:+9" tinyScreen="false">0.039</fontSize>
+            <fontSize ifSubset="menuFontSize:+10" tinyScreen="false">0.040</fontSize>
+            <fontSize ifSubset="menuFontSize:-1" tinyScreen="false">0.029</fontSize>
+            <fontSize ifSubset="menuFontSize:-2" tinyScreen="false">0.028</fontSize>
+            <fontSize ifSubset="menuFontSize:-3" tinyScreen="false">0.027</fontSize>
             <color ifSubset="menuColor:light|lightPlain">202020</color>
             <color ifSubset="menuColor:dark|darkGlass|darkPlain">cccccc</color>
         </menuText>
@@ -5409,19 +5447,20 @@ By Helmic
         <menuText name="menufooter">
             <fontPath>./_inc/fonts/${font1}</fontPath>
             <fontSize>0.016</fontSize>
-            <fontSize ifSubset="menuFontSize:+1">0.017</fontSize>
-            <fontSize ifSubset="menuFontSize:+2">0.018</fontSize>
-            <fontSize ifSubset="menuFontSize:+3">0.019</fontSize>
-            <fontSize ifSubset="menuFontSize:+4">0.020</fontSize>
-            <fontSize ifSubset="menuFontSize:+5">0.021</fontSize>
-            <fontSize ifSubset="menuFontSize:+6">0.022</fontSize>
-            <fontSize ifSubset="menuFontSize:+7">0.023</fontSize>
-            <fontSize ifSubset="menuFontSize:+8">0.024</fontSize>
-            <fontSize ifSubset="menuFontSize:+9">0.025</fontSize>
-            <fontSize ifSubset="menuFontSize:+10">0.026</fontSize>
-            <fontSize ifSubset="menuFontSize:-1">0.015</fontSize>
-            <fontSize ifSubset="menuFontSize:-2">0.014</fontSize>
-            <fontSize ifSubset="menuFontSize:-3">0.013</fontSize>
+            <fontSize tinyScreen="true">0.026</fontSize>
+            <fontSize ifSubset="menuFontSize:+1" tinyScreen="false">0.017</fontSize>
+            <fontSize ifSubset="menuFontSize:+2" tinyScreen="false">0.018</fontSize>
+            <fontSize ifSubset="menuFontSize:+3" tinyScreen="false">0.019</fontSize>
+            <fontSize ifSubset="menuFontSize:+4" tinyScreen="false">0.020</fontSize>
+            <fontSize ifSubset="menuFontSize:+5" tinyScreen="false">0.021</fontSize>
+            <fontSize ifSubset="menuFontSize:+6" tinyScreen="false">0.022</fontSize>
+            <fontSize ifSubset="menuFontSize:+7" tinyScreen="false">0.023</fontSize>
+            <fontSize ifSubset="menuFontSize:+8" tinyScreen="false">0.024</fontSize>
+            <fontSize ifSubset="menuFontSize:+9" tinyScreen="false">0.025</fontSize>
+            <fontSize ifSubset="menuFontSize:+10" tinyScreen="false">0.026</fontSize>
+            <fontSize ifSubset="menuFontSize:-1" tinyScreen="false">0.015</fontSize>
+            <fontSize ifSubset="menuFontSize:-2" tinyScreen="false">0.014</fontSize>
+            <fontSize ifSubset="menuFontSize:-3" tinyScreen="false">0.013</fontSize>
             <color ifSubset="menuColor:light|lightPlain">202020</color>
             <color ifSubset="menuColor:dark|darkGlass|darkPlain">aaaaaa</color>
         </menuText>
@@ -5429,19 +5468,20 @@ By Helmic
         <menuText name="menutext">
             <fontPath>./_inc/fonts/${font1}</fontPath>
             <fontSize>0.016</fontSize>
-            <fontSize ifSubset="menuFontSize:+1">0.017</fontSize>
-            <fontSize ifSubset="menuFontSize:+2">0.018</fontSize>
-            <fontSize ifSubset="menuFontSize:+3">0.019</fontSize>
-            <fontSize ifSubset="menuFontSize:+4">0.020</fontSize>
-            <fontSize ifSubset="menuFontSize:+5">0.021</fontSize>
-            <fontSize ifSubset="menuFontSize:+6">0.022</fontSize>
-            <fontSize ifSubset="menuFontSize:+7">0.023</fontSize>
-            <fontSize ifSubset="menuFontSize:+8">0.024</fontSize>
-            <fontSize ifSubset="menuFontSize:+9">0.025</fontSize>
-            <fontSize ifSubset="menuFontSize:+10">0.026</fontSize>
-            <fontSize ifSubset="menuFontSize:-1">0.015</fontSize>
-            <fontSize ifSubset="menuFontSize:-2">0.014</fontSize>
-            <fontSize ifSubset="menuFontSize:-3">0.013</fontSize>
+            <fontSize tinyScreen="true">0.024</fontSize>
+            <fontSize ifSubset="menuFontSize:+1" tinyScreen="false">0.017</fontSize>
+            <fontSize ifSubset="menuFontSize:+2" tinyScreen="false">0.018</fontSize>
+            <fontSize ifSubset="menuFontSize:+3" tinyScreen="false">0.019</fontSize>
+            <fontSize ifSubset="menuFontSize:+4" tinyScreen="false">0.020</fontSize>
+            <fontSize ifSubset="menuFontSize:+5" tinyScreen="false">0.021</fontSize>
+            <fontSize ifSubset="menuFontSize:+6" tinyScreen="false">0.022</fontSize>
+            <fontSize ifSubset="menuFontSize:+7" tinyScreen="false">0.023</fontSize>
+            <fontSize ifSubset="menuFontSize:+8" tinyScreen="false">0.024</fontSize>
+            <fontSize ifSubset="menuFontSize:+9" tinyScreen="false">0.025</fontSize>
+            <fontSize ifSubset="menuFontSize:+10" tinyScreen="false">0.026</fontSize>
+            <fontSize ifSubset="menuFontSize:-1" tinyScreen="false">0.015</fontSize>
+            <fontSize ifSubset="menuFontSize:-2" tinyScreen="false">0.014</fontSize>
+            <fontSize ifSubset="menuFontSize:-3" tinyScreen="false">0.013</fontSize>
             <color ifSubset="menuColor:light||lightPlain">121212</color>
             <color ifSubset="menuColor:light">121212</color>
             <color ifSubset="menuColor:dark|darkGlass|darkPlain">aaaaaa</color>
@@ -5456,19 +5496,20 @@ By Helmic
         <menuTextSmall name="menutextsmall">
             <fontPath>./_inc/fonts/${font1}</fontPath>
             <fontSize>0.014</fontSize>
-            <fontSize ifSubset="menuFontSize:+1">0.015</fontSize>
-            <fontSize ifSubset="menuFontSize:+2">0.016</fontSize>
-            <fontSize ifSubset="menuFontSize:+3">0.017</fontSize>
-            <fontSize ifSubset="menuFontSize:+4">0.018</fontSize>
-            <fontSize ifSubset="menuFontSize:+5">0.019</fontSize>
-            <fontSize ifSubset="menuFontSize:+6">0.020</fontSize>
-            <fontSize ifSubset="menuFontSize:+7">0.021</fontSize>
-            <fontSize ifSubset="menuFontSize:+8">0.022</fontSize>
-            <fontSize ifSubset="menuFontSize:+9">0.023</fontSize>
-            <fontSize ifSubset="menuFontSize:+10">0.024</fontSize>
-            <fontSize ifSubset="menuFontSize:-1">0.013</fontSize>
-            <fontSize ifSubset="menuFontSize:-2">0.012</fontSize>
-            <fontSize ifSubset="menuFontSize:-3">0.011</fontSize>
+            <fontSize tinyScreen="true">0.024</fontSize>
+            <fontSize ifSubset="menuFontSize:+1" tinyScreen="false">0.015</fontSize>
+            <fontSize ifSubset="menuFontSize:+2" tinyScreen="false">0.016</fontSize>
+            <fontSize ifSubset="menuFontSize:+3" tinyScreen="false">0.017</fontSize>
+            <fontSize ifSubset="menuFontSize:+4" tinyScreen="false">0.018</fontSize>
+            <fontSize ifSubset="menuFontSize:+5" tinyScreen="false">0.019</fontSize>
+            <fontSize ifSubset="menuFontSize:+6" tinyScreen="false">0.020</fontSize>
+            <fontSize ifSubset="menuFontSize:+7" tinyScreen="false">0.021</fontSize>
+            <fontSize ifSubset="menuFontSize:+8" tinyScreen="false">0.022</fontSize>
+            <fontSize ifSubset="menuFontSize:+9" tinyScreen="false">0.023</fontSize>
+            <fontSize ifSubset="menuFontSize:+10" tinyScreen="false">0.024</fontSize>
+            <fontSize ifSubset="menuFontSize:-1" tinyScreen="false">0.013</fontSize>
+            <fontSize ifSubset="menuFontSize:-2" tinyScreen="false">0.012</fontSize>
+            <fontSize ifSubset="menuFontSize:-3" tinyScreen="false">0.011</fontSize>
        </menuTextSmall>
 
         <menuBackground name="menubg">
@@ -5549,6 +5590,7 @@ By Helmic
 		<controllerActivity name="controllerActivity">
 			<pos>0.002 0.006</pos>
 			<size>0.065 0.020</size>
+			<size tinyScreen="true">0.0925 0.030</size>
 			<itemSpacing>0.003</itemSpacing>
 			<imagePath>./_inc/icons/gamepad.svg</imagePath>
 			<gunPath>./_inc/icons/gun.svg</gunPath>
@@ -5560,6 +5602,7 @@ By Helmic
 		<batteryIndicator name="batteryIndicator">
 			<pos>0.975 0.006</pos>
 			<size>0.020 0.020</size>
+			<size tinyScreen="true">0.030 0.030</size>
 			<incharge>./_inc/icons/battery/incharge.svg</incharge>
 			<full>./_inc/icons/battery/full.svg</full>
 			<at75>./_inc/icons/battery/75.svg</at75>
@@ -5571,12 +5614,14 @@ By Helmic
 	
 		<text name="clock">
 			<fontSize>0.02</fontSize>
+			<fontSize tinyScreen="true">0.022</fontSize>
 			<color>dddddd</color>
 			<fontPath>./_inc/fonts/${font2}</fontPath>
 			<pos>0.945 0.968</pos>
+			<pos tinyScreen="true">0.945 0.964</pos>
 		</text>
 
-		<image name="scanlines" extra="true">
+		<image name="scanlines" extra="true" tinyScreen="false">
 			<size>1 1</size>
 			<pos>0.5 0.5</pos>
 			<origin>0.5 0.5</origin>
@@ -5586,32 +5631,32 @@ By Helmic
 			<opacity ifSubset="staticEffect:phosphorePlus">0.5</opacity>
 		</image>
 
-		<image name="scanlines" extra="true" ifSubset="staticEffect:scanlines">
+		<image name="scanlines" extra="true" ifSubset="staticEffect:scanlines" tinyScreen="false">
 			<path>./_inc/scanlines.png</path>
 		</image>
 
-		<image name="scanlines" extra="true" ifSubset="staticEffect:scanlinesFine">
+		<image name="scanlines" extra="true" ifSubset="staticEffect:scanlinesFine" tinyScreen="false">
 			<path>./_inc/scanlinesFine.png</path>
 		</image>
 
-		<image name="scanlines" extra="true" ifSubset="staticEffect:scanlinesVertical">
+		<image name="scanlines" extra="true" ifSubset="staticEffect:scanlinesVertical" tinyScreen="false">
 			<path>./_inc/scanlinesVertical.png</path>
 		</image>
 
-		<image name="scanlines" extra="true" ifSubset="staticEffect:scanlinesVerticalFine">
+		<image name="scanlines" extra="true" ifSubset="staticEffect:scanlinesVerticalFine" tinyScreen="false">
 			<path>./_inc/scanlinesVerticalFine.png</path>
 		</image>
 
-		<image name="scanlines" extra="true" ifSubset="staticEffect:crt">
+		<image name="scanlines" extra="true" ifSubset="staticEffect:crt" tinyScreen="false">
 			<path>./_inc/crt.png</path>
 			<color>ffffff90</color>
 		</image>
 
-		<image name="scanlines" extra="true" ifSubset="staticEffect:phosphore">
+		<image name="scanlines" extra="true" ifSubset="staticEffect:phosphore" tinyScreen="false">
 			<path>./_inc/phosphore.png</path>
 		</image>
 
-		<image name="scanlines" extra="true" ifSubset="staticEffect:phosphorePlus">
+		<image name="scanlines" extra="true" ifSubset="staticEffect:phosphorePlus" tinyScreen="false">
 			<path>./_inc/phosphorePlus.png</path>
 		</image>
 
@@ -5727,4 +5772,10 @@ By Helmic
 	
 	</view>
 
+	<!--FIX GAMELIST CONTAINERS RANDOM VIDEO FX TINYSCREEN-->
+	<view name="detailed,grid,gamecarousel">
+		<image name="randomVideosFx" extra="true">
+			<visible>false</visible>
+		</image>
+	</view>
 </theme>
