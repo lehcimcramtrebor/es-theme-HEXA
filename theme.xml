@@ -701,8 +701,8 @@ By Helmic
 
 
 	<subset name="tvLogo" displayName="${lowSpecs}${lang.tvLogo}" appliesTo="game video                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
-		<include name="yes" displayName="${lang.yes}"/>
 		<include name="no" displayName="${lang.no}"/>
+		<include name="yes" displayName="${lang.yes}"/>
 	</subset>
 
 	<subset name="tvSnaphot" displayName="${lang.tvSnaphot}" appliesTo="game video                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
