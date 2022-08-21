@@ -5773,7 +5773,7 @@ By Helmic
 	</view>
 
 	<!--FIX GAMELIST CONTAINERS RANDOM VIDEO FX TINYSCREEN-->
-	<view name="detailed,grid,gamecarousel">
+	<view name="detailed,grid,gamecarousel" tinyScreen="true">
 		<image name="randomVideosFx" extra="true">
 			<visible>false</visible>
 		</image>
