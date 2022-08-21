@@ -45,7 +45,7 @@ By Helmic
  
     <variables><defaultRegion region="eu">Choose your default region</defaultRegion></variables>
 
-    <subset name="regionChoice" displayName="${lang.regionChoice}" appliesTo="theme                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
+    <subset name="regionChoice" displayName="${lang.regionChoice}" appliesTo="(individual option),system,basic,detailed,grid,gamecarousel">
 		<include name="yes" displayName="${lang.yes}"/>
         <include name="no" displayName="${lang.no}"/>
     </subset>
@@ -392,26 +392,26 @@ By Helmic
 		<include name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "/>
     </subset>
 
-	<subset name=".........." displayName="                                                                                                                            " appliesTo="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
+	<subset name=".........." displayName="                                                                                                                            " appliesTo=" ">
 		<include name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "/>
 	</subset>
 
-	<subset name="systemRandomRatio" displayName="${lang.systemRandomRatio}" appliesTo="system view                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
+	<subset name="systemRandomRatio" displayName="${lang.systemRandomRatio}" appliesTo="(system view),system,basic,detailed,grid,gamecarousel">
 		<include name="original" displayName="${lang.original}"/>
 		<include name="stretched" displayName="${lang.stretched}"/>
 	</subset>
 
-	<subset name="randomCustom" displayName="${lang.randomCustom}" appliesTo="system view                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
+	<subset name="randomCustom" displayName="${lang.randomCustom}" appliesTo="(system view),system,basic,detailed,grid,gamecarousel">
         <include name="yes" displayName="${lang.yes}"/>
 		<include name="no" displayName="${lang.no}"/>
     </subset>
 
-    <subset name="randomOverlay" displayName="${lang.randomOverlay}" appliesTo="system view                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
+    <subset name="randomOverlay" displayName="${lang.randomOverlay}" appliesTo="(system view),system,basic,detailed,grid,gamecarousel">
 		<include name="yes" displayName="${lang.yes}"/>
         <include name="no" displayName="${lang.no}"/>
     </subset>
 
-    <subset name="randomFx" displayName="${lang.randomFx}" tinyScreen="false" appliesTo="system view                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
+    <subset name="randomFx" displayName="${lang.randomFx}" tinyScreen="false" appliesTo="(system view),system,basic,detailed,grid,gamecarousel">
 		<include name="phosphorePlus" displayName="${lang.phosphorePlus}"/>
 		<include name="phosphore" displayName="${lang.phosphore}"/>
 		<include name="scanlines" displayName="${lang.scanlines}"/>
@@ -422,33 +422,33 @@ By Helmic
 		<include name="no" displayName="${lang.no}"/>
     </subset>
 
-    <subset name="randomLogo" displayName="${lang.randomLogo}" appliesTo="system view                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
+    <subset name="randomLogo" displayName="${lang.randomLogo}" appliesTo="(system view),system,basic,detailed,grid,gamecarousel">
 		<include name="yes" displayName="${lang.yes}"/>
         <include name="no" displayName="${lang.no}"/>
     </subset>
 
-    <subset name="barName" displayName="${lang.barName}" appliesTo="system view                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
+    <subset name="barName" displayName="${lang.barName}" appliesTo="(system view),system,basic,detailed,grid,gamecarousel">
 		<include name="yes" displayName="${lang.yes}"/>
         <include name="no" displayName="${lang.no}"/>
     </subset>
 
-	<subset name="............" displayName="                                                                                                                            " appliesTo="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
+	<subset name="............" displayName="                                                                                                                            " appliesTo=" ">
 		<include name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "/>
 	</subset>
 
 	<include>./_inc/wallpapers/${_paintSubsetGamelist.allow}Gamelist.xml</include>
 
-	<subset name="systemFade" displayName="${lang.systemFade}" appliesTo="wallpaper                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
+	<subset name="systemFade" displayName="${lang.systemFade}" appliesTo="(wallpaper),system,basic,detailed,grid,gamecarousel">
         <include name="yes" displayName="${lang.yes}"/>
 		<include name="no" displayName="${lang.no}"/>
     </subset>
 
- 	<subset name="gamelistFade" displayName="${lang.gamelistFade}" appliesTo="wallpaper                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
+ 	<subset name="gamelistFade" displayName="${lang.gamelistFade}" appliesTo="(wallpaper),system,basic,detailed,grid,gamecarousel">
         <include name="yes" displayName="${lang.yes}"/>
 		<include name="no" displayName="${lang.no}"/>
     </subset>
 
- 	<subset name="logoAnime" displayName="${lowSpecs}${lang.logoAnime}" appliesTo="wallpaper                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
+ 	<subset name="logoAnime" displayName="${lowSpecs}${lang.logoAnime}" appliesTo="(wallpaper),system,basic,detailed,grid,gamecarousel">
 		<include name="no" displayName="${lang.no}"/>
         <include name="mix3" displayName="${lang.mix3}"/>
         <include name="onTop" displayName="${lang.onTop}"/>
@@ -456,32 +456,32 @@ By Helmic
         <include name="onScreen" displayName="${lang.onScreen}"/>
     </subset>
 
- 	<subset name="logoCustom" displayName="${lowSpecs}${lang.logoCustom}" appliesTo="wallpaper                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel" ifSubset="logoAnime:mix3|onTop|inGamelist|onScreen">
+ 	<subset name="logoCustom" displayName="${lowSpecs}${lang.logoCustom}" appliesTo="(wallpaper),system,basic,detailed,grid,gamecarousel" ifSubset="logoAnime:mix3|onTop|inGamelist|onScreen">
 		<include name="no" displayName="${lang.no}"/>
 		<include name="yes" displayName="${lang.yes}"/>
     </subset>
 
-	<subset name="............." displayName="                                                                                                                            " appliesTo="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
+	<subset name="............." displayName="                                                                                                                            " appliesTo=" ">
 		<include name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "/>
 	</subset>
 
-	<subset name="randomArt" displayName="${lowSpecs}${lang.randomArt}" appliesTo="system view animations                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
+	<subset name="randomArt" displayName="${lowSpecs}${lang.randomArt}" appliesTo="(system view animations),system,basic,detailed,grid,gamecarousel">
 		<include name="marquee" displayName="${lang.marquee}"/>
 		<include name="thumbnail" displayName="${lang.thumbnail}"/>
 		<include name="image" displayName="${lang.image}"/>
 		<include name="no" displayName="${lang.no}"/>
 	</subset>
 
-    <subset name=".................." displayName="                                                                                                                            " appliesTo="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
+    <subset name=".................." displayName="                                                                                                                            " appliesTo=" ">
 		<include name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "/>
     </subset>
 
-	<subset name="randomRatio" displayName="${lang.randomRatio}" appliesTo="game video                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
+	<subset name="randomRatio" displayName="${lang.randomRatio}" appliesTo="(game video),system,basic,detailed,grid,gamecarousel">
 		<include name="stretched" displayName="${lang.stretched}"/>
 		<include name="original" displayName="${lang.original}"/>
 	</subset>
 
-	<subset name="tvScreenColor" displayName="${lang.tvScreenColor}" appliesTo="game video                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel" ifSubset="randomRatio:original">
+	<subset name="tvScreenColor" displayName="${lang.tvScreenColor}" appliesTo="(game video),system,basic,detailed,grid,gamecarousel" ifSubset="randomRatio:original">
 		<include name="standard" displayName="${lang.standard}"/>
 		<include name="blue" displayName="${lang.blue}"/>
 	</subset>
@@ -492,7 +492,7 @@ By Helmic
 <!----------------------------------------------------------------------------------------------------------------------------------------------------------->
 <!----------------------------------------------------------------------------------------------------------------------------------------------------------->
 
-	<subset name="container" displayName="${lang.container}" appliesTo="game video                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
+	<subset name="container" displayName="${lang.container}" appliesTo="(game video),system,basic,detailed,grid,gamecarousel">
 
 		<include name="automatic" displayName="${lang.automatic}">./_inc/containers/automatic.xml</include>		
 
@@ -686,7 +686,7 @@ By Helmic
 
    </subset>
 
-	<subset name="containerTile" displayName="${lang.containerTile}" appliesTo="game video                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
+	<subset name="containerTile" displayName="${lang.containerTile}" appliesTo="(game video),system,basic,detailed,grid,gamecarousel">
 		<include name="tile" displayName="${lang.tile}">./_inc/containers/Tile.xml</include>
 		<include name="customTile" displayName="${lang.customTile}">./_inc/containers/Tile.xml</include>
 		<include name="no" displayName="${lang.no}"/>
@@ -700,91 +700,91 @@ By Helmic
 
 
 
-	<subset name="tvLogo" displayName="${lowSpecs}${lang.tvLogo}" appliesTo="game video                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
+	<subset name="tvLogo" displayName="${lowSpecs}${lang.tvLogo}" appliesTo="(game video),system,basic,detailed,grid,gamecarousel">
 		<include name="no" displayName="${lang.no}"/>
 		<include name="yes" displayName="${lang.yes}"/>
 	</subset>
 
-	<subset name="tvSnaphot" displayName="${lang.tvSnaphot}" appliesTo="game video                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
+	<subset name="tvSnaphot" displayName="${lang.tvSnaphot}" appliesTo="(game video),system,basic,detailed,grid,gamecarousel">
 		<include name="no" displayName="${lang.no}"/>
 		<include name="yes" displayName="${lang.yes}"/>
 	</subset>
 
-	<subset name="mdVideoShortDelay" displayName="${lang.mdVideoShortDelay}" appliesTo="game video                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
+	<subset name="mdVideoShortDelay" displayName="${lang.mdVideoShortDelay}" appliesTo="(game video),system,basic,detailed,grid,gamecarousel">
 		<include name="no" displayName="${lang.no}"/>
 		<include name="yes" displayName="${lang.yes}"/>
 	</subset>
 
-	<subset name="tvOs" displayName="${lang.tvOs}" appliesTo="game video                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
+	<subset name="tvOs" displayName="${lang.tvOs}" appliesTo="(game video),system,basic,detailed,grid,gamecarousel">
 		<include name="no" displayName="${lang.no}"/>
 		<include name="retrobat" displayName="${lang.retrobat}"/>
 		<include name="batocera" displayName="${lang.batocera}"/>
 		<include name="emuelec" displayName="${lang.batocera}"/>
 	</subset>
 
-	<subset name="previewDisplay" displayName="${lang.previewDisplay}" appliesTo="game video                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
+	<subset name="previewDisplay" displayName="${lang.previewDisplay}" appliesTo="(game video),system,basic,detailed,grid,gamecarousel">
 		<include name="displayMix" displayName="${lang.displayMix}"/>
 		<include name="displayThumbnail" displayName="${lang.displayThumbnail}"/>
 		<include name="displayBoxback" displayName="${lang.displayBoxback}"/>
 	</subset>
 
-    <subset name="..................." displayName="                                                                                                                            " appliesTo="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
+    <subset name="..................." displayName="                                                                                                                            " appliesTo=" ">
 		<include name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "/>
     </subset>
 
-	<subset name="ratingColor" displayName="${lang.ratingColor}" appliesTo="game infos                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
+	<subset name="ratingColor" displayName="${lang.ratingColor}" appliesTo="(game infos),system,basic,detailed,grid,gamecarousel">
 		<include name="colorYellow" displayName="${lang.colorYelllow}"/>
 		<include name="colorWhite" displayName="${lang.colorWhite}"/>
 		<include name="colorsetAdaptive" displayName="${lang.colorsetAdaptive}"/>
 	</subset>
 
-	<subset name="gamebindsColor" displayName="${lang.gamebindsColor}" appliesTo="game infos                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
+	<subset name="gamebindsColor" displayName="${lang.gamebindsColor}" appliesTo="(game infos),system,basic,detailed,grid,gamecarousel">
 		<include name="colorYellow" displayName="${lang.colorYelllow}"/>
 		<include name="colorWhite" displayName="${lang.colorWhite}"/>
 		<include name="colorsetAdaptive" displayName="${lang.colorsetAdaptive}"/>
 	</subset>
 
-	<subset name="gameHeadColor" displayName="${lang.gameHeadColor}" appliesTo="game infos                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
+	<subset name="gameHeadColor" displayName="${lang.gameHeadColor}" appliesTo="(game infos),system,basic,detailed,grid,gamecarousel">
 		<include name="colorYellow" displayName="${lang.colorYelllow}"/>
 		<include name="colorWhite" displayName="${lang.colorWhite}"/>
 		<include name="colorsetAdaptive" displayName="${lang.colorsetAdaptive}"/>
 	</subset>
 
-	<subset name="systemNameColor" displayName="${lang.systemNameColor}" appliesTo="game infos                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
+	<subset name="systemNameColor" displayName="${lang.systemNameColor}" appliesTo="(game infos),system,basic,detailed,grid,gamecarousel">
 		<include name="colorWhite" displayName="${lang.colorWhite}"/>
 		<include name="colorYellow" displayName="${lang.colorYelllow}"/>
 		<include name="colorsetAdaptive" displayName="${lang.colorsetAdaptive}"/>
 	</subset>
 
-	<subset name="releaseColor" displayName="${lang.releaseColor}" appliesTo="game infos                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
+	<subset name="releaseColor" displayName="${lang.releaseColor}" appliesTo="(game infos),system,basic,detailed,grid,gamecarousel">
 		<include name="colorYellow" displayName="${lang.colorYelllow}"/>
 		<include name="colorWhite" displayName="${lang.colorWhite}"/>
 		<include name="colorsetAdaptive" displayName="${lang.colorsetAdaptive}"/>
 	</subset>
 
-	<subset name="gamebarColor" displayName="${lang.gamebarColor}" appliesTo="game infos                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
+	<subset name="gamebarColor" displayName="${lang.gamebarColor}" appliesTo="(game infos),system,basic,detailed,grid,gamecarousel">
 		<include name="colorWhite" displayName="${lang.colorWhite}"/>
 		<include name="colorYellow" displayName="${lang.colorYelllow}"/>
 		<include name="colorsetAdaptive" displayName="${lang.colorsetAdaptive}"/>
 	</subset>
 
-	<subset name="lineColor" displayName="${lang.lineColor}" appliesTo="game infos                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
+	<subset name="lineColor" displayName="${lang.lineColor}" appliesTo="(game infos),system,basic,detailed,grid,gamecarousel">
 		<include name="colorWhite" displayName="${lang.colorWhite}"/>
 		<include name="colorYellow" displayName="${lang.colorYelllow}"/>
 		<include name="colorsetAdaptive" displayName="${lang.colorsetAdaptive}"/>
 	</subset>
 
-	<subset name="descriptionColor" displayName="${lang.descriptionColor}" appliesTo="game infos                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
+	<subset name="descriptionColor" displayName="${lang.descriptionColor}" appliesTo="(game infos),system,basic,detailed,grid,gamecarousel">
 		<include name="colorWhite" displayName="${lang.colorWhite}"/>
 		<include name="colorYellow" displayName="${lang.colorYelllow}"/>
 		<include name="colorsetAdaptive" displayName="${lang.colorsetAdaptive}"/>
 	</subset>
 
-	<subset name=".........................................." displayName="                                                                                                                            " appliesTo="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
+	<subset name=".........................................." displayName="                                                                                                                            " appliesTo=" ">
 		<include name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "/>
 	</subset>
 
-	<subset name="gameInfosBarFontSize" displayName="${lang.gameInfosBarFontSize}" tinyScreen="false" appliesTo="game infos                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
+	<subset name="gameInfosBarFontSize" displayName="${lang.gameInfosBarFontSize}" tinyScreen="false" appliesTo="(game infos),system,basic,detailed,grid,gamecarousel">
 		<include name="0.020"/>
 		<include name="0.022"/>
 		<include name="0.024"/>
@@ -793,24 +793,24 @@ By Helmic
 		<include name="0.018"/>
 	</subset>
 
-	<subset name="descriptionFontSize" displayName="${lang.descriptionFontSize}" tinyScreen="false" appliesTo="game infos                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
+	<subset name="descriptionFontSize" displayName="${lang.descriptionFontSize}" tinyScreen="false" appliesTo="(game infos),system,basic,detailed,grid,gamecarousel">
 		<include name="0.016"/>
 		<include name="0.018"/>
 		<include name="0.020"/>
 	</subset>
 
-	<subset name="gamelistFontSize" displayName="${lang.gamelistFontSize}" tinyScreen="false" appliesTo="gamelist                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
+	<subset name="gamelistFontSize" displayName="${lang.gamelistFontSize}" tinyScreen="false" appliesTo="(gamelist),system,basic,detailed,grid,gamecarousel">
 		<include name="0.020"/>
 		<include name="0.022"/>
 		<include name="0.024"/>
 		<include name="0.026"/>
 	</subset>
 
-	<subset name="......................................" displayName="                                                                                                                            " appliesTo="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
+	<subset name="......................................" displayName="                                                                                                                            " appliesTo=" ">
 		<include name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "/>
 	</subset>
 
-	<subset name="basicGamelistLines" displayName="${lang.basicGamelistLines}" tinyScreen="false" appliesTo="gamelist                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
+	<subset name="basicGamelistLines" displayName="${lang.basicGamelistLines}" tinyScreen="false" appliesTo="(gamelist),system,basic,detailed,grid,gamecarousel">
 		<include name="21"/>
 		<include name="23"/>
 		<include name="15"/>
@@ -818,7 +818,7 @@ By Helmic
 		<include name="19"/>
 	</subset>
 
-	<subset name="detailedGamelistLines" displayName="${lang.detailedGamelistLines}" tinyScreen="false" appliesTo="gamelist                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
+	<subset name="detailedGamelistLines" displayName="${lang.detailedGamelistLines}" tinyScreen="false" appliesTo="(gamelist),system,basic,detailed,grid,gamecarousel">
 		<include name="15"/>
 		<include name="17"/>
 		<include name="19"/>
@@ -826,11 +826,11 @@ By Helmic
 		<include name="23"/>
 	</subset>
 
-	<subset name=".............................................." displayName="                                                                                                                            " appliesTo="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
+	<subset name=".............................................." displayName="                                                                                                                            " appliesTo=" ">
 		<include name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "/>
 	</subset>
 
-	<subset name="gamesZoneBack" displayName="${lang.gamesZoneBack}" appliesTo="gamelist                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ,system,basic,detailed,grid,gamecarousel">
+	<subset name="gamesZoneBack" displayName="${lang.gamesZoneBack}" appliesTo="(gamelist),system,basic,detailed,grid,gamecarousel">
 		<include name="simpleColorset" displayName="${lang.simpleColorset}"/>
 		<include name="simple" displayName="${lang.simple}"/>
 		<include name="carbon" displayName="${lang.carbon}"/>
