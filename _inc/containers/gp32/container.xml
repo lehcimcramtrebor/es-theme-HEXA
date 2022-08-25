@@ -10,7 +10,7 @@ By Helmic
 	<view name="detailed,grid,gamecarousel">
 			
 		<image name="videoContainer" extra="true">
-			<path>./container.png</path>
+			<path>./container${res}.png</path>
 		</image>
 	
 		<image name="led" extra="true">
@@ -46,7 +46,7 @@ By Helmic
 
 		</image>
 
-		<image name="randomVideosFx" extra="true">
+		<image name="randomVideosFx" ifSubset="fullHexa:yes|no" extra="true">
             <pos>0.3184895833333333 0.6541666666666667</pos>
             <pos ifSubset="themeRatio:54">0.3184895833333333 0.74072265625</pos>
             <pos ifSubset="themeRatio:43">0.3184895833333333 0.7307291666666667</pos>

@@ -24,7 +24,7 @@
 
 	<text name="theme" extra="true">
 		<text>hexa</text>
-		<text tinyScreen="true">hexa - crt mode</text>
+		<text tinyScreen="true">hexa - tiny mode</text>
 		<color>dddddd</color>
 		<alignment>center</alignment>
 		<fontPath>./_inc/fonts/conthrax-sb.ttf</fontPath>
@@ -48,21 +48,21 @@ optimal scrap: videos - box2d - in game screenshot - fanart - backcover - game l
 
 by helmic</text>
 
-		<text tinyScreen="true">4:3 batocera / retrobat / emuelec crt optimized theme
+		<text tinyScreen="true">4:3 batocera / retrobat / emuelec / amberelec tiny optimized theme
 
 optimal scrap: videos - box2d - in game screenshot - fanart - backcover - game logos
 
 
 by helmic</text>
 
-		<text lang="fr">thème pour batocera / retrobat /emuelec optimisé pour écrans 16:9 - 5:4 - 4:3 ( compatible 17/9 - 16/10 - 3/2) 
+		<text lang="fr">thème pour batocera / retrobat / emuelec optimisé pour écrans 16:9 - 5:4 - 4:3 ( compatible 17/9 - 16/10 - 3/2) 
 
 scrap optimal: vidéos - boîtes 2D - images en jeu - fanart - dos des boîtes - logos de jeux
 
 
 par helmic</text>
 
-		<text tinyScreen="true" lang="fr">thème 4:3 pour batocera / retrobat /emuelec optimisé pour écrans crt 
+		<text tinyScreen="true" lang="fr">thème 4:3 pour batocera / retrobat / emuelec / amberelec optimisé pour petits écrans  
 
 scrap optimal: vidéos - boîtes 2D - images en jeu - fanart - dos des boîtes - logos de jeux
 

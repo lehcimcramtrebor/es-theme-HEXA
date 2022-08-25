@@ -31,7 +31,7 @@ By Helmic
 			</image>
 			
 		<image name="videoContainer" extra="true">
-			<path>./container.png</path>
+			<path>./container${res}.png</path>
 		</image>
 	
 		<image name="led" extra="true">
@@ -69,7 +69,7 @@ By Helmic
 			<color>202020</color>
 		</image>
 
-		<image name="randomVideosFx" extra="true">
+		<image name="randomVideosFx" ifSubset="fullHexa:yes|no" extra="true">
             <pos>0.4494791666666667 0.6092592592592593</pos>
             <pos ifSubset="themeRatio:54">0.4494791666666667 0.7087962962962963</pos>
             <pos ifSubset="themeRatio:43">0.4494791666666667 0.6976851851851852</pos>

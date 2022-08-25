@@ -10,7 +10,7 @@ By Helmic
 	<view name="detailed,grid,gamecarousel">
         
 		<image name="videoContainer" extra="true">
-			<path>./container.png</path>
+			<path>./container${res}.png</path>
 		</image>
 
 		<image name="led,rev,next,play" extra="true">
@@ -29,7 +29,7 @@ By Helmic
 			<y ifSubset="themeRatio:43|54">0.75</y>
 		</image>
 
-		<image name="randomVideosFx" extra="true">
+		<image name="randomVideosFx" ifSubset="fullHexa:yes|no" extra="true">
 			<size>0.18 0.25</size>
 
             <pos>0.3177083333333333 0.7041666666666667</pos>
@@ -60,7 +60,7 @@ By Helmic
             <pos ifSubset="themeRatio:54">0.3184027777777778 0.7759259259259259</pos>
 		</video>
 
-        <video name="bartopNoise1" extra="true">
+        <video name="bartopNoise1" ifSubset="fullHexa:yes|no" extra="true">
 			<path>./../../noise.mp4</path>
 			<audio>false</audio>
 			<origin>0.5 0.5</origin>
@@ -71,7 +71,7 @@ By Helmic
 			<color>dddddd</color>
 		</video>
 
-        <video name="bartopNoise2" extra="true">
+        <video name="bartopNoise2" ifSubset="fullHexa:yes|no" extra="true">
 			<path>./../../noise.mp4</path>
 			<audio>false</audio>
 			<origin>0.5 0.5</origin>

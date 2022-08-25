@@ -9,8 +9,11 @@ By Helmic
    
     <variables>
 
-        <lowSpecs ifSubset="fullHexa:no">♠disabled ♠ •  </lowSpecs>
-        <lowSpecs ifSubset="fullHexa:no" lang="fr">♠ désactivé ♠ • </lowSpecs>
+        <lowSpecs ifSubset="fullHexa:no">♠--- disabled ---♠ •  </lowSpecs>
+        <lowSpecs ifSubset="fullHexa:no" lang="fr">♠--- désactivé ---♠ • </lowSpecs>
+
+        <lowSpecsPi ifSubset="fullHexa:hexaPi">♠--- disabled ---♠ •  </lowSpecsPi>
+        <lowSpecsPi ifSubset="fullHexa:hexaPi" lang="fr">♠--- désactivé ---♠ • </lowSpecsPi>
 
         <lang.neogeoaes>neo geo • force aes</lang.neogeoaes>
         <lang.neogeoaes lang="fr">neo geo • forcer aes</lang.neogeoaes>

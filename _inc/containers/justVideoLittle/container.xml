@@ -21,7 +21,7 @@ By Helmic
 			<visible>false</visible>
 		</image>
 
-		<image name="randomVideosFx" extra="true">
+		<image name="randomVideosFx" ifSubset="fullHexa:yes|no" extra="true">
 			<visible>false</visible>
 		</image>
 

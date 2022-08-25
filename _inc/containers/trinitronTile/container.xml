@@ -31,7 +31,7 @@ By Helmic
 			</image>
 			
 		<image name="videoContainer" extra="true">
-			<path ifNotArch="windows">./container.png</path>
+			<path ifNotArch="windows">./container${res}.png</path>
 			<path ifArch="windows">./containerRetrobat.png</path>
 		</image>
 	
@@ -75,7 +75,7 @@ By Helmic
 			<size ifSubset="themeRatio:43">0.3026041666666667 0.3092592592592593</size>
 		</image>
 
-		<image name="randomVideosFx" extra="true">
+		<image name="randomVideosFx" ifSubset="fullHexa:yes|no" extra="true">
             <pos>0.4315104166666667 0.6833333333333333</pos>
             <pos ifSubset="themeRatio:54">0.4315104166666667 0.7606481481481481</pos>
             <pos ifSubset="themeRatio:43">0.4315104166666667 0.7527777777777778</pos>

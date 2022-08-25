@@ -7,7 +7,7 @@ By Helmic
 <theme>
 <formatVersion>7</formatVersion>
 
-    <subset name="carouselWallPaint" displayName="${lowSpecs}${lang.carouselWallPaint}">
+    <subset name="carouselWallPaint" displayName="${lowSpecs}${lowSpecsPi}${lang.carouselWallPaint}">
         <include name="no" displayName="${lang.no}"/>
 		<include name="yesBw" displayName="${lang.yesBw}"/>
 		<include name="yesColor" displayName="${lang.yesColor}"/>

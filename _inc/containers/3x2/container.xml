@@ -11,7 +11,7 @@ By Helmic
         
 
 		<image name="videoContainer" extra="true">
-			<path>./container.png</path>
+			<path>./container${res}.png</path>
 		</image>
 	
 		<image name="led" extra="true">
@@ -46,7 +46,7 @@ By Helmic
 			<size ifSubset="themeRatio:43">0.46 0.408</size>
 		</image>
 
-		<image name="randomVideosFx" extra="true">
+		<image name="randomVideosFx" ifSubset="fullHexa:yes|no" extra="true">
             <pos>0.3184895833333333 0.6634259259259259</pos>
             <pos ifSubset="themeRatio:54">0.3184895833333333 0.7467592592592593</pos>
             <pos ifSubset="themeRatio:43">0.3184895833333333 0.737962962962963</pos>
