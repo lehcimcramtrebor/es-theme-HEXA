@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--CROSS FILE TO EMBED HEXA ASSETS AND OPTIONS TO HEXA HANDHELD THEME-->
+<theme>
+
+<formatVersion>7</formatVersion>
+
+    <variables>
+
+		<lang.cross>hexa installed, activate "cross"mode"</lang.cross>
+		<lang.cross lang="fr">hexa installé, activer "cross mode"</lang.cross>
+	
+    </variables>
+
+    <subset name="cross" displayName="${lang.cross}">
+        <include name="no" displayName="${lang.no}"/>
+        <include name="yes" displayName="${lang.yes}">./includes.xml</include>
+   </subset>
+
+</theme>

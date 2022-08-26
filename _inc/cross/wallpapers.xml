@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--CROSS FILE TO EMBED HEXA ASSETS AND OPTIONS TO HEXA HANDHELD THEME-->
+<theme>
+
+<formatVersion>7</formatVersion>
+
+    <variables>
+
+		<lang.crossWallpapers>  cross mode: use wallpapers</lang.crossWallpapers>
+		<lang.crossWallpapers lang="fr">  cross mode: utiliser les fonds d'écran</lang.crossWallpapers>
+
+	
+    </variables>
+
+    <subset name="crossWallpapers" displayName="${lang.crossWallpapers}">
+        <include name="1080p" displayName="${lang.1080p}"/>
+        <include name="720p" displayName="${lang.720p}"/>
+        <include name="480p" displayName="${lang.480p}"/>
+   </subset>
+
+	<view name="system,basic,detailed,gamecarousel,grid" ifSubset="crossWallpapers:1080p">
+
+        <image name="background" extra="true">
+            <path>./../wallpapers/${wallpaper}.jpg</path>
+            <path ifSubset="hexaCustom:yes">./../../_hexaCustom/backgrounds/custom.jpg</path>
+            <path ifSubset="hexaCustom:yes">./../../../../_hexaCustom/backgrounds/custom.jpg</path>
+            <path ifSubset="hexaCustom:yes">./../../_hexaCustom/backgrounds/${system.theme}.jpg</path>
+            <path ifSubset="hexaCustom:yes">./../../../../_hexaCustom/backgrounds/${system.theme}.jpg</path>
+       </image>
+	
+	</view>
+
+	<view name="system,basic,detailed,gamecarousel,grid" ifSubset="crossWallpapers:720p">
+
+        <image name="background" extra="true">
+            <path>./../wallpapers/${wallpaper}-pi.jpg</path>
+            <path ifSubset="hexaCustom:yes">./../../_hexaCustom/backgrounds/custom-pi.jpg</path>
+            <path ifSubset="hexaCustom:yes">./../../../../_hexaCustom/backgrounds/custom-pi.jpg</path>
+            <path ifSubset="hexaCustom:yes">./../../_hexaCustom/backgrounds/${system.theme}-pi.jpg</path>
+            <path ifSubset="hexaCustom:yes">./../../../../_hexaCustom/backgrounds/${system.theme}-pi.jpg</path>
+       </image>
+	
+	</view>
+
+	<view name="basic,detailed,gamecarousel,grid" ifSubset="transition:yes,crossWallpapers:1080p">
+
+        <image name="transition" extra="true">
+            <path>./../wallpapers/${wallpaper}.jpg</path>
+            <path ifSubset="hexaCustom:yes">./../../_hexaCustom/backgrounds/custom.jpg</path>
+            <path ifSubset="hexaCustom:yes">./../../../../_hexaCustom/backgrounds/custom.jpg</path>
+            <path ifSubset="hexaCustom:yes">./../../_hexaCustom/backgrounds/${system.theme}.jpg</path>
+            <path ifSubset="hexaCustom:yes">./../../../../_hexaCustom/backgrounds/${system.theme}.jpg</path>
+       </image>
+
+	</view>
+
+	<view name="basic,detailed,gamecarousel,grid" ifSubset="transition:yes,crossWallpapers:720p">
+
+        <image name="transition" extra="true">
+            <path>./../wallpapers/${wallpaper}-pi.jpg</path>
+            <path ifSubset="hexaCustom:yes">./../../_hexaCustom/backgrounds/custom-pi.jpg</path>
+            <path ifSubset="hexaCustom:yes">./../../../../_hexaCustom/backgrounds/custom-pi.jpg</path>
+            <path ifSubset="hexaCustom:yes">./../../_hexaCustom/backgrounds/${system.theme}-pi.jpg</path>
+            <path ifSubset="hexaCustom:yes">./../../../../_hexaCustom/backgrounds/${system.theme}-pi.jpg</path>
+       </image>
+
+	</view>
+
+</theme>

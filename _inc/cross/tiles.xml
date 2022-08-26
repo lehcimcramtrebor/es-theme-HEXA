@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--CROSS FILE TO EMBED HEXA ASSETS AND OPTIONS TO HEXA HANDHELD THEME-->
+<theme>
+
+<formatVersion>7</formatVersion>
+
+    <variables>
+
+		<lang.crossTiles>  cross mode: use tiles</lang.crossTiles>
+		<lang.crossTiles lang="fr">  cross mode: utiliser les tuiles</lang.crossTiles>
+
+	
+    </variables>
+
+    <subset name="crossTiles" displayName="${lang.crossTiles}">
+        <include name="1080p" displayName="${lang.1080p}"/>
+        <include name="720p" displayName="${lang.720p}"/>
+        <include name="480p" displayName="${lang.480p}"/>
+   </subset>
+
+	<view name="system" ifSubset="crossTiles:1080p">
+
+        <image name="logo">
+            <linearSmooth>true</linearSmooth>
+            <path>./../../default/color.png</path>
+            <path>./../../default/color-${lang}.png</path>
+            <path>./../../${system.theme}/color.png</path>
+            <path>./../../${system.theme}/color-${lang}.png</path>
+            <path ifSubset="neogeoaes:yes">./../../${system.theme}/color-aes.png</path>
+
+ 		</image>
+
+        <image name="logo" region="us" ifSubset="regionChoice:yes">
+            <path>./../../${system.theme}/us/color.png</path>
+        </image>
+
+
+        <image name="logo" region="jp" ifSubset="regionChoice:yes">
+            <path>./../../${system.theme}/jp/color.png</path>
+        </image>
+
+	</view>
+
+	<view name="system" ifSubset="crossTiles:720p">
+
+        <image name="logo">
+            <linearSmooth>true</linearSmooth>
+            <path>./../../default/color-pi.png</path>
+            <path>./../../default/color-${lang}-pi.png</path>
+            <path>./../../${system.theme}/color-pi.png</path>
+            <path>./../../${system.theme}/color-${lang}-pi.png</path>
+            <path ifSubset="neogeoaes:yes">./../../${system.theme}/color-aes-pi.png</path>
+
+ 		</image>
+
+        <image name="logo" region="us" ifSubset="regionChoice:yes">
+            <path>./../../${system.theme}/us/color-pi.png</path>
+        </image>
+
+
+        <image name="logo" region="jp" ifSubset="regionChoice:yes">
+            <path>./../../${system.theme}/jp/color-pi.png</path>
+        </image>
+
+	</view>
+
+	<view name="basic,detailed,gamecarousel,grid" ifSubset="transition:yes,crossTiles:1080p">
+ 
+        <image name="transitionLogo" extra="true">
+            <path>./../../default/color.png</path>
+            <path>./../../default/color-${lang}.png</path>
+            <path>./../../${system.theme}/color.png</path>
+            <path>./../../${system.theme}/color-${lang}.png</path>
+            <path ifSubset="neogeoaes:yes">./../../${system.theme}/color-aes.png</path>
+            <path ifSubset="hexaCustom:yes">./../../_hexaCustom/tile/custom.png</path>
+            <path ifSubset="hexaCustom:yes">./../../../../_hexaCustom/tile/custom.png</path>
+        </image>
+
+        <image name="transitionLogo" region="us" ifSubset="regionChoice:yes">
+            <path>./../../${system.theme}/us/color.png</path>
+        </image>
+
+
+        <image name="transitionLogo" region="jp" ifSubset="regionChoice:yes">
+            <path>./../../${system.theme}/jp/color.png</path>
+        </image>
+
+	</view>
+
+	<view name="basic,detailed,gamecarousel,grid" ifSubset="transition:yes,crossTiles:720p">
+ 
+        <image name="transitionLogo" extra="true">
+            <path>./../../default/color-pi.png</path>
+            <path>./../../default/color-${lang}-pi.png</path>
+            <path>./../../${system.theme}/color-pi.png</path>
+            <path>./../../${system.theme}/color-${lang}-pi.png</path>
+            <path ifSubset="neogeoaes:yes">./../../${system.theme}/color-aes-pi.png</path>
+            <path ifSubset="hexaCustom:yes">./../../_hexaCustom/tile/custom-pi.png</path>
+            <path ifSubset="hexaCustom:yes">./../../../../_hexaCustom/tile/custom-pi.png</path>
+        </image>
+
+        <image name="transitionLogo" region="us" ifSubset="regionChoice:yes">
+            <path>./../../${system.theme}/us/color-pi.png</path>
+        </image>
+
+
+        <image name="transitionLogo" region="jp" ifSubset="regionChoice:yes">
+            <path>./../../${system.theme}/jp/color-pi.png</path>
+        </image>
+
+	</view>
+
+</theme>

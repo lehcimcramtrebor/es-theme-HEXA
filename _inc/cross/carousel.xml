@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--CROSS FILE TO EMBED HEXA ASSETS AND OPTIONS TO HEXA HANDHELD THEME-->
+<theme>
+
+<formatVersion>7</formatVersion>
+
+    <variables>
+
+		<lang.spaceCarousel>  cross mode: carousel space</lang.spaceCarousel>
+		<lang.spaceCarousel lang="fr">  cross mode: espacement du carrousel</lang.spaceCarousel>
+
+		<lang.thin>thin</lang.thin>
+		<lang.thin lang="fr">mince</lang.thin>
+
+		<lang.large>large</lang.large>
+		<lang.large lang="fr">large</lang.large>
+
+	
+    </variables>
+
+    <subset name="spaceCarousel" displayName="${lang.spaceCarousel}">
+        <include name="thin" displayName="${lang.thin}"/>
+        <include name="large" displayName="${lang.large}"/>
+   </subset>
+
+	<view name="system" ifSubset="spaceCarousel:thin">
+
+        <carousel name="systemcarousel">
+            <maxLogoCount>3</maxLogoCount>
+        </carousel>
+  
+	</view>
+
+</theme>

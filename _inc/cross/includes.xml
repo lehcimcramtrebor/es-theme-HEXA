@@ -3,5 +3,9 @@
 <theme>
 
 <formatVersion>7</formatVersion>
-	
+
+	<include>./tiles.xml</include>
+	<include>./wallpapers.xml</include>
+	<include>./carousel.xml</include>
+
 </theme>
