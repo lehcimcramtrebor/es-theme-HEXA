@@ -15,7 +15,15 @@ IMPORTANT NOTES:
 
   -ON FIRST START, THEME WILL USE PI OPTIMIZED MODE WITH DEGRADED GRAPHICS, USE AT LEAST INTERMEDIATE EXPERIENCE TO USE FULL RESOLUTION
   
+  -FOR < PI3 USERS, I RECOMMEND TO LIMIT ES RESOLUTION TO 720P IN batocera-boot.conf.
+  
+  ![Desktop Screenshot 2022 08 26 - 06 51 02 51](https://user-images.githubusercontent.com/59354081/186826603-06c26e8e-1a23-484c-a6cd-dbddfc064e58.png)
+
+
 ![patchwork](https://user-images.githubusercontent.com/59354081/170428805-06230652-8c23-4cdb-bedc-91e48547a313.jpg)
+
+
+SCREENSHOTS:
 
 ![EmulationStation 07-06-2022 06-29-41-825](https://user-images.githubusercontent.com/59354081/172296914-8878cae2-cb27-40d3-9089-f6d0245752ab.png)
 
