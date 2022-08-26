@@ -471,7 +471,7 @@ By Helmic
 		<include name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "/>
 	</subset>
 
-	<subset name="randomArt" displayName="${lowSpecs}${lowSpecsPi}${lang.randomArt}" appliesTo="(system view animations),system,basic,detailed,grid,gamecarousel">
+	<subset name="randomArt" displayName="${lowSpecs}${lowSpecsPi}${lang.randomArt}" appliesTo="(animations),system,basic,detailed,grid,gamecarousel">
 		<include name="marquee" displayName="${lang.marquee}"/>
 		<include name="thumbnail" displayName="${lang.thumbnail}"/>
 		<include name="image" displayName="${lang.image}"/>
@@ -5445,7 +5445,7 @@ By Helmic
         <menuText name="menutitle">
             <fontPath>./_inc/fonts/${font1}</fontPath>
             <fontSize>0.028</fontSize>
-            <fontSize tinyScreen="true">0.04</fontSize>
+            <fontSize tinyScreen="true">0.028</fontSize>
             <fontSize ifSubset="menuFontSize:+1" tinyScreen="false">0.031</fontSize>
             <fontSize ifSubset="menuFontSize:+2" tinyScreen="false">0.032</fontSize>
             <fontSize ifSubset="menuFontSize:+3" tinyScreen="false">0.033</fontSize>
@@ -5487,7 +5487,7 @@ By Helmic
         <menuText name="menutext">
             <fontPath>./_inc/fonts/${font1}</fontPath>
             <fontSize>0.016</fontSize>
-            <fontSize tinyScreen="true">0.024</fontSize>
+            <fontSize tinyScreen="true">0.022</fontSize>
             <fontSize ifSubset="menuFontSize:+1" tinyScreen="false">0.017</fontSize>
             <fontSize ifSubset="menuFontSize:+2" tinyScreen="false">0.018</fontSize>
             <fontSize ifSubset="menuFontSize:+3" tinyScreen="false">0.019</fontSize>
@@ -5515,7 +5515,7 @@ By Helmic
         <menuTextSmall name="menutextsmall">
             <fontPath>./_inc/fonts/${font1}</fontPath>
             <fontSize>0.014</fontSize>
-            <fontSize tinyScreen="true">0.024</fontSize>
+            <fontSize tinyScreen="true">0.016</fontSize>
             <fontSize ifSubset="menuFontSize:+1" tinyScreen="false">0.015</fontSize>
             <fontSize ifSubset="menuFontSize:+2" tinyScreen="false">0.016</fontSize>
             <fontSize ifSubset="menuFontSize:+3" tinyScreen="false">0.017</fontSize>
@@ -5543,19 +5543,19 @@ By Helmic
         <menuGroup name="menugroup">
             <fontPath>./_inc/fonts/${font1}</fontPath>
             <fontSize>0.022</fontSize>
-            <fontSize ifSubset="menuFontSize:+1">0.023</fontSize>
-            <fontSize ifSubset="menuFontSize:+2">0.024</fontSize>
-            <fontSize ifSubset="menuFontSize:+3">0.025</fontSize>
-            <fontSize ifSubset="menuFontSize:+4">0.026</fontSize>
-            <fontSize ifSubset="menuFontSize:+5">0.027</fontSize>
-            <fontSize ifSubset="menuFontSize:+6">0.028</fontSize>
-            <fontSize ifSubset="menuFontSize:+7">0.029</fontSize>
-            <fontSize ifSubset="menuFontSize:+8">0.030</fontSize>
-            <fontSize ifSubset="menuFontSize:+9">0.031</fontSize>
-            <fontSize ifSubset="menuFontSize:+10">0.032</fontSize>
-            <fontSize ifSubset="menuFontSize:-1">0.021</fontSize>
-            <fontSize ifSubset="menuFontSize:-2">0.020</fontSize>
-            <fontSize ifSubset="menuFontSize:-3">0.019</fontSize>
+            <fontSize ifSubset="menuFontSize:+1" tinyScreen="false">0.023</fontSize>
+            <fontSize ifSubset="menuFontSize:+2" tinyScreen="false">0.024</fontSize>
+            <fontSize ifSubset="menuFontSize:+3" tinyScreen="false">0.025</fontSize>
+            <fontSize ifSubset="menuFontSize:+4" tinyScreen="false">0.026</fontSize>
+            <fontSize ifSubset="menuFontSize:+5" tinyScreen="false">0.027</fontSize>
+            <fontSize ifSubset="menuFontSize:+6" tinyScreen="false">0.028</fontSize>
+            <fontSize ifSubset="menuFontSize:+7" tinyScreen="false">0.029</fontSize>
+            <fontSize ifSubset="menuFontSize:+8" tinyScreen="false">0.030</fontSize>
+            <fontSize ifSubset="menuFontSize:+9" tinyScreen="false">0.031</fontSize>
+            <fontSize ifSubset="menuFontSize:+10" tinyScreen="false">0.032</fontSize>
+            <fontSize ifSubset="menuFontSize:-1" tinyScreen="false">0.021</fontSize>
+            <fontSize ifSubset="menuFontSize:-2" tinyScreen="false">0.020</fontSize>
+            <fontSize ifSubset="menuFontSize:-3" tinyScreen="false">0.019</fontSize>
            <color ifSubset="menuColor:light|lightPlain">ffffff</color>
             <color ifSubset="menuColor:dark|darkGlass|darkPlain">aaaaaa</color>
             <separatorColor ifSubset="menuColor:light|lightPlain">505050</separatorColor>
