@@ -41,6 +41,7 @@ SCREENSHOTS:
 
 ![EmulationStation 07-06-2022 06-33-29-17](https://user-images.githubusercontent.com/59354081/172296991-c6834230-2598-43e8-917b-d517dd292317.png)
 
+
 TINY MODE FOR CRT USERS (OR HANDHELDS):
 
 ![EmulationStation 26-08-2022 05-53-50-805](https://user-images.githubusercontent.com/59354081/186814343-45054f58-43cf-4cc5-8fd9-8933213feb5d.png)
