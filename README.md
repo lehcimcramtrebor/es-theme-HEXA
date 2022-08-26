@@ -29,3 +29,11 @@ ON LITTLE BOARDS LIKE PI(s), CHECK PRELOADING METADATAS ANS PRELOADING UI IN DEV
 ![EmulationStation 07-06-2022 06-32-56-211](https://user-images.githubusercontent.com/59354081/172296982-1c2d3233-1501-4169-a6a3-e0a780a01eca.png)
 
 ![EmulationStation 07-06-2022 06-33-29-17](https://user-images.githubusercontent.com/59354081/172296991-c6834230-2598-43e8-917b-d517dd292317.png)
+
+TINY MODE FOR CRT USERS (OR HANDHELDS):
+
+![EmulationStation 26-08-2022 05-53-50-805](https://user-images.githubusercontent.com/59354081/186814343-45054f58-43cf-4cc5-8fd9-8933213feb5d.png)
+
+![EmulationStation 26-08-2022 05-54-26-939](https://user-images.githubusercontent.com/59354081/186814358-48227f6c-1ce7-4469-8d20-c24dbe4d097a.png)
+
+
