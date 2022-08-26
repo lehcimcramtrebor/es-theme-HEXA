@@ -9,6 +9,9 @@ Some video containers from Colorful Resources by Viking.
 
 Max Logos updated from Dan Patrick Collection.
 
+IMPORTANT:
+ON LITTLE BOARDS LIKE PI(s), CHECK PRELOADING METADATAS ANS PRELOADING UI IN DEVELOPER OPTIONS FOR SMOOTHEST EXPERIENCE.
+
 ![patchwork](https://user-images.githubusercontent.com/59354081/170428805-06230652-8c23-4cdb-bedc-91e48547a313.jpg)
 
 ![EmulationStation 07-06-2022 06-29-41-825](https://user-images.githubusercontent.com/59354081/172296914-8878cae2-cb27-40d3-9089-f6d0245752ab.png)
