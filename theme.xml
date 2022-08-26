@@ -76,7 +76,9 @@ By Helmic
 		<include tinyScreen="false" name="169" displayName="${lang.169}"/>
         <include tinyScreen="false" name="54" displayName="${lang.54}"/>
         <include name="43" displayName="${lang.43}"/>
-    </subset>
+        <include tinyScreen="true" name="54" displayName="${lang.54}"/>
+		<include tinyScreen="true" name="169" displayName="${lang.169}"/>
+   </subset>
 
     <subset name="-" displayName="                                                                                                                                                                                                                                                            ">
 		<include name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "/>
