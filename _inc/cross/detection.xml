@@ -12,8 +12,8 @@
     </variables>
 
     <subset name="cross" displayName="${lang.cross}">
-        <include name="no" displayName="${lang.no}"/>
         <include name="yes" displayName="${lang.yes}">./includes.xml</include>
+        <include name="no" displayName="${lang.no}"/>
    </subset>
 
 </theme>
