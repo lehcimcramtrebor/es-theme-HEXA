@@ -22,10 +22,12 @@
 
         <image name="background" extra="true">
             <path>./../wallpapers/${wallpaper}.jpg</path>
-            <path ifSubset="hexaCustom:yes">./../../_hexaCustom/backgrounds/custom.jpg</path>
-            <path ifSubset="hexaCustom:yes">./../../../../_hexaCustom/backgrounds/custom.jpg</path>
-            <path ifSubset="hexaCustom:yes">./../../_hexaCustom/backgrounds/${system.theme}.jpg</path>
-            <path ifSubset="hexaCustom:yes">./../../../../_hexaCustom/backgrounds/${system.theme}.jpg</path>
+            <path ifSubset="hexaCustom:yes">./../../_hexaCustom/wallpapers/custom.jpg</path>
+            <path ifSubset="hexaCustom:yes">./../../../../_hexaCustom/wallpapers/custom.jpg</path>
+            <path ifSubset="hexaCustom:yes">./../../../../../../_hexaCustom/wallpapers/custom.jpg</path>
+            <path ifSubset="hexaCustom:yes">./../../_hexaCustom/wallpapers/${system.theme}.jpg</path>
+            <path ifSubset="hexaCustom:yes">./../../../../_hexaCustom/wallpapers/${system.theme}.jpg</path>
+            <path ifSubset="hexaCustom:yes">./../../../../../../_hexaCustom/wallpapers/${system.theme}.jpg</path>
        </image>
 	
 	</view>
@@ -34,10 +36,12 @@
 
         <image name="background" extra="true">
             <path>./../wallpapers/${wallpaper}-pi.jpg</path>
-            <path ifSubset="hexaCustom:yes">./../../_hexaCustom/backgrounds/custom-pi.jpg</path>
-            <path ifSubset="hexaCustom:yes">./../../../../_hexaCustom/backgrounds/custom-pi.jpg</path>
-            <path ifSubset="hexaCustom:yes">./../../_hexaCustom/backgrounds/${system.theme}-pi.jpg</path>
-            <path ifSubset="hexaCustom:yes">./../../../../_hexaCustom/backgrounds/${system.theme}-pi.jpg</path>
+            <path ifSubset="hexaCustom:yes">./../../_hexaCustom/wallpapers/custom-pi.jpg</path>
+            <path ifSubset="hexaCustom:yes">./../../../../_hexaCustom/wallpapers/custom-pi.jpg</path>
+            <path ifSubset="hexaCustom:yes">./../../../../../../_hexaCustom/wallpapers/custom-pi.jpg</path>
+            <path ifSubset="hexaCustom:yes">./../../_hexaCustom/wallpapers/${system.theme}-pi.jpg</path>
+            <path ifSubset="hexaCustom:yes">./../../../../_hexaCustom/wallpapers/${system.theme}-pi.jpg</path>
+            <path ifSubset="hexaCustom:yes">./../../../../../../_hexaCustom/wallpapers/${system.theme}-pi.jpg</path>
        </image>
 	
 	</view>
@@ -46,10 +50,12 @@
 
         <image name="transition" extra="true">
             <path>./../wallpapers/${wallpaper}.jpg</path>
-            <path ifSubset="hexaCustom:yes">./../../_hexaCustom/backgrounds/custom.jpg</path>
-            <path ifSubset="hexaCustom:yes">./../../../../_hexaCustom/backgrounds/custom.jpg</path>
-            <path ifSubset="hexaCustom:yes">./../../_hexaCustom/backgrounds/${system.theme}.jpg</path>
-            <path ifSubset="hexaCustom:yes">./../../../../_hexaCustom/backgrounds/${system.theme}.jpg</path>
+            <path ifSubset="hexaCustom:yes">./../../_hexaCustom/wallpapers/custom.jpg</path>
+            <path ifSubset="hexaCustom:yes">./../../../../_hexaCustom/wallpapers/custom.jpg</path>
+            <path ifSubset="hexaCustom:yes">./../../../../../../_hexaCustom/wallpapers/custom.jpg</path>
+            <path ifSubset="hexaCustom:yes">./../../_hexaCustom/wallpapers/${system.theme}.jpg</path>
+            <path ifSubset="hexaCustom:yes">./../../../../_hexaCustom/wallpapers/${system.theme}.jpg</path>
+            <path ifSubset="hexaCustom:yes">./../../../../../../_hexaCustom/wallpapers/${system.theme}.jpg</path>
        </image>
 
 	</view>
@@ -58,10 +64,12 @@
 
         <image name="transition" extra="true">
             <path>./../wallpapers/${wallpaper}-pi.jpg</path>
-            <path ifSubset="hexaCustom:yes">./../../_hexaCustom/backgrounds/custom-pi.jpg</path>
-            <path ifSubset="hexaCustom:yes">./../../../../_hexaCustom/backgrounds/custom-pi.jpg</path>
-            <path ifSubset="hexaCustom:yes">./../../_hexaCustom/backgrounds/${system.theme}-pi.jpg</path>
-            <path ifSubset="hexaCustom:yes">./../../../../_hexaCustom/backgrounds/${system.theme}-pi.jpg</path>
+            <path ifSubset="hexaCustom:yes">./../../_hexaCustom/wallpapers/custom-pi.jpg</path>
+            <path ifSubset="hexaCustom:yes">./../../../../_hexaCustom/wallpapers/custom-pi.jpg</path>
+            <path ifSubset="hexaCustom:yes">./../../../../../../_hexaCustom/wallpapers/custom-pi.jpg</path>
+            <path ifSubset="hexaCustom:yes">./../../_hexaCustom/wallpapers/${system.theme}-pi.jpg</path>
+            <path ifSubset="hexaCustom:yes">./../../../../_hexaCustom/wallpapers/${system.theme}-pi.jpg</path>
+            <path ifSubset="hexaCustom:yes">./../../../../../../_hexaCustom/wallpapers/${system.theme}-pi.jpg</path>
        </image>
 
 	</view>
