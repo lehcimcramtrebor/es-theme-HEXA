@@ -5504,8 +5504,7 @@ By Helmic
             <color ifSubset="menuColor:light||lightPlain">121212</color>
             <color ifSubset="menuColor:light">121212</color>
             <color ifSubset="menuColor:dark|darkGlass|darkPlain">aaaaaa</color>
-            <separatorColor ifSubset="menuColor:light|lightPlain">202020</separatorColor>
-            <separatorColor ifSubset="menuColor:dark|darkGlass|darkPlain">161616</separatorColor>
+            <separatorColor>00000006</separatorColor>
             <selectorColor>${overlay.colorset}</selectorColor>
             <selectedColor>ffffff</selectedColor>		
             <selectedColor ifSubset="overlayColorset:yellow">202020</selectedColor>		
