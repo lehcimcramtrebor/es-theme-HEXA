@@ -512,11 +512,20 @@ By Helmic
         <lang.red>red</lang.red>
         <lang.red lang="fr">rouge</lang.red>
             
+        <lang.redStrawberry>red strawberry</lang.redStrawberry>
+        <lang.redStrawberry lang="fr">rouge fraise</lang.redStrawberry>
+            
         <lang.green>green</lang.green>
         <lang.green lang="fr">vert</lang.green>
+            
+        <lang.greenLime>green lime</lang.greenLime>
+        <lang.greenLime lang="fr">vert citron</lang.greenLime>
 
         <lang.blue>blue</lang.blue>
         <lang.blue lang="fr">bleu</lang.blue>
+
+        <lang.blueOcean>ocean blue</lang.blueOcean>
+        <lang.blueOcean lang="fr">bleu océan</lang.blueOcean>
 
         <lang.orange>orange</lang.orange>
         <lang.orange lang="fr">orange</lang.orange>
