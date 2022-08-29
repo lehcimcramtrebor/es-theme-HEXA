@@ -285,7 +285,9 @@ By Helmic
     </subset>
 
     <subset name="wall" displayName="${lang.wall}">
-        <include name="wallScanlines" displayName="${lang.wallScanlines}">./_inc/wallpapers/wallScanlines.xml</include>
+        <include ifSubset="staticEffect:no" name="wallScanlines" displayName="${lang.wallScanlines}">./_inc/wallpapers/wallScanlines.xml</include>
+        <include name="wallFlatGrey" displayName="${lang.wallFlatGrey}">./_inc/wallpapers/wallFlatGrey.xml</include>
+        <include name="wallFlatDark" displayName="${lang.wallFlatDark}">./_inc/wallpapers/wallFlatDark.xml</include>
         <include name="wallSynthPaint" displayName="${lang.wallSynthPaint}">./_inc/wallpapers/wallSynthPaint.xml</include>
 		<include name="wallBrushedPlate" displayName="${lang.wallBrushedPlate}">./_inc/wallpapers/wallBrushedPlate.xml</include>
         <include name="wallPlates" displayName="${lang.wallPlates}">./_inc/wallpapers/wallPlates.xml</include>
@@ -296,8 +298,6 @@ By Helmic
 		<include name="wallDefault" displayName="${lang.wallDefault}">./_inc/wallpapers/wall.xml</include>
 		<include name="wallLight" displayName="${lang.wallLight}">./_inc/wallpapers/wallLight.xml</include>
 		<include name="wallDark" displayName="${lang.wallDark}">./_inc/wallpapers/wallDark.xml</include>
-        <include name="wallFlatGrey" displayName="${lang.wallFlatGrey}">./_inc/wallpapers/wallFlatGrey.xml</include>
-        <include name="wallFlatDark" displayName="${lang.wallFlatDark}">./_inc/wallpapers/wallFlatDark.xml</include>
         <include name="wallFlatDark" displayName="${lang.wallFlatDark}">./_inc/wallpapers/wallFlatDark.xml</include>
         <include name="wallColorGreen" displayName="${lang.wallColorGreen}">./_inc/wallpapers/wallColorGreen.xml</include>
         <include name="wallColorRed" displayName="${lang.wallColorRed}">./_inc/wallpapers/wallColorRed.xml</include>
@@ -322,7 +322,9 @@ By Helmic
     </subset>
 
     <subset name="wallGamelist" displayName="${lang.wallGamelist}">
-        <include name="wallScanlines" displayName="${lang.wallScanlines}">./_inc/wallpapers/wallScanlinesGamelist.xml</include>
+        <include ifSubset="staticEffect:no" name="wallScanlines" displayName="${lang.wallScanlines}">./_inc/wallpapers/wallScanlinesGamelist.xml</include>
+        <include name="wallFlatGrey" displayName="${lang.wallFlatGrey}">./_inc/wallpapers/wallFlatGreyGamelist.xml</include>
+        <include name="wallFlatDark" displayName="${lang.wallFlatDark}">./_inc/wallpapers/wallFlatDarkGamelist.xml</include>
         <include name="wallSynthPaint" displayName="${lang.wallSynthPaint}">./_inc/wallpapers/wallSynthPaintGamelist.xml</include>
 		<include name="wallBrushedPlate" displayName="${lang.wallBrushedPlate}">./_inc/wallpapers/wallBrushedPlateGamelist.xml</include>
         <include name="wallPlates" displayName="${lang.wallPlates}">./_inc/wallpapers/wallPlatesGamelist.xml</include>
@@ -333,8 +335,6 @@ By Helmic
 		<include name="wallDefault" displayName="${lang.wallDefault}">./_inc/wallpapers/wallGamelist.xml</include>
 		<include name="wallLight" displayName="${lang.wallLight}">./_inc/wallpapers/wallLightGamelist.xml</include>
 		<include name="wallDark" displayName="${lang.wallDark}">./_inc/wallpapers/wallDarkGamelist.xml</include>
-        <include name="wallFlatGrey" displayName="${lang.wallFlatGrey}">./_inc/wallpapers/wallFlatGreyGamelist.xml</include>
-        <include name="wallFlatDark" displayName="${lang.wallFlatDark}">./_inc/wallpapers/wallFlatDarkGamelist.xml</include>
         <include name="wallFlatDark" displayName="${lang.wallFlatDark}">./_inc/wallpapers/wallFlatDarkGamelist.xml</include>
         <include name="wallColorGreen" displayName="${lang.wallColorGreen}">./_inc/wallpapers/wallColorGreenGamelist.xml</include>
         <include name="wallColorRed" displayName="${lang.wallColorRed}">./_inc/wallpapers/wallColorRedGamelist.xml</include>
@@ -1491,7 +1491,7 @@ By Helmic
 
 		<image name="randomVideosFx" extra="true" ifSubset="randomFx:crt">
 			<path>./_inc/crt.png</path>
-			<color>ffffff90</color>
+			<color>ffffff60</color>
 		</image>
 
 		<image name="randomVideosFx" extra="true" ifSubset="randomFx:phosphore">
@@ -5669,15 +5669,17 @@ By Helmic
 
 		<image name="scanlines" extra="true" ifSubset="staticEffect:crt,fullHexa:yes|no" tinyScreen="false">
 			<path>./_inc/crt.png</path>
-			<color>ffffff90</color>
+			<color>ffffff60</color>
 		</image>
 
 		<image name="scanlines" extra="true" ifSubset="staticEffect:phosphore,fullHexa:yes|no" tinyScreen="false">
 			<path>./_inc/phosphore.png</path>
+			<color>ffffff80</color>
 		</image>
 
 		<image name="scanlines" extra="true" ifSubset="staticEffect:phosphorePlus,fullHexa:yes|no" tinyScreen="false">
 			<path>./_inc/phosphorePlus.png</path>
+			<color>ffffff80</color>
 		</image>
 
 	</view>

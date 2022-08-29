@@ -939,8 +939,8 @@ By Helmic
 		<lang.wallSynthPaint>synthwave paint</lang.wallSynthPaint>
 		<lang.wallSynthPaint lang="fr">synthwave mix</lang.wallSynthPaint>
 
-		<lang.wallScanlines>scanlines</lang.wallScanlines>
-		<lang.wallScanlines lang="fr">scanlines</lang.wallScanlines>
+		<lang.wallScanlines>scanlines (desactived if shader used)</lang.wallScanlines>
+		<lang.wallScanlines lang="fr">scanlines (désactivé si shader utilisé)</lang.wallScanlines>
 
 
 	</variables>
