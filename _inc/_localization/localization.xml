@@ -530,14 +530,26 @@ By Helmic
         <lang.orange>orange</lang.orange>
         <lang.orange lang="fr">orange</lang.orange>
 
+        <lang.orangeSoda>soda orange</lang.orangeSoda>
+        <lang.orangeSoda lang="fr">orange soda</lang.orangeSoda>
+
         <lang.purple>purple</lang.purple>
         <lang.purple lang="fr">violet</lang.purple>
+
+        <lang.purplePrune>purple prune</lang.purplePrune>
+        <lang.purplePrune lang="fr">violet prune</lang.purplePrune>
 
         <lang.pink>pink</lang.pink>
         <lang.pink lang="fr">rose</lang.pink>
 
+        <lang.pinkPop>pop pink</lang.pinkPop>
+        <lang.pinkPop lang="fr">rose pop</lang.pinkPop>
+
         <lang.yellow>yellow</lang.yellow>
         <lang.yellow lang="fr">jaune</lang.yellow>
+
+        <lang.yellowVivid>canary yellow</lang.yellowVivid>
+        <lang.yellowVivid lang="fr">jaune canari</lang.yellowVivid>
 		
 		<!--static effects-->
 		<lang.staticEffect>screen • shader</lang.staticEffect>

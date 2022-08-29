@@ -91,10 +91,14 @@ By Helmic
         <include name="redStrawberry" displayName="${lang.redStrawberry}">./_inc/colorsets/redStrawberry.xml</include>
         <include name="green" displayName="${lang.green}">./_inc/colorsets/green.xml</include>
         <include name="greenLime" displayName="${lang.greenLime}">./_inc/colorsets/greenLime.xml</include>
-        <include name="orange" displayName="${lang.orange}">./_inc/colorsets/orange.xml</include>
-        <include name="purple" displayName="${lang.purple}">./_inc/colorsets/purple.xml</include>
         <include name="pink" displayName="${lang.pink}">./_inc/colorsets/pink.xml</include>
+        <include name="pinkPop" displayName="${lang.pinkPop}">./_inc/colorsets/pinkPop.xml</include>
+        <include name="orange" displayName="${lang.orange}">./_inc/colorsets/orange.xml</include>
+        <include name="orangeSoda" displayName="${lang.orangeSoda}">./_inc/colorsets/orangeSoda.xml</include>
+        <include name="purple" displayName="${lang.purple}">./_inc/colorsets/purple.xml</include>
+        <include name="purplePrune" displayName="${lang.purplePrune}">./_inc/colorsets/purplePrune.xml</include>
         <include name="yellow" displayName="${lang.yellow}">./_inc/colorsets/yellow.xml</include>
+        <include name="yellowVivid" displayName="${lang.yellowVivid}">./_inc/colorsets/yellowVivid.xml</include>
         <include name="noColor" displayName="${lang.noColor}">./_inc/colorsets/noColor.xml</include>
    </subset>
 
@@ -1169,9 +1173,13 @@ By Helmic
             <path ifSubset="arrows:textured,overlayColorset:green">./_inc/arrows/arrowGreen.png</path>
             <path ifSubset="arrows:textured,overlayColorset:greenLime">./_inc/arrows/arrowGreenLime.png</path>
             <path ifSubset="arrows:textured,overlayColorset:orange">./_inc/arrows/arrowOrange.png</path>
+            <path ifSubset="arrows:textured,overlayColorset:orangeSoda">./_inc/arrows/arrowOrangeSoda.png</path>
             <path ifSubset="arrows:textured,overlayColorset:pink">./_inc/arrows/arrowPink.png</path>
+            <path ifSubset="arrows:textured,overlayColorset:pinkPop">./_inc/arrows/arrowPinkPop.png</path>
             <path ifSubset="arrows:textured,overlayColorset:purple">./_inc/arrows/arrowPurple.png</path>
+            <path ifSubset="arrows:textured,overlayColorset:purplePrune">./_inc/arrows/arrowPurplePrune.png</path>
             <path ifSubset="arrows:textured,overlayColorset:yellow">./_inc/arrows/arrowYellow.png</path>
+            <path ifSubset="arrows:textured,overlayColorset:yellowVivid">./_inc/arrows/arrowYellowVivid.png</path>
             <path ifSubset="arrows:plain">./_inc/arrows/arrowW.png</path>
             <color ifSubset="arrows:plain">${overlay.colorset}</color>
 			<maxSize>0.0520833333333333 1</maxSize>
@@ -2593,8 +2601,6 @@ By Helmic
 			<pos>0.5 0.5</pos>
 			<size>1 0.925925926</size>
 			<selectedColor>ffffff</selectedColor>
-            <selectedColor ifSubset="overlayColorset:yellow|purple|pink">202020</selectedColor>		
-            <selectedColor ifSubset="overlayColorset:noColor|green|greenLime">202020</selectedColor>		
 			<primaryColor>dddddd</primaryColor>
 			<secondaryColor>dddddd</secondaryColor>
 			<selectorColor>${overlay.colorset}ea</selectorColor>	  		
@@ -4384,7 +4390,6 @@ By Helmic
 			<pos>1.02 0.04</pos>
 			<size>0.39 0.92</size>
 			<selectedColor>ffffff</selectedColor>
-            <selectedColor ifSubset="overlayColorset:noColor|yellow|purple|pink">101010</selectedColor>		
 			<primaryColor>eeeeee</primaryColor>
 			<secondaryColor>eeeeee</secondaryColor>
 			<selectorImagePath>./_inc/selector.png</selectorImagePath>
@@ -4592,6 +4597,11 @@ By Helmic
 	</view>
 <!-----------------------------------------------------------------------END OF DETAILED---------------------------------------------------------------------------------------------------------->
 
+	<view name="basic,detailed">
+		<textlist name="gamelist">
+            <selectedColor ifSubset="overlayColorset:noColor|yellow|yellowVivid|purple|pink">101010</selectedColor>		
+ 			</textlist>
+	</view>
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
@@ -5497,8 +5507,7 @@ By Helmic
             <separatorColor>00000006</separatorColor>
             <selectorColor>${overlay.colorset}</selectorColor>
             <selectedColor>ffffff</selectedColor>		
-            <selectedColor ifSubset="overlayColorset:yellow">202020</selectedColor>		
-            <selectedColor ifSubset="overlayColorset:noColor|purple|pink">101010</selectedColor>		
+            <selectedColor ifSubset="overlayColorset:noColor|yellow|yellowVivid|purple|pink">101010</selectedColor>		
             <selectorColor ifSubset="overlayColorset:noColor">cccccc</selectorColor>
         </menuText>
 	
