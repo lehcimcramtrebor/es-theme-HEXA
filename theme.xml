@@ -99,6 +99,7 @@ By Helmic
         <include name="purplePrune" displayName="${lang.purplePrune}">./_inc/colorsets/purplePrune.xml</include>
         <include name="yellow" displayName="${lang.yellow}">./_inc/colorsets/yellow.xml</include>
         <include name="yellowVivid" displayName="${lang.yellowVivid}">./_inc/colorsets/yellowVivid.xml</include>
+        <include name="greyMegadrive" displayName="${lang.greyMegadrive}">./_inc/colorsets/greyMegadrive.xml</include>
         <include name="noColor" displayName="${lang.noColor}">./_inc/colorsets/noColor.xml</include>
    </subset>
 
@@ -1180,6 +1181,7 @@ By Helmic
             <path ifSubset="arrows:textured,overlayColorset:purplePrune">./_inc/arrows/arrowPurplePrune.png</path>
             <path ifSubset="arrows:textured,overlayColorset:yellow">./_inc/arrows/arrowYellow.png</path>
             <path ifSubset="arrows:textured,overlayColorset:yellowVivid">./_inc/arrows/arrowYellowVivid.png</path>
+            <path ifSubset="arrows:textured,overlayColorset:greyMegadrive">./_inc/arrows/arrowGreyMegadrive.png</path>
             <path ifSubset="arrows:plain">./_inc/arrows/arrowW.png</path>
             <color ifSubset="arrows:plain">${overlay.colorset}</color>
 			<maxSize>0.0520833333333333 1</maxSize>

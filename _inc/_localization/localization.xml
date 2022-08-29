@@ -550,6 +550,9 @@ By Helmic
 
         <lang.yellowVivid>canary yellow</lang.yellowVivid>
         <lang.yellowVivid lang="fr">jaune canari</lang.yellowVivid>
+
+        <lang.greyMegadrive>genesis grey</lang.greyMegadrive>
+        <lang.greyMegadrive lang="fr">gris megadrive</lang.greyMegadrive>
 		
 		<!--static effects-->
 		<lang.staticEffect>screen • shader</lang.staticEffect>
