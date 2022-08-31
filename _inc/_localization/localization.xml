@@ -76,7 +76,7 @@ By Helmic
         <lang.descriptionFontSize lang="fr">taille de la police de la description</lang.descriptionFontSize>
 
         <lang.gamelistFontSize> gamelist font size</lang.gamelistFontSize>
-        <lang.gamelistFontSize lang="fr">taille de la police de la listes</lang.gamelistFontSize>
+        <lang.gamelistFontSize lang="fr">taille de la police de la liste</lang.gamelistFontSize>
 
         <lang.bindingBarFontSize>system view • info bar font size</lang.bindingBarFontSize>
         <lang.bindingBarFontSize lang="fr">vue système • taille de la police de la barre d'infos</lang.bindingBarFontSize>
