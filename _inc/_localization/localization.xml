@@ -586,11 +586,11 @@ By Helmic
 		<lang.noEffect lang="fr">sans shader</lang.noEffect>
 
 		<!--scratch-->
-		<lang.scratch>screen • glass scratch</lang.scratch>
-		<lang.scratch lang="fr">écran • état de la vitre</lang.scratch>
+		<lang.scratch>screen • glass scratch intensity</lang.scratch>
+		<lang.scratch lang="fr">écran • intensité de l'effet vitre usée</lang.scratch>
 
 		<lang.scratch.no>no</lang.scratch.no>
-		<lang.scratch.no lang="fr">neuve</lang.scratch.no>
+		<lang.scratch.no lang="fr">sans vitre</lang.scratch.no>
 
 		<lang.scratch.light>light</lang.scratch.light>
 		<lang.scratch.light lang="fr">occasion</lang.scratch.light>
@@ -618,11 +618,11 @@ By Helmic
 		<lang.transitionCustom lang="fr">transition • plaque custom</lang.transitionCustom>
 
 		<!--shutter-->
-		<lang.shutter>screen • shutter rate</lang.shutter>
-		<lang.shutter lang="fr">écran • fréquence de l'obturateur</lang.shutter>
+		<lang.shutter>screen • cathodic fx rate</lang.shutter>
+		<lang.shutter lang="fr">écran • fréquence de l'effet de balayage</lang.shutter>
 
 		<lang.shutter.no>disabled</lang.shutter.no>
-		<lang.shutter.no lang="fr">désactivé</lang.shutter.no>
+		<lang.shutter.no lang="fr">sans balayage</lang.shutter.no>
 
 		<lang.shutter.25>25p</lang.shutter.25>
 		<lang.shutter.30>30p</lang.shutter.30>

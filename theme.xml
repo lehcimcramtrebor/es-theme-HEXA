@@ -878,16 +878,16 @@ By Helmic
 			<color>00000000</color>
 			<opacity>0.5</opacity>
             <storyboard ifSubset="shutter:25">
-                <animation property="color" from="00000000" to="0000000a" duration="40" autoreverse="true" mode="linear" repeat="forever"/>
+                <animation property="color" from="00000000" to="0000001a" duration="40" autoreverse="true" mode="linear" repeat="forever"/>
             </storyboard>
              <storyboard ifSubset="shutter:30">
-                <animation property="color" from="00000000" to="0000000a" duration="33.333333333" autoreverse="true" mode="linear" repeat="forever"/>
+                <animation property="color" from="00000000" to="0000001a" duration="33.333333333" autoreverse="true" mode="linear" repeat="forever"/>
             </storyboard>
              <storyboard ifSubset="shutter:50">
-                <animation property="color" from="00000000" to="0000000a" duration="20" autoreverse="true" mode="linear" repeat="forever"/>
+                <animation property="color" from="00000000" to="0000001a" duration="20" autoreverse="true" mode="linear" repeat="forever"/>
             </storyboard>
              <storyboard ifSubset="shutter:60">
-                <animation property="color" from="00000000" to="0000000a" duration="16.666666667" autoreverse="true" mode="linear" repeat="forever"/>
+                <animation property="color" from="00000000" to="0000001a" duration="16.666666667" autoreverse="true" mode="linear" repeat="forever"/>
             </storyboard>
  		</image>
 		
