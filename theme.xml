@@ -463,11 +463,12 @@ By Helmic
     </subset>
 
  	<subset name="logoAnime" displayName="${lowSpecs}${lowSpecsPi}${lang.logoAnime}" appliesTo="(wallpaper),system,basic,detailed,grid,gamecarousel">
-		<include name="no" displayName="${lang.no}"/>
+		<include name="no" displayName="${lang.noLogoAnime}"/>
         <include name="mix3" displayName="${lang.mix3}"/>
         <include name="onTop" displayName="${lang.onTop}"/>
         <include name="inGamelist" displayName="${lang.inGamelist}"/>
         <include name="onScreen" displayName="${lang.onScreen}"/>
+        <include name="character" displayName="${lang.character}"/>
     </subset>
 
  	<subset name="logoCustom" displayName="${lowSpecs}${lowSpecsPi}${lang.logoCustom}" appliesTo="(wallpaper),system,basic,detailed,grid,gamecarousel" ifSubset="logoAnime:mix3|onTop|inGamelist|onScreen">
@@ -2305,6 +2306,15 @@ By Helmic
 	</view>
 <!--------------------------------------------------------------------END OF TRANSITIONS------------------------------------------------------------------------------------------>
 
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------GAMELIST ANIMATIONS-------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+<!--------------------------------------------------------------------LOGOS-------------------------------------------------------------------------------------------------------->
+
 	<view name="basic,detailed,grid,gamecarousel" ifSubset="logoAnime:onTop|inGamelist|onScreen|mix3,fullHexa:yes">
 	
 		<image name="logoAnime" extra="true">
@@ -2579,8 +2589,68 @@ By Helmic
             </storyboard>
 
 		</image>
+	
+	</view>
+	
+<!--------------------------------------------------------------------CHARACTERS-------------------------------------------------------------------------------------------------------->
+
+	<view name="basic,detailed,grid,gamecarousel" ifSubset="logoAnime:character,fullHexa:yes">
+
+		<image name="character" extra="true" ifSubset="logoAnime:character">
+		
+			<linearSmooth>true</linearSmooth>
+			<path>./_hexaCustom/characters/${system.theme}.png</path>
+			<path ifArch="windows">./../../../../_hexaCustom/characters/${system.theme}.png</path>
+			<path ifNotArch="windows">./../../_hexaCustom/characters/${system.theme}.png</path>
+			<maxSize>2 0.9259259259259259</maxSize>
+			<pos>0.605 0.5</pos>
+			<pos ifSubset="gamesZoneBack:no|carbon|carbonColorset">1 0.5</pos>
+			<zIndex>3</zIndex>
+			<origin>1 0.5</origin>
+			<color>aaaaaa</color>
+			<colorEnd>aaaaaa30</colorEnd>
+			<gradientType>vertical</gradientType>
+			<saturation>1.3</saturation>
+
+			<storyboard repeat="forever" tinyScreen="false">
+				<animation property="x" to="0" duration="20000" autoreverse="true" mode="linear"/>				
+				<animation property="origin" to="0.5 0.5" duration="20000" autoreverse="true" mode="linear"/>				
+				<animation property="w" to="0" begin="3500" duration="25" autoreverse="true" mode="easeInOut"/>				
+				<animation property="w" to="0" begin="10500" duration="25" repeat="2" autoreverse="true" mode="easeInOut"/>				
+				<animation property="w" to="0" begin="20000" duration="25" autoreverse="true" mode="easeInOut"/>				
+				<animation property="w" to="0" begin="35000" duration="25" repeat="2" autoreverse="true" mode="easeInOut"/>				
+				<animation property="color" to="ff000099" begin="3500" duration="10" autoreverse="true" mode="easeInOut"/>				
+				<animation property="color" to="00ff0099" begin="3520" duration="10" autoreverse="true" mode="easeInOut"/>				
+				<animation property="color" to="0000ff99" begin="3540" duration="10" autoreverse="true" mode="easeInOut"/>	
+				<animation property="color" to="aaaaaa" begin="3560" duration="50" mode="easyInOut"/>
+				<animation property="color" to="ff000099" begin="20500" duration="10" autoreverse="true" mode="easeInOut"/>				
+				<animation property="color" to="00ff0099" begin="20520" duration="10" autoreverse="true" mode="easeInOut"/>				
+				<animation property="color" to="0000ff99" begin="20540" duration="10" autoreverse="true" mode="easeInOut"/>	
+				<animation property="color" to="aaaaaa" begin="20560" duration="50" mode="easeInOut"/>
+				<animation property="rotation" from="-0.25" to="0.25" begin="25500" duration="10" autoreverse="true" repeat="2" mode="easeInOut"/>
+				<animation property="rotation" to="0" begin="25540" duration="20" mode="easeInOut"/>
+			</storyboard>
+
+			<storyboard repeat="forever" tinyScreen="true">
+				<animation property="x" to="0" duration="10000" autoreverse="true" mode="linear"/>				
+				<animation property="origin" to="0 0.5" duration="10000" autoreverse="true" mode="linear"/>				
+			</storyboard>
+		
+		</image>
 
 	</view>
+
+	<view name="basic" ifSubset="logoAnime:character,fullHexa:yes">
+
+		<image name="character" extra="true" ifSubset="logoAnime:character">
+		
+			<pos>1 0.5</pos>
+
+		</image>
+
+	</view>
+
+<!--------------------------------------------------------------------END OF GAMELIST ANIMATIONS----------------------------------------------------------------------------------->
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->

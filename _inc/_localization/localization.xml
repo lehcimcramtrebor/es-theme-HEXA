@@ -54,23 +54,29 @@ By Helmic
         <lang.regionChoice>allow region settings</lang.regionChoice>
         <lang.regionChoice lang="fr">autoriser le paramètre région</lang.regionChoice>
 
-        <lang.logoAnime>  wall logo animations (+++ resources)</lang.logoAnime>
-        <lang.logoAnime lang="fr">animations des logos sur le mur (+++ ressources)</lang.logoAnime>
+        <lang.logoAnime>  wall gamelists animations (+++ resources)</lang.logoAnime>
+        <lang.logoAnime lang="fr">animations sur le mur des gamelists (+++ ressources)</lang.logoAnime>
+
+        <lang.noLogoAnime>nothing</lang.noLogoAnime>
+        <lang.noLogoAnime lang="fr">aucune</lang.noLogoAnime>
+
+        <lang.character>character</lang.character>
+        <lang.character lang="fr">personnages</lang.character>
 
         <lang.logoCustom> use custom logo in animation</lang.logoCustom>
         <lang.logoCustom lang="fr">utiliser le logo personnalisé pour l'animation</lang.logoCustom>
 
-        <lang.onTop>on top</lang.onTop>
-        <lang.onTop lang="fr">en haut</lang.onTop>
+        <lang.onTop>logo on top</lang.onTop>
+        <lang.onTop lang="fr">logo en haut</lang.onTop>
 
-        <lang.inGamelist>behind gamelist</lang.inGamelist>
-        <lang.inGamelist lang="fr">derrière la liste</lang.inGamelist>
+        <lang.inGamelist>logo behind gamelist</lang.inGamelist>
+        <lang.inGamelist lang="fr">logo derrière la liste</lang.inGamelist>
 
-        <lang.onScreen>on screen</lang.onScreen>
-        <lang.onScreen lang="fr">sur l'écran</lang.onScreen>
+        <lang.onScreen>logo on screen</lang.onScreen>
+        <lang.onScreen lang="fr">logo sur l'écran</lang.onScreen>
 
-        <lang.mix3>full mix</lang.mix3>
-        <lang.mix3 lang="fr">toutes</lang.mix3>
+        <lang.mix3>logo full mix</lang.mix3>
+        <lang.mix3 lang="fr">toutes les animations de logo</lang.mix3>
 
         <lang.descriptionFontSize> description font size</lang.descriptionFontSize>
         <lang.descriptionFontSize lang="fr">taille de la police de la description</lang.descriptionFontSize>
