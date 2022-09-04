@@ -2152,16 +2152,16 @@ By Helmic
 		
 		<image name="logoTransition" extra="true">
             <linearSmooth>true</linearSmooth>
-            <path>./default/color${res}.png</path>
-            <path>./default/color-${lang}${res}.png</path>
-            <path>./${system.theme}/color${res}.png</path>
-            <path>./${system.theme}/color-${lang}${res}.png</path>
-            <path region="us" ifSubset="regionChoice:yes">./${system.theme}/us/color${res}.png</path>
-            <path region="jp" ifSubset="regionChoice:yes">./${system.theme}/jp/color${res}.png</path>
-            <path ifSubset="neogeoaes:yes">./${system.theme}/color-aes${res}.png</path>
-			<path ifSubset="transitionCustom:yes">./_hexaCustom/tile/custom${res}.png</path>
-            <path ifArch="windows" ifSubset="transitionCustom:yes">./../../../../_hexaCustom/tile/custom${res}.png</path>
-            <path ifNotArch="windows" ifSubset="transitionCustom:yes">./../../_hexaCustom/tile/custom${res}.png</path>
+            <path>./default/color-pi.png</path>
+            <path>./default/color-${lang}-pi.png</path>
+            <path>./${system.theme}/color-pi.png</path>
+            <path>./${system.theme}/color-${lang}-pi.png</path>
+            <path region="us" ifSubset="regionChoice:yes">./${system.theme}/us/color-pi.png</path>
+            <path region="jp" ifSubset="regionChoice:yes">./${system.theme}/jp/color-pi.png</path>
+            <path ifSubset="neogeoaes:yes">./${system.theme}/color-aes-pi.png</path>
+			<path ifSubset="transitionCustom:yes">./_hexaCustom/tile/custom-pi.png</path>
+            <path ifArch="windows" ifSubset="transitionCustom:yes">./../../../../_hexaCustom/tile/custom-pi.png</path>
+            <path ifNotArch="windows" ifSubset="transitionCustom:yes">./../../_hexaCustom/tile/custom-pi.png</path>
            	<maxSize>1 0.72</maxSize>
 			<pos>0.5 0.4</pos>
 			<origin>0.5 0.5</origin>
