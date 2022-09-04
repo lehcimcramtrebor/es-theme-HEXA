@@ -9,6 +9,8 @@ Some video containers from Colorful Resources by Viking.
 
 Max Logos updated from Dan Patrick Collection.
 
+Some custom characters from RVGM Theme by Darknior.
+
 IMPORTANT NOTES:
 
   -ON LITTLE BOARDS LIKE PI(s), CHECK PRELOADING METADATAS ANS PRELOADING UI IN DEVELOPER OPTIONS FOR SMOOTHEST EXPERIENCE.
