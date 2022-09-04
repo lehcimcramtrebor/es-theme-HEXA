@@ -2967,7 +2967,7 @@ By Helmic
 			<color>ffffff</color>
 			<saturation>1.3</saturation>
 			<opacity>0</opacity>			
-			<reflexion>0.125 0</reflexion>
+			<reflexion>0.06 0</reflexion>
 			<storyboard event="open">
                 <animation property="opacity" from="0" to="1" duration="250" mode="easeOut"/>
            </storyboard>
@@ -3161,7 +3161,7 @@ By Helmic
 			<zIndex>6</zIndex>
 			<opacity>0</opacity>
 			<color>00000000</color>
-			<reflexion>0.125 0</reflexion>
+			<reflexion>0.06 0</reflexion>
 			<storyboard event="open" ifSubset="previewDisplay:displayMix">
                 <animation property="color" from="00000000" to="ffffff" duration="1" mode="linear"/>
                 <animation property="opacity" from="0" to="1" duration="125" mode="easeOut" begin="750"/>
@@ -4454,7 +4454,7 @@ By Helmic
 			<color>ffffff00</color>
 			<saturation>1.3</saturation>
 			<opacity>0</opacity>			
-			<reflexion>0.125 0</reflexion>
+			<reflexion>0.06 0</reflexion>
 			<storyboard event="open">
                 <animation property="opacity" from="0" to="0" duration="1" mode="easeOut"/>
            </storyboard>
@@ -4657,7 +4657,7 @@ By Helmic
 			<saturation>1.3</saturation>
 			<gradientType>vertical</gradientType>			
 			<opacity>0</opacity>			
-			<reflexion>0.125 0</reflexion>
+			<reflexion>0.06 0</reflexion>
 
 			<storyboard event="open">
                 <animation property="opacity" from="0" to="1" duration="250" mode="easeOut"/>
