@@ -1093,7 +1093,38 @@ By Helmic
 <!--------------------------------------------------------------------------SYSTEM------------------------------------------------------------------------------------------------->
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+	<view name="system,basic,detailed,grid,gamecarousel">
 
+        <image name="logo">
+            <linearSmooth>true</linearSmooth>
+            <path>./default/color${res}.png</path>
+            <path>./default/color-${lang}${res}.png</path>
+            <path>./${system.theme}/color${res}.png</path>
+            <path>./${system.theme}/color-${lang}${res}.png</path>
+            <path ifSubset="neogeoaes:yes">./${system.theme}/color-aes${res}.png</path>
+		</image>
+
+        <image name="logo" region="eu"></image>
+
+        <image name="logo" region="us" ifSubset="regionChoice:yes">
+            <path>./${system.theme}/us/color${res}.png</path>
+        </image>
+
+
+        <image name="logo" region="jp" ifSubset="regionChoice:yes">
+            <path>./${system.theme}/jp/color${res}.png</path>
+        </image>
+	
+	</view>
+
+	<view name="basic,detailed,grid,gamecarousel">
+
+        <image name="logo">
+            <visible>false</visible>
+		</image>
+
+	</view>
+	
     <view name="system">
 		<image name="piLogo" extra="true" ifSubset="fullHexa:hexaPi">
 			<linearSmooth>true</linearSmooth>
@@ -1227,14 +1258,7 @@ By Helmic
         </carousel>
 
         <image name="logo">
-            <linearSmooth>true</linearSmooth>
-            <path>./default/color${res}.png</path>
-            <path>./default/color-${lang}${res}.png</path>
-            <path>./${system.theme}/color${res}.png</path>
-            <path>./${system.theme}/color-${lang}${res}.png</path>
-            <path ifSubset="neogeoaes:yes">./${system.theme}/color-aes${res}.png</path>
  
-
 			<storyboard event="activate" repeatAt="950">
                 <animation property="scale" from="0.9" to="1" duration="250" mode="easeOutQuint"/>
                 <animation property="scale" from="0.9" to="1" duration="150" mode="EaseOut"/>
@@ -1353,17 +1377,6 @@ By Helmic
              </storyboard>
 			
  		</image>
-
-        <image name="logo" region="eu"></image>
-
-        <image name="logo" region="us" ifSubset="regionChoice:yes">
-            <path>./${system.theme}/us/color${res}.png</path>
-        </image>
-
-
-        <image name="logo" region="jp" ifSubset="regionChoice:yes">
-            <path>./${system.theme}/jp/color${res}.png</path>
-        </image>
 
         <text name="logoText">
             <fontPath>./_inc/fonts/snes.ttf</fontPath>
@@ -5068,7 +5081,11 @@ By Helmic
 	
 	<customView name="library" inherits="detailed" displayName="${lang.library}">
 
-		<image name="backTvMixblack,logoTV,tvMix,backTvMix,tvShadow,logoColorContainer,mire,taitoFx" extra="true">
+		<image name="backTvMixblack,logoTV,tvMix,backTvMix,tvShadow,mire,taitoFx" extra="true">
+			<visible>false</visible>
+		</image>
+
+		<image name="logo">
 			<visible>false</visible>
 		</image>
 
@@ -5757,11 +5774,11 @@ By Helmic
     <include ifArch="windows">./../../../../_hexaCustom/labels/${system.theme}.xml</include>
     <include ifNotArch="windows">./../../_hexaCustom/labels/${system.theme}.xml</include>
 
-    <!--ANIMATIONS LOGOCOLORCONTAINER-->
+    <!--ANIMATIONS logo-->
 
 	<view name="detailed,grid,gamecarousel">
 
-		<image name="logoColorContainer" extra="true">
+		<image name="logo">
  			<storyboard repeatAt="950">
         		<animation property="offsetY" to="-0.015" autoreverse="true" duration="200" mode="easeOutCubic" begin="5950"/>
 			</storyboard>

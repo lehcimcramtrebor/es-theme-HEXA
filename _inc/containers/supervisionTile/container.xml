@@ -13,15 +13,7 @@ By Helmic
 			<color>7f9458</color>
 		</image>
         
-		<image name="logoColorContainer" extra="true">
-            <linearSmooth>true</linearSmooth>
-            <path>./../../../default/color.png</path>
-            <path>./../../../default/color-${lang}.png</path>
-            <path>./../../../${system.theme}/color.png</path>
-            <path>./../../../${system.theme}/color-${lang}.png</path>
-            <path region="us">./../../../${system.theme}/us/color.png</path>
-            <path region="jp">./../../../${system.theme}/jp/color.png</path>
-            <path ifSubset="neogeoaes:yes">./../../../${system.theme}/color-aes.png</path>
+		<image name="logo"><visible>true</visible>
             <path ifSubset="containerTile:customTile">./../../../_hexaCustom/tile/custom.png</path>
             <path ifArch="windows" ifSubset="containerTile:customTile">./../../../../../../../_hexaCustom/tile/custom.png</path>
             <path ifNotArch="windows" ifSubset="containerTile:customTile">./../../../../../_hexaCustom/tile/custom.png</path>
