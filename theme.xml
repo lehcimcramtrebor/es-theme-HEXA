@@ -224,11 +224,6 @@ By Helmic
 		<include name="no" displayName="${lang.no}"/>
     </subset>
 
-    <subset name="logoSource" displayName="${lowSpecs}${lowSpecsPi}${lang.logoSource}">
-        <include name="png" displayName="${lang.png}">./_inc/png.xml</include>
-        <include name="svg" displayName="${lang.svg}">./_inc/svg.xml</include>
-    </subset>
-
     <subset name="arrows" displayName="${lowSpecsPi}${lang.arrows}">
         <include name="textured" displayName="${lang.textured}"/>
 		<include name="plain" displayName="${lang.plain}"/>
@@ -992,10 +987,10 @@ By Helmic
 		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}-${lang}.png</path>
 		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}-${lang}.svg</path>
 
-		<path>./_inc/${logoSource}/${system.theme}.png</path>
-		<path>./_inc/${logoSource}/${system.theme}.svg</path>
-		<path>./_inc/${logoSource}/${system.theme}-${lang}.png</path>
-		<path>./_inc/${logoSource}/${system.theme}-${lang}.svg</path>
+		<path>./_inc/logos/${system.theme}.png</path>
+		<path>./_inc/logos/${system.theme}.svg</path>
+		<path>./_inc/logos/${system.theme}-${lang}.png</path>
+		<path>./_inc/logos/${system.theme}-${lang}.svg</path>
 	</image>
 
 	<image name="logoAssist" region="us" extra="true" ifSubset="regionChoice:yes">
@@ -1010,8 +1005,8 @@ By Helmic
 		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/us/${system.theme}-w.png</path>
 		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/us/${system.theme}-w.svg</path>
 
-		<path>./_inc/${logoSource}/us/${system.theme}.png</path>
-		<path>./_inc/${logoSource}/us/${system.theme}.svg</path>
+		<path>./_inc/logos/us/${system.theme}.png</path>
+		<path>./_inc/logos/us/${system.theme}.svg</path>
 	</image>
 
 	<image name="logoAssist" region="jp" extra="true" ifSubset="regionChoice:yes">
@@ -1026,16 +1021,16 @@ By Helmic
 		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/jp/${system.theme}-w.png</path>
 		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/jp/${system.theme}-w.svg</path>
 
-		<path>./_inc/${logoSource}/jp/${system.theme}.png</path>
-		<path>./_inc/${logoSource}/jp/${system.theme}.svg</path>
+		<path>./_inc/logos/jp/${system.theme}.png</path>
+		<path>./_inc/logos/jp/${system.theme}.svg</path>
 	</image>
 
 	<image name="logoAssist" extra="true">
-		<path ifSubset="neogeoaes:yes">./_inc/${logoSource}/${system.theme}aes.png</path>
-		<path ifSubset="neogeoaes:yes">./_inc/${logoSource}/${system.theme}aes.svg</path>
+		<path ifSubset="neogeoaes:yes">./_inc/logos/${system.theme}aes.png</path>
+		<path ifSubset="neogeoaes:yes">./_inc/logos/${system.theme}aes.svg</path>
 
-		<path>./_inc/${logoSource}/test.png</path>
-		<path>./_inc/${logoSource}/test.svg</path>
+		<path>./_inc/logos/test.png</path>
+		<path>./_inc/logos/test.svg</path>
 
 	</image>
 
@@ -2251,10 +2246,10 @@ By Helmic
 		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}-${lang}.png</path>
 		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}-${lang}.svg</path>
 
-		<path>./_inc/${logoSource}/${system.theme}.png</path>
-		<path>./_inc/${logoSource}/${system.theme}.svg</path>
-		<path>./_inc/${logoSource}/${system.theme}-${lang}.png</path>
-		<path>./_inc/${logoSource}/${system.theme}-${lang}.svg</path>
+		<path>./_inc/logos/${system.theme}.png</path>
+		<path>./_inc/logos/${system.theme}.svg</path>
+		<path>./_inc/logos/${system.theme}-${lang}.png</path>
+		<path>./_inc/logos/${system.theme}-${lang}.svg</path>
 
 	</image>
 
@@ -2270,8 +2265,8 @@ By Helmic
 		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/us/${system.theme}-w.png</path>
 		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/us/${system.theme}-w.svg</path>
 
-		<path>./_inc/${logoSource}/us/${system.theme}.png</path>
-		<path>./_inc/${logoSource}/us/${system.theme}.svg</path>
+		<path>./_inc/logos/us/${system.theme}.png</path>
+		<path>./_inc/logos/us/${system.theme}.svg</path>
 	</image>
 
 	<image name="logoAssistTransition" region="jp" extra="true" ifSubset="regionChoice:yes">
@@ -2286,16 +2281,16 @@ By Helmic
 		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/jp/${system.theme}-w.png</path>
 		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/jp/${system.theme}-w.svg</path>
 
-		<path>./_inc/${logoSource}/jp/${system.theme}.png</path>
-		<path>./_inc/${logoSource}/jp/${system.theme}.svg</path>
+		<path>./_inc/logos/jp/${system.theme}.png</path>
+		<path>./_inc/logos/jp/${system.theme}.svg</path>
 	</image>
 
 	<image name="logoAssistTransition" extra="true">
-		<path ifSubset="neogeoaes:yes">./_inc/${logoSource}/${system.theme}aes.png</path>
-		<path ifSubset="neogeoaes:yes">./_inc/${logoSource}/${system.theme}aes.svg</path>
+		<path ifSubset="neogeoaes:yes">./_inc/logos/${system.theme}aes.png</path>
+		<path ifSubset="neogeoaes:yes">./_inc/logos/${system.theme}aes.svg</path>
 
-		<path>./_inc/${logoSource}/test.png</path>
-		<path>./_inc/${logoSource}/test.svg</path>
+		<path>./_inc/logos/test.png</path>
+		<path>./_inc/logos/test.svg</path>
 
 		<path ifSubset="logoAssistTransitionCustom:yes">./_hexaCustom/logo/logo.png</path>
 		<path ifSubset="logoAssistTransitionCustom:yes">./_hexaCustom/logo/logo.svg</path>
@@ -2442,10 +2437,10 @@ By Helmic
 		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}-${lang}.png</path>
 		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}-${lang}.svg</path>
 
-		<path>./_inc/${logoSource}/${system.theme}.png</path>
-		<path>./_inc/${logoSource}/${system.theme}.svg</path>
-		<path>./_inc/${logoSource}/${system.theme}-${lang}.png</path>
-		<path>./_inc/${logoSource}/${system.theme}-${lang}.svg</path>
+		<path>./_inc/logos/${system.theme}.png</path>
+		<path>./_inc/logos/${system.theme}.svg</path>
+		<path>./_inc/logos/${system.theme}-${lang}.png</path>
+		<path>./_inc/logos/${system.theme}-${lang}.svg</path>
 	</image>
 
 	<image name="logoAnime" region="us" extra="true" ifSubset="regionChoice:yes">
@@ -2460,8 +2455,8 @@ By Helmic
 		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/us/${system.theme}-w.png</path>
 		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/us/${system.theme}-w.svg</path>
 
-		<path>./_inc/${logoSource}/us/${system.theme}.png</path>
-		<path>./_inc/${logoSource}/us/${system.theme}.svg</path>
+		<path>./_inc/logos/us/${system.theme}.png</path>
+		<path>./_inc/logos/us/${system.theme}.svg</path>
 	</image>
 
 	<image name="logoAnime" region="jp" extra="true" ifSubset="regionChoice:yes">
@@ -2476,8 +2471,8 @@ By Helmic
 		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/jp/${system.theme}-w.png</path>
 		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/jp/${system.theme}-w.svg</path>
 
-		<path>./_inc/${logoSource}/jp/${system.theme}.png</path>
-		<path>./_inc/${logoSource}/jp/${system.theme}.svg</path>
+		<path>./_inc/logos/jp/${system.theme}.png</path>
+		<path>./_inc/logos/jp/${system.theme}.svg</path>
 	</image>
 
 		<image name="logoAnime" extra="true" ifSubset="logoCustom:yes">
@@ -2492,11 +2487,11 @@ By Helmic
 
 	<image name="logoAnime" extra="true">
 
-		<path ifSubset="neogeoaes:yes">./_inc/${logoSource}/${system.theme}aes.png</path>
-		<path ifSubset="neogeoaes:yes">./_inc/${logoSource}/${system.theme}aes.svg</path>
+		<path ifSubset="neogeoaes:yes">./_inc/logos/${system.theme}aes.png</path>
+		<path ifSubset="neogeoaes:yes">./_inc/logos/${system.theme}aes.svg</path>
 
-		<path>./_inc/${logoSource}/test.png</path>
-		<path>./_inc/${logoSource}/test.svg</path>
+		<path>./_inc/logos/test.png</path>
+		<path>./_inc/logos/test.svg</path>
 
 	</image>
 
