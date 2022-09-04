@@ -82,12 +82,6 @@ By Helmic
 			<color>dddddd</color>
 		</video>
 
-	<image name="logoTV" extra="true" ifSubset="tvLogo:yes">
-		<maxSize>0.1 0.06</maxSize>
-		<pos>0.235 0.82</pos>
-		<y ifSubset="themeRatio:43|54">0.85</y>
-	</image>
-
 	</view>
 	
 </theme>

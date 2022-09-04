@@ -114,10 +114,6 @@ By Helmic
 			<color>ffffff</color>
 		</video>
 
-	<image name="logoTV" extra="true" ifSubset="tvLogo:yes">
-			<visible>false</visible>
-	</image>
-
 	</view>
 	
 </theme>

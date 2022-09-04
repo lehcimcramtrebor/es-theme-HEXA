@@ -830,9 +830,6 @@ By Helmic
 		<lang.logoVisualAssistance>carousel • display logo visual assistance (+ resources)</lang.logoVisualAssistance>
 		<lang.logoVisualAssistance lang="fr">carrousel • afficher l'assistance visuelle des logos (+ ressources)</lang.logoVisualAssistance>
 
-		<lang.tvLogo>display system logos on video</lang.tvLogo>
-		<lang.tvLogo lang="fr">afficher les logos système dans la vidéo</lang.tvLogo>
-
 		<lang.tvOs>display os on video container (when available)</lang.tvOs>
 		<lang.tvOs lang="fr">afficher l'os sur le conteneur vidéo (quand disponible)</lang.tvOs>
 

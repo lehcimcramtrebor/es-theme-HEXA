@@ -714,12 +714,6 @@ By Helmic
 <!----------------------------------------------------------------------------------------------------------------------------------------------------------->
 
 
-
-	<subset name="tvLogo" displayName="${lowSpecs}${lowSpecsPi}${lang.tvLogo}" appliesTo="(game video),system,basic,detailed,grid,gamecarousel">
-		<include name="no" displayName="${lang.no}"/>
-		<include name="yes" displayName="${lang.yes}"/>
-	</subset>
-
 	<subset name="tvSnaphot" displayName="${lang.tvSnaphot}" appliesTo="(game video),system,basic,detailed,grid,gamecarousel">
 		<include name="no" displayName="${lang.no}"/>
 		<include name="yes" displayName="${lang.yes}"/>
@@ -2941,95 +2935,6 @@ By Helmic
             <color>ffffff</color>
 			<saturation>1.1</saturation>
 		</video>
-
-	<image name="logoTV" extra="true" ifSubset="tvLogo:yes,fullHexa:yes">
-		<origin>0. 1</origin>
-		<zIndex>13</zIndex>
-		<color>ffffff</color>
-		<linearSmooth>true</linearSmooth>
-
-		<path ifArch="windows">./../es-theme-carbon/art/logos/${system.theme}.png</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/${system.theme}.svg</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/${system.theme}-w.png</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/${system.theme}-w.svg</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/${system.theme}-${lang}.png</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/${system.theme}-${lang}.svg</path>
-
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}.png</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}.svg</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}-w.png</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}-w.svg</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}-${lang}.png</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/${system.theme}-${lang}.svg</path>
-
-		<path>./_inc/${logoSource}/${system.theme}.png</path>
-		<path>./_inc/${logoSource}/${system.theme}.svg</path>
-		<path>./_inc/${logoSource}/${system.theme}-${lang}.png</path>
-		<path>./_inc/${logoSource}/${system.theme}-${lang}.svg</path>
-			<storyboard event="open">
-                <animation property="scale" to="0.6" duration="350" mode="easeInOut" begin="1500"/>
-            </storyboard>
-			<storyboard event="activateNext">
-                <animation property="scale" to="0.6" duration="350" mode="easeInOut" begin="1500"/>
-            </storyboard>
-			<storyboard event="activatePrev">
-                <animation property="scale" to="0.6" duration="350" mode="easeInOut" begin="1500"/>
-           </storyboard>
-			<storyboard event="deactivateNext">
-                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
-            </storyboard>
-			<storyboard event="deactivatePrev">
-                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
-            </storyboard>
-
-			<storyboard event="open" ifSubset="previewDisplay:displayMix">
-                <animation property="scale" to="0.6" duration="500" mode="easeInOut" begin="700"/>
-            </storyboard>
-			<storyboard event="activateNext" ifSubset="previewDisplay:displayMix">
-                <animation property="scale" to="0.6" duration="500" mode="easeInOut" begin="700"/>
-            </storyboard>
-			<storyboard event="activatePrev" ifSubset="previewDisplay:displayMix">
-                <animation property="scale" to="0.6" duration="500" mode="easeInOut" begin="700"/>
-           </storyboard>
-			<storyboard event="deactivateNext" ifSubset="previewDisplay:displayMix">
-                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
-            </storyboard>
-			<storyboard event="deactivatePrev" ifSubset="previewDisplay:displayMix">
-                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
-            </storyboard>
-	</image>
-
-	<image name="logoTV" region="us" extra="true" ifSubset="tvLogo:yes,regionChoice:yes,fullHexa:yes">
-
-		<path ifArch="windows">./../es-theme-carbon/art/logos/us/${system.theme}.png</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/us/${system.theme}.svg</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/us/${system.theme}-w.png</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/us/${system.theme}-w.svg</path>
-
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/us/${system.theme}.png</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/us/${system.theme}.svg</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/us/${system.theme}-w.png</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/us/${system.theme}-w.svg</path>
-
-		<path>./_inc/${logoSource}/us/${system.theme}.png</path>
-		<path>./_inc/${logoSource}/us/${system.theme}.svg</path>
-	</image>
-
-	<image name="logoTV" region="jp" extra="true" ifSubset="tvLogo:yes,regionChoice:yes,fullHexa:yes">
-
-		<path ifArch="windows">./../es-theme-carbon/art/logos/jp/${system.theme}.png</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/jp/${system.theme}.svg</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/jp/${system.theme}-w.png</path>
-		<path ifArch="windows">./../es-theme-carbon/art/logos/jp/${system.theme}-w.svg</path>
-
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/jp/${system.theme}.png</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/jp/${system.theme}.svg</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/jp/${system.theme}-w.png</path>
-		<path ifNotArch="windows">./../../../usr/share/emulationstation/themes/es-theme-carbon/art/logos/jp/${system.theme}-w.svg</path>
-
-		<path>./_inc/${logoSource}/jp/${system.theme}.png</path>
-		<path>./_inc/${logoSource}/jp/${system.theme}.svg</path>
-	</image>
 
 <!---------------------------------------------------------------------GAMELIST FADE----------------------------------------------------------------------------------------------->
 

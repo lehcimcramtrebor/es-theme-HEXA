@@ -81,13 +81,6 @@ By Helmic
             <pos ifSubset="themeRatio:43">0.3174479166666667 0.7046296296296296</pos>
 		</video>
 
-	<image name="logoTV" extra="true" ifSubset="tvLogo:yes">
-		<maxSize>0.1 0.08</maxSize>
-		<pos>0.243 0.74</pos>
-		<y ifSubset="themeRatio:54">0.8</y>
-		<y ifSubset="themeRatio:43">0.795</y>
-	</image>
-
 	</view>
 	
 </theme>

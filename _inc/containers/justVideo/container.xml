@@ -40,10 +40,6 @@ By Helmic
             <pos ifSubset="themeRatio:43">0.3182291666666667 0.737962962962963</pos>
 		</video>
 
-	<image name="logoTV" extra="true" ifSubset="tvLogo:yes">
-			<visible>false</visible>
-	</image>
-
 	</view>
 	
 </theme>
