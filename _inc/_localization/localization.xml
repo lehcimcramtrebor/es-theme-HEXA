@@ -54,6 +54,9 @@ By Helmic
         <lang.character>character</lang.character>
         <lang.character lang="fr">personnages</lang.character>
 
+        <lang.characterBw>character (black and white)</lang.characterBw>
+        <lang.characterBw lang="fr">personnages (noir et blanc)</lang.characterBw>
+
         <lang.logoCustom> use custom logo in animation</lang.logoCustom>
         <lang.logoCustom lang="fr">utiliser le logo personnalisé pour l'animation</lang.logoCustom>
 

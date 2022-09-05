@@ -464,6 +464,7 @@ By Helmic
         <include name="inGamelist" displayName="${lang.inGamelist}"/>
         <include name="onScreen" displayName="${lang.onScreen}"/>
         <include name="character" displayName="${lang.character}"/>
+        <include name="characterBw" displayName="${lang.characterBw}"/>
     </subset>
 
  	<subset name="logoCustom" displayName="${lowSpecs}${lowSpecsPi}${lang.logoCustom}" appliesTo="(wallpaper),system,basic,detailed,grid,gamecarousel" ifSubset="logoAnime:mix3|onTop|inGamelist|onScreen">
@@ -2612,9 +2613,9 @@ By Helmic
 	
 <!--------------------------------------------------------------------CHARACTERS-------------------------------------------------------------------------------------------------------->
 
-	<view name="basic,detailed,grid,gamecarousel" ifSubset="logoAnime:character,fullHexa:yes">
+	<view name="basic,detailed,grid,gamecarousel" ifSubset="logoAnime:character|characterBw,fullHexa:yes">
 
-		<image name="character" extra="true" ifSubset="logoAnime:character">
+		<image name="character" extra="true" ifSubset="logoAnime:character|characterBw">
 		
 			<linearSmooth>true</linearSmooth>
 			<path>./_hexaCustom/characters/${system.theme}.png</path>
@@ -2629,6 +2630,7 @@ By Helmic
 			<colorEnd>aaaaaa30</colorEnd>
 			<gradientType>vertical</gradientType>
 			<saturation>1.3</saturation>
+			<saturation ifSubset="logoAnime:characterBw">0</saturation>
 
 			<storyboard repeat="forever" tinyScreen="false">
 				<animation property="x" to="0" duration="20000" autoreverse="true" mode="linear"/>				
@@ -2637,16 +2639,6 @@ By Helmic
 				<animation property="w" to="0" begin="10500" duration="25" repeat="2" autoreverse="true" mode="easeInOut"/>				
 				<animation property="w" to="0" begin="20000" duration="25" autoreverse="true" mode="easeInOut"/>				
 				<animation property="w" to="0" begin="35000" duration="25" repeat="2" autoreverse="true" mode="easeInOut"/>				
-				<animation property="color" to="ff000099" begin="3500" duration="10" autoreverse="true" mode="easeInOut"/>				
-				<animation property="color" to="00ff0099" begin="3520" duration="10" autoreverse="true" mode="easeInOut"/>				
-				<animation property="color" to="0000ff99" begin="3540" duration="10" autoreverse="true" mode="easeInOut"/>	
-				<animation property="color" to="aaaaaa" begin="3560" duration="50" mode="easyInOut"/>
-				<animation property="color" to="ff000099" begin="20500" duration="10" autoreverse="true" mode="easeInOut"/>				
-				<animation property="color" to="00ff0099" begin="20520" duration="10" autoreverse="true" mode="easeInOut"/>				
-				<animation property="color" to="0000ff99" begin="20540" duration="10" autoreverse="true" mode="easeInOut"/>	
-				<animation property="color" to="aaaaaa" begin="20560" duration="50" mode="easeInOut"/>
-				<animation property="rotation" from="-0.25" to="0.25" begin="25500" duration="10" autoreverse="true" repeat="2" mode="easeInOut"/>
-				<animation property="rotation" to="0" begin="25540" duration="20" mode="easeInOut"/>
 			</storyboard>
 
 			<storyboard repeat="forever" tinyScreen="true">
@@ -2658,9 +2650,9 @@ By Helmic
 
 	</view>
 
-	<view name="basic" ifSubset="logoAnime:character,fullHexa:yes">
+	<view name="basic" ifSubset="logoAnime:character|characterBw,fullHexa:yes">
 
-		<image name="character" extra="true" ifSubset="logoAnime:character">
+		<image name="character" extra="true" ifSubset="logoAnime:character|characterBw">
 		
 			<pos>1 0.5</pos>
 
