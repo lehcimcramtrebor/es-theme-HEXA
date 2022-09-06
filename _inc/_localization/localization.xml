@@ -15,6 +15,18 @@ By Helmic
         <lowSpecsPi ifSubset="fullHexa:hexaPi">♠--- disabled ---♠ •  </lowSpecsPi>
         <lowSpecsPi ifSubset="fullHexa:hexaPi" lang="fr">♠--- désactivé ---♠ • </lowSpecsPi>
 
+        <lang.basicEnhanced>simple list</lang.basicEnhanced>
+        <lang.basicEnhanced lang="fr">liste simple</lang.basicEnhanced>
+
+        <lang.basicEnhancedVideo>simple list + video</lang.basicEnhancedVideo>
+        <lang.basicEnhancedVideo lang="fr">liste simple + vidéo</lang.basicEnhancedVideo>
+
+        <lang.gridSimple>simple grid</lang.gridSimple>
+        <lang.gridSimple lang="fr">grille simple</lang.gridSimple>
+
+        <lang.gridSimpleVideo>simple grid + video</lang.gridSimpleVideo>
+        <lang.gridSimpleVideo lang="fr">grille simple + vidéo</lang.gridSimpleVideo>
+
         <lang.neogeoaes>neo geo • force aes</lang.neogeoaes>
         <lang.neogeoaes lang="fr">neo geo • forcer aes</lang.neogeoaes>
 

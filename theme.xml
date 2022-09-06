@@ -5084,22 +5084,14 @@ By Helmic
 	
 	<customView name="library" inherits="detailed" displayName="${lang.library}">
 
-		<image name="backTvMixblack,logoTV,tvMix,backTvMix,tvShadow,mire,taitoFx" extra="true">
+		<image name="md_thumbnail">
 			<visible>false</visible>
 		</image>
 
-		<image name="logo">
+		<text name="md_name">
 			<visible>false</visible>
-		</image>
-
-		<video name="fxMix,bartopNoise1,bartopNoise2" extra="true">
-			<visible>false</visible>
-		</video>
-
-		<image name="md_image">
-			<visible>false</visible>
-		</image>
-
+		</text>
+ 
 		<text name="basicBar" extra="true">
 			<text>${system.fullName}</text>
             <fontPath>./_inc/fonts/${font2}</fontPath>
@@ -5160,7 +5152,481 @@ By Helmic
 			<zIndex>15</zIndex>
 		</video>
 
-		<text name="md_name,systemFullNameRandomVideo,md_description,logoContainer">
+<!----------------------------------------------------------------GAME INFOS BAR OFF----------------------------------------------------------------------------------------------->
+		
+		<rating name="md_rating">
+			<visible>false</visible>
+		</rating>
+
+		<text name="md_genre">
+			<visible>false</visible>
+		</text>
+
+		<text name="md_developer">
+			<visible>false</visible>
+		</text>
+
+		<text name="md_lbl_developer">
+			<visible>false</visible>
+		</text>
+
+		<text name="md_playcount">
+			<visible>false</visible>
+		</text>
+
+		<text name="md_lbl_playcount">
+			<visible>false</visible>
+		</text>
+
+		<text name="md_gametime">
+			<visible>false</visible>
+		</text>
+
+		<text name="md_lbl_gametime">
+			<visible>false</visible>
+		</text>
+
+		<datetime name="md_lastplayed">
+			<visible>false</visible>
+ 		</datetime>
+
+		<text name="md_lbl_lastplayed">
+			<visible>false</visible>
+		</text>
+		
+	</customView>
+<!-----------------------------------------------------------------END OF LIBRARY------------------------------------------------------------------------------------------------->
+
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------BASIC ENHANCED------------------------------------------------------------------------------------------>
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+	<customView name="basicEnhanced" inherits="detailed" displayName="${lang.basicEnhanced}">
+
+		<image name="gamesZoneBack" extra="true">
+			<visible>false</visible>
+		</image>
+
+		<text name="md_name">
+			<visible>false</visible>
+		</text>
+        
+		<image name="basicMask" extra="true" ifSubset="fullHexa:yes|no">
+            <path>./_inc/mask.png</path>
+			<size>1 1</size>
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+            <zIndex>4</zIndex>
+		</image>
+
+		<textlist name="gamelist">
+			<selectorImagePath>./_inc/white.png</selectorImagePath>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.5</pos>
+			<size>1 0.925925926</size>
+			<selectedColor>ffffff</selectedColor>
+			<primaryColor>dddddd</primaryColor>
+			<secondaryColor>dddddd</secondaryColor>
+			<selectorColor>${overlay.colorset}ea</selectorColor>	  		
+			<selectorColor ifSubset="overlayColorset:noColor">ffffff</selectorColor>	  		
+			<fontPath>./_inc/fonts/${font1}</fontPath>
+			<fontSize>0.020</fontSize>
+			<fontSize tinyScreen="true">0.022</fontSize>
+			<fontSize ifSubset="gamelistFontSize:0.022" tinyScreen="false">0.022</fontSize>
+			<fontSize ifSubset="gamelistFontSize:0.024" tinyScreen="false">0.024</fontSize>
+			<fontSize ifSubset="gamelistFontSize:0.026" tinyScreen="false">0.026</fontSize>
+			<alignment>center</alignment>
+			<horizontalMargin>0.001</horizontalMargin>
+			<forceUppercase>true</forceUppercase>
+			<scrollSound>./_inc/scroll/gamelist.wav</scrollSound>
+			<zIndex>13</zIndex>
+			<lines>21</lines>
+			<lines ifSubset="basicGamelistLines:15" tinyScreen="false">15</lines>
+			<lines ifSubset="basicGamelistLines:17" tinyScreen="false">17</lines>
+			<lines ifSubset="basicGamelistLines:19" tinyScreen="false">19</lines>
+			<lines ifSubset="basicGamelistLines:23" tinyScreen="false">23</lines>
+ 			</textlist>
+
+        <video name="md_video" ifSubset="mdVideo:yes|yesDelay">
+			<showSnapshotNoVideo>false</showSnapshotNoVideo>
+			<showSnapshotDelay>false</showSnapshotDelay>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.5</pos>
+            <effect>none</effect>
+			<delay>0.3</delay>
+            <zIndex>15</zIndex>
+            <color>ffffff00</color>
+            <size ifSubset="randomRatio:stretched">0 0</size>
+            <maxSize ifSubset="randomRatio:original">0 0</maxSize>
+			<opacity>1</opacity>
+			<loops>0</loops>
+		</video>
+
+		<image name="md_thumbnail">
+			<maxSize>0 0</maxSize>
+			<origin>0.5 0.5</origin>
+			<pos>2 2</pos>
+			<zIndex>14</zIndex>
+			<storyboard event="open">
+                <animation property="opacity" from="0" to="0" duration="2550" mode="easeOut" begin="0"/>
+                <animation property="maxSize" to="1 0.9259259259259259" duration="1" mode="linear" begin="2550"/>
+                <animation property="pos" to="0.5 0.5" duration="1" mode="linear" begin="2550"/>
+                <animation property="opacity" to="1" duration="250" mode="easeIn" begin="2550"/>
+                <animation property="offsetX" from="0.05" duration="250" mode="easeOut" begin="2550"/>
+             </storyboard>
+			<storyboard event="activateNext">
+                <animation property="opacity" from="0" to="0" duration="550" mode="easeOut" begin="0"/>
+                <animation property="maxSize" to="1 0.9259259259259259" duration="1" mode="linear" begin="550"/>
+                <animation property="pos" to="0.5 0.5" duration="1" mode="linear" begin="550"/>
+                <animation property="opacity" to="1" duration="250" mode="easeIn" begin="550"/>
+                <animation property="offsetX" from="0.05" duration="250" mode="easeOut" begin="550"/>
+            </storyboard>
+			<storyboard event="activatePrev">
+                <animation property="opacity" from="0" to="0" duration="550" mode="easeOut" begin="0"/>
+                <animation property="maxSize" to="1 0.9259259259259259" duration="1" mode="linear" begin="550"/>
+                <animation property="pos" to="0.5 0.5" duration="1" mode="linear" begin="550"/>
+                <animation property="opacity" to="1" duration="250" mode="easeIn" begin="550"/>
+                <animation property="offsetX" from="-0.05" duration="250" mode="easeOut" begin="550"/>
+            </storyboard>
+			<storyboard event="deactivateNext">
+                <animation property="offsetX" to="-1" duration="350" mode="easeOut"/>
+                <animation property="opacity" to="O" duration="350" mode="easeOut"/>
+            </storyboard>
+			<storyboard event="deactivatePrev">
+                <animation property="offsetX" to="1" duration="350" mode="easeOut"/>
+                <animation property="opacity" to="O" duration="350" mode="easeOut"/>
+            </storyboard>
+
+		</image>
+
+	</customView>
+
+<!-----------------------------------------------------------------END OF BASIC ENHANCED------------------------------------------------------------------------------------------->
+
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------BASIC ENHANCED+VIDEO------------------------------------------------------------------------------------>
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+	<customView name="basicEnhancedVideo" inherits="detailed" displayName="${lang.basicEnhancedVideo}">
+
+		<image name="gamesZoneBack" extra="true">
+			<visible>false</visible>
+		</image>
+
+		<text name="md_name">
+			<visible>false</visible>
+		</text>
+        
+		<image name="basicMask" extra="true" ifSubset="fullHexa:yes|no">
+            <path>./_inc/mask.png</path>
+			<size>1 1</size>
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+            <zIndex>4</zIndex>
+		</image>
+
+		<textlist name="gamelist">
+			<selectorImagePath>./_inc/white.png</selectorImagePath>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.5</pos>
+			<size>1 0.925925926</size>
+			<selectedColor>ffffff</selectedColor>
+			<primaryColor>dddddd</primaryColor>
+			<secondaryColor>dddddd</secondaryColor>
+			<selectorColor>${overlay.colorset}ea</selectorColor>	  		
+			<selectorColor ifSubset="overlayColorset:noColor">ffffff</selectorColor>	  		
+			<fontPath>./_inc/fonts/${font1}</fontPath>
+			<fontSize>0.020</fontSize>
+			<fontSize tinyScreen="true">0.022</fontSize>
+			<fontSize ifSubset="gamelistFontSize:0.022" tinyScreen="false">0.022</fontSize>
+			<fontSize ifSubset="gamelistFontSize:0.024" tinyScreen="false">0.024</fontSize>
+			<fontSize ifSubset="gamelistFontSize:0.026" tinyScreen="false">0.026</fontSize>
+			<alignment>center</alignment>
+			<horizontalMargin>0.001</horizontalMargin>
+			<forceUppercase>true</forceUppercase>
+			<scrollSound>./_inc/scroll/gamelist.wav</scrollSound>
+			<zIndex>13</zIndex>
+			<lines>21</lines>
+			<lines ifSubset="basicGamelistLines:15" tinyScreen="false">15</lines>
+			<lines ifSubset="basicGamelistLines:17" tinyScreen="false">17</lines>
+			<lines ifSubset="basicGamelistLines:19" tinyScreen="false">19</lines>
+			<lines ifSubset="basicGamelistLines:23" tinyScreen="false">23</lines>
+ 			</textlist>
+
+        <video name="md_video" ifSubset="mdVideo:yes|yesDelay">
+			<showSnapshotNoVideo>false</showSnapshotNoVideo>
+			<showSnapshotDelay>false</showSnapshotDelay>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.5</pos>
+            <effect>none</effect>
+			<delay>4</delay>
+            <zIndex>15</zIndex>
+            <color>ffffff</color>
+            <size ifSubset="randomRatio:stretched">1 0.9259259259259259</size>
+            <maxSize ifSubset="randomRatio:original">1 0.9259259259259259</maxSize>
+			<opacity>1</opacity>
+			<loops>0</loops>
+		</video>
+
+		<image name="md_thumbnail">
+			<maxSize>0 0</maxSize>
+			<origin>0.5 0.5</origin>
+			<pos>2 2</pos>
+			<zIndex>14</zIndex>
+			<storyboard event="open">
+                <animation property="opacity" from="0" to="0" duration="2550" mode="easeOut" begin="0"/>
+                <animation property="maxSize" to="1 0.9259259259259259" duration="1" mode="linear" begin="2550"/>
+                <animation property="pos" to="0.5 0.5" duration="1" mode="linear" begin="2550"/>
+                <animation property="opacity" to="1" duration="250" mode="easeIn" begin="2550"/>
+                <animation property="offsetX" from="0.05" duration="250" mode="easeOut" begin="2550"/>
+             </storyboard>
+			<storyboard event="activateNext">
+                <animation property="opacity" from="0" to="0" duration="550" mode="easeOut" begin="0"/>
+                <animation property="maxSize" to="1 0.9259259259259259" duration="1" mode="linear" begin="550"/>
+                <animation property="pos" to="0.5 0.5" duration="1" mode="linear" begin="550"/>
+                <animation property="opacity" to="1" duration="250" mode="easeIn" begin="550"/>
+                <animation property="offsetX" from="0.05" duration="250" mode="easeOut" begin="550"/>
+            </storyboard>
+			<storyboard event="activatePrev">
+                <animation property="opacity" from="0" to="0" duration="550" mode="easeOut" begin="0"/>
+                <animation property="maxSize" to="1 0.9259259259259259" duration="1" mode="linear" begin="550"/>
+                <animation property="pos" to="0.5 0.5" duration="1" mode="linear" begin="550"/>
+                <animation property="opacity" to="1" duration="250" mode="easeIn" begin="550"/>
+                <animation property="offsetX" from="-0.05" duration="250" mode="easeOut" begin="550"/>
+            </storyboard>
+			<storyboard event="deactivateNext">
+                <animation property="offsetX" to="-1" duration="350" mode="easeOut"/>
+                <animation property="opacity" to="O" duration="350" mode="easeOut"/>
+            </storyboard>
+			<storyboard event="deactivatePrev">
+                <animation property="offsetX" to="1" duration="350" mode="easeOut"/>
+                <animation property="opacity" to="O" duration="350" mode="easeOut"/>
+            </storyboard>
+
+		</image>
+
+	</customView>
+
+<!-----------------------------------------------------------------END OF BASIC ENHANCED+VIDEO------------------------------------------------------------------------------------------->
+
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-------------------------------------------------------------LAYOUTS INCLUDE-------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+	
+	<include>./${system.theme}/layout.xml</include>
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------GRID SIMPLE--------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+	<customView name="gridSimple" inherits="grid" displayName="${lang.gridSimple}">
+
+		<image name="gamesZoneBack" extra="true">
+			<visible>false</visible>
+		</image>
+        
+		<image name="basicMask" extra="true" ifSubset="fullHexa:yes|no">
+            <path>./_inc/mask.png</path>
+			<size>1 1</size>
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+            <zIndex>4</zIndex>
+		</image>
+
+		<imagegrid name="gamegrid">
+			<pos>0 0.0375</pos>
+			<size>1 0.926</size>
+			<autoLayout>6 3</autoLayout>
+			<autoLayout ifSubset="themeRatio:54|43">4 3</autoLayout>
+			<margin>0.02 0.02</margin>
+			<padding>0.02 0.05 0.02 0.05</padding>
+		</imagegrid>
+
+        <video name="md_video" ifSubset="mdVideo:yes|yesDelay">
+			<showSnapshotNoVideo>false</showSnapshotNoVideo>
+			<showSnapshotDelay>false</showSnapshotDelay>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.5</pos>
+            <effect>none</effect>
+			<delay>0.3</delay>
+            <zIndex>15</zIndex>
+            <color>ffffff00</color>
+            <size ifSubset="randomRatio:stretched">0 0</size>
+            <maxSize ifSubset="randomRatio:original">0 0</maxSize>
+			<opacity>1</opacity>
+			<loops>0</loops>
+		</video>
+
+		<image name="md_thumbnail">
+			<visible>false</visible>
+		</image>
+
+		<text name="md_name">
+			<text>${system.name}</text>
+            <fontPath>./_inc/fonts/${font1}</fontPath>
+            <fontSize>0.018</fontSize>
+            <fontSize tinyScreen="true">0.024</fontSize>
+            <pos>0 0.5</pos>
+            <origin>0 0</origin>
+            <zIndex>14</zIndex>
+			<alignment>center</alignment>
+			<forceUppercase>true</forceUppercase>
+			<w>1</w>
+			<w ifSubset="themeRatio:54|43">1</w>
+			<h>0.034</h>
+			<glowColor>000000</glowColor>
+			<glowSize>4</glowSize>
+			<opacity>0</opacity>
+			<storyboard event="open">
+                 <animation property="opacity" from="0" to="0" duration="1" mode="easeOut"/>
+            </storyboard>
+			<storyboard event="activateNext">
+                 <animation property="opacity" from="0" to="0" duration="1" mode="easeOut"/>
+           </storyboard>
+			<storyboard event="activatePrev">
+                 <animation property="opacity" from="0" to="0" duration="1" mode="easeOut"/>
+           </storyboard>
+			<storyboard event="deactivateNext">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+			<storyboard event="deactivatePrev">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+
+		</text>
+
+	</customView>
+
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------GRID SIMPLE+VIDEO--------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+	<customView name="gridSimpleVideo" inherits="grid" displayName="${lang.gridSimpleVideo}">
+
+		<image name="gamesZoneBack" extra="true">
+			<visible>false</visible>
+		</image>
+        
+		<image name="basicMask" extra="true" ifSubset="fullHexa:yes|no">
+            <path>./_inc/mask.png</path>
+			<size>1 1</size>
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+            <zIndex>4</zIndex>
+		</image>
+
+		<imagegrid name="gamegrid">
+			<pos>0 0.0375</pos>
+			<size>1 0.926</size>
+			<autoLayout>6 3</autoLayout>
+			<autoLayout ifSubset="themeRatio:54|43">4 3</autoLayout>
+			<margin>0.02 0.02</margin>
+			<padding>0.02 0.05 0.02 0.05</padding>
+		</imagegrid>
+
+        <video name="md_video" ifSubset="mdVideo:yes|yesDelay">
+			<showSnapshotNoVideo>false</showSnapshotNoVideo>
+			<showSnapshotDelay>false</showSnapshotDelay>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.5</pos>
+            <effect>none</effect>
+			<delay>1.5</delay>
+            <zIndex>15</zIndex>
+            <color>ffffff</color>
+            <size ifSubset="randomRatio:stretched">1 0.9259259259259259</size>
+            <maxSize ifSubset="randomRatio:original">1 0.9259259259259259</maxSize>
+			<opacity>1</opacity>
+			<loops>0</loops>
+		</video>
+
+		<image name="md_thumbnail">
+			<visible>false</visible>
+		</image>
+
+		<text name="md_name">
+			<text>${system.name}</text>
+            <fontPath>./_inc/fonts/${font1}</fontPath>
+            <fontSize>0.018</fontSize>
+            <fontSize tinyScreen="true">0.024</fontSize>
+            <pos>0 0.5</pos>
+            <origin>0 0</origin>
+            <zIndex>14</zIndex>
+			<alignment>center</alignment>
+			<forceUppercase>true</forceUppercase>
+			<w>1</w>
+			<w ifSubset="themeRatio:54|43">1</w>
+			<h>0.034</h>
+			<glowColor>000000</glowColor>
+			<glowSize>4</glowSize>
+			<opacity>0</opacity>
+			<storyboard event="open">
+                 <animation property="opacity" from="0" to="1" duration="100" mode="easeOut"/>
+                 <animation property="opacity" from="1" to="0" duration="200" mode="easeOut" begin="350"/>
+            </storyboard>
+			<storyboard event="activateNext">
+                 <animation property="opacity" from="0" to="1" duration="100" mode="easeOut"/>
+                  <animation property="opacity" from="1" to="0" duration="200" mode="easeOut" begin="350"/>
+           </storyboard>
+			<storyboard event="activatePrev">
+                <animation property="opacity" from="0" to="1" duration="100" mode="easeOut"/>
+                 <animation property="opacity" from="1" to="0" duration="200" mode="easeOut" begin="350"/>
+           </storyboard>
+			<storyboard event="deactivateNext">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+			<storyboard event="deactivatePrev">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+
+		</text>
+
+	</customView>
+
+<!-----------------------------------------------------------------END OF GRID SIMPLE+VIDEO---------------------------------------------------------------------------------------->
+
+<!-----------------------------------------------------------------END OF GRID SIMPLE---------------------------------------------------------------------------------------------->
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------CUSTOM VIEWS VISIBLES----------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+	<customView name="library,basicEnhanced,basicEnhancedVideo,gridSimple,gridSimpleVideo">
+
+		<image name="backTvMixblack,logoTV,tvMix,backTvMix,tvShadow,mire,taitoFx" extra="true">
+			<visible>false</visible>
+		</image>
+
+		<image name="logo">
+			<visible>false</visible>
+		</image>
+
+		<video name="fxMix,bartopNoise1,bartopNoise2" extra="true">
+			<visible>false</visible>
+		</video>
+
+		<image name="md_image">
+			<visible>false</visible>
+		</image>
+
+		<text name="systemFullNameRandomVideo,md_description,logoContainer">
 			<visible>false</visible>
 		</text>
 
@@ -5172,12 +5638,9 @@ By Helmic
 			<visible>false</visible>
 		</image>
 
-		<image name="md_thumbnail,md_marquee,md_fanart,md_boxback">
+		<image name="md_marquee,md_fanart,md_boxback">
 			<visible>false</visible>
 		</image>
-
-		<textlist name="gamelist">
-  		</textlist>
 		
 <!-----------------------------------------------------------------GAME STATE/INFOS ICONS OFF-------------------------------------------------------------------------------------->
 		
@@ -5266,55 +5729,13 @@ By Helmic
 			<color>00000000</color>
 		</image>
 
-<!----------------------------------------------------------------GAME INFOS BAR OFF----------------------------------------------------------------------------------------------->
-		
-		<rating name="md_rating">
-			<visible>false</visible>
-		</rating>
-
-		<text name="md_genre">
-			<visible>false</visible>
-		</text>
-
-		<text name="md_developer">
-			<visible>false</visible>
-		</text>
-
-		<text name="md_lbl_developer">
-			<visible>false</visible>
-		</text>
-
-		<text name="md_playcount">
-			<visible>false</visible>
-		</text>
-
-		<text name="md_lbl_playcount">
-			<visible>false</visible>
-		</text>
-
-		<text name="md_gametime">
-			<visible>false</visible>
-		</text>
-
-		<text name="md_lbl_gametime">
-			<visible>false</visible>
-		</text>
-
-		<datetime name="md_lastplayed">
-			<visible>false</visible>
- 		</datetime>
-
-		<text name="md_lbl_lastplayed">
-			<visible>false</visible>
-		</text>
-		
 	</customView>
-<!-----------------------------------------------------------------END OF LIBRARY------------------------------------------------------------------------------------------------->
 
+<!-----------------------------------------------------------------END OF CUSTOM VIEWS VISIBLES------------------------------------------------------------------------------------>
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-<!------------------------------------------------------------------------HELP--------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------HELP----------------------------------------------------------------------------------------------------->
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
     
@@ -5721,15 +6142,6 @@ By Helmic
 
 
 
-
-<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-<!-------------------------------------------------------------LAYOUTS INCLUDE-------------------------------------------------------------------------------------------------------------------->
-<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-	
-	<include>./${system.theme}/layout.xml</include>
-<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
 
 <!--- FIX PAINT WITH CUSTOM WALLPAPERS --->
