@@ -1,0 +1,807 @@
+<!--
+HEXA Theme for Retrobat 4+ / Batocera v32+
+By Helmic
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+<formatVersion>7</formatVersion>
+
+ 	<!--SUBSETS-->
+
+    <subset name="_" displayName="                                                                                                                                                                                                                                                            ">
+		<include name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "/>
+    </subset>
+	
+    <subset name="fullHexa" displayName="${lang.fullHexa}" >
+		<include name="hexaPi" displayName="${lang.hexaPi}">./_hexaPi.xml</include>
+        <include name="no" displayName="${lang.hexaNo}"/>
+		<include name="yes" displayName="${lang.hexaYes}"/>
+    </subset>
+
+    <subset name="regionChoice" displayName="${lang.regionChoice}" appliesTo="(individual option),system,basic,detailed,grid,gamecarousel">
+		<include name="yes" displayName="${lang.yes}"/>
+        <include name="no" displayName="${lang.no}"/>
+    </subset>
+
+    <!--DEVELOPERS FINANCIAL SUPPORT-->
+
+	<include>./_support/support.xml</include>
+	
+    <subset name="regionChoice" displayName="${lang.regionChoice}">
+		<include name="yes" displayName="${lang.yes}"/>
+        <include name="no" displayName="${lang.no}"/>
+    </subset>
+
+    <subset name="themeRatio" displayName="${lang.themeRatio}">
+		<include tinyScreen="false" name="169" displayName="${lang.169}"/>
+        <include tinyScreen="false" name="54" displayName="${lang.54}"/>
+        <include name="43" displayName="${lang.43}"/>
+        <include tinyScreen="true" name="54" displayName="${lang.54}"/>
+		<include tinyScreen="true" name="169" displayName="${lang.169}"/>
+   </subset>
+
+    <subset name="-" displayName="                                                                                                                                                                                                                                                            ">
+		<include name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "/>
+    </subset>
+
+    <subset name="overlayColorset" displayName="${lang.overlayColorset}">
+        <include name="pinkPop" displayName="${lang.pinkPop}">./colorsets/pinkPop.xml</include>
+        <include name="pink" displayName="${lang.pink}">./colorsets/pink.xml</include>
+        <include name="blueOcean" displayName="${lang.blueOcean}">./colorsets/blueOcean.xml</include>
+        <include name="blue" displayName="${lang.blue}">./colorsets/blue.xml</include>
+        <include name="redStrawberry" displayName="${lang.redStrawberry}">./colorsets/redStrawberry.xml</include>
+        <include name="red" displayName="${lang.red}">./colorsets/red.xml</include>
+        <include name="greenLime" displayName="${lang.greenLime}">./colorsets/greenLime.xml</include>
+        <include name="green" displayName="${lang.green}">./colorsets/green.xml</include>
+        <include name="orangeSoda" displayName="${lang.orangeSoda}">./colorsets/orangeSoda.xml</include>
+        <include name="orange" displayName="${lang.orange}">./colorsets/orange.xml</include>
+        <include name="purplePrune" displayName="${lang.purplePrune}">./colorsets/purplePrune.xml</include>
+        <include name="purple" displayName="${lang.purple}">./colorsets/purple.xml</include>
+        <include name="yellowVivid" displayName="${lang.yellowVivid}">./colorsets/yellowVivid.xml</include>
+        <include name="yellow" displayName="${lang.yellow}">./colorsets/yellow.xml</include>
+        <include name="noColor" displayName="${lang.noColor}">./colorsets/noColor.xml</include>
+        <include name="greyMegadrive" displayName="${lang.greyMegadrive}">./colorsets/greyMegadrive.xml</include>
+   </subset>
+
+<!--FONTS-->
+
+    <!--FONT2--><variables><font2>DJB Get Digital.ttf</font2></variables>
+ 
+	<subset name="themeFont" displayName="${lang.themeFont}">
+        <include name="conthrax">./fonts/conthrax.xml</include>
+        <include name="prime">./fonts/prime.xml</include>
+        <include name="aqua">./fonts/aqua.xml</include>
+        <include name="game">./fonts/game.xml</include>
+        <include name="nulshock">./fonts/nulshock.xml</include>
+        <include name="venus">./fonts/venus.xml</include>
+        <include name="recharge">./fonts/recharge.xml</include>
+        <include name="quadrangle">./fonts/quadrangle.xml</include>
+        <include name="good timing">./fonts/good.xml</include>
+    </subset>
+
+	<subset name="menuFontSize" displayName="${lang.menuFontSize}" tinyScreen="false">
+		<include name="0"/>
+		<include name="+1"/>
+		<include name="+2"/>
+		<include name="+3"/>
+		<include name="+4"/>
+		<include name="+5"/>
+		<include name="+6"/>
+		<include name="-3"/>
+		<include name="-2"/>
+		<include name="-1"/>
+    </subset>
+ 
+<!--END FONTS-->
+
+	<subset name="menuColor" displayName="${lang.menuColor}">
+		<include name="darkGlass" displayName="${lang.darkGlass}"/>
+		<include name="dark" displayName="${lang.dark}"/>
+		<include name="darkPlain" displayName="${lang.darkPlain}"/>
+        <include name="lightPlain" displayName="${lang.lightPlain}"/>
+        <include name="light" displayName="${lang.light}"/>
+    </subset>
+  
+	<subset name="overlayType" displayName="${lang.overlayType}">
+		<include name="plainDark" displayName="${lang.plainDark}"/>
+        <include name="transparent" displayName="${lang.transparent}"/>
+        <include name="plainGlazed" displayName="${lang.plainGlazed}"/>
+        <include name="transparentGlazed" displayName="${lang.transparentGlazed}"/>
+    </subset>
+ 
+	<subset name="overlayAnime" displayName="${lowSpecsPi}${lang.overlayAnime}">
+		<include name="yes" displayName="${lang.yes}"/>
+        <include name="no" displayName="${lang.no}"/>
+    </subset>
+
+    <subset name="--" displayName="                                                                                                                                                                                                                                                            ">
+		<include name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "/>
+    </subset>
+
+	<subset name="transition" displayName="${lowSpecs}${lowSpecsPi}${lang.transition}">
+		<include name="yes" displayName="${lang.yes}"/>
+		<include name="no" displayName="${lang.no}"/>
+	</subset>
+
+	<subset name="transitionWallpaper" displayName="${lowSpecs}${lowSpecsPi}${lang.transitionWallpaper}" ifSubset="transition:yes">
+		<include name="gamelist" displayName="${lang.gamelist}"/>
+		<include name="system" displayName="${lang.system}"/>
+	</subset>
+
+	<subset name="logoAssistTransitionCustom" displayName="${lowSpecs}${lowSpecsPi}${lang.logoAssistTransitionCustom}" ifSubset="transition:yes">
+		<include name="no" displayName="${lang.no}"/>
+		<include name="yes" displayName="${lang.yes}"/>
+	</subset>
+
+	<subset name="transitionCustomName" displayName="${lowSpecs}${lowSpecsPi}${lang.transitionCustomName}" ifSubset="transition:yes">
+		<include name="manufacturer" displayName="${lang.manufacturer}"/>
+		<include name="customName" displayName="${lang.customName}"/>
+		<include name="retrobat" displayName="${lang.retrobat}"/>
+		<include name="batocera" displayName="${lang.batocera}"/>
+		<include name="emuelec" displayName="${lang.emuelec}"/>
+	</subset>
+
+	<subset name="transitionCustom" displayName="${lowSpecs}${lowSpecsPi}${lang.transitionCustom}" ifSubset="transition:yes">
+		<include name="no" displayName="${lang.no}"/>
+		<include name="yes" displayName="${lang.yes}"/>
+	</subset>
+
+    <subset name="---" displayName="                                                                                                                                                                                                                                                            ">
+		<include name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "/>
+    </subset>
+
+    <subset name="helpIcons" displayName="${lang.helpIcons}">
+        <include name="defaultIcons" displayName="${lang.defaultIcons}"/>
+        <include name="arcadeIcons" displayName="${lang.arcadeIcons}"/>
+        <include name="psxIcons" displayName="${lang.psxIcons}"/>
+        <include name="snesIcons" displayName="${lang.snesIcons}"/>
+        <include name="snesAltIcons" displayName="${lang.snesAltIcons}"/>
+        <include name="xboxIcons" displayName="${lang.xboxIcons}"/>
+        <include name="xboxOneIcons" displayName="${lang.xboxOneIcons}"/>
+    </subset>
+
+	<subset name="helpTextColor" displayName="${lang.helpTextColor}">
+		<include name="colorWhite" displayName="${lang.colorWhite}"/>
+		<include name="colorYellow" displayName="${lang.colorYelllow}"/>
+		<include name="colorsetAdaptive" displayName="${lang.colorsetAdaptive}"/>
+	</subset>
+
+	<subset name="helpFontSize" displayName="${lang.helpFontSize}" tinyScreen="false">
+		<include name="0.020"/>
+		<include name="0.022"/>
+		<include name="0.024"/>
+		<include name="0.026"/>
+		<include name="0.016"/>
+		<include name="0.018"/>
+	</subset>
+
+    <subset name="----" displayName="                                                                                                                                                                                                                                                            ">
+		<include name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "/>
+    </subset>
+
+    <subset name="logoVisualAssistance" displayName="${lowSpecs}${lowSpecsPi}${lang.logoVisualAssistance}">
+        <include name="yes" displayName="${lang.yes}"/>
+		<include name="no" displayName="${lang.no}"/>
+    </subset>
+
+    <subset name="arrows" displayName="${lowSpecsPi}${lang.arrows}">
+        <include name="textured" displayName="${lang.textured}"/>
+		<include name="plain" displayName="${lang.plain}"/>
+		<include name="noArrows" displayName="${lang.noArrows}"/>
+    </subset>
+
+    <subset name="staticTiles" displayName="${lang.staticTiles}">
+        <include name="yes" displayName="${lang.yes}"/>
+		<include name="no" displayName="${lang.no}"/>
+    </subset>
+
+    <subset name="carouselColorisation" displayName="${lang.carouselColorisation}">
+        <include name="yes" displayName="${lang.yes}"/>
+		<include name="no" displayName="${lang.no}"/>
+    </subset>
+
+    <subset name="spaceCarousel" displayName="${lang.spaceCarousel}" ifSubset="themeRatio:169">
+		<include name="thin" displayName="${lang.thin}"/>
+        <include name="large" displayName="${lang.large}"/>
+    </subset>
+
+    <subset name="-----" displayName="                                                                                                                                                                                                                                                            ">
+		<include name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "/>
+    </subset>
+
+	<subset name="staticEffect" displayName="${lowSpecsPi}${lang.staticEffect}" tinyScreen="false">
+		<include name="no" displayName="${lang.noEffect}"/>
+		<include name="scanlinesFine" displayName="${lang.scanlinesFine}"/>
+		<include name="scanlinesVerticalFine" displayName="${lang.scanlinesVerticalFine}"/>
+		<include name="crt" displayName="${lang.crt}"/>
+		<include name="phosphore" displayName="${lang.phosphore}"/>
+		<include name="phosphorePlus" displayName="${lang.phosphorePlus}"/>
+		<include name="scanlines" displayName="${lang.scanlines}"/>
+		<include name="scanlinesVertical" displayName="${lang.scanlinesVertical}"/>
+	</subset>
+
+	<subset name="scratch" displayName="${lowSpecs}${lowSpecsPi}${lang.scratch}">
+		<include name="scratch.no" displayName="${lang.scratch.no}"/>
+		<include name="scratch.light" displayName="${lang.scratch.light}"/>
+		<include name="scratch.medium" displayName="${lang.scratch.medium}"/>
+		<include name="scratch.strong" displayName="${lang.scratch.strong}"/>
+	</subset>
+	
+	<subset name="shutter" displayName="${lowSpecs}${lowSpecsPi}${lang.shutter}">
+		<include name="no" displayName="${lang.shutter.no}"/>
+		<include name="25" displayName="${lang.shutter.25}"/>
+		<include name="30" displayName="${lang.shutter.30}"/>
+		<include name="50" displayName="${lang.shutter.50}"/>
+		<include name="60" displayName="${lang.shutter.60}"/>
+	</subset>
+
+    <subset name="------" displayName="                                                                                                                                                                                                                                                            ">
+		<include name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "/>
+    </subset>
+
+    <subset name="wall" displayName="${lang.wall}">
+        <include ifSubset="staticEffect:no" name="wallScanlines" displayName="${lang.wallScanlines}">./wallpapers/wallScanlines.xml</include>
+        <include name="wallFlatGrey" displayName="${lang.wallFlatGrey}">./wallpapers/wallFlatGrey.xml</include>
+        <include name="wallFlatDark" displayName="${lang.wallFlatDark}">./wallpapers/wallFlatDark.xml</include>
+        <include name="wallSynthPaint" displayName="${lang.wallSynthPaint}">./wallpapers/wallSynthPaint.xml</include>
+		<include name="wallBrushedPlate" displayName="${lang.wallBrushedPlate}">./wallpapers/wallBrushedPlate.xml</include>
+        <include name="wallPlates" displayName="${lang.wallPlates}">./wallpapers/wallPlates.xml</include>
+        <include name="wallStainBroke" displayName="${lang.wallStainBroke}">./wallpapers/wallStainBroke.xml</include>
+        <include name="wallSteelX" displayName="${lang.wallSteelX}">./wallpapers/wallSteelX.xml</include>
+        <include name="wallDiagonalPlates" displayName="${lang.wallDiagonalPlates}">./wallpapers/wallDiagonalPlates.xml</include>
+        <include name="wallDiagonalPlates2" displayName="${lang.wallDiagonalPlates2}">./wallpapers/wallDiagonalPlates2.xml</include>
+		<include name="wallDefault" displayName="${lang.wallDefault}">./wallpapers/wall.xml</include>
+		<include name="wallLight" displayName="${lang.wallLight}">./wallpapers/wallLight.xml</include>
+		<include name="wallDark" displayName="${lang.wallDark}">./wallpapers/wallDark.xml</include>
+        <include name="wallFlatDark" displayName="${lang.wallFlatDark}">./wallpapers/wallFlatDark.xml</include>
+        <include name="wallColorGreen" displayName="${lang.wallColorGreen}">./wallpapers/wallColorGreen.xml</include>
+        <include name="wallColorRed" displayName="${lang.wallColorRed}">./wallpapers/wallColorRed.xml</include>
+        <include name="wallColorPurple" displayName="${lang.wallColorPurple}">./wallpapers/wallColorPurple.xml</include>
+        <include name="wallColorOcean" displayName="${lang.wallColorOcean}">./wallpapers/wallColorOcean.xml</include>
+        <include name="wallStain" displayName="${lang.wallStain}">./wallpapers/wallStain.xml</include>
+        <include name="wallAlu" displayName="${lang.wallAlu}">./wallpapers/wallAlu.xml</include>
+        <include name="wallCarbon" displayName="${lang.wallCarbon}">./wallpapers/wallCarbon.xml</include>
+        <include name="wallSteelHoles" displayName="${lang.wallSteelHoles}">./wallpapers/wallSteelHoles.xml</include>
+        <include name="wallFuture" displayName="${lang.wallFuture}">./wallpapers/wallFuture.xml</include>
+        <include name="wallFutureRed" displayName="${lang.wallFutureRed}">./wallpapers/wallFutureRed.xml</include>
+        <include name="wallFutureBlue" displayName="${lang.wallFutureBlue}">./wallpapers/wallFutureBlue.xml</include>
+        <include name="wallFutureGreen" displayName="${lang.wallFutureGreen}">./wallpapers/wallFutureGreen.xml</include>
+        <include name="wallFutureOrange" displayName="${lang.wallFutureOrange}">./wallpapers/wallFutureOrange.xml</include>
+        <include name="wallFutureYellow" displayName="${lang.wallFutureYellow}">./wallpapers/wallFutureYellow.xml</include>
+        <include name="wallFuturePink" displayName="${lang.wallFuturePink}">./wallpapers/wallFuturePink.xml</include>
+        <include name="wallFuturePurple" displayName="${lang.wallFuturePurple}">./wallpapers/wallFuturePurple.xml</include>
+        <include name="wallSynthwave" displayName="${lang.wallSynthwave}">./wallpapers/wallSynthwave.xml</include>
+        <include name="wallSynthwave2" displayName="${lang.wallSynthwave2}">./wallpapers/wallSynthwave2.xml</include>
+        <include name="wallSynthwave3" displayName="${lang.wallSynthwave3}">./wallpapers/wallSynthwave3.xml</include>
+        <include name="customs" displayName="${lang.customs}"/>
+    </subset>
+
+    <subset name="wallGamelist" displayName="${lang.wallGamelist}">
+        <include ifSubset="staticEffect:no" name="wallScanlines" displayName="${lang.wallScanlines}">./wallpapers/wallScanlinesGamelist.xml</include>
+        <include name="wallFlatGrey" displayName="${lang.wallFlatGrey}">./wallpapers/wallFlatGreyGamelist.xml</include>
+        <include name="wallFlatDark" displayName="${lang.wallFlatDark}">./wallpapers/wallFlatDarkGamelist.xml</include>
+        <include name="wallSynthPaint" displayName="${lang.wallSynthPaint}">./wallpapers/wallSynthPaintGamelist.xml</include>
+		<include name="wallBrushedPlate" displayName="${lang.wallBrushedPlate}">./wallpapers/wallBrushedPlateGamelist.xml</include>
+        <include name="wallPlates" displayName="${lang.wallPlates}">./wallpapers/wallPlatesGamelist.xml</include>
+        <include name="wallStainBroke" displayName="${lang.wallStainBroke}">./wallpapers/wallStainBrokeGamelist.xml</include>
+        <include name="wallSteelX" displayName="${lang.wallSteelX}">./wallpapers/wallSteelXGamelist.xml</include>
+        <include name="wallDiagonalPlates" displayName="${lang.wallDiagonalPlates}">./wallpapers/wallDiagonalPlatesGamelist.xml</include>
+        <include name="wallDiagonalPlates2" displayName="${lang.wallDiagonalPlates2}">./wallpapers/wallDiagonalPlates2Gamelist.xml</include>
+		<include name="wallDefault" displayName="${lang.wallDefault}">./wallpapers/wallGamelist.xml</include>
+		<include name="wallLight" displayName="${lang.wallLight}">./wallpapers/wallLightGamelist.xml</include>
+		<include name="wallDark" displayName="${lang.wallDark}">./wallpapers/wallDarkGamelist.xml</include>
+        <include name="wallFlatDark" displayName="${lang.wallFlatDark}">./wallpapers/wallFlatDarkGamelist.xml</include>
+        <include name="wallColorGreen" displayName="${lang.wallColorGreen}">./wallpapers/wallColorGreenGamelist.xml</include>
+        <include name="wallColorRed" displayName="${lang.wallColorRed}">./wallpapers/wallColorRedGamelist.xml</include>
+        <include name="wallColorPurple" displayName="${lang.wallColorPurple}">./wallpapers/wallColorPurpleGamelist.xml</include>
+        <include name="wallColorOcean" displayName="${lang.wallColorOcean}">./wallpapers/wallColorOceanGamelist.xml</include>
+        <include name="wallStain" displayName="${lang.wallStain}">./wallpapers/wallStainGamelist.xml</include>
+        <include name="wallAlu" displayName="${lang.wallAlu}">./wallpapers/wallAluGamelist.xml</include>
+        <include name="wallCarbon" displayName="${lang.wallCarbon}">./wallpapers/wallCarbonGamelist.xml</include>
+        <include name="wallSteelHoles" displayName="${lang.wallSteelHoles}">./wallpapers/wallSteelHolesGamelist.xml</include>
+        <include name="wallFuture" displayName="${lang.wallFuture}">./wallpapers/wallFutureGamelist.xml</include>
+        <include name="wallFutureRed" displayName="${lang.wallFutureRed}">./wallpapers/wallFutureRedGamelist.xml</include>
+        <include name="wallFutureBlue" displayName="${lang.wallFutureBlue}">./wallpapers/wallFutureBlueGamelist.xml</include>
+        <include name="wallFutureGreen" displayName="${lang.wallFutureGreen}">./wallpapers/wallFutureGreenGamelist.xml</include>
+        <include name="wallFutureOrange" displayName="${lang.wallFutureOrange}">./wallpapers/wallFutureOrangeGamelist.xml</include>
+        <include name="wallFutureYellow" displayName="${lang.wallFutureYellow}">./wallpapers/wallFutureYellowGamelist.xml</include>
+        <include name="wallFuturePink" displayName="${lang.wallFuturePink}">./wallpapers/wallFuturePinkGamelist.xml</include>
+        <include name="wallFuturePurple" displayName="${lang.wallFuturePurple}">./wallpapers/wallFuturePurpleGamelist.xml</include>
+        <include name="wallSynthwave" displayName="${lang.wallSynthwave}">./wallpapers/wallSynthwaveGamelist.xml</include>
+        <include name="wallSynthwave2" displayName="${lang.wallSynthwave2}">./wallpapers/wallSynthwave2Gamelist.xml</include>
+        <include name="wallSynthwave3" displayName="${lang.wallSynthwave3}">./wallpapers/wallSynthwave3Gamelist.xml</include>
+        <include name="customs" displayName="${lang.customs}"/>
+    </subset>
+ 
+	<include>./wallpapers/${_paintSubset.allow}System.xml</include>
+
+    <subset name="-------" displayName="                                                                                                                                                                                                                                                            ">
+		<include name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "/>
+    </subset>
+
+    <subset name="ambiance" displayName="${lang.ambiance}">
+		<include name="randomVideosAudioOff" displayName="${lang.randomVideosAudioOff}"/>
+        <include name="randomVideosAudioOn" displayName="${lang.randomVideosAudioOn}"/>
+		<include name="randomAudioOff" displayName="${lang.randomAudioOff}"/>
+        <include name="randomAudioOn" displayName="${lang.randomAudioOn}"/>
+        <include name="randomNone" displayName="${lang.randomNone}"/>
+    </subset>
+
+	<subset name="bindingBar" displayName="${lang.bindingBar}">
+		<include name="colorWhite" displayName="${lang.colorWhite}"/>
+		<include name="colorYellow" displayName="${lang.colorYelllow}"/>
+		<include name="colorsetAdaptive" displayName="${lang.colorsetAdaptive}"/>
+	</subset>
+
+	<subset name="bindingBarFontSize" displayName="${lang.bindingBarFontSize}" tinyScreen="false">
+		<include name="0.020"/>
+		<include name="0.022"/>
+		<include name="0.024"/>
+		<include name="0.026"/>
+		<include name="0.016"/>
+		<include name="0.018"/>
+	</subset>
+
+	<subset name="systemInfoColor" displayName="${lang.systemInfoColor}">
+		<include name="colorWhite" displayName="${lang.colorWhite}"/>
+		<include name="colorYellow" displayName="${lang.colorYelllow}"/>
+		<include name="colorsetAdaptive" displayName="${lang.colorsetAdaptive}"/>
+	</subset>
+
+    <subset name="--------" displayName="                                                                                                                                                                                                                                                            ">
+		<include name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "/>
+    </subset>
+
+	<subset name="neogeoaes" displayName="${lang.neogeoaes}">
+		<include name="no" displayName="${lang.no}"/>
+        <include name="yes" displayName="${lang.yes}"/>
+	</subset>
+
+    <subset name="---------" displayName="                                                                                                                                                                                                                                                            ">
+		<include name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "/>
+    </subset>
+
+	<subset name=".........." displayName="                                                                                                                            " appliesTo=" ">
+		<include name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "/>
+	</subset>
+
+	<subset name="systemRandomRatio" displayName="${lang.systemRandomRatio}" appliesTo="(system view),system,basic,detailed,grid,gamecarousel">
+		<include name="original" displayName="${lang.original}"/>
+		<include name="stretched" displayName="${lang.stretched}"/>
+	</subset>
+
+	<subset name="randomCustom" displayName="${lang.randomCustom}" appliesTo="(system view),system,basic,detailed,grid,gamecarousel">
+        <include name="yes" displayName="${lang.yes}"/>
+		<include name="no" displayName="${lang.no}"/>
+    </subset>
+
+    <subset name="randomOverlay" displayName="${lang.randomOverlay}" appliesTo="(system view),system,basic,detailed,grid,gamecarousel">
+		<include name="yes" displayName="${lang.yes}"/>
+        <include name="no" displayName="${lang.no}"/>
+    </subset>
+
+    <subset name="randomFx" displayName="${lowSpecsPi}${lang.randomFx}" tinyScreen="false" appliesTo="(system view),system,basic,detailed,grid,gamecarousel">
+		<include name="phosphorePlus" displayName="${lang.phosphorePlus}"/>
+		<include name="phosphore" displayName="${lang.phosphore}"/>
+		<include name="scanlines" displayName="${lang.scanlines}"/>
+		<include name="scanlinesVertical" displayName="${lang.scanlinesVertical}"/>
+		<include name="scanlinesFine" displayName="${lang.scanlinesFine}"/>
+		<include name="scanlinesVerticalFine" displayName="${lang.scanlinesVerticalFine}"/>
+		<include name="crt" displayName="${lang.crt}"/>
+		<include name="no" displayName="${lang.no}"/>
+    </subset>
+
+    <subset name="randomLogo" displayName="${lang.randomLogo}" appliesTo="(system view),system,basic,detailed,grid,gamecarousel">
+		<include name="yes" displayName="${lang.yes}"/>
+        <include name="no" displayName="${lang.no}"/>
+    </subset>
+
+    <subset name="barName" displayName="${lang.barName}" appliesTo="(system view),system,basic,detailed,grid,gamecarousel">
+		<include name="yes" displayName="${lang.yes}"/>
+        <include name="no" displayName="${lang.no}"/>
+    </subset>
+
+	<subset name="............" displayName="                                                                                                                            " appliesTo=" ">
+		<include name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "/>
+	</subset>
+
+	<include>./wallpapers/${_paintSubsetGamelist.allow}Gamelist.xml</include>
+
+	<subset name="systemFade" displayName="${lowSpecsPi}${lang.systemFade}" appliesTo="(wallpaper),system,basic,detailed,grid,gamecarousel">
+        <include name="yes" displayName="${lang.yes}"/>
+		<include name="no" displayName="${lang.no}"/>
+    </subset>
+
+ 	<subset name="gamelistFade" displayName="${lowSpecsPi}${lang.gamelistFade}" appliesTo="(wallpaper),system,basic,detailed,grid,gamecarousel">
+        <include name="yes" displayName="${lang.yes}"/>
+		<include name="no" displayName="${lang.no}"/>
+    </subset>
+
+ 	<subset name="logoAnime" displayName="${lowSpecs}${lowSpecsPi}${lang.logoAnime}" appliesTo="(wallpaper),system,basic,detailed,grid,gamecarousel">
+        <include name="characterBw" displayName="${lang.characterBw}"/>
+        <include name="character" displayName="${lang.character}"/>
+		<include name="no" displayName="${lang.noLogoAnime}"/>
+        <include name="mix3" displayName="${lang.mix3}"/>
+        <include name="onTop" displayName="${lang.onTop}"/>
+        <include name="inGamelist" displayName="${lang.inGamelist}"/>
+        <include name="onScreen" displayName="${lang.onScreen}"/>
+    </subset>
+
+ 	<subset name="logoCustom" displayName="${lowSpecs}${lowSpecsPi}${lang.logoCustom}" appliesTo="(wallpaper),system,basic,detailed,grid,gamecarousel" ifSubset="logoAnime:mix3|onTop|inGamelist|onScreen">
+		<include name="no" displayName="${lang.no}"/>
+		<include name="yes" displayName="${lang.yes}"/>
+    </subset>
+
+	<subset name="............." displayName="                                                                                                                            " appliesTo=" ">
+		<include name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "/>
+	</subset>
+
+	<subset name="randomArt" displayName="${lowSpecs}${lowSpecsPi}${lang.randomArt}" appliesTo="(animations),system,basic,detailed,grid,gamecarousel">
+		<include name="marquee" displayName="${lang.marquee}"/>
+		<include name="thumbnail" displayName="${lang.thumbnail}"/>
+		<include name="image" displayName="${lang.image}"/>
+		<include name="no" displayName="${lang.no}"/>
+	</subset>
+
+    <subset name=".................." displayName="                                                                                                                            " appliesTo=" ">
+		<include name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "/>
+    </subset>
+
+	<subset name="randomRatio" displayName="${lang.randomRatio}" appliesTo="(game video),system,basic,detailed,grid,gamecarousel">
+		<include name="stretched" displayName="${lang.stretched}"/>
+		<include name="original" displayName="${lang.original}"/>
+	</subset>
+
+	<subset name="tvScreenColor" displayName="${lang.tvScreenColor}" appliesTo="(game video),system,basic,detailed,grid,gamecarousel" ifSubset="randomRatio:original">
+		<include name="standard" displayName="${lang.standard}"/>
+		<include name="blue" displayName="${lang.blue}"/>
+	</subset>
+
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------CONTAINERS---------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+	<subset name="container" displayName="${lang.container}" appliesTo="(game video),system,basic,detailed,grid,gamecarousel">
+
+		<include name="automatic" displayName="${lang.automatic}">./containers/automatic.xml</include>		
+
+		<include name="bartop" displayName="${lang.bartop}">./containers/bartop.xml</include>
+
+		<include name="astro" displayName="${lang.astro}">./containers/astro.xml</include>
+
+		<include name="colorfulArcade" displayName="${lang.colorfulArcade}">./containers/colorfulArcade.xml</include>
+
+		<include name="colorfulAstro" displayName="${lang.colorfulAstro}">./containers/colorfulAstro.xml</include>
+
+		<include name="colorfulTaito" displayName="${lang.colorfulTaito}">./containers/colorfulTaito.xml</include>
+
+		<include name="colorfulTaitoTriforce" displayName="${lang.colorfulTaitoTriforce}">./containers/colorfulTaitoTriforce.xml</include>
+
+		<include name="colorfulTaitoTekno" displayName="${lang.colorfulTaitoTekno}">./containers/colorfulTaitoTekno.xml</include>
+
+		<include name="genericArcade" displayName="${lang.genericArcade}">./containers/genericArcade.xml</include>
+
+		<include name="taito" displayName="${lang.taito}">./containers/taito.xml</include>
+
+		<include name="taitoFb" displayName="${lang.taitoFb}">./containers/taitoFb.xml</include>
+
+		<include name="taitoMame" displayName="${lang.taitoMame}">./containers/taitoMame.xml</include>
+
+		<include name="taitoTekno" displayName="${lang.taitoTekno}">./containers/taitoTekno.xml</include>
+
+		<include name="taitoTriforce" displayName="${lang.taitoTriforce}">./containers/taitoTriforce.xml</include>
+
+		<include name="model2" displayName="${lang.model2}">./containers/model2.xml</include>
+
+		<include name="model3" displayName="${lang.model3}">./containers/model3.xml</include>
+
+		<include name="hikaru" displayName="${lang.hikaru}">./containers/hikaru.xml</include>
+
+		<include name="chihiro" displayName="${lang.chihiro}">./containers/chihiro.xml</include>
+
+		<include name="naomi" displayName="${lang.naomi}">./containers/naomi.xml</include>
+
+		<include name="naomi2" displayName="${lang.naomi2}">./containers/naomi2.xml</include>
+
+		<include name="atomis" displayName="${lang.atomis}">./containers/atomis.xml</include>
+
+		<include name="stv" displayName="${lang.stv}">./containers/stv.xml</include>
+
+		<include name="mvs" displayName="${lang.mvs}">./containers/mvs.xml</include>
+
+        <include name="cathodBlack" displayName="${lang.cathodBlack}">./containers/cathodBlack.xml</include>
+
+        <include name="cathod" displayName="${lang.cathod}">./containers/cathod.xml</include>
+
+		<include name="flat" displayName="${lang.flat}">./containers/flat.xml</include>
+
+		<include name="trinitron" displayName="${lang.trinitron}">./containers/trinitron.xml</include>
+
+ 		<include name="retro3" displayName="${lang.retro3}">./containers/retro3.xml</include>
+
+ 		<include name="retroRed" displayName="${lang.retroRed}">./containers/retroRed.xml</include>
+
+ 		<include name="retroWhite" displayName="${lang.retroWhite}">./containers/retroWhite.xml</include>
+
+ 		<include name="retroBlack" displayName="${lang.retroBlack}">./containers/retroBlack.xml</include>
+
+ 		<include name="retroOld" displayName="${lang.retroOld}">./containers/retroOld.xml</include>
+
+ 		<include name="retroOld2" displayName="${lang.retroOld2}">./containers/retroOld2.xml</include>
+
+ 		<include name="retroOld3" displayName="${lang.retroOld3}">./containers/retroOld3.xml</include>
+
+ 		<include name="tv43" displayName="${lang.tv43}">./containers/tv43.xml</include>
+
+ 		<include name="tv43White" displayName="${lang.tv43White}">./containers/tv43White.xml</include>
+
+ 		<include name="tv43Philips" displayName="${lang.tv43Philips}">./containers/tv43Philips.xml</include>
+
+ 		<include name="monitor" displayName="${lang.monitor}">./containers/monitor.xml</include>
+
+ 		<include name="monitorWhite" displayName="${lang.monitorWhite}">./containers/monitorWhite.xml</include>
+
+ 		<include name="monitorGrey" displayName="${lang.monitorGrey}">./containers/monitorGrey.xml</include>
+
+ 		<include name="monitorIbm" displayName="${lang.monitorIbm}">./containers/monitorIbm.xml</include>
+
+ 		<include name="monitorAmstrad" displayName="${lang.monitorAmstrad}">./containers/monitorAmstrad.xml</include>
+
+ 		<include name="monitorAmiga" displayName="${lang.monitorAmiga}">./containers/monitorAmiga.xml</include>
+
+ 		<include name="monitorAmiga1081" displayName="${lang.monitorAmiga1081}">./containers/monitorAmiga1081.xml</include>
+
+ 		<include name="monitorAmiga1084" displayName="${lang.monitorAmiga1084}">./containers/monitorAmiga1084.xml</include>
+
+ 		<include name="monitorAtari" displayName="${lang.monitorAtari}">./containers/monitorAtari.xml</include>
+
+ 		<include name="monitorTeknina" displayName="${lang.monitorTeknina}">./containers/monitorTeknina.xml</include>
+
+ 		<include name="sf1" displayName="${lang.sf1}">./containers/sf1.xml</include>
+
+ 		<include name="x1" displayName="${lang.x1}">./containers/x1.xml</include>
+
+ 		<include name="cx1" displayName="${lang.cx1}">./containers/cx1.xml</include>
+
+ 		<include name="helmet" displayName="${lang.helmet}">./containers/helmet.xml</include>
+
+ 		<include name="pico8" displayName="${lang.pico8}">./containers/pico8.xml</include>
+
+ 		<include name="tic80" displayName="${lang.tic80}">./containers/tic80.xml</include>
+
+ 		<include name="pygame" displayName="${lang.pygame}">./containers/pygame.xml</include>
+
+ 		<include name="easyrpg" displayName="${lang.easyrpg}">./containers/easyrpg.xml</include>
+
+ 		<include name="pokemon" displayName="${lang.pokemon}">./containers/pokemon.xml</include>
+
+ 		<include name="gw" displayName="${lang.gw}">./containers/gw.xml</include>
+
+ 		<include name="16x9" displayName="${lang.16x9}">./containers/16x9.xml</include>
+
+ 		<include name="4x3" displayName="${lang.4x3}">./containers/4x3.xml</include>
+
+ 		<include name="3x2" displayName="${lang.3x2}">./containers/3x2.xml</include>
+
+ 		<include name="10x9" displayName="${lang.10x9}">./containers/10x9.xml</include>
+
+ 		<include name="2x3" displayName="${lang.2x3}">./containers/2x3.xml</include>
+
+ 		<include name="justVideo" displayName="${lang.justVideo}">./containers/justVideo.xml</include>
+
+ 		<include name="justVideoLittle" displayName="${lang.justVideoLittle}">./containers/justVideoLittle.xml</include>
+
+ 		<include name="gameboy" displayName="${lang.gameboy}">./containers/gameboy.xml</include>
+
+ 		<include name="gameboy2" displayName="${lang.gameboy2}">./containers/gameboy2.xml</include>
+
+ 		<include name="gameboyColor" displayName="${lang.gameboyColor}">./containers/gameboyColor.xml</include>
+
+ 		<include name="gameboyColor2" displayName="${lang.gameboyColor2}">./containers/gameboyColor2.xml</include>
+
+ 		<include name="gameboyAdvance" displayName="${lang.gameboyAdvance}">./containers/gameboyAdvance.xml</include>
+
+ 		<include name="gameboyAdvance2" displayName="${lang.gameboyAdvance2}">./containers/gameboyAdvance2.xml</include>
+
+ 		<include name="ds" displayName="${lang.ds}">./containers/ds.xml</include>
+
+ 		<include name="3ds" displayName="${lang.3ds}">./containers/3ds.xml</include>
+
+ 		<include name="3dsTop" displayName="${lang.3dsTop}">./containers/3dsTop.xml</include>
+
+ 		<include name="lynx" displayName="${lang.lynx}">./containers/lynx.xml</include>
+
+ 		<include name="gamegear" displayName="${lang.gamegear}">./containers/gamegear.xml</include>
+
+ 		<include name="wonderswan" displayName="${lang.wonderswan}">./containers/wonderswan.xml</include>
+
+ 		<include name="wonderswancolor" displayName="${lang.wonderswancolor}">./containers/wonderswancolor.xml</include>
+
+ 		<include name="ngp" displayName="${lang.ngp}">./containers/ngp.xml</include>
+
+ 		<include name="ngpc" displayName="${lang.ngpc}">./containers/ngpc.xml</include>
+
+ 		<include name="psp" displayName="${lang.psp}">./containers/psp.xml</include>
+
+ 		<include name="supervision" displayName="${lang.supervision}">./containers/supervision.xml</include>
+
+ 		<include name="megaduck" displayName="${lang.megaduck}">./containers/megaduck.xml</include>
+
+ 		<include name="gamepocket" displayName="${lang.gamepocket}">./containers/gamepocket.xml</include>
+
+ 		<include name="gamecom" displayName="${lang.gamecom}">./containers/gamecom.xml</include>
+
+ 		<include name="gamate" displayName="${lang.gamate}">./containers/gamate.xml</include>
+
+ 		<include name="wiiu" displayName="${lang.wiiu}">./containers/wiiu.xml</include>
+
+ 		<include name="switch" displayName="${lang.switch}">./containers/switch.xml</include>
+
+ 		<include name="vboy" displayName="${lang.vboy}">./containers/vboy.xml</include>
+
+ 		<include name="vectrex" displayName="${lang.vectrex}">./containers/vectrex.xml</include>
+
+ 		<include name="gaming" displayName="${lang.gaming}">./containers/gaming.xml</include>
+
+ 		<include name="pinball" displayName="${lang.pinball}">./containers/pinball.xml</include>
+
+ 		<include name="1080p" displayName="${lang.1080p}">./containers/1080p.xml</include>
+
+ 		<include name="adventureVision" displayName="${lang.adventureVision}">./containers/adventureVision.xml</include>
+
+ 		<include name="gp32" displayName="${lang.gp32}">./containers/gp32.xml</include>
+
+
+
+   </subset>
+
+	<subset name="containerTile" displayName="${lowSpecsPi}${lang.containerTile}" appliesTo="(game video),system,basic,detailed,grid,gamecarousel">
+		<include ifSubset="fullHexa:yes|no" name="tile" displayName="${lang.tile}">./containers/Tile.xml</include>
+		<include ifSubset="fullHexa:yes|no" name="customTile" displayName="${lang.customTile}">./containers/Tile.xml</include>
+		<include name="no" displayName="${lang.no}"/>
+	</subset>
+
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+	<subset name="tvSnaphot" displayName="${lang.tvSnaphot}" appliesTo="(game video),system,basic,detailed,grid,gamecarousel">
+		<include name="no" displayName="${lang.no}"/>
+		<include name="yes" displayName="${lang.yes}"/>
+	</subset>
+
+	<subset name="mdVideoShortDelay" displayName="${lang.mdVideoShortDelay}" appliesTo="(game video),system,basic,detailed,grid,gamecarousel">
+		<include name="no" displayName="${lang.no}"/>
+		<include name="yes" displayName="${lang.yes}"/>
+	</subset>
+
+	<subset name="tvOs" displayName="${lang.tvOs}" appliesTo="(game video),system,basic,detailed,grid,gamecarousel">
+		<include name="no" displayName="${lang.no}"/>
+		<include name="retrobat" displayName="${lang.retrobat}"/>
+		<include name="batocera" displayName="${lang.batocera}"/>
+		<include name="emuelec" displayName="${lang.batocera}"/>
+	</subset>
+
+	<subset name="previewDisplay" displayName="${lang.previewDisplay}" appliesTo="(game video),system,basic,detailed,grid,gamecarousel">
+		<include name="displayMix" displayName="${lang.displayMix}"/>
+		<include name="displayThumbnail" displayName="${lang.displayThumbnail}"/>
+		<include name="displayBoxback" displayName="${lang.displayBoxback}"/>
+	</subset>
+
+    <subset name="..................." displayName="                                                                                                                            " appliesTo=" ">
+		<include name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "/>
+    </subset>
+
+	<subset name="ratingColor" displayName="${lang.ratingColor}" appliesTo="(game infos),system,basic,detailed,grid,gamecarousel">
+		<include name="colorYellow" displayName="${lang.colorYelllow}"/>
+		<include name="colorWhite" displayName="${lang.colorWhite}"/>
+		<include name="colorsetAdaptive" displayName="${lang.colorsetAdaptive}"/>
+	</subset>
+
+	<subset name="gamebindsColor" displayName="${lang.gamebindsColor}" appliesTo="(game infos),system,basic,detailed,grid,gamecarousel">
+		<include name="colorYellow" displayName="${lang.colorYelllow}"/>
+		<include name="colorWhite" displayName="${lang.colorWhite}"/>
+		<include name="colorsetAdaptive" displayName="${lang.colorsetAdaptive}"/>
+	</subset>
+
+	<subset name="gameHeadColor" displayName="${lang.gameHeadColor}" appliesTo="(game infos),system,basic,detailed,grid,gamecarousel">
+		<include name="colorYellow" displayName="${lang.colorYelllow}"/>
+		<include name="colorWhite" displayName="${lang.colorWhite}"/>
+		<include name="colorsetAdaptive" displayName="${lang.colorsetAdaptive}"/>
+	</subset>
+
+	<subset name="systemNameColor" displayName="${lang.systemNameColor}" appliesTo="(game infos),system,basic,detailed,grid,gamecarousel">
+		<include name="colorWhite" displayName="${lang.colorWhite}"/>
+		<include name="colorYellow" displayName="${lang.colorYelllow}"/>
+		<include name="colorsetAdaptive" displayName="${lang.colorsetAdaptive}"/>
+	</subset>
+
+	<subset name="releaseColor" displayName="${lang.releaseColor}" appliesTo="(game infos),system,basic,detailed,grid,gamecarousel">
+		<include name="colorYellow" displayName="${lang.colorYelllow}"/>
+		<include name="colorWhite" displayName="${lang.colorWhite}"/>
+		<include name="colorsetAdaptive" displayName="${lang.colorsetAdaptive}"/>
+	</subset>
+
+	<subset name="gamebarColor" displayName="${lang.gamebarColor}" appliesTo="(game infos),system,basic,detailed,grid,gamecarousel">
+		<include name="colorWhite" displayName="${lang.colorWhite}"/>
+		<include name="colorYellow" displayName="${lang.colorYelllow}"/>
+		<include name="colorsetAdaptive" displayName="${lang.colorsetAdaptive}"/>
+	</subset>
+
+	<subset name="lineColor" displayName="${lang.lineColor}" appliesTo="(game infos),system,basic,detailed,grid,gamecarousel">
+		<include name="colorWhite" displayName="${lang.colorWhite}"/>
+		<include name="colorYellow" displayName="${lang.colorYelllow}"/>
+		<include name="colorsetAdaptive" displayName="${lang.colorsetAdaptive}"/>
+	</subset>
+
+	<subset name="descriptionColor" displayName="${lang.descriptionColor}" appliesTo="(game infos),system,basic,detailed,grid,gamecarousel">
+		<include name="colorWhite" displayName="${lang.colorWhite}"/>
+		<include name="colorYellow" displayName="${lang.colorYelllow}"/>
+		<include name="colorsetAdaptive" displayName="${lang.colorsetAdaptive}"/>
+	</subset>
+
+	<subset name=".........................................." displayName="                                                                                                                            " appliesTo=" ">
+		<include name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "/>
+	</subset>
+
+	<subset name="gameInfosBarFontSize" displayName="${lang.gameInfosBarFontSize}" tinyScreen="false" appliesTo="(game infos),system,basic,detailed,grid,gamecarousel">
+		<include name="0.020"/>
+		<include name="0.022"/>
+		<include name="0.024"/>
+		<include name="0.026"/>
+		<include name="0.016"/>
+		<include name="0.018"/>
+	</subset>
+
+	<subset name="descriptionFontSize" displayName="${lang.descriptionFontSize}" tinyScreen="false" appliesTo="(game infos),system,basic,detailed,grid,gamecarousel">
+		<include name="0.016"/>
+		<include name="0.018"/>
+		<include name="0.020"/>
+	</subset>
+
+	<subset name="gamelistFontSize" displayName="${lang.gamelistFontSize}" tinyScreen="false" appliesTo="(gamelist),system,basic,detailed,grid,gamecarousel">
+		<include name="0.020"/>
+		<include name="0.022"/>
+		<include name="0.024"/>
+		<include name="0.026"/>
+	</subset>
+
+	<subset name="......................................" displayName="                                                                                                                            " appliesTo=" ">
+		<include name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "/>
+	</subset>
+
+	<subset name="basicGamelistLines" displayName="${lang.basicGamelistLines}" tinyScreen="false" appliesTo="(gamelist),system,basic,detailed,grid,gamecarousel">
+		<include name="21"/>
+		<include name="23"/>
+		<include name="15"/>
+		<include name="17"/>
+		<include name="19"/>
+	</subset>
+
+	<subset name="detailedGamelistLines" displayName="${lang.detailedGamelistLines}" tinyScreen="false" appliesTo="(gamelist),system,basic,detailed,grid,gamecarousel">
+		<include name="15"/>
+		<include name="17"/>
+		<include name="19"/>
+		<include name="21"/>
+		<include name="23"/>
+	</subset>
+
+	<subset name=".............................................." displayName="                                                                                                                            " appliesTo=" ">
+		<include name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "/>
+	</subset>
+
+	<subset name="gamesZoneBack" displayName="${lang.gamesZoneBack}" appliesTo="(gamelist),system,basic,detailed,grid,gamecarousel">
+		<include name="simpleColorset" displayName="${lang.simpleColorset}"/>
+		<include name="simple" displayName="${lang.simple}"/>
+		<include name="carbon" displayName="${lang.carbon}"/>
+		<include name="carbonColorset" displayName="${lang.carbonColorset}"/>
+		<include name="no" displayName="${lang.no}"/>
+	</subset>
+
+</theme>

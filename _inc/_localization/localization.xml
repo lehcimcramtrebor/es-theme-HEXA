@@ -9,6 +9,18 @@ By Helmic
    
     <variables>
 
+        <lang.fullHexa>♠ hexa ♠ • experience</lang.fullHexa>
+        <lang.fullHexa lang="fr">♠ hexa ♠ • expérience</lang.fullHexa>
+
+		<lang.hexaYes>full (ssd pc recommended)</lang.hexaYes>
+		<lang.hexaYes lang="fr">complète ( pc avec ssd recommandé)</lang.hexaYes>
+
+		<lang.hexaNo>intermédiate</lang.hexaNo>
+		<lang.hexaNo lang="fr">intermédiaire</lang.hexaNo>
+
+		<lang.hexaPi>pi optimized</lang.hexaPi>
+		<lang.hexaPi lang="fr">optimisée pour pi</lang.hexaPi>
+
         <lowSpecs ifSubset="fullHexa:no">♠--- disabled ---♠ •  </lowSpecs>
         <lowSpecs ifSubset="fullHexa:no" lang="fr">♠--- désactivé ---♠ • </lowSpecs>
 
