@@ -21,11 +21,11 @@ By Helmic
 		<lang.hexaPi>pi optimized</lang.hexaPi>
 		<lang.hexaPi lang="fr">optimisée pour pi</lang.hexaPi>
 
-        <lowSpecs ifSubset="fullHexa:no">♠--- disabled ---♠ •  </lowSpecs>
-        <lowSpecs ifSubset="fullHexa:no" lang="fr">♠--- désactivé ---♠ • </lowSpecs>
+        <lowSpecs ifSubset="fullHexa:no">♠- n/a -♠ •  </lowSpecs>
+        <lowSpecs ifSubset="fullHexa:no" lang="fr">♠- n/a -♠ • </lowSpecs>
 
-        <lowSpecsPi ifSubset="fullHexa:hexaPi">♠--- disabled ---♠ •  </lowSpecsPi>
-        <lowSpecsPi ifSubset="fullHexa:hexaPi" lang="fr">♠--- désactivé ---♠ • </lowSpecsPi>
+        <lowSpecsPi ifSubset="fullHexa:hexaPi">♠- n/a -♠ •  </lowSpecsPi>
+        <lowSpecsPi ifSubset="fullHexa:hexaPi" lang="fr">♠- n/a -♠ • </lowSpecsPi>
 
         <lang.basicEnhanced>simple list</lang.basicEnhanced>
         <lang.basicEnhanced lang="fr">liste simple</lang.basicEnhanced>
