@@ -321,10 +321,10 @@ By Helmic
     </subset>
 
     <subset name="ambiance" displayName="${lang.ambiance}">
-		<include name="randomVideosAudioOff" displayName="${lang.randomVideosAudioOff}"/>
-        <include name="randomVideosAudioOn" displayName="${lang.randomVideosAudioOn}"/>
 		<include name="randomAudioOff" displayName="${lang.randomAudioOff}"/>
         <include name="randomAudioOn" displayName="${lang.randomAudioOn}"/>
+		<include name="randomVideosAudioOff" displayName="${lang.randomVideosAudioOff}"/>
+        <include name="randomVideosAudioOn" displayName="${lang.randomVideosAudioOn}"/>
         <include name="randomNone" displayName="${lang.randomNone}"/>
     </subset>
 
@@ -438,10 +438,10 @@ By Helmic
 	</subset>
 
 	<subset name="randomArt" displayName="${lowSpecs}${lowSpecsPi}${lang.randomArt}" appliesTo="(animations),system,basic,detailed,grid,gamecarousel">
-		<include name="no" displayName="${lang.no}"/>
 		<include name="marquee" displayName="${lang.marquee}"/>
 		<include name="thumbnail" displayName="${lang.thumbnail}"/>
 		<include name="image" displayName="${lang.image}"/>
+		<include name="no" displayName="${lang.no}"/>
 	</subset>
 
     <subset name=".................." displayName="                                                                                                                            " appliesTo=" ">
