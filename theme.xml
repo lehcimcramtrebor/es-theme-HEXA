@@ -5005,7 +5005,7 @@ By Helmic
 		<text name="md_name">
 			<text>${system.name}</text>
             <fontPath>./_inc/fonts/${font1}</fontPath>
-            <fontSize>0.018</fontSize>
+            <fontSize>0.032</fontSize>
             <fontSize tinyScreen="true">0.024</fontSize>
             <pos>0 0.5</pos>
             <origin>0 0</origin>
@@ -5016,16 +5016,21 @@ By Helmic
 			<w ifSubset="themeRatio:54|43">1</w>
 			<h>0.034</h>
 			<glowColor>000000</glowColor>
-			<glowSize>4</glowSize>
+			<glowSize>2</glowSize>
 			<opacity>0</opacity>
 			<storyboard event="open">
-                 <animation property="opacity" from="0" to="0" duration="1" mode="easeOut"/>
+                 <animation property="opacity" from="0" to="1" duration="100" mode="easeOut"/>
+                 <animation property="opacity" from="1" to="0" duration="200" mode="easeOut" begin="350"/>
             </storyboard>
 			<storyboard event="activateNext">
-                 <animation property="opacity" from="0" to="0" duration="1" mode="easeOut"/>
+                 <animation property="opacity" from="0" to="1" duration="100" mode="easeOut"/>
+                  <animation property="opacity" from="1" to="0" duration="200" mode="easeOut" begin="250"/>
+                  <animation property="offsetX" from="-0.01" duration="200" mode="easeOut" begin="0"/>
            </storyboard>
 			<storyboard event="activatePrev">
-                 <animation property="opacity" from="0" to="0" duration="1" mode="easeOut"/>
+                <animation property="opacity" from="0" to="1" duration="100" mode="easeOut"/>
+                 <animation property="opacity" from="1" to="0" duration="200" mode="easeOut" begin="250"/>
+                  <animation property="offsetX" from="0.01" duration="200" mode="easeOut" begin="0"/>
            </storyboard>
 			<storyboard event="deactivateNext">
                 <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
@@ -5035,7 +5040,7 @@ By Helmic
             </storyboard>
 
 		</text>
-
+		
 	</customView>
 
 
@@ -5093,7 +5098,7 @@ By Helmic
 		<text name="md_name">
 			<text>${system.name}</text>
             <fontPath>./_inc/fonts/${font1}</fontPath>
-            <fontSize>0.018</fontSize>
+            <fontSize>0.032</fontSize>
             <fontSize tinyScreen="true">0.024</fontSize>
             <pos>0 0.5</pos>
             <origin>0 0</origin>
@@ -5104,7 +5109,7 @@ By Helmic
 			<w ifSubset="themeRatio:54|43">1</w>
 			<h>0.034</h>
 			<glowColor>000000</glowColor>
-			<glowSize>4</glowSize>
+			<glowSize>2</glowSize>
 			<opacity>0</opacity>
 			<storyboard event="open">
                  <animation property="opacity" from="0" to="1" duration="100" mode="easeOut"/>
@@ -5112,11 +5117,13 @@ By Helmic
             </storyboard>
 			<storyboard event="activateNext">
                  <animation property="opacity" from="0" to="1" duration="100" mode="easeOut"/>
-                  <animation property="opacity" from="1" to="0" duration="200" mode="easeOut" begin="350"/>
+                  <animation property="opacity" from="1" to="0" duration="200" mode="easeOut" begin="250"/>
+                  <animation property="offsetX" from="-0.01" duration="200" mode="easeOut" begin="0"/>
            </storyboard>
 			<storyboard event="activatePrev">
                 <animation property="opacity" from="0" to="1" duration="100" mode="easeOut"/>
-                 <animation property="opacity" from="1" to="0" duration="200" mode="easeOut" begin="350"/>
+                 <animation property="opacity" from="1" to="0" duration="200" mode="easeOut" begin="250"/>
+                  <animation property="offsetX" from="0.01" duration="200" mode="easeOut" begin="0"/>
            </storyboard>
 			<storyboard event="deactivateNext">
                 <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
