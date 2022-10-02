@@ -5025,12 +5025,12 @@ By Helmic
 			<storyboard event="activateNext">
                  <animation property="opacity" from="0" to="1" duration="100" mode="easeOut"/>
                   <animation property="opacity" from="1" to="0" duration="200" mode="easeOut" begin="250"/>
-                  <animation property="offsetX" from="-0.01" duration="200" mode="easeOut" begin="0"/>
+                  <animation property="offsetX" from="0.01" duration="200" mode="easeOut" begin="0"/>
            </storyboard>
 			<storyboard event="activatePrev">
                 <animation property="opacity" from="0" to="1" duration="100" mode="easeOut"/>
                  <animation property="opacity" from="1" to="0" duration="200" mode="easeOut" begin="250"/>
-                  <animation property="offsetX" from="0.01" duration="200" mode="easeOut" begin="0"/>
+                  <animation property="offsetX" from="-0.01" duration="200" mode="easeOut" begin="0"/>
            </storyboard>
 			<storyboard event="deactivateNext">
                 <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
@@ -5118,12 +5118,12 @@ By Helmic
 			<storyboard event="activateNext">
                  <animation property="opacity" from="0" to="1" duration="100" mode="easeOut"/>
                   <animation property="opacity" from="1" to="0" duration="200" mode="easeOut" begin="250"/>
-                  <animation property="offsetX" from="-0.01" duration="200" mode="easeOut" begin="0"/>
+                  <animation property="offsetX" from="0.01" duration="200" mode="easeOut" begin="0"/>
            </storyboard>
 			<storyboard event="activatePrev">
                 <animation property="opacity" from="0" to="1" duration="100" mode="easeOut"/>
                  <animation property="opacity" from="1" to="0" duration="200" mode="easeOut" begin="250"/>
-                  <animation property="offsetX" from="0.01" duration="200" mode="easeOut" begin="0"/>
+                  <animation property="offsetX" from="-0.01" duration="200" mode="easeOut" begin="0"/>
            </storyboard>
 			<storyboard event="deactivateNext">
                 <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
