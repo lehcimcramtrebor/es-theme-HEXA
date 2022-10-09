@@ -26,7 +26,7 @@ By Helmic
 
     <!--DEVELOPERS FINANCIAL SUPPORT-->
 
-	<include>./_support/support.xml</include>
+	<include>./../_support/support.xml</include>
 	
     <subset name="regionChoice" displayName="${lang.regionChoice}">
 		<include name="yes" displayName="${lang.yes}"/>
