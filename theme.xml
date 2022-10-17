@@ -54,6 +54,9 @@ By Helmic
 			<pos>0.004 0.982</pos>
 			<fontPath>./_inc/fonts/${font2}</fontPath>
 			<iconColor>${overlay.colorset}</iconColor>
+            <glowColor>00000080</glowColor>
+			<glowOffset>1</glowOffset>
+			<glowSize>1</glowSize>
 		</helpsystem>
 
 		<helpsystem name="help" ifSubset="helpIcons:arcadeIcons">
@@ -352,6 +355,9 @@ By Helmic
 		</batteryIndicator>
 	
 		<text name="clock">
+            <glowColor>00000080</glowColor>
+			<glowOffset>1</glowOffset>
+			<glowSize>1</glowSize>
 			<fontSize>0.02</fontSize>
 			<fontSize tinyScreen="true">0.022</fontSize>
 			<color>dddddd</color>
@@ -506,7 +512,9 @@ By Helmic
             <fontSize>0.09</fontSize>
             <text>${system.fullName}</text>
             <color>00000000</color>
-            <glowColor>00000000</glowColor>
+            <glowColor>00000080</glowColor>
+			<glowOffset>1</glowOffset>
+			<glowSize>1</glowSize>
         </text>     
  	
 	</view>
@@ -602,6 +610,8 @@ By Helmic
             <fontPath>./_inc/fonts/${font1}</fontPath>
             <color>dddddd</color>
             <glowColor>00000080</glowColor>
+			<glowOffset>1</glowOffset>
+			<glowSize>1</glowSize>
             <fontSize>0.018</fontSize>
             <fontSize tinyScreen="true">0.024</fontSize>
             <pos>0.5 0.94</pos>
@@ -1361,7 +1371,9 @@ By Helmic
             <fontSize>0.09</fontSize>
             <text>${system.fullName}</text>
             <color>dddddd</color>
-            <glowColor>12121233</glowColor>
+            <glowColor>00000080</glowColor>
+			<glowOffset>1</glowOffset>
+			<glowSize>1</glowSize>
         </text>     
 
         <text name="systemInfo">     
@@ -1374,7 +1386,9 @@ By Helmic
             <fontPath>./_inc/fonts/${font1}</fontPath>
             <fontSize>0.02</fontSize>
             <fontSize tinyScreen="true">0.026</fontSize>
-            <glowColor>00000005</glowColor>
+            <glowColor>00000080</glowColor>
+			<glowOffset>1</glowOffset>
+			<glowSize>1</glowSize>
             <zIndex>20</zIndex>
             <opacity>0</opacity>
 			<storyboard>
@@ -1395,7 +1409,9 @@ By Helmic
             <color ifSubset="systemInfoColor:colorWhite">dddddd</color>
             <color ifSubset="systemInfoColor:colorYellow">ffff00</color>
             <color ifSubset="systemInfoColor:colorsetAdaptive">${overlay.colorset}</color>
-             <glowColor>00000005</glowColor>
+            <glowColor>00000080</glowColor>
+			<glowOffset>1</glowOffset>
+			<glowSize>1</glowSize>
             <fontSize>0.02</fontSize>
             <fontSize tinyScreen="true">0.026</fontSize>
             <pos>0.5 0.94</pos>
@@ -1503,7 +1519,9 @@ By Helmic
 			<text>${system.fullName}</text>
             <fontPath>./_inc/fonts/${font1}</fontPath>
             <color>ffffff</color>
-            <glowColor>00000060</glowColor>
+            <glowColor>00000080</glowColor>
+			<glowOffset>1</glowOffset>
+			<glowSize>1</glowSize>
             <fontSize>0.028</fontSize>
             <pos>0.185 0.905</pos>
             <pos ifSubset="randomLogo:no">0.02 0.905</pos>
@@ -1518,8 +1536,10 @@ By Helmic
 		<text name="systemFullNameRandomVideo" extra="true" ifSubset="ambiance:randomVideosAudioOn|randomVideosAudioOff,barName:yes">
 			<text>${system.manufacturer}</text>
             <fontPath>./_inc/fonts/${font1}</fontPath>
-            <color>cccccc</color>
-            <glowColor>00000033</glowColor>
+            <color>ffffff</color>
+            <glowColor>00000080</glowColor>
+			<glowOffset>1</glowOffset>
+			<glowSize>1</glowSize>
             <fontSize>0.014</fontSize>
             <pos>0.185 0.94</pos>
             <pos ifSubset="randomLogo:no">0.02 0.94</pos>
@@ -1622,7 +1642,9 @@ By Helmic
             <color ifSubset="bindingBar:colorWhite">dddddd</color>
             <color ifSubset="bindingBar:colorYellow">ffff00</color>
             <color ifSubset="bindingBar:colorsetAdaptive">${overlay.colorset}</color>
-            <glowColor>00000040</glowColor>
+            <glowColor>00000080</glowColor>
+			<glowOffset>1</glowOffset>
+			<glowSize>1</glowSize>
 			<fontSize>0.02</fontSize>
 			<fontSize tinyScreen="true">0.026</fontSize>
             <fontSize ifSubset="bindingBarFontSize:0.016" tinyScreen="false">0.016</fontSize>
@@ -1648,7 +1670,9 @@ By Helmic
             <color ifSubset="bindingBar:colorWhite">dddddd</color>
             <color ifSubset="bindingBar:colorYellow">ffff00</color>
             <color ifSubset="bindingBar:colorsetAdaptive">${overlay.colorset}</color>
-            <glowColor>00000040</glowColor>
+            <glowColor>00000080</glowColor>
+			<glowOffset>1</glowOffset>
+			<glowSize>1</glowSize>
 			<fontSize>0.02</fontSize>
 			<fontSize tinyScreen="true">0.026</fontSize>
             <fontSize ifSubset="bindingBarFontSize:0.016" tinyScreen="false">0.016</fontSize>
@@ -1679,7 +1703,9 @@ By Helmic
             <color ifSubset="bindingBar:colorWhite">dddddd</color>
             <color ifSubset="bindingBar:colorYellow">ffff00</color>
             <color ifSubset="bindingBar:colorsetAdaptive">${overlay.colorset}</color>
-            <glowColor>00000040</glowColor>
+            <glowColor>00000080</glowColor>
+			<glowOffset>1</glowOffset>
+			<glowSize>1</glowSize>
 			<fontSize>0.02</fontSize>
 			<fontSize tinyScreen="true">0.026</fontSize>
             <fontSize ifSubset="bindingBarFontSize:0.016" tinyScreen="false">0.016</fontSize>
@@ -1710,7 +1736,9 @@ By Helmic
             <color ifSubset="bindingBar:colorWhite">dddddd</color>
             <color ifSubset="bindingBar:colorYellow">ffff00</color>
             <color ifSubset="bindingBar:colorsetAdaptive">${overlay.colorset}</color>
-            <glowColor>00000040</glowColor>
+            <glowColor>00000080</glowColor>
+			<glowOffset>1</glowOffset>
+			<glowSize>1</glowSize>
 			<fontSize>0.02</fontSize>
 			<fontSize tinyScreen="true">0.026</fontSize>
             <fontSize ifSubset="bindingBarFontSize:0.016" tinyScreen="false">0.016</fontSize>
@@ -1741,7 +1769,9 @@ By Helmic
             <color ifSubset="bindingBar:colorWhite">dddddd</color>
             <color ifSubset="bindingBar:colorYellow">ffff00</color>
             <color ifSubset="bindingBar:colorsetAdaptive">${overlay.colorset}</color>
-            <glowColor>00000040</glowColor>
+            <glowColor>00000080</glowColor>
+			<glowOffset>1</glowOffset>
+			<glowSize>1</glowSize>
 			<fontSize>0.02</fontSize>
 			<fontSize tinyScreen="true">0.026</fontSize>
             <fontSize ifSubset="bindingBarFontSize:0.016" tinyScreen="false">0.016</fontSize>
@@ -1772,7 +1802,9 @@ By Helmic
             <color ifSubset="bindingBar:colorWhite">dddddd</color>
             <color ifSubset="bindingBar:colorYellow">ffff00</color>
             <color ifSubset="bindingBar:colorsetAdaptive">${overlay.colorset}</color>
-            <glowColor>00000040</glowColor>
+            <glowColor>00000080</glowColor>
+			<glowOffset>1</glowOffset>
+			<glowSize>1</glowSize>
 			<fontSize>0.02</fontSize>
 			<fontSize tinyScreen="true">0.026</fontSize>
             <fontSize ifSubset="bindingBarFontSize:0.016" tinyScreen="false">0.016</fontSize>
@@ -1803,7 +1835,9 @@ By Helmic
             <color ifSubset="bindingBar:colorWhite">dddddd</color>
             <color ifSubset="bindingBar:colorYellow">ffff00</color>
             <color ifSubset="bindingBar:colorsetAdaptive">${overlay.colorset}</color>
-            <glowColor>00000040</glowColor>
+            <glowColor>00000080</glowColor>
+			<glowOffset>1</glowOffset>
+			<glowSize>1</glowSize>
 			<fontSize>0.02</fontSize>
 			<fontSize tinyScreen="true">0.026</fontSize>
             <fontSize ifSubset="bindingBarFontSize:0.016" tinyScreen="false">0.016</fontSize>
@@ -1834,7 +1868,9 @@ By Helmic
             <color ifSubset="bindingBar:colorWhite">dddddd</color>
             <color ifSubset="bindingBar:colorYellow">ffff00</color>
             <color ifSubset="bindingBar:colorsetAdaptive">${overlay.colorset}</color>
-            <glowColor>00000040</glowColor>
+            <glowColor>00000080</glowColor>
+			<glowOffset>1</glowOffset>
+			<glowSize>1</glowSize>
 			<fontSize>0.02</fontSize>
 			<fontSize tinyScreen="true">0.026</fontSize>
             <fontSize ifSubset="bindingBarFontSize:0.016" tinyScreen="false">0.016</fontSize>
@@ -1866,7 +1902,9 @@ By Helmic
             <color ifSubset="bindingBar:colorWhite">dddddd</color>
             <color ifSubset="bindingBar:colorYellow">ffff00</color>
             <color ifSubset="bindingBar:colorsetAdaptive">${overlay.colorset}</color>
-            <glowColor>00000040</glowColor>
+            <glowColor>00000080</glowColor>
+			<glowOffset>1</glowOffset>
+			<glowSize>1</glowSize>
 			<fontSize>0.02</fontSize>
 			<fontSize tinyScreen="true">0.026</fontSize>
             <fontSize ifSubset="bindingBarFontSize:0.016" tinyScreen="false">0.016</fontSize>
@@ -2224,13 +2262,18 @@ By Helmic
 			<lines ifSubset="basicGamelistLines:17" tinyScreen="false">17</lines>
 			<lines ifSubset="basicGamelistLines:19" tinyScreen="false">19</lines>
 			<lines ifSubset="basicGamelistLines:23" tinyScreen="false">23</lines>
+            <glowColor>00000080</glowColor>
+			<glowOffset>1</glowOffset>
+			<glowSize>1</glowSize>
  			</textlist>
 
 		<text name="basicBar" extra="true">
 			<text>${system.fullName}</text>
             <fontPath>./_inc/fonts/${font2}</fontPath>
             <color>dddddd</color>
-            <glowColor>00000005</glowColor>
+            <glowColor>00000080</glowColor>
+			<glowOffset>1</glowOffset>
+			<glowSize>1</glowSize>
             <fontSize>0.022</fontSize>
             <pos>0.5 0.018</pos>
             <origin>0.5 0.5</origin>
@@ -2438,7 +2481,9 @@ By Helmic
             <fontPath>./_inc/fonts/${font2}</fontPath>
             <fontPath ifSubset="tvOs:retrobat">./_inc/fonts/snes.ttf</fontPath>
             <color>cccccc</color>
-            <glowColor>00000015</glowColor>
+            <glowColor>00000080</glowColor>
+			<glowOffset>1</glowOffset>
+			<glowSize>1</glowSize>
             <fontSize>0.012</fontSize>
             <fontSize ifSubset="themeRatio:54|43">0.01</fontSize>
             <fontSize ifSubset="tvOs:retrobat">0.018</fontSize>
@@ -2926,8 +2971,9 @@ By Helmic
             <color ifSubset="gameHeadColor:colorWhite">ffffff</color>
             <color ifSubset="gameHeadColor:colorYellow">ffff00</color>
             <color ifSubset="gameHeadColor:colorsetAdaptive">${overlay.colorset}</color>
-            <glowColor>00000005</glowColor>
-            <glowColor ifSubset="gameHeadColor:colorsetAdaptive">09090920</glowColor>
+            <glowColor>00000080</glowColor>
+			<glowOffset>1</glowOffset>
+			<glowSize>1</glowSize>
             <fontSize>0.018</fontSize>
             <fontSize tinyScreen="true">0.024</fontSize>
             <pos>0.0134375 0.0425</pos>
@@ -2978,7 +3024,11 @@ By Helmic
 			<color ifSubset="systemNameColor:colorWhite">cccccc</color>
 			<color ifSubset="systemNameColor:colorYellow">cccc00</color>
 			<color ifSubset="systemNameColor:colorsetAdaptive">${overlay.colorset}</color>
-            <glowColor ifSubset="systemNameColor:colorsetAdaptive">09090920</glowColor>
+            <glowColor>00000080</glowColor>
+			<glowOffset>1</glowOffset>
+			<glowSize>1</glowSize>
+			<glowOffset>1</glowOffset>
+			<glowSize>1</glowSize>
             <fontSize>0.014</fontSize>
 			<fontSize tinyScreen="true">0.016</fontSize>
             <pos>0.0134375 0.075</pos>
@@ -3007,6 +3057,9 @@ By Helmic
 		</text>
 
 		<datetime name="md_releasedate">
+            <glowColor>00000080</glowColor>
+			<glowOffset>1</glowOffset>
+			<glowSize>1</glowSize>
             <fontPath>./_inc/fonts/${font1}</fontPath>
 			<color ifSubset="releaseColor:colorWhite">cccccc</color>
 			<color ifSubset="releaseColor:colorYellow">cccc00</color>
@@ -3081,8 +3134,9 @@ By Helmic
             <color ifSubset="descriptionColor:colorYellow">ffff00</color>
             <color ifSubset="descriptionColor:colorWhite">ffffff</color>
             <color ifSubset="descriptionColor:colorsetAdaptive">${overlay.colorset}</color>
-			<glowColor>00000005</glowColor>
-			<glowColor ifSubset="descriptionColor:colorsetAdaptive">09090920</glowColor>
+            <glowColor>00000080</glowColor>
+			<glowOffset>1</glowOffset>
+			<glowSize>1</glowSize>
 			<fontPath>./_inc/fonts/${font1}</fontPath>
 			<fontSize>0.016</fontSize>
 			<fontSize tinyScreen="true">0.02</fontSize>
@@ -3146,7 +3200,9 @@ By Helmic
 			<color ifSubset="gamebarColor:colorWhite">dddddd</color>
 			<color ifSubset="gamebarColor:colorYellow">dddd00</color>
 			<color ifSubset="gamebarColor:colorsetAdaptive">${overlay.colorset}</color>
-			<glowColor>00000040</glowColor>
+            <glowColor>00000080</glowColor>
+			<glowOffset>1</glowOffset>
+			<glowSize>1</glowSize>
 			<fontPath>./_inc/fonts/players.ttf</fontPath>
 		</text>
 		
@@ -3409,7 +3465,9 @@ By Helmic
             <color ifSubset="gamebindsColor:colorYellow">ffff00</color>
             <color ifSubset="gamebindsColor:colorWhite">dddddd</color>
             <color ifSubset="gamebindsColor:colorsetAdaptive">${overlay.colorset}</color>
-            <glowColor>00000005</glowColor>
+            <glowColor>00000080</glowColor>
+			<glowOffset>1</glowOffset>
+			<glowSize>1</glowSize>
             <fontSize>0.02</fontSize>
             <fontSize tinyScreen="true">0.026</fontSize>
             <fontSize ifSubset="gameInfosBarFontSize:0.016" tinyScreen="false">0.016</fontSize>
@@ -3463,7 +3521,9 @@ By Helmic
             <color ifSubset="gamebindsColor:colorYellow">ffff00</color>
             <color ifSubset="gamebindsColor:colorWhite">dddddd</color>
             <color ifSubset="gamebindsColor:colorsetAdaptive">${overlay.colorset}</color>
-            <glowColor>00000005</glowColor>
+            <glowColor>00000080</glowColor>
+			<glowOffset>1</glowOffset>
+			<glowSize>1</glowSize>
             <fontSize>0.02</fontSize>
             <fontSize tinyScreen="true">0.026</fontSize>
             <fontSize ifSubset="gameInfosBarFontSize:0.016" tinyScreen="false">0.016</fontSize>
@@ -3517,7 +3577,9 @@ By Helmic
             <color ifSubset="gamebindsColor:colorYellow">ffff00</color>
             <color ifSubset="gamebindsColor:colorWhite">dddddd</color>
             <color ifSubset="gamebindsColor:colorsetAdaptive">${overlay.colorset}</color>
-            <glowColor>00000005</glowColor>
+            <glowColor>00000080</glowColor>
+			<glowOffset>1</glowOffset>
+			<glowSize>1</glowSize>
             <fontSize>0.02</fontSize>
             <fontSize tinyScreen="true">0.026</fontSize>
             <fontSize ifSubset="gameInfosBarFontSize:0.016" tinyScreen="false">0.016</fontSize>
@@ -3571,7 +3633,9 @@ By Helmic
             <color ifSubset="gamebindsColor:colorYellow">ffff00</color>
             <color ifSubset="gamebindsColor:colorWhite">dddddd</color>
             <color ifSubset="gamebindsColor:colorsetAdaptive">${overlay.colorset}</color>
-            <glowColor>00000005</glowColor>
+            <glowColor>00000080</glowColor>
+			<glowOffset>1</glowOffset>
+			<glowSize>1</glowSize>
             <fontSize>0.02</fontSize>
             <fontSize tinyScreen="true">0.026</fontSize>
             <fontSize ifSubset="gameInfosBarFontSize:0.016" tinyScreen="false">0.016</fontSize>
@@ -3625,7 +3689,9 @@ By Helmic
             <color ifSubset="gamebindsColor:colorYellow">ffff00</color>
             <color ifSubset="gamebindsColor:colorWhite">dddddd</color>
             <color ifSubset="gamebindsColor:colorsetAdaptive">${overlay.colorset}</color>
-            <glowColor>00000005</glowColor>
+            <glowColor>00000080</glowColor>
+			<glowOffset>1</glowOffset>
+			<glowSize>1</glowSize>
             <fontSize>0.02</fontSize>
             <fontSize tinyScreen="true">0.026</fontSize>
             <fontSize ifSubset="gameInfosBarFontSize:0.016" tinyScreen="false">0.016</fontSize>
@@ -3675,6 +3741,9 @@ By Helmic
 		</text>
 
 		<text name="md_gametime">
+            <glowColor>00000080</glowColor>
+			<glowOffset>1</glowOffset>
+			<glowSize>1</glowSize>
             <fontPath>./_inc/fonts/${font2}</fontPath>
             <color ifSubset="gamebindsColor:colorYellow">ffff00</color>
             <color ifSubset="gamebindsColor:colorWhite">dddddd</color>
@@ -3732,7 +3801,9 @@ By Helmic
             <color ifSubset="gamebindsColor:colorYellow">ffff00</color>
             <color ifSubset="gamebindsColor:colorWhite">dddddd</color>
             <color ifSubset="gamebindsColor:colorsetAdaptive">${overlay.colorset}</color>
-            <glowColor>00000005</glowColor>
+            <glowColor>00000080</glowColor>
+			<glowOffset>1</glowOffset>
+			<glowSize>1</glowSize>
             <fontSize>0.02</fontSize>
             <fontSize tinyScreen="true">0.026</fontSize>
             <fontSize ifSubset="gameInfosBarFontSize:0.016" tinyScreen="false">0.016</fontSize>
@@ -3782,6 +3853,9 @@ By Helmic
 		</text>
 
 		<datetime name="md_lastplayed">
+            <glowColor>00000080</glowColor>
+			<glowOffset>1</glowOffset>
+			<glowSize>1</glowSize>
             <fontPath>./_inc/fonts/${font2}</fontPath>
             <color ifSubset="gamebindsColor:colorYellow">ffff00</color>
             <color ifSubset="gamebindsColor:colorWhite">dddddd</color>
@@ -3837,7 +3911,9 @@ By Helmic
             <color ifSubset="gamebindsColor:colorYellow">ffff00</color>
             <color ifSubset="gamebindsColor:colorWhite">dddddd</color>
             <color ifSubset="gamebindsColor:colorsetAdaptive">${overlay.colorset}</color>
-            <glowColor>00000005</glowColor>
+            <glowColor>00000080</glowColor>
+			<glowOffset>1</glowOffset>
+			<glowSize>1</glowSize>
             <fontSize>0.02</fontSize>
             <fontSize tinyScreen="true">0.026</fontSize>
             <fontSize ifSubset="gameInfosBarFontSize:0.016" tinyScreen="false">0.016</fontSize>
@@ -3928,6 +4004,9 @@ By Helmic
 			<lines ifSubset="detailedGamelistLines:19" tinyScreen="false">19</lines>
 			<lines ifSubset="detailedGamelistLines:21" tinyScreen="false">21</lines>
 			<lines ifSubset="detailedGamelistLines:23" tinyScreen="false">23</lines>
+            <glowColor>00000080</glowColor>
+			<glowOffset>1</glowOffset>
+			<glowSize>1</glowSize>
  			</textlist>
 
 	<!-- MD_DESCRIPTION DETAILED SPECIFICATIONS -->
@@ -4619,7 +4698,9 @@ By Helmic
 			<text>${system.fullName}</text>
             <fontPath>./_inc/fonts/${font2}</fontPath>
             <color>dddddd</color>
-            <glowColor>00000005</glowColor>
+            <glowColor>00000080</glowColor>
+			<glowOffset>1</glowOffset>
+			<glowSize>1</glowSize>
             <fontSize>0.022</fontSize>
             <pos>0.5 0.018</pos>
             <origin>0.5 0.5</origin>
@@ -4747,6 +4828,9 @@ By Helmic
 		</image>
 
 		<textlist name="gamelist">
+            <glowColor>00000080</glowColor>
+			<glowOffset>1</glowOffset>
+			<glowSize>1</glowSize>
 			<selectorImagePath>./_inc/white.png</selectorImagePath>
 			<origin>0.5 0.5</origin>
 			<pos>0.5 0.5</pos>
@@ -4857,6 +4941,9 @@ By Helmic
 		</image>
 
 		<textlist name="gamelist">
+            <glowColor>00000080</glowColor>
+			<glowOffset>1</glowOffset>
+			<glowSize>1</glowSize>
 			<selectorImagePath>./_inc/white.png</selectorImagePath>
 			<origin>0.5 0.5</origin>
 			<pos>0.5 0.5</pos>
@@ -5015,8 +5102,9 @@ By Helmic
 			<w>1</w>
 			<w ifSubset="themeRatio:54|43">1</w>
 			<h>0.034</h>
-			<glowColor>000000</glowColor>
-			<glowSize>2</glowSize>
+            <glowColor>00000080</glowColor>
+			<glowOffset>1</glowOffset>
+			<glowSize>1</glowSize>
 			<opacity>0</opacity>
 			<storyboard event="open">
                  <animation property="opacity" from="0" to="1" duration="100" mode="easeOut"/>
@@ -5108,8 +5196,9 @@ By Helmic
 			<w>1</w>
 			<w ifSubset="themeRatio:54|43">1</w>
 			<h>0.034</h>
-			<glowColor>000000</glowColor>
-			<glowSize>2</glowSize>
+            <glowColor>00000080</glowColor>
+			<glowOffset>1</glowOffset>
+			<glowSize>1</glowSize>
 			<opacity>0</opacity>
 			<storyboard event="open">
                  <animation property="opacity" from="0" to="1" duration="100" mode="easeOut"/>

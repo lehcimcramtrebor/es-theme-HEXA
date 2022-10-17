@@ -47,9 +47,9 @@
 			<color>dddddd</color>
 			<fontPath>./_inc/fonts/conthrax-sb.ttf</fontPath>
 			<fontSize>0.032</fontSize>
-			<glowColor>09090920</glowColor>
-			<glowSize>1</glowSize>
+            <glowColor>00000080</glowColor>
 			<glowOffset>1</glowOffset>
+			<glowSize>1</glowSize>
 		</text>
 
 		<image name="darken" extra="true">
