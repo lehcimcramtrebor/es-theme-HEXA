@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--CROSS FILE TO LET RCBX CHECK IF HEXA IS INSTALLED-->
+<theme>
+<formatVersion>7</formatVersion>
+    <variables>
+		<cross.hexa>installed</cross.hexa>
+    </variables>
+</theme>
