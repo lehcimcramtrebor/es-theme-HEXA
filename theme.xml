@@ -3073,6 +3073,16 @@ By Helmic
 			<forceUppercase>true</forceUppercase>
 			<w>0.34</w>
 			<h>0.014</h>
+			<format ifSubset="dateFormat:dmys">%d/%m/%Y</format>
+			<format ifSubset="dateFormat:dmyp">%d.%m.%Y</format>
+			<format ifSubset="dateFormat:dmyt">%d-%m-%Y</format>
+			<format ifSubset="dateFormat:mdys">%m/%d/%Y</format>
+			<format ifSubset="dateFormat:mdyp">%m.%d.%Y</format>
+			<format ifSubset="dateFormat:mdyt">%m-%d-%Y</format>
+			<format ifSubset="dateFormat:ymds">%Y/%m/%d</format>
+			<format ifSubset="dateFormat:ymdp">%Y.%m.%d</format>
+			<format ifSubset="dateFormat:ymdt">%Y.%m.%d</format>
+			<format ifSubset="dateFormat:onlyYear">%Y</format>
 		</datetime>
 
 		<image name="line" extra="true">
