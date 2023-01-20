@@ -5430,7 +5430,10 @@ By Helmic
  	
 	</view>
 
-	<view name="detailed,grid,gamecarousel" ifSubset="wall:customs">
+	<view name="detailed,grid,gamecarousel">
+		<image name="md_marquee">
+			<default>./_inc/noMarquee.png</default>
+		</image>
 
 		<image name="md_fanart">
  			<visible>false</visible>
