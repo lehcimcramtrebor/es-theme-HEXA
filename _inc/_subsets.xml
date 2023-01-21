@@ -448,7 +448,7 @@ By Helmic
 		<include name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "/>
     </subset>
 
-	<subset name="randomRatio" displayName="${lang.randomRatio}" appliesTo="(game video),system,basic,detailed,grid,gamecarousel">
+	<subset name="randomRatio" displayName="${lang.randomRatio}" appliesTo="(game video),system,basic,detailed,grid,gamecarousel,library">
 		<include name="stretched" displayName="${lang.stretched}"/>
 		<include name="original" displayName="${lang.original}"/>
 	</subset>
