@@ -493,7 +493,7 @@ By Helmic
             <path>./default/color-${lang}${res}.png</path>
             <path>./${system.theme}/color${res}.png</path>
             <path>./${system.theme}/color-${lang}${res}.png</path>
-            <path ifSubset="neogeoaes:yes">./${system.theme}/color-aes${res}.png</path>
+            <path ifSubset="neogeoaes:yes" if="{system.name} == 'neogeo'">./${system.theme}/color-aes${res}.png</path>
 		</image>
 
         <image name="logo" region="eu"></image>
