@@ -4230,9 +4230,9 @@ By Helmic
 		<gridtile name="default">
 			<backgroundColor>FFFFFF00</backgroundColor>
 			<backgroundCornerSize>32 32</backgroundCornerSize>
-			<selectionMode>video</selectionMode>
+			<selectionMode>image</selectionMode>
 			<padding>5 5</padding>
-			<imageColor>dddddd</imageColor>
+			<imageColor>cccccc</imageColor>
 			<reflexion>0 0</reflexion>	  
 		</gridtile>
 	
@@ -4254,7 +4254,8 @@ By Helmic
 
 
 		<ninepatch name="gridtile.background:selected">
-			<animateColor>${overlay.colorset}</animateColor>
+			<animateColor>${overlay.colorset}80</animateColor>
+			<animateColorTime>160</animateColorTime>
 		</ninepatch>
 
 		<!-- MD_MARQUEE GRID SPECIFICATIONS -->
@@ -5078,6 +5079,7 @@ By Helmic
 			<autoLayout ifSubset="themeRatio:54|43">4 3</autoLayout>
 			<margin>0.02 0.02</margin>
 			<padding>0.02 0.05 0.02 0.05</padding>
+			<autoLayoutSelectedZoom>1.05</autoLayoutSelectedZoom>
 		</imagegrid>
 
         <video name="md_video" ifSubset="mdVideo:yes|yesDelay">
@@ -5114,7 +5116,7 @@ By Helmic
 			<h>0.034</h>
             <glowColor>00000080</glowColor>
 			<glowOffset>1</glowOffset>
-			<glowSize>1</glowSize>
+			<glowSize>3</glowSize>
 			<opacity>0</opacity>
 			<storyboard event="open">
                  <animation property="opacity" from="0" to="1" duration="100" mode="easeOut"/>
@@ -5172,6 +5174,7 @@ By Helmic
 			<autoLayout ifSubset="themeRatio:54|43">4 3</autoLayout>
 			<margin>0.02 0.02</margin>
 			<padding>0.02 0.05 0.02 0.05</padding>
+			<autoLayoutSelectedZoom>1.05</autoLayoutSelectedZoom>
 		</imagegrid>
 
         <video name="md_video" ifSubset="mdVideo:yes|yesDelay">
@@ -5208,7 +5211,7 @@ By Helmic
 			<h>0.034</h>
             <glowColor>00000080</glowColor>
 			<glowOffset>1</glowOffset>
-			<glowSize>1</glowSize>
+			<glowSize>3</glowSize>
 			<opacity>0</opacity>
 			<storyboard event="open">
                  <animation property="opacity" from="0" to="1" duration="100" mode="easeOut"/>
