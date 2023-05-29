@@ -69,6 +69,7 @@ By Helmic
     <!--FONT2--><variables><font2>DJB Get Digital.ttf</font2></variables>
  
 	<subset name="themeFont" displayName="${lang.themeFont}">
+        <include name="good timing">./fonts/good.xml</include>
         <include name="conthrax">./fonts/conthrax.xml</include>
         <include name="prime">./fonts/prime.xml</include>
         <include name="aqua">./fonts/aqua.xml</include>
@@ -77,7 +78,6 @@ By Helmic
         <include name="venus">./fonts/venus.xml</include>
         <include name="recharge">./fonts/recharge.xml</include>
         <include name="quadrangle">./fonts/quadrangle.xml</include>
-        <include name="good timing">./fonts/good.xml</include>
     </subset>
 
 	<subset name="menuFontSize" displayName="${lang.menuFontSize}" tinyScreen="false">
