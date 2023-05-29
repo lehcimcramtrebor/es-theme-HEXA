@@ -56,14 +56,14 @@ By Helmic
         <lang.basicEnhanced>simple list</lang.basicEnhanced>
         <lang.basicEnhanced lang="fr">liste simple</lang.basicEnhanced>
 
-        <lang.basicEnhancedVideo>simple list + video</lang.basicEnhancedVideo>
-        <lang.basicEnhancedVideo lang="fr">liste simple + vidéo</lang.basicEnhancedVideo>
+        <lang.basicEnhancedVideo>simple list (full screen videos)</lang.basicEnhancedVideo>
+        <lang.basicEnhancedVideo lang="fr">liste simple (vidéos plein écran)</lang.basicEnhancedVideo>
 
         <lang.gridSimple>simple grid</lang.gridSimple>
         <lang.gridSimple lang="fr">grille simple</lang.gridSimple>
 
-        <lang.gridSimpleVideo>simple grid + video</lang.gridSimpleVideo>
-        <lang.gridSimpleVideo lang="fr">grille simple + vidéo</lang.gridSimpleVideo>
+        <lang.gridSimpleVideo>simple grid (full screen videos)</lang.gridSimpleVideo>
+        <lang.gridSimpleVideo lang="fr">grille simple (vidéos plein écran)</lang.gridSimpleVideo>
 
         <lang.neogeoaes>neo geo • force aes</lang.neogeoaes>
         <lang.neogeoaes lang="fr">neo geo • forcer aes</lang.neogeoaes>

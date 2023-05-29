@@ -4889,26 +4889,38 @@ By Helmic
 			<origin>0.5 0.5</origin>
 			<pos>2 2</pos>
 			<zIndex>14</zIndex>
+			<roundCorners>0.008</roundCorners>
+			<colorEnd>cccccc</colorEnd>
+			<gradientType>vertical</gradientType>
 			<storyboard event="open">
                 <animation property="opacity" from="0" to="0" duration="2550" mode="easeOut" begin="0"/>
-                <animation property="maxSize" to="1 0.9259259259259259" duration="1" mode="linear" begin="2550"/>
+                <animation property="maxSize" to="0.8 0.75" duration="1" mode="linear" begin="2550"/>
                 <animation property="pos" to="0.5 0.5" duration="1" mode="linear" begin="2550"/>
                 <animation property="opacity" to="1" duration="250" mode="easeIn" begin="2550"/>
                 <animation property="offsetX" from="0.05" duration="250" mode="easeOut" begin="2550"/>
+
+                <animation property="opacity" to="0" duration="250" mode="easeOut" begin="4375"/>
+                <animation property="offsetX" to="-0.05" duration="250" mode="easeIn" begin="4375"/>
              </storyboard>
 			<storyboard event="activateNext">
                 <animation property="opacity" from="0" to="0" duration="550" mode="easeOut" begin="0"/>
-                <animation property="maxSize" to="1 0.9259259259259259" duration="1" mode="linear" begin="550"/>
+                <animation property="maxSize" to="0.8 0.75" duration="1" mode="linear" begin="550"/>
                 <animation property="pos" to="0.5 0.5" duration="1" mode="linear" begin="550"/>
                 <animation property="opacity" to="1" duration="250" mode="easeIn" begin="550"/>
                 <animation property="offsetX" from="0.05" duration="250" mode="easeOut" begin="550"/>
+
+                <animation property="opacity" to="0" duration="250" mode="easeOut" begin="4375"/>
+                <animation property="offsetX" to="-0.05" duration="250" mode="easeIn" begin="4375"/>
             </storyboard>
 			<storyboard event="activatePrev">
                 <animation property="opacity" from="0" to="0" duration="550" mode="easeOut" begin="0"/>
-                <animation property="maxSize" to="1 0.9259259259259259" duration="1" mode="linear" begin="550"/>
+                <animation property="maxSize" to="0.8 0.75" duration="1" mode="linear" begin="550"/>
                 <animation property="pos" to="0.5 0.5" duration="1" mode="linear" begin="550"/>
                 <animation property="opacity" to="1" duration="250" mode="easeIn" begin="550"/>
                 <animation property="offsetX" from="-0.05" duration="250" mode="easeOut" begin="550"/>
+
+                <animation property="opacity" to="0" duration="250" mode="easeOut" begin="4375"/>
+                <animation property="offsetX" to="0.05" duration="250" mode="easeIn" begin="4375"/>
             </storyboard>
 			<storyboard event="deactivateNext">
                 <animation property="offsetX" to="-1" duration="350" mode="easeOut"/>
@@ -5002,26 +5014,38 @@ By Helmic
 			<origin>0.5 0.5</origin>
 			<pos>2 2</pos>
 			<zIndex>14</zIndex>
+			<roundCorners>0.008</roundCorners>
+			<colorEnd>cccccc</colorEnd>
+			<gradientType>vertical</gradientType>
 			<storyboard event="open">
                 <animation property="opacity" from="0" to="0" duration="2550" mode="easeOut" begin="0"/>
-                <animation property="maxSize" to="1 0.9259259259259259" duration="1" mode="linear" begin="2550"/>
+                <animation property="maxSize" to="0.8 0.75" duration="1" mode="linear" begin="2550"/>
                 <animation property="pos" to="0.5 0.5" duration="1" mode="linear" begin="2550"/>
                 <animation property="opacity" to="1" duration="250" mode="easeIn" begin="2550"/>
                 <animation property="offsetX" from="0.05" duration="250" mode="easeOut" begin="2550"/>
+
+                <animation property="opacity" to="0" duration="250" mode="easeOut" begin="4375"/>
+                <animation property="offsetX" to="-0.05" duration="250" mode="easeIn" begin="4375"/>
              </storyboard>
 			<storyboard event="activateNext">
                 <animation property="opacity" from="0" to="0" duration="550" mode="easeOut" begin="0"/>
-                <animation property="maxSize" to="1 0.9259259259259259" duration="1" mode="linear" begin="550"/>
+                <animation property="maxSize" to="0.8 0.75" duration="1" mode="linear" begin="550"/>
                 <animation property="pos" to="0.5 0.5" duration="1" mode="linear" begin="550"/>
                 <animation property="opacity" to="1" duration="250" mode="easeIn" begin="550"/>
                 <animation property="offsetX" from="0.05" duration="250" mode="easeOut" begin="550"/>
+
+                <animation property="opacity" to="0" duration="250" mode="easeOut" begin="4375"/>
+                <animation property="offsetX" to="-0.05" duration="250" mode="easeIn" begin="4375"/>
             </storyboard>
 			<storyboard event="activatePrev">
                 <animation property="opacity" from="0" to="0" duration="550" mode="easeOut" begin="0"/>
-                <animation property="maxSize" to="1 0.9259259259259259" duration="1" mode="linear" begin="550"/>
+                <animation property="maxSize" to="0.8 0.75" duration="1" mode="linear" begin="550"/>
                 <animation property="pos" to="0.5 0.5" duration="1" mode="linear" begin="550"/>
                 <animation property="opacity" to="1" duration="250" mode="easeIn" begin="550"/>
                 <animation property="offsetX" from="-0.05" duration="250" mode="easeOut" begin="550"/>
+
+                <animation property="opacity" to="0" duration="250" mode="easeOut" begin="4375"/>
+                <animation property="offsetX" to="0.05" duration="250" mode="easeIn" begin="4375"/>
             </storyboard>
 			<storyboard event="deactivateNext">
                 <animation property="offsetX" to="-1" duration="350" mode="easeOut"/>
@@ -5080,6 +5104,7 @@ By Helmic
 			<margin>0.02 0.02</margin>
 			<padding>0.02 0.05 0.02 0.05</padding>
 			<autoLayoutSelectedZoom>1.05</autoLayoutSelectedZoom>
+			<showVideoAtDelay>800</showVideoAtDelay>
 		</imagegrid>
 
         <video name="md_video" ifSubset="mdVideo:yes|yesDelay">
