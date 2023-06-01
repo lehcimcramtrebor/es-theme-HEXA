@@ -4227,6 +4227,15 @@ By Helmic
 			<imageSource>thumbnail</imageSource>
 		</imagegrid>
 
+		<text name="gridtile">
+			<visible>false</visible>
+			<backgroundColor>00000000</backgroundColor>
+			<fontSize>0.024</fontSize>
+			<forceUppercase>true</forceUppercase>
+			<fontPath>./_inc/fonts/${font2}</fontPath>
+			<alignment>center</alignment>
+		</text>
+
 		<gridtile name="default">
 			<backgroundColor>FFFFFF00</backgroundColor>
 			<backgroundCornerSize>32 32</backgroundCornerSize>
