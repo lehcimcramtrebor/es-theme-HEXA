@@ -228,7 +228,7 @@ By Helmic
             <separatorColor>00000006</separatorColor>
             <selectorColor>${overlay.colorset}</selectorColor>
             <selectedColor>ffffff</selectedColor>		
-            <selectedColor ifSubset="overlayColorset:noColor|yellow|yellowVivid|purple|pink">101010</selectedColor>		
+            <selectedColor ifSubset="overlayColorset:noColor|yellow|yellowVivid|purple|pink">303030</selectedColor>		
             <selectorColor ifSubset="overlayColorset:noColor">cccccc</selectorColor>
         </menuText>
 	
@@ -2241,7 +2241,6 @@ By Helmic
 			<pos>0.5 0.5</pos>
 			<size>1 0.925925926</size>
 			<selectedColor>ffffff</selectedColor>
-            <selectedColor ifSubset="overlayColorset:noColor|yellow|yellowVivid|purple|pink">101010</selectedColor>		
 			<primaryColor>dddddd</primaryColor>
 			<secondaryColor>dddddd</secondaryColor>
 			<selectorColor>${overlay.colorset}ea</selectorColor>	  		
@@ -2265,6 +2264,8 @@ By Helmic
             <glowColor>00000080</glowColor>
 			<glowOffset>1</glowOffset>
 			<glowSize>1</glowSize>
+			<extraTextColor>${overlay.colorset}ea</extraTextColor>
+			<extraTextSelectedColor>ffffff</extraTextSelectedColor>
  			</textlist>
 
 		<text name="basicBar" extra="true">
@@ -3992,7 +3993,6 @@ By Helmic
 			<pos>1.02 0.04</pos>
 			<size>0.39 0.92</size>
 			<selectedColor>ffffff</selectedColor>
-            <selectedColor ifSubset="overlayColorset:noColor|yellow|yellowVivid|purple|pink">101010</selectedColor>		
 			<primaryColor>eeeeee</primaryColor>
 			<secondaryColor>eeeeee</secondaryColor>
 			<selectorImagePath>./_inc/selector.png</selectorImagePath>
@@ -4017,6 +4017,8 @@ By Helmic
             <glowColor>00000080</glowColor>
 			<glowOffset>1</glowOffset>
 			<glowSize>1</glowSize>
+			<extraTextColor>${overlay.colorset}ea</extraTextColor>
+			<extraTextSelectedColor>ffffff</extraTextSelectedColor>
  			</textlist>
 
 	<!-- MD_DESCRIPTION DETAILED SPECIFICATIONS -->

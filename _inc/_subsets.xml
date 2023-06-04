@@ -60,7 +60,7 @@ By Helmic
         <include name="purple" displayName="${lang.purple}">./colorsets/purple.xml</include>
         <include name="yellowVivid" displayName="${lang.yellowVivid}">./colorsets/yellowVivid.xml</include>
         <include name="yellow" displayName="${lang.yellow}">./colorsets/yellow.xml</include>
-        <include name="noColor" displayName="${lang.noColor}">./colorsets/noColor.xml</include>
+<!--        <include name="noColor" displayName="${lang.noColor}">./colorsets/noColor.xml</include>-->
         <include name="greyMegadrive" displayName="${lang.greyMegadrive}">./colorsets/greyMegadrive.xml</include>
    </subset>
 
