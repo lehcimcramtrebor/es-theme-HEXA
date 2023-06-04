@@ -3020,7 +3020,7 @@ By Helmic
 		</text>
 	
 		<text name="systemFullNameRandomVideo" extra="true">
-			<text>${system.fullName}</text>
+			<text>{game:systemName}</text>
             <fontPath>./_inc/fonts/${font1}</fontPath>
 			<color ifSubset="systemNameColor:colorWhite">cccccc</color>
 			<color ifSubset="systemNameColor:colorYellow">cccc00</color>
