@@ -24,6 +24,14 @@ By Helmic
     <include ifArch="windows">./../../../../_hexaCustom/name/name.xml</include>
     <include ifNotArch="windows">./../../_hexaCustom/name/name.xml</include>
  
+    <!--CUSTOM DESCRIPTION-->   
+	<include>./_hexaCustom/description/${system.theme}.xml</include>
+	<include>./_hexaCustom/description/${system.theme}-${lang}.xml</include>
+    <include ifArch="windows">./../../../../_hexaCustom/description/${system.theme}.xml</include>
+    <include ifArch="windows">./../../../../_hexaCustom/description/${system.theme}-${lang}.xml</include>
+    <include ifNotArch="windows">./../../_hexaCustom/description/${system.theme}.xml</include>
+    <include ifNotArch="windows">./../../_hexaCustom/description/${system.theme}-${lang}.xml</include>
+ 
  	<!--SUBSETS-->
 	<include>./_inc/_subsets.xml</include>
 
@@ -1116,7 +1124,37 @@ By Helmic
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 	
     <view name="system">
-
+		
+		<!-- DESCRIPTIONS -->
+		
+		<text name="descriptionSystem" extra="true">
+			<text>${description}</text>
+            <fontPath>./_inc/fonts/${font1}</fontPath>
+			<color>ffffff</color>
+			<glowColor>00000080</glowColor>
+			<glowOffset>1</glowOffset>
+			<glowSize>3</glowSize>
+            <fontSize>0.016</fontSize>
+            <fontSize ifSubset="themeRatio:54|43">0.011</fontSize>
+            <pos>0.5 0.06</pos>
+			<size>1 0.02</size>
+            <origin>0.5 0.5</origin>
+            <zIndex>10</zIndex>
+			<alignment>center</alignment>
+			<verticalAlignment>top</verticalAlignment>
+			<forceUppercase>true</forceUppercase>
+			<reflexion>0.1 0</reflexion>
+			<storyboard>
+                <animation property="opacity" from="0" to="0" duration="1000" mode="easeIn"/>
+                <animation property="opacity" from="0" to="1" duration="100" mode="easeIn" begin="1000"/>
+                <animation property="opacity" from="1" to="0" duration="100" mode="easeIn" begin="11000"/>
+                <animation property="w" from="0" to="0" duration="1000" mode="linear"/>
+                <animation property="w" from="0" duration="2500" mode="linear" begin="1000"/>
+            </storyboard>
+		</text>
+		
+		<!------------------>
+		
 		<image name="piLogo" extra="true" ifSubset="fullHexa:hexaPi">
 			<linearSmooth>true</linearSmooth>
 			<path>./_inc/pi.png</path>
@@ -1401,6 +1439,7 @@ By Helmic
                 <animation property="opacity" from="0" to="1" duration="100" mode="easeIn" begin="550"/>
                 <animation property="opacity" from="1" to="0" duration="1000" mode="easeOutCubic" begin="2450"/>
             </storyboard>
+
         </text>
 
 		<text name="systemNameCarousel" extra="true">
