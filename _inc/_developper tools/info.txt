@@ -7,3 +7,5 @@ Depuis un dossier de theme hexa, après avoir crée ses tuiles depuis gimp (colo
 Le script structure HEXA crée les fichiers "-pi" et optimise toutes les tuiles.
 
 Le script HANDHELD créé sur le bureau le dossier de thème pour es-theme-HEXA-HANDHELD complètement optimisé.
+
+Le scripts install logos... réservé à HELMIC synchronise tous les logos classique depuis Hexa sur les autres themes dans les dépots github locaux.
