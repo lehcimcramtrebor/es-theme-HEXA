@@ -1,0 +1,9 @@
+Le dossier scripts doit être placé dans c:
+
+Les deux entrées de registre installées.
+
+Depuis un dossier de theme hexa, après avoir crée ses tuiles depuis gimp (color.png, color-fr.png etc..),
+
+Le script structure HEXA crée les fichiers "-pi" et optimise toutes les tuiles.
+
+Le script HANDHELD créé sur le bureau le dossier de thème pour es-theme-HEXA-HANDHELD complètement optimisé.
