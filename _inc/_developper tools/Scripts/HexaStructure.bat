@@ -1,26 +1,26 @@
 @echo off
 SETLOCAL
 
-REM On dÃ©finit le rÃ©pertoire de travail.
+REM On d‚finit le r‚pertoire de travail.
 cd /d %CD%
 
-REM VÃ©rification des fichiers nÃ©cessaires dans le rÃ©pertoire de travail.
+REM V‚rification des fichiers n‚cessaires dans le r‚pertoire de travail.
 if not exist color.png (
-    echo Ce script ne peut Ãªtre exÃ©cutÃ© que depuis un dossier de theme HEXA.
+    echo Ce script ne peut ˆtre ex‚cut‚ que depuis un dossier de thŠme HEXA.
     pause
     exit /b
 )
 if not exist container.xml (
-    echo Ce script ne peut Ãªtre exÃ©cutÃ© que depuis un dossier de theme HEXA.
+    echo Ce script ne peut ˆtre ex‚cut‚ que depuis un dossier de thŠme HEXA.
     pause
     exit /b
 )
 if not exist layout.xml (
-    echo Ce script ne peut Ãªtre exÃ©cutÃ© que depuis un dossier de theme HEXA.
+    echo Ce script ne peut ˆtre ex‚cut‚ que depuis un dossier de thŠme HEXA.
     exit /b
 )
 if not exist theme.xml (
-    echo Ce script ne peut Ãªtre exÃ©cutÃ© que depuis un dossier de theme HEXA.
+    echo Ce script ne peut ˆtre ex‚cut‚ que depuis un dossier de thŠme HEXA.
     pause
     exit /b
 )
@@ -35,7 +35,7 @@ for /R %%G in (*color*.png) do (
     )
 )
 
-REM Redimensionnement des fichiers png terminant par '-pi' Ã  670p de hauteur
+REM Redimensionnement des fichiers png terminant par '-pi' … 670p de hauteur
 for /R %%G in (*-pi.png) do (
     magick "%%G" -resize x670 "%%G"
 )
@@ -49,4 +49,6 @@ goto :eof
 
 :duplicateFile
     copy "%directory%%filename%%extension%" "%directory%%filename%-pi%extension%"
+goto :eof
+ename%%extension%" "%directory%%filename%-pi%extension%"
 goto :eof
