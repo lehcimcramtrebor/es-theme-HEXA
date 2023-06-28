@@ -1,0 +1,3 @@
+Copier le dossier Scripts à la racine de C:\ puis installer les entrées registre.
+
+installer imagemagick et ensuite le bin de pnquant via nodejs
