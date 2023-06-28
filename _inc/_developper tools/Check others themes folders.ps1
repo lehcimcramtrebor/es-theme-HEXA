@@ -8,25 +8,30 @@ $destinations = @(
     "$env:USERPROFILE\Documents\Github\es-theme-ComicScrapV2"
 )
 
+$missingFolders = @{}
+
 Get-ChildItem -Path $source -Directory |
     Where-Object { $exclusions -notcontains $_.Name } |
     ForEach-Object {
         $folder = $_.Name
-        $missingIn = @()
 
         foreach ($destination in $destinations) {
             if (-not (Test-Path -Path (Join-Path -Path $destination -ChildPath $folder))) {
-                $missingIn += $destination
-            }
-        }
+                if (-not $missingFolders[$destination]) {
+                    $missingFolders[$destination] = @()
+                }
 
-        if ($missingIn) {
-            Write-Output "Le dossier $folder est manquant dans les emplacements suivants :"
-            $missingIn | ForEach-Object {
-                Write-Output " - $_"
+                $missingFolders[$destination] += $folder
             }
         }
     }
+
+foreach ($destination in $missingFolders.Keys) {
+    Write-Output "Les dossiers suivants sont manquants dans l'emplacement $destination :"
+    $missingFolders[$destination] | ForEach-Object {
+        Write-Output " - $_"
+    }
+}
 
 # Pause before exiting
 Write-Output "Appuyez sur une touche pour continuer..."
