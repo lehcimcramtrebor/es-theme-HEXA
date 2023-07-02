@@ -1,0 +1,4 @@
+Ce script powershell executé depuis un dossier contenant tous les logos y compris leur versions "us" et "jp" 
+recrée sur le bureau un dossier avec une structure de theme complète ou chaque logo se trouve dans son propre dossier de thème avec un theme.xml et ses sous dossiers "us" et "jp".
+
+Donc il faut copier ce script dans le dossier de logos puis l'executer avec powershell.
