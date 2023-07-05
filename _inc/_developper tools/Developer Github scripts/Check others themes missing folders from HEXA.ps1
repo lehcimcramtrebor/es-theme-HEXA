@@ -4,6 +4,7 @@ $destinations = @(
     "$env:USERPROFILE\Documents\Github\es-theme-HEXA-HANDHELD",
     "$env:USERPROFILE\Documents\Github\es-theme-RCBX",
     "$env:USERPROFILE\Documents\Github\es-theme-batocer-club-reloaded",
+    "$env:USERPROFILE\Documents\Github\es-theme-butterfly",
     "$env:USERPROFILE\Documents\Github\es-theme-comicscrap",
     "$env:USERPROFILE\Documents\Github\es-theme-ComicScrapV2"
 )
