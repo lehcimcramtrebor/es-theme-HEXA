@@ -18,7 +18,10 @@ By Helmic
 
 	<!-- INCLUDE SYSTEM VARIABLES-->
 	<include>./${system.theme}/container.xml</include>
- 
+ 	<include>./_hexaCustom/containers/${system.theme}.xml</include>
+    <include ifArch="windows">./../../../../_hexaCustom/containers/${system.theme}.xml</include>
+    <include ifNotArch="windows">./../../_hexaCustom/containers/${system.theme}.xml</include>
+
     <!--CUSTOM NAME-->   
 	<include>./_hexaCustom/name/name.xml</include>
     <include ifArch="windows">./../../../../_hexaCustom/name/name.xml</include>
