@@ -10,7 +10,7 @@
 			<pos>0.5 0.35</pos>
 			<origin>0.5 0.5</origin>
 			<maxSize>0.85 0.6</maxSize>
-			<reflexion>0.25 0</reflexion>
+			<reflexion>0 1</reflexion>
 			<roundCorners>0.02</roundCorners>
 			<linearSmooth>false</linearSmooth>
 			<color>ffffff</color>
@@ -43,23 +43,24 @@
 
 		<text name="label">
 			<origin>0.5 0.5</origin>
-			<pos>0.5 0.75</pos>
+			<pos>0.5 0.67</pos>
 			<alignment>center</alignment>
-			<color>dddddd</color>
+			<color>ffffff</color>
 			<fontPath>./_inc/fonts/conthrax-sb.ttf</fontPath>
-			<fontSize>0.032</fontSize>
+			<fontSize>0.022</fontSize>
             <glowColor>00000080</glowColor>
 			<glowOffset>1</glowOffset>
 			<glowSize>1</glowSize>
+			<reflexion>0.2 0</reflexion>
 		</text>
 
 		<image name="darken" extra="true">
 			<path>./_inc/white.png</path>
-			<pos>0 0.7</pos>
+			<pos>0 0.9</pos>
 			<origin>0 0</origin>
-			<size>1 0.3</size>
+			<size>1 0.1</size>
 			<color>00000000</color>
-			<colorEnd>000000F0</colorEnd>
+			<colorEnd>000000</colorEnd>
 			<zIndex>8</zIndex>
 		</image>
 
