@@ -1,9 +1,9 @@
 [Desktop Entry]
 Version=1.0
-Name=REBOOT BATOCERA
+Name=REBOOT
 Comment=Connect to my server
 Exec=gnome-terminal -e "bash -c 'sshpass -p linux ssh root@BATOCERA.LOCAL \"reboot\"; exec bash'"
-Icon=utilities-terminal
+Icon=arcade-green
 Terminal=false
 Type=Application
 Categories=Application;

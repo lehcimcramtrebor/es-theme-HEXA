@@ -1,9 +1,9 @@
 [Desktop Entry]
 Version=1.0
-Name=SSH BATOCERA
+Name=SSH
 Comment=Connect to my server
 Exec=gnome-terminal -e "bash -c 'sshpass -p linux ssh root@BATOCERA.LOCAL; exec bash'"
-Icon=utilities-terminal
+Icon=arcade-yellow
 Terminal=false
 Type=Application
 Categories=Application;
