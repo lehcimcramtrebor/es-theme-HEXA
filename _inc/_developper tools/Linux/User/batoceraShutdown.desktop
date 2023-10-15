@@ -2,7 +2,7 @@
 Version=1.0
 Name=SHUTDOWN
 Comment=Connect to my server
-Exec=gnome-terminal -e "bash -c 'sshpass -p linux ssh root@BATOCERA.LOCAL \"batocera-es-swissknife --shutdown\"; exec bash'"
+Exec=gnome-terminal -e "bash -c 'sudo sshpass -p linux ssh root@batocera.local \"batocera-es-swissknife --shutdown\"; exec bash'"
 Icon=arcade-mono
 Terminal=false
 Type=Application

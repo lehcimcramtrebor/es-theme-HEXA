@@ -2,9 +2,8 @@
 Version=1.0
 Name=REBOOT
 Comment=Connect to my server
-Exec=gnome-terminal -e "bash -c 'sshpass -p linux ssh root@BATOCERA.LOCAL \"reboot\"; exec bash'"
+Exec=gnome-terminal -e "bash -c 'sudo sshpass -p linux ssh root@batocera.local \\"reboot\\"; exec bash'"
 Icon=arcade-green
 Terminal=false
 Type=Application
 Categories=Application;
-

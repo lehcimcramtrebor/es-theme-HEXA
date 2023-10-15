@@ -2,7 +2,7 @@
 Version=1.0
 Name=EMUKILL
 Comment=Connect to my server
-Exec=gnome-terminal -e "bash -c 'sshpass -p linux ssh root@BATOCERA.LOCAL \"batocera-es-swissknife --emukill\"; exec bash'"
+Exec=gnome-terminal -e "bash -c 'sudo sshpass -p linux ssh root@batocera.local \"batocera-es-swissknife --emukill\"; exec bash'"
 Icon=arcade-icon
 Terminal=false
 Type=Application
