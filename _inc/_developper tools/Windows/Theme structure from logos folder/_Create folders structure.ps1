@@ -143,6 +143,12 @@ if ($UserInput -eq "O" -or $UserInput -eq "o") {
 
     <include>./../theme.xml</include>
 
+<variables>
+<!--<system.manufacturer>manufacturer</system.manufacturer>-->
+<!--<system.fullName>name</system.fullName>-->
+<!--<system.releaseYearOrNull>2023</system.releaseYearOrNull>-->
+</variables>
+
 </theme>
 "@
 
