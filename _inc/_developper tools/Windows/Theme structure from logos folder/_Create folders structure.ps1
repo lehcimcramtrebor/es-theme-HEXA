@@ -147,6 +147,8 @@ if ($UserInput -eq "O" -or $UserInput -eq "o") {
 <!--<system.manufacturer>manufacturer</system.manufacturer>-->
 <!--<system.fullName>name</system.fullName>-->
 <!--<system.releaseYearOrNull>2023</system.releaseYearOrNull>-->
+<!--<v.desc>description</v.desc>-->
+<!--<v.desc lang="fr>description</v.desc>-->
 </variables>
 
 </theme>
