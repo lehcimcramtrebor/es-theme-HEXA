@@ -182,7 +182,7 @@ if zenity --question --text "Voulez-vous créer les fichiers 'theme.xml' dans ch
         # Supprimer le slash à la fin du nom du dossier
         nom_dossier="${dossier%/}"
         # Créer le contenu du fichier "theme.xml"
-        contenu='<?xml version="1.0" encoding="UTF-8"?>\n<theme>\n<formatVersion>7</formatVersion>\n\n\t<include>./../theme.xml</include>\n<variables>\n<!--<system.manufacturer>manufacturer</system.manufacturer>-->\n<!--<system.fullName>name</system.fullName>-->\n<!--<system.releaseYearOrNull>2023</system.releaseYearOrNull>-->\n<!--<v.desc>description</v.desc>-->\n<!--<v.desc lang="fr">description</v.desc>-->\n</variables>\n\n</theme>
+        contenu='<?xml version="1.0" encoding="UTF-8"?>\n<theme>\n<formatVersion>7</formatVersion>\n\n\t<include>./../theme.xml</include>\n<variables><region.priority region="eu"/>\n\n<!--<system.manufacturer>manufacturer</system.manufacturer>-->\n\n<!--<system.fullName>name</system.fullName>-->\n\n<!--<system.releaseYearOrNull>2023</system.releaseYearOrNull>-->\n\n<!--<v.desc>description</v.desc>-->\n\n<!--<v.desc lang="fr">description</v.desc>-->\n\n</variables>\n\n</theme>
 		<?xml version="1.0" encoding="UTF-8"?>'
         # Créer le fichier "theme.xml" dans chaque dossier
         echo -e "$contenu" >"$nom_dossier/theme.xml"
