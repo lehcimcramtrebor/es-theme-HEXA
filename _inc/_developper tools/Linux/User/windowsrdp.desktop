@@ -1,9 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Name=Windows RDP
-Comment=Connect to my server
-Exec=gnome-terminal -- bash -c 'xfreerdp /v:192.168.1.106 /f /u:michedenice@live.fr /p:mnl11a79am'
-Icon=windows-icon
-Terminal=true
-Type=Application
-Categories=Application;
