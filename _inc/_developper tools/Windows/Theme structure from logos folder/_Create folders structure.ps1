@@ -138,23 +138,26 @@ if ($UserInput -eq "O" -or $UserInput -eq "o") {
         # Contenu du fichier
         $FileContent = @"
 <?xml version="1.0" encoding="UTF-8"?>
+
 <theme>
-<formatVersion>7</formatVersion>
+
+	<formatVersion>7</formatVersion>
 
     <include>./../theme.xml</include>
 
-<variables><region.priority region="eu"/>
+	<variables><region.priority region="eu"/>
 
-<!--<system.manufacturer>manufacturer</system.manufacturer>-->
+		<!--<system.manufacturer>manufacturer</system.manufacturer>-->
 
-<!--<system.fullName>name</system.fullName>-->
+		<!--<system.fullName>name</system.fullName>-->
 
-<!--<system.releaseYearOrNull>2023</system.releaseYearOrNull>-->
+		<!--<system.releaseYearOrNull>2023</system.releaseYearOrNull>-->
 
-<!--<desc>description</desc>-->
-<!--<desc lang="fr">description</desc>-->
+		<!--<desc>description</desc>-->
+		
+		<!--<desc lang="fr">description</desc>-->
 
-</variables>
+	</variables>
 
 </theme>
 "@
